@@ -73,18 +73,39 @@ const sections = [
   {
     id: "simple",
     title: "简单句",
-    meta: "对应视频：2.1、2.1.1、2.2、2.3",
+    meta: "对应视频：BV1rF411S7qd；2.1、2.1.1、2.2、2.3",
     html: `
-      <p>简单句的关键是谓语动词。谓语动词决定句子需要哪些核心成分：<span class="noun">主语、宾语、表语、补语</span>。</p>
+      <p>简单句先看句子成分：主语、谓语、宾语、定语、状语、补语。核心是先找到谓语动词，再看它连接了哪些对象和补充说明。</p>
+      <h4 class="table-title">句子成分定义表</h4>
+      <table>
+        <thead><tr><th>句子成分</th><th>英文</th><th>核心含义</th><th>颜色标注</th></tr></thead>
+        <tbody>
+          <tr><td><span class="adj">定语</span></td><td>Attributive</td><td>修饰名词性成分的成分。</td><td><span class="adj">黄色：形容词性成分</span></td></tr>
+          <tr><td><span class="noun">主语</span></td><td>Subject</td><td>句子的主体话题，或动作的发出者。</td><td><span class="noun">红色：名词性成分</span></td></tr>
+          <tr><td><span class="neutral">谓语</span></td><td>Predicate</td><td>谓语即动词，是句子动作或状态的核心。</td><td>谓语是动词核心，不强行套四类成分色。</td></tr>
+          <tr><td><span class="noun">宾语</span></td><td>Object</td><td>谓语动词的执行对象。</td><td><span class="noun">红色：名词性成分</span></td></tr>
+          <tr><td><span class="adv">状语</span></td><td>Adverbial</td><td>修饰动词、形容词、其他副词的成分。</td><td><span class="adv">绿色：副词性成分</span></td></tr>
+          <tr><td><span class="neutral">补语</span></td><td>Complement</td><td>补充说明的额外成分。</td><td>补语内部按实际功能标红、黄、绿或紫。</td></tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">补语判断表</h4>
+      <table>
+        <thead><tr><th>补语类型</th><th>判断方式</th><th>代表例句</th><th>分析</th></tr></thead>
+        <tbody>
+          <tr><td>宾语补语</td><td>宾语 + 补语可以改写成 [A is B]</td><td>She painted <span class="noun">the room</span> <span class="adj">blue</span>.</td><td><span class="noun">the room</span> 和 <span class="adj">blue</span> 可理解为 [the room was blue]，所以 blue 补充说明 room。</td></tr>
+          <tr><td>宾语补语</td><td>宾语 + 补语可以改写成 [A is B]</td><td>We consider <span class="noun">him</span> <span class="noun">a fool</span>.</td><td><span class="noun">him</span> 和 <span class="noun">a fool</span> 可理解为 [he is a fool]，所以 a fool 补充说明 him。</td></tr>
+          <tr><td>主语补语</td><td>主语 + 补语构成 [A is B]</td><td><span class="noun">He</span> is <span class="adj">tired</span>.</td><td><span class="adj">tired</span> 补充说明主语 He 的状态。</td></tr>
+        </tbody>
+      </table>
       <h4 class="table-title">简单句基本句型表</h4>
       <table>
         <thead><tr><th>句型</th><th>例句</th><th>分析</th></tr></thead>
         <tbody>
           <tr><td>SV</td><td>The baby cried.</td><td><span class="noun">The baby</span> 是主语，cried 是谓语。</td></tr>
           <tr><td>SVO</td><td>She likes music.</td><td><span class="noun">music</span> 是宾语。</td></tr>
-          <tr><td>SVC</td><td>He is tired.</td><td>tired 补充说明主语状态。</td></tr>
+          <tr><td>SVC</td><td><span class="noun">He</span> is <span class="adj">tired</span>.</td><td><span class="adj">tired</span> 补充说明主语状态，属于主语补语。</td></tr>
           <tr><td>SVOO</td><td>She gave me a book.</td><td><span class="noun">me</span> 是间接宾语，<span class="noun">a book</span> 是直接宾语。</td></tr>
-          <tr><td>SVOC</td><td>We made him captain.</td><td>captain 补充说明 <span class="noun">him</span> 的身份。</td></tr>
+          <tr><td>SVOC</td><td>We made <span class="noun">him</span> <span class="noun">captain</span>.</td><td><span class="noun">captain</span> 补充说明 <span class="noun">him</span> 的身份，属于宾语补语。</td></tr>
         </tbody>
       </table>
     `
