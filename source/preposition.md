@@ -18,14 +18,11 @@
 
 ### 介词用法判断表
 
-| 表达 | 词性/用法判断 | 说明 |
+| 判断点 | 代表例句 | 说明 |
 | --- | --- | --- |
-| The puma is up a tree. | up 是介词 | up 后面接 a tree，构成介词短语 up a tree。 |
-| He looked up. | up 是副词 | up 后面没有接名词性成分，直接修饰 looked。 |
-| Prices are up. | up 是形容词 | up 后面没有接名词性成分，表示价格处于上涨/升高状态。 |
-| It depends on what they do. | on 是介词 | on 后面接 what they do 这个名词性从句，构成介词短语 on what they do。 |
-| The car stopped and then drove on. | on 是副词 | on 后面没有接名词性成分，修饰 drove，表示继续向前。 |
-| The TV is on. | on 是形容词 | on 后面没有接名词性成分，表示电视处于开启状态。 |
+| 后面有名词性成分：作介词 | The puma is up a tree.<br>It depends on what they do. | up 后接 a tree；on 后接 what they do。后面有名词性成分，就构成介词短语。 |
+| 后面没有名词性成分：作副词 | He looked up.<br>The car stopped and then drove on. | up / on 后面没有名词性成分，直接修饰动作，作副词。 |
+| 后面没有名词性成分：作形容词 | Prices are up.<br>The TV is on. | up / on 后面没有名词性成分，表示状态，作形容词。 |
 
 ## 介词后接成分例句表
 

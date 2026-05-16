@@ -4,28 +4,33 @@
 
 ## 核心结论
 
-简单句先看句子成分：主语、谓语、宾语、定语、状语、补语。
+简单句先找谓语动词，再抓主谓宾主干；定语和状语多为可删除的修饰扩展，补语用来补充说明主语或宾语。
 
-分析时先找到谓语动词。谓语动词决定句子需要哪些核心成分；定语、状语、补语负责扩展和补充说明。
+记忆顺序：主谓宾定状补。
 
 ## 句子成分定义表
 
 | 句子成分 | 英文 | 核心含义 | 颜色标注 |
 | --- | --- | --- | --- |
-| 定语 | Attributive | 修饰名词性成分的成分。 | 黄色：形容词性成分 |
 | 主语 | Subject | 句子的主体话题，或动作的发出者。 | 红色：名词性成分 |
 | 谓语 | Predicate | 谓语即动词，是句子动作或状态的核心。 | 谓语是动词核心，不强行套四类成分色。 |
 | 宾语 | Object | 谓语动词的执行对象。 | 红色：名词性成分 |
-| 状语 | Adverbial | 修饰动词、形容词、其他副词的成分。 | 绿色：副词性成分 |
-| 补语 | Complement | 补充说明的额外成分。 | 补语内部按实际功能标红、黄、绿或紫。 |
+| 定语 | Attributive | 修饰名词性成分的成分；对句子主干来说通常可以删除。 | 黄色：形容词性成分 |
+| 状语 | Adverbial | 修饰动词、形容词、其他副词的成分；对句子主干来说通常可以删除。 | 绿色：副词性成分 |
+| 补语 | Complement | 补充说明的额外成分。 | 补语要么是名词属性，要么是形容词属性。 |
 
 ## 补语判断表
 
-| 补语类型 | 判断方式 | 代表例句 | 分析 |
-| --- | --- | --- | --- |
-| 宾语补语 | 宾语 + 补语可以改写成 [A is B] | She painted the room blue. | the room 和 blue 可理解为 [the room was blue]，所以 blue 补充说明 room。 |
-| 宾语补语 | 宾语 + 补语可以改写成 [A is B] | We consider him a fool. | him 和 a fool 可理解为 [he is a fool]，所以 a fool 补充说明 him。 |
-| 主语补语 | 主语 + 补语构成 [A is B] | He is tired. | tired 补充说明主语 He 的状态。 |
+补语统一判断方式：把“被补充说明的对象 + 补语”改写成 [A is B]。如果说得通，B 就是在补充说明 A。
+
+传统“主系表”里的表语，在这里归入主语补语。
+
+| 补语类型 | 代表例句 | 分析 |
+| --- | --- | --- |
+| 宾语补语 | She painted the room blue. | the room 和 blue 可理解为 [the room was blue]，所以 blue 补充说明 room。 |
+| 宾语补语 | We consider him a fool. | him 和 a fool 可理解为 [he is a fool]，所以 a fool 补充说明 him。 |
+| 主语补语 | He is tired. | He 和 tired 构成 [He is tired]，tired 是传统说法里的表语，也就是主语补语。 |
+| 主语补语 | He is walking around naked. | naked 补充说明主语 He 的状态，可理解为 [He is naked]。 |
 
 ## 简单句基本句型表
 
@@ -33,7 +38,7 @@
 | --- | --- | --- | --- |
 | 主谓 SV | 主语 + 谓语 | The baby cried. | The baby 是主语，cried 是谓语。 |
 | 主谓宾 SVO | 主语 + 谓语 + 宾语 | She likes music. | music 承受 likes，是宾语。 |
-| 主系表 / 主语补语 SVC | 主语 + 系动词 + 主语补语 | He is tired. | tired 补充说明主语状态，属于主语补语。 |
+| 主系表 / 主语补语 SVC | 主语 + 系动词 + 表语（即主语补语） | He is tired. | tired 是表语，即主语补语，用来补充说明主语状态。 |
 | 主谓双宾 SVOO | 主语 + 谓语 + 间接宾语 + 直接宾语 | She gave me a book. | me 是间接宾语，a book 是直接宾语。 |
 | 主谓宾宾补 SVOC | 主语 + 谓语 + 宾语 + 宾语补语 | We made him captain. | captain 补充说明 him 的身份，属于宾语补语。 |
 

@@ -262,161 +262,190 @@ code {
 }
 
 .function-map {
+  position: relative;
   display: grid;
-  grid-template-columns: minmax(220px, 1.2fr) minmax(220px, 1fr) 72px minmax(160px, 0.75fr);
+  grid-template-columns: minmax(220px, 0.9fr) minmax(120px, 0.45fr) minmax(180px, 0.7fr) minmax(120px, 0.45fr) minmax(190px, 0.75fr);
   grid-template-areas:
-    "stack note main simple"
-    "stack note down simple"
-    "space nonfinite back complex";
-  gap: 18px;
+    "stack arrow simple turn complex"
+    "down down nonfinite back complex";
+  gap: 22px;
   align-items: center;
-  min-height: 390px;
-  padding: 24px;
+  min-height: 430px;
+  padding: 26px;
   border-radius: 8px;
-  background: #f3f6fb;
-  border: 1px solid #dfe6f1;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  background: #858585;
+  overflow: hidden;
 }
 
 .function-stack {
   grid-area: stack;
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 
 .function-block {
   display: grid;
-  gap: 6px;
-  min-height: 78px;
+  gap: 8px;
+  place-items: center;
+  min-height: 106px;
   padding: 14px 16px;
-  border: 1px solid rgba(20, 34, 54, 0.1);
-  border-left-width: 10px;
   border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 12px 28px rgba(20, 34, 54, 0.08);
+  text-align: center;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
 }
 
-.function-block strong {
-  font-size: clamp(21px, 3vw, 32px);
+.function-block b {
+  font-size: clamp(24px, 3vw, 38px);
   line-height: 1.15;
   letter-spacing: 0;
 }
 
 .function-block span {
-  font-size: 14px;
-  line-height: 1.35;
-  font-weight: 650;
+  color: rgba(17, 17, 17, 0.82);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.25;
 }
 
 .noun-panel {
-  color: #8b0010;
-  background: #fff1f3;
-  border-left-color: #e60012;
+  color: #111;
+  background: #e60012;
 }
 
 .adj-panel {
-  color: #654900;
-  background: #fff7bf;
-  border-left-color: #fff200;
+  color: #111;
+  background: #fff200;
 }
 
 .adv-panel {
-  color: #235b16;
-  background: #efffe1;
-  border-left-color: #75ee00;
+  color: #111;
+  background: #75ee00;
 }
 
-.modifier-note {
-  grid-area: note;
+.modifier-arrow {
+  grid-area: arrow;
   position: relative;
   display: grid;
+  align-content: center;
+  justify-items: start;
   gap: 6px;
-  padding: 18px 22px;
-  border: 1px solid #b7e5ec;
-  border-radius: 8px;
-  background: #f1fdff;
-  color: #18343a;
+  min-height: 100px;
+  padding: 14px 30px 14px 16px;
+  color: #14323a;
+  background: #a7f5ff;
+  border-radius: 8px 0 0 8px;
   font-weight: 800;
-  box-shadow: 0 12px 28px rgba(20, 34, 54, 0.08);
 }
 
-.modifier-note::after {
+.modifier-arrow b {
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.modifier-arrow span {
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.modifier-arrow::after {
   content: "";
   position: absolute;
   top: 50%;
-  right: -24px;
+  right: -44px;
   width: 0;
   height: 0;
-  border-top: 28px solid transparent;
-  border-bottom: 28px solid transparent;
-  border-left: 24px solid #f1fdff;
+  border-top: 58px solid transparent;
+  border-bottom: 58px solid transparent;
+  border-left: 44px solid #a7f5ff;
   transform: translateY(-50%);
-  filter: drop-shadow(1px 0 0 #b7e5ec);
-}
-
-.modifier-note span {
-  font-size: 14px;
-  line-height: 1.35;
 }
 
 .sentence-node,
 .nonfinite-node {
+  position: relative;
   display: grid;
   place-items: center;
-  min-height: 128px;
-  padding: 18px;
+  min-height: 132px;
+  padding: 20px;
   border-radius: 8px;
   text-align: center;
-  font-weight: 800;
-  line-height: 1.2;
-  color: #242424;
-  border: 1px solid rgba(20, 34, 54, 0.1);
-  box-shadow: 0 14px 30px rgba(20, 34, 54, 0.1);
+  line-height: 1.18;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
+}
+
+.sentence-node strong,
+.nonfinite-node strong {
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 1.08;
 }
 
 .simple-node {
   grid-area: simple;
-  background: #fff3d8;
-  border-left: 10px solid #ff9f0a;
-  color: #5f3900;
-  font-size: clamp(30px, 4vw, 48px);
+  color: #222;
+  background: #ffa51f;
 }
 
 .complex-node {
   grid-area: complex;
-  background: #fff3d8;
-  border-left: 10px solid #ff9f0a;
-  color: #5f3900;
-  font-size: clamp(22px, 3vw, 34px);
+  color: #222;
+  background: #ffa51f;
+  align-self: end;
 }
 
 .nonfinite-node {
   grid-area: nonfinite;
-  background: #f2efff;
-  border-left: 10px solid #7c3aed;
-  color: #4c1d95;
-  font-size: clamp(26px, 4vw, 42px);
+  color: #222;
+  background: #8c82ff;
+  align-self: end;
 }
 
-.arrow {
+.conjunction-arrow {
+  grid-area: turn;
   display: grid;
   place-items: center;
-  width: 48px;
-  height: 48px;
   justify-self: center;
-  border-radius: 50%;
-  color: #31516f;
-  background: #fff;
-  border: 1px solid #dbe4ef;
-  box-shadow: 0 10px 22px rgba(20, 34, 54, 0.08);
-  font-size: 28px;
+  align-self: end;
+  min-height: 112px;
+  color: #2d174d;
+  font-size: 18px;
   font-weight: 900;
   line-height: 1;
+  transform: rotate(35deg);
+  z-index: 1;
 }
 
-.arrow-main { grid-area: main; }
-.arrow-down { grid-area: down; color: #b175ff; transform: rotate(8deg); }
-.arrow-back { grid-area: back; }
+.conjunction-arrow::before {
+  content: "➜";
+  display: block;
+  color: #b175ff;
+  font-size: 68px;
+  line-height: 0.8;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.function-map::before {
+  content: "↕";
+  grid-area: down;
+  align-self: center;
+  justify-self: end;
+  color: #050505;
+  font-size: 62px;
+  font-weight: 900;
+  line-height: 1;
+  transform: rotate(-35deg);
+}
+
+.function-map::after {
+  content: "↔";
+  grid-area: back;
+  align-self: center;
+  justify-self: center;
+  color: #050505;
+  font-size: 62px;
+  font-weight: 900;
+  line-height: 1;
+  transform: rotate(-25deg);
+}
 
 .component-stack,
 .parts-grid,
@@ -619,22 +648,27 @@ mark {
     grid-template-columns: 1fr;
     grid-template-areas:
       "stack"
-      "note"
-      "main"
+      "arrow"
       "simple"
-      "down"
+      "turn"
       "nonfinite"
-      "back"
       "complex";
     min-height: 0;
   }
 
-  .modifier-note::after {
+  .modifier-arrow::after,
+  .function-map::before,
+  .function-map::after,
+  .conjunction-arrow::before {
     display: none;
   }
 
-  .arrow {
-    min-height: 34px;
-    font-size: 34px;
+  .modifier-arrow {
+    border-radius: 8px;
+    min-height: 56px;
+  }
+  .conjunction-arrow {
+    min-height: 32px;
+    transform: none;
   }
 }
