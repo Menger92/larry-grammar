@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Larry 语法体系</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark">L</span>
+      <div>
+        <h1>Larry 语法体系</h1>
+        <p>查询、对比、持续完善</p>
+      </div>
+    </div>
+    <label class="search-label" for="search">搜索知识点</label>
+    <input id="search" type="search" placeholder="介词、定语从句、SVOC、冠词...">
+    <nav id="nav" aria-label="章节目录"></nav>
+  </aside>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Grammar System</p>
+        <h2>用功能颜色理解英语句子结构</h2>
+        <p>本项目以 Markdown 作为源文件，HTML 作为查询页，Word/Excel 作为导出版本。后续新增内容时，优先补充 <code>source/</code>。</p>
+      </div>
+      <div class="legend" aria-label="颜色规则">
+        <strong class="legend-title">项目颜色规则：新增内容必须按此标注</strong>
+        <span><b class="dot noun-dot"></b><strong class="tag noun">红色</strong>名词性成分</span>
+        <span><b class="dot adj-dot"></b><strong class="tag adj">黄色</strong>形容词性成分</span>
+        <span><b class="dot adv-dot"></b><strong class="tag adv">绿色</strong>副词性成分</span>
+        <span><b class="dot nonfinite-dot"></b><strong class="tag nonfinite">紫色</strong>非谓语 / 不定式</span>
+      </div>
+    </section>
+
+    <section class="visual-maps" aria-label="重绘的课程图示">
+      <article class="map-card function-map-card">
+        <h3>成分功能图</h3>
+        <div class="function-map">
+          <div class="function-stack">
+            <div class="function-block noun-panel">
+              <strong>名词性成分</strong>
+              <span>名词、代词、数词、名词短语、名词性从句</span>
+            </div>
+            <div class="function-block adj-panel">
+              <strong>形容词性成分</strong>
+              <span>形容词、形容词性从句、不定式、分词、介词短语</span>
+            </div>
+            <div class="function-block adv-panel">
+              <strong>副词性成分</strong>
+              <span>副词、副词性从句、不定式、介词短语</span>
+            </div>
+          </div>
+
+          <div class="modifier-note">
+            <strong>修饰关系</strong>
+            <span>形容词性修饰名词</span>
+            <span>副词性修饰动词、形容词、其他副词或整句</span>
+          </div>
+
+          <div class="sentence-node simple-node">简单句</div>
+          <div class="arrow arrow-main" aria-hidden="true">→</div>
+          <div class="arrow arrow-down" aria-hidden="true">↘</div>
+          <div class="nonfinite-node">非谓语动词</div>
+          <div class="arrow arrow-back" aria-hidden="true">↔</div>
+          <div class="sentence-node complex-node">复杂的<br>从句结构</div>
+        </div>
+      </article>
+
+      <article class="map-card">
+        <h3>课程主线</h3>
+        <ol class="course-map">
+          <li><b>1</b><span>换一种方式理解词性</span></li>
+          <li><b>2</b><span>介词 + 名词性成分 = 介词短语</span></li>
+          <li><b>3</b><span>理解简单句，你就理解了一切</span></li>
+          <li><b>4</b><span>从句 = 连词 + 简单句</span></li>
+          <li><b>5</b><span>非谓语动词和从句是一回事</span></li>
+          <li><b>6</b><span>语法分析实践</span></li>
+        </ol>
+      </article>
+
+      <article class="map-card">
+        <h3>词性归类图</h3>
+        <div class="pos-grid">
+          <span class="pos-item pos-noun"><b>N.</b> 名词</span>
+          <span class="pos-item pos-neutral"><b>V.</b> 动词</span>
+          <span class="pos-item pos-adj"><b>Adj.</b> 形容词</span>
+          <span class="pos-item pos-adv"><b>Adv.</b> 副词</span>
+          <span class="pos-item pos-noun"><b>Pron.</b> 代词</span>
+          <span class="pos-item prep"><b>Prep.</b> 介词</span>
+          <span class="pos-item pos-neutral"><b>Conj.</b> 连词</span>
+          <span class="pos-item pos-neutral"><b>Interj.</b> 感叹词</span>
+          <span class="pos-item pos-adj"><b>Art.</b> 冠词</span>
+          <span class="pos-item pos-noun pos-adj-split"><b>Num.</b> 数词</span>
+          <span class="pos-item pos-adj"><b>Det.</b> 限定词</span>
+        </div>
+        <p>按截图中的英文缩写重绘；颜色表示该词性最常进入的功能归类。</p>
+      </article>
+    </section>
+
+    <section id="content" class="content"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
