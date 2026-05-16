@@ -139,36 +139,6 @@ const sections = [
         </tbody>
       </table>
     `
-  },
-  {
-    id: "github-workflow",
-    title: "GitHub 双电脑维护",
-    meta: "用文字动作记忆：开工先同步，收工就上传。",
-    html: `
-      <p>两台电脑维护同一个项目时，不需要先记命令。只要记住一句话：<strong>开工先同步，收工就上传。</strong></p>
-      <h4 class="table-title">双电脑维护动作表</h4>
-      <table>
-        <thead><tr><th>什么时候</th><th>文字动作</th><th>含义</th></tr></thead>
-        <tbody>
-          <tr><td>开始编辑前</td><td>同步最新版</td><td>先把 GitHub 上另一台电脑改过的内容下载到当前电脑。</td></tr>
-          <tr><td>编辑过程中</td><td>正常修改文件</td><td>像平时一样修改 Markdown、网页、Word 或资料文件。</td></tr>
-          <tr><td>编辑完成后</td><td>暂存修改</td><td>告诉 Git：这些改动准备保存到本次记录里。</td></tr>
-          <tr><td>编辑完成后</td><td>提交修改</td><td>给这次修改起一个名字，形成一个可回退的版本。</td></tr>
-          <tr><td>编辑完成后</td><td>推送修改</td><td>把这次版本上传到 GitHub，另一台电脑才能同步到。</td></tr>
-        </tbody>
-      </table>
-      <h4 class="table-title">两台电脑轮流使用口诀</h4>
-      <table>
-        <thead><tr><th>场景</th><th>该做什么</th></tr></thead>
-        <tbody>
-          <tr><td>A 电脑改完</td><td>暂存修改 → 提交修改 → 推送修改</td></tr>
-          <tr><td>B 电脑开始改前</td><td>同步最新版</td></tr>
-          <tr><td>B 电脑改完</td><td>暂存修改 → 提交修改 → 推送修改</td></tr>
-          <tr><td>A 电脑下次继续前</td><td>同步最新版</td></tr>
-        </tbody>
-      </table>
-      <p>尽量不要让两台电脑同时修改同一个文件。尤其是 <code>web/app.js</code>、<code>source/preposition.md</code> 这类常改文件，最好一台电脑上传后，另一台电脑先同步再继续。</p>
-    `
   }
 ];
 
