@@ -110,6 +110,18 @@
 
 介词本身通常不能独立表达完整意思，它需要带宾语形成介词短语。真正发挥功能的是整个介词短语。
 
+核心公式：
+
+```text
+介词 + 名词性成分 = 介词短语
+```
+
+三步判断：
+
+1. 看后面有没有名词性成分。
+2. 有，就是介词用法，和后面的名词性成分构成介词短语。
+3. 没有，通常不要硬判为介词，要检查它是否在作形容词或副词。
+
 介词短语常见两种功能：
 
 - 形容词功能：修饰名词，相当于定语。
@@ -120,6 +132,9 @@
 - the key to the door：to the door 修饰 key，是形容词功能。
 - He lives in Beijing.：in Beijing 修饰 lives，是副词功能。
 - I am interested in grammar.：in grammar 补足 interested 的含义。
+- It depends on what they do.：on 后接 what they do，是介词短语。
+- The car stopped and then drove on.：on 后面没有名词性成分，修饰 drove，作副词。
+- The TV is on.：on 后面没有名词性成分，表示 TV 的状态，作形容词。
 
 学习重点：
 
@@ -178,6 +193,16 @@ captain、interesting、white 都补充说明宾语。
 - 补语回答“主语/宾语是什么、怎么样、变成什么”。
 - 有些动词天然需要补语，否则句义不完整。
 - 宾补结构常常可以理解成隐藏的主谓关系：him captain 近似 he is captain。
+- 主语补语容易和副词状语混淆。形容词作主语补语时说明主语状态，副词作状语时修饰动作方式；语法形式可能都成立，但语义不同。
+
+对比例子：
+
+| 想表达的关系 | 推荐表达 | 容易混淆的表达 | 区别 |
+| --- | --- | --- | --- |
+| 说明主语状态 | He is walking around naked. | He is walking around nakedly. | naked 说明 He 的状态，可理解为 [He is naked]；nakedly 修饰 walking around 的方式。 |
+| 说明主语状态 | Larry stood there silent. | Larry stood there silently. | silent 说明 Larry 的状态；silently 修饰 stood。 |
+| 说明主语状态 | Do not drive tired. | Do not drive tiredly. | tired 说明省略主语 you 的状态；tiredly 修饰 drive。 |
+| 说明结果状态 | Everything will come right. | Everything will come rightly. | right 说明 Everything 最终处于正确/顺利的状态；rightly 修饰 come，语义通常不自然。 |
 
 ### 06. 2.2 简单句的构成 + 2.3 语法分析实践
 
@@ -185,11 +210,18 @@ captain、interesting、white 都补充说明宾语。
 
 常见结构：
 
-- S + V：The baby cried.
-- S + V + O：She likes music.
-- S + V + C：He is tired.
-- S + V + IO + DO：She gave me a book.
-- S + V + O + C：We consider him reliable.
+- SV：主语 + 不及物谓语动词。It happens.
+- SVP：主语 + 系动词 + 表语。Sally is beautiful. 表语就是主语补语，常是名词性或形容词性成分。
+- SVO：主语 + 及物谓语动词 + 宾语。Cats love fish.
+- SVOO：主语 + 谓语动词 + 间接宾语 + 直接宾语。He gave me a gift.
+- SVOC：主语 + 谓语动词 + 宾语 + 宾语补语。I find the movie interesting.
+
+SVOO 和 SVOC 的区分很重要：
+
+| 结构 | 判断方法 | 代表例句 | 改写 / 检验 |
+| --- | --- | --- | --- |
+| SVOO 主谓双宾 | 谓语后面是“人 + 物”；直接宾语通常是物，间接宾语通常是人。 | I gave him a book.<br>Sally bought me a gift. | I gave a book to him.<br>Sally bought a gift for me. |
+| SVOC 主谓宾补 | 宾语后面的成分补充说明宾语；宾语和宾补之间能形成 [A is B] 的关系。 | I find the movie interesting. | 可理解为 [the movie is interesting]，所以 interesting 是宾语补语，不是第二个宾语。 |
 
 分析步骤：
 
@@ -198,6 +230,13 @@ captain、interesting、white 都补充说明宾语。
 3. 根据动词类型判断是否有宾语、表语、补语。
 4. 把定语、状语、插入成分剥离出来。
 5. 还原中心结构，再理解修饰信息。
+
+长句分析案例：
+
+| 原句主干 | 剥离重点 |
+| --- | --- |
+| the weary traveler trudged on | Despite the relentless downpour 是介词短语作状语；with raindrops cascading...、his clothes soaked...、providing solace... 是非谓语 / 独立主格结构作状语；determined to reach... 是主语补语；where warmth and shelter awaited him 是非限制性定语从句，修饰 destination。 |
+| a sense of tranquility enveloped the meadow | As the sun began its descent 是副词性从句；casting...、creating... 是非谓语结构作状语；while an orchestra... orchestrated... 是副词性从句；that transported... 是定语从句，修饰 ambiance。 |
 
 学习重点：
 
@@ -895,4 +934,3 @@ the：
 8. 虚拟语气表达非现实、假设、愿望、建议或心理距离。
 9. 冠词是名词系统的指称标记，先看可数性，再看是否特指。
 10. 分析任何句子，都从谓语和主干开始。
-

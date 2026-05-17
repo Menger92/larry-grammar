@@ -23,15 +23,39 @@ const sections = [
     title: "介词与介词短语",
     meta: "对应视频：BV17u4y1k76A《1.3 介词其实很简单》",
     html: `
-      <p>介词通常不能单独完成句子功能，必须带上后面的 <span class="noun">名词性成分</span> 构成介词短语。反过来，如果后面没有名词性成分，这个词可能不是介词用法，而是在作形容词或副词。</p>
-      <div class="formula"><span class="neutral">介词</span> + <span class="noun">名词性成分</span> = <span class="adj">介词短语</span> / <span class="adv">介词短语</span></div>
-      <h4 class="table-title">介词用法判断表</h4>
+      <div class="review-card">
+        <strong>本章核心</strong>
+        <div class="formula"><span class="neutral">介词</span> + <span class="noun">名词性成分</span> = <span class="adj">介词短语</span> / <span class="adv">介词短语</span></div>
+        <p>介词通常不能单独完成介词用法，必须带上后面的 <span class="noun">名词性成分</span> 构成介词短语。没有名词性成分时，它可能不是介词用法，而是在作 <span class="adj">形容词</span> 或 <span class="adv">副词</span>。</p>
+        <ul class="compact-list">
+          <li>先看后面有没有 <span class="noun">名词性成分</span>。</li>
+          <li>有：按 <span class="neutral">介词</span> 处理，整体形成介词短语。</li>
+          <li>没有：通常改按 <span class="adj">形容词</span> 或 <span class="adv">副词</span> 判断。</li>
+        </ul>
+      </div>
+      <h4 class="table-title">三步判断法</h4>
+      <ol class="steps-list">
+        <li><b>看后面</b><span>后面有没有 <span class="noun">名词性成分</span>？</span></li>
+        <li><b>有名词性成分</b><span>它就是介词用法，和后面的成分一起构成介词短语。</span></li>
+        <li><b>没有名词性成分</b><span>不要硬判为介词，优先检查它是否在作 <span class="adv">副词</span> 或 <span class="adj">形容词</span>。</span></li>
+      </ol>
+      <h4 class="table-title">三步判断法示例：on</h4>
       <table>
-        <thead><tr><th>判断点</th><th>代表例句</th><th>分析</th></tr></thead>
+        <thead><tr><th>判断步骤</th><th>判断结果</th><th>例句</th><th>分析</th></tr></thead>
         <tbody>
-          <tr><td>后面有名词性成分：作介词</td><td>The puma is <span class="neutral">up</span> <span class="noun">a tree</span>.<br>It depends <span class="neutral">on</span> <span class="noun">what they do</span>.</td><td>up 后接 <span class="noun">a tree</span>；on 后接 <span class="noun">what they do</span>。有名词性成分，就构成介词短语。</td></tr>
-          <tr><td>后面没有名词性成分：作副词</td><td>He looked <span class="adv">up</span>.<br>The car stopped and then drove <span class="adv">on</span>.</td><td>up / on 后面没有名词性成分，直接修饰动作，作 <span class="adv">副词</span>。</td></tr>
-          <tr><td>后面没有名词性成分：作形容词</td><td>Prices are <span class="adj">up</span>.<br>The TV is <span class="adj">on</span>.</td><td>up / on 后面没有名词性成分，表示状态，作 <span class="adj">形容词</span>。</td></tr>
+          <tr><td>后面有 <span class="noun">名词性成分</span></td><td>介词短语</td><td>It depends <span class="neutral">on</span> <span class="noun">what they do</span>.</td><td>on 后接 <span class="noun">what they do</span>，构成介词短语。</td></tr>
+          <tr><td>后面没有名词性成分，修饰动作</td><td><span class="adv">副词</span></td><td>The car stopped and then drove <span class="adv">on</span>.</td><td>on 后面没有名词性成分，修饰 drove。</td></tr>
+          <tr><td>后面没有名词性成分，表示状态</td><td><span class="adj">形容词</span></td><td>The TV is <span class="adj">on</span>.</td><td>on 后面没有名词性成分，表示 TV 的状态。</td></tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">介词短语句法功能表</h4>
+      <table>
+        <thead><tr><th>功能</th><th>本质</th><th>常见位置</th><th>代表例句</th><th>分析</th></tr></thead>
+        <tbody>
+          <tr><td><span class="adj">形容词性</span></td><td>修饰 <span class="noun">名词</span></td><td>通常放在名词后，作后置定语</td><td>The <span class="noun">book</span> <span class="adj">on the shelf</span> is great.</td><td><span class="adj">on the shelf</span> 后置修饰 <span class="noun">book</span>。</td></tr>
+          <tr><td><span class="adv">副词性</span></td><td>修饰动词、形容词、其他副词</td><td>位置较灵活，多作状语或补足说明</td><td>We <span class="neutral">went</span> to a movie <span class="adv">after dinner</span>.</td><td><span class="adv">after dinner</span> 修饰 went，说明动作时间。</td></tr>
+          <tr><td><span class="adv">副词性</span></td><td>补足形容词对象</td><td>跟在形容词后</td><td>I am <span class="adj">ready</span> <span class="adv">for dinner</span>.</td><td><span class="adv">for dinner</span> 补足 ready 的对象。</td></tr>
+          <tr><td><span class="adv">副词性</span></td><td>限定其他副词</td><td>跟在副词后</td><td>We got there <span class="adv">late</span> <span class="adv">in the evening</span>.</td><td><span class="adv">in the evening</span> 修饰 late，限定时间范围。</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">介词后接成分例句表</h4>
@@ -44,16 +68,6 @@ const sections = [
           <tr><td><span class="noun">名词性从句</span></td><td>She's not certain <span class="adv">about <span class="noun">whether she'll go to the party or not</span></span>.</td><td>about 后接 <span class="noun">whether...</span> 名词性从句。</td></tr>
           <tr><td><span class="noun">名词短语</span></td><td>The scientists are studying the effects of climate change <span class="adj">on the ecosystem</span>.</td><td>on 后接 <span class="noun">the ecosystem</span>，介词短语修饰 effects。</td></tr>
           <tr><td><span class="noun">嵌套名词性从句的名词短语</span></td><td>I'm worried <span class="adv">about <span class="noun">the fact that I haven't heard from him in a while</span></span>.</td><td>about 后接 <span class="noun">the fact that...</span>，名词短语内部嵌套名词性从句。</td></tr>
-        </tbody>
-      </table>
-      <h4 class="table-title">介词短语句法功能表</h4>
-      <table>
-        <thead><tr><th>类型</th><th>代表例句</th><th>分析</th></tr></thead>
-        <tbody>
-          <tr><td>形容词属性</td><td>The <span class="noun">book</span> <span class="adj">on the shelf</span> is great.</td><td><span class="adj">形容词属性的介词短语</span>一般用作后置定语，用来修饰 <span class="noun">名词</span>；本句中 <span class="adj">on the shelf</span> 后置修饰 <span class="noun">book</span>。</td></tr>
-          <tr><td>副词属性：修饰动词</td><td>We <span class="neutral">went</span> to a movie <span class="adv">after dinner</span>.</td><td><span class="adv">after dinner</span> 修饰 went，说明动作时间。</td></tr>
-          <tr><td>副词属性：修饰形容词</td><td>I am <span class="adj">ready</span> <span class="adv">for dinner</span>.</td><td><span class="adv">for dinner</span> 补足 ready 的对象。</td></tr>
-          <tr><td>副词属性：修饰其他副词</td><td>We got there <span class="adv">late</span> <span class="adv">in the evening</span>.</td><td><span class="adv">in the evening</span> 修饰 late，限定时间范围。</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">介词形式归纳表</h4>
@@ -93,18 +107,72 @@ const sections = [
           <tr><td>宾语补语</td><td>She painted <span class="noun">the room</span> <span class="adj">blue</span>.</td><td><span class="noun">the room</span> 和 <span class="adj">blue</span> 可理解为 [the room was blue]，所以 blue 补充说明 room。</td></tr>
           <tr><td>宾语补语</td><td>We consider <span class="noun">him</span> <span class="noun">a fool</span>.</td><td><span class="noun">him</span> 和 <span class="noun">a fool</span> 可理解为 [he is a fool]，所以 a fool 补充说明 him。</td></tr>
           <tr><td>主语补语</td><td><span class="noun">He</span> is <span class="adj">tired</span>.</td><td><span class="noun">He</span> 和 <span class="adj">tired</span> 构成 [He is tired]，tired 是传统说法里的表语，也就是主语补语。</td></tr>
-          <tr><td>主语补语</td><td><span class="noun">He</span> is walking around <span class="adj">naked</span>.</td><td><span class="adj">naked</span> 补充说明主语 He 的状态，可理解为 [He is naked]。</td></tr>
+          <tr><td>主语补语</td><td><span class="noun">He</span> is walking around <span class="adj">naked</span>.</td><td><span class="adj">naked</span> 补充说明主语 He 的状态，可理解为 [He is naked]。主语补语容易和副词状语混淆，判断时要看它是在说明主语状态，还是修饰动作方式。</td></tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">主语补语 vs 副词状语辨析表</h4>
+      <p><strong>语法正确不等于语义正确。</strong> <span class="adj">形容词</span>作主语补语时，说明主语处在什么状态；<span class="adv">副词</span>作状语时，修饰动作如何发生。两种形式可能都符合语法，但表达的意思不同。</p>
+      <table>
+        <thead><tr><th>想表达的关系</th><th>推荐表达</th><th>容易混淆的表达</th><th>区别</th></tr></thead>
+        <tbody>
+          <tr><td>说明主语状态</td><td><span class="noun">He</span> is walking around <span class="adj">naked</span>.</td><td>He is walking around <span class="adv">nakedly</span>.</td><td><span class="adj">naked</span> 说明 He 的状态，可理解为 [He is naked]；<span class="adv">nakedly</span> 变成修饰 walking around 的方式，语法形式可成立，但通常不是要表达的意思。</td></tr>
+          <tr><td>说明主语状态</td><td><span class="noun">Larry</span> stood there <span class="adj">silent</span>.</td><td>Larry stood there <span class="adv">silently</span>.</td><td><span class="adj">silent</span> 说明 Larry 的状态，可理解为 [Larry was silent]；<span class="adv">silently</span> 修饰 stood，说明“站”的方式。</td></tr>
+          <tr><td>说明主语状态</td><td>Do not drive <span class="adj">tired</span>.</td><td>Do not drive <span class="adv">tiredly</span>.</td><td><span class="adj">tired</span> 补充说明省略的主语 you，意思是“不要在疲惫状态下开车”；<span class="adv">tiredly</span> 修饰 drive，意思变成“不要疲惫地开”。</td></tr>
+          <tr><td>说明结果状态</td><td><span class="noun">Everything</span> will come <span class="adj">right</span>.</td><td>Everything will come <span class="adv">rightly</span>.</td><td><span class="adj">right</span> 说明 Everything 最终处于正确/顺利的状态；<span class="adv">rightly</span> 修饰 come，语义通常不自然。</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">简单句基本句型表</h4>
       <table>
-        <thead><tr><th>句型</th><th>例句</th><th>分析</th></tr></thead>
+        <thead><tr><th>句型</th><th>结构</th><th>例句</th><th>核心判断</th></tr></thead>
         <tbody>
-          <tr><td>SV</td><td>The baby cried.</td><td><span class="noun">The baby</span> 是主语，cried 是谓语。</td></tr>
-          <tr><td>SVO</td><td>She likes music.</td><td><span class="noun">music</span> 是宾语。</td></tr>
-          <tr><td>SVC</td><td><span class="noun">He</span> is <span class="adj">tired</span>.</td><td><span class="adj">tired</span> 是表语，即主语补语，用来补充说明主语状态。</td></tr>
-          <tr><td>SVOO</td><td>She gave me a book.</td><td><span class="noun">me</span> 是间接宾语，<span class="noun">a book</span> 是直接宾语。</td></tr>
-          <tr><td>SVOC</td><td>We made <span class="noun">him</span> <span class="noun">captain</span>.</td><td><span class="noun">captain</span> 补充说明 <span class="noun">him</span> 的身份，属于宾语补语。</td></tr>
+          <tr><td>SV<br><small>主谓</small></td><td><span class="noun">主语</span> + 不及物谓语动词</td><td><span class="noun">It</span> happens.</td><td>谓语动词不直接带宾语，句子主干到谓语动词即可成立。</td></tr>
+          <tr><td>SVP<br><small>主系表</small></td><td><span class="noun">主语</span> + 系动词 + <span class="adj">表语</span></td><td><span class="noun">Sally</span> is <span class="adj">beautiful</span>.</td><td>表语就是主语补语，用来补充说明主语；表语常是 <span class="noun">名词性</span> 或 <span class="adj">形容词性</span> 成分。</td></tr>
+          <tr><td>SVO<br><small>主谓宾</small></td><td><span class="noun">主语</span> + 及物谓语动词 + <span class="noun">宾语</span></td><td><span class="noun">Cats</span> love <span class="noun">fish</span>.</td><td>及物动词需要宾语承接动作，fish 是 love 的对象。</td></tr>
+          <tr><td>SVOO<br><small>主谓双宾</small></td><td><span class="noun">主语</span> + 谓语动词 + <span class="noun">间接宾语</span> + <span class="noun">直接宾语</span></td><td><span class="noun">He</span> gave <span class="noun">me</span> <span class="noun">a gift</span>.</td><td>间接宾语通常是人，直接宾语通常是物；常可改写为介词 to / for 结构。</td></tr>
+          <tr><td>SVOC<br><small>主谓宾补</small></td><td><span class="noun">主语</span> + 谓语动词 + <span class="noun">宾语</span> + 补语</td><td><span class="noun">I</span> find <span class="noun">the movie</span> <span class="adj">interesting</span>.</td><td><span class="adj">interesting</span> 补充说明 <span class="noun">the movie</span>，可理解为 [the movie is interesting]。</td></tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">SVOO 和 SVOC 区分表</h4>
+      <p>SVOO 和 SVOC 的区分很重要：前者是两个宾语，后者是宾语后面跟一个补充说明宾语的成分。</p>
+      <table>
+        <thead><tr><th>结构</th><th>判断方法</th><th>代表例句</th><th>改写 / 检验</th></tr></thead>
+        <tbody>
+          <tr><td>SVOO<br><small>主谓双宾</small></td><td>谓语后面是“人 + 物”；直接宾语通常是物，间接宾语通常是人。</td><td>I gave <span class="noun">him</span> <span class="noun">a book</span>.<br>Sally bought <span class="noun">me</span> <span class="noun">a gift</span>.</td><td>I gave <span class="noun">a book</span> to <span class="noun">him</span>.<br>Sally bought <span class="noun">a gift</span> for <span class="noun">me</span>.</td></tr>
+          <tr><td>SVOC<br><small>主谓宾补</small></td><td>宾语后面的成分补充说明宾语；宾语和宾补之间能形成 [A is B] 的关系。</td><td>I find <span class="noun">the movie</span> <span class="adj">interesting</span>.</td><td>可理解为 [the movie is interesting]，所以 interesting 是宾语补语，不是第二个宾语。</td></tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">句子成分分析案例</h4>
+      <p>分析长句时，先找 <span class="noun">主语</span> 和谓语动词，确定简单句主干，再把 <span class="adv">状语</span>、<span class="adj">定语</span>、<span class="nonfinite">非谓语结构</span> 一层层剥离出来。</p>
+      <table>
+        <thead><tr><th>案例</th><th>主干</th><th>成分剥离</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Despite the relentless downpour, with raindrops cascading from the darkened sky, the weary traveler trudged on, his clothes soaked and his spirits dampened, determined to reach his destination before nightfall, where warmth and shelter awaited him, providing solace from the tempestuous elements that assailed him along the treacherous path.</td>
+            <td><span class="noun">the weary traveler</span> <span class="neutral">trudged on</span></td>
+            <td>
+              <ul class="compact-list">
+                <li><span class="adv">Despite the relentless downpour</span>：介词短语作状语。</li>
+                <li><span class="adv">with raindrops <span class="nonfinite">cascading from the darkened sky</span></span>：with 复合结构，整体作状语。</li>
+                <li><span class="adv">his clothes <span class="nonfinite">soaked</span> and his spirits <span class="nonfinite">dampened</span></span>：独立主格 / 非谓语结构，补充背景状态。</li>
+                <li><span class="adj">determined to reach his destination before nightfall</span>：主语补语，说明 traveler 的状态，可理解为 [the traveler was determined]。</li>
+                <li><span class="adj">where warmth and shelter awaited him</span>：非限制性定语从句，修饰 destination。</li>
+                <li><span class="adv"><span class="nonfinite">providing solace</span> from the tempestuous elements</span>：非谓语结构作状语；that assailed him along the treacherous path 是定语从句，修饰 elements。</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>As the sun began its descent, casting a golden hue across the horizon, a sense of tranquility enveloped the meadow, while an orchestra of chirping birds, buzzing insects, and rustling leaves orchestrated a symphony of nature, creating a serene ambiance that transported the weary soul to a realm of blissful respite.</td>
+            <td><span class="noun">a sense of tranquility</span> <span class="neutral">enveloped</span> <span class="noun">the meadow</span></td>
+            <td>
+              <ul class="compact-list">
+                <li><span class="adv">As the sun began its descent</span>：副词性从句作状语。</li>
+                <li><span class="adv"><span class="nonfinite">casting a golden hue</span> across the horizon</span>：非谓语结构作状语。</li>
+                <li><span class="adv">while an orchestra of chirping birds, buzzing insects, and rustling leaves orchestrated a symphony of nature</span>：副词性从句作状语。</li>
+                <li><span class="adv"><span class="nonfinite">creating a serene ambiance</span></span>：非谓语结构作状语。</li>
+                <li><span class="adj">that transported the weary soul to a realm of blissful respite</span>：定语从句，修饰 ambiance。</li>
+              </ul>
+            </td>
+          </tr>
         </tbody>
       </table>
     `

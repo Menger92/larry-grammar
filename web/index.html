@@ -40,55 +40,81 @@
       <article class="map-card function-map-card">
         <h3>成分功能图</h3>
         <div class="function-map">
-          <div class="function-stack">
-            <div class="function-block noun-panel">
+          <div class="map-title">
+            <strong>句子装配台</strong>
+            <span>先找谓语动词，再看主谓宾定状补；修饰关系和复杂化入口放在同一张图里。</span>
+          </div>
+
+          <div class="materials-label">材料区</div>
+          <div class="simple-label">简单句主干</div>
+          <div class="complex-label">复杂化</div>
+
+          <div class="material-stack">
+            <div class="material-card noun-card">
               <b>名词性成分</b>
-              <span>名词、名词性从句、不定式、动名词</span>
+              <span>名词 / 名词性从句 / 不定式 / 动名词</span>
+              <em>进入：主语、宾语、补语</em>
             </div>
-            <div class="function-block adj-panel">
+            <div class="material-card adj-card">
               <b>形容词性成分</b>
-              <span>形容词、形容词性从句、不定式、分词、介词短语</span>
+              <span>形容词 / 形容词性从句 / 不定式 / 分词 / 介词短语</span>
+              <em>修饰名词；可作定语、补语</em>
             </div>
-            <div class="function-block adv-panel">
+            <div class="material-card adv-card">
               <b>副词性成分</b>
-              <span>副词、副词性从句、不定式、介词短语</span>
+              <span>副词 / 副词性从句 / 不定式 / 介词短语</span>
+              <em>修饰动词、形容词、其他副词；多作状语</em>
             </div>
           </div>
 
-          <div class="modifier-arrow">
-            <b>修饰</b>
-            <span>①形容词修饰名词</span>
-            <span>②副词修饰形容词、动词、其他副词</span>
+          <div class="simple-workbench">
+            <div>
+              <b>简单句装配台</b>
+              <span>核心动作：先找到谓语动词</span>
+            </div>
+            <div class="sentence-slots" aria-label="主谓宾定状补">
+              <span class="slot noun-slot">主</span>
+              <span class="slot predicate-slot">谓<small>中心</small></span>
+              <span class="slot noun-slot">宾</span>
+              <span class="slot adj-slot">定</span>
+              <span class="slot adv-slot">状</span>
+              <span class="slot comp-slot">补</span>
+            </div>
+            <div class="judge-line">
+              <b>判断顺序</b>
+              <span>谓语动词 → 连接对象 → 补充说明 → 修饰扩展</span>
+            </div>
+            <div class="relation-line">
+              <b>修饰关系</b>
+              <span><i class="adj-chip">形容词性</i> 修饰 <i class="noun-chip">名词</i>，常进入定语、补语。</span>
+              <span><i class="adv-chip">副词性</i> 修饰动词、形容词、其他副词，常进入状语。</span>
+            </div>
           </div>
 
-          <div class="sentence-node simple-node">
-            <strong>简单句</strong>
+          <div class="clause-link">
+            <span>连词</span>
           </div>
 
-          <div class="conjunction-arrow">连词</div>
-
-          <div class="nonfinite-node">
-            <strong>非谓语动词</strong>
+          <div class="clause-builder">
+            <b>从句生成器</b>
+            <span>复杂结构不是另起炉灶</span>
+            <strong>连词 + 简单句</strong>
+            <em>= 从句结构</em>
           </div>
-          <div class="sentence-node complex-node">
-            <strong>复杂的<br>从句结构</strong>
+
+          <div class="nonfinite-transformer">
+            <b>非谓语 / 不定式转换器</b>
+            <span>可承担<span class="noun-inline">名词性</span>、<span class="adj-inline">形容词性</span>、<span class="adv-inline">副词性</span>功能；也可以和从句互相转换理解。</span>
+          </div>
+
+          <div class="reading-action">
+            <b>阅读动作</b>
+            <span>删掉定语、状语，主干通常仍成立。</span>
           </div>
         </div>
       </article>
 
-      <article class="map-card">
-        <h3>课程主线</h3>
-        <ol class="course-map">
-          <li><b>1</b><span>换一种方式理解词性</span></li>
-          <li><b>2</b><span>介词 + 名词性成分 = 介词短语</span></li>
-          <li><b>3</b><span>理解简单句，你就理解了一切</span></li>
-          <li><b>4</b><span>从句 = 连词 + 简单句</span></li>
-          <li><b>5</b><span>非谓语动词和从句是一回事</span></li>
-          <li><b>6</b><span>语法分析实践</span></li>
-        </ol>
-      </article>
-
-      <article class="map-card">
+      <article class="map-card pos-map-card">
         <h3>词性归类图</h3>
         <div class="pos-grid">
           <span class="pos-item pos-noun"><b>N.</b> 名词</span>
