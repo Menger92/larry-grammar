@@ -6,7 +6,7 @@
 
 | 视频 | 笔记文件 |
 | --- | --- |
-| 4.1 不定式 | `assets/04-01_不定式_笔记01.jpg` 至 `assets/04-01_不定式_笔记06.jpg` |
+| 4.1 不定式 | `assets/04-01_不定式_笔记01.jpg` 至 `assets/04-01_不定式_笔记05.jpg` |
 | 4.2 动名词 | `assets/04-02_动名词_笔记01.jpg` 至 `assets/04-02_动名词_笔记06.jpg` |
 | 4.3 分词 | `assets/04-03_分词_笔记01.jpg` 至 `assets/04-03_分词_笔记10.jpg` |
 | 4.4 从句和非谓语动词的转换 | `assets/04-04_非谓语与从句转换_笔记01.jpg` 至 `assets/04-04_非谓语与从句转换_笔记10.jpg` |
@@ -42,10 +42,10 @@
 
 | 形式 | 核心感觉 | 常见功能 | 代表例句 |
 | --- | --- | --- | --- |
-| to do | 目的、将来、倾向、具体动作 | 名词性、形容词性、副词性、补语 | 待补充截图例句 |
-| doing 动名词 | 动作名词化、习惯、经验、已知事实 | 名词性 | 待补充截图例句 |
-| doing 现在分词 | 主动、进行 | 形容词性、副词性、补语 | 待补充截图例句 |
-| done 过去分词 | 被动、完成 | 形容词性、副词性、补语 | 待补充截图例句 |
+| to do | 目的、将来、倾向、具体动作 | 名词性、形容词性、副词性、补语 | I need a pen to write with. |
+| doing 动名词 | 动作名词化、习惯、经验、已知事实 | 名词性 | Reading is to the mind what exercise is to the body. |
+| doing 现在分词 | 主动、进行 | 形容词性、副词性、补语 | a sleeping baby |
+| done 过去分词 | 被动、完成 | 形容词性、副词性、补语 | The book written by Larry is useful. |
 
 ## 非谓语判断流程
 
@@ -71,8 +71,8 @@
 | 宾语 | Sally desires to be promoted. | to be promoted 作 desires 的宾语，表示想要发生的动作。 |
 | 表语 / 主语补语 | Our plan is to finish the work in two weeks. | to finish...说明 plan 的具体内容。 |
 | 定语 | The question to be discussed is important. | to be discussed 修饰 question，带有“将要被讨论”的感觉。 |
-| 状语 | 待补充截图例句 | to do 可以说明目的、结果或原因等。 |
-| 宾语补语 | 待补充截图例句 | to do 可以补充说明宾语要做的动作。 |
+| 状语 | Sally will be proud to win the competition. | to do 可以说明目的、结果或原因等。 |
+| 宾语补语 | I expect him to come. | to do 可以补充说明宾语要做的动作。 |
 
 ### 4.1.2 不定式的形式变化
 
@@ -87,12 +87,12 @@
 
 | 结构 | 记忆点 | 代表例句 |
 | --- | --- | --- |
-| want / hope / plan / decide + to do | 表示意愿、计划、决定。 | 待补充截图例句 |
-| ask / tell / want / allow + sb + to do | 宾语后接不定式作宾补。 | 待补充截图例句 |
-| be + adj + to do | to do 补足形容词的含义。 | 待补充截图例句 |
-| too...to do | 太……而不能…… | 待补充截图例句 |
-| enough to do | 足够……可以…… | 待补充截图例句 |
-| in order to / so as to do | 明确表示目的。 | 待补充截图例句 |
+| want / hope / plan / decide + to do | 表示意愿、计划、决定。 | I want to go to America. |
+| ask / tell / want / allow + sb + to do | 宾语后接不定式作宾补。 | I expect him to come. |
+| be + adj + to do | to do 补足形容词的含义。 | I'm sorry to keep you waiting. |
+| too...to do | 太……而不能…… | He is too young to go to school. |
+| enough to do | 足够……可以…… | He is smart enough to learn English well. |
+| in order to / so as to do | 明确表示目的。 | To improve my English, I keep practicing. |
 
 ### 4.1.3 使役、感官与省略 to
 
@@ -101,8 +101,8 @@
 | 结构 | 常见动词 | 判断点 |
 | --- | --- | --- |
 | 使役动词 + 宾语 + do | make, let, have | 强调让宾语执行动作。 |
-| 感官动词 + 宾语 + do | see, watch, hear, notice | 强调整个动作过程。 |
-| 感官动词 + 宾语 + doing | see, watch, hear, notice | 强调动作正在发生。 |
+| 感官动词 + 宾语 + do | see, watch, hear, notice | 强调整个动作过程，如 `I saw Michael climb up the tree.` |
+| 感官动词 + 宾语 + doing | see, watch, hear, notice | 强调动作正在发生，如 `I saw Michael climbing up the tree.` |
 
 记忆点：省略 `to` 不代表它变成谓语；它仍然要服务于前面的谓语动词。
 
@@ -116,19 +116,19 @@
 
 | 功能 | 代表例句 | 分析 |
 | --- | --- | --- |
-| 主语 | 待补充截图例句 | doing 整体可以作主语。 |
-| 宾语 | 待补充截图例句 | doing 可以作动词宾语。 |
-| 表语 / 主语补语 | 待补充截图例句 | doing 可以说明主语的具体内容。 |
-| 介词宾语 | 待补充截图例句 | 介词后接动词时通常用 doing。 |
+| 主语 | Reading is to the mind what exercise is to the body. | doing 整体可以作主语。 |
+| 宾语 | I enjoy reading. | doing 可以作动词宾语。 |
+| 表语 / 主语补语 | Her hobby is reading. | doing 可以说明主语的具体内容。 |
+| 介词宾语 | She has no expectation of winning. | 介词后接动词时通常用 doing。 |
 
 ### 动名词常见搭配表
 
 | 结构 | 常见词 | 记忆点 | 代表例句 |
 | --- | --- | --- | --- |
-| 动词 + doing | enjoy, finish, avoid, mind, practice, consider | 强调动作这件事或已有经验。 | 待补充截图例句 |
-| 介词 + doing | at, in, on, for, about, without | 介词后接动词时通常用 doing。 | 待补充截图例句 |
-| be used to doing | used to 后是介词 to | 习惯于做某事。 | 待补充截图例句 |
-| look forward to doing | to 是介词 | 期待做某事。 | 待补充截图例句 |
+| 动词 + doing | enjoy, finish, avoid, mind, practice, consider | 强调动作这件事或已有经验。 | I enjoy reading. |
+| 介词 + doing | at, in, on, for, about, without | 介词后接动词时通常用 doing。 | She has no expectation of winning. |
+| be used to doing | used to 后是介词 to | 习惯于做某事。 | I am used to reading in the morning. |
+| look forward to doing | to 是介词 | 期待做某事。 | I look forward to seeing you. |
 
 ### 4.2.2 介词 to 和不定式 to 的区分
 
@@ -160,11 +160,11 @@
 
 | 形式 | 核心关系 | 常见功能 | 代表例句 |
 | --- | --- | --- | --- |
-| doing 现在分词 | 主动、进行 | 定语 | 待补充截图例句 |
-| doing 现在分词 | 主动、进行 | 状语 | 待补充截图例句 |
-| done 过去分词 | 被动、完成 | 定语 | 待补充截图例句 |
-| done 过去分词 | 被动、完成 | 状语 | 待补充截图例句 |
-| doing / done | 补语 | 宾补 / 主补 | 待补充截图例句 |
+| doing 现在分词 | 主动、进行 | 定语 | a sleeping baby |
+| doing 现在分词 | 主动、进行 | 状语 | Having seen the photo, he went out. |
+| done 过去分词 | 被动、完成 | 定语 | The book written by Larry is useful. |
+| done 过去分词 | 被动、完成 | 状语 | Asked to give a speech, he felt nervous. |
+| doing / done | 补语 | 宾补 / 主补 | I heard Sally singing. |
 
 ### doing vs done 判断表
 
@@ -172,7 +172,7 @@
 | --- | --- | --- |
 | 与被修饰名词关系 | 主动 | 被动 |
 | 动作状态 | 进行或同时发生 | 完成或被动 |
-| 例句 | 待补充截图例句 | 待补充截图例句 |
+| 例句 | a sleeping baby | The book written by Larry is useful. |
 | 还原 | 可还原为主动关系从句 | 可还原为被动关系从句 |
 
 ### 4.3.2 分词作定语、状语、补语
@@ -199,10 +199,10 @@
 
 | 原从句关系 | 常见连接词 | 压缩示例 | 说明 |
 | --- | --- | --- | --- |
-| 时间 | when, while, after, before | 待补充截图例句 | 主语一致时可压缩。 |
-| 条件 | if, unless | 待补充截图例句 | 连接词可保留，提示条件关系。 |
-| 让步 | although, though | 待补充截图例句 | 可保留连接词，提示让步关系。 |
-| 原因 | because, since, as | 待补充截图例句 | 连接词常省略，靠语义判断原因。 |
+| 时间 | when, while, after, before | When reading, do not talk. | 主语一致时可压缩。 |
+| 条件 | if, unless | If given more time, I can finish it. | 连接词可保留，提示条件关系。 |
+| 让步 | although, though | Although tired, he kept working. | 可保留连接词，提示让步关系。 |
+| 原因 | because, since, as | Being ill, he stayed home. | 连接词常省略，靠语义判断原因。 |
 
 ## 4.4 从句和非谓语的转换
 
@@ -219,9 +219,9 @@
 
 | 原从句 | 非谓语压缩 | 功能 | 分析 |
 | --- | --- | --- | --- |
-| 待补充截图例句 | 待补充截图例句 | 形容词性 / 定语 | 从句压缩后仍修饰名词。 |
-| 待补充截图例句 | 待补充截图例句 | 副词性 / 状语 | 从句压缩后仍说明时间、原因、条件或伴随等。 |
-| 待补充截图例句 | 待补充截图例句 | 名词性 | 动作名词化后可以进入名词位置。 |
+| a dog that is running | a running dog | 形容词性 / 定语 | 从句压缩后仍修饰名词。 |
+| When he was asked to give a speech, he felt nervous. | Asked to give a speech, he felt nervous. | 副词性 / 状语 | 从句压缩后仍说明时间、原因、条件或伴随等。 |
+| That he failed disappointed us. | His failing disappointed us. | 名词性 | 动作名词化后可以进入名词位置。 |
 
 ### 从句压缩非谓语的条件
 
@@ -247,10 +247,10 @@
 
 | 看到的结构 | 优先判断 | 典型功能 | 例句 |
 | --- | --- | --- | --- |
-| to do | 目的、将来、倾向、具体动作 | 名词性、形容词性、副词性、补语 | 待补充截图例句 |
-| doing 作名词 | 动作这件事 | 名词性 | 待补充截图例句 |
-| doing 修饰名词或动作 | 主动、进行 | 形容词性或副词性 | 待补充截图例句 |
-| done | 被动、完成 | 形容词性或副词性 | 待补充截图例句 |
+| to do | 目的、将来、倾向、具体动作 | 名词性、形容词性、副词性、补语 | I need a pen to write with. |
+| doing 作名词 | 动作这件事 | 名词性 | Reading is to the mind what exercise is to the body. |
+| doing 修饰名词或动作 | 主动、进行 | 形容词性或副词性 | a sleeping baby |
+| done | 被动、完成 | 形容词性或副词性 | The book written by Larry is useful. |
 
 ## 一页记忆卡
 

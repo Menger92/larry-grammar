@@ -147,7 +147,7 @@
 - 宾语：动作影响或指向的对象。
 - 定语：修饰名词。
 - 状语：修饰动词、形容词、副词或句子。
-- 补语：补足主语或宾语的状态、身份、结果等信息。
+- 补语：补足主语或宾语的状态、身份、结果等信息；不是装饰，删掉后句义常常会崩塌。
 
 句子分析应先抓主干，再看附加成分；具体分析案例只保留后续截图补充的例句。
 
@@ -161,14 +161,28 @@
 
 补语的作用是把某个成分的状态、身份、性质、结果说完整。英语里最需要重视的是主语补语和宾语补语。
 
-主语补语常出现在系表结构中；宾语补语常出现在“动词 + 宾语 + 宾补”结构中。具体例句只保留截图来源。
+Larry 的底层逻辑是：补语没了，句子意思彻底崩塌；状语没了，主干通常仍成立，只是少了动作背景或方式。
+
+核心检验技术：把“被补充说明的对象 + 后面的成分”改写成 [A is B]。如果语义自洽，后面的成分就是补语；如果语义崩塌，它通常是在修饰动作本身，也就是状语。
+
+主语补语常出现在系表结构中；宾语补语常出现在“动词 + 宾语 + 宾补”结构中。
 
 学习重点：
 
 - 补语回答“主语/宾语是什么、怎么样、变成什么”。
 - 有些动词天然需要补语，否则句义不完整。
-- 宾补结构常常可以理解成隐藏的主谓关系：him captain 近似 he is captain。
+- 宾补结构常常可以理解成隐藏的主谓关系：the room dirty 近似 The room is dirty。
 - 主语补语容易和副词状语混淆。形容词作主语补语时说明主语状态，副词作状语时修饰动作方式；语法形式可能都成立，但语义不同。
+
+补语 / 状语检验：
+
+| 判断对象 | 代表例句 | 小分句验证 | 结论 |
+| --- | --- | --- | --- |
+| 宾语补语 | I found the room dirty. | The room is dirty. | dirty 补充说明宾语 the room 的状态。 |
+| 宾语补语 | You make me happy. | I am happy. | happy 补充说明宾语 me 的状态。 |
+| 状语 | I washed the clothes warmly. | The clothes are warmly. | 语义不成立；warmly 修饰 washed 这个动作。 |
+| 主语补语 | He died a hero. | He was a hero. | a hero 补充说明主语 He 在 died 时的身份。 |
+| 主语补语 | He came back safe. | He was safe. | safe 补充说明主语 He 回来时的状态。 |
 
 对比例子：
 
@@ -186,17 +200,17 @@
 常见结构：
 
 - SV：主语 + 不及物谓语动词。It happens.
-- SVP：主语 + 系动词 + 表语。Sally is beautiful. 表语就是主语补语，常是名词性或形容词性成分。
+- SVP：主语 + 系动词 + 表语。Sally is beautiful. 表语就是主语补语，删掉后句义不完整。
 - SVO：主语 + 及物谓语动词 + 宾语。Cats love fish.
 - SVOO：主语 + 谓语动词 + 间接宾语 + 直接宾语。He gave me a gift.
-- SVOC：主语 + 谓语动词 + 宾语 + 宾语补语。I find the movie interesting.
+- SVOC：主语 + 谓语动词 + 宾语 + 宾语补语。I found the room dirty.
 
 SVOO 和 SVOC 的区分很重要：
 
 | 结构 | 判断方法 | 代表例句 | 改写 / 检验 |
 | --- | --- | --- | --- |
 | SVOO 主谓双宾 | 谓语后面是“人 + 物”；直接宾语通常是物，间接宾语通常是人。 | I gave him a book.<br>Sally bought me a gift. | I gave a book to him.<br>Sally bought a gift for me. |
-| SVOC 主谓宾补 | 宾语后面的成分补充说明宾语；宾语和宾补之间能形成 [A is B] 的关系。 | I find the movie interesting. | 可理解为 [the movie is interesting]，所以 interesting 是宾语补语，不是第二个宾语。 |
+| SVOC 主谓宾补 | 宾语后面的成分补充说明宾语；宾语和宾补之间能形成 [A is B] 的关系。 | I found the room dirty. | 可理解为 [the room is dirty]，所以 dirty 是宾语补语，不是第二个宾语，也不是状语。 |
 
 分析步骤：
 
@@ -395,9 +409,9 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 
 ### 13. 3.7 副词性从句
 
-副词性从句也就是状语从句，修饰主句动作或主句整体，表达时间、原因、条件、让步、目的、结果、方式、比较等关系。
+副词性从句也就是状语从句，本质是一个包含完整主谓结构的句子，被连接词降级后，作为副词性成分修饰主句动作、主句状态或主句整体。学习副词性从句的重点，是先知道它修饰的对象是什么，再判断时间、原因、条件、让步、目的、结果、方式、比较等关系。
 
-笔记来源：`assets/03-07_副词性从句_笔记01.jpg` 至 `assets/03-07_副词性从句_笔记03.jpg`。详细整理见 `source/adverbial-clause.md`。
+笔记来源：`assets/03-07_副词性从句_笔记01.jpg` 至 `assets/03-07_副词性从句_笔记04.jpg`。详细整理见 `source/adverbial-clause.md`。
 
 常见类型：
 
@@ -411,13 +425,62 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 - 地点：where, wherever。
 - 方式：as, as if, as though。
 
+本质对照：
+
+| 普通副词性成分 | 扩展为副词性从句 | 修饰对象 |
+| --- | --- | --- |
+| Sally runs really fast. | Sally runs as if she is flying. | 修饰 runs 的方式。 |
+| Michael never gets up early on Sundays. | Michael never gets up early when he doesn't go to school on Sundays. | 修饰 gets up early 的时间条件。 |
+| Sally was happy in Beijing. | Sally was happy when she could play with her friends in Beijing. | 修饰 happy / was happy 的时间背景。 |
+
+学习方法：
+
+1. 明确副词性从句的本质：作为副词性成分修饰主句中的元素。
+2. 先找它修饰的对象，再记各种关系词。
+3. 真正重要的是体力活：在真实句子里反复判断“这个从句到底修饰谁”。
+
 学习重点：
 
-- 状语从句的本质是说明主句发生的背景或逻辑关系。
-- 先判断逻辑关系，再选择连词。
+- 状语从句的本质是“完整句子 + 副词性功能”，说明主句发生的背景或逻辑关系。
+- 先找修饰对象，再判断逻辑关系，最后选择连词。
+- 时间状语从句要区分时间点、时间段、同步变化和持续边界：when 最宽，while 强调时间段，as 强调随着/同步，until 强调保持某状态直到某点。
 - 状语从句位置灵活，放句首时常用逗号隔开。
 - `where` 不一定是定语从句；前面没有地点名词时，常按地点状语从句判断。
 - `not until`、`as soon as`、`the moment/minute/second`、`no sooner...than` 这类结构要放进时间关系里统一记忆。
+
+时间状语从句速查：
+
+| 连接词 | 核心感觉 | 例句 |
+| --- | --- | --- |
+| when | 时间点或时间段 | I worked hard when I was at school. / He became surprised when he saw me. |
+| while | 时间段 | Sally telephoned me while I was doing my homework. |
+| as | 随着 / 正当 / 一边……一边 | You grow smarter as you grow older. |
+| before | 在……之前 | I handed in my homework before I was asked to. |
+| after | 在……之后 | I arrived after he had left. |
+| since | 自从……以来 | Sally and I haven't met each other since I became a middle school student. |
+| until | 一直持续到…… | He was waiting for me at my home until I came back. |
+| not until | 直到……才…… | Not until it stopped raining did we go out. |
+
+其他状语从句速查：
+
+| 类型 | 核心判断 | 代表例句 |
+| --- | --- | --- |
+| 地点 | where 从句直接修饰动作或主句，前面没有地点先行词。 | I plant trees where there is a lot of sunshine. |
+| 原因 | because 直接说明原因；since/as 常给背景；for 常补充解释。 | We didn't go to the party because it was raining. |
+| 目的 | 从句说明主句动作想达到的目标，常有 could / would / might。 | I spoke slowly so that the students could understand me better. |
+| 结果 | so/such 表示程度，that 后说明造成的结果。 | Sally runs so fast that nobody can beat her. |
+| 条件 | if/unless/as long as 等给出主句成立条件。 | Unless you work hard, you won't succeed. |
+| 让步 | 从句成立，主句仍然成立。 | Although he tried hard, he failed. |
+| 比较 | 比较程度、相似或差异，常有省略。 | This work is not as difficult as you think. |
+
+易混提醒：
+
+- `because of` 后接名词性成分，不是从句。
+- `if` 表示条件；`in case` 更像“以防万一”。
+- `so that + could/would/might` 多表示目的；`so that + 实际结果` 多表示结果。
+- `so + 形容词/副词 + that`；`such + 名词短语 + that`。
+- `although/though` 和主句之间不要再加 but。
+- 让步 `as` 常倒装：`Difficult as it is...`。
 
 ### 第四章非谓语快速索引
 
@@ -431,11 +494,11 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 
 | 形式 | 课程位置 | 核心感觉 | 常见功能 | 代表例句 |
 | --- | --- | --- | --- | --- |
-| to do | 4.1 | 目的、将来、倾向、具体动作 | 名词性、形容词性、副词性、补语 | 待补充截图例句 |
-| doing 动名词 | 4.2 | 动作名词化、习惯、经验、已知事实 | 名词性 | 待补充截图例句 |
-| doing 现在分词 | 4.3 | 主动、进行 | 形容词性、副词性、补语 | 待补充截图例句 |
-| done 过去分词 | 4.3 | 被动、完成 | 形容词性、副词性、补语 | 待补充截图例句 |
-| 从句 ↔ 非谓语 | 4.4 | 完整表达 ↔ 简洁压缩 | 三类功能都可转换理解 | 待补充截图例句 |
+| to do | 4.1 | 目的、将来、倾向、具体动作 | 名词性、形容词性、副词性、补语 | I need a pen to write with. |
+| doing 动名词 | 4.2 | 动作名词化、习惯、经验、已知事实 | 名词性 | Reading is to the mind what exercise is to the body. |
+| doing 现在分词 | 4.3 | 主动、进行 | 形容词性、副词性、补语 | a sleeping baby |
+| done 过去分词 | 4.3 | 被动、完成 | 形容词性、副词性、补语 | The book written by Larry is useful. |
+| 从句 ↔ 非谓语 | 4.4 | 完整表达 ↔ 简洁压缩 | 三类功能都可转换理解 | a dog that is running → a running dog |
 
 非谓语判断顺序：
 
@@ -449,7 +512,7 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 
 不定式 to do 是非谓语的一种。它保留动词含义，但不作谓语，常表达目的、将来、倾向、一次性动作或具体动作。
 
-笔记来源：`assets/04-01_不定式_笔记01.jpg` 至 `assets/04-01_不定式_笔记06.jpg`。详细整理见 `source/nonfinite.md`。
+笔记来源：`assets/04-01_不定式_笔记01.jpg` 至 `assets/04-01_不定式_笔记05.jpg`。详细整理见 `source/nonfinite.md`。
 
 常见功能：
 
@@ -457,8 +520,8 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 - 宾语：Sally desires to be promoted.
 - 表语：Our plan is to finish the work in two weeks.
 - 定语：The question to be discussed is important.
-- 状语：待补充截图例句。
-- 宾补：待补充截图例句。
+- 状语：Sally will be proud to win the competition.
+- 宾补：I expect him to come.
 
 不定式常带有“未发生、将要、目的、意愿”的感觉。
 
@@ -475,7 +538,7 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 
 笔记来源：`assets/04-02_动名词_笔记01.jpg` 至 `assets/04-02_动名词_笔记06.jpg`。详细整理见 `source/nonfinite.md`。
 
-例子：待补充截图例句。
+例子：Reading is to the mind what exercise is to the body.
 
 动名词常表达习惯性、一般性、已知的动作或经验。
 
@@ -494,7 +557,7 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 
 笔记来源：`assets/04-03_分词_笔记01.jpg` 至 `assets/04-03_分词_笔记10.jpg`。详细整理见 `source/nonfinite.md`。
 
-现在分词通常表达主动、进行；过去分词通常表达被动、完成；分词也可作状语。具体例句待补充截图来源。
+现在分词通常表达主动、进行；过去分词通常表达被动、完成；分词也可作状语。截图例句包括 `a sleeping baby`、`I heard Sally singing.`、`The book written by Larry is useful.`。
 
 学习重点：
 
@@ -509,7 +572,7 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 
 笔记来源：`assets/04-04_非谓语与从句转换_笔记01.jpg` 至 `assets/04-04_非谓语与从句转换_笔记10.jpg`。详细整理见 `source/nonfinite.md`。
 
-定语从句压缩、状语从句压缩、名词性内容压缩的具体例句待补充截图来源。
+定语从句压缩、状语从句压缩、名词性内容压缩可以分别理解为：`a dog that is running → a running dog`，`When he was asked to give a speech, he felt nervous. → Asked to give a speech, he felt nervous.`，`That he failed disappointed us. → His failing disappointed us.`。
 
 学习重点：
 

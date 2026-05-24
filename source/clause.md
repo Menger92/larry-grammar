@@ -4,10 +4,10 @@
 
 | HTML 导航 | 源文件 | 内容范围 |
 | --- | --- | --- |
-| 从句总览 | `source/clause-overview.md` | 本章核心、疑问词词性、连接方式、从句类型总览。 |
-| 名词性从句 | `source/noun-clause.md` | 主语从句、宾语从句、表语从句、同位语从句、形式主语/宾语、that 省略、whether / if。 |
-| 形容词性从句 | `source/adjective-clause.md` | 定语从句、关系代词、关系副词、whose / which、限制性与非限制性。 |
-| 副词性从句 | `source/adverbial-clause.md` | 状语从句连接词和时间、原因、条件、让步、目的等逻辑关系。 |
+| 从句总览 | `source/clause-overview.md` | 从句理解入口、疑问词词性、连接方式、从句类型总览。 |
+| 名词性从句 | `source/noun-clause.md` | 名词性从句理解入口、主语从句、宾语从句、表语从句、同位语从句、形式主语/宾语、that 省略、whether / if。 |
+| 形容词性从句 | `source/adjective-clause.md` | 定语从句理解入口、关系代词、关系副词、whose / which、限制性与非限制性。 |
+| 副词性从句 | `source/adverbial-clause.md` | 状语从句理解入口、状语从句类型和时间、原因、条件、让步、目的等逻辑关系。 |
 | 从句易混对比 | `source/clause-confusions.md` | 易混点、复习总表、长句识别顺序、一页记忆卡。 |
 
-维护原则：Markdown 的拆分颗粒度与 HTML 展示入口保持一致；网页展示需要同步时，再更新 `web/app.js` 的对应模块。
+维护原则：Markdown 的拆分颗粒度与 HTML 展示入口保持一致；每个大专题先放“理解入口 / 总领描述”，后面的主表只放具体类型或具体规则。网页展示需要同步时，再更新 `web/app.js` 的对应模块。

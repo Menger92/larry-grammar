@@ -4,7 +4,7 @@
 
 ## 核心结论
 
-简单句先找谓语动词，再抓主谓宾主干；定语和状语多为可删除的修饰扩展，补语用来补充说明主语或宾语。
+简单句先找谓语动词，再抓主谓宾主干；定语和状语多为可删除的修饰扩展，补语用来补充说明主语或宾语。补语是基本句型里的深水区：它没了，句子意思往往彻底崩塌；状语多半只是说明动作怎么发生。
 
 记忆顺序：主谓宾定状补。
 
@@ -17,24 +17,27 @@
 | 宾语 | Object | 谓语动词的执行对象。 |
 | 定语 | Attributive | 修饰名词性成分的成分；对句子主干来说通常可以删除。 |
 | 状语 | Adverbial | 修饰动词、形容词、其他副词的成分；对句子主干来说通常可以删除。 |
-| 补语 | Complement | 补充说明的额外成分；要么是名词属性，要么是形容词属性。 |
+| 补语 | Complement | 补足主语或宾语的状态、身份、结果；常是名词属性或形容词属性，删掉会让句义不完整。 |
 
 ## 补语判断表
 
-补语统一判断方式：把“被补充说明的对象 + 补语”改写成 [A is B]。如果说得通，B 就是在补充说明 A。
+补语（Complement）是传统教学的深水区。Larry 的底层逻辑是：补语不是装饰，补语没了，句子意思会彻底崩塌。
+
+核心检验技术：把“被补充说明的对象 + 后面的成分”改写成 [A is B]。如果语义自洽，后面的成分就是补语；如果语义崩塌，它通常不是补语，而是在修饰动作本身，也就是状语。
 
 传统“主系表”里的表语，在这里归入主语补语。
 
-| 补语类型 | 代表例句 | 分析 |
-| --- | --- | --- |
-| 宾语补语 | She painted the room blue. | the room 和 blue 可理解为 [the room was blue]，所以 blue 补充说明 room。 |
-| 宾语补语 | We consider him a fool. | him 和 a fool 可理解为 [he is a fool]，所以 a fool 补充说明 him。 |
-| 主语补语 | He is tired. | He 和 tired 构成 [He is tired]，tired 是传统说法里的表语，也就是主语补语。 |
-| 主语补语 | He is walking around naked. | naked 补充说明主语 He 的状态，可理解为 [He is naked]。主语补语容易和副词状语混淆，判断时要看它是在说明主语状态，还是修饰动作方式。 |
+| 判断对象 | 代表例句 | 小分句验证 | 结论 |
+| --- | --- | --- | --- |
+| 宾语补语 | I found the room dirty. | The room is dirty. | dirty 补充说明宾语 the room 的状态。 |
+| 宾语补语 | You make me happy. | I am happy. | happy 补充说明宾语 me 的状态。 |
+| 状语 | I washed the clothes warmly. | The clothes are warmly. | 语义不成立；warmly 修饰 washed 这个动作。 |
+| 主语补语 | He died a hero. | He was a hero. | a hero 补充说明主语 He 在 died 时的身份。 |
+| 主语补语 | He came back safe. | He was safe. | safe 补充说明主语 He 回来时的状态。 |
 
 ## 主语补语 vs 副词状语辨析表
 
-语法正确不等于语义正确。形容词作主语补语时，说明主语处在什么状态；副词作状语时，修饰动作如何发生。两种形式可能都符合语法，但表达的意思不同。
+语法正确不等于语义正确。形容词作主语补语时，说明主语处在什么状态；副词作状语时，修饰动作如何发生。两种形式可能都符合语法，但表达的意思不同。不要只看形容词或副词形式，先看它能不能和主语/宾语构成语义自洽的小分句。
 
 | 想表达的关系 | 推荐表达 | 容易混淆的表达 | 区别 |
 | --- | --- | --- | --- |
@@ -48,10 +51,10 @@
 | 句型 | 结构 | 例句 | 分析 |
 | --- | --- | --- | --- |
 | 主谓 SV | 主语 + 不及物谓语动词 | It happens. | 谓语动词不直接带宾语，句子主干到谓语动词即可成立。 |
-| 主系表 SVP | 主语 + 系动词 + 表语 | Sally is beautiful. | 表语就是主语补语，用来补充说明主语；表语常是名词性或形容词性成分。 |
+| 主系表 SVP | 主语 + 系动词 + 表语 | Sally is beautiful. | 表语就是主语补语，用来补充说明主语；删掉后句义不完整。 |
 | 主谓宾 SVO | 主语 + 及物谓语动词 + 宾语 | Cats love fish. | 及物动词需要宾语承接动作，fish 是 love 的对象。 |
 | 主谓双宾 SVOO | 主语 + 谓语动词 + 间接宾语 + 直接宾语 | He gave me a gift. | 间接宾语通常是人，直接宾语通常是物；常可改写为介词 to / for 结构。 |
-| 主谓宾补 SVOC | 主语 + 谓语动词 + 宾语 + 宾语补语 | I find the movie interesting. | interesting 补充说明 the movie，可理解为 [the movie is interesting]。 |
+| 主谓宾补 SVOC | 主语 + 谓语动词 + 宾语 + 宾语补语 | I found the room dirty. | dirty 补充说明 the room，可理解为 [the room is dirty]。 |
 
 ## SVOO 和 SVOC 区分表
 
@@ -60,7 +63,7 @@ SVOO 和 SVOC 的区分很重要：前者是两个宾语，后者是宾语后面
 | 结构 | 判断方法 | 代表例句 | 改写 / 检验 |
 | --- | --- | --- | --- |
 | SVOO 主谓双宾 | 谓语后面是“人 + 物”；直接宾语通常是物，间接宾语通常是人。 | I gave him a book.<br>Sally bought me a gift. | I gave a book to him.<br>Sally bought a gift for me. |
-| SVOC 主谓宾补 | 宾语后面的成分补充说明宾语；宾语和宾补之间能形成 [A is B] 的关系。 | I find the movie interesting. | 可理解为 [the movie is interesting]，所以 interesting 是宾语补语，不是第二个宾语。 |
+| SVOC 主谓宾补 | 宾语后面的成分补充说明宾语；宾语和宾补之间能形成 [A is B] 的关系。 | I found the room dirty. | 可理解为 [the room is dirty]，所以 dirty 是宾语补语，不是第二个宾语，也不是状语。 |
 
 ## 句子成分分析案例
 
@@ -79,3 +82,4 @@ SVOO 和 SVOC 的区分很重要：前者是两个宾语，后者是宾语后面
 4. 修饰名词的标为形容词性成分。
 5. 修饰动作、形容词、其他副词或整句的标为副词性成分。
 6. 补语看它补充说明谁：说明宾语就是宾语补语，说明主语就是主语补语。
+7. 宾补和状语混淆时，把“宾语 + 后面成分”改写成小分句；能成立就是宾补，不能成立通常就是状语。

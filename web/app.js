@@ -91,7 +91,7 @@ const sections = [
     html: `
       <div class="review-card">
         <strong>本章核心</strong>
-        <p>简单句先找<span class="neutral">谓语动词</span>，再抓<span class="noun">主谓宾</span>主干；<span class="adj">定语</span>和<span class="adv">状语</span>多为可删除的修饰扩展，<span class="neutral">补语</span>用来补充说明主语或宾语。记忆顺序：<strong>主谓宾定状补</strong>。</p>
+        <p>简单句先找<span class="neutral">谓语动词</span>，再抓<span class="noun">主谓宾</span>主干；<span class="adj">定语</span>和<span class="adv">状语</span>多为可删除的修饰扩展，<span class="neutral">补语</span>用来补充说明主语或宾语。补语不是装饰，补语没了，句子意思往往彻底崩塌。记忆顺序：<strong>主谓宾定状补</strong>。</p>
       </div>
       <h4 class="table-title">句子成分定义表</h4>
       <table>
@@ -102,22 +102,23 @@ const sections = [
           <tr><td><span class="noun">宾语</span></td><td>Object</td><td>谓语动词的执行对象。</td></tr>
           <tr><td><span class="adj">定语</span></td><td>Attributive</td><td>修饰名词性成分的成分；对句子主干来说通常可以删除。</td></tr>
           <tr><td><span class="adv">状语</span></td><td>Adverbial</td><td>修饰动词、形容词、其他副词的成分；对句子主干来说通常可以删除。</td></tr>
-          <tr><td><span class="neutral">补语</span></td><td>Complement</td><td>补充说明的额外成分；要么是 <span class="noun">名词属性</span>，要么是 <span class="adj">形容词属性</span>。</td></tr>
+          <tr><td><span class="neutral">补语</span></td><td>Complement</td><td>补足主语或宾语的状态、身份、结果；常是 <span class="noun">名词属性</span> 或 <span class="adj">形容词属性</span>，删掉会让句义不完整。</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">补语判断表</h4>
-      <p>补语统一判断方式：把“被补充说明的对象 + 补语”改写成 <strong>[A is B]</strong>。如果说得通，B 就是在补充说明 A。传统“主系表”里的 <span class="adj">表语</span>，在这里归入 <span class="adj">主语补语</span>。</p>
+      <p><span class="neutral">补语</span>（Complement）是传统教学的深水区。Larry 的底层逻辑是：补语不是装饰，补语没了，句子意思会彻底崩塌。核心检验技术：把“被补充说明的对象 + 后面的成分”改写成 <strong>[A is B]</strong>。如果语义自洽，后面的成分就是补语；如果语义崩塌，它通常是在修饰动作本身，也就是 <span class="adv">状语</span>。传统“主系表”里的 <span class="adj">表语</span>，在这里归入 <span class="adj">主语补语</span>。</p>
       <table>
-        <thead><tr><th>补语类型</th><th>代表例句</th><th>分析</th></tr></thead>
+        <thead><tr><th>判断对象</th><th>代表例句</th><th>小分句验证</th><th>结论</th></tr></thead>
         <tbody>
-          <tr><td>宾语补语</td><td>She painted <span class="noun">the room</span> <span class="adj">blue</span>.</td><td><span class="noun">the room</span> 和 <span class="adj">blue</span> 可理解为 [the room was blue]，所以 blue 补充说明 room。</td></tr>
-          <tr><td>宾语补语</td><td>We consider <span class="noun">him</span> <span class="noun">a fool</span>.</td><td><span class="noun">him</span> 和 <span class="noun">a fool</span> 可理解为 [he is a fool]，所以 a fool 补充说明 him。</td></tr>
-          <tr><td>主语补语</td><td><span class="noun">He</span> is <span class="adj">tired</span>.</td><td><span class="noun">He</span> 和 <span class="adj">tired</span> 构成 [He is tired]，tired 是传统说法里的表语，也就是主语补语。</td></tr>
-          <tr><td>主语补语</td><td><span class="noun">He</span> is walking around <span class="adj">naked</span>.</td><td><span class="adj">naked</span> 补充说明主语 He 的状态，可理解为 [He is naked]。主语补语容易和副词状语混淆，判断时要看它是在说明主语状态，还是修饰动作方式。</td></tr>
+          <tr><td>宾语补语</td><td>I found <span class="noun">the room</span> <span class="adj">dirty</span>.</td><td><span class="noun">The room</span> is <span class="adj">dirty</span>.</td><td><span class="adj">dirty</span> 补充说明宾语 <span class="noun">the room</span> 的状态。</td></tr>
+          <tr><td>宾语补语</td><td>You make <span class="noun">me</span> <span class="adj">happy</span>.</td><td>I am <span class="adj">happy</span>.</td><td><span class="adj">happy</span> 补充说明宾语 <span class="noun">me</span> 的状态。</td></tr>
+          <tr><td>状语</td><td>I washed <span class="noun">the clothes</span> <span class="adv">warmly</span>.</td><td><span class="noun">The clothes</span> are <span class="adv">warmly</span>.</td><td>语义不成立；<span class="adv">warmly</span> 修饰 washed 这个动作。</td></tr>
+          <tr><td>主语补语</td><td><span class="noun">He</span> died <span class="noun">a hero</span>.</td><td>He was <span class="noun">a hero</span>.</td><td><span class="noun">a hero</span> 补充说明主语 He 在 died 时的身份。</td></tr>
+          <tr><td>主语补语</td><td><span class="noun">He</span> came back <span class="adj">safe</span>.</td><td>He was <span class="adj">safe</span>.</td><td><span class="adj">safe</span> 补充说明主语 He 回来时的状态。</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">主语补语 vs 副词状语辨析表</h4>
-      <p><strong>语法正确不等于语义正确。</strong> <span class="adj">形容词</span>作主语补语时，说明主语处在什么状态；<span class="adv">副词</span>作状语时，修饰动作如何发生。两种形式可能都符合语法，但表达的意思不同。</p>
+      <p><strong>语法正确不等于语义正确。</strong> <span class="adj">形容词</span>作主语补语时，说明主语处在什么状态；<span class="adv">副词</span>作状语时，修饰动作如何发生。不要只看形容词或副词形式，先看它能不能和主语/宾语构成语义自洽的小分句。</p>
       <table>
         <thead><tr><th>想表达的关系</th><th>推荐表达</th><th>容易混淆的表达</th><th>区别</th></tr></thead>
         <tbody>
@@ -132,10 +133,10 @@ const sections = [
         <thead><tr><th>句型</th><th>结构</th><th>例句</th><th>核心判断</th></tr></thead>
         <tbody>
           <tr><td>SV<br><small>主谓</small></td><td><span class="noun">主语</span> + 不及物谓语动词</td><td><span class="noun">It</span> happens.</td><td>谓语动词不直接带宾语，句子主干到谓语动词即可成立。</td></tr>
-          <tr><td>SVP<br><small>主系表</small></td><td><span class="noun">主语</span> + 系动词 + <span class="adj">表语</span></td><td><span class="noun">Sally</span> is <span class="adj">beautiful</span>.</td><td>表语就是主语补语，用来补充说明主语；表语常是 <span class="noun">名词性</span> 或 <span class="adj">形容词性</span> 成分。</td></tr>
+          <tr><td>SVP<br><small>主系表</small></td><td><span class="noun">主语</span> + 系动词 + <span class="adj">表语</span></td><td><span class="noun">Sally</span> is <span class="adj">beautiful</span>.</td><td>表语就是主语补语，用来补充说明主语；删掉后句义不完整。</td></tr>
           <tr><td>SVO<br><small>主谓宾</small></td><td><span class="noun">主语</span> + 及物谓语动词 + <span class="noun">宾语</span></td><td><span class="noun">Cats</span> love <span class="noun">fish</span>.</td><td>及物动词需要宾语承接动作，fish 是 love 的对象。</td></tr>
           <tr><td>SVOO<br><small>主谓双宾</small></td><td><span class="noun">主语</span> + 谓语动词 + <span class="noun">间接宾语</span> + <span class="noun">直接宾语</span></td><td><span class="noun">He</span> gave <span class="noun">me</span> <span class="noun">a gift</span>.</td><td>间接宾语通常是人，直接宾语通常是物；常可改写为介词 to / for 结构。</td></tr>
-          <tr><td>SVOC<br><small>主谓宾补</small></td><td><span class="noun">主语</span> + 谓语动词 + <span class="noun">宾语</span> + 补语</td><td><span class="noun">I</span> find <span class="noun">the movie</span> <span class="adj">interesting</span>.</td><td><span class="adj">interesting</span> 补充说明 <span class="noun">the movie</span>，可理解为 [the movie is interesting]。</td></tr>
+          <tr><td>SVOC<br><small>主谓宾补</small></td><td><span class="noun">主语</span> + 谓语动词 + <span class="noun">宾语</span> + 补语</td><td><span class="noun">I</span> found <span class="noun">the room</span> <span class="adj">dirty</span>.</td><td><span class="adj">dirty</span> 补充说明 <span class="noun">the room</span>，可理解为 [the room is dirty]。</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">SVOO 和 SVOC 区分表</h4>
@@ -144,7 +145,7 @@ const sections = [
         <thead><tr><th>结构</th><th>判断方法</th><th>代表例句</th><th>改写 / 检验</th></tr></thead>
         <tbody>
           <tr><td>SVOO<br><small>主谓双宾</small></td><td>谓语后面是“人 + 物”；直接宾语通常是物，间接宾语通常是人。</td><td>I gave <span class="noun">him</span> <span class="noun">a book</span>.<br>Sally bought <span class="noun">me</span> <span class="noun">a gift</span>.</td><td>I gave <span class="noun">a book</span> to <span class="noun">him</span>.<br>Sally bought <span class="noun">a gift</span> for <span class="noun">me</span>.</td></tr>
-          <tr><td>SVOC<br><small>主谓宾补</small></td><td>宾语后面的成分补充说明宾语；宾语和宾补之间能形成 [A is B] 的关系。</td><td>I find <span class="noun">the movie</span> <span class="adj">interesting</span>.</td><td>可理解为 [the movie is interesting]，所以 interesting 是宾语补语，不是第二个宾语。</td></tr>
+          <tr><td>SVOC<br><small>主谓宾补</small></td><td>宾语后面的成分补充说明宾语；宾语和宾补之间能形成 [A is B] 的关系。</td><td>I found <span class="noun">the room</span> <span class="adj">dirty</span>.</td><td>可理解为 [the room is dirty]，所以 dirty 是宾语补语，不是第二个宾语，也不是状语。</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">句子成分分析案例</h4>
@@ -186,10 +187,16 @@ const sections = [
     title: "从句",
     meta: "第三章：从句 = 连接词 + 简单句；3.1 至 3.7",
     html: `
+      <h4 class="table-title">从句理解入口：本质、降级、功能</h4>
       <div class="review-card">
         <strong>本章核心</strong>
         <div class="formula"><span class="neutral">从句</span> = <span class="neutral">连接词</span> + 简单句</div>
         <p>从句不是更高级的句子，而是把一个简单句降级后，放进另一个句子里承担某种功能。先看它整体是 <span class="noun">名词性</span>、<span class="adj">形容词性</span>，还是 <span class="adv">副词性</span>。</p>
+        <ul class="compact-list">
+          <li>从句的本质：完整句子被连接词降级，进入另一个句子当成分。</li>
+          <li>判断从句类型，不是看名字，而是看整个从句在主句中做什么功能。</li>
+          <li>后续各类从句的总领性描述都先放入口小节；类型主表只放具体类型。</li>
+        </ul>
       </div>
       <h4 class="table-title">从句三问法</h4>
       <table>
@@ -227,11 +234,11 @@ const sections = [
       </table>
       <h4 class="table-title">从句类型总览表</h4>
       <table>
-        <thead><tr><th>从句类型</th><th>本质</th><th>代表例句</th><th>判断问题</th></tr></thead>
+        <thead><tr><th>从句类型</th><th>整体功能</th><th>代表例句</th><th>判断问题</th></tr></thead>
         <tbody>
           <tr><td><span class="noun">名词性从句</span></td><td>整个从句当名词用</td><td><span class="noun">What she said about the incident</span> surprised everyone.</td><td>是否占主语、宾语、表语、同位语位置？</td></tr>
           <tr><td><span class="adj">形容词性从句 / 定语从句</span></td><td>整个从句修饰名词</td><td>Sally is a <span class="noun">teacher</span> <span class="adj">who is warm-hearted, hardworking, and quick in learning</span>.</td><td>是否跟在名词后说明这个名词？</td></tr>
-          <tr><td><span class="adv">副词性从句 / 状语从句</span></td><td>整个从句修饰动作、状态或主句</td><td>I was only a little kid <span class="adv">when I met Sally</span>.</td><td>是否说明时间、原因、条件、让步、目的等逻辑关系？</td></tr>
+          <tr><td><span class="adv">副词性从句 / 状语从句</span></td><td>完整句子降级为副词性成分，修饰动作、状态或主句</td><td>I was only a little kid <span class="adv">when I met Sally</span>.</td><td>是否说明时间、原因、条件、让步、目的等逻辑关系？</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">3.2-3.3 名词性从句复习入口</h4>
@@ -241,58 +248,57 @@ const sections = [
         <ul class="compact-list">
           <li>名词性从句 = 用句子代替简单句中的名词短语。</li>
           <li>从句内部仍然要找主谓宾定状补。</li>
+          <li>独立句变从句：先调成陈述语序，再加连接词，最后放进主句的名词位置。</li>
           <li>主页面只保留一个代表例句，多个例句放进“查看例句库”。</li>
         </ul>
+        <table>
+          <thead><tr><th>简单句中的名词位置</th><th>换成从句后的功能</th><th>从句类型</th></tr></thead>
+          <tbody>
+            <tr><td>主语</td><td>整个从句放在主语位置。</td><td>主语从句</td></tr>
+            <tr><td>宾语</td><td>整个从句放在动词或介词后。</td><td>宾语从句</td></tr>
+            <tr><td>表语 / 主语补语</td><td>整个从句放在系动词后，说明主语内容。</td><td>表语从句</td></tr>
+            <tr><td>同位语</td><td>整个从句解释前面抽象名词的内容。</td><td>同位语从句</td></tr>
+          </tbody>
+        </table>
+        <table>
+          <thead><tr><th>独立句类型</th><th>变成从句时的连接词</th><th>代表例句</th></tr></thead>
+          <tbody>
+            <tr><td>陈述句</td><td>that</td><td><span class="noun">That Sally is beautiful</span> is true.</td></tr>
+            <tr><td>一般疑问句</td><td>whether / if</td><td><span class="noun">Whether Sally is beautiful</span> doesn't matter.</td></tr>
+            <tr><td>特殊疑问句</td><td>原来的疑问词</td><td>I don't know <span class="noun">what your name is</span>.</td></tr>
+          </tbody>
+        </table>
+        <details class="example-toggle">
+          <summary>查看本质分析和独立句变从句</summary>
+          <div class="example-library">
+            <figure class="analysis-figure">
+              <a class="analysis-zoom-link" href="#what-she-said-analysis-large" aria-label="放大查看 What she said about the incident 结构分析图">
+                <img src="assets/what-she-said-analysis.svg" alt="What she said about the incident surprised everyone 主从结构分析图">
+                <span>点击放大</span>
+              </a>
+              <figcaption>图示先看主句主谓宾，再进入名词性从句内部看 What 的双重属性。<a href="assets/what-she-said-analysis.svg" target="_blank" rel="noopener">打开原图</a></figcaption>
+            </figure>
+            <div class="image-modal" id="what-she-said-analysis-large">
+              <a class="image-modal-backdrop" href="#" aria-label="关闭大图"></a>
+              <div class="image-modal-panel">
+                <a class="image-modal-close" href="#" aria-label="关闭">×</a>
+                <img src="assets/what-she-said-analysis.svg" alt="What she said about the incident surprised everyone 放大分析图">
+              </div>
+            </div>
+            <p><b>主句结构：</b><span class="noun">What she said about the incident</span> = 主语；surprised = 谓语；<span class="noun">everyone</span> = 宾语。</p>
+            <p><b>从句结构：</b><span class="noun">What</span> = 宾语；<span class="noun">she</span> = 主语；said = 谓语；<span class="adv">about the incident</span> = 状语。还原为：she said what about the incident。</p>
+            <p><b>What 的双重属性：</b><span class="noun">What</span> = 连接词 + <span class="noun">名词性成分</span>。一方面引导整个名词性从句，一方面在从句内部作 said 的宾语。</p>
+            <p>What's your name? → I don't know <span class="noun">what your name is</span>. <small>特殊疑问句进入从句后，用陈述语序。</small></p>
+            <p>Why are you laughing? → I don't know <span class="noun">why you are laughing</span>. <small>why 保留在从句句首。</small></p>
+            <p>Where does Sally live? → I don't know <span class="noun">where Sally lives</span>. <small>去掉 does，谓语回到 lives。</small></p>
+            <p>What happened yesterday? → I don't know <span class="noun">what happened yesterday</span>. <small>what 本身作主语，语序不变。</small></p>
+          </div>
+        </details>
       </div>
-      <h4 class="table-title">3.2-3.3 名词性从句主表：一个规则 + 一个代表例句</h4>
+      <h4 class="table-title">3.2-3.3 名词性从句类型主表：一个类型 + 一个代表例句</h4>
       <table class="study-table">
-        <thead><tr><th>知识点</th><th>核心规则</th><th>代表例句</th><th>例句库</th></tr></thead>
+        <thead><tr><th>从句类型</th><th>核心规则</th><th>代表例句</th><th>例句库</th></tr></thead>
         <tbody>
-          <tr>
-            <td>名词性从句的本质</td>
-            <td><ol class="rule-list"><li>用一个句子替代简单句中的<span class="noun">名词短语</span>。</li><li>整个从句作为<span class="noun">名词性成分</span>进入主句。</li><li>再分析从句内部自己的主谓宾。</li></ol></td>
-            <td><span class="noun">What she said about the incident</span> surprised everyone.</td>
-            <td>
-              <details class="example-toggle">
-                <summary>查看核心分析</summary>
-                <div class="example-library">
-                  <figure class="analysis-figure">
-                    <a class="analysis-zoom-link" href="#what-she-said-analysis-large" aria-label="放大查看 What she said about the incident 结构分析图">
-                      <img src="assets/what-she-said-analysis.svg" alt="What she said about the incident surprised everyone 主从结构分析图">
-                      <span>点击放大</span>
-                    </a>
-                    <figcaption>图示先看主句主谓宾，再进入名词性从句内部看 What 的双重属性。<a href="assets/what-she-said-analysis.svg" target="_blank" rel="noopener">打开原图</a></figcaption>
-                  </figure>
-                  <div class="image-modal" id="what-she-said-analysis-large">
-                    <a class="image-modal-backdrop" href="#" aria-label="关闭大图"></a>
-                    <div class="image-modal-panel">
-                      <a class="image-modal-close" href="#" aria-label="关闭">×</a>
-                      <img src="assets/what-she-said-analysis.svg" alt="What she said about the incident surprised everyone 放大分析图">
-                    </div>
-                  </div>
-                  <p><b>主句结构：</b><span class="noun">What she said about the incident</span> = 主语；surprised = 谓语；<span class="noun">everyone</span> = 宾语。</p>
-                  <p><b>从句结构：</b><span class="noun">What</span> = 宾语；<span class="noun">she</span> = 主语；said = 谓语；<span class="adv">about the incident</span> = 状语。还原为：she said what about the incident。</p>
-                  <p><b>What 的双重属性：</b><span class="noun">What</span> = 连接词 + <span class="noun">名词性成分</span>。一方面引导整个名词性从句，一方面在从句内部作 said 的宾语。</p>
-                </div>
-              </details>
-            </td>
-          </tr>
-          <tr>
-            <td>独立句变从句</td>
-            <td><ol class="rule-list"><li>先把原句调成陈述语序。</li><li>再加连接词。</li><li>最后把连接词放到从句句首。</li></ol></td>
-            <td>I don't know <span class="noun">what your name is</span>.</td>
-            <td>
-              <details class="example-toggle">
-                <summary>查看截图例句</summary>
-                <div class="example-library">
-                  <p>What's your name? → I don't know <span class="noun">what your name is</span>. <small>特殊疑问句进入从句后，用陈述语序。</small></p>
-                  <p>Why are you laughing? → I don't know <span class="noun">why you are laughing</span>. <small>why 保留在从句句首。</small></p>
-                  <p>Where does Sally live? → I don't know <span class="noun">where Sally lives</span>. <small>去掉 does，谓语回到 lives。</small></p>
-                  <p>What happened yesterday? → I don't know <span class="noun">what happened yesterday</span>. <small>what 本身作主语，语序不变。</small></p>
-                </div>
-              </details>
-            </td>
-          </tr>
           <tr>
             <td>主语从句</td>
             <td><ol class="rule-list"><li>整个从句放在主语位置。</li><li>回答“什么事 / 哪件事”作主语。</li><li>先看主句谓语，再确认前面整块是否作主语。</li></ol></td>
@@ -356,6 +362,12 @@ const sections = [
               </details>
             </td>
           </tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">名词性从句规则补充：语序、形式主宾、连接词</h4>
+      <table class="study-table">
+        <thead><tr><th>规则主题</th><th>核心规则</th><th>代表例句</th><th>例句库</th></tr></thead>
+        <tbody>
           <tr>
             <td>疑问词作主语的语序</td>
             <td><ol class="rule-list"><li>特殊疑问句变从句，通常改陈述语序。</li><li>如果疑问词本身作主语，语序不用额外改变。</li><li>判断重点是：疑问词是不是从句主语。</li></ol></td>
@@ -453,30 +465,30 @@ const sections = [
         <strong>本节核心</strong>
         <p><span class="adj">形容词性从句 / 定语从句</span>整体修饰前面的<span class="noun">名词</span>，不要只背关系词列表，重点是搞清楚<span class="neutral">先行词</span>和<span class="neutral">关系词在从句中作什么成分</span>。</p>
         <ul class="compact-list">
+          <li>关系词重复指代前面的先行词，并把简单句降级成修饰名词的从句。</li>
           <li>先掌握简单句五种基本句型，这是分析从句内部的基础。</li>
           <li>学习定语从句，不等于只学习关系词；从句内部的语法分析才是重点。</li>
           <li>主页面只保留一个代表例句，多个例句放进“查看例句库”。</li>
         </ul>
+        <ol class="steps-list">
+          <li><b>找先行词</b><span>先看从句修饰前面的哪个名词。</span></li>
+          <li><b>代回从句</b><span>把先行词放回从句原本缺的位置。</span></li>
+          <li><b>判断成分</b><span>看它在从句里作主语、宾语、定语，还是状语。</span></li>
+          <li><b>选择关系词</b><span>缺名词性成分用 who / which / that；缺状语用 where / when / why。</span></li>
+        </ol>
+        <details class="example-toggle">
+          <summary>查看关系词连接对比</summary>
+          <div class="example-library">
+            <p><b>错误硬拼：</b>Sally is a teacher Sally is warm-hearted, hardworking, and quick in learning.</p>
+            <p><b>并列连接：</b>Sally is an actor, and Sally is warm-hearted, hardworking, and quick in learning.</p>
+            <p><b>定语从句：</b>Sally is a <span class="noun">teacher</span> <span class="adj">who is warm-hearted, hardworking, and quick in learning</span>.<small>who 指代 teacher，并在从句中作主语。</small></p>
+          </div>
+        </details>
       </div>
-      <h4 class="table-title">3.4 定语从句主表：一个规则 + 一个代表例句</h4>
+      <h4 class="table-title">3.4 定语从句关系词类型主表：一个类型 + 一个代表例句</h4>
       <table class="study-table">
-        <thead><tr><th>知识点</th><th>核心规则</th><th>代表例句</th><th>例句库</th></tr></thead>
+        <thead><tr><th>关系词类型</th><th>核心规则</th><th>代表例句</th><th>例句库</th></tr></thead>
         <tbody>
-          <tr>
-            <td>关系词的作用</td>
-            <td><ol class="rule-list"><li>关系词重复指代前面的先行词。</li><li>关系词连接两个有独立主谓结构的简单句。</li><li>分析重点是关系词在从句中作什么成分。</li></ol></td>
-            <td><span class="noun">Sally</span> is a <span class="noun">teacher</span> <span class="adj">who is warm-hearted, hardworking, and quick in learning</span>.</td>
-            <td>
-              <details class="example-toggle">
-                <summary>查看 3 个连接对比</summary>
-                <div class="example-library">
-                  <p><b>错误硬拼：</b>Sally is a teacher Sally is warm-hearted, hardworking, and quick in learning.</p>
-                  <p><b>并列连接：</b>Sally is an actor, and Sally is warm-hearted, hardworking, and quick in learning.</p>
-                  <p><b>定语从句：</b>Sally is a <span class="noun">teacher</span> <span class="adj">who is warm-hearted, hardworking, and quick in learning</span>.</p>
-                </div>
-              </details>
-            </td>
-          </tr>
           <tr>
             <td>主语关系代词</td>
             <td><ol class="rule-list"><li>关系词在从句中作主语。</li><li>指人常用 who。</li><li>指物常用 that / which。</li></ol></td>
@@ -694,25 +706,116 @@ const sections = [
           </tr>
         </tbody>
       </table>
-      <h4 class="table-title">定语从句判断四步</h4>
-      <ol class="steps-list">
-        <li><b>找先行词</b><span>先看从句修饰前面的哪个名词。</span></li>
-        <li><b>代回从句</b><span>把先行词放回从句原本缺的位置。</span></li>
-        <li><b>判断成分</b><span>看它在从句里作主语、宾语、定语，还是状语。</span></li>
-        <li><b>选择关系词</b><span>缺名词性成分用 who / which / that；缺状语用 where / when / why。</span></li>
-      </ol>
-      <h4 class="table-title">3.7 状语从句连接词表</h4>
+      <h4 class="table-title">3.7 副词性从句 / 状语从句复习入口</h4>
+      <div class="review-card adv-review">
+        <strong>本节核心</strong>
+        <p><span class="adv">副词性从句 / 状语从句</span>的本质：一个包含完整主谓结构的句子，被连接词降级后，作为<span class="adv">副词性成分</span>进入主句，对主句动作、状态或整个主句进行修饰。学习重点是先知道它修饰的对象是什么，再看连接词。</p>
+        <ul class="compact-list">
+          <li>副词性从句不是凭连接词硬背出来的，而是从普通副词、副词短语、介词短语扩展出来的。</li>
+          <li>学习顺序：先找修饰对象，再判断时间、原因、条件、让步、目的、结果、比较、方式等逻辑关系。</li>
+          <li>真正重要的是体力活：在真实句子里反复判断“这个从句到底修饰谁”。</li>
+          <li>从句放在句首时通常用逗号隔开；放在句尾时通常不用逗号隔开。</li>
+          <li>类型主表只放状语从句类型，补充规则另放后续小节。</li>
+        </ul>
+      </div>
+      <h4 class="table-title">副词性从句的本质对照</h4>
+      <table>
+        <thead><tr><th>普通副词性成分</th><th>扩展为副词性从句</th><th>修饰对象</th><th>本质判断</th></tr></thead>
+        <tbody>
+          <tr><td>Sally runs <span class="adv">really fast</span>.</td><td>Sally runs <span class="adv">as if she is flying</span>.</td><td>runs</td><td><span class="adv">as if she is flying</span> 带完整主谓结构，整体修饰 runs 的方式。</td></tr>
+          <tr><td>Michael never gets up early <span class="adv">on Sundays</span>.</td><td>Michael never gets up early <span class="adv">when he doesn't go to school on Sundays</span>.</td><td>gets up early</td><td><span class="adv">when...</span> 从句整体说明 gets up early 的时间条件。</td></tr>
+          <tr><td>Sally was happy <span class="adv">in Beijing</span>.</td><td>Sally was happy <span class="adv">when she could play with her friends in Beijing</span>.</td><td>happy / was happy</td><td><span class="adv">when...</span> 从句整体说明 happy 这个状态出现的时间背景。</td></tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">副词性从句修饰对象判断表</h4>
+      <table>
+        <thead><tr><th>修饰对象</th><th>常见问题</th><th>例句</th><th>判断</th></tr></thead>
+        <tbody>
+          <tr><td>谓语动词 / 动作</td><td>动作怎样发生？什么时候发生？为什么发生？</td><td>Sally runs <span class="adv">as if she is flying</span>.</td><td><span class="adv">as if...</span> 修饰 runs，说明跑的方式。</td></tr>
+          <tr><td>谓语动词短语</td><td>动作短语在什么时间、条件下成立？</td><td>Michael never gets up early <span class="adv">when he doesn't go to school on Sundays</span>.</td><td><span class="adv">when...</span> 修饰 gets up early，说明动作习惯发生的时间条件。</td></tr>
+          <tr><td>表语形容词 / 状态</td><td>这个状态在什么背景下成立？</td><td>Sally was happy <span class="adv">when she could play with her friends in Beijing</span>.</td><td><span class="adv">when...</span> 修饰 happy / was happy，说明状态出现的时间背景。</td></tr>
+          <tr><td>整个主句</td><td>整个判断在什么条件、让步、原因下成立？</td><td><span class="adv">If it rains</span>, take an umbrella.</td><td><span class="adv">If...</span> 修饰整个主句，给出主句成立的条件。</td></tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">3.7 状语从句类型主表</h4>
       <table>
         <thead><tr><th>类型</th><th>常见连接词</th><th>代表例句</th><th>记忆问题</th></tr></thead>
         <tbody>
-          <tr><td>时间</td><td>when, while, before, after, until, as soon as</td><td>I was only a little kid <span class="adv">when I met Sally</span>.</td><td>什么时候发生？</td></tr>
-          <tr><td>原因</td><td>because, since, as</td><td>待补充截图例句</td><td>为什么发生？</td></tr>
-          <tr><td>条件</td><td>if, unless, provided that, as long as</td><td>待补充截图例句</td><td>在什么条件下发生？</td></tr>
-          <tr><td>让步</td><td>although, though, even if, even though</td><td>待补充截图例句</td><td>虽然怎样，仍然怎样？</td></tr>
-          <tr><td>目的</td><td>so that, in order that</td><td>待补充截图例句</td><td>为了什么？</td></tr>
-          <tr><td>结果</td><td>so...that, such...that</td><td>待补充截图例句</td><td>结果怎样？</td></tr>
-          <tr><td>比较</td><td>than, as...as</td><td>待补充截图例句</td><td>和谁比？怎么比？</td></tr>
-          <tr><td>方式</td><td>as, as if, as though</td><td>待补充截图例句</td><td>以什么方式？</td></tr>
+          <tr><td>时间</td><td>when, while, before, after, until, as soon as</td><td>I worked hard <span class="adv">when I was at school</span>.</td><td>什么时候发生？</td></tr>
+          <tr><td>原因</td><td>because, since, as</td><td>I ate many bananas <span class="adv">because I was hungry</span>.</td><td>为什么发生？</td></tr>
+          <tr><td>条件</td><td>if, unless, provided that, as long as</td><td>Take an umbrella <span class="adv">if it rains</span>.</td><td>在什么条件下发生？</td></tr>
+          <tr><td>让步</td><td>although, though, even if, even though</td><td>although / though / even if 表达“让一步也成立”。</td><td>虽然怎样，仍然怎样？</td></tr>
+          <tr><td>目的</td><td>so that, in order that</td><td>I spoke slowly <span class="adv">so that the students could understand me better</span>.</td><td>为了什么？</td></tr>
+          <tr><td>结果</td><td>so...that, such...that</td><td>Sally runs <span class="adv">so fast that nobody can beat her</span>.</td><td>结果怎样？</td></tr>
+          <tr><td>比较</td><td>than, as...as</td><td>This work is <span class="adv">not as difficult as you think</span>.</td><td>和谁比？怎么比？</td></tr>
+          <tr><td>方式</td><td>as, as if, as though</td><td>Sally runs <span class="adv">as if she is flying</span>.</td><td>以什么方式？</td></tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">时间状语从句核心判断</h4>
+      <table>
+        <thead><tr><th>连接词</th><th>核心感觉</th><th>代表例句</th><th>判断重点</th></tr></thead>
+        <tbody>
+          <tr><td>when / whenever</td><td>时间点或时间段</td><td>I worked hard <span class="adv">when I was at school</span>.<br>He became surprised <span class="adv">when he saw me</span>.</td><td>when 最宽，可以表示一段时间，也可以表示一个触发点。</td></tr>
+          <tr><td>while</td><td>时间段</td><td>Sally telephoned me <span class="adv">while I was doing my homework</span>.</td><td>while 强调持续背景；不适合 suddenly someone stopped me 这种突然时间点。</td></tr>
+          <tr><td>as</td><td>随着 / 正当 / 一边……一边</td><td>You grow smarter <span class="adv">as you grow older</span>.</td><td>as 强调两个过程同步推进，比 when / while 更适合“随着”。</td></tr>
+          <tr><td>before</td><td>在……之前</td><td>I handed in my homework <span class="adv">before I was asked to</span>.</td><td>主句动作早于从句动作。</td></tr>
+          <tr><td>after</td><td>在……之后</td><td>I arrived <span class="adv">after he had left</span>.</td><td>主句动作晚于从句动作；had left 表示更早。</td></tr>
+          <tr><td>since</td><td>自从……以来</td><td>Sally and I haven't met each other <span class="adv">since I became a middle school student</span>.</td><td>强调从过去时间点延续到现在或某参照点。</td></tr>
+          <tr><td>until</td><td>一直持续到……</td><td>He was waiting for me at my home <span class="adv">until I came back</span>.</td><td>主句保持某种状态，直到从句给出的时间点。</td></tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">when / while / as 易混对比</h4>
+      <table>
+        <thead><tr><th>对比</th><th>自然表达</th><th>不推荐 / 不自然</th><th>判断</th></tr></thead>
+        <tbody>
+          <tr><td>时间段背景</td><td>Sally telephoned me <span class="adv">while I was doing my homework</span>.<br>Sally telephoned me <span class="adv">when I was doing my homework</span>.</td><td></td><td>从句是持续时间段时，while 和 when 都可用。</td></tr>
+          <tr><td>突然时间点</td><td>I was walking on the road <span class="adv">when suddenly someone stopped me</span>.</td><td>I was walking on the road <span class="adv">while suddenly someone stopped me</span>.</td><td>when 可引出突然发生的时间点；while 不适合。</td></tr>
+          <tr><td>同步变化</td><td>You grow smarter <span class="adv">as you grow older</span>.</td><td>You grow smarter <span class="adv">while you grow older</span>.</td><td>as 表示“随着”，两个变化同步推进。</td></tr>
+          <tr><td>社会变化</td><td><span class="adv">As China becomes richer</span>, Chinese people spend more.</td><td><span class="adv">While China becomes richer</span>, Chinese people spend more.</td><td>as 表示趋势同步；while 更像时间段背景或对比。</td></tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">until / not until 判断表</h4>
+      <table>
+        <thead><tr><th>结构</th><th>例句</th><th>判断</th></tr></thead>
+        <tbody>
+          <tr><td>持续性动词肯定式 + until</td><td>He was waiting for me at my home <span class="adv">until I came back</span>.</td><td>waiting 持续到 I came back。</td></tr>
+          <tr><td>短暂性动词否定式 + until</td><td>He didn't leave <span class="adv">until I came back</span>.</td><td>leave 是短暂动作，否定式表示“直到我回来才离开”。</td></tr>
+          <tr><td>Not until 句首倒装</td><td><span class="adv">Not until it stopped raining</span> did we go out.</td><td>Not until 放句首时，主句部分倒装。</td></tr>
+          <tr><td>强调句</td><td>It was not <span class="adv">until it stopped raining</span> that we went out.</td><td>强调“直到雨停”这个时间点。</td></tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">其他状语从句速查</h4>
+      <table>
+        <thead><tr><th>类型</th><th>核心判断</th><th>代表例句</th><th>提醒</th></tr></thead>
+        <tbody>
+          <tr><td>地点</td><td>where 从句直接修饰动作或主句，前面没有地点先行词。</td><td>I plant trees <span class="adv">where there is a lot of sunshine</span>.</td><td>有地点先行词时，可能是定语从句。</td></tr>
+          <tr><td>原因</td><td>because 直接说明原因；since / as 常给背景；for 常补充解释。</td><td>We didn't go to the party <span class="adv">because it was raining</span>.</td><td>because of 后接名词性成分，不是从句。</td></tr>
+          <tr><td>目的</td><td>从句说明主句动作想达到的目标。</td><td>I spoke slowly <span class="adv">so that the students could understand me better</span>.</td><td>could / would / might 常提示目的。</td></tr>
+          <tr><td>结果</td><td>so / such 表示程度，that 后说明造成的结果。</td><td>Sally runs <span class="adv">so fast that nobody can beat her</span>.</td><td>so 修饰形容词/副词；such 修饰名词短语。</td></tr>
+          <tr><td>条件</td><td>从句给出主句成立条件。</td><td><span class="adv">Unless you work hard</span>, you won't succeed.</td><td>unless = if...not。</td></tr>
+          <tr><td>让步</td><td>从句成立，主句仍然成立。</td><td><span class="adv">Although he tried hard</span>, he failed.</td><td>although / though 不要和 but 连用。</td></tr>
+          <tr><td>比较</td><td>比较程度、相似或差异，常有省略。</td><td>This work is <span class="adv">not as difficult as you think</span>.</td><td>先补出省略，再看比较对象是否对齐。</td></tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">目的 / 结果 / 条件易混</h4>
+      <table>
+        <thead><tr><th>对比</th><th>例句</th><th>判断</th></tr></thead>
+        <tbody>
+          <tr><td>if vs in case</td><td>Take an umbrella <span class="adv">if it rains</span>.<br>Take an umbrella <span class="adv">in case it rains</span>.</td><td>if 是条件；in case 是提前预防，“以防万一”。</td></tr>
+          <tr><td>目的 so that</td><td>I spoke slowly <span class="adv">so that the students could understand me better</span>.</td><td>could 表示想达到的目标。</td></tr>
+          <tr><td>结果 so that</td><td>I spoke slowly <span class="adv">so that the students understood me better</span>.</td><td>understood 表示实际达成的结果。</td></tr>
+          <tr><td>so...that</td><td>Sally is <span class="adv">so smart that she always tops our school</span>.</td><td>so 修饰 smart。</td></tr>
+          <tr><td>such...that</td><td>Sally is <span class="adv">such a smart girl that she always tops our school</span>.</td><td>such 修饰 a smart girl。</td></tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">让步 / 比较重点结构</h4>
+      <table>
+        <thead><tr><th>结构</th><th>例句</th><th>判断</th></tr></thead>
+        <tbody>
+          <tr><td>however / no matter how</td><td><span class="adv">No matter how hard-working he was</span>, he still failed.<br><span class="adv">However hard-working he was</span>, he still failed.</td><td>无论多么努力，主句仍成立。</td></tr>
+          <tr><td>as 让步倒装</td><td><span class="adv">Difficult as it is to believe</span>, there are fish that can live without water.</td><td>as 引导让步时，被强调部分前置。</td></tr>
+          <tr><td>as...as 类比</td><td>Reading is to the mind <span class="adv">what/as exercise is to the body</span>.</td><td>阅读之于心智，犹如锻炼之于身体。</td></tr>
+          <tr><td>no more / no less than</td><td>Sally is <span class="adv">no more hard-working than her sister</span>.<br>Sally is <span class="adv">no less hard-working than her sister</span>.</td><td>no more 偏“并不更……”，no less 偏“并不比……差”。</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">从句易混对比表</h4>
@@ -763,31 +866,31 @@ const sections = [
       <table>
         <thead><tr><th>形式</th><th>核心感觉</th><th>常见功能</th><th>代表例句</th></tr></thead>
         <tbody>
-          <tr><td><span class="nonfinite">to do</span></td><td>目的、将来、倾向、具体动作</td><td><span class="noun">名词性</span>、<span class="adj">形容词性</span>、<span class="adv">副词性</span>、补语</td><td>待补充截图例句</td></tr>
-          <tr><td><span class="nonfinite">doing</span> 动名词</td><td>动作名词化、习惯、经验、已知事实</td><td><span class="noun">名词性</span></td><td>待补充截图例句</td></tr>
-          <tr><td><span class="nonfinite">doing</span> 现在分词</td><td>主动、进行</td><td><span class="adj">形容词性</span>、<span class="adv">副词性</span>、补语</td><td>待补充截图例句</td></tr>
-          <tr><td><span class="nonfinite">done</span> 过去分词</td><td>被动、完成</td><td><span class="adj">形容词性</span>、<span class="adv">副词性</span>、补语</td><td>待补充截图例句</td></tr>
+          <tr><td><span class="nonfinite">to do</span></td><td>目的、将来、倾向、具体动作</td><td><span class="noun">名词性</span>、<span class="adj">形容词性</span>、<span class="adv">副词性</span>、补语</td><td>I need a pen <span class="nonfinite">to write with</span>.</td></tr>
+          <tr><td><span class="nonfinite">doing</span> 动名词</td><td>动作名词化、习惯、经验、已知事实</td><td><span class="noun">名词性</span></td><td><span class="nonfinite">Reading</span> is to the mind what exercise is to the body.</td></tr>
+          <tr><td><span class="nonfinite">doing</span> 现在分词</td><td>主动、进行</td><td><span class="adj">形容词性</span>、<span class="adv">副词性</span>、补语</td><td>a <span class="nonfinite">sleeping</span> baby</td></tr>
+          <tr><td><span class="nonfinite">done</span> 过去分词</td><td>被动、完成</td><td><span class="adj">形容词性</span>、<span class="adv">副词性</span>、补语</td><td>The book <span class="nonfinite">written by Larry</span> is useful.</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">4.1 不定式 to do 功能表</h4>
       <table>
         <thead><tr><th>功能</th><th>代表例句</th><th>分析</th></tr></thead>
         <tbody>
-          <tr><td><span class="noun">主语</span></td><td>待补充截图例句</td><td>to do 整体可以作主语。</td></tr>
-          <tr><td><span class="noun">宾语</span></td><td>待补充截图例句</td><td>to do 可以作动词宾语。</td></tr>
-          <tr><td><span class="adj">定语</span></td><td>待补充截图例句</td><td>to do 可以修饰名词，常表示“可读/要读”。</td></tr>
-          <tr><td><span class="adv">状语</span></td><td>待补充截图例句</td><td>to do 可以说明目的、结果或原因等。</td></tr>
-          <tr><td>宾语补语</td><td>待补充截图例句</td><td>to do 可以补充说明宾语要做的动作。</td></tr>
+          <tr><td><span class="noun">主语</span></td><td>It is foolish <span class="nonfinite">to lie</span>.</td><td>to do 整体可以作主语。</td></tr>
+          <tr><td><span class="noun">宾语</span></td><td>Sally desires <span class="nonfinite">to be promoted</span>.</td><td>to do 可以作动词宾语。</td></tr>
+          <tr><td><span class="adj">定语</span></td><td>I need a pen <span class="nonfinite">to write with</span>.</td><td>to do 可以修饰名词，常表示“可读/要读”。</td></tr>
+          <tr><td><span class="adv">状语</span></td><td>Sally will be proud <span class="nonfinite">to win the competition</span>.</td><td>to do 可以说明目的、结果或原因等。</td></tr>
+          <tr><td>宾语补语</td><td>I expect him <span class="nonfinite">to come</span>.</td><td>to do 可以补充说明宾语要做的动作。</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">4.2 动名词 doing 功能表</h4>
       <table>
         <thead><tr><th>功能</th><th>代表例句</th><th>分析</th></tr></thead>
         <tbody>
-          <tr><td><span class="noun">主语</span></td><td>待补充截图例句</td><td>doing 整体可以作主语。</td></tr>
-          <tr><td><span class="noun">宾语</span></td><td>待补充截图例句</td><td>doing 可以作动词宾语。</td></tr>
-          <tr><td><span class="noun">表语 / 主语补语</span></td><td>待补充截图例句</td><td>doing 可以说明主语的具体内容。</td></tr>
-          <tr><td><span class="noun">介词宾语</span></td><td>待补充截图例句</td><td>介词后接动词时通常用 doing。</td></tr>
+          <tr><td><span class="noun">主语</span></td><td><span class="nonfinite">Reading</span> is to the mind what exercise is to the body.</td><td>doing 整体可以作主语。</td></tr>
+          <tr><td><span class="noun">宾语</span></td><td>I enjoy <span class="nonfinite">reading</span>.</td><td>doing 可以作动词宾语。</td></tr>
+          <tr><td><span class="noun">表语 / 主语补语</span></td><td>Her hobby is <span class="nonfinite">reading</span>.</td><td>doing 可以说明主语的具体内容。</td></tr>
+          <tr><td><span class="noun">介词宾语</span></td><td>She has no expectation of <span class="nonfinite">winning</span>.</td><td>介词后接动词时通常用 doing。</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">to do vs doing 易混表</h4>
@@ -804,30 +907,30 @@ const sections = [
       <table>
         <thead><tr><th>形式</th><th>核心关系</th><th>常见功能</th><th>代表例句</th><th>分析</th></tr></thead>
         <tbody>
-          <tr><td><span class="nonfinite">doing</span> 现在分词</td><td>主动、进行</td><td><span class="adj">定语</span></td><td>待补充截图例句</td><td>doing 可以修饰名词。</td></tr>
-          <tr><td><span class="nonfinite">doing</span> 现在分词</td><td>主动、进行</td><td><span class="adv">状语</span></td><td>待补充截图例句</td><td>doing 可以作状语，说明背景、伴随等。</td></tr>
-          <tr><td><span class="nonfinite">done</span> 过去分词</td><td>被动、完成</td><td><span class="adj">定语</span></td><td>待补充截图例句</td><td>done 可以修饰名词。</td></tr>
-          <tr><td><span class="nonfinite">done</span> 过去分词</td><td>被动、完成</td><td><span class="adv">状语</span></td><td>待补充截图例句</td><td>done 可以作状语，重点看被动或完成关系。</td></tr>
-          <tr><td><span class="nonfinite">doing / done</span></td><td>主动或被动</td><td>补语</td><td>待补充截图例句</td><td>doing / done 可以补充说明主语或宾语。</td></tr>
+          <tr><td><span class="nonfinite">doing</span> 现在分词</td><td>主动、进行</td><td><span class="adj">定语</span></td><td>a <span class="nonfinite">sleeping</span> baby</td><td>doing 可以修饰名词。</td></tr>
+          <tr><td><span class="nonfinite">doing</span> 现在分词</td><td>主动、进行</td><td><span class="adv">状语</span></td><td><span class="nonfinite">Having seen the photo</span>, he went out.</td><td>doing 可以作状语，说明背景、伴随等。</td></tr>
+          <tr><td><span class="nonfinite">done</span> 过去分词</td><td>被动、完成</td><td><span class="adj">定语</span></td><td>The book <span class="nonfinite">written by Larry</span> is useful.</td><td>done 可以修饰名词。</td></tr>
+          <tr><td><span class="nonfinite">done</span> 过去分词</td><td>被动、完成</td><td><span class="adv">状语</span></td><td><span class="nonfinite">Asked to give a speech</span>, he felt nervous.</td><td>done 可以作状语，重点看被动或完成关系。</td></tr>
+          <tr><td><span class="nonfinite">doing / done</span></td><td>主动或被动</td><td>补语</td><td>I heard Sally <span class="nonfinite">singing</span>.</td><td>doing / done 可以补充说明主语或宾语。</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">分词作状语的连接词处理表</h4>
       <table>
         <thead><tr><th>原从句关系</th><th>常见连接词</th><th>压缩示例</th><th>说明</th></tr></thead>
         <tbody>
-          <tr><td>时间</td><td>when, while, after, before</td><td>待补充截图例句</td><td>主语一致时可压缩，连接词可省略。</td></tr>
-          <tr><td>条件</td><td>if, unless</td><td>待补充截图例句</td><td>连接词可保留，提示条件关系。</td></tr>
-          <tr><td>让步</td><td>although, though</td><td>待补充截图例句</td><td>可保留连接词，提示让步关系。</td></tr>
-          <tr><td>原因</td><td>because, since, as</td><td>待补充截图例句</td><td>连接词常省略，靠语义判断原因。</td></tr>
+          <tr><td>时间</td><td>when, while, after, before</td><td>When <span class="nonfinite">reading</span>, do not talk.</td><td>主语一致时可压缩，连接词可省略。</td></tr>
+          <tr><td>条件</td><td>if, unless</td><td>If <span class="nonfinite">given more time</span>, I can finish it.</td><td>连接词可保留，提示条件关系。</td></tr>
+          <tr><td>让步</td><td>although, though</td><td>Although <span class="nonfinite">tired</span>, he kept working.</td><td>可保留连接词，提示让步关系。</td></tr>
+          <tr><td>原因</td><td>because, since, as</td><td><span class="nonfinite">Being ill</span>, he stayed home.</td><td>连接词常省略，靠语义判断原因。</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">4.4 从句和非谓语转换表</h4>
       <table>
         <thead><tr><th>原从句</th><th>非谓语压缩</th><th>功能</th><th>分析</th></tr></thead>
         <tbody>
-          <tr><td>待补充截图例句</td><td>待补充截图例句</td><td><span class="adj">形容词性 / 定语</span></td><td>从句压缩后仍修饰名词。</td></tr>
-          <tr><td>待补充截图例句</td><td>待补充截图例句</td><td><span class="adv">副词性 / 状语</span></td><td>从句压缩后仍说明时间、原因、条件或伴随等。</td></tr>
-          <tr><td>待补充截图例句</td><td>待补充截图例句</td><td><span class="noun">名词性</span></td><td>动作名词化后可以进入名词位置。</td></tr>
+          <tr><td>a dog that is running</td><td>a <span class="nonfinite">running</span> dog</td><td><span class="adj">形容词性 / 定语</span></td><td>从句压缩后仍修饰名词。</td></tr>
+          <tr><td>When he was asked to give a speech, he felt nervous.</td><td><span class="nonfinite">Asked to give a speech</span>, he felt nervous.</td><td><span class="adv">副词性 / 状语</span></td><td>从句压缩后仍说明时间、原因、条件或伴随等。</td></tr>
+          <tr><td>That he failed disappointed us.</td><td>His <span class="nonfinite">failing</span> disappointed us.</td><td><span class="noun">名词性</span></td><td>动作名词化后可以进入名词位置。</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">一页记忆卡</h4>
@@ -900,13 +1003,13 @@ function splitClauseSections(baseSections) {
         title: "形容词性从句",
         meta: "3.4-3.6：关系代词、关系副词、限制性与非限制性",
         startMarker: '<h4 class="table-title">3.4 形容词性从句 / 定语从句复习入口</h4>',
-        endMarker: '<h4 class="table-title">3.7 状语从句连接词表</h4>'
+        endMarker: '<h4 class="table-title">3.7 副词性从句 / 状语从句复习入口</h4>'
       },
       {
         id: "adverbial-clause",
         title: "副词性从句",
         meta: "3.7：时间、原因、条件、让步、目的、结果等状语从句",
-        startMarker: '<h4 class="table-title">3.7 状语从句连接词表</h4>',
+        startMarker: '<h4 class="table-title">3.7 副词性从句 / 状语从句复习入口</h4>',
         endMarker: '<h4 class="table-title">从句易混对比表</h4>'
       },
       {
@@ -943,6 +1046,312 @@ const displaySections = splitClauseSections(sections);
 const nav = document.querySelector("#nav");
 const content = document.querySelector("#content");
 const search = document.querySelector("#search");
+const exampleSearch = document.querySelector("#exampleSearch");
+const exampleFilters = document.querySelector("#exampleFilters");
+const exampleResults = document.querySelector("#exampleResults");
+const sentenceAnalyzer = document.querySelector("#sentenceAnalyzer");
+
+const exampleTags = [
+  { id: "all", label: "全部" },
+  { id: "simple", label: "简单句" },
+  { id: "noun-clause", label: "名词性从句" },
+  { id: "adjective-clause", label: "定语从句" },
+  { id: "adverbial-clause", label: "状语从句" },
+  { id: "nonfinite", label: "非谓语" },
+  { id: "preposition", label: "介词" },
+  { id: "contrast", label: "易混对比" }
+];
+
+const exampleLibrary = [
+  {
+    id: "svoc-room-dirty",
+    title: "SVOC：宾语补语检验",
+    section: "简单句",
+    tags: ["simple", "contrast"],
+    level: "基础",
+    sentence: "I found the room dirty.",
+    translation: "我发现房间很脏。",
+    core: "I found the room dirty",
+    parts: [
+      { text: "I", role: "noun", label: "主语" },
+      { text: "found", role: "neutral", label: "谓语" },
+      { text: "the room", role: "noun", label: "宾语" },
+      { text: "dirty", role: "adj", label: "宾语补语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "先抓主干：I found the room dirty。",
+      "把宾语和后面的词连起来：The room is dirty。",
+      "小分句语义自洽，所以 dirty 是宾语补语，不是状语。"
+    ]
+  },
+  {
+    id: "svo-adverbial-washed-warmly",
+    title: "状语：修饰动作本身",
+    section: "简单句",
+    tags: ["simple", "contrast"],
+    level: "基础",
+    sentence: "I washed the clothes warmly.",
+    translation: "我热情地洗了这些衣服。",
+    core: "I washed the clothes",
+    parts: [
+      { text: "I", role: "noun", label: "主语" },
+      { text: "washed", role: "neutral", label: "谓语" },
+      { text: "the clothes", role: "noun", label: "宾语" },
+      { text: "warmly", role: "adv", label: "状语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "验证小分句：The clothes are warmly。",
+      "这个小分句语义不成立，衣服不能处在 warmly 这种状态。",
+      "warmly 修饰 washed 这个动作，所以它是状语，不是宾语补语。"
+    ]
+  },
+  {
+    id: "subject-complement-came-back-safe",
+    title: "主语补语：动作时的状态",
+    section: "简单句",
+    tags: ["simple", "contrast"],
+    level: "基础",
+    sentence: "He came back safe.",
+    translation: "他平安回来了。",
+    core: "He came back safe",
+    parts: [
+      { text: "He", role: "noun", label: "主语" },
+      { text: "came back", role: "neutral", label: "谓语" },
+      { text: "safe", role: "adj", label: "主语补语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "safe 不是修饰 came back 的方式，而是说明 He 回来时的状态。",
+      "验证小分句：He was safe。",
+      "小分句语义自洽，所以 safe 是主语补语。"
+    ]
+  },
+  {
+    id: "svoo-gave-gift",
+    title: "SVOO：双宾语",
+    section: "简单句",
+    tags: ["simple", "contrast"],
+    level: "基础",
+    sentence: "He gave me a gift.",
+    translation: "他给了我一份礼物。",
+    core: "He gave me a gift",
+    parts: [
+      { text: "He", role: "noun", label: "主语" },
+      { text: "gave", role: "neutral", label: "谓语" },
+      { text: "me", role: "noun", label: "间接宾语" },
+      { text: "a gift", role: "noun", label: "直接宾语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "gave 后面接“人 + 物”。",
+      "me 是接受者，a gift 是被给出的东西。",
+      "可改写为 He gave a gift to me。"
+    ]
+  },
+  {
+    id: "preposition-on-what",
+    title: "介词后接名词性从句",
+    section: "介词",
+    tags: ["preposition", "noun-clause"],
+    level: "进阶",
+    sentence: "It depends on what they do.",
+    translation: "这取决于他们做什么。",
+    core: "It depends on what they do",
+    parts: [
+      { text: "It", role: "noun", label: "主语" },
+      { text: "depends", role: "neutral", label: "谓语" },
+      { text: "on", role: "adv", label: "介词" },
+      { text: "what they do", role: "noun", label: "介词宾语 / 名词性从句" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "on 后面需要名词性成分。",
+      "what they do 整体作 on 的宾语。",
+      "介词短语 on what they do 补足 depends 的对象。"
+    ]
+  },
+  {
+    id: "prep-book-on-shelf",
+    title: "介词短语作定语",
+    section: "介词",
+    tags: ["preposition", "adjective-clause"],
+    level: "基础",
+    sentence: "The book on the shelf is great.",
+    translation: "架子上的那本书很好。",
+    core: "The book is great",
+    parts: [
+      { text: "The book", role: "noun", label: "主语" },
+      { text: "on the shelf", role: "adj", label: "后置定语 / 介词短语" },
+      { text: "is", role: "neutral", label: "系动词" },
+      { text: "great", role: "adj", label: "主语补语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 The book is great。",
+      "on the shelf 修饰 book，告诉我们是哪一本书。",
+      "介词短语在这里承担形容词性功能。"
+    ]
+  },
+  {
+    id: "noun-clause-what-she-said",
+    title: "what 引导宾语从句",
+    section: "名词性从句",
+    tags: ["noun-clause", "contrast"],
+    level: "基础",
+    sentence: "I know what she said.",
+    translation: "我知道她说了什么。",
+    core: "I know what she said",
+    parts: [
+      { text: "I", role: "noun", label: "主语" },
+      { text: "know", role: "neutral", label: "谓语" },
+      { text: "what she said", role: "noun", label: "宾语从句" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "know 后面需要宾语。",
+      "what she said 整体作 know 的宾语。",
+      "what 本身在从句里作 said 的宾语，所以不能随便换成 that。"
+    ]
+  },
+  {
+    id: "noun-clause-whether-subject",
+    title: "whether 从句作主语",
+    section: "名词性从句",
+    tags: ["noun-clause", "contrast"],
+    level: "进阶",
+    sentence: "Whether he will come is unknown.",
+    translation: "他是否会来还不知道。",
+    core: "Whether he will come is unknown",
+    parts: [
+      { text: "Whether he will come", role: "noun", label: "主语从句" },
+      { text: "is", role: "neutral", label: "系动词" },
+      { text: "unknown", role: "adj", label: "主语补语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "Whether he will come 整体占据主语位置。",
+      "unknown 补充说明这件事的状态。",
+      "从句放在主语位置时，通常用 whether，不优先用 if。"
+    ]
+  },
+  {
+    id: "adj-clause-teacher-who",
+    title: "who 引导定语从句",
+    section: "定语从句",
+    tags: ["adjective-clause"],
+    level: "基础",
+    sentence: "Sally is the teacher who teaches grammar.",
+    translation: "Sally 是那个教语法的老师。",
+    core: "Sally is the teacher",
+    parts: [
+      { text: "Sally", role: "noun", label: "主语" },
+      { text: "is", role: "neutral", label: "系动词" },
+      { text: "the teacher", role: "noun", label: "主语补语" },
+      { text: "who teaches grammar", role: "adj", label: "定语从句" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 Sally is the teacher。",
+      "who teaches grammar 修饰 teacher。",
+      "who 在从句中作主语，指代先行词 teacher。"
+    ]
+  },
+  {
+    id: "adj-clause-grandmother-nonrestrictive",
+    title: "非限制性定语从句",
+    section: "定语从句",
+    tags: ["adjective-clause", "contrast"],
+    level: "进阶",
+    sentence: "My grandmother, who is 70 years old, loves programming.",
+    translation: "我的奶奶七十岁了，她喜欢编程。",
+    core: "My grandmother loves programming",
+    parts: [
+      { text: "My grandmother", role: "noun", label: "主语" },
+      { text: ", who is 70 years old,", role: "adj", label: "非限制性定语从句" },
+      { text: "loves", role: "neutral", label: "谓语" },
+      { text: "programming", role: "noun", label: "宾语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 My grandmother loves programming。",
+      "who is 70 years old 是额外补充，不负责筛选是哪一个奶奶。",
+      "专有或已经明确的人，常用非限制性补充信息。"
+    ]
+  },
+  {
+    id: "adv-clause-when-young",
+    title: "时间状语从句",
+    section: "状语从句",
+    tags: ["adverbial-clause"],
+    level: "基础",
+    sentence: "When I was young, I loved reading.",
+    translation: "我小的时候喜欢阅读。",
+    core: "I loved reading",
+    parts: [
+      { text: "When I was young", role: "adv", label: "时间状语从句" },
+      { text: ",", role: "plain" },
+      { text: "I", role: "noun", label: "主语" },
+      { text: "loved", role: "neutral", label: "谓语" },
+      { text: "reading", role: "noun", label: "宾语 / 动名词" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 I loved reading。",
+      "When I was young 说明 loved reading 发生的时间。",
+      "状语从句承担副词性功能。"
+    ]
+  },
+  {
+    id: "nonfinite-purpose-to-learn",
+    title: "to do 作目的状语",
+    section: "非谓语",
+    tags: ["nonfinite"],
+    level: "基础",
+    sentence: "To learn grammar clearly, we mark sentence functions.",
+    translation: "为了清楚地学习语法，我们标注句子功能。",
+    core: "We mark sentence functions",
+    parts: [
+      { text: "To learn grammar clearly", role: "nonfinite", label: "不定式短语" },
+      { text: ",", role: "plain" },
+      { text: "we", role: "noun", label: "主语" },
+      { text: "mark", role: "neutral", label: "谓语" },
+      { text: "sentence functions", role: "noun", label: "宾语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 we mark sentence functions。",
+      "To learn grammar clearly 表示目的。",
+      "to do 在这里是非谓语形式，承担副词性功能。"
+    ]
+  },
+  {
+    id: "nonfinite-arriving-after-for",
+    title: "介词后接 doing",
+    section: "非谓语",
+    tags: ["nonfinite", "preposition"],
+    level: "进阶",
+    sentence: "She apologized for arriving late to the meeting.",
+    translation: "她因为会议迟到而道歉。",
+    core: "She apologized",
+    parts: [
+      { text: "She", role: "noun", label: "主语" },
+      { text: "apologized", role: "neutral", label: "谓语" },
+      { text: "for", role: "adv", label: "介词" },
+      { text: "arriving late to the meeting", role: "nonfinite", label: "动名词短语 / 介词宾语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "for 是介词，后面需要名词性成分。",
+      "arriving late to the meeting 是 doing 形式，整体作介词宾语。",
+      "这里的 doing 更接近“迟到这件事”。"
+    ]
+  }
+];
+
+let activeExampleTag = "all";
+let selectedExampleId = exampleLibrary[0]?.id || "";
 
 function sectionNumber(section) {
   return displaySections.findIndex(item => item.id === section.id) + 1;
@@ -1018,6 +1427,150 @@ function highlight(html, query) {
   return html.replace(new RegExp(escaped, "gi"), match => `<mark>${match}</mark>`);
 }
 
+function escapeHtml(value = "") {
+  return String(value).replace(/[&<>"']/g, char => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    "\"": "&quot;",
+    "'": "&#39;"
+  })[char]);
+}
+
+function exampleSearchText(item) {
+  return [
+    item.title,
+    item.section,
+    item.level,
+    item.sentence,
+    item.translation,
+    item.core,
+    item.tags.join(" "),
+    item.parts.map(part => `${part.text} ${part.label || ""}`).join(" "),
+    item.analysis.join(" ")
+  ].join(" ").toLowerCase();
+}
+
+function filteredExamples() {
+  const query = (exampleSearch?.value || "").trim().toLowerCase();
+  return exampleLibrary.filter(item => {
+    const tagMatch = activeExampleTag === "all" || item.tags.includes(activeExampleTag);
+    const queryMatch = !query || exampleSearchText(item).includes(query);
+    return tagMatch && queryMatch;
+  });
+}
+
+function renderExampleFilters() {
+  if (!exampleFilters) {
+    return;
+  }
+
+  exampleFilters.innerHTML = exampleTags.map(tag => `
+    <button class="example-filter ${tag.id === activeExampleTag ? "active" : ""}" type="button" data-tag="${tag.id}">
+      ${escapeHtml(tag.label)}
+    </button>
+  `).join("");
+}
+
+function renderSentenceParts(item) {
+  return item.parts.map(part => {
+    const roleClass = part.role && part.role !== "plain" ? ` ${part.role}` : "";
+    const label = part.label ? `<small>${escapeHtml(part.label)}</small>` : "";
+    return `<span class="sentence-part${roleClass}">${escapeHtml(part.text)}${label}</span>`;
+  }).join("");
+}
+
+function renderSentenceAnalyzer(item) {
+  if (!sentenceAnalyzer) {
+    return;
+  }
+
+  if (!item) {
+    sentenceAnalyzer.innerHTML = `
+      <div class="empty">没有找到匹配例句。换一个标签或关键词试试。</div>
+    `;
+    return;
+  }
+
+  sentenceAnalyzer.innerHTML = `
+    <div class="analyzer-meta">
+      <span>${escapeHtml(item.section)}</span>
+      <span>${escapeHtml(item.level)}</span>
+    </div>
+    <h3>${escapeHtml(item.title)}</h3>
+    <p class="translation">${escapeHtml(item.translation)}</p>
+    <div class="analyzed-sentence" aria-label="彩色拆句">
+      ${renderSentenceParts(item)}
+    </div>
+    <div class="core-line">
+      <b>主干</b>
+      <span>${escapeHtml(item.core)}</span>
+    </div>
+    <ol class="analysis-list">
+      ${item.analysis.map(point => `<li>${escapeHtml(point)}</li>`).join("")}
+    </ol>
+  `;
+}
+
+function renderExamples() {
+  if (!exampleResults || !sentenceAnalyzer) {
+    return;
+  }
+
+  const list = filteredExamples();
+  if (list.length && !list.some(item => item.id === selectedExampleId)) {
+    selectedExampleId = list[0].id;
+  }
+
+  if (!list.length) {
+    exampleResults.innerHTML = `<div class="empty">没有找到匹配例句。</div>`;
+    renderSentenceAnalyzer(null);
+    return;
+  }
+
+  exampleResults.innerHTML = list.map(item => `
+    <button class="example-result ${item.id === selectedExampleId ? "active" : ""}" type="button" data-example-id="${item.id}">
+      <span>${escapeHtml(item.section)} · ${escapeHtml(item.level)}</span>
+      <strong>${escapeHtml(item.sentence)}</strong>
+      <em>${escapeHtml(item.title)}</em>
+    </button>
+  `).join("");
+
+  renderSentenceAnalyzer(list.find(item => item.id === selectedExampleId) || list[0]);
+}
+
+function initializeExampleWorkbench() {
+  if (!exampleFilters || !exampleResults || !sentenceAnalyzer) {
+    return;
+  }
+
+  renderExampleFilters();
+  renderExamples();
+
+  exampleSearch?.addEventListener("input", renderExamples);
+
+  exampleFilters.addEventListener("click", event => {
+    const button = event.target.closest("[data-tag]");
+    if (!button) {
+      return;
+    }
+
+    activeExampleTag = button.dataset.tag;
+    renderExampleFilters();
+    renderExamples();
+  });
+
+  exampleResults.addEventListener("click", event => {
+    const button = event.target.closest("[data-example-id]");
+    if (!button) {
+      return;
+    }
+
+    selectedExampleId = button.dataset.exampleId;
+    renderExamples();
+  });
+}
+
 search.addEventListener("input", () => {
   const q = search.value.trim();
   if (!q) {
@@ -1031,4 +1584,5 @@ search.addEventListener("input", () => {
   render(result, q);
 });
 
+initializeExampleWorkbench();
 render(displaySections);

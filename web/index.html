@@ -17,6 +17,7 @@
     </div>
     <label class="search-label" for="search">搜索知识点</label>
     <input id="search" type="search" placeholder="介词、定语从句、SVOC、冠词...">
+    <a class="quick-link" href="#example-workbench-title">打开例句库工作台</a>
     <nav id="nav" aria-label="章节目录"></nav>
   </aside>
 
@@ -131,6 +132,25 @@
         </div>
         <p>按截图中的英文缩写重绘；颜色表示该词性最常进入的功能归类。</p>
       </article>
+    </section>
+
+    <section class="example-workbench" aria-labelledby="example-workbench-title">
+      <div class="example-workbench-head">
+        <div>
+          <p class="eyebrow">Example Library</p>
+          <h2 id="example-workbench-title">例句库工作台</h2>
+          <p>先用标签或关键词找到例句，再看右侧的彩色拆句，把“它在句中做什么”直接看出来。</p>
+        </div>
+        <label class="example-search">
+          <span>搜索例句</span>
+          <input id="exampleSearch" type="search" placeholder="输入 that、定语、非谓语、介词...">
+        </label>
+      </div>
+      <div class="example-filter-bar" id="exampleFilters" aria-label="例句标签筛选"></div>
+      <div class="example-library-layout">
+        <div class="example-results" id="exampleResults" aria-label="例句搜索结果"></div>
+        <article class="sentence-analyzer" id="sentenceAnalyzer" aria-live="polite"></article>
+      </div>
     </section>
 
     <section id="content" class="content"></section>

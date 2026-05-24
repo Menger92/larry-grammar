@@ -15,3 +15,6 @@ build/
 
 # Logs
 *.log
+
+# Local/source PDFs kept out of GitHub to avoid size and rights issues
+assets/*.pdf

@@ -1,8 +1,10 @@
 ﻿# 名词性从句
 
-## 3.2-3.3 名词性从句
+## 3.2-3.3 名词性从句理解入口
 
 名词性从句的核心：把“一件事”当成名词放进句子。
+
+维护规则：本入口只放总领理解，包括“名词性从句的本质”“独立句如何变成从句”“学习时先看从句内部结构”。后面的类型主表只放主语从句、宾语从句、表语从句、同位语从句。
 
 ### 名词性从句的本质
 
@@ -67,6 +69,8 @@
 | what she said about the incident | she said what about the incident | what = 连词 + 名词性成分 | what 一方面连接名词性从句，一方面在从句内部作 said 的宾语；从句内部是 SVO 结构：she = 主语，said = 谓语，what = 宾语，about the incident = 状语。 |
 | what your name is | your name is what | what = 连词 + 名词性成分 | what 一方面连接名词性从句，一方面在从句内部作表语 / 主语补语。 |
 | where Sally lives | Sally lives where | where 作地点状语，副词性成分 | 从句内部主谓完整，where 不作主语或宾语，而是说明 lives 的地点。 |
+
+## 名词性从句类型主表
 
 | 类型 | 句中位置 | 代表例句 | 分析 |
 | --- | --- | --- | --- |
