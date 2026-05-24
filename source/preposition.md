@@ -57,11 +57,11 @@
 
 ## 介词形式归纳表
 
-| 类型 | 常见例子 | 结构特点 | 例句 | 说明 |
-| --- | --- | --- | --- | --- |
-| 简单介词 | as, at, by, during, with | 一个词作介词 | We talked during dinner. | during 后接 dinner，构成介词短语。 |
-| 分词介词 | considering, including, given, granted | 形式像分词，但功能按介词处理 | Everyone came, including Tom. | including 后接 Tom，整体表示“包括 Tom”。 |
-| 短语介词 | ahead of, next to, because of, owing to, along with, as well as, in case of, in charge of, in common with, as a result of, in the absence of, to the best of, with an eye to | 多个词固定搭配，整体当一个介词用 | The game was canceled because of the rain. | because of 后接 the rain，整体说明原因。 |
+| 类型 | 常见例子 | 结构特点 | 例句 |
+| --- | --- | --- | --- |
+| 简单介词 | as, at, by, during, with | 一个词作介词 | 待补充截图例句 |
+| 分词介词 | considering, including, given, granted | 形式像分词，但功能按介词处理 | 待补充截图例句 |
+| 短语介词 | ahead of, next to, because of, owing to, along with, as well as, in case of, in charge of, in common with, as a result of, in the absence of, to the best of, with an eye to | 多个词固定搭配，整体当一个介词用 | 待补充截图例句 |
 
 ## 判断口诀
 

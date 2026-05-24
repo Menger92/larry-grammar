@@ -1,0 +1,84 @@
+﻿# 从句
+
+对应视频：第三章《从句比简单句更简单》：3.1 简单句 + 简单句，必须有连词；3.2-3.3 名词性从句；3.4-3.6 形容词性从句；3.7 副词性从句。
+
+## 本章核心
+
+从句不是“更高级的句子”，而是把一个简单句降级后，放进另一个句子里承担某种功能。
+
+```text
+从句 = 连接词 + 简单句
+```
+
+核心例句：主从结构
+
+> What she said about the incident surprised everyone.
+
+这个句子的主干不是 she said，而是：
+
+```text
+What she said about the incident surprised everyone.
+```
+
+| 层级 | 成分 | 功能 | 分析 |
+| --- | --- | --- | --- |
+| 主句主语 | What she said about the incident | 名词性从句 | 整个从句作主句主语，表示“她关于这件事所说的话”。 |
+| 主句谓语 | surprised | 谓语动词 | 主句真正的谓语，说明主语造成的结果。 |
+| 主句宾语 | everyone | 名词性成分 | surprised 的承受对象。 |
+| 从句连词 / 从句宾语 | What | 连词 + 名词性成分 | What 有双重属性：一方面作连接词，引导名词性从句；另一方面在从句内部作 said 的宾语。 |
+| 从句主语 | she | 名词性成分 | said 的动作发出者。 |
+| 从句谓语 | said | 谓语动词 | 从句内部的谓语。 |
+| 从句宾语 | What | 名词性成分 | 从句还原为 she said what about the incident，what 是 said 的宾语。 |
+| 从句状语 | about the incident | 副词性介词短语 | 修饰 said，说明“说”的内容范围；the incident 是介词 about 后的名词性成分。 |
+
+记忆点：看到句首的 what，不要急着翻译成“什么”。如果它引导一整块内容占据主语、宾语、表语等名词位置，就按名词性从句处理；同时还要看 what 在从句内部承担什么成分。
+
+先问三个问题：
+
+| 步骤 | 问题 | 目的 |
+| --- | --- | --- |
+| 1 | 这里是不是有两个主谓结构？ | 判断是否需要连接词。 |
+| 2 | 被连接进去的句子整体在主句里做什么？ | 判断是名词性、形容词性还是副词性。 |
+| 3 | 连接词在从句里有没有承担成分？ | 判断 that / what / which / where 等连接词。 |
+
+## 疑问词的词性速查表
+
+| 疑问词 / 连接词 | 词性归类 |
+| --- | --- |
+| who / whom | n. 名词性 |
+| whose | adj. 形容词性 |
+| what | n. 名词性 / adj. 形容词性 |
+| which | n. 名词性 / adj. 形容词性 |
+| where | adv. 副词性 |
+| when | adv. 副词性 |
+| why | adv. 副词性 |
+| how | adv. 副词性 |
+| that | 无 / n. 名词性 |
+
+## 3.1 两个简单句必须有连接方式
+
+两个完整简单句不能直接硬拼在一起。
+
+| 类型 | 说明 |
+| --- | --- |
+| 错误硬拼 | 两边都有主谓结构，中间没有连接方式。 |
+| 从属连词 | 从属连词把一个简单句降级为从句。 |
+| 并列连词 | 并列连词连接两个并列分句。 |
+| 分号 | 分号也可以连接关系紧密的完整句。 |
+
+连接方式常见四类：
+
+| 连接方式 | 常见词 | 用法 |
+| --- | --- | --- |
+| 并列连词 | and, but, or, so | 连接两个并列分句，不把句子降级。 |
+| 从属连词 | because, although, if, when, while | 引出状语从句，把一个句子降级为副词性成分。 |
+| 名词性从句连接词 | that, whether, if, what, who, which, when, where, why, how | 引出名词性从句，把一件事当名词用。 |
+| 关系词 | who, whom, which, that, whose, where, when, why | 引出定语从句，修饰前面的名词。 |
+
+## 从句类型总览表
+
+| 从句类型 | 本质 | 代表例句 | 判断问题 |
+| --- | --- | --- | --- |
+| 名词性从句 | 整个从句当名词用 | What she said about the incident surprised everyone. | 这个从句是否占主语、宾语、表语、同位语位置？ |
+| 形容词性从句 / 定语从句 | 整个从句修饰名词 | Sally is a teacher who is warm-hearted, hardworking, and quick in learning. | 这个从句是否跟在名词后说明这个名词？ |
+| 副词性从句 / 状语从句 | 整个从句修饰动作、状态或主句 | I was only a little kid when I met Sally. | 这个从句是否说明时间、原因、条件、让步、目的等逻辑关系？ |

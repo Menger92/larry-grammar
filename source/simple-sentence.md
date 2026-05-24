@@ -10,14 +10,14 @@
 
 ## 句子成分定义表
 
-| 句子成分 | 英文 | 核心含义 | 颜色标注 |
-| --- | --- | --- | --- |
-| 主语 | Subject | 句子的主体话题，或动作的发出者。 | 红色：名词性成分 |
-| 谓语 | Predicate | 谓语即动词，是句子动作或状态的核心。 | 谓语是动词核心，不强行套四类成分色。 |
-| 宾语 | Object | 谓语动词的执行对象。 | 红色：名词性成分 |
-| 定语 | Attributive | 修饰名词性成分的成分；对句子主干来说通常可以删除。 | 黄色：形容词性成分 |
-| 状语 | Adverbial | 修饰动词、形容词、其他副词的成分；对句子主干来说通常可以删除。 | 绿色：副词性成分 |
-| 补语 | Complement | 补充说明的额外成分。 | 补语要么是名词属性，要么是形容词属性。 |
+| 句子成分 | 英文 | 核心含义 |
+| --- | --- | --- |
+| 主语 | Subject | 句子的主体话题，或动作的发出者。 |
+| 谓语 | Predicate | 谓语即动词，是句子动作或状态的核心。 |
+| 宾语 | Object | 谓语动词的执行对象。 |
+| 定语 | Attributive | 修饰名词性成分的成分；对句子主干来说通常可以删除。 |
+| 状语 | Adverbial | 修饰动词、形容词、其他副词的成分；对句子主干来说通常可以删除。 |
+| 补语 | Complement | 补充说明的额外成分；要么是名词属性，要么是形容词属性。 |
 
 ## 补语判断表
 
@@ -66,50 +66,10 @@ SVOO 和 SVOC 的区分很重要：前者是两个宾语，后者是宾语后面
 
 分析长句时，先找主语和谓语动词，确定简单句主干，再把状语、定语、非谓语结构一层层剥离出来。
 
-### 案例 1
-
-原句：
-
-Despite the relentless downpour, with raindrops cascading from the darkened sky, the weary traveler trudged on, his clothes soaked and his spirits dampened, determined to reach his destination before nightfall, where warmth and shelter awaited him, providing solace from the tempestuous elements that assailed him along the treacherous path.
-
-主干：
-
-```text
-the weary traveler trudged on
-```
-
-成分剥离：
-
-| 成分 | 类型 | 分析 |
-| --- | --- | --- |
-| Despite the relentless downpour | 副词性：介词短语 | 作状语，说明背景条件。 |
-| with raindrops cascading from the darkened sky | 副词性：with 复合结构 / 非谓语结构 | 整体作状语，补充背景画面。 |
-| his clothes soaked and his spirits dampened | 副词性：独立主格 / 非谓语结构 | 补充 traveler 的伴随状态。 |
-| determined to reach his destination before nightfall | 形容词性：主语补语 | 说明 traveler 的状态，可理解为 [the traveler was determined]。 |
-| where warmth and shelter awaited him | 形容词性：非限制性定语从句 | 修饰 destination。 |
-| providing solace from the tempestuous elements that assailed him along the treacherous path | 副词性：非谓语结构 | providing... 作状语；that assailed... 是定语从句，修饰 elements。 |
-
-### 案例 2
-
-原句：
-
-As the sun began its descent, casting a golden hue across the horizon, a sense of tranquility enveloped the meadow, while an orchestra of chirping birds, buzzing insects, and rustling leaves orchestrated a symphony of nature, creating a serene ambiance that transported the weary soul to a realm of blissful respite.
-
-主干：
-
-```text
-a sense of tranquility enveloped the meadow
-```
-
-成分剥离：
-
-| 成分 | 类型 | 分析 |
-| --- | --- | --- |
-| As the sun began its descent | 副词性从句 | 作状语，说明时间背景。 |
-| casting a golden hue across the horizon | 副词性：非谓语结构 | 作状语，补充伴随画面。 |
-| while an orchestra of chirping birds, buzzing insects, and rustling leaves orchestrated a symphony of nature | 副词性从句 | 作状语，补充同时发生的背景。 |
-| creating a serene ambiance | 副词性：非谓语结构 | 作状语，说明前面情景带来的结果。 |
-| that transported the weary soul to a realm of blissful respite | 形容词性：定语从句 | 修饰 ambiance。 |
+| 主干 | 成分剥离 |
+| --- | --- |
+| the weary traveler trudged on | Despite the relentless downpour：副词性介词短语，作状语，说明背景条件。<br>with raindrops cascading from the darkened sky：副词性 with 复合结构 / 非谓语结构，整体作状语。<br>his clothes soaked and his spirits dampened：副词性独立主格 / 非谓语结构，补充 traveler 的伴随状态。<br>determined to reach his destination before nightfall：形容词性主语补语，说明 traveler 的状态，可理解为 [the traveler was determined]。<br>where warmth and shelter awaited him：形容词性非限制性定语从句，修饰 destination。<br>providing solace from the tempestuous elements that assailed him along the treacherous path：副词性非谓语结构；that assailed... 是定语从句，修饰 elements。 |
+| a sense of tranquility enveloped the meadow | As the sun began its descent：副词性从句，作状语，说明时间背景。<br>casting a golden hue across the horizon：副词性非谓语结构，作状语，补充伴随画面。<br>while an orchestra of chirping birds, buzzing insects, and rustling leaves orchestrated a symphony of nature：副词性从句，作状语，补充同时发生的背景。<br>creating a serene ambiance：副词性非谓语结构，作状语，说明前面情景带来的结果。<br>that transported the weary soul to a realm of blissful respite：形容词性定语从句，修饰 ambiance。 |
 
 ## 判断流程
 

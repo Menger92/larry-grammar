@@ -1,6 +1,6 @@
 # Larry《半个月，搭建你的英语语法体系》全系列语法总结
 
-资料来源：B 站合集《半个月，搭建你的英语语法体系》，UP 主 Larry想做技术大佬。  
+资料来源：B 站合集《半个月，搭建你的英语语法体系》，UP 主 Larry想做技术大佬。
 整理时间：2026-05-10。
 
 说明：本总结依据该合集公开的视频标题、合集结构和英语语法体系知识整理。B 站公开接口未暴露这些视频的字幕文本，因此本文不是逐字稿，也不声称复述视频中的每一句讲解；它的目标是把整个系列背后的语法框架整理成一份可学习、可复习、可查阅的文档。
@@ -93,12 +93,7 @@
 - 名词可以通过所有格、名词作定语等方式修饰名词。
 - 介词短语、从句、非谓语也能承担修饰功能。
 
-例如：
-
-- a beautiful girl：beautiful 修饰 girl。
-- run extremely fast：extremely 修饰 fast，fast 修饰 run。
-- the book on the desk：on the desk 修饰 book。
-- the man who called you：who called you 修饰 man。
+例如：具体例句只保留截图来源，后续按截图补充。
 
 学习重点：
 
@@ -127,11 +122,10 @@
 - 形容词功能：修饰名词，相当于定语。
 - 副词功能：修饰动词、形容词、句子，相当于状语。
 
-例子：
+截图例句：
 
-- the key to the door：to the door 修饰 key，是形容词功能。
-- He lives in Beijing.：in Beijing 修饰 lives，是副词功能。
-- I am interested in grammar.：in grammar 补足 interested 的含义。
+- The book on the shelf is great.：on the shelf 修饰 book，是形容词功能。
+- We went to a movie after dinner.：after dinner 修饰 went，是副词功能。
 - It depends on what they do.：on 后接 what they do，是介词短语。
 - The car stopped and then drove on.：on 后面没有名词性成分，修饰 drove，作副词。
 - The TV is on.：on 后面没有名词性成分，表示 TV 的状态，作形容词。
@@ -155,12 +149,7 @@
 - 状语：修饰动词、形容词、副词或句子。
 - 补语：补足主语或宾语的状态、身份、结果等信息。
 
-句子分析应先抓主干，再看附加成分：
-
-> The boy in a blue shirt quickly opened the old door.
-
-主干是 The boy opened the door。  
-in a blue shirt 修饰 boy，quickly 修饰 opened，old 修饰 door。
+句子分析应先抓主干，再看附加成分；具体分析案例只保留后续截图补充的例句。
 
 学习重点：
 
@@ -172,21 +161,7 @@ in a blue shirt 修饰 boy，quickly 修饰 opened，old 修饰 door。
 
 补语的作用是把某个成分的状态、身份、性质、结果说完整。英语里最需要重视的是主语补语和宾语补语。
 
-主语补语常出现在系表结构中：
-
-- She is happy.
-- He became a teacher.
-- The soup tastes good.
-
-happy、a teacher、good 都补充说明主语。
-
-宾语补语常出现在“动词 + 宾语 + 宾补”结构中：
-
-- We made him captain.
-- I found the book interesting.
-- They painted the wall white.
-
-captain、interesting、white 都补充说明宾语。
+主语补语常出现在系表结构中；宾语补语常出现在“动词 + 宾语 + 宾补”结构中。具体例句只保留截图来源。
 
 学习重点：
 
@@ -233,7 +208,7 @@ SVOO 和 SVOC 的区分很重要：
 
 长句分析案例：
 
-| 原句主干 | 剥离重点 |
+| 主干 | 成分剥离 |
 | --- | --- |
 | the weary traveler trudged on | Despite the relentless downpour 是介词短语作状语；with raindrops cascading...、his clothes soaked...、providing solace... 是非谓语 / 独立主格结构作状语；determined to reach... 是主语补语；where warmth and shelter awaited him 是非限制性定语从句，修饰 destination。 |
 | a sense of tranquility enveloped the meadow | As the sun began its descent 是副词性从句；casting...、creating... 是非谓语结构作状语；while an orchestra... orchestrated... 是副词性从句；that transported... 是定语从句，修饰 ambiance。 |
@@ -244,19 +219,33 @@ SVOO 和 SVOC 的区分很重要：
 - 分析复杂句前，先练熟简单句。
 - 句子越长，越要先剥离修饰成分。
 
+### 第三章从句快速索引
+
+第三章的统一公式是：
+
+```text
+从句 = 连接词 + 简单句
+```
+
+从句学习不要先背术语，要先判断它在主句里承担什么功能。
+
+| 功能 | 对应颜色 | 课程位置 | 核心判断 | 常见连接词 |
+| --- | --- | --- | --- | --- |
+| 名词性从句 | 红色 | 3.2-3.3 | 整个从句是否占主语、宾语、表语、同位语位置？ | that, whether, if, what, who, which, when, where, why, how |
+| 形容词性从句 / 定语从句 | 黄色 | 3.4-3.6 | 整个从句是否跟在名词后修饰这个名词？ | who, whom, which, that, whose, where, when, why |
+| 副词性从句 / 状语从句 | 绿色 | 3.7 | 整个从句是否说明时间、原因、条件、让步、目的等逻辑关系？ | when, because, if, although, so that, so...that, than, as |
+
+复习时按三步走：
+
+1. 先看是否有两个主谓结构。
+2. 再看连接词把哪个句子降级了。
+3. 最后判断被降级的从句整体是名词性、形容词性还是副词性。
+
 ### 07. 3.1 简单句 + 简单句，必须有连词
 
 本集进入从句之前，先解决一个核心原则：两个完整简单句不能直接并列，中间必须有合法连接方式。
 
-错误类型：
-
-- I like grammar it is useful.
-
-这是两个完整句子硬拼在一起。正确方式包括：
-
-- I like grammar because it is useful.
-- I like grammar, and it is useful.
-- I like grammar; it is useful.
+错误类型和正确连接方式后续只补充截图来源例句。
 
 连接方式：
 
@@ -277,10 +266,10 @@ SVOO 和 SVOC 的区分很重要：
 
 常见类型：
 
-- 主语从句：What he said is true.
-- 宾语从句：I know that he is right.
-- 表语从句：The problem is whether we have time.
-- 同位语从句：The news that he won surprised us.
+- 主语从句：What she said about the incident surprised everyone.
+- 宾语从句：She believes that education is the key to a better world.
+- 表语从句：The truth is that we all make mistakes.
+- 同位语从句：The news that they won the championship spread quickly.
 
 引导词常见三类：
 
@@ -300,9 +289,9 @@ SVOO 和 SVOC 的区分很重要：
 
 关键区别：
 
-- that he came：他来了这件事。
-- what he said：他说的话。
-- whether he will come：他是否会来。
+- that：只负责把一个完整句子包装成名词性内容。
+- what：本身在从句中充当主语、宾语或表语。
+- whether / if：引入不确定选择。
 
 that 只负责把一个完整句子包装成名词性内容；what 本身在从句中充当主语、宾语或表语；whether/if 引入不确定选择。
 
@@ -326,18 +315,18 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 
 > 先行词 + 关系词 + 从句
 
-例子：
+截图例句：
 
-- the man who called you
-- the book that I bought
-- the place where we met
+- Sally is a teacher who is warm-hearted, hardworking, and quick in learning.
+- He is reading a book that is about human history.
+- This is the town where I grew up.
 
 关系词有两个任务：
 
 1. 连接主句和从句。
 2. 在从句中承担某个成分。
 
-比如 the man who called you 中，who 在从句 called you 里做主语。
+比如 Sally is a teacher who is warm-hearted... 中，who 在从句中作主语。
 
 学习重点：
 
@@ -366,13 +355,13 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 3. 看它在从句中做什么成分。
 4. 选择对应关系词。
 
-例子：
+截图例句：
 
-- The book that I bought is expensive.  
-  I bought the book，所以关系词做 bought 的宾语。
+- He is reading a book that is about human history.
+  book 在从句中作主语，所以可以用 that。
 
-- The house where I lived was small.  
-  I lived in the house，所以关系词表达地点状语。
+- This is the town where I grew up.
+  I grew up in this town，所以 where 表达地点状语。
 
 学习重点：
 
@@ -386,25 +375,17 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 
 限制性定语从句：
 
-- The students who passed the exam were happy.
+- I don’t wear clothes which make me different from other people.
 
-它限定 students 的范围，不能随意删掉。
+它限定 clothes 的范围，不能随意删掉。
 
 非限制性定语从句：
 
-- My brother, who lives in Beijing, is a doctor.
+- I don’t wear clothes, which makes me different from other people.
 
 它补充说明，通常用逗号隔开，删掉后主句仍完整。
 
-介词 + 关系代词：
-
-- the person to whom I spoke
-- the topic about which we talked
-
-口语中常把介词放后面：
-
-- the person who I spoke to
-- the topic that we talked about
+介词 + 关系代词的具体例句以截图补充为准。
 
 学习重点：
 
@@ -416,6 +397,8 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 
 副词性从句也就是状语从句，修饰主句动作或主句整体，表达时间、原因、条件、让步、目的、结果、方式、比较等关系。
 
+笔记来源：`assets/03-07_副词性从句_笔记01.jpg` 至 `assets/03-07_副词性从句_笔记03.jpg`。详细整理见 `source/adverbial-clause.md`。
+
 常见类型：
 
 - 时间：when, while, before, after, until, as soon as。
@@ -425,25 +408,57 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 - 目的：so that, in order that。
 - 结果：so...that, such...that。
 - 比较：than, as...as。
+- 地点：where, wherever。
+- 方式：as, as if, as though。
 
 学习重点：
 
 - 状语从句的本质是说明主句发生的背景或逻辑关系。
 - 先判断逻辑关系，再选择连词。
 - 状语从句位置灵活，放句首时常用逗号隔开。
+- `where` 不一定是定语从句；前面没有地点名词时，常按地点状语从句判断。
+- `not until`、`as soon as`、`the moment/minute/second`、`no sooner...than` 这类结构要放进时间关系里统一记忆。
+
+### 第四章非谓语快速索引
+
+第四章的统一理解是：
+
+```text
+非谓语 = 动词含义 + 非谓语资格
+```
+
+非谓语动词和从句不是两套互不相关的规则。非谓语常常是从句压缩后的形式：它保留动作含义，但不再抢句子的核心谓语位置。
+
+| 形式 | 课程位置 | 核心感觉 | 常见功能 | 代表例句 |
+| --- | --- | --- | --- | --- |
+| to do | 4.1 | 目的、将来、倾向、具体动作 | 名词性、形容词性、副词性、补语 | 待补充截图例句 |
+| doing 动名词 | 4.2 | 动作名词化、习惯、经验、已知事实 | 名词性 | 待补充截图例句 |
+| doing 现在分词 | 4.3 | 主动、进行 | 形容词性、副词性、补语 | 待补充截图例句 |
+| done 过去分词 | 4.3 | 被动、完成 | 形容词性、副词性、补语 | 待补充截图例句 |
+| 从句 ↔ 非谓语 | 4.4 | 完整表达 ↔ 简洁压缩 | 三类功能都可转换理解 | 待补充截图例句 |
+
+非谓语判断顺序：
+
+1. 先找真正的谓语动词。
+2. 再看其他动词形式是否由连接词引出从句。
+3. 没有谓语资格的动词形式，按非谓语处理。
+4. 判断它整体在句中承担名词性、形容词性还是副词性功能。
+5. 最后判断主动 / 被动、进行 / 完成、目的 / 将来等语义关系。
 
 ### 14. 4.1 不定式
 
 不定式 to do 是非谓语的一种。它保留动词含义，但不作谓语，常表达目的、将来、倾向、一次性动作或具体动作。
 
+笔记来源：`assets/04-01_不定式_笔记01.jpg` 至 `assets/04-01_不定式_笔记06.jpg`。详细整理见 `source/nonfinite.md`。
+
 常见功能：
 
-- 主语：To learn grammar takes time.
-- 宾语：I want to learn grammar.
-- 表语：My goal is to improve my English.
-- 定语：I have a book to read.
-- 状语：He came here to help us.
-- 宾补：I asked him to leave.
+- 主语：It is foolish to lie.
+- 宾语：Sally desires to be promoted.
+- 表语：Our plan is to finish the work in two weeks.
+- 定语：The question to be discussed is important.
+- 状语：待补充截图例句。
+- 宾补：待补充截图例句。
 
 不定式常带有“未发生、将要、目的、意愿”的感觉。
 
@@ -452,83 +467,56 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 - 不定式不是谓语，句子还需要真正的谓语动词。
 - to do 作定语时，常表示将要做、可以做、需要做。
 - to do 作状语时，最常见的是目的。
+- 使役动词、感官动词后常见省略 `to` 的动词原形，但它仍然不是句子核心谓语。
 
 ### 15. 4.2 动名词
 
 动名词 doing 是“动作名词化”。它把一个动作当作名词处理，因此可以做主语、宾语、表语、介词宾语等。
 
-例子：
+笔记来源：`assets/04-02_动名词_笔记01.jpg` 至 `assets/04-02_动名词_笔记06.jpg`。详细整理见 `source/nonfinite.md`。
 
-- Learning grammar is useful.
-- I enjoy reading.
-- My hobby is writing.
-- He is good at speaking.
+例子：待补充截图例句。
 
 动名词常表达习惯性、一般性、已知的动作或经验。
 
-与不定式的区别：
-
-- I remember locking the door.：记得锁过门。
-- I remember to lock the door.：记得要去锁门。
-
-- I stopped smoking.：停止吸烟。
-- I stopped to smoke.：停下来去吸烟。
+与不定式的区别：只保留规则，具体例句待补充截图来源。
 
 学习重点：
 
 - 介词后接动词时，通常用动名词。
 - 动名词强调“动作这件事”。
 - 动名词和不定式的选择常体现动作是否已发生、是否具体、是否带目的。
+- `look forward to doing`、`be used to doing` 这类结构里，`to` 是介词，不是不定式标记。
 
 ### 16. 4.3 分词
 
 分词主要包括现在分词 doing 和过去分词 done。它们常承担形容词或副词功能。
 
-现在分词通常表达主动、进行：
+笔记来源：`assets/04-03_分词_笔记01.jpg` 至 `assets/04-03_分词_笔记10.jpg`。详细整理见 `source/nonfinite.md`。
 
-- a crying baby：正在哭的婴儿。
-- The man standing there is my teacher.
-
-过去分词通常表达被动、完成：
-
-- a broken window：破了的窗户。
-- The book written by him is popular.
-
-分词也可作状语：
-
-- Walking down the street, I met an old friend.
-- Seen from the hill, the city looks beautiful.
+现在分词通常表达主动、进行；过去分词通常表达被动、完成；分词也可作状语。具体例句待补充截图来源。
 
 学习重点：
 
 - doing/done 的选择取决于被修饰对象与动作之间的主动/被动关系。
 - 分词短语常可还原成定语从句或状语从句。
 - 分词作状语时，逻辑主语通常应与主句主语一致。
+- `with + 名词性成分 + doing/done/to do` 常用来补充背景状态，仍要判断主动、被动或将来关系。
 
 ### 17. 4.4 从句和非谓语动词的转换
 
 本集是前面内容的整合：从句和非谓语不是两套互不相关的规则，非谓语常常是从句压缩后的形式。
 
-定语从句压缩：
+笔记来源：`assets/04-04_非谓语与从句转换_笔记01.jpg` 至 `assets/04-04_非谓语与从句转换_笔记10.jpg`。详细整理见 `source/nonfinite.md`。
 
-- The man who is standing there is my teacher.
-- The man standing there is my teacher.
-
-状语从句压缩：
-
-- When I saw him, I smiled.
-- Seeing him, I smiled.
-
-名词性内容压缩：
-
-- That he failed surprised us.
-- His failing surprised us.
+定语从句压缩、状语从句压缩、名词性内容压缩的具体例句待补充截图来源。
 
 学习重点：
 
 - 从句更完整，非谓语更简洁。
 - 压缩时要确保逻辑关系清楚，尤其是主语关系。
 - 非谓语的本质是“保留动作含义，但取消谓语资格”。
+- 如果主语关系、主动/被动、时间逻辑不清楚，优先保留从句。
 
 ### 18. Larry 的语法系列课程，你该怎么学？
 
@@ -574,23 +562,7 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 
 本集可重点理解完成体、进行体和过去时间框架。
 
-现在完成：
-
-- I have finished the work.
-
-重点不是过去什么时候完成，而是现在的结果：工作已经完成。
-
-过去完成：
-
-- I had finished the work before he arrived.
-
-表示在过去某个时间点之前已经完成，是“过去的过去”。
-
-现在完成进行：
-
-- I have been studying for two hours.
-
-强调动作从过去持续到现在，并可能继续。
+现在完成、过去完成、现在完成进行的具体例句待补充截图来源；这里只保留规则：完成体强调参照点之前已经发生，并与参照点相关。
 
 学习重点：
 
@@ -624,12 +596,7 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 2. 动作状态：一般、进行、完成、完成进行。
 3. 语境视角：事实、习惯、临时、结果、持续、预测、安排。
 
-典型对比：
-
-- I lived here for ten years.：我曾在这里住了十年，通常暗示现在不住。
-- I have lived here for ten years.：我已经在这里住了十年，通常现在还住。
-- I was reading when he called.：电话来时我正在读书。
-- I had read the book before the class.：上课前我已经读过。
+典型对比：具体例句待补充截图来源。
 
 学习重点：
 
@@ -666,12 +633,7 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 
 虚拟语气表达的核心不是“过去式”，而是“非现实”或“心理距离”。英语常用过去形式来制造距离感。
 
-典型条件句：
-
-- If I were you, I would accept it.
-- If he had studied harder, he would have passed.
-
-这里的过去形式不一定表示过去时间，而表示与现实相反或可能性较低。
+典型条件句：具体例句待补充截图来源。过去形式不一定表示过去时间，而表示与现实相反或可能性较低。
 
 三类常见虚拟：
 
@@ -689,18 +651,7 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 
 本集可扩展虚拟语气在愿望、建议、要求等场景中的使用。
 
-wish 后的虚拟：
-
-- I wish I were taller.：希望现在更高，但现实不是。
-- I wish I had known it.：希望过去知道，但过去不知道。
-- I wish you would stop smoking.：希望对方将来改变。
-
-建议、要求、命令类动词后的虚拟：
-
-- I suggest that he go there.
-- They demanded that the plan be changed.
-
-这里从句常用动词原形，表达“应该如此”，而非事实陈述。
+wish 后的虚拟、建议 / 要求 / 命令类动词后的虚拟，具体例句待补充截图来源。这里从句常用动词原形，表达“应该如此”，而非事实陈述。
 
 学习重点：
 
@@ -712,24 +663,7 @@ wish 后的虚拟：
 
 本集可整理混合虚拟、含蓄虚拟和固定表达。
 
-混合虚拟：
-
-- If I had studied medicine, I would be a doctor now.
-
-条件指过去，结果指现在。
-
-含蓄虚拟：
-
-- Without your help, I would have failed.
-- But for the rain, we would have gone out.
-
-没有 if，但语义上仍是假设。
-
-固定表达：
-
-- It is time that we left.
-- I would rather you stayed here.
-- as if / as though 引导的非真实比较。
+混合虚拟、含蓄虚拟、固定表达的具体例句待补充截图来源。
 
 学习重点：
 
@@ -739,16 +673,7 @@ wish 后的虚拟：
 
 ### 27. 词法解析 Lesson 1：可数名词单数不可裸露原则
 
-本集进入名词和冠词系统。英语可数名词单数通常不能裸露出现，也就是说不能单独说：
-
-- I have book.
-
-通常需要限定词：
-
-- I have a book.
-- I have the book.
-- I have this book.
-- I have my book.
+本集进入名词和冠词系统。英语可数名词单数通常不能裸露出现；具体例句待补充截图来源。
 
 原因是英语名词需要标明“数量”和“指称范围”。可数单数名词只说 book，既没有说明数量，也没有说明特指关系。
 
@@ -775,18 +700,18 @@ a/an：
 
 - 表示“一个”，用于单数可数名词。
 - 常用于首次提到或非特指。
-- a book, an apple。
+- 具体例句待补充截图来源。
 
 the：
 
 - 表示特指，听者知道是哪一个。
 - 可因上文提到、场景唯一、后置修饰限定而特指。
-- the book on the desk, the sun。
+- 具体例句待补充截图来源。
 
 零冠词：
 
-- 复数泛指：Dogs are friendly.
-- 不可数泛指：Water is important.
+- 复数泛指：待补充截图例句。
+- 不可数泛指：待补充截图例句。
 - 某些专有名词、抽象概念、机构功能表达中使用。
 
 学习重点：
@@ -801,9 +726,9 @@ the：
 
 | 功能 | 常见承担者 | 例子 |
 | --- | --- | --- |
-| 名词功能 | 名词、代词、动名词、名词性从句、不定式 | what he said, learning English |
-| 形容词功能 | 形容词、介词短语、定语从句、分词、不定式 | a book on grammar, the man standing there |
-| 副词功能 | 副词、介词短语、状语从句、分词、不定式 | speak clearly, because he was late, to pass the exam |
+| 名词功能 | 名词、代词、动名词、名词性从句、不定式 | 待补充截图例句 |
+| 形容词功能 | 形容词、介词短语、定语从句、分词、不定式 | 待补充截图例句 |
+| 副词功能 | 副词、介词短语、状语从句、分词、不定式 | 待补充截图例句 |
 
 ### 2. 句子分析流程
 

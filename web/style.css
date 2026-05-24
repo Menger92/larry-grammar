@@ -93,20 +93,79 @@ p {
 
 #nav {
   display: grid;
-  gap: 8px;
+  gap: 10px;
   margin-top: 18px;
 }
 
 #nav a {
   color: var(--ink);
   text-decoration: none;
-  padding: 9px 10px;
   border-radius: 8px;
 }
 
 #nav a:hover,
 #nav a.active {
   background: #edf3fa;
+}
+
+.nav-group {
+  display: grid;
+  gap: 4px;
+}
+
+.nav-section,
+.nav-subitem {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: 8px;
+  min-width: 0;
+}
+
+.nav-section {
+  padding: 9px 10px;
+  font-weight: 800;
+}
+
+.nav-section span {
+  display: grid;
+  place-items: center;
+  min-width: 24px;
+  height: 24px;
+  border-radius: 7px;
+  background: #edf3fa;
+  color: var(--blue);
+  font-size: 13px;
+}
+
+.nav-section strong {
+  min-width: 0;
+  line-height: 1.45;
+}
+
+.nav-sublist {
+  display: grid;
+  gap: 2px;
+  padding-left: 12px;
+  border-left: 1px solid var(--line);
+  margin-left: 22px;
+}
+
+.nav-subitem {
+  padding: 6px 8px;
+  color: #4f5d72;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.nav-subitem span {
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.nav-subitem em {
+  min-width: 0;
+  font-style: normal;
 }
 
 main {
@@ -186,11 +245,17 @@ code {
 .adj,
 .adv,
 .nonfinite {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 2px;
   border-radius: 6px;
   padding: 1px 6px;
   font-weight: 700;
   line-height: 1.45;
+  word-break: keep-all;
+  overflow-wrap: normal;
+  vertical-align: middle;
 }
 
 .neutral {
@@ -888,16 +953,49 @@ code {
 }
 
 .card h3 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
   margin-bottom: 8px;
   color: var(--blue);
   font-size: 24px;
+  scroll-margin-top: 20px;
+}
+
+.chapter-number {
+  display: grid;
+  place-items: center;
+  min-width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #edf3fa;
+  color: var(--blue);
+  font-size: 16px;
+  font-weight: 900;
 }
 
 .table-title {
+  display: flex;
+  gap: 8px;
+  align-items: center;
   margin: 18px 0 8px;
   color: var(--ink);
   font-size: 16px;
   line-height: 1.35;
+  scroll-margin-top: 20px;
+}
+
+.section-number {
+  display: inline-grid;
+  place-items: center;
+  min-width: 42px;
+  height: 28px;
+  padding: 0 8px;
+  border-radius: 8px;
+  background: #edf3fa;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 900;
 }
 
 .meta {
@@ -910,6 +1008,7 @@ table {
   margin: 12px 0;
   border-collapse: collapse;
   background: #fff;
+  line-height: 1.62;
 }
 
 th,
@@ -922,6 +1021,293 @@ td {
 
 th {
   background: #edf3fa;
+}
+
+.study-table {
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.study-table th,
+.study-table td {
+  border-width: 0 1px 1px 0;
+}
+
+.study-table th:nth-child(1) { width: 16%; }
+.study-table th:nth-child(2) { width: 31%; }
+.study-table th:nth-child(3) { width: 29%; }
+.study-table th:nth-child(4) { width: 24%; }
+
+.study-table th:last-child,
+.study-table td:last-child {
+  border-right: 0;
+}
+
+.study-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.study-table td:first-child {
+  width: 16%;
+  font-weight: 800;
+  color: var(--blue);
+  background: #f8fbff;
+}
+
+.study-table td:nth-child(2) {
+  width: 31%;
+}
+
+.study-table td:nth-child(3) {
+  width: 29%;
+  background: #fffdf4;
+  font-weight: 700;
+}
+
+.study-table td:nth-child(4) {
+  width: 24%;
+  background: #fbfcff;
+}
+
+.rule-list {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  counter-reset: rule;
+}
+
+.rule-list li {
+  position: relative;
+  display: block;
+  min-height: 22px;
+  padding-left: 29px;
+  color: #334155;
+  line-height: 1.62;
+}
+
+.rule-list li::before {
+  counter-increment: rule;
+  content: counter(rule);
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #edf3fa;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.example-toggle {
+  width: 100%;
+  position: relative;
+}
+
+.example-toggle summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  max-width: 100%;
+  min-height: 34px;
+  padding: 6px 10px;
+  border: 1px solid #d7deea;
+  border-radius: 8px;
+  background: #f8fbff;
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.35;
+  cursor: pointer;
+  list-style: none;
+}
+
+.example-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.example-toggle summary::before {
+  content: "+";
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #edf3fa;
+  color: var(--blue);
+  font-size: 13px;
+  line-height: 1;
+}
+
+.example-toggle[open] summary::before {
+  content: "-";
+}
+
+.example-toggle[open] summary {
+  background: #edf3fa;
+}
+
+.example-library {
+  display: grid;
+  gap: 8px;
+  max-height: 420px;
+  overflow: auto;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #dfe4ee;
+  border-radius: 8px;
+  background: #fff;
+  counter-reset: example;
+}
+
+.analysis-figure {
+  margin: 0;
+  padding: 8px;
+  border: 1px solid #dfe4ee;
+  border-radius: 8px;
+  background: #f8fbff;
+}
+
+.analysis-zoom-link {
+  position: relative;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.analysis-figure img,
+.image-modal-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.analysis-zoom-link span {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.82);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.analysis-figure figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.analysis-figure figcaption a {
+  margin-left: 6px;
+  color: var(--blue);
+  font-weight: 900;
+}
+
+.image-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.image-modal:target {
+  display: flex;
+}
+
+.image-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.72);
+}
+
+.image-modal-panel {
+  position: relative;
+  z-index: 1;
+  width: min(1180px, 94vw);
+  max-height: 90vh;
+  overflow: auto;
+  padding: 16px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.35);
+}
+
+.image-modal-close {
+  position: sticky;
+  top: 0;
+  float: right;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin: 0 0 8px 8px;
+  border-radius: 50%;
+  background: #172033;
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.example-library p {
+  position: relative;
+  display: block;
+  margin: 0;
+  min-height: 40px;
+  padding: 9px 10px 9px 42px;
+  border: 1px solid #e7ecf5;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #334155;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.example-library p::before {
+  counter-increment: example;
+  content: counter(example);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #f0f5fb;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.example-library small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .empty {
@@ -1006,4 +1392,32 @@ mark {
   .steps-list {
     grid-template-columns: 1fr;
   }
+
+  .study-table tr {
+    display: block;
+  }
+
+  .study-table thead {
+    display: none;
+  }
+
+  .study-table td {
+    display: block;
+    width: 100% !important;
+    border-right: 0;
+  }
+
+  .study-table td::before {
+    display: block;
+    margin-bottom: 6px;
+    color: #6b7588;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: .04em;
+  }
+
+  .study-table td:nth-child(1)::before { content: "知识点"; }
+  .study-table td:nth-child(2)::before { content: "核心规则"; }
+  .study-table td:nth-child(3)::before { content: "代表例句"; }
+  .study-table td:nth-child(4)::before { content: "例句库"; }
 }

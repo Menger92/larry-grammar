@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">What she said about the incident surprised everyone 句子结构分析图</title>
+  <desc id="desc">主句主语是名词性从句 What she said about the incident，主句谓语是 surprised，主句宾语是 everyone。从句内部 she 是主语，said 是谓语，What 同时是连接词和从句宾语，about the incident 是状语。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1f4e79"/>
+    </marker>
+    <style>
+      .bg { fill: #f7f9fd; }
+      .card { fill: #ffffff; stroke: #d9e1ee; stroke-width: 2; }
+      .title { font: 800 30px "Microsoft YaHei", "Segoe UI", sans-serif; fill: #172033; }
+      .sub { font: 600 18px "Microsoft YaHei", "Segoe UI", sans-serif; fill: #5d687a; }
+      .label { font: 800 17px "Microsoft YaHei", "Segoe UI", sans-serif; fill: #243044; }
+      .small { font: 700 15px "Microsoft YaHei", "Segoe UI", sans-serif; fill: #536072; }
+      .word { font: 800 28px "Segoe UI", "Microsoft YaHei", sans-serif; fill: #172033; }
+      .cn { font: 800 18px "Microsoft YaHei", "Segoe UI", sans-serif; }
+      .nounFill { fill: #ffe8eb; stroke: #c1121f; }
+      .advFill { fill: #e8f6df; stroke: #2f7d32; }
+      .predFill { fill: #eef2f7; stroke: #7a8495; }
+      .connFill { fill: #edf3fa; stroke: #1f4e79; }
+      .nounText { fill: #c1121f; }
+      .advText { fill: #2f7d32; }
+      .predText { fill: #3f4754; }
+      .blueText { fill: #1f4e79; }
+      .lineNoun { stroke: #c1121f; stroke-width: 4; fill: none; stroke-linecap: round; }
+      .lineAdv { stroke: #2f7d32; stroke-width: 4; fill: none; stroke-linecap: round; }
+      .linePred { stroke: #7a8495; stroke-width: 4; fill: none; stroke-linecap: round; }
+      .dash { stroke-dasharray: 8 7; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1280" height="720" rx="0"/>
+  <rect class="card" x="42" y="38" width="1196" height="644" rx="18"/>
+
+  <text class="title" x="76" y="88">主从结构分析图</text>
+  <text class="sub" x="76" y="119">What she said about the incident surprised everyone.</text>
+
+  <rect class="nounFill" x="82" y="158" width="585" height="86" rx="12"/>
+  <rect class="predFill" x="694" y="158" width="190" height="86" rx="12"/>
+  <rect class="nounFill" x="914" y="158" width="232" height="86" rx="12"/>
+
+  <text class="word" x="110" y="209">What she said about the incident</text>
+  <text class="word" x="729" y="209">surprised</text>
+  <text class="word" x="954" y="209">everyone</text>
+
+  <path class="lineNoun" d="M100 264 H650"/>
+  <path class="linePred" d="M712 264 H866"/>
+  <path class="lineNoun" d="M935 264 H1128"/>
+
+  <text class="cn nounText" x="255" y="296">主句主语：名词性从句</text>
+  <text class="cn predText" x="738" y="296">主句谓语</text>
+  <text class="cn nounText" x="990" y="296">主句宾语</text>
+
+  <rect class="card" x="82" y="338" width="1064" height="260" rx="16"/>
+  <text class="label" x="112" y="374">从句内部：What she said about the incident</text>
+  <text class="small" x="112" y="404">还原理解：she said what about the incident</text>
+
+  <rect class="connFill" x="112" y="435" width="150" height="74" rx="10"/>
+  <rect class="nounFill" x="292" y="435" width="115" height="74" rx="10"/>
+  <rect class="predFill" x="437" y="435" width="125" height="74" rx="10"/>
+  <rect class="advFill" x="592" y="435" width="326" height="74" rx="10"/>
+
+  <text class="word" x="146" y="480">What</text>
+  <text class="word" x="326" y="480">she</text>
+  <text class="word" x="470" y="480">said</text>
+  <text class="word" x="622" y="480">about the incident</text>
+
+  <path class="lineNoun" d="M122 527 H252"/>
+  <path class="lineNoun" d="M305 527 H394"/>
+  <path class="linePred" d="M450 527 H550"/>
+  <path class="lineAdv" d="M610 527 H900"/>
+
+  <text class="cn blueText" x="124" y="558">连词 + 从句宾语</text>
+  <text class="cn nounText" x="323" y="558">从句主语</text>
+  <text class="cn predText" x="456" y="558">从句谓语</text>
+  <text class="cn advText" x="672" y="558">从句状语</text>
+
+  <rect class="card" x="955" y="392" width="156" height="142" rx="12"/>
+  <text class="label blueText" x="981" y="425">What</text>
+  <text class="small" x="981" y="455">双重属性</text>
+  <text class="cn blueText" x="981" y="488">1. 连接词</text>
+  <text class="cn nounText" x="981" y="518">2. 名词性成分</text>
+  <path d="M955 463 C890 450 820 450 760 462" stroke="#1f4e79" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M955 503 C790 555 410 580 188 515" stroke="#c1121f" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+  <text class="small" x="82" y="646">阅读顺序：先看主句主谓宾，再进入主语从句内部分析 What / she / said / about the incident。</text>
+</svg>
