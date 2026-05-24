@@ -11,6 +11,8 @@
 | 4.3 分词 | `assets/04-03_分词_笔记01.jpg` 至 `assets/04-03_分词_笔记10.jpg` |
 | 4.4 从句和非谓语动词的转换 | `assets/04-04_非谓语与从句转换_笔记01.jpg` 至 `assets/04-04_非谓语与从句转换_笔记10.jpg` |
 
+补充截图：`assets/非谓语动词/`，本轮主要补充 4.1 不定式的属性、形式和句中位置。
+
 ## 本章核心
 
 非谓语不是另一套孤立规则，而是把一个动作从“谓语位置”降级，让它进入句子中承担名词性、形容词性或副词性功能。
@@ -37,6 +39,16 @@
 | 形式层 | 它是 to do、doing，还是 done？ | 初步判断目的/将来、主动/进行、被动/完成。 |
 | 功能层 | 它整体在句中当什么？ | 回到名词性、形容词性、副词性或补语。 |
 | 还原层 | 它能不能还原成从句？ | 用从句检验逻辑主语、主动/被动、时间关系是否清楚。 |
+
+### 非谓语的词性属性
+
+非谓语不是句子的核心谓语，也不再按普通动词处理；但它保留动词的特点，可以有时态变化、宾语、状语等。
+
+| 非谓语形式 | 是动词吗？ | 是谓语动词吗？ | 句中属性 | 与普通名词、形容词、副词的区别 |
+| --- | --- | --- | --- | --- |
+| 不定式 | 否 | 否 | 名词性 / 形容词性 / 副词性 | 保留动作含义，常带目的、将来、倾向。 |
+| 动名词 | 否 | 否 | 名词性 | 把动作当成“事情”来处理。 |
+| 分词 | 否 | 否 | 形容词性 / 副词性 | 保留主动/被动、进行/完成等动词关系。 |
 
 ## 非谓语总览表
 
@@ -83,6 +95,28 @@
 | to have done | 完成式 | 不定式动作发生在谓语动作之前。 |
 | to have been done | 完成被动式 | 动作已经被完成。 |
 
+更完整的形式表：
+
+| 时间/状态 | 主动 | 被动 |
+| --- | --- | --- |
+| 一般时态 | to write | to be written |
+| 进行时态 | to be writing | 无常用形式 |
+| 完成时态 | to have written | to have been written |
+| 完成进行时态 | to have been writing | 无常用形式 |
+
+不定式不是固定只当一种词性。它既可以有名词属性，也可以有形容词属性和副词属性。
+
+| 属性 | 常见位置 | 例句 | 判断 |
+| --- | --- | --- | --- |
+| 名词性 | 主语 | To make you understand me is impossible. | to do 整体作主语。 |
+| 名词性 | 形式主语后置 | It is impossible to make you understand me. | it 是形式主语，真正主语是 to do。 |
+| 名词性 | 宾语 | I will try to forget you. | to forget you 作 try 的宾语。 |
+| 名词性 | 疑问词 + to do | He forgot which way to take. | which way to take 整体作宾语。 |
+| 名词性 | 表语 / 主语补语 | To know everything is to know nothing. | to know nothing 说明主语内容。 |
+| 名词性 | 表语 / 主语补语 | The problem is where to find a guide. | where to find... 说明 problem 的内容。 |
+| 形容词性 | 后置定语 | We expressed our desire to join their team. | to join... 修饰 desire。 |
+| 副词性 | 状语 | To improve my English, I went to America. | to do 表示目的，修饰主句动作。 |
+
 ### 不定式常见搭配表
 
 | 结构 | 记忆点 | 代表例句 |
@@ -94,7 +128,27 @@
 | enough to do | 足够……可以…… | He is smart enough to learn English well. |
 | in order to / so as to do | 明确表示目的。 | To improve my English, I keep practicing. |
 
-### 4.1.3 使役、感官与省略 to
+### 4.1.3 句末中心原则：形式主语、形式宾语和后置
+
+不定式短语较长时，英语常把真正重的内容放到句末，让句子重心后移。
+
+| 原始表达 | 推荐表达 | 判断 |
+| --- | --- | --- |
+| To make you understand me is impossible. | It is impossible to make you understand me. | it 作形式主语，不定式后置。 |
+| She found to leave here impossible. | She found it impossible to leave here. | it 作形式宾语，impossible 作宾补，不定式后置。 |
+| I took to have been invited to the meeting as an honor. | I took it as an honor to have been invited to the meeting. | it 作形式宾语，真正宾语放句末。 |
+| It would be a pity to let such an opportunity slip. | It would be a pity to let slip such an opportunity. | 宾语较长时，可把重心后移。 |
+
+形容词属性的不定式作后置定语时，也常受句末中心原则影响：
+
+| 表达 | 判断 |
+| --- | --- |
+| The letter from Michael shocked everyone. | from Michael 是后置定语，修饰 letter。 |
+| We expressed our desire to join their team. | to join their team 是后置定语，修饰 desire。 |
+| At the meeting a decision to transfer a part of the students to another school was made. | 主语过长，读起来重。 |
+| At the meeting a decision was made to transfer a part of the students to another school. | 句子重心后移，更自然。 |
+
+### 4.1.4 使役、感官与省略 to
 
 有些结构虽然属于“让某人做某事 / 看见某人做某事”，但后面的动词常不用 `to`。
 
@@ -105,6 +159,30 @@
 | 感官动词 + 宾语 + doing | see, watch, hear, notice | 强调动作正在发生，如 `I saw Michael climbing up the tree.` |
 
 记忆点：省略 `to` 不代表它变成谓语；它仍然要服务于前面的谓语动词。
+
+### 4.1.5 不定式作宾语补语、同位语
+
+| 功能 | 例句 | 判断 |
+| --- | --- | --- |
+| 宾语补语 | He asked me to smile. | to smile 补充说明 me 要做的动作。 |
+| 宾语补语 | He asked me to finish my job before noon. | to finish... 补充说明 me 的动作任务。 |
+| 省略 to 的宾补 | He made me stay for the night. | make 后宾补用动词原形。 |
+| 省略 to 的宾补 | She watched Michael enter the room. | 感官动词后可用动词原形，强调整个动作过程。 |
+| 同位语 | Is this your purpose, to avoid being punished? | to avoid... 解释 purpose 的具体内容。 |
+| 带逻辑主语的同位语 | My mother's last request for me to study hard was never met. | for me to study hard 说明 request 的内容，me 是不定式逻辑主语。 |
+
+### 4.1.6 不定式作状语
+
+副词属性的不定式可以作状语，常常可以理解为状语从句的压缩。
+
+| 状语类型 | 例句 | 判断 |
+| --- | --- | --- |
+| 目的状语 | To improve my English, I went to America. | 为了提高英语，我去了美国。 |
+| 结果状语 | He went abroad never to return. | 去了国外，结果再也没有回来。 |
+| 原因状语 | She wept to hear the news. | 因为听到消息而哭。 |
+| 条件状语 | To hear him sing, you might take him for a girl. | 如果听他唱歌，你可能会把他当成女孩。 |
+| 方式状语 | The old man walked slowly, hunched over, as if to carry the weight of the world on his shoulders. | as if to do 表示“仿佛要……”。 |
+| 让步状语 | To do his best, he could not fulfill his task in time. | 即使尽力，他也没能及时完成任务。 |
 
 ## 4.2 动名词 doing
 

@@ -872,15 +872,56 @@ const sections = [
           <tr><td><span class="nonfinite">done</span> 过去分词</td><td>被动、完成</td><td><span class="adj">形容词性</span>、<span class="adv">副词性</span>、补语</td><td>The book <span class="nonfinite">written by Larry</span> is useful.</td></tr>
         </tbody>
       </table>
+      <h4 class="table-title">非谓语的词性属性</h4>
+      <table>
+        <thead><tr><th>非谓语形式</th><th>是不是核心谓语？</th><th>句中属性</th><th>保留的动词味道</th></tr></thead>
+        <tbody>
+          <tr><td><span class="nonfinite">不定式</span></td><td>不是</td><td><span class="noun">名词性</span> / <span class="adj">形容词性</span> / <span class="adv">副词性</span></td><td>目的、将来、倾向、具体动作。</td></tr>
+          <tr><td><span class="nonfinite">动名词</span></td><td>不是</td><td><span class="noun">名词性</span></td><td>把动作当成“事情”。</td></tr>
+          <tr><td><span class="nonfinite">分词</span></td><td>不是</td><td><span class="adj">形容词性</span> / <span class="adv">副词性</span></td><td>主动/被动、进行/完成。</td></tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">4.1 不定式形式表</h4>
+      <table>
+        <thead><tr><th>时间 / 状态</th><th>主动</th><th>被动</th></tr></thead>
+        <tbody>
+          <tr><td>一般</td><td><span class="nonfinite">to write</span></td><td><span class="nonfinite">to be written</span></td></tr>
+          <tr><td>进行</td><td><span class="nonfinite">to be writing</span></td><td>无常用形式</td></tr>
+          <tr><td>完成</td><td><span class="nonfinite">to have written</span></td><td><span class="nonfinite">to have been written</span></td></tr>
+          <tr><td>完成进行</td><td><span class="nonfinite">to have been writing</span></td><td>无常用形式</td></tr>
+        </tbody>
+      </table>
       <h4 class="table-title">4.1 不定式 to do 功能表</h4>
       <table>
         <thead><tr><th>功能</th><th>代表例句</th><th>分析</th></tr></thead>
         <tbody>
-          <tr><td><span class="noun">主语</span></td><td>It is foolish <span class="nonfinite">to lie</span>.</td><td>to do 整体可以作主语。</td></tr>
+          <tr><td><span class="noun">主语</span></td><td><span class="nonfinite">To make you understand me</span> is impossible.<br>It is impossible <span class="nonfinite">to make you understand me</span>.</td><td>to do 整体可以作主语；常用 it 作形式主语。</td></tr>
           <tr><td><span class="noun">宾语</span></td><td>Sally desires <span class="nonfinite">to be promoted</span>.</td><td>to do 可以作动词宾语。</td></tr>
-          <tr><td><span class="adj">定语</span></td><td>I need a pen <span class="nonfinite">to write with</span>.</td><td>to do 可以修饰名词，常表示“可读/要读”。</td></tr>
-          <tr><td><span class="adv">状语</span></td><td>Sally will be proud <span class="nonfinite">to win the competition</span>.</td><td>to do 可以说明目的、结果或原因等。</td></tr>
-          <tr><td>宾语补语</td><td>I expect him <span class="nonfinite">to come</span>.</td><td>to do 可以补充说明宾语要做的动作。</td></tr>
+          <tr><td><span class="noun">表语 / 主语补语</span></td><td>The problem is <span class="nonfinite">where to find a guide</span>.</td><td>to do 或疑问词 + to do 可以说明主语内容。</td></tr>
+          <tr><td><span class="adj">定语</span></td><td>We expressed our desire <span class="nonfinite">to join their team</span>.</td><td>to do 后置修饰名词。</td></tr>
+          <tr><td><span class="adv">状语</span></td><td><span class="nonfinite">To improve my English</span>, I went to America.</td><td>to do 可以说明目的、结果、原因、条件、方式、让步等。</td></tr>
+          <tr><td>宾语补语</td><td>He asked me <span class="nonfinite">to smile</span>.</td><td>to do 可以补充说明宾语要做的动作。</td></tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">不定式句末中心与后置</h4>
+      <table>
+        <thead><tr><th>现象</th><th>推荐表达</th><th>判断</th></tr></thead>
+        <tbody>
+          <tr><td>形式主语</td><td>It is impossible <span class="nonfinite">to make you understand me</span>.</td><td>it 站在主语位置，真正主语放句末。</td></tr>
+          <tr><td>形式宾语</td><td>She found it impossible <span class="nonfinite">to leave here</span>.</td><td>it 作形式宾语，impossible 作宾补。</td></tr>
+          <tr><td>长定语后置</td><td>At the meeting a decision was made <span class="nonfinite">to transfer a part of the students to another school</span>.</td><td>不定式内容较长时，常把重心放到句末。</td></tr>
+          <tr><td>宾补省略 to</td><td>He made me <span class="nonfinite">stay</span> for the night.<br>She watched Michael <span class="nonfinite">enter</span> the room.</td><td>使役、感官动词后可用动词原形，但仍不是核心谓语。</td></tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">不定式作状语类型</h4>
+      <table>
+        <thead><tr><th>状语类型</th><th>例句</th><th>判断</th></tr></thead>
+        <tbody>
+          <tr><td>目的</td><td><span class="nonfinite">To improve my English</span>, I went to America.</td><td>为了提高英语。</td></tr>
+          <tr><td>结果</td><td>He went abroad <span class="nonfinite">never to return</span>.</td><td>结果再也没有回来。</td></tr>
+          <tr><td>原因</td><td>She wept <span class="nonfinite">to hear the news</span>.</td><td>因为听到消息而哭。</td></tr>
+          <tr><td>条件</td><td><span class="nonfinite">To hear him sing</span>, you might take him for a girl.</td><td>如果听他唱歌。</td></tr>
+          <tr><td>方式</td><td>The old man walked slowly, hunched over, <span class="nonfinite">as if to carry the weight of the world on his shoulders</span>.</td><td>as if to do 表示“仿佛要……”。</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">4.2 动名词 doing 功能表</h4>

@@ -512,7 +512,7 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 
 不定式 to do 是非谓语的一种。它保留动词含义，但不作谓语，常表达目的、将来、倾向、一次性动作或具体动作。
 
-笔记来源：`assets/04-01_不定式_笔记01.jpg` 至 `assets/04-01_不定式_笔记05.jpg`。详细整理见 `source/nonfinite.md`。
+笔记来源：`assets/04-01_不定式_笔记01.jpg` 至 `assets/04-01_不定式_笔记05.jpg`；补充截图见 `assets/非谓语动词/`。详细整理见 `source/nonfinite.md`。
 
 常见功能：
 
@@ -525,11 +525,30 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 
 不定式常带有“未发生、将要、目的、意愿”的感觉。
 
+不定式形式：
+
+| 时间/状态 | 主动 | 被动 |
+| --- | --- | --- |
+| 一般 | to write | to be written |
+| 进行 | to be writing | 无常用形式 |
+| 完成 | to have written | to have been written |
+| 完成进行 | to have been writing | 无常用形式 |
+
+不定式属性：
+
+| 属性 | 常见功能 | 代表例句 |
+| --- | --- | --- |
+| 名词性 | 主语、宾语、表语 | It is impossible to make you understand me. |
+| 形容词性 | 后置定语 | We expressed our desire to join their team. |
+| 副词性 | 状语 | To improve my English, I went to America. |
+
 学习重点：
 
 - 不定式不是谓语，句子还需要真正的谓语动词。
+- 不定式不是固定词性；它可以有名词性、形容词性、副词性。
+- 不定式短语较长时，英语常用形式主语、形式宾语或后置来体现句末中心原则。
 - to do 作定语时，常表示将要做、可以做、需要做。
-- to do 作状语时，最常见的是目的。
+- to do 作状语时，常见目的、结果、原因、条件、方式、让步。
 - 使役动词、感官动词后常见省略 `to` 的动词原形，但它仍然不是句子核心谓语。
 
 ### 15. 4.2 动名词
