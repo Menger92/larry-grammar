@@ -1,5 +1,7 @@
 ﻿# 形容词性从句
 
+来源说明：本章优先依据 V10-V12 相关视频截图与用户上传截图整理；已确认例句登记在 `source/evidence-log.md` 和 `source/example-source-audit.md`。未登记来源的旧例句，后续只作待校准材料，不继续扩写。
+
 ## 3.4-3.6 形容词性从句 / 定语从句理解入口
 
 定语从句的核心：一个从句像形容词一样，放在名词后面修饰它。
@@ -26,6 +28,8 @@
 
 ### 定语从句关系词类型主表
 
+主表只放一个代表例句；where / when / why、限制性 / 非限制性等同类多例句，放入后面的例句库和对比例句库。
+
 | 关系词 | 先行词 | 在从句中作什么 | 截图例句 | 分析 |
 | --- | --- | --- | --- | --- |
 | who | 人 | 主语 | Sally is a teacher who is warm-hearted, hardworking, and quick in learning. | who 在从句中作主语。 |
@@ -47,7 +51,7 @@
 | when | 时间名词 | 时间状语 | in / on / at which |
 | why | 原因名词 | 原因状语 | for which |
 
-#### where：地点状语
+#### where 例句库：地点状语
 
 | 步骤 | 内容 |
 | --- | --- |
@@ -70,7 +74,7 @@
 | I plant the trees in a place where there’s a lot of sunshine. | 形容词性从句：where 从句修饰 place。 |
 | I plant trees where there’s a lot of sunshine. | 副词性从句：where 从句说明 plant 的地点。 |
 
-#### when：时间状语
+#### when 例句库：时间状语
 
 | 步骤 | 内容 |
 | --- | --- |
@@ -96,7 +100,7 @@
 | September 15, 2018 is the day when I met Sally. | 形容词性从句：when 从句修饰 the day。 |
 | I was only a little kid when I met Sally. | 副词性从句：when 从句说明时间。 |
 
-#### why：原因状语
+#### why 例句库：原因状语
 
 | 步骤 | 内容 |
 | --- | --- |
@@ -136,7 +140,7 @@
 | Sally studies in a school whose students study like machines. | whose 也可用于物的所有格。 |
 | That guy whose dad is a billionaire wasted a lot of money, which fact is hard to believe. | which fact 属于较少见的 which + 名词结构。 |
 
-### 定语从句类型表
+### 定语从句类型主表
 
 | 类型 | 代表例句 | 分析 |
 | --- | --- | --- |
@@ -154,7 +158,7 @@
 | 限制性定语从句 | 筛选：说明“哪一个 / 哪一类” | 通常没有逗号 | that / which / who / whom / whose / where / when / why 等 | 先行词通常是需要被筛选的名词短语。 |
 | 非限制性定语从句 | 顺便提一嘴：补充信息 | 通常有逗号 | 常用 which, who, where, when；不要用 that | 先行词可以是名词短语，也可以是主句的一部分，甚至整个主句。 |
 
-#### 同一句式的意义差别
+#### 对比例句库：限制性 VS 非限制性的意义差别
 
 | 句子 | 类型 | 含义 |
 | --- | --- | --- |
@@ -169,7 +173,7 @@
 | This is the time when we need to come together. | 限制性 | 这就是我们需要联合起来的时候。 |
 | This is the time, when we need to come together. | 非限制性 | 时不我待，顺便说明现在需要联合起来。 |
 
-#### 非限制性定语从句的先行词更多样
+#### 例句库：非限制性定语从句的先行词更多样
 
 | 先行词类型 | 例句 | 分析 |
 | --- | --- | --- |
@@ -179,7 +183,7 @@
 | 谓语部分 | Michael plays basketball, which I don’t. | which 指 plays basketball 这个动作。 |
 | 宾语部分 | Michael likes playing basketball, which is a good sport. | which 指 playing basketball。 |
 
-#### 专有名词和唯一对象
+#### 对比例句库：专有名词和唯一对象
 
 专有名词或已经唯一明确的对象，通常不需要再用限制性定语从句筛选；如果只是补充说明，用非限制性定语从句。
 

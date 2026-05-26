@@ -1,5 +1,7 @@
 ﻿# 名词性从句
 
+来源说明：本章优先依据 V08-V09 视频截图与用户上传截图整理；已确认例句登记在 `source/evidence-log.md` 和 `source/example-source-audit.md`。未登记来源的旧例句，后续只作待校准材料，不继续扩写。
+
 ## 3.2-3.3 名词性从句理解入口
 
 名词性从句的核心：把“一件事”当成名词放进句子。
@@ -72,6 +74,8 @@
 
 ## 名词性从句类型主表
 
+主表只保留一个代表例句；同一类型的更多例句集中放在后面的例句库。
+
 | 类型 | 句中位置 | 代表例句 | 分析 |
 | --- | --- | --- | --- |
 | 主语从句 | 主语 | What she said about the incident surprised everyone. | What she said about the incident 整体作主语。 |
@@ -79,7 +83,7 @@
 | 表语从句 | 表语 / 主语补语 | The truth is that we all make mistakes. | that we all make mistakes 说明 truth 的内容。 |
 | 同位语从句 | 同位语 | The news that they won the championship spread quickly. | that they won the championship 解释 news 的具体内容。 |
 
-### 名词性从句例句：尝试把从句部分还原
+### 名词性从句例句库：尝试把从句部分还原
 
 | 类型 | 例句 | 从句还原 | 分析 |
 | --- | --- | --- | --- |
@@ -103,13 +107,25 @@
 
 普通同位语本身就是一个名词性成分，用来解释前面的名词：
 
+代表例句：Michael, my friend, is a good guy.
+
+<details>
+<summary>例句库：普通同位语</summary>
+
 | 原句 | 同位语 | 分析 |
 | --- | --- | --- |
 | Michael, my friend, is a good guy. | my friend | my friend 解释 Michael 的身份。 |
 | My favorite subject, mathematics, requires logical thinking. | mathematics | mathematics 解释 subject 的具体内容。 |
 | Her goal, becoming a doctor, requires years of study and dedication. | becoming a doctor | becoming a doctor 是动名词短语，解释 goal 的内容。 |
 
+</details>
+
 同位语从句就是把“解释说明”换成一个完整句子。它通常解释抽象名词的内容，而不是像定语从句那样限定“哪一个名词”。
+
+代表例句：The news that they won the championship spread quickly.
+
+<details>
+<summary>例句库：同位语从句</summary>
 
 | 抽象名词 | 同位语从句 | 例句 | 分析 |
 | --- | --- | --- | --- |
@@ -118,6 +134,8 @@
 | idea | what has happened to him | I have no idea what has happened to him. | what has happened... 解释 idea 的内容；what 在从句中作主语。 |
 | doubt | why she did that | My original doubt, why she did that, has not been answered. | why she did that 解释 doubt 的内容；why 作原因状语。 |
 | question | what measures should be taken | The last question, what measures should be taken, was fully discussed. | what measures should be taken 解释 question 的内容；what 修饰 measures。 |
+
+</details>
 
 判断同位语从句时，问两个问题：
 
@@ -156,7 +174,7 @@ It + 谓语 / 表语 + 名词性从句
 
 ### 形式宾语问题
 
-当宾语从句后面还要接宾语补语时，英语常用 it 作形式宾语，把真正的宾语从句放到句尾。这样可以避免宾语从句太长，导致宾语和补语关系不清楚。
+当宾语从句本身带有补语时，要使用 it 作形式宾语，把真正的宾语从句后置。这样可以避免宾语从句太长，导致宾语和补语关系不清楚；这同样是因为英语有 ENDWEIGHT（句末重心）的要求。
 
 ```text
 主语 + 谓语 + it + 宾语补语 + 名词性从句
@@ -173,9 +191,9 @@ that 在名词性从句中常常只起连接作用，不作从句成分，但不
 
 | 从句位置 | that 是否可省 | 例句 | 说明 |
 | --- | --- | --- | --- |
-| 主语从句位于句首 | 不省略 | That Sally is beautiful is true. | 如果省略 that，句首结构会不清楚。 |
-| 宾语从句 | 常可省略 | 待补充截图例句 | 动词后面的陈述内容容易识别为宾语从句。 |
-| 表语从句 | 建议保留 | 待补充截图例句 | 学习阶段保留 that 更清楚；口语中有时可省。 |
+| 主语从句位于句首 | 不省略 | That he is a transsexual doesn't matter. | that 放在句首标记后面整句作主语，省略后主语边界不清楚。 |
+| 宾语从句 | 常可省略 | I don't know (that) he is a transsexual. | 动词后面的陈述内容容易识别为宾语从句。 |
+| 表语从句 | 可省略 | The problem is (that) he is a transsexual. | 系动词后面的陈述内容容易识别为表语从句；学习阶段保留 that 更清楚。 |
 | 同位语从句 | 不省略 | The fact that she lied disappointed everyone. | that 标记后面是在解释 fact 的内容。 |
 
 注意：whether、what、who、where、when、why、how 不能像 that 一样随便省略，因为它们本身带有“是否、什么、谁、哪里、何时、为什么、如何”等意义，很多时候还在从句内部承担成分。

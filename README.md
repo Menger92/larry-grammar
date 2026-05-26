@@ -20,6 +20,14 @@
 相关索引文件：
 
 - `source/project-method.md`：项目方法论与内容进入规则。
+- `source/README.md`：Markdown 源文件导航。
+- `source/video-source-index.md`：Larry 视频顺序、BV 号、章节文件和溯源状态。
+- `source/evidence-log.md`：已经确认的视频画面、截图和笔记证据记录。
+- `source/example-source-audit.md`：例句来源审计表，集中管理已确认和待校准例句。
+- `source/update-backlog.md`：后续待补内容和证据需求。
+- `source/tense.md`：Larry 时态专题，依据 V19-V22 逐步整理。
+- `source/subjunctive.md`：Larry 虚拟语气专题，依据 V24-V26 逐步整理。
+- `source/morphology.md`：Larry 词法解析专题，依据 V27-V28 逐步整理。
 - `source/grammar-club-crosswalk.md`：Larry 与《文法俱乐部》的章节对照。
 - `source/terminology-map.md`：大陆术语与《文法俱乐部》术语对照。
 - `source/economist-analysis-protocol.md`：经济学人句子分析输出协议。
@@ -41,7 +49,10 @@
 - 知识结构采用“理解入口 + 类型主表 + 规则补充”的形式：本质、总领描述、独立句变从句等放在入口小节；类型主表只放具体类型；语序、省略、易混点等规则另开补充表。
 - 《文法俱乐部》只作为旁注和理论补强进入项目；在 Larry 视频资料未稳定前，不把书中细节大规模写入正文。
 - 经济学人文章不整篇保存进项目；只保留必要句子、出处链接、语法分析和学习卡片。
+- `The economist/` 这类本地下载资料不进入 GitHub；需要分析时只提取句子和自己的语法分析。
 - 如果需要调整页面模块、图示结构、知识层级关系等结构性内容，Codex 必须先和我确认，再执行修改。
+- Larry 主线内容必须有来源：新增规则标明视频序号和 BV 号；例句只使用视频画面、用户截图或用户上传笔记中的例句，不由 Codex 自行创造。
+- 已存在但来源未逐条确认的例句，先登记到 `source/example-source-audit.md`，后续按视频或截图校准，不继续扩写。
 
 ## 颜色规则
 

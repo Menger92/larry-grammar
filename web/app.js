@@ -1,4 +1,4 @@
-const sections = [
+const fallbackSections = [
   {
     id: "overview",
     title: "语法体系总览",
@@ -17,6 +17,25 @@ const sections = [
           <tr><td>简单句主干层</td><td>谁对谁做了什么？</td><td>主谓宾定状补</td></tr>
           <tr><td>扩展层</td><td>复杂信息如何嵌入？</td><td>从句、非谓语</td></tr>
           <tr><td>表达层</td><td>时间、态度、指称如何表达？</td><td>时态、虚拟语气、冠词</td></tr>
+        </tbody>
+      </table>
+      <h4 class="table-title">词性之间的修饰关系</h4>
+      <div class="review-card">
+        <strong>核心规则</strong>
+        <p><span class="adj">形容词性成分</span>修饰<span class="noun">名词性成分</span>；<span class="adv">副词性成分</span>修饰<span class="adj">形容词性成分</span>、动词、其他<span class="adv">副词性成分</span>。</p>
+      </div>
+      <table>
+        <thead><tr><th>修饰关系</th><th>例句</th><th>句中功能</th></tr></thead>
+        <tbody>
+          <tr><td><span class="adj">形容词</span>修饰<span class="noun">名词</span></td><td>The <span class="adj">beautiful</span> <span class="noun">flowers</span> have a sweet fragrance.</td><td><span class="adj">beautiful</span> 修饰 <span class="noun">flowers</span>，作定语。</td></tr>
+          <tr><td><span class="adj">形容词性从句</span>修饰<span class="noun">名词</span></td><td>The <span class="noun">flowers</span> <span class="adj">which are stolen from Michael</span> have a sweet fragrance.</td><td><span class="adj">which are stolen from Michael</span> 修饰 <span class="noun">flowers</span>。</td></tr>
+          <tr><td><span class="nonfinite">分词</span>修饰<span class="noun">名词</span></td><td>The <span class="noun">flowers</span> <span class="adj"><span class="nonfinite">stolen</span> from Michael</span> have a sweet fragrance.</td><td><span class="nonfinite">stolen from Michael</span> 修饰 <span class="noun">flowers</span>。</td></tr>
+          <tr><td><span class="adv">副词</span>修饰<span class="adj">形容词</span></td><td>Her performance was <span class="adv">surprisingly</span> <span class="adj">good</span>.</td><td><span class="adv">surprisingly</span> 修饰 <span class="adj">good</span>。</td></tr>
+          <tr><td><span class="adv">副词性从句</span>修饰<span class="adj">形容词</span></td><td>Her performance was <span class="adj">good</span> <span class="adv">when her mom is around</span>.</td><td><span class="adv">when her mom is around</span> 修饰 <span class="adj">good</span> / was good。</td></tr>
+          <tr><td><span class="adv">副词</span>修饰动词</td><td>He runs <span class="adv">slowly</span>.</td><td><span class="adv">slowly</span> 修饰 runs。</td></tr>
+          <tr><td><span class="adv">副词性从句</span>修饰动词</td><td>He runs <span class="adv">if he is followed</span>.</td><td><span class="adv">if he is followed</span> 修饰 runs。</td></tr>
+          <tr><td><span class="adv">副词</span>修饰其他<span class="adv">副词</span></td><td>She speaks <span class="adv">very</span> <span class="adv">softly</span>.</td><td><span class="adv">very</span> 修饰 <span class="adv">softly</span>。</td></tr>
+          <tr><td><span class="adv">副词性介词短语</span>修饰动词</td><td>She speaks <span class="adv">like a gun</span>.</td><td><span class="adv">like a gun</span> 修饰 speaks。</td></tr>
         </tbody>
       </table>
     `
@@ -401,29 +420,29 @@ const sections = [
           </tr>
           <tr>
             <td>形式宾语</td>
-            <td><ol class="rule-list"><li>宾语从句后面还要接宾补时，结构容易变重。</li><li>用 it 作形式宾语。</li><li>把真正宾语从句放到句尾。</li></ol></td>
+            <td><ol class="rule-list"><li>宾语从句本身带有补语时，结构容易变重。</li><li>用 it 作形式宾语。</li><li>把真正宾语从句放到句尾，形成 <strong>ENDWEIGHT（句末重心）</strong>。</li></ol></td>
             <td>I find it unbelievable <span class="noun">that Sally is beautiful</span>.</td>
             <td>
               <details class="example-toggle">
-                <summary>查看 2 个形式宾语例句</summary>
+                <summary>查看形式宾语例句</summary>
                 <div class="example-library">
-                  <p>I find it unbelievable <span class="noun">that Sally is beautiful</span>. <small>it 是形式宾语，unbelievable 是宾语补语。</small></p>
-                  <p>Our teacher made it a rule <span class="noun">that we have to speak English in class</span>. <small>it 是形式宾语，a rule 是宾语补语。</small></p>
+                  <p>I find it unbelievable <span class="noun">that Sally is beautiful</span>. <small>it 是形式宾语，unbelievable 是宾语补语；不推荐：I find that Sally is beautiful unreasonable.</small></p>
+                  <p>Our teacher made it a rule <span class="noun">that we have to speak English in class</span>. <small>it 是形式宾语，a rule 是宾语补语；不推荐：Our teacher made that we have to speak English in class a rule.</small></p>
                 </div>
               </details>
             </td>
           </tr>
           <tr>
             <td>that 的省略</td>
-            <td><ol class="rule-list"><li>that 只连接、不作成分。</li><li>宾语从句中常可省略。</li><li>主语从句、同位语从句等位置不要随意省略。</li></ol></td>
-            <td>待补充截图例句</td>
+            <td><ol class="rule-list"><li>that 只连接、不作成分。</li><li>宾语从句、表语从句中常可省略。</li><li>主语从句位于句首时不要省略。</li></ol></td>
+            <td><span class="noun">That he is a transsexual</span> doesn't matter.</td>
             <td>
               <details class="example-toggle">
                 <summary>查看省略规则</summary>
                 <div class="example-library">
-                  <p><b>主语从句位于句首：</b><span class="noun">That Sally is beautiful</span> is true. <small>that 不省。</small></p>
-                  <p><b>宾语从句：</b>待补充截图例句。<small>宾语位置常可省略 that。</small></p>
-                  <p><b>表语从句：</b>待补充截图例句。<small>学习阶段建议保留 that。</small></p>
+                  <p><b>主语从句位于句首：</b><span class="noun">That he is a transsexual</span> doesn't matter. <small>that 不省。</small></p>
+                  <p><b>宾语从句：</b>I don't know <span class="noun">(that) he is a transsexual</span>. <small>宾语位置常可省略 that。</small></p>
+                  <p><b>表语从句：</b>The problem is <span class="noun">(that) he is a transsexual</span>. <small>表语位置可省；学习阶段保留 that 更清楚。</small></p>
                   <p><b>同位语从句：</b>The <span class="noun">fact</span> <span class="noun">that she lied</span> disappointed everyone. <small>that 不省。</small></p>
                 </div>
               </details>
@@ -862,23 +881,14 @@ const sections = [
           <tr><td>5</td><td>它和被修饰对象是什么关系？</td><td>主动用 doing，被动或完成常用 done，目的或将来常用 to do。</td></tr>
         </tbody>
       </table>
-      <h4 class="table-title">非谓语总览表</h4>
+      <h4 class="table-title">非谓语总览：词性属性</h4>
       <table>
-        <thead><tr><th>形式</th><th>核心感觉</th><th>常见功能</th><th>代表例句</th></tr></thead>
+        <thead><tr><th>形式</th><th>是不是核心谓语？</th><th>句中属性</th><th>保留的动词味道</th><th>代表例句</th></tr></thead>
         <tbody>
-          <tr><td><span class="nonfinite">to do</span></td><td>目的、将来、倾向、具体动作</td><td><span class="noun">名词性</span>、<span class="adj">形容词性</span>、<span class="adv">副词性</span>、补语</td><td>I need a pen <span class="nonfinite">to write with</span>.</td></tr>
-          <tr><td><span class="nonfinite">doing</span> 动名词</td><td>动作名词化、习惯、经验、已知事实</td><td><span class="noun">名词性</span></td><td><span class="nonfinite">Reading</span> is to the mind what exercise is to the body.</td></tr>
-          <tr><td><span class="nonfinite">doing</span> 现在分词</td><td>主动、进行</td><td><span class="adj">形容词性</span>、<span class="adv">副词性</span>、补语</td><td>a <span class="nonfinite">sleeping</span> baby</td></tr>
-          <tr><td><span class="nonfinite">done</span> 过去分词</td><td>被动、完成</td><td><span class="adj">形容词性</span>、<span class="adv">副词性</span>、补语</td><td>The book <span class="nonfinite">written by Larry</span> is useful.</td></tr>
-        </tbody>
-      </table>
-      <h4 class="table-title">非谓语的词性属性</h4>
-      <table>
-        <thead><tr><th>非谓语形式</th><th>是不是核心谓语？</th><th>句中属性</th><th>保留的动词味道</th></tr></thead>
-        <tbody>
-          <tr><td><span class="nonfinite">不定式</span></td><td>不是</td><td><span class="noun">名词性</span> / <span class="adj">形容词性</span> / <span class="adv">副词性</span></td><td>目的、将来、倾向、具体动作。</td></tr>
-          <tr><td><span class="nonfinite">动名词</span></td><td>不是</td><td><span class="noun">名词性</span></td><td>把动作当成“事情”。</td></tr>
-          <tr><td><span class="nonfinite">分词</span></td><td>不是</td><td><span class="adj">形容词性</span> / <span class="adv">副词性</span></td><td>主动/被动、进行/完成。</td></tr>
+          <tr><td><span class="nonfinite">to do</span></td><td>不是</td><td><span class="noun">名词性</span>、<span class="adj">形容词性</span>、<span class="adv">副词性</span>、补语</td><td>目的、将来、倾向、具体动作</td><td>I need a pen <span class="nonfinite">to write with</span>.</td></tr>
+          <tr><td><span class="nonfinite">doing</span> 动名词</td><td>不是</td><td><span class="noun">名词性</span></td><td>把动作当成“事情”</td><td><span class="nonfinite">Reading</span> is to the mind what exercise is to the body.</td></tr>
+          <tr><td><span class="nonfinite">doing</span> 现在分词</td><td>不是</td><td><span class="adj">形容词性</span>、<span class="adv">副词性</span>、补语</td><td>主动、进行</td><td>a <span class="nonfinite">sleeping</span> baby</td></tr>
+          <tr><td><span class="nonfinite">done</span> 过去分词</td><td>不是</td><td><span class="adj">形容词性</span>、<span class="adv">副词性</span>、补语</td><td>被动、完成</td><td>The book <span class="nonfinite">written by Larry</span> is useful.</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">4.1 不定式形式表</h4>
@@ -1082,6 +1092,10 @@ function splitClauseSections(baseSections) {
   });
 }
 
+const sections = Array.isArray(window.generatedSections) && window.generatedSections.length
+  ? window.generatedSections
+  : fallbackSections;
+
 const displaySections = splitClauseSections(sections);
 
 const nav = document.querySelector("#nav");
@@ -1100,6 +1114,9 @@ const exampleTags = [
   { id: "adverbial-clause", label: "状语从句" },
   { id: "nonfinite", label: "非谓语" },
   { id: "preposition", label: "介词" },
+  { id: "tense", label: "时态" },
+  { id: "subjunctive", label: "虚拟语气" },
+  { id: "morphology", label: "词法解析" },
   { id: "contrast", label: "易混对比" }
 ];
 

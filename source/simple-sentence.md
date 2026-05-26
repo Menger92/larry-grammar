@@ -2,6 +2,8 @@
 
 对应视频：BV1rF411S7qd；2.1 主谓宾定状补、2.1.1 补语详解、2.2 简单句构成 + 2.3 语法分析实践。
 
+来源说明：本章例句优先使用用户截图中可见的句子成分定义、五种基本句型、补语判断和 `naked / nakedly` 对比；已确认例句登记在 `source/evidence-log.md` 和 `source/example-source-audit.md`。
+
 ## 核心结论
 
 简单句先找谓语动词，再抓主谓宾主干；定语和状语多为可删除的修饰扩展，补语用来补充说明主语或宾语。补语是基本句型里的深水区：它没了，句子意思往往彻底崩塌；状语多半只是说明动作怎么发生。
@@ -27,6 +29,11 @@
 
 传统“主系表”里的表语，在这里归入主语补语。
 
+代表例句：I found the room dirty.
+
+<details>
+<summary>例句库：补语判断</summary>
+
 | 判断对象 | 代表例句 | 小分句验证 | 结论 |
 | --- | --- | --- | --- |
 | 宾语补语 | I found the room dirty. | The room is dirty. | dirty 补充说明宾语 the room 的状态。 |
@@ -35,9 +42,16 @@
 | 主语补语 | He died a hero. | He was a hero. | a hero 补充说明主语 He 在 died 时的身份。 |
 | 主语补语 | He came back safe. | He was safe. | safe 补充说明主语 He 回来时的状态。 |
 
+</details>
+
 ## 主语补语 vs 副词状语辨析表
 
 语法正确不等于语义正确。形容词作主语补语时，说明主语处在什么状态；副词作状语时，修饰动作如何发生。两种形式可能都符合语法，但表达的意思不同。不要只看形容词或副词形式，先看它能不能和主语/宾语构成语义自洽的小分句。
+
+代表例句：He is walking around naked.
+
+<details>
+<summary>对比例句库：主语补语 vs 副词状语</summary>
 
 | 想表达的关系 | 推荐表达 | 容易混淆的表达 | 区别 |
 | --- | --- | --- | --- |
@@ -45,6 +59,8 @@
 | 说明主语状态 | Larry stood there silent. | Larry stood there silently. | silent 说明 Larry 的状态，可理解为 [Larry was silent]；silently 修饰 stood，说明“站”的方式。 |
 | 说明主语状态 | Do not drive tired. | Do not drive tiredly. | tired 补充说明省略的主语 you，意思是“不要在疲惫状态下开车”；tiredly 修饰 drive，意思变成“不要疲惫地开”。 |
 | 说明结果状态 | Everything will come right. | Everything will come rightly. | right 说明 Everything 最终处于正确/顺利的状态；rightly 修饰 come，语义通常不自然。 |
+
+</details>
 
 ## 简单句基本句型表
 

@@ -1,5 +1,7 @@
 ﻿# 副词性从句
 
+来源说明：本章优先依据 V13 用户笔记 `assets/03-07_副词性从句_笔记01.jpg` 至 `assets/03-07_副词性从句_笔记04.jpg` 整理；已确认笔记来源登记在 `source/evidence-log.md`，例句后续继续登记到 `source/example-source-audit.md`。
+
 ## 3.7 副词性从句 / 状语从句理解入口
 
 副词性从句（状语从句）的本质：一个包含完整主谓结构的句子，被连接词降级后，作为副词性成分进入主句，对主句进行修饰。
@@ -60,6 +62,8 @@
 
 ### 状语从句类型主表
 
+主表只保留每类一个代表例句；同一连接词或同一逻辑关系的多个例子，统一放在后面的例句库 / 对比例句库。
+
 | 类型 | 常见连接词 | 代表例句 | 记忆问题 |
 | --- | --- | --- | --- |
 | 时间 | when, while, before, after, until, as soon as | I worked hard when I was at school. | 什么时候发生？ |
@@ -91,7 +95,7 @@
 | until | 一直持续到…… | 主句保持某种状态，直到从句给出的时间点。 |
 | as soon as / the moment / the minute / the second | 一……就…… | 从句动作一发生，主句动作随即发生。 |
 
-#### when：时间点或时间段
+#### when 例句库：时间点或时间段
 
 | 例句 | 时间关系 | 判断 |
 | --- | --- | --- |
@@ -104,7 +108,7 @@
 | Sally telephoned me when I was doing my homework. | 时间段背景 | 从句是持续背景，说明电话发生的时间。 |
 | I was doing my homework when Sally telephoned me. | 进行背景 + 时间点 | 主句是持续背景，从句是打断背景的时间点。 |
 
-#### while：时间段
+#### while 对比例句库：时间段
 
 | 例句 | 是否自然 | 判断 |
 | --- | --- | --- |
@@ -113,7 +117,7 @@
 | I was walking on the road when suddenly someone stopped me. | 自然 | when 可接突然发生的时间点。 |
 | I was walking on the road while suddenly someone stopped me. | 不自然 | while 强调持续时间段，不适合引出 suddenly someone stopped me 这种突然时间点。 |
 
-#### as：随着 / 正当 / 一边……一边
+#### as 对比例句库：随着 / 正当 / 一边……一边
 
 | 例句 | 判断 |
 | --- | --- |
@@ -124,7 +128,7 @@
 | When China becomes richer, Chinese people spend more. | 语义可成立，但更像时间条件。 |
 | While China becomes richer, Chinese people spend more. | 不自然；while 不适合表达这种同步增长关系。 |
 
-#### before / after / since
+#### 例句库：before / after / since
 
 | 连接词 | 例句 | 判断 |
 | --- | --- | --- |
@@ -132,7 +136,7 @@
 | after | I arrived after he had left. | 主句动作发生在从句动作之后；had left 表示更早。 |
 | since | Sally and I haven't met each other since I became a middle school student. | 从过去时间点延续到现在，主句用现在完成相关表达。 |
 
-#### until 与 not until
+#### 对比例句库：until 与 not until
 
 until 的核心是：
 
@@ -158,7 +162,7 @@ not until 可以放在句首或用于强调句：
 | Not until 句首倒装 | Not until it stopped raining did we go out. | Not until 放句首时，主句需要部分倒装。 |
 | 强调句 | It was not until it stopped raining that we went out. | 强调“直到雨停”这个时间点。 |
 
-### 3.7.3 地点状语从句
+### 3.7.3 地点状语从句例句库
 
 地点状语从句的核心是：where 从句直接修饰动作或主句判断，前面没有被它修饰的地点名词。
 
@@ -184,7 +188,7 @@ not until 可以放在句首或用于强调句：
 | as | 由于 / 既然 | As you're a middle school student, you should know how to study. | as 也常引出背景性原因。 |
 | because of | 介词短语，不是从句 | We didn't go to the party because of the rain. | because of 后接名词性成分 the rain。 |
 
-#### because 的否定转移问题
+#### 对比例句库：because 的否定转移问题
 
 `not...because...` 容易产生歧义：否定可能否定主句动作，也可能否定 because 引出的原因。
 
@@ -208,7 +212,7 @@ not until 可以放在句首或用于强调句：
 | so (that) | Sally opened the window so (that) she could breathe some fresh air. | that 可省略；could 表示目的。 |
 | in order that 前置 | In order that the students could understand me better, I spoke slowly. | 目的从句放句首，通常用逗号隔开。 |
 
-#### if vs in case
+#### 对比例句库：if vs in case
 
 | 例句 | 核心区别 |
 | --- | --- |
@@ -230,7 +234,7 @@ not until 可以放在句首或用于强调句：
 | such + 不可数名词 + that | It's such hot weather that it's even hard to breathe. | such 修饰 hot weather。 |
 | such that | The weather is such that it's even hard to breathe. | such 单独作表语，表示“情况如此，以至于……”。 |
 
-#### 结果 vs 目的
+#### 对比例句库：结果 vs 目的
 
 同样是 `so that`，要看从句表达的是“想达到的目标”，还是“已经发生的结果”。
 
@@ -241,7 +245,7 @@ not until 可以放在句首或用于强调句：
 | Sally opened the window so that she could breathe some fresh air. | 目的 | could breathe 表示开窗的目的。 |
 | Sally opened the window so that she breathed some fresh air. | 结果 | breathed 表示开窗后产生的结果。 |
 
-### 3.7.7 条件状语从句
+### 3.7.7 条件状语从句例句库
 
 条件状语从句说明“在什么条件下”。常见连接词包括 if, unless, as/so long as, so far as, in case, once。
 
@@ -255,7 +259,7 @@ not until 可以放在句首或用于强调句：
 | as/so long as | You may leave as/so long as you come back on time. | 只要你按时回来，就可以离开。 |
 | so far as | So far as the weather remains okay, we shall start tomorrow. | 只要天气还可以，明天就出发。 |
 
-### 3.7.8 让步状语从句
+### 3.7.8 让步状语从句例句库
 
 让步状语从句表达“虽然从句成立，但主句仍然成立”。学习时重点看转折关系，而不是把 every word 都翻译成“虽然”。
 
@@ -270,7 +274,7 @@ not until 可以放在句首或用于强调句：
 
 保守写作建议：如果后面接完整从句，优先写 `despite the fact that...` 或 `in spite of the fact that...`。
 
-#### as 引导的让步倒装
+#### 例句库：as 引导的让步倒装
 
 as 引导让步时，常把被强调的形容词、副词、名词或动词放到句首。
 
@@ -281,7 +285,7 @@ as 引导让步时，常把被强调的形容词、副词、名词或动词放�
 | Wounded as he was, he finished the basketball game. | Although he was wounded... |
 | Fail as he did, he would never give up. | Although he failed... |
 
-### 3.7.9 比较状语从句
+### 3.7.9 比较状语从句例句库
 
 比较状语从句说明程度、相似或差异。重点是看比较的对象是否对齐，以及省略了什么。
 
@@ -300,7 +304,7 @@ as 引导让步时，常把被强调的形容词、副词、名词或动词放�
 
 比较从句里常省略重复成分。分析时先把省略部分补出来，再判断比较对象是否一致。
 
-### 3.7.10 方式状语从句提醒
+### 3.7.10 方式状语从句例句库
 
 | 类型 | 截图例句 | 记忆点 |
 | --- | --- | --- |

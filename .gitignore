@@ -19,3 +19,4 @@ build/
 # Local/source PDFs kept out of GitHub to avoid size and rights issues
 assets/*.pdf
 docs/*.pdf
+The economist/

@@ -2,6 +2,8 @@
 
 对应视频：BV17u4y1k76A《1.3 介词其实很简单》。
 
+来源说明：本章例句优先使用用户截图中可见的 `up / on` 对比、介词后接名词性成分、介词短语作形容词性 / 副词性成分等内容；已确认例句登记在 `source/evidence-log.md` 和 `source/example-source-audit.md`。
+
 ## 本章核心
 
 介词通常不能单独完成介词用法，必须带上后面的名词性成分，构成一个完整的介词短语。
@@ -42,9 +44,14 @@
 | 副词性 | 补足形容词对象 | 跟在形容词后 | I am ready for dinner. | for dinner 补足 ready 的对象。 |
 | 副词性 | 限定其他副词 | 跟在副词后 | We got there late in the evening. | in the evening 修饰 late，限定时间范围。 |
 
-## 介词后接成分例句表
+## 介词后接成分例句库
 
 这部分作为例库复习：重点看介词后面接了什么名词性成分。
+
+代表例句：It depends on what they do.
+
+<details>
+<summary>例句库：介词后接名词性成分</summary>
 
 | 后接成分 | 代表例句 | 分析 |
 | --- | --- | --- |
@@ -54,6 +61,8 @@
 | 名词性从句 | She's not certain about whether she'll go to the party or not. | about 后接 whether she'll go to the party or not 这个名词性从句。 |
 | 名词短语 | The scientists are studying the effects of climate change on the ecosystem. | on 后接 the ecosystem，构成介词短语 on the ecosystem；整体修饰 effects。 |
 | 嵌套名词性从句的名词短语 | I'm worried about the fact that I haven't heard from him in a while. | about 后接 the fact that...，这是一个内部嵌套名词性从句的名词短语。 |
+
+</details>
 
 ## 介词形式归纳表
 

@@ -10,6 +10,8 @@
 | which vs where | which 代替名词性成分 | where 代替地点状语 | 看从句缺宾语/主语，还是缺地点状语。 |
 ## 从句复习总表
 
+复习总表只保留入口级代表例句；需要研究多个例子时，回到对应专题的例句库。
+
 | 你看到的结构 | 优先判断 | 典型连接词 | 例句 |
 | --- | --- | --- | --- |
 | 从句占一个名词位置 | 名词性从句 | that, whether, if, what, who, which, when, where, why, how | What she said about the incident surprised everyone. |

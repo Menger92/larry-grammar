@@ -5,6 +5,10 @@
 
 说明：本总结依据该合集公开的视频标题、合集结构和英语语法体系知识整理。B 站公开接口未暴露这些视频的字幕文本，因此本文不是逐字稿，也不声称复述视频中的每一句讲解；它的目标是把整个系列背后的语法框架整理成一份可学习、可复习、可查阅的文档。
 
+当前维护状态：本文件属于旧版全系列总览，后续以 `source/` 下各专题文件为准逐步回填。例句是否已由视频画面、用户截图或用户笔记确认，以 `source/evidence-log.md` 和 `source/example-source-audit.md` 为准；未登记来源的旧例句暂作待校准材料，不继续扩写。
+
+例句展示规则：同一个知识点只在主表或小节开头保留一个代表例句；同类多个例句归入专题文件中的“例句库”，正误对比、近义结构对比和时态对比归入“对比例句库”。本文件作为总览，不继续堆叠同一知识点下的多条例句。
+
 ## 一、这套课的核心思路
 
 这套课程不是按传统语法书“名词、冠词、代词、形容词、时态、语态、从句、非谓语……”逐项堆知识点，而是试图建立一个更底层的理解框架：
@@ -621,70 +625,82 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 
 ### 19. 英语时态：动词的“时、体、貌”（上）
 
-本集进入时态系统。传统说法常把 tense 翻译成“时态”，但真正理解时态要区分：
+本集进入时态系统。传统说法常把 tense 翻译成“时态”，但 Larry 的入口是先区分三个问题：
 
 - 时：动作发生的时间位置，如现在、过去、将来。
 - 体：动作内部状态，如进行、完成。
 - 貌：说话人呈现动作的方式和视角。
 
-英语常见时态不是简单的时间表，而是“时间 + 状态”的组合：
+本轮截图补充后，时态总入口整理为：
 
-- 一般现在：稳定事实、习惯、规律。
-- 现在进行：此刻正在发生，或阶段性变化。
-- 现在完成：过去发生，对现在有影响。
-- 一般过去：把事件放在过去时间框架中。
+- 四类动词：状态动词、活动动词、过程动词、瞬间动词。
+- 三类时间状语：时间点、定位时间段、不定位时间段。
+- 动词类别会因宾语、时间状语、体貌而转化，例如 `I write.`、`I wrote a book.`、`I have been writing a book.` 的动词类别和完成状态不同。
 
 学习重点：
 
 - 不要把现在时简单理解成“现在发生”。
-- 完成体强调“关联”和“结果”，不只是“已经”。
-- 进行体强调动作展开过程或临时状态。
+- 先看动词类别，再看时间状语，最后判断体貌。
+- 详细例句见 `source/tense.md`。
 
 ### 20. 英语时态：动词的“时、体、貌”（中）
 
-本集可重点理解完成体、进行体和过去时间框架。
+本集截图重点补充一般现在、一般过去、现在进行、过去进行和 `until` 判断。
 
-现在完成、过去完成、现在完成进行的具体例句待补充截图来源；这里只保留规则：完成体强调参照点之前已经发生，并与参照点相关。
+视频画面中可确认的 `until` 判断：
+
+| 判断 | 例句 | 复习点 |
+| --- | --- | --- |
+| 错 | I received his letter until yesterday. | `received` 不是可持续状态，不能直接保持到 yesterday。 |
+| 对 | I didn't receive his letter until yesterday. | 否定状态可以持续到 yesterday。 |
+| 错 | We left until it stopped raining. | `left` 不是可持续状态。 |
+| 对 | We didn't leave until it stopped raining. | “没有离开”的状态持续到雨停。 |
+| 对 | I was playing video games until 12 o'clock. | 进行状态可持续到某个时间点。 |
+| 对 | I was not playing video games until 12 o'clock. | 否定进行状态也可持续到某个时间点。 |
 
 学习重点：
 
-- 完成体的核心是“参照点之前已经发生，并与参照点相关”。
-- 过去完成需要一个过去参照点。
-- 完成进行体同时强调持续过程和当前关联。
+- 看到 `until`，先问前面的动作或状态能不能持续到某个时间点。
+- 一般现在时不完全等于“现在”，常表示静态、习惯、客观存在。
+- 一般过去时是最常用的过去表达，有时隐含“现在已经不是这样”。
+- 进行时不只表示“正在进行”，还可以表示近期安排、委婉、背景或主观色彩。
 
 ### 21. 英语时态：动词的“时、体、貌”（下）
 
-本集可把将来表达、情态动词和时态视角联系起来。
-
-英语没有单一的“将来时”形式，而是用多种结构表达将来：
-
-- will do：预测、临时决定、意愿。
-- be going to do：计划、根据迹象推测。
-- be doing：已安排的近期计划。
-- be to do：正式安排、命令、注定。
-- be about to do：马上要发生。
+本集截图重点补充现在完成、过去完成、现在完成进行、过去完成进行，以及完成体之间的对比。
 
 学习重点：
 
-- 将来表达取决于说话人的判断：预测、计划、安排、意愿。
-- will 不等于所有“将来”。
-- 时态选择本质上是在选择说话视角。
+- 现在完成时不只表示“已完成”，核心是动作与当前观察点有关。
+- 过去完成时可以理解为“倒退一格”的现在完成时，用来区分过去动作之间的先后。
+- 完成进行时强调持续过程；第三类动词的完成时常表示已完成，完成进行时常表示未完成。
+- `since`、`for`、`It is the first time...` 等结构要和完成体一起看。
 
 ### 22. 英语时态详解
 
-这一集是时态系统的综合复盘。可以把英语时态理解成三层：
+这一集是将来时间表达法的综合复盘。视频画面中可确认的提示：
 
-1. 时间轴：现在、过去、将来。
-2. 动作状态：一般、进行、完成、完成进行。
-3. 语境视角：事实、习惯、临时、结果、持续、预测、安排。
+```text
+will 以及 be going to 不包含任何形式的动词词尾屈折变化
+```
 
-典型对比：具体例句待补充截图来源。
+Larry 强调：语法层面上，英语没有真正的“将来时”概念，表达将来的方式有很多：
+
+- `will / shall + 动词原形`
+- `will / shall + be doing`
+- `will / shall + have done`
+- `will / shall + have been doing`
+- `be going to + 动词原形`
+- `be to + 动词原形`
+- `be about to + 动词原形`
+- `be doing` 表将来
+- `would / was going to / was to / was about to` 等从过去视角表达将来
 
 学习重点：
 
-- 时态不是套中文时间词，而是表达说话人的观察位置。
-- 完成体必须寻找“参照点”和“影响/关联”。
-- 进行体常表达临时性、过程性、未完成性。
+- `be going to` 的计划性更强，`will` 的临时性和情态意义更强。
+- `be to` 常带人为安排、命令或正式计划，`be about to` 只表示即将发生。
+- `be doing` 表将来通常需要未来时间状语或明确语境。
 
 ### 23. 英语语法回炉指南：Larry's 语法课前传
 
@@ -713,49 +729,93 @@ that 只负责把一个完整句子包装成名词性内容；what 本身在从�
 
 ### 24. 虚拟语气（1）
 
-虚拟语气表达的核心不是“过去式”，而是“非现实”或“心理距离”。英语常用过去形式来制造距离感。
+虚拟语气表达的核心不是“过去式”，而是在普通语法上叠加“非现实 / 假设 / 愿望 / 强烈主观意愿”的维度。英语常用过去形式来制造距离感，所以过去式不一定表示过去时间。
 
-典型条件句：具体例句待补充截图来源。过去形式不一定表示过去时间，而表示与现实相反或可能性较低。
+视频简介中的定位：虚拟语气并不是“语法”框架的单独组成部分，而是在语法基础上叠加一个额外的虚拟维度。
 
-三类常见虚拟：
+视频画面中的课程安排：
 
-- 现在相反：If + 过去式, would do。
-- 过去相反：If + had done, would have done。
-- 将来可能性低：If + should do / were to do, would do。
+| 序号 | 安排 |
+| --- | --- |
+| 1 | 虚拟语气（1）：Larry 给你讲一个狗血的故事，然后你就啥都明白了 |
+| 2 | 虚拟语气（2）：倒装结构虚拟句 + 交叉时态虚拟句 + 无条件虚拟句 + 含蓄条件句 |
+| 3 | 虚拟语气（3）：名词性从句中的虚拟语气 + 非主流形式虚拟句 |
+| 4 | 虚拟语气（4）：如何构建“虚拟思维”？ |
+
+三时态虚拟规则：
+
+| 虚拟对象 | 主句形式 | if 从句形式 |
+| --- | --- | --- |
+| 将来 | would / could / might / should + do | were to do / should 或 could do / did |
+| 现在 | would / could / might / should + do | did / were |
+| 过去 | would / could / might / should + have done | had done / had been |
+
+代表例句：
+
+| 类型 | 例句 | 判断 |
+| --- | --- | --- |
+| 真实条件 | If I can help you, I will definitely do so. | 说话人把条件当作可能现实。 |
+| 非真实条件 | If I could help you, I would definitely do so. | 言外之意通常是“我帮不了”。 |
+| 将来假设 | If Apple wanted me, I would consider it. | wanted 表低可能假设。 |
+| 现在假设 | If we had five million, we could buy a house outright. | 现在事实是没有五百万。 |
+| 过去假设 | If I had known Apple was your family's company, I wouldn't have taken this job in the first place. | 过去事实是“不知道”。 |
 
 学习重点：
 
 - 虚拟语气的本质是说话人把内容放到非现实空间。
 - 过去形式可以表达时间过去，也可以表达心理距离。
 - would/could/might 表示结果的假设性。
+- 完整例句库见 `source/subjunctive.md`。
 
 ### 25. 虚拟语气（2）
 
-本集可扩展虚拟语气在愿望、建议、要求等场景中的使用。
+本集处理条件虚拟的扩展形态：倒装结构、交叉时态、无条件虚拟和含蓄条件。
 
-wish 后的虚拟、建议 / 要求 / 命令类动词后的虚拟，具体例句待补充截图来源。这里从句常用动词原形，表达“应该如此”，而非事实陈述。
+| 类型 | 核心 | 代表例句 |
+| --- | --- | --- |
+| 倒装结构 | 省略 if，把 were / had / should 等放到主语前 | Had I known you were like this, I would have taken Tencent's offer today. |
+| 交叉时态 | if 从句和主句虚拟的时间不一致 | If my mom hadn't divorced him back then, I'd be cruising in a Bugatti by now. |
+| 无条件虚拟 | 不用 if，从非谓语、介词短语、名词性成分等结构中推出条件 | Given another chance, I would still divorce Susan to marry Sally. |
+| 含蓄条件 | 条件完全靠上下文或读者脑补 | If only we had five million! We could buy a house outright. |
 
 学习重点：
 
-- wish 表达愿望与现实之间的距离。
-- suggest, demand, insist, recommend 等词后常出现 should do 或省略 should 的动词原形。
-- 虚拟语气不是固定句型集合，而是非事实态度的表达。
+- 不要只找 if，很多虚拟没有完整 if 从句。
+- 倒装只是形式变化，虚拟时间关系仍按三时态表判断。
+- 交叉时态要分别看 if 从句和主句，不强行配对。
 
 ### 26. 虚拟语气（3）
 
-本集可整理混合虚拟、含蓄虚拟和固定表达。
+本集处理名词性从句中的虚拟语气和非主流形式虚拟句。
 
-混合虚拟、含蓄虚拟、固定表达的具体例句待补充截图来源。
+名词性从句虚拟的核心：如果主句或名词性结构中有强烈主观意愿标志词，that 从句常用动词原形；英式英语也常用 `should + 动词原形`。
+
+常见标志词：ask, advise, command, beg, request, suggest, demand, decide, deserve, desire, insist, order, prefer, propose, urge。
+
+| 类型 | 代表例句 | 判断 |
+| --- | --- | --- |
+| 标志动词 | Michael insisted that this marriage be ended as soon as possible. | insist 表强烈要求，that 从句用 be ended。 |
+| 形容词结构 | It is important that Jimmy make sure Sally doesn't take away any property. | important 后 that 从句用动词原形。 |
+| high time | It's high time (that) you divorced Susan. | 用过去式表示“早该做了”。 |
+| wish | I wish (that) my dad had never divorced Apple's boss. | wish 后 that 从句可用虚拟。 |
+| 非主流形式 | Long live The People's Republic of China! | 表强烈祝愿。 |
+| as if | It seems as if you were going to divorce Susan. | were going 表虚拟距离。 |
 
 学习重点：
 
-- 不要只找 if，很多虚拟没有 if。
-- 判断虚拟要看语义是否与现实相反或不确定。
-- 时间关系和虚拟关系要分开分析。
+- 先判断标志词是否真的表达“愿望、建议、命令、要求”，不要机械套用。
+- suggest / insist 可能表示“建议 / 坚持要求”，也可能表示“表明 / 坚称事实”。
+- wish 与 hope 不同：wish 的 that 从句可虚拟，hope 的 that 从句通常用陈述语气。
 
 ### 27. 词法解析 Lesson 1：可数名词单数不可裸露原则
 
-本集进入名词和冠词系统。英语可数名词单数通常不能裸露出现；具体例句待补充截图来源。
+本集进入名词和冠词系统。英语可数名词单数通常不能裸露出现；完整例句库见 `source/morphology.md`。
+
+视频标题画面中的英文规则：
+
+```text
+A singular countable noun cannot be used without a determiner.
+```
 
 原因是英语名词需要标明“数量”和“指称范围”。可数单数名词只说 book，既没有说明数量，也没有说明特指关系。
 
@@ -768,6 +828,18 @@ wish 后的虚拟、建议 / 要求 / 命令类动词后的虚拟，具体例句
 - 复数泛指：books。
 - 不可数泛指：water, information 等。
 
+截图代表例句：
+
+| 规则 | 例句 |
+| --- | --- |
+| 单数可数名词不能裸露 | I like dog. |
+| 可数名词复数可泛指 | I like dogs. |
+| 特指可加 the | I like the dog. |
+| 所属关系可限定 | I like Michael's dog. |
+| 不可数名词可零限定词 | Water is important. |
+| 可数名词复数可零限定词 | Cats are cute. |
+| 抽象 / 制度意义可零限定词 | For Jimmy, school is hard. |
+
 学习重点：
 
 - 可数单数名词通常需要限定词。
@@ -776,25 +848,44 @@ wish 后的虚拟、建议 / 要求 / 命令类动词后的虚拟，具体例句
 
 ### 28. 词法解析 Lesson 2：冠词的用法
 
-冠词的本质是名词前的指称标记。它告诉听者这个名词是泛指、特指、类别，还是首次引入。
+冠词的本质是名词前的指称标记。截图中把限定词放在形容词范围内理解：限定词属于形容词性材料，冠词又属于限定词。
+
+```text
+形容词 > 限定词 > 冠词
+```
 
 a/an：
 
 - 表示“一个”，用于单数可数名词。
 - 常用于首次提到或非特指。
-- 具体例句待补充截图来源。
+- 底层可理解为接近 one。
 
 the：
 
 - 表示特指，听者知道是哪一个。
 - 可因上文提到、场景唯一、后置修饰限定而特指。
-- 具体例句待补充截图来源。
+- 底层可理解为接近 that / those。
 
 零冠词：
 
-- 复数泛指：待补充截图例句。
-- 不可数泛指：待补充截图例句。
+- 复数泛指：Cats are cute.
+- 不可数或抽象整体：Water is important. / Youngsters are increasingly alienated from society.
 - 某些专有名词、抽象概念、机构功能表达中使用。
+
+限定词分类：
+
+| 类型 | 例子 |
+| --- | --- |
+| 冠词 Articles | a/an, the |
+| 指示词 Demonstratives | this, that, these, those |
+| 物主限定词 Possessives | my, your, his, her, its, our, their |
+| 数量词 Quantifiers | some, any, much, many, little, few, all, most, no, several, both |
+| 数词 Numerals | one, two, three, first, second, a third |
+| 分配词 Distributives | each, every, either, neither |
+| 疑问 / 关系限定词 | which, what, whose |
+| 前置限定词 Predeterminers | all, both, half, such |
+
+限定词顺序：前位限定词 + 中位限定词 + 后位限定词，例如 `all the many problems`、`all the three books`、`half the ten chapters`。
 
 学习重点：
 

@@ -83,6 +83,8 @@ What she said about the incident surprised everyone.
 
 ## 从句类型总览表
 
+总览表只放每类从句的一个代表例句；同类多个例句放到 `noun-clause.md`、`adjective-clause.md`、`adverbial-clause.md` 的例句库 / 对比例句库中。
+
 | 从句类型 | 整体功能 | 代表例句 | 判断问题 |
 | --- | --- | --- | --- |
 | 名词性从句 | 整个从句当名词用 | What she said about the incident surprised everyone. | 这个从句是否占主语、宾语、表语、同位语位置？ |
