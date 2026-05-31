@@ -112,7 +112,7 @@ p {
 
 #nav {
   display: grid;
-  gap: 10px;
+  gap: 16px;
   margin-top: 18px;
 }
 
@@ -130,6 +130,41 @@ p {
 .nav-group {
   display: grid;
   gap: 4px;
+}
+
+.nav-cluster {
+  display: grid;
+  gap: 8px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #edf1f7;
+}
+
+.nav-cluster:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.nav-cluster-title {
+  display: grid;
+  gap: 3px;
+  padding: 0 2px;
+}
+
+.nav-cluster-title strong {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.nav-cluster-title span {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.nav-cluster-items {
+  display: grid;
+  gap: 7px;
 }
 
 .nav-section,
@@ -1431,6 +1466,26 @@ th {
   color: #fff;
 }
 
+.example-workbench-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: #536174;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.example-workbench-status span {
+  padding: 6px 9px;
+  border: 1px solid #e1e7f1;
+  border-radius: 8px;
+  background: #f8fbff;
+}
+
+.example-workbench-status b {
+  color: var(--blue);
+}
+
 .example-library-layout {
   display: grid;
   grid-template-columns: minmax(260px, 0.88fr) minmax(0, 1.35fr);
@@ -1522,6 +1577,32 @@ th {
   font-weight: 700;
 }
 
+.judge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.judge-grid div {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+  padding: 11px 12px;
+  border: 1px solid #dfe4ee;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.judge-grid b {
+  color: var(--blue);
+  font-size: 13px;
+}
+
+.judge-grid span {
+  color: #334155;
+  line-height: 1.5;
+}
+
 .analyzed-sentence {
   display: flex;
   flex-wrap: wrap;
@@ -1547,6 +1628,36 @@ th {
   color: #243149;
   font-weight: 900;
   line-height: 1.25;
+}
+
+.sentence-part.noun {
+  border-color: #ffc8cf;
+  background: var(--noun-bg);
+  color: var(--noun);
+}
+
+.sentence-part.adj {
+  border-color: #f3d66a;
+  background: var(--adj-bg);
+  color: var(--adj);
+}
+
+.sentence-part.adv {
+  border-color: #c7e8b9;
+  background: var(--adv-bg);
+  color: var(--adv);
+}
+
+.sentence-part.nonfinite {
+  border-color: #dac8ef;
+  background: var(--nonfinite-bg);
+  color: var(--nonfinite);
+}
+
+.sentence-part.neutral {
+  border-color: #d4dbe7;
+  background: #eef2f7;
+  color: #3f4754;
 }
 
 .sentence-part small {
@@ -1585,6 +1696,37 @@ th {
   color: #334155;
   font-weight: 800;
   line-height: 1.5;
+}
+
+.chapter-links {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  padding: 11px 12px;
+  border: 1px solid #dfe4ee;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.chapter-links b {
+  color: var(--blue);
+}
+
+.chapter-links span {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.chapter-links a {
+  padding: 4px 8px;
+  border-radius: 7px;
+  background: #edf3fa;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none;
 }
 
 .analysis-list {
@@ -1645,7 +1787,8 @@ mark {
   }
 
   .example-workbench-head,
-  .example-library-layout {
+  .example-library-layout,
+  .judge-grid {
     grid-template-columns: 1fr;
   }
 

@@ -230,3 +230,16 @@ whether 和 if 都可以表示“是否”，但 whether 更稳定，适用范�
 | that vs what | that 只连接，不作成分 | what 既连接，也在从句里作成分 | 看从句是否缺主语、宾语或表语。 |
 | whether vs if | whether 更正式，可用于主语从句、表语从句、介词后、不定式前 | if 多用于宾语从句 | 位置越正式，越优先用 whether。 |
 | 同位语从句 vs 定语从句 | 解释抽象名词的内容 | 修饰限定名词的范围 | 看从句是在解释“内容”，还是限定“哪一个”。 |
+
+## 关联学习：名词性功能的其他表现形式
+
+名词性从句解决的是“一整句话当名词用”。同一个名词位置，也可能由普通名词短语、动名词、不定式或疑问词 + 不定式承担。查阅时先确认位置，再比较形式。
+
+| 名词性位置 | 从句形式 | 非谓语 / 短语形式 | 判断问题 |
+| --- | --- | --- | --- |
+| 主语 | What she said surprised everyone. | Reading helps. / To lie is foolish. | 句首这一整块是不是主句谈论的对象？ |
+| 宾语 | I know what she said. | I enjoy reading. / I want to leave. | 谓语动词后面是不是需要一个“事情 / 动作 / 内容”？ |
+| 表语 / 主语补语 | The truth is that we all make mistakes. | Her hobby is reading. / My plan is to leave. | 系动词后面是不是在说明主语内容？ |
+| 同位语 | The news that they won spread quickly. | His goal, becoming a doctor, requires effort. | 后面的结构是不是解释前面抽象名词的内容？ |
+
+查阅路径：如果名词位置里有完整主谓结构，优先看本章；如果是 `to do` 或 `doing`，回看 [非谓语](#nonfinite)；如果它出现在介词后面，还要回看 [介词](#preposition)。

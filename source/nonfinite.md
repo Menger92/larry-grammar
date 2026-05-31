@@ -326,6 +326,19 @@
 | doing 修饰名词或动作 | 主动、进行 | 形容词性或副词性 | a sleeping baby |
 | done | 被动、完成 | 形容词性或副词性 | The book written by Larry is useful. |
 
+## 关联学习：非谓语和三类从句的对照
+
+非谓语不是从句之外的另一套体系，而是把动作信息降级后放进句子。分析真实长句时，可以先把非谓语还原成从句，再判断它承担名词性、形容词性还是副词性功能。
+
+| 非谓语功能 | 可还原的从句 | 代表转换 | 判断重点 |
+| --- | --- | --- | --- |
+| 名词性 | 名词性从句或“动作这件事” | That he failed disappointed us. → His failing disappointed us. | 整体是否占主语、宾语、表语、同位语位置？ |
+| 形容词性 | 定语从句 | a dog that is running → a running dog | 是否修饰名词？名词和动作是主动、被动，还是将来关系？ |
+| 副词性 | 状语从句 | When he was asked to speak, he felt nervous. → Asked to speak, he felt nervous. | 是否修饰动作、状态或主句？逻辑主语是否清楚？ |
+| 补语 | 宾语 / 主语后面的说明结构 | I heard that Sally was singing. → I heard Sally singing. | 能否形成“小分句”说明关系：Sally was singing？ |
+
+查阅路径：看不懂非谓语时，先还原成 [从句总览](#clause-overview) 的三类功能；确定功能后，再分别对照 [名词性从句](#noun-clause)、[形容词性从句](#adjective-clause)、[副词性从句](#adverbial-clause)。
+
 ## 一页记忆卡
 
 | 口诀 | 含义 |

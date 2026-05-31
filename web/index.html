@@ -26,10 +26,10 @@
       <div>
         <p class="eyebrow">Grammar System</p>
         <h2>用功能颜色理解英语句子结构</h2>
-        <p>本项目以 Markdown 作为源文件，HTML 作为查询页，Word/Excel 作为导出版本。后续新增内容时，优先补充 <code>source/</code>。</p>
+        <p>先找谓语和主干，再按名词性、形容词性、副词性、非谓语四类功能拆开复杂结构。</p>
       </div>
       <div class="legend" aria-label="颜色规则">
-        <strong class="legend-title">项目颜色规则：新增内容必须按此标注</strong>
+        <strong class="legend-title">颜色规则：按句中功能标记</strong>
         <span><b class="dot noun-dot"></b><strong class="tag noun">红色</strong>名词性成分</span>
         <span><b class="dot adj-dot"></b><strong class="tag adj">黄色</strong>形容词性成分</span>
         <span><b class="dot adv-dot"></b><strong class="tag adv">绿色</strong>副词性成分</span>
@@ -147,6 +147,7 @@
         </label>
       </div>
       <div class="example-filter-bar" id="exampleFilters" aria-label="例句标签筛选"></div>
+      <div class="example-workbench-status" id="exampleStatus" aria-live="polite"></div>
       <div class="example-library-layout">
         <div class="example-results" id="exampleResults" aria-label="例句搜索结果"></div>
         <article class="sentence-analyzer" id="sentenceAnalyzer" aria-live="polite"></article>

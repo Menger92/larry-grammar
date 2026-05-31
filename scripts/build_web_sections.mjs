@@ -21,6 +21,7 @@ const sourceFiles = [
 
 const sourceDir = path.join(root, "source");
 const outputPath = globalThis.LARRY_WEB_SECTIONS_OUTPUT_PATH || path.join(root, "web", "generated-sections.js");
+const sourceNotes = [];
 
 const inlineClassMap = [
   ["noun", ["名词性成分", "名词性从句", "名词短语", "名词性", "主语", "宾语", "表语", "同位语"]],
@@ -237,14 +238,89 @@ function markdownToHtml(markdown) {
   return html.join("\n");
 }
 
+function isProjectNoteText(text) {
+  return /对应视频|来源说明|维护规则|维护原则|笔记图片|补充截图|本专题依据|例句规则|资料来源|图片索引|来源视频：|assets\/|source\/|Markdown|HTML|Word|Excel/.test(text);
+}
+
+function isProjectNoteParagraph(line) {
+  return /^(对应视频|来源说明|维护规则|维护原则|笔记图片|补充截图|本专题依据|例句规则|来源视频：)/.test(line.trim());
+}
+
+function isProjectNoteHeading(line) {
+  return /^##\s+(资料来源|图片索引)\s*$/.test(line.trim());
+}
+
+function extractProjectNotes(markdown) {
+  const lines = markdown.replace(/\r\n/g, "\n").split("\n");
+  const notes = [];
+
+  if (/^#\s+/.test(lines[0] || "")) {
+    const firstH2 = lines.findIndex((line, index) => index > 0 && /^##\s+/.test(line));
+    if (firstH2 > 1) {
+      const introLines = lines.slice(1, firstH2);
+      const intro = introLines.join("\n").trim();
+      if (intro && isProjectNoteText(intro)) {
+        notes.push(intro);
+        lines.splice(1, firstH2 - 1);
+      }
+    }
+  }
+
+  const kept = [];
+  let index = 0;
+
+  while (index < lines.length) {
+    const line = lines[index];
+
+    if (isProjectNoteHeading(line)) {
+      const block = [line];
+      index += 1;
+      while (index < lines.length && !/^##\s+/.test(lines[index])) {
+        block.push(lines[index]);
+        index += 1;
+      }
+      notes.push(block.join("\n").trim());
+      continue;
+    }
+
+    if (isProjectNoteParagraph(line)) {
+      const block = [line];
+      const collectUntilHeading = /^笔记图片/.test(line.trim());
+      index += 1;
+      while (
+        index < lines.length
+        && !/^#{2,6}\s+/.test(lines[index])
+        && (collectUntilHeading || lines[index].trim())
+      ) {
+        block.push(lines[index]);
+        index += 1;
+      }
+      notes.push(block.join("\n").trim());
+      continue;
+    }
+
+    kept.push(line);
+    index += 1;
+  }
+
+  return {
+    markdown: kept.join("\n"),
+    notes: notes.filter(Boolean)
+  };
+}
+
 function readSection([id, filename, fallbackTitle, meta]) {
-  const markdown = fs.readFileSync(path.join(sourceDir, filename), "utf8");
+  const markdown = fs.readFileSync(path.join(sourceDir, filename), "utf8").replace(/^\uFEFF/, "");
   const title = /^#\s+(.+)$/m.exec(markdown)?.[1]?.trim() || fallbackTitle;
+  const extracted = extractProjectNotes(markdown);
+  if (extracted.notes.length) {
+    sourceNotes.push({ title, filename, notes: extracted.notes });
+  }
   return {
     id,
     title,
     meta,
-    html: markdownToHtml(markdown)
+    html: markdownToHtml(extracted.markdown)
   };
 }
 
@@ -252,13 +328,71 @@ const sections = sourceFiles.map(readSection);
 
 sections.push({
   id: "source-index",
-  title: "源文件索引",
+  title: "项目使用与源文件索引",
   meta: "HTML 当前由 source/*.md 生成；更新 Markdown 后运行 scripts/build_web_sections.mjs 重新生成。",
   html: `
+    <h4 class="table-title">项目使用分工</h4>
+    <table>
+      <thead><tr><th>使用场景</th><th>使用方式</th><th>依据</th></tr></thead>
+      <tbody>
+        <tr><td>学习语法体系</td><td>阅读前面的 HTML 章节，或直接阅读 <code>source/*.md</code></td><td>Larry 主线</td></tr>
+        <tr><td>查理论底座</td><td>阅读 <code>source/grammar-club-crosswalk.md</code> 和 <code>source/terminology-map.md</code></td><td>《文法俱乐部》旁注</td></tr>
+        <tr><td>分析经济学人句子</td><td>在 Codex 对话框中贴句子并提问</td><td><code>source/economist-analysis-protocol.md</code></td></tr>
+      </tbody>
+    </table>
+    <p>项目主线保持 Larry 的学习顺序；《文法俱乐部》用于对照、补强和解释术语，不替代 Larry 章节结构。</p>
+    <h4 class="table-title">经济学人对话输入格式</h4>
+    <p>经济学人实战分析直接在 Codex 对话框完成。最简单的用法是贴一句原文，并说明“按经济学人句子分析协议分析”。</p>
+    <pre><code class="language-text">按经济学人句子分析协议分析：
+
+原句：
+粘贴经济学人原句</code></pre>
+    <p>如果句子较长，或你已经有初步判断，推荐使用下面的完整格式：</p>
+    <pre><code class="language-text">按经济学人句子分析协议分析：
+
+原句：
+
+上下文：
+上一句：
+下一句：
+
+我的初步判断：
+我觉得 ... 是状语从句 / 非谓语 / 定语从句，但不确定。
+
+重点：
+请重点分析主干、从句、非谓语、补语或其他卡点。</code></pre>
+    <p>只卡一个结构时，可以直接问具体判断点：</p>
+    <pre><code class="language-text">这句里的 "having done..." 是非谓语状语还是定语？
+请按项目体系判断，并说明判断依据。</code></pre>
+    <table>
+      <thead><tr><th>输入方式</th><th>适合场景</th><th>默认输出</th></tr></thead>
+      <tbody>
+        <tr><td>只贴原句</td><td>普通句子，先建立整体判断</td><td>标准版：主干、功能标记、成分表、易混点、顺译、学习卡片</td></tr>
+        <tr><td>原句 + 上下文</td><td>需要判断指代、省略、转折、因果或语气</td><td>标准版或完整版</td></tr>
+        <tr><td>原句 + 自己的判断</td><td>想训练独立判断能力</td><td>先校正你的判断，再给依据和反例</td></tr>
+        <tr><td>只问一个片段</td><td>卡在某个从句、非谓语、补语或介词短语</td><td>快速版：结论、依据、易混点</td></tr>
+      </tbody>
+    </table>
+    <h4 class="table-title">显示层与源文件分工</h4>
+    <table>
+      <thead><tr><th>层级</th><th>作用</th><th>维护方式</th></tr></thead>
+      <tbody>
+        <tr><td>Markdown</td><td>知识源文件</td><td>后续新增知识点优先写入对应 <code>source/*.md</code>。</td></tr>
+        <tr><td>HTML</td><td>学习和查询页</td><td>由脚本生成数据，避免手动改生成文件。</td></tr>
+        <tr><td>Word / Excel</td><td>导出版本</td><td>只作为展示或复习材料，不作为知识源。</td></tr>
+      </tbody>
+    </table>
     <div class="review-card">
       <strong>维护原则</strong>
       <p>Markdown 是知识源文件，HTML 是查询页。后续新增内容先放入对应 <code>source/*.md</code>，再生成网页。</p>
     </div>
+    <h4 class="table-title">章节来源与维护说明</h4>
+    ${sourceNotes.map(({ title, filename, notes }) => `
+      <details class="example-toggle">
+        <summary>${escapeHtml(title)}：<code>source/${escapeHtml(filename)}</code></summary>
+        ${notes.map(note => markdownToHtml(note)).join("\n")}
+      </details>
+    `).join("")}
     <h4 class="table-title">当前同步到 HTML 的源文件</h4>
     <table>
       <thead><tr><th>章节</th><th>源文件</th></tr></thead>

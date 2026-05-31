@@ -309,3 +309,17 @@ as 引导让步时，常把被强调的形容词、副词、名词或动词放�
 | 类型 | 截图例句 | 记忆点 |
 | --- | --- | --- |
 | 方式 | Sally runs as if she is flying. / Sally runs as if she were flying. | `as if / as though` 表示“仿佛怎样”。虚拟与否看是否与事实相反。 |
+
+## 关联学习：副词性功能的其他表现形式
+
+副词性从句的重点是修饰对象。只要一个结构在说明动作、状态或整个主句的时间、地点、原因、条件、让步、目的、结果、方式等，它就在承担副词性功能；从句只是其中一种表现形式。
+
+| 副词性功能 | 从句形式 | 非谓语形式 | 介词短语形式 | 判断问题 |
+| --- | --- | --- | --- | --- |
+| 时间 | when I was at school | When reading, do not talk. | after dinner / until midnight | 它回答“什么时候 / 到什么时候”吗？ |
+| 原因 | because it was raining | Being ill, he stayed home. | because of the rain / for this reason | 它回答“为什么”吗？ |
+| 条件 / 让步 | if it rains / although he tried | If given more time... / Although tired... | despite his effort / without help | 它给主句成立加条件，还是让一步也成立？ |
+| 目的 / 结果 | so that students could understand / so...that... | to improve English / never to return | for better results | 它说明“为了什么”还是“导致什么结果”？ |
+| 方式 / 伴随 | as if she is flying | Walking slowly, he entered. | with a smile / in silence | 它说明动作怎样发生或伴随什么状态吗？ |
+
+查阅路径：有连接词和完整主谓结构时看本章；压缩成 `to do / doing / done` 时看 [非谓语](#nonfinite)；压缩成 `介词 + 名词性成分` 时看 [介词](#preposition)。

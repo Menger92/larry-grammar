@@ -1098,11 +1098,43 @@ const sections = Array.isArray(window.generatedSections) && window.generatedSect
 
 const displaySections = splitClauseSections(sections);
 
+const navGroups = [
+  {
+    title: "基础框架",
+    note: "先建立句子主干和全局地图",
+    ids: ["overview", "simple"]
+  },
+  {
+    title: "成分功能层",
+    note: "围绕名词性、形容词性、副词性横向查阅",
+    ids: [
+      "preposition",
+      "clause-overview",
+      "noun-clause",
+      "adjective-clause",
+      "adverbial-clause",
+      "clause-confusions",
+      "nonfinite"
+    ]
+  },
+  {
+    title: "表达精化层",
+    note: "处理时态、语气和词法细节",
+    ids: ["tense", "subjunctive", "morphology"]
+  },
+  {
+    title: "附录与维护",
+    note: "项目使用说明和源文件索引",
+    ids: ["source-index"]
+  }
+];
+
 const nav = document.querySelector("#nav");
 const content = document.querySelector("#content");
 const search = document.querySelector("#search");
 const exampleSearch = document.querySelector("#exampleSearch");
 const exampleFilters = document.querySelector("#exampleFilters");
+const exampleStatus = document.querySelector("#exampleStatus");
 const exampleResults = document.querySelector("#exampleResults");
 const sentenceAnalyzer = document.querySelector("#sentenceAnalyzer");
 
@@ -1119,6 +1151,19 @@ const exampleTags = [
   { id: "morphology", label: "词法解析" },
   { id: "contrast", label: "易混对比" }
 ];
+
+const exampleChapterLinks = {
+  simple: { label: "简单句", href: "#simple" },
+  "noun-clause": { label: "名词性从句", href: "#noun-clause" },
+  "adjective-clause": { label: "形容词性从句", href: "#adjective-clause" },
+  "adverbial-clause": { label: "副词性从句", href: "#adverbial-clause" },
+  nonfinite: { label: "非谓语", href: "#nonfinite" },
+  preposition: { label: "介词", href: "#preposition" },
+  tense: { label: "时态", href: "#tense" },
+  subjunctive: { label: "虚拟语气", href: "#subjunctive" },
+  morphology: { label: "词法解析", href: "#morphology" },
+  contrast: { label: "从句易混对比", href: "#clause-confusions" }
+};
 
 const exampleLibrary = [
   {
@@ -1405,11 +1450,106 @@ const exampleLibrary = [
       "arriving late to the meeting 是 doing 形式，整体作介词宾语。",
       "这里的 doing 更接近“迟到这件事”。"
     ]
+  },
+  {
+    id: "tense-present-perfect-since",
+    title: "现在完成：since 起点",
+    section: "时态",
+    tags: ["tense", "adverbial-clause"],
+    level: "进阶",
+    sentence: "Sally and I haven't met each other since I became a middle school student.",
+    translation: "自从我成为中学生以来，Sally 和我就没有见过面。",
+    core: "Sally and I haven't met each other",
+    question: "since 从句为什么常和完成相关表达一起判断？",
+    answer: "since 给出过去起点，主句用现在完成相关表达说明状态延续到现在。",
+    method: "先找主句观察点，再看 since 从句给出的起点。",
+    parts: [
+      { text: "Sally and I", role: "noun", label: "主语" },
+      { text: "haven't met", role: "neutral", label: "谓语 / 现在完成" },
+      { text: "each other", role: "noun", label: "宾语" },
+      { text: "since I became a middle school student", role: "adv", label: "时间状语从句" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 Sally and I haven't met each other。",
+      "since I became a middle school student 给出过去的起点。",
+      "haven't met 表示从那个起点到现在仍然没有见面，所以要和完成相关表达一起看。"
+    ]
+  },
+  {
+    id: "subjunctive-if-could-help",
+    title: "虚拟条件句：非现实空间",
+    section: "虚拟语气",
+    tags: ["subjunctive", "adverbial-clause", "contrast"],
+    level: "进阶",
+    sentence: "If I could help you, I would definitely do so.",
+    translation: "如果我能帮你，我一定会这么做。",
+    core: "I would definitely do so",
+    question: "这里为什么不是普通真实条件句？",
+    answer: "could / would 把句子推进非现实或假设空间，不只是普通过去时间。",
+    method: "先判断真实条件还是非真实条件，再看情态动词和时态形式。",
+    parts: [
+      { text: "If I could help you", role: "adv", label: "条件状语从句" },
+      { text: ",", role: "plain" },
+      { text: "I", role: "noun", label: "主语" },
+      { text: "would definitely do", role: "neutral", label: "虚拟谓语" },
+      { text: "so", role: "noun", label: "宾语 / 替代内容" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 I would definitely do so。",
+      "If I could help you 给出条件，但 could 不只是过去时间，而是带出假设距离。",
+      "would do so 是主句虚拟结果，说明这句话进入非现实或假设空间。"
+    ]
+  },
+  {
+    id: "morphology-singular-determiner",
+    title: "单数可数名词不能裸露",
+    section: "词法解析",
+    tags: ["morphology", "simple"],
+    level: "基础",
+    sentence: "A dog is barking by the door.",
+    translation: "一只狗正在门边叫。",
+    core: "A dog is barking",
+    question: "dog 前为什么要有 A？",
+    answer: "dog 是单数可数名词，不能裸露，需要限定词。",
+    method: "先判断名词是否可数，再判断是否单数，最后检查前面有没有限定词。",
+    parts: [
+      { text: "A dog", role: "noun", label: "主语 / 限定词 + 名词" },
+      { text: "is barking", role: "neutral", label: "谓语" },
+      { text: "by the door", role: "adv", label: "地点状语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 A dog is barking。",
+      "dog 是单数可数名词，前面不能空着。",
+      "A 是限定词，用来引入一只不特定的 dog；by the door 是介词短语作地点状语。"
+    ]
   }
 ];
 
 let activeExampleTag = "all";
 let selectedExampleId = exampleLibrary[0]?.id || "";
+
+function exampleQuestion(item) {
+  return item.question || `${item.sentence} 里的重点结构如何判断？`;
+}
+
+function exampleAnswer(item) {
+  return item.answer || item.analysis.at(-1) || "先按项目判断流程拆出主干和功能。";
+}
+
+function exampleMethod(item) {
+  return item.method || item.analysis[0] || "先找谓语，再定主干，最后判断修饰和补足关系。";
+}
+
+function exampleChapterTargets(item) {
+  return item.tags
+    .map(tag => exampleChapterLinks[tag])
+    .filter(Boolean)
+    .filter((link, index, links) => links.findIndex(item => item.href === link.href) === index)
+    .slice(0, 4);
+}
 
 function sectionNumber(section) {
   return displaySections.findIndex(item => item.id === section.id) + 1;
@@ -1435,7 +1575,10 @@ function addNumberedSubsections(section) {
 }
 
 function renderNav(list) {
-  nav.innerHTML = list.map(section => {
+  const sectionMap = new Map(list.map(section => [section.id, section]));
+  const renderedIds = new Set();
+
+  const renderSection = section => {
     const number = sectionNumber(section);
     const subsections = getSubsections(section);
     const subnav = subsections.length
@@ -1446,6 +1589,7 @@ function renderNav(list) {
           </a>
         `).join("")}</div>`
       : "";
+    renderedIds.add(section.id);
 
     return `
       <div class="nav-group">
@@ -1456,7 +1600,46 @@ function renderNav(list) {
         ${subnav}
       </div>
     `;
-  }).join("");
+  };
+
+  const clusters = navGroups.map(group => {
+    const items = group.ids
+      .map(id => sectionMap.get(id))
+      .filter(Boolean);
+
+    if (!items.length) {
+      return "";
+    }
+
+    return `
+      <section class="nav-cluster">
+        <div class="nav-cluster-title">
+          <strong>${escapeHtml(group.title)}</strong>
+          <span>${escapeHtml(group.note)}</span>
+        </div>
+        <div class="nav-cluster-items">
+          ${items.map(renderSection).join("")}
+        </div>
+      </section>
+    `;
+  }).filter(Boolean);
+
+  const rest = list.filter(section => !renderedIds.has(section.id));
+  if (rest.length) {
+    clusters.push(`
+      <section class="nav-cluster">
+        <div class="nav-cluster-title">
+          <strong>其他</strong>
+          <span>未归入主线的补充内容</span>
+        </div>
+        <div class="nav-cluster-items">
+          ${rest.map(renderSection).join("")}
+        </div>
+      </section>
+    `);
+  }
+
+  nav.innerHTML = clusters.join("");
 }
 
 function render(list, query = "") {
@@ -1470,10 +1653,13 @@ function render(list, query = "") {
     const sectionNo = sectionNumber(section);
     const rawHtml = addNumberedSubsections(section);
     const html = query ? highlight(rawHtml, query) : rawHtml;
+    const meta = section.id === "source-index" && section.meta
+      ? `<div class="meta">${section.meta}</div>`
+      : "";
     return `
       <article class="card" id="${section.id}">
         <h3><span class="chapter-number">${sectionNo}</span>${section.title}</h3>
-        <div class="meta">${section.meta}</div>
+        ${meta}
         ${html}
       </article>
     `;
@@ -1503,6 +1689,9 @@ function exampleSearchText(item) {
     item.sentence,
     item.translation,
     item.core,
+    exampleQuestion(item),
+    exampleAnswer(item),
+    exampleMethod(item),
     item.tags.join(" "),
     item.parts.map(part => `${part.text} ${part.label || ""}`).join(" "),
     item.analysis.join(" ")
@@ -1557,12 +1746,32 @@ function renderSentenceAnalyzer(item) {
     </div>
     <h3>${escapeHtml(item.title)}</h3>
     <p class="translation">${escapeHtml(item.translation)}</p>
+    <div class="judge-grid">
+      <div>
+        <b>判断任务</b>
+        <span>${escapeHtml(exampleQuestion(item))}</span>
+      </div>
+      <div>
+        <b>判断结论</b>
+        <span>${escapeHtml(exampleAnswer(item))}</span>
+      </div>
+      <div>
+        <b>检验方法</b>
+        <span>${escapeHtml(exampleMethod(item))}</span>
+      </div>
+    </div>
     <div class="analyzed-sentence" aria-label="彩色拆句">
       ${renderSentenceParts(item)}
     </div>
     <div class="core-line">
       <b>主干</b>
       <span>${escapeHtml(item.core)}</span>
+    </div>
+    <div class="chapter-links" aria-label="回到相关章节">
+      <b>回到章节</b>
+      <span>
+        ${exampleChapterTargets(item).map(link => `<a href="${link.href}">${escapeHtml(link.label)}</a>`).join("")}
+      </span>
     </div>
     <ol class="analysis-list">
       ${item.analysis.map(point => `<li>${escapeHtml(point)}</li>`).join("")}
@@ -1576,6 +1785,15 @@ function renderExamples() {
   }
 
   const list = filteredExamples();
+  if (exampleStatus) {
+    const currentTag = exampleTags.find(tag => tag.id === activeExampleTag)?.label || "全部";
+    exampleStatus.innerHTML = `
+      <span>当前筛选：<b>${escapeHtml(currentTag)}</b></span>
+      <span>显示 <b>${list.length}</b> / ${exampleLibrary.length} 个例句</span>
+      <span>使用顺序：判断任务 → 彩色拆句 → 主干 → 结论依据</span>
+    `;
+  }
+
   if (list.length && !list.some(item => item.id === selectedExampleId)) {
     selectedExampleId = list[0].id;
   }
@@ -1590,7 +1808,7 @@ function renderExamples() {
     <button class="example-result ${item.id === selectedExampleId ? "active" : ""}" type="button" data-example-id="${item.id}">
       <span>${escapeHtml(item.section)} · ${escapeHtml(item.level)}</span>
       <strong>${escapeHtml(item.sentence)}</strong>
-      <em>${escapeHtml(item.title)}</em>
+      <em>${escapeHtml(item.title)}｜${escapeHtml(exampleQuestion(item))}</em>
     </button>
   `).join("");
 

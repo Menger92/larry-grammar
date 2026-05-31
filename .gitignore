@@ -20,3 +20,4 @@ build/
 assets/*.pdf
 docs/*.pdf
 The economist/
+docs/01_economist/

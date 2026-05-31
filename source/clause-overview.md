@@ -1,4 +1,4 @@
-﻿# 从句
+# 从句总览
 
 对应视频：第三章《从句比简单句更简单》：3.1 简单句 + 简单句，必须有连词；3.2-3.3 名词性从句；3.4-3.6 形容词性从句；3.7 副词性从句。
 
@@ -90,3 +90,16 @@ What she said about the incident surprised everyone.
 | 名词性从句 | 整个从句当名词用 | What she said about the incident surprised everyone. | 这个从句是否占主语、宾语、表语、同位语位置？ |
 | 形容词性从句 / 定语从句 | 整个从句修饰名词 | Sally is a teacher who is warm-hearted, hardworking, and quick in learning. | 这个从句是否跟在名词后说明这个名词？ |
 | 副词性从句 / 状语从句 | 完整句子降级为副词性成分，修饰动作、状态或主句 | I was only a little kid when I met Sally. | 这个从句是否说明时间、原因、条件、让步、目的等逻辑关系？ |
+
+## 功能 × 表现形式矩阵
+
+查阅复杂句时，不要只沿着“从句类型”纵向找；更重要的是横向问一句：这个结构在句中承担什么功能？同一种功能，可以由从句、非谓语、介词短语等不同形式承担。
+
+| 句中功能 | 从句表现 | 非谓语表现 | 介词短语表现 | 查阅入口 |
+| --- | --- | --- | --- | --- |
+| 名词性成分 | 名词性从句：What she said surprised everyone. | 不定式 / 动名词：To lie is foolish. / Reading helps. | 介词后接名词性成分：about whether he will come | [名词性从句](#noun-clause)、[非谓语](#nonfinite)、[介词](#preposition) |
+| 形容词性成分 | 定语从句：a book that is about history | 分词 / 不定式作定语：a sleeping baby / a question to discuss | 介词短语作后置定语：the book on the shelf | [形容词性从句](#adjective-clause)、[非谓语](#nonfinite)、[介词](#preposition) |
+| 副词性成分 | 状语从句：when I was at school | 不定式 / 分词作状语：To improve English... / Asked to speak... | 介词短语作状语：after dinner / in Beijing | [副词性从句](#adverbial-clause)、[非谓语](#nonfinite)、[介词](#preposition) |
+| 补语 | 从句作表语或宾补中的真实内容：The truth is that... | 不定式 / 分词 / 形容词补足主语或宾语：I expect him to come. / I found the room dirty. | 介词短语补足形容词对象：ready for dinner | [简单句](#simple)、[名词性从句](#noun-clause)、[非谓语](#nonfinite) |
+
+记忆点：Larry 主线先判断功能，文法俱乐部旁注再解释为什么这种形式能承担这个功能。后续分析《经济学人》长句时，也按这个顺序：先找主干，再标功能，最后判断形式。

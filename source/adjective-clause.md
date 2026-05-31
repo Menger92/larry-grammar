@@ -198,3 +198,16 @@
 | 大范围同名筛选 | The 张三 who teaches us English is the most handsome guy in China. | - | 中国可能有很多张三，需要用 who teaches us English 筛选。 |
 | 奶奶 | My grandmother, who is 70 years old, loves programming. | My grandmother who loves programming is 70 years old. | “奶奶”通常已经唯一明确，不适合作为限制性筛选例句；用非限制性更合理。 |
 | 普通名词变专有 | This is my hometown, which a lot of people know. | This is my hometown which a lot of people know. | my hometown 对说话人来说已经唯一，后面用非限制性补充说明。 |
+
+## 关联学习：形容词性功能的其他表现形式
+
+形容词性从句的核心不是“关系词很复杂”，而是“后面的结构在修饰前面的名词”。同一个修饰名词的功能，还可以由形容词、介词短语、分词短语和不定式承担。
+
+| 修饰名词的形式 | 代表例句 | 与定语从句的关系 | 判断问题 |
+| --- | --- | --- | --- |
+| 定语从句 | a book that is about human history | 信息完整，有关系词和从句主谓结构。 | 后面这个从句是不是在说明“哪一个名词”？ |
+| 介词短语作后置定语 | the book on the shelf | 可理解为 the book that is on the shelf 的简化表达。 | 介词短语是不是紧跟名词，限定这个名词？ |
+| 分词短语作定语 | the book written by Larry / a sleeping baby | 常来自定语从句压缩。 | 名词和动作之间是主动、进行，还是被动、完成？ |
+| 不定式作定语 | a question to discuss / a pen to write with | 常带将来、目的、待完成的感觉。 | 名词后面的动作是不是还没发生或有用途关系？ |
+
+查阅路径：有完整主谓结构时看本章；变短为 `doing / done / to do` 时看 [非谓语](#nonfinite)；变成 `介词 + 名词性成分` 时看 [介词](#preposition)。
