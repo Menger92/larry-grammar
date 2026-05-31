@@ -6,17 +6,17 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 const sourceFiles = [
   ["overview", "grammar-overview.md", "语法体系总览", "源文件：source/grammar-overview.md"],
-  ["preposition", "preposition.md", "介词与介词短语", "源文件：source/preposition.md"],
   ["simple", "simple-sentence.md", "简单句", "源文件：source/simple-sentence.md"],
   ["clause-overview", "clause-overview.md", "从句总览", "源文件：source/clause-overview.md"],
   ["noun-clause", "noun-clause.md", "名词性从句", "源文件：source/noun-clause.md"],
   ["adjective-clause", "adjective-clause.md", "形容词性从句", "源文件：source/adjective-clause.md"],
   ["adverbial-clause", "adverbial-clause.md", "副词性从句", "源文件：source/adverbial-clause.md"],
-  ["clause-confusions", "clause-confusions.md", "从句易混对比", "源文件：source/clause-confusions.md"],
   ["nonfinite", "nonfinite.md", "非谓语", "源文件：source/nonfinite.md"],
+  ["preposition", "preposition.md", "介词与介词短语", "源文件：source/preposition.md"],
   ["tense", "tense.md", "时态", "源文件：source/tense.md"],
   ["subjunctive", "subjunctive.md", "虚拟语气", "源文件：source/subjunctive.md"],
-  ["morphology", "morphology.md", "词法解析", "源文件：source/morphology.md"]
+  ["morphology", "morphology.md", "词法解析", "源文件：source/morphology.md"],
+  ["clause-confusions", "clause-confusions.md", "从句易混对比", "源文件：source/clause-confusions.md"]
 ];
 
 const sourceDir = path.join(root, "source");
@@ -382,10 +382,6 @@ sections.push({
         <tr><td>Word / Excel</td><td>导出版本</td><td>只作为展示或复习材料，不作为知识源。</td></tr>
       </tbody>
     </table>
-    <div class="review-card">
-      <strong>维护原则</strong>
-      <p>Markdown 是知识源文件，HTML 是查询页。后续新增内容先放入对应 <code>source/*.md</code>，再生成网页。</p>
-    </div>
     <h4 class="table-title">章节来源与维护说明</h4>
     ${sourceNotes.map(({ title, filename, notes }) => `
       <details class="example-toggle">

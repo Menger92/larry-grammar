@@ -1100,27 +1100,26 @@ const displaySections = splitClauseSections(sections);
 
 const navGroups = [
   {
-    title: "基础框架",
-    note: "先建立句子主干和全局地图",
+    title: "判断入口",
+    note: "先建立功能颜色、总流程和简单句主干",
     ids: ["overview", "simple"]
   },
   {
-    title: "成分功能层",
-    note: "围绕名词性、形容词性、副词性横向查阅",
+    title: "复杂结构层",
+    note: "从句、非谓语、介词短语都回到句中功能",
     ids: [
-      "preposition",
       "clause-overview",
       "noun-clause",
       "adjective-clause",
       "adverbial-clause",
-      "clause-confusions",
-      "nonfinite"
+      "nonfinite",
+      "preposition"
     ]
   },
   {
-    title: "表达精化层",
-    note: "处理时态、语气和词法细节",
-    ids: ["tense", "subjunctive", "morphology"]
+    title: "表达精化与易混",
+    note: "处理时态、语气、词法和真实阅读卡点",
+    ids: ["tense", "subjunctive", "morphology", "clause-confusions"]
   },
   {
     title: "附录与维护",
@@ -1134,6 +1133,7 @@ const content = document.querySelector("#content");
 const search = document.querySelector("#search");
 const exampleSearch = document.querySelector("#exampleSearch");
 const exampleFilters = document.querySelector("#exampleFilters");
+const exampleTopics = document.querySelector("#exampleTopics");
 const exampleStatus = document.querySelector("#exampleStatus");
 const exampleResults = document.querySelector("#exampleResults");
 const sentenceAnalyzer = document.querySelector("#sentenceAnalyzer");
@@ -1528,8 +1528,493 @@ const exampleLibrary = [
   }
 ];
 
+const knowledgeExampleLibrary = [
+  {
+    id: "simple-sv-it-happens",
+    title: "SV：主谓",
+    section: "简单句",
+    knowledge: "主谓 SV",
+    tags: ["simple"],
+    level: "基础",
+    sentence: "It happens.",
+    translation: "事情发生了。",
+    core: "It happens",
+    question: "这个句子为什么是主谓结构？",
+    answer: "happen 是不及物动词，后面不需要宾语，It + happens 已经构成完整主干。",
+    method: "先找谓语 happen，再检查它是否要求宾语；不要求宾语就是 SV。",
+    parts: [
+      { text: "It", role: "noun", label: "主语" },
+      { text: "happens", role: "neutral", label: "谓语 / 不及物动词" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 It happens。",
+      "happen 表示“发生”，动作本身不直接作用到某个宾语。",
+      "句子意思已经完整，所以归入主谓 SV。"
+    ]
+  },
+  {
+    id: "simple-svp-sally-beautiful",
+    title: "SVP：主系表",
+    section: "简单句",
+    knowledge: "主系表 SVP",
+    tags: ["simple"],
+    level: "基础",
+    sentence: "Sally is beautiful.",
+    translation: "Sally 很漂亮。",
+    core: "Sally is beautiful",
+    question: "beautiful 在句中做什么？",
+    answer: "is 是系动词，beautiful 补充说明主语 Sally 的状态，是表语。",
+    method: "看到 be / become / seem 等系动词，优先检查后面是不是说明主语身份或状态。",
+    parts: [
+      { text: "Sally", role: "noun", label: "主语" },
+      { text: "is", role: "neutral", label: "系动词" },
+      { text: "beautiful", role: "adj", label: "表语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 Sally is beautiful。",
+      "beautiful 不是动作对象，而是在说明 Sally 的状态。",
+      "主语 + 系动词 + 表语，就是主系表 SVP。"
+    ]
+  },
+  {
+    id: "simple-svo-cats-love-fish",
+    title: "SVO：主谓宾",
+    section: "简单句",
+    knowledge: "主谓宾 SVO",
+    tags: ["simple"],
+    level: "基础",
+    sentence: "Cats love fish.",
+    translation: "猫喜欢鱼。",
+    core: "Cats love fish",
+    question: "fish 为什么是宾语？",
+    answer: "love 是及物动词，需要一个被喜欢的对象；fish 承接 love 的动作，是宾语。",
+    method: "先问“谁 love？”再问“love 什么？”能回答第二问的就是宾语。",
+    parts: [
+      { text: "Cats", role: "noun", label: "主语" },
+      { text: "love", role: "neutral", label: "谓语 / 及物动词" },
+      { text: "fish", role: "noun", label: "宾语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 Cats love fish。",
+      "love 后面必须接一个对象才能完整表达。",
+      "fish 是动作 love 的承受对象，所以是 SVO。"
+    ]
+  },
+  {
+    id: "simple-svoo-give-gift",
+    title: "SVOO：主谓双宾",
+    section: "简单句",
+    knowledge: "主谓双宾 SVOO",
+    tags: ["simple"],
+    level: "基础",
+    sentence: "She sent him a message.",
+    translation: "她给他发了一条消息。",
+    core: "She sent him a message",
+    question: "him 和 a message 分别是什么宾语？",
+    answer: "him 是接受者，a message 是被发出的东西，所以是间接宾语 + 直接宾语。",
+    method: "遇到 give / tell / send 这类动词，检查后面是否是“人 + 物”。",
+    parts: [
+      { text: "She", role: "noun", label: "主语" },
+      { text: "sent", role: "neutral", label: "谓语" },
+      { text: "him", role: "noun", label: "间接宾语" },
+      { text: "a message", role: "noun", label: "直接宾语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 She sent him a message。",
+      "him 表示消息发给谁。",
+      "a message 表示被发出的东西，因此是 SVOO。"
+    ]
+  },
+  {
+    id: "simple-svoc-make-happy",
+    title: "SVOC：主谓宾补",
+    section: "简单句",
+    knowledge: "主谓宾补 SVOC",
+    tags: ["simple"],
+    level: "基础",
+    sentence: "You make me happy.",
+    translation: "你让我开心。",
+    core: "You make me happy",
+    question: "happy 为什么是宾语补足语？",
+    answer: "把宾语 me 和 happy 连成小分句：I am happy，语义自洽，happy 补充说明 me 的状态。",
+    method: "宾补判断用小分句检验：宾语 + be + 后面的词，成立就倾向宾补。",
+    parts: [
+      { text: "You", role: "noun", label: "主语" },
+      { text: "make", role: "neutral", label: "谓语" },
+      { text: "me", role: "noun", label: "宾语" },
+      { text: "happy", role: "adj", label: "宾语补足语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 You make me happy。",
+      "me 是 make 的宾语。",
+      "happy 补充说明 me 的状态，不是修饰 make 的方式，所以是宾补。"
+    ]
+  },
+  {
+    id: "noun-clause-subject-what-she-said",
+    title: "主语从句：what 引导",
+    section: "名词性从句",
+    knowledge: "主语从句",
+    tags: ["noun-clause"],
+    level: "基础",
+    sentence: "What she said surprised everyone.",
+    translation: "她说的话让所有人都很惊讶。",
+    core: "What she said surprised everyone",
+    question: "What she said 为什么是主语从句？",
+    answer: "What she said 整体站在主语位置，后面的 surprised 才是主句谓语。",
+    method: "先找主句谓语 surprised，再看谓语前面整个从句是不是它的主语。",
+    parts: [
+      { text: "What she said", role: "noun", label: "主语从句" },
+      { text: "surprised", role: "neutral", label: "主句谓语" },
+      { text: "everyone", role: "noun", label: "宾语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主句谓语是 surprised。",
+      "What she said 整体回答“什么让大家惊讶”。",
+      "从句占据主语位置，所以是主语从句。"
+    ]
+  },
+  {
+    id: "noun-clause-object-that-education",
+    title: "宾语从句：that 引导",
+    section: "名词性从句",
+    knowledge: "宾语从句",
+    tags: ["noun-clause"],
+    level: "基础",
+    sentence: "She believes that education is the key.",
+    translation: "她相信教育是关键。",
+    core: "She believes that education is the key",
+    question: "that education is the key 在句中做什么？",
+    answer: "believes 后面需要相信的内容，that 从句整体做 believes 的宾语。",
+    method: "看到认知、表达、感受类动词，先问“相信/认为/说了什么”。",
+    parts: [
+      { text: "She", role: "noun", label: "主语" },
+      { text: "believes", role: "neutral", label: "谓语" },
+      { text: "that education is the key", role: "noun", label: "宾语从句" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 She believes something。",
+      "that education is the key 给出 believes 的具体内容。",
+      "从句整体做宾语，所以是宾语从句。"
+    ]
+  },
+  {
+    id: "noun-clause-predicative-truth",
+    title: "表语从句：that 引导",
+    section: "名词性从句",
+    knowledge: "表语从句",
+    tags: ["noun-clause"],
+    level: "基础",
+    sentence: "The truth is that we all make mistakes.",
+    translation: "事实是我们都会犯错。",
+    core: "The truth is that we all make mistakes",
+    question: "that we all make mistakes 为什么是表语从句？",
+    answer: "is 是系动词，后面的 that 从句说明主语 The truth 的内容，是表语。",
+    method: "先锁定系动词，再看系动词后面是不是补充说明主语的完整句子。",
+    parts: [
+      { text: "The truth", role: "noun", label: "主语" },
+      { text: "is", role: "neutral", label: "系动词" },
+      { text: "that we all make mistakes", role: "noun", label: "表语从句" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 The truth is something。",
+      "that we all make mistakes 解释 truth 的具体内容。",
+      "从句放在系动词后做表语，所以是表语从句。"
+    ]
+  },
+  {
+    id: "noun-clause-appositive-news",
+    title: "同位语从句：that 引导",
+    section: "名词性从句",
+    knowledge: "同位语从句",
+    tags: ["noun-clause"],
+    level: "进阶",
+    sentence: "The news that they won the championship spread quickly.",
+    translation: "他们赢得冠军的消息很快传开了。",
+    core: "The news spread quickly",
+    question: "that they won the championship 是定语从句还是同位语从句？",
+    answer: "它不是修饰哪一个 news，而是在解释 news 的具体内容，所以是同位语从句。",
+    method: "把前面的抽象名词替换成“这个消息的内容是……”，能说通就优先判同位语。",
+    parts: [
+      { text: "The news", role: "noun", label: "主语中心词" },
+      { text: "that they won the championship", role: "noun", label: "同位语从句" },
+      { text: "spread", role: "neutral", label: "谓语" },
+      { text: "quickly", role: "adv", label: "状语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 The news spread quickly。",
+      "that they won the championship 解释 news 的内容。",
+      "that 在同位语从句中通常不担任成分，只负责引出内容。"
+    ]
+  },
+  {
+    id: "adj-clause-where-city",
+    title: "关系副词 where",
+    section: "定语从句",
+    knowledge: "关系副词 where",
+    tags: ["adjective-clause"],
+    level: "基础",
+    sentence: "This is the city where I grew up.",
+    translation: "这就是我长大的那座城市。",
+    core: "This is the city",
+    question: "where I grew up 修饰谁？",
+    answer: "where I grew up 修饰 the city，说明是哪一座城市。",
+    method: "定语从句先找先行词，再看关系词在从句中承担什么功能。",
+    parts: [
+      { text: "This", role: "noun", label: "主语" },
+      { text: "is", role: "neutral", label: "系动词" },
+      { text: "the city", role: "noun", label: "表语 / 先行词" },
+      { text: "where I grew up", role: "adj", label: "定语从句" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 This is the city。",
+      "where I grew up 回答“哪座城市”。",
+      "where 在从句里承担地点状语功能。"
+    ]
+  },
+  {
+    id: "adv-clause-because-raining",
+    title: "原因状语从句",
+    section: "副词性从句",
+    knowledge: "原因状语从句",
+    tags: ["adverbial-clause"],
+    level: "基础",
+    sentence: "I stayed home because it was raining.",
+    translation: "因为下雨，我待在家里。",
+    core: "I stayed home",
+    question: "because it was raining 修饰什么？",
+    answer: "它说明 stayed home 这个动作发生的原因，修饰主句动作。",
+    method: "副词性从句重点问：它在说明主句动作的时间、原因、条件、结果还是让步。",
+    parts: [
+      { text: "I", role: "noun", label: "主语" },
+      { text: "stayed", role: "neutral", label: "谓语" },
+      { text: "home", role: "adv", label: "地点状语" },
+      { text: "because it was raining", role: "adv", label: "原因状语从句" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 I stayed home。",
+      "because it was raining 给出待在家里的原因。",
+      "它不做名词成分，而是修饰整个动作，所以是副词性从句。"
+    ]
+  },
+  {
+    id: "adv-clause-if-rains",
+    title: "条件状语从句",
+    section: "副词性从句",
+    knowledge: "条件状语从句",
+    tags: ["adverbial-clause"],
+    level: "基础",
+    sentence: "If it rains tomorrow, we will stay home.",
+    translation: "如果明天下雨，我们就待在家里。",
+    core: "We will stay home",
+    question: "If it rains tomorrow 给主句提供什么信息？",
+    answer: "它给出 will stay home 成立的条件，是条件状语从句。",
+    method: "先找主句结论，再看 if 从句是不是这个结论成立的前提。",
+    parts: [
+      { text: "If it rains tomorrow", role: "adv", label: "条件状语从句" },
+      { text: ",", role: "plain" },
+      { text: "we", role: "noun", label: "主语" },
+      { text: "will stay", role: "neutral", label: "谓语" },
+      { text: "home", role: "adv", label: "地点状语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 we will stay home。",
+      "If it rains tomorrow 是主句行为的前提条件。",
+      "真实条件句里，if 从句常用一般现在时代替将来。"
+    ]
+  },
+  {
+    id: "adv-clause-while-homework",
+    title: "时间状语从句：while",
+    section: "副词性从句",
+    knowledge: "时间状语从句 while",
+    tags: ["adverbial-clause", "contrast"],
+    level: "进阶",
+    sentence: "Sally telephoned me while I was doing my homework.",
+    translation: "我正在做作业时，Sally 给我打了电话。",
+    core: "Sally telephoned me",
+    question: "while 从句真正修饰的对象是什么？",
+    answer: "while I was doing my homework 给 telephoned me 这个动作定位时间段。",
+    method: "判断副词性从句时，先问它在限定主句哪个动作或状态。",
+    parts: [
+      { text: "Sally", role: "noun", label: "主语" },
+      { text: "telephoned", role: "neutral", label: "谓语" },
+      { text: "me", role: "noun", label: "宾语" },
+      { text: "while I was doing my homework", role: "adv", label: "时间状语从句" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 Sally telephoned me。",
+      "while 强调一个持续的时间段。",
+      "从句不是名词成分，而是在给主句动作定位时间。"
+    ]
+  },
+  {
+    id: "nonfinite-to-subject",
+    title: "不定式作主语",
+    section: "非谓语动词",
+    knowledge: "不定式作主语",
+    tags: ["nonfinite"],
+    level: "基础",
+    sentence: "To lie is foolish.",
+    translation: "撒谎是愚蠢的。",
+    core: "To lie is foolish",
+    question: "To lie 在句中做什么？",
+    answer: "To lie 整体站在主语位置，is foolish 说明这件事的性质。",
+    method: "非谓语先看它占哪个句子位置，再判断它承担名词、形容词还是副词功能。",
+    parts: [
+      { text: "To lie", role: "nonfinite", label: "不定式 / 主语" },
+      { text: "is", role: "neutral", label: "系动词" },
+      { text: "foolish", role: "adj", label: "表语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 To lie is foolish。",
+      "To lie 表示“撒谎这件事”。",
+      "它整体做主语，承担名词性功能。"
+    ]
+  },
+  {
+    id: "nonfinite-sleeping-baby",
+    title: "现在分词作定语",
+    section: "非谓语动词",
+    knowledge: "分词作定语",
+    tags: ["nonfinite", "adjective-clause"],
+    level: "基础",
+    sentence: "The sleeping baby is quiet.",
+    translation: "正在睡觉的宝宝很安静。",
+    core: "The baby is quiet",
+    question: "sleeping 为什么不是谓语？",
+    answer: "句子的谓语是 is，sleeping 修饰 baby，说明 baby 的状态。",
+    method: "一句话只能先锁定真正谓语；多出来的动词形式再判断是不是非谓语。",
+    parts: [
+      { text: "The", role: "adj", label: "限定词" },
+      { text: "sleeping", role: "nonfinite", label: "现在分词 / 定语" },
+      { text: "baby", role: "noun", label: "主语中心词" },
+      { text: "is", role: "neutral", label: "谓语" },
+      { text: "quiet", role: "adj", label: "表语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 The baby is quiet。",
+      "sleeping 放在 baby 前面，修饰 baby。",
+      "它不承担谓语功能，而是分词作定语。"
+    ]
+  },
+  {
+    id: "tense-simple-present-sun",
+    title: "一般现在时：客观事实",
+    section: "时态",
+    knowledge: "一般现在时",
+    tags: ["tense"],
+    level: "基础",
+    sentence: "The sun rises in the east.",
+    translation: "太阳从东方升起。",
+    core: "The sun rises",
+    question: "为什么这里用一般现在时？",
+    answer: "句子表达客观事实，不是在强调此刻正在发生。",
+    method: "先判断表达的是事实、习惯、现在状态，还是具体时间线上的动作。",
+    parts: [
+      { text: "The sun", role: "noun", label: "主语" },
+      { text: "rises", role: "neutral", label: "谓语 / 一般现在时" },
+      { text: "in the east", role: "adv", label: "地点状语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 The sun rises。",
+      "这里说的是稳定事实。",
+      "一般现在时适合表达客观规律、习惯和常态。"
+    ]
+  },
+  {
+    id: "subjunctive-wish-had-not-divorced",
+    title: "wish 虚拟：对过去的反事实",
+    section: "虚拟语气",
+    knowledge: "wish 虚拟",
+    tags: ["subjunctive", "noun-clause"],
+    level: "进阶",
+    sentence: "I wish that my dad had never divorced Apple's boss.",
+    translation: "我真希望我爸当年没有和苹果老板离婚。",
+    core: "I wish that my dad had never divorced Apple's boss",
+    question: "had never divorced 为什么不是普通过去完成时？",
+    answer: "wish 后面的内容与过去事实相反，had done 标记对过去的虚拟。",
+    method: "看到 wish，先判断愿望针对现在、过去还是将来，再看从句时态是否后退。",
+    parts: [
+      { text: "I", role: "noun", label: "主语" },
+      { text: "wish", role: "neutral", label: "谓语" },
+      { text: "that my dad had never divorced Apple's boss", role: "noun", label: "宾语从句 / 虚拟" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 I wish something。",
+      "that 从句是 wish 的宾语内容。",
+      "had never divorced 表示对过去事实的反向想象。"
+    ]
+  },
+  {
+    id: "morphology-definite-article-book",
+    title: "定冠词 the：特指",
+    section: "词法解析",
+    knowledge: "定冠词 the",
+    tags: ["morphology", "preposition"],
+    level: "基础",
+    sentence: "The book on the desk is mine.",
+    translation: "桌上的那本书是我的。",
+    core: "The book is mine",
+    question: "The book 为什么用 the？",
+    answer: "on the desk 把 book 限定成具体可识别的一本书，所以用 the。",
+    method: "看名词是否可数、是否单数，再判断语境中是泛指还是特指。",
+    parts: [
+      { text: "The book", role: "noun", label: "主语 / 特指名词" },
+      { text: "on the desk", role: "adj", label: "后置定语" },
+      { text: "is", role: "neutral", label: "系动词" },
+      { text: "mine", role: "noun", label: "表语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 The book is mine。",
+      "on the desk 修饰 book，让听者知道是哪一本。",
+      "the 标记这个名词已经被语境限定为特指对象。"
+    ]
+  }
+];
+
+const exampleKnowledgeOverrides = {
+  "svoc-room-dirty": "主谓宾补 SVOC",
+  "svo-adverbial-washed-warmly": "状语 vs 宾补",
+  "subject-complement-came-back-safe": "主语补足语",
+  "svoo-gave-gift": "主谓双宾 SVOO",
+  "preposition-on-what": "介词宾语",
+  "prep-book-on-shelf": "介词短语作定语",
+  "noun-clause-what-she-said": "宾语从句",
+  "noun-clause-whether-subject": "主语从句",
+  "adj-clause-teacher-who": "关系代词 who",
+  "adj-clause-grandmother-nonrestrictive": "非限制性定语从句",
+  "adv-clause-when-young": "时间状语从句 when",
+  "nonfinite-purpose-to-learn": "不定式作目的状语",
+  "nonfinite-arriving-after-for": "动名词作介词宾语",
+  "tense-present-perfect-since": "现在完成时 + since",
+  "subjunctive-if-could-help": "if 虚拟条件句",
+  "morphology-singular-determiner": "单数可数名词限定词"
+};
+
+const allExampleLibrary = [...knowledgeExampleLibrary, ...exampleLibrary];
+
 let activeExampleTag = "all";
-let selectedExampleId = exampleLibrary[0]?.id || "";
+let activeExampleTopic = "all";
+let selectedExampleId = allExampleLibrary[0]?.id || "";
 
 function exampleQuestion(item) {
   return item.question || `${item.sentence} 里的重点结构如何判断？`;
@@ -1541,6 +2026,10 @@ function exampleAnswer(item) {
 
 function exampleMethod(item) {
   return item.method || item.analysis[0] || "先找谓语，再定主干，最后判断修饰和补足关系。";
+}
+
+function exampleKnowledge(item) {
+  return item.knowledge || exampleKnowledgeOverrides[item.id] || item.title;
 }
 
 function exampleChapterTargets(item) {
@@ -1685,6 +2174,8 @@ function exampleSearchText(item) {
   return [
     item.title,
     item.section,
+    exampleKnowledge(item),
+    item.knowledge,
     item.level,
     item.sentence,
     item.translation,
@@ -1698,13 +2189,30 @@ function exampleSearchText(item) {
   ].join(" ").toLowerCase();
 }
 
-function filteredExamples() {
+function baseFilteredExamples() {
   const query = (exampleSearch?.value || "").trim().toLowerCase();
-  return exampleLibrary.filter(item => {
+  return allExampleLibrary.filter(item => {
     const tagMatch = activeExampleTag === "all" || item.tags.includes(activeExampleTag);
     const queryMatch = !query || exampleSearchText(item).includes(query);
     return tagMatch && queryMatch;
   });
+}
+
+function filteredExamples() {
+  return baseFilteredExamples().filter(item => (
+    activeExampleTopic === "all" || exampleKnowledge(item) === activeExampleTopic
+  ));
+}
+
+function exampleTopicGroups(list) {
+  return list.reduce((groups, item) => {
+    const topic = exampleKnowledge(item);
+    if (!groups.has(topic)) {
+      groups.set(topic, []);
+    }
+    groups.get(topic).push(item);
+    return groups;
+  }, new Map());
 }
 
 function renderExampleFilters() {
@@ -1715,6 +2223,37 @@ function renderExampleFilters() {
   exampleFilters.innerHTML = exampleTags.map(tag => `
     <button class="example-filter ${tag.id === activeExampleTag ? "active" : ""}" type="button" data-tag="${tag.id}">
       ${escapeHtml(tag.label)}
+    </button>
+  `).join("");
+}
+
+function renderExampleTopics(baseList) {
+  if (!exampleTopics) {
+    return;
+  }
+
+  const groups = exampleTopicGroups(baseList);
+  if (activeExampleTopic !== "all" && !groups.has(activeExampleTopic)) {
+    activeExampleTopic = "all";
+  }
+
+  const buttons = [
+    {
+      id: "all",
+      label: "全部知识点",
+      count: baseList.length
+    },
+    ...Array.from(groups, ([label, items]) => ({
+      id: label,
+      label,
+      count: items.length
+    }))
+  ];
+
+  exampleTopics.innerHTML = buttons.map(topic => `
+    <button class="example-topic ${topic.id === activeExampleTopic ? "active" : ""}" type="button" data-topic="${escapeHtml(topic.id)}">
+      <span>${escapeHtml(topic.label)}</span>
+      <b>${topic.count}</b>
     </button>
   `).join("");
 }
@@ -1742,6 +2281,7 @@ function renderSentenceAnalyzer(item) {
   sentenceAnalyzer.innerHTML = `
     <div class="analyzer-meta">
       <span>${escapeHtml(item.section)}</span>
+      <span>${escapeHtml(exampleKnowledge(item))}</span>
       <span>${escapeHtml(item.level)}</span>
     </div>
     <h3>${escapeHtml(item.title)}</h3>
@@ -1784,13 +2324,18 @@ function renderExamples() {
     return;
   }
 
+  const baseList = baseFilteredExamples();
+  renderExampleTopics(baseList);
   const list = filteredExamples();
   if (exampleStatus) {
     const currentTag = exampleTags.find(tag => tag.id === activeExampleTag)?.label || "全部";
+    const currentTopic = activeExampleTopic === "all" ? "全部知识点" : activeExampleTopic;
+    const topicCount = exampleTopicGroups(baseList).size;
     exampleStatus.innerHTML = `
       <span>当前筛选：<b>${escapeHtml(currentTag)}</b></span>
-      <span>显示 <b>${list.length}</b> / ${exampleLibrary.length} 个例句</span>
-      <span>使用顺序：判断任务 → 彩色拆句 → 主干 → 结论依据</span>
+      <span>知识点：<b>${escapeHtml(currentTopic)}</b></span>
+      <span>显示 <b>${list.length}</b> / ${allExampleLibrary.length} 个例句，覆盖 <b>${topicCount}</b> 个知识点</span>
+      <span>使用顺序：章节 → 知识点 → 例句 → 拆句判断</span>
     `;
   }
 
@@ -1804,12 +2349,20 @@ function renderExamples() {
     return;
   }
 
-  exampleResults.innerHTML = list.map(item => `
-    <button class="example-result ${item.id === selectedExampleId ? "active" : ""}" type="button" data-example-id="${item.id}">
-      <span>${escapeHtml(item.section)} · ${escapeHtml(item.level)}</span>
-      <strong>${escapeHtml(item.sentence)}</strong>
-      <em>${escapeHtml(item.title)}｜${escapeHtml(exampleQuestion(item))}</em>
-    </button>
+  exampleResults.innerHTML = Array.from(exampleTopicGroups(list), ([topic, items]) => `
+    <section class="example-topic-group">
+      <h3>
+        <span>${escapeHtml(topic)}</span>
+        <small>${items.length} 例</small>
+      </h3>
+      ${items.map(item => `
+        <button class="example-result ${item.id === selectedExampleId ? "active" : ""}" type="button" data-example-id="${item.id}">
+          <span>${escapeHtml(item.section)} · ${escapeHtml(item.level)}</span>
+          <strong>${escapeHtml(item.sentence)}</strong>
+          <em>${escapeHtml(item.title)}｜${escapeHtml(exampleQuestion(item))}</em>
+        </button>
+      `).join("")}
+    </section>
   `).join("");
 
   renderSentenceAnalyzer(list.find(item => item.id === selectedExampleId) || list[0]);
@@ -1832,7 +2385,18 @@ function initializeExampleWorkbench() {
     }
 
     activeExampleTag = button.dataset.tag;
+    activeExampleTopic = "all";
     renderExampleFilters();
+    renderExamples();
+  });
+
+  exampleTopics?.addEventListener("click", event => {
+    const button = event.target.closest("[data-topic]");
+    if (!button) {
+      return;
+    }
+
+    activeExampleTopic = button.dataset.topic;
     renderExamples();
   });
 

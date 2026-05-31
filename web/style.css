@@ -299,17 +299,18 @@ code {
 .adj,
 .adv,
 .nonfinite {
-  display: inline-flex;
-  align-items: center;
+  display: inline;
   max-width: 100%;
   margin: 0 2px;
   border-radius: 6px;
   padding: 1px 6px;
   font-weight: 700;
-  line-height: 1.45;
+  line-height: inherit;
   word-break: keep-all;
   overflow-wrap: normal;
-  vertical-align: middle;
+  vertical-align: baseline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 .neutral {
@@ -911,7 +912,7 @@ code {
 
 .pos-item {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 8px;
   min-height: 38px;
   padding: 8px 10px;
@@ -1466,6 +1467,53 @@ th {
   color: #fff;
 }
 
+.example-topic-bar {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+  scrollbar-width: thin;
+}
+
+.example-topic {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 32px;
+  flex: 0 0 auto;
+  border: 1px solid #dfe6f0;
+  border-radius: 8px;
+  padding: 5px 9px;
+  background: #fff;
+  color: #42526a;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.example-topic b {
+  min-width: 20px;
+  border-radius: 999px;
+  padding: 2px 6px;
+  background: #edf3fa;
+  color: var(--blue);
+  font-size: 12px;
+  text-align: center;
+}
+
+.example-topic:hover,
+.example-topic.active {
+  border-color: var(--green);
+  background: #f2fbf5;
+  color: #14532d;
+}
+
+.example-topic.active b {
+  background: var(--green);
+  color: #fff;
+}
+
 .example-workbench-status {
   display: flex;
   flex-wrap: wrap;
@@ -1499,6 +1547,35 @@ th {
   max-height: 560px;
   overflow: auto;
   padding-right: 4px;
+}
+
+.example-topic-group {
+  display: grid;
+  gap: 8px;
+}
+
+.example-topic-group + .example-topic-group {
+  margin-top: 8px;
+  padding-top: 10px;
+  border-top: 1px solid #e4ebf4;
+}
+
+.example-topic-group h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0;
+  color: #172033;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.example-topic-group h3 small {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
 }
 
 .example-result {
