@@ -19,11 +19,19 @@
   box-sizing: border-box;
 }
 
+html {
+  max-width: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
+  min-height: 100svh;
+  max-width: 100%;
   display: grid;
   grid-template-columns: 310px 1fr;
+  overflow-x: hidden;
   background: var(--bg);
   color: var(--ink);
   font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
@@ -62,6 +70,14 @@ h2,
 h3,
 p {
   margin-top: 0;
+}
+
+p,
+li,
+td,
+th,
+summary {
+  overflow-wrap: anywhere;
 }
 
 .brand h1 {
@@ -226,6 +242,7 @@ main {
   width: 100%;
   max-width: 1220px;
   padding: 28px;
+  min-width: 0;
 }
 
 .hero {
@@ -255,6 +272,7 @@ code {
   padding: 1px 5px;
   border-radius: 5px;
   background: #edf3fa;
+  overflow-wrap: anywhere;
 }
 
 .legend {
@@ -419,6 +437,7 @@ code {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
   margin: 22px 0;
+  min-width: 0;
 }
 
 .map-card,
@@ -427,6 +446,7 @@ code {
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 18px;
+  min-width: 0;
 }
 
 .map-card h3 {
@@ -888,6 +908,7 @@ code {
 .content {
   display: grid;
   gap: 12px;
+  min-width: 0;
 }
 
 .block {
@@ -1404,6 +1425,7 @@ th {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
+  min-width: 0;
 }
 
 .example-workbench-head {
@@ -1411,6 +1433,16 @@ th {
   grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
   gap: 18px;
   align-items: end;
+}
+
+.example-workbench-head > *,
+.example-library-layout > *,
+.sentence-analyzer > *,
+.judge-grid > *,
+.example-result > *,
+.card > *,
+.map-card > * {
+  min-width: 0;
 }
 
 .example-workbench-head h2 {
@@ -1524,6 +1556,7 @@ th {
 }
 
 .example-workbench-status span {
+  max-width: 100%;
   padding: 6px 9px;
   border: 1px solid #e1e7f1;
   border-radius: 8px;
@@ -1537,11 +1570,13 @@ th {
 .example-library-layout {
   display: grid;
   grid-template-columns: minmax(260px, 0.88fr) minmax(0, 1.35fr);
+  grid-template-areas: "results analyzer";
   gap: 16px;
   align-items: start;
 }
 
 .example-results {
+  grid-area: results;
   display: grid;
   gap: 8px;
   max-height: 560px;
@@ -1617,6 +1652,7 @@ th {
 }
 
 .sentence-analyzer {
+  grid-area: analyzer;
   display: grid;
   gap: 13px;
   min-height: 360px;
@@ -1853,9 +1889,17 @@ mark {
     grid-template-columns: 1fr;
   }
 
+  main {
+    order: 1;
+    max-width: none;
+  }
+
   .sidebar {
+    order: 2;
     position: static;
     height: auto;
+    border-right: 0;
+    border-top: 1px solid var(--line);
   }
 
   .hero,
@@ -1869,8 +1913,14 @@ mark {
     grid-template-columns: 1fr;
   }
 
+  .example-library-layout {
+    grid-template-areas:
+      "analyzer"
+      "results";
+  }
+
   .example-results {
-    max-height: none;
+    max-height: 480px;
     padding-right: 0;
   }
 
@@ -1918,6 +1968,18 @@ mark {
     grid-template-columns: 1fr;
   }
 
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table th,
+  table td {
+    min-width: 140px;
+  }
+
   .study-table tr {
     display: block;
   }
@@ -1945,4 +2007,204 @@ mark {
   .study-table td:nth-child(2)::before { content: "核心规则"; }
   .study-table td:nth-child(3)::before { content: "代表例句"; }
   .study-table td:nth-child(4)::before { content: "例句库"; }
+}
+
+@media (max-width: 640px) {
+  main {
+    padding: 12px;
+  }
+
+  .sidebar {
+    padding: 14px;
+  }
+
+  .brand {
+    margin-bottom: 14px;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand h1 {
+    font-size: 16px;
+  }
+
+  .brand p {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+
+  #nav {
+    display: grid;
+    gap: 10px;
+    overflow-x: visible;
+    padding-bottom: 0;
+  }
+
+  .nav-cluster {
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #edf1f7;
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  .nav-sublist {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .example-workbench {
+    gap: 12px;
+    margin: 0 0 14px;
+    padding: 12px;
+  }
+
+  .example-workbench-head {
+    gap: 12px;
+  }
+
+  .example-workbench-head h2 {
+    font-size: 24px;
+  }
+
+  .example-filter-bar {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    padding-bottom: 2px;
+  }
+
+  .example-filter {
+    flex: 0 0 auto;
+  }
+
+  .example-topic-bar {
+    flex-wrap: wrap;
+    max-height: 118px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .example-results {
+    max-height: 380px;
+  }
+
+  .sentence-analyzer {
+    min-height: 0;
+    padding: 12px;
+  }
+
+  .sentence-analyzer h3 {
+    font-size: 19px;
+  }
+
+  .core-line,
+  .chapter-links {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .analyzed-sentence {
+    gap: 6px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .sentence-part {
+    min-height: 42px;
+    padding: 5px 7px;
+  }
+
+  .hero {
+    gap: 14px;
+    padding-bottom: 16px;
+  }
+
+  .hero h2 {
+    font-size: 26px;
+  }
+
+  .visual-maps {
+    gap: 12px;
+    margin: 14px 0;
+  }
+
+  .map-card,
+  .card {
+    padding: 12px;
+  }
+
+  .card h3 {
+    align-items: flex-start;
+    font-size: 20px;
+  }
+
+  .chapter-number {
+    min-width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .function-map {
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .map-title strong {
+    font-size: 21px;
+  }
+
+  .material-card {
+    min-height: 0;
+    padding: 13px 13px 13px 18px;
+    box-shadow: none;
+  }
+
+  .material-card b,
+  .simple-workbench b,
+  .clause-builder b,
+  .nonfinite-transformer b,
+  .reading-action b {
+    font-size: 18px;
+  }
+
+  .simple-workbench,
+  .clause-builder,
+  .nonfinite-transformer,
+  .reading-action {
+    padding: 14px;
+    box-shadow: none;
+  }
+
+  .sentence-slots {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 10px;
+  }
+
+  .slot {
+    min-height: 48px;
+    font-size: 19px;
+  }
+
+  .table-title {
+    align-items: flex-start;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  pre {
+    padding: 10px;
+    font-size: 13px;
+  }
 }
