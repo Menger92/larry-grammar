@@ -1890,16 +1890,22 @@ mark {
   }
 
   main {
-    order: 1;
+    order: 2;
     max-width: none;
   }
 
   .sidebar {
-    order: 2;
-    position: static;
+    order: 1;
+    position: sticky;
+    top: 0;
+    z-index: 20;
     height: auto;
+    max-height: 48vh;
+    overflow: auto;
     border-right: 0;
-    border-top: 1px solid var(--line);
+    border-top: 0;
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 10px 26px rgba(29, 39, 56, .08);
   }
 
   .hero,
@@ -2016,6 +2022,7 @@ mark {
 
   .sidebar {
     padding: 14px;
+    max-height: 52vh;
   }
 
   .brand {
