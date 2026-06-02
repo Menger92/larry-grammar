@@ -1137,6 +1137,10 @@ const exampleTopics = document.querySelector("#exampleTopics");
 const exampleStatus = document.querySelector("#exampleStatus");
 const exampleResults = document.querySelector("#exampleResults");
 const sentenceAnalyzer = document.querySelector("#sentenceAnalyzer");
+const mobileTocToggle = document.querySelector("#mobileTocToggle");
+const mobileTocClose = document.querySelector("#mobileTocClose");
+const mobileTocBackdrop = document.querySelector("#mobileTocBackdrop");
+const mobileCurrentSection = document.querySelector("#mobileCurrentSection");
 
 const exampleTags = [
   { id: "all", label: "全部" },
@@ -2135,6 +2139,8 @@ function render(list, query = "") {
   renderNav(list);
   if (!list.length) {
     content.innerHTML = `<div class="empty">没有找到匹配内容。</div>`;
+    refreshScrollTargets();
+    updateActiveNav();
     return;
   }
 
@@ -2153,6 +2159,8 @@ function render(list, query = "") {
       </article>
     `;
   }).join("");
+  refreshScrollTargets();
+  updateActiveNav();
 }
 
 function highlight(html, query) {
@@ -2169,6 +2177,123 @@ function escapeHtml(value = "") {
     "'": "&#39;"
   })[char]);
 }
+
+let scrollTargets = [];
+let activeNavTicking = false;
+
+function isMobileTocMode() {
+  return window.matchMedia("(max-width: 920px)").matches;
+}
+
+function setMobileTocOpen(open) {
+  if (!mobileTocToggle || !mobileTocBackdrop) {
+    return;
+  }
+
+  document.body.classList.toggle("mobile-toc-open", open);
+  mobileTocToggle.setAttribute("aria-expanded", String(open));
+  mobileTocBackdrop.hidden = !open;
+
+  if (open) {
+    window.setTimeout(() => search?.focus({ preventScroll: true }), 80);
+  }
+}
+
+function refreshScrollTargets() {
+  scrollTargets = Array.from(document.querySelectorAll("#content article.card[id], #content h4[id]"))
+    .map(element => ({
+      id: element.id,
+      element
+    }));
+}
+
+function activeNavLabel(link) {
+  if (!link) {
+    return "当前位置";
+  }
+
+  return `当前：${link.textContent.replace(/\s+/g, " ").trim()}`;
+}
+
+function updateActiveNav() {
+  if (!nav || !scrollTargets.length) {
+    nav?.querySelectorAll("a.active, a.active-parent").forEach(link => {
+      link.classList.remove("active", "active-parent");
+    });
+    if (mobileCurrentSection) {
+      mobileCurrentSection.textContent = "当前位置";
+    }
+    return;
+  }
+
+  const offset = isMobileTocMode() ? 86 : 28;
+  let current = scrollTargets[0];
+
+  for (const target of scrollTargets) {
+    if (target.element.getBoundingClientRect().top <= offset) {
+      current = target;
+    } else {
+      break;
+    }
+  }
+
+  nav.querySelectorAll("a.active, a.active-parent").forEach(link => {
+    link.classList.remove("active", "active-parent");
+  });
+
+  const activeLink = Array.from(nav.querySelectorAll("a[href]"))
+    .find(link => link.getAttribute("href") === `#${current.id}`);
+  activeLink?.classList.add("active");
+  activeLink?.closest(".nav-group")?.querySelector(".nav-section")?.classList.add("active-parent");
+
+  if (mobileCurrentSection) {
+    mobileCurrentSection.textContent = activeNavLabel(activeLink);
+  }
+}
+
+function requestActiveNavUpdate() {
+  if (activeNavTicking) {
+    return;
+  }
+
+  activeNavTicking = true;
+  window.requestAnimationFrame(() => {
+    updateActiveNav();
+    activeNavTicking = false;
+  });
+}
+
+mobileTocToggle?.addEventListener("click", () => {
+  setMobileTocOpen(!document.body.classList.contains("mobile-toc-open"));
+});
+
+mobileTocClose?.addEventListener("click", () => {
+  setMobileTocOpen(false);
+});
+
+mobileTocBackdrop?.addEventListener("click", () => {
+  setMobileTocOpen(false);
+});
+
+nav?.addEventListener("click", event => {
+  if (event.target.closest("a") && isMobileTocMode()) {
+    setMobileTocOpen(false);
+  }
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") {
+    setMobileTocOpen(false);
+  }
+});
+
+window.addEventListener("scroll", requestActiveNavUpdate, { passive: true });
+window.addEventListener("resize", () => {
+  if (!isMobileTocMode()) {
+    setMobileTocOpen(false);
+  }
+  requestActiveNavUpdate();
+});
 
 function exampleSearchText(item) {
   return [

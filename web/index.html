@@ -4,10 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Larry 语法体系</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260602-toc">
 </head>
 <body>
-  <aside class="sidebar">
+  <div class="mobile-toolbar" aria-label="移动端快捷导航">
+    <button id="mobileTocToggle" class="mobile-tool mobile-toc-toggle" type="button" aria-controls="site-sidebar" aria-expanded="false">目录</button>
+    <a class="mobile-tool" href="#example-workbench-title">例句库</a>
+    <a class="mobile-tool" href="#content">知识体系</a>
+    <span id="mobileCurrentSection" class="mobile-current-section">当前位置</span>
+  </div>
+  <div id="mobileTocBackdrop" class="mobile-toc-backdrop" hidden></div>
+
+  <aside id="site-sidebar" class="sidebar" aria-label="知识目录">
     <div class="brand">
       <span class="brand-mark">L</span>
       <div>
@@ -15,6 +23,7 @@
         <p>查询、对比、持续完善</p>
       </div>
     </div>
+    <button id="mobileTocClose" class="mobile-drawer-close" type="button" aria-label="关闭目录">关闭</button>
     <label class="search-label" for="search">搜索知识点</label>
     <input id="search" type="search" placeholder="介词、定语从句、SVOC、冠词...">
     <a class="quick-link" href="#example-workbench-title">打开例句库工作台</a>
@@ -158,7 +167,7 @@
     <section id="content" class="content"></section>
   </main>
 
-  <script src="generated-sections.js"></script>
-  <script src="app.js"></script>
+  <script src="generated-sections.js?v=20260602-toc"></script>
+  <script src="app.js?v=20260602-toc"></script>
 </body>
 </html>
