@@ -136,6 +136,11 @@ summary {
   background: #edf3fa;
 }
 
+.drawer-quick-links {
+  display: grid;
+  gap: 8px;
+}
+
 #nav {
   display: grid;
   gap: 16px;
@@ -1910,7 +1915,7 @@ mark {
 
 @media (max-width: 920px) {
   html {
-    scroll-padding-top: 72px;
+    scroll-padding-top: 56px;
   }
 
   body {
@@ -1927,14 +1932,15 @@ mark {
     z-index: 30;
     order: 1;
     display: grid;
-    grid-template-columns: auto auto auto minmax(0, 1fr);
-    gap: 8px;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 10px;
     align-items: center;
     width: 100%;
-    padding: 10px 12px;
+    min-height: 44px;
+    padding: 6px 10px;
     background: rgba(255, 255, 255, .96);
     border-bottom: 1px solid var(--line);
-    box-shadow: 0 8px 22px rgba(29, 39, 56, .08);
+    box-shadow: 0 5px 16px rgba(29, 39, 56, .07);
     backdrop-filter: blur(14px);
   }
 
@@ -1942,10 +1948,10 @@ mark {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 36px;
+    min-height: 32px;
     border: 1px solid #d7deea;
     border-radius: 8px;
-    padding: 0 11px;
+    padding: 0 12px;
     background: #fff;
     color: var(--blue);
     font: inherit;
@@ -1965,6 +1971,7 @@ mark {
     color: var(--muted);
     font-size: 12px;
     font-weight: 800;
+    line-height: 1.25;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

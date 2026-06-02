@@ -1137,6 +1137,7 @@ const exampleTopics = document.querySelector("#exampleTopics");
 const exampleStatus = document.querySelector("#exampleStatus");
 const exampleResults = document.querySelector("#exampleResults");
 const sentenceAnalyzer = document.querySelector("#sentenceAnalyzer");
+const sidebar = document.querySelector("#site-sidebar");
 const mobileTocToggle = document.querySelector("#mobileTocToggle");
 const mobileTocClose = document.querySelector("#mobileTocClose");
 const mobileTocBackdrop = document.querySelector("#mobileTocBackdrop");
@@ -2226,7 +2227,7 @@ function updateActiveNav() {
     return;
   }
 
-  const offset = isMobileTocMode() ? 86 : 28;
+  const offset = isMobileTocMode() ? 58 : 28;
   let current = scrollTargets[0];
 
   for (const target of scrollTargets) {
@@ -2276,6 +2277,12 @@ mobileTocBackdrop?.addEventListener("click", () => {
 });
 
 nav?.addEventListener("click", event => {
+  if (event.target.closest("a") && isMobileTocMode()) {
+    setMobileTocOpen(false);
+  }
+});
+
+sidebar?.addEventListener("click", event => {
   if (event.target.closest("a") && isMobileTocMode()) {
     setMobileTocOpen(false);
   }
