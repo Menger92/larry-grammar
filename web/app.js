@@ -47,8 +47,8 @@ const fallbackSections = [
     html: `
       <div class="review-card">
         <strong>本章核心</strong>
+        <p><strong>核心功能：</strong>介词短语进入句子后，主要表现为<span class="adj">形容词性成分</span>或<span class="adv">副词性成分</span>。</p>
         <div class="formula"><span class="neutral">介词</span> + <span class="noun">名词性成分</span> = <span class="adj">介词短语</span> / <span class="adv">介词短语</span></div>
-        <p>介词短语进入句子后，主要表现为<span class="adj">形容词性成分</span>或<span class="adv">副词性成分</span>。</p>
         <p>介词通常不能单独完成介词用法，必须带上后面的 <span class="noun">名词性成分</span> 构成介词短语。没有名词性成分时，它可能不是介词用法，而是在作 <span class="adj">形容词</span> 或 <span class="adv">副词</span>。</p>
         <ul class="compact-list">
           <li>先看后面有没有 <span class="noun">名词性成分</span>。</li>
@@ -115,26 +115,32 @@ const fallbackSections = [
       </div>
       <h4 class="table-title">句子成分定义表</h4>
       <table>
-        <thead><tr><th>句子成分</th><th>英文</th><th>核心含义</th></tr></thead>
+        <thead><tr><th>句子成分</th><th>英文</th><th>核心含义</th><th>代表例句</th></tr></thead>
         <tbody>
-          <tr><td><span class="noun">主语</span></td><td>Subject</td><td>句子的主体话题，或动作的发出者。</td></tr>
-          <tr><td><span class="neutral">谓语</span></td><td>Predicate</td><td>谓语即动词，是句子动作或状态的核心。</td></tr>
-          <tr><td><span class="noun">宾语</span></td><td>Object</td><td>谓语动词的执行对象。</td></tr>
-          <tr><td><span class="adj">定语</span></td><td>Attributive</td><td>修饰名词性成分的成分；对句子主干来说通常可以删除。</td></tr>
-          <tr><td><span class="adv">状语</span></td><td>Adverbial</td><td>修饰动词、形容词、其他副词的成分；对句子主干来说通常可以删除。</td></tr>
-          <tr><td><span class="neutral">补语</span></td><td>Complement</td><td>补足主语或宾语的状态、身份、结果；常是 <span class="noun">名词属性</span> 或 <span class="adj">形容词属性</span>，删掉会让句义不完整。</td></tr>
+          <tr><td><span class="noun">主语</span></td><td>Subject</td><td>句子的主体话题，或动作的发出者。</td><td><span class="noun">It</span> happens.</td></tr>
+          <tr><td><span class="neutral">谓语</span></td><td>Predicate</td><td>谓语即动词，是句子动作或状态的核心。</td><td>It <span class="neutral">happens</span>.</td></tr>
+          <tr><td><span class="noun">宾语</span></td><td>Object</td><td>谓语动词的执行对象。</td><td>Cats love <span class="noun">fish</span>.</td></tr>
+          <tr><td><span class="adj">定语</span></td><td>Attributive</td><td>修饰<span class="noun">名词性成分</span>的成分；对句子主干来说通常可以删除。</td><td>The <span class="adj">beautiful</span> flowers have a sweet fragrance.</td></tr>
+          <tr><td><span class="adv">状语</span></td><td>Adverbial</td><td>修饰动词、<span class="adj">形容词</span>、其他<span class="adv">副词</span>的成分；对句子主干来说通常可以删除。</td><td>He runs <span class="adv">slowly</span>.</td></tr>
+          <tr><td><span class="neutral">补语</span></td><td>Complement</td><td>补足<span class="noun">主语</span>或<span class="noun">宾语</span>的状态、身份、结果；常由<span class="noun">名词性成分</span>、<span class="adj">形容词性成分</span>或<span class="nonfinite">非谓语结构</span>承担，删掉会让句义不完整。</td><td>She painted <span class="noun">the room</span> <span class="adj">blue</span>.</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">补语判断表</h4>
       <p><span class="neutral">补语</span>（Complement）是传统教学的深水区。Larry 的底层逻辑是：补语不是装饰，补语没了，句子意思会彻底崩塌。核心检验技术：把“被补充说明的对象 + 后面的成分”改写成 <strong>[A is B]</strong>。如果语义自洽，后面的成分就是补语；如果语义崩塌，它通常是在修饰动作本身，也就是 <span class="adv">状语</span>。传统“主系表”里的 <span class="adj">表语</span>，在这里归入 <span class="adj">主语补语</span>。</p>
       <table>
-        <thead><tr><th>判断对象</th><th>代表例句</th><th>小分句验证</th><th>结论</th></tr></thead>
+        <thead><tr><th>判断对象</th><th>补语属性</th><th>代表例句</th><th>小分句验证</th><th>结论</th></tr></thead>
         <tbody>
-          <tr><td>宾语补语</td><td>I found <span class="noun">the room</span> <span class="adj">dirty</span>.</td><td><span class="noun">The room</span> is <span class="adj">dirty</span>.</td><td><span class="adj">dirty</span> 补充说明宾语 <span class="noun">the room</span> 的状态。</td></tr>
-          <tr><td>宾语补语</td><td>You make <span class="noun">me</span> <span class="adj">happy</span>.</td><td>I am <span class="adj">happy</span>.</td><td><span class="adj">happy</span> 补充说明宾语 <span class="noun">me</span> 的状态。</td></tr>
-          <tr><td>状语</td><td>I washed <span class="noun">the clothes</span> <span class="adv">warmly</span>.</td><td><span class="noun">The clothes</span> are <span class="adv">warmly</span>.</td><td>语义不成立；<span class="adv">warmly</span> 修饰 washed 这个动作。</td></tr>
-          <tr><td>主语补语</td><td><span class="noun">He</span> died <span class="noun">a hero</span>.</td><td>He was <span class="noun">a hero</span>.</td><td><span class="noun">a hero</span> 补充说明主语 He 在 died 时的身份。</td></tr>
-          <tr><td>主语补语</td><td><span class="noun">He</span> came back <span class="adj">safe</span>.</td><td>He was <span class="adj">safe</span>.</td><td><span class="adj">safe</span> 补充说明主语 He 回来时的状态。</td></tr>
+          <tr><td>宾语补语</td><td><span class="adj">形容词性</span></td><td>I found <span class="noun">the room</span> <span class="adj">dirty</span>.</td><td><span class="noun">The room</span> is <span class="adj">dirty</span>.</td><td><span class="adj">dirty</span> 补充说明宾语 <span class="noun">the room</span> 的状态。</td></tr>
+          <tr><td>宾语补语</td><td><span class="adj">形容词性</span></td><td>You make <span class="noun">me</span> <span class="adj">happy</span>.</td><td>I am <span class="adj">happy</span>.</td><td><span class="adj">happy</span> 补充说明宾语 <span class="noun">me</span> 的状态。</td></tr>
+          <tr><td>宾语补语</td><td><span class="adj">形容词性</span></td><td>She painted <span class="noun">the room</span> <span class="adj">blue</span>.</td><td><span class="noun">The room</span> was <span class="adj">blue</span>.</td><td><span class="adj">blue</span> 补充说明宾语 <span class="noun">the room</span> 被刷后的结果状态。</td></tr>
+          <tr><td>宾语补语</td><td><span class="noun">名词性</span></td><td>We consider <span class="noun">him</span> <span class="noun">a fool</span>.</td><td>He is <span class="noun">a fool</span>.</td><td><span class="noun">a fool</span> 补充说明宾语 <span class="noun">him</span> 的身份。</td></tr>
+          <tr><td>宾语补语</td><td><span class="nonfinite">非谓语</span> + <span class="adj">形容词性</span></td><td>I found <span class="noun">the movie</span> <span class="nonfinite">to be</span> <span class="adj">very interesting</span>.</td><td><span class="noun">The movie</span> was <span class="adj">very interesting</span>.</td><td><span class="nonfinite">to be</span> <span class="adj">very interesting</span> 整体补充说明宾语 <span class="noun">the movie</span>。</td></tr>
+          <tr><td>宾语补语</td><td><span class="adj">形容词性</span></td><td>You should leave <span class="noun">the door</span> <span class="adj">open</span>.</td><td><span class="noun">The door</span> is <span class="adj">open</span>.</td><td><span class="adj">open</span> 补充说明宾语 <span class="noun">the door</span> 应保持的状态。</td></tr>
+          <tr><td>主语补语</td><td><span class="adj">形容词性</span></td><td><span class="noun">He</span> is walking around <span class="adj">naked</span>.</td><td><span class="noun">He</span> is <span class="adj">naked</span>.</td><td><span class="adj">naked</span> 补充说明主语 He 行走时的状态；验证句应使用 is，不是 was。</td></tr>
+          <tr><td>宾语补语</td><td><span class="nonfinite">非谓语</span></td><td>I asked <span class="noun">him</span> <span class="nonfinite">to buy something for me</span>.</td><td>He was <span class="nonfinite">to buy something for me</span>.</td><td><span class="nonfinite">to buy something for me</span> 补充说明宾语 <span class="noun">him</span> 要执行的动作。</td></tr>
+          <tr><td>状语</td><td><span class="adv">副词性</span></td><td>I washed <span class="noun">the clothes</span> <span class="adv">warmly</span>.</td><td><span class="noun">The clothes</span> are <span class="adv">warmly</span>.</td><td>语义不成立；<span class="adv">warmly</span> 修饰 washed 这个动作。</td></tr>
+          <tr><td>主语补语</td><td><span class="noun">名词性</span></td><td><span class="noun">He</span> died <span class="noun">a hero</span>.</td><td>He was <span class="noun">a hero</span>.</td><td><span class="noun">a hero</span> 补充说明主语 He 在 died 时的身份。</td></tr>
+          <tr><td>主语补语</td><td><span class="adj">形容词性</span></td><td><span class="noun">He</span> came back <span class="adj">safe</span>.</td><td>He was <span class="adj">safe</span>.</td><td><span class="adj">safe</span> 补充说明主语 He 回来时的状态。</td></tr>
         </tbody>
       </table>
       <h4 class="table-title">主语补语 vs 副词状语辨析表</h4>
@@ -1018,9 +1024,9 @@ const fallbackSections = [
           <tr><td>source/preposition.md</td><td>介词专题</td><td>按功能分类和例句扩展。</td></tr>
           <tr><td>source/clause.md</td><td>从句源文件索引</td><td>保留从句章节拆分后的文件入口。</td></tr>
           <tr><td>source/clause-overview.md</td><td>从句总览</td><td>对应网页“从句总览”：核心公式、三问法、疑问词词性、类型总览。</td></tr>
-          <tr><td>source/noun-clause.md</td><td>名词性从句</td><td>对应网页“名词性从句”：主语、宾语、表语、同位语从句等。</td></tr>
-          <tr><td>source/adjective-clause.md</td><td>形容词性从句</td><td>对应网页“形容词性从句”：定语从句、关系词、限制性与非限制性。</td></tr>
-          <tr><td>source/adverbial-clause.md</td><td>副词性从句</td><td>对应网页“副词性从句”：状语从句连接词和逻辑关系。</td></tr>
+          <tr><td>source/noun-clause.md</td><td><span class="noun">名词性从句</span></td><td>对应网页“<span class="noun">名词性从句</span>”：<span class="noun">主语</span>、<span class="noun">宾语</span>、<span class="noun">表语</span>、<span class="noun">同位语</span>从句等。</td></tr>
+          <tr><td>source/adjective-clause.md</td><td><span class="adj">形容词性从句</span></td><td>对应网页“<span class="adj">形容词性从句</span>”：<span class="adj">定语</span>从句、关系词、限制性与非限制性。</td></tr>
+          <tr><td>source/adverbial-clause.md</td><td><span class="adv">副词性从句</span></td><td>对应网页“<span class="adv">副词性从句</span>”：<span class="adv">状语</span>从句连接词和逻辑关系。</td></tr>
           <tr><td>source/clause-confusions.md</td><td>从句易混对比</td><td>对应网页“从句易混对比”：易混点、复习总表和一页记忆卡。</td></tr>
           <tr><td>source/nonfinite.md</td><td>非谓语专题</td><td>按 to do、doing、done 与从句转换扩展。</td></tr>
         </tbody>
@@ -1659,6 +1665,162 @@ const knowledgeExampleLibrary = [
       "主干是 You make me happy。",
       "me 是 make 的宾语。",
       "happy 补充说明 me 的状态，不是修饰 make 的方式，所以是宾补。"
+    ]
+  },
+  {
+    id: "simple-svoc-paint-room-blue",
+    title: "宾语补语：结果状态",
+    section: "简单句",
+    knowledge: "宾语补语",
+    tags: ["simple", "contrast"],
+    level: "基础",
+    sentence: "She painted the room blue.",
+    translation: "她把房间刷成了蓝色。",
+    core: "She painted the room blue",
+    question: "blue 为什么是宾语补语？",
+    answer: "the room was blue 语义自洽；blue 说明 the room 被刷后的结果状态。",
+    method: "把宾语与后面的成分还原成小分句，并检查它表示状态、身份还是结果。",
+    parts: [
+      { text: "She", role: "noun", label: "主语" },
+      { text: "painted", role: "neutral", label: "谓语" },
+      { text: "the room", role: "noun", label: "宾语" },
+      { text: "blue", role: "adj", label: "宾语补语 / 形容词性" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 She painted the room blue。",
+      "验证小分句：The room was blue。",
+      "blue 是形容词性宾语补语，说明动作造成的结果状态。"
+    ]
+  },
+  {
+    id: "simple-svoc-consider-fool",
+    title: "宾语补语：身份说明",
+    section: "简单句",
+    knowledge: "宾语补语",
+    tags: ["simple", "contrast"],
+    level: "基础",
+    sentence: "We consider him a fool.",
+    translation: "我们认为他是个傻瓜。",
+    core: "We consider him a fool",
+    question: "a fool 为什么是宾语补语？",
+    answer: "he is a fool 语义自洽；a fool 是名词性成分，说明 him 的身份。",
+    method: "名词性成分也能作补语；不要把补语误认为只能由形容词承担。",
+    parts: [
+      { text: "We", role: "noun", label: "主语" },
+      { text: "consider", role: "neutral", label: "谓语" },
+      { text: "him", role: "noun", label: "宾语" },
+      { text: "a fool", role: "noun", label: "宾语补语 / 名词性" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 We consider him a fool。",
+      "验证小分句：He is a fool。",
+      "a fool 是名词性宾语补语，补充说明 him 的身份。"
+    ]
+  },
+  {
+    id: "simple-svoc-movie-interesting",
+    title: "宾语补语：不定式结构",
+    section: "简单句",
+    knowledge: "宾语补语",
+    tags: ["simple", "nonfinite", "contrast"],
+    level: "进阶",
+    sentence: "I found the movie to be very interesting.",
+    translation: "我发现这部电影非常有趣。",
+    core: "I found the movie to be very interesting",
+    question: "to be very interesting 在句中做什么？",
+    answer: "它整体补充说明宾语 the movie；可验证为 The movie was very interesting。",
+    method: "先把 to be 识别为非谓语，再看整个不定式结构是否说明宾语。",
+    parts: [
+      { text: "I", role: "noun", label: "主语" },
+      { text: "found", role: "neutral", label: "谓语" },
+      { text: "the movie", role: "noun", label: "宾语" },
+      { text: "to be", role: "nonfinite", label: "非谓语 / 宾语补语结构" },
+      { text: "very interesting", role: "adj", label: "形容词性核心" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 I found the movie to be very interesting。",
+      "验证小分句：The movie was very interesting。",
+      "to be very interesting 是非谓语形式的宾语补语结构。"
+    ]
+  },
+  {
+    id: "simple-svoc-leave-door-open",
+    title: "宾语补语：保持状态",
+    section: "简单句",
+    knowledge: "宾语补语",
+    tags: ["simple", "contrast"],
+    level: "基础",
+    sentence: "You should leave the door open.",
+    translation: "你应该让门开着。",
+    core: "You should leave the door open",
+    question: "open 修饰 leave，还是说明 the door？",
+    answer: "the door is open 语义自洽；open 说明门应保持的状态。",
+    method: "优先检查后面的形容词能否与宾语构成 be 小分句。",
+    parts: [
+      { text: "You", role: "noun", label: "主语" },
+      { text: "should leave", role: "neutral", label: "谓语" },
+      { text: "the door", role: "noun", label: "宾语" },
+      { text: "open", role: "adj", label: "宾语补语 / 形容词性" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 You should leave the door open。",
+      "验证小分句：The door is open。",
+      "open 是形容词性宾语补语，不是修饰 leave 的状语。"
+    ]
+  },
+  {
+    id: "simple-subject-complement-naked",
+    title: "主语补语：动作中的状态",
+    section: "简单句",
+    knowledge: "主语补语",
+    tags: ["simple", "contrast"],
+    level: "基础",
+    sentence: "He is walking around naked.",
+    translation: "他正赤裸着四处走动。",
+    core: "He is walking around naked",
+    question: "naked 为什么不是副词状语？",
+    answer: "He is naked 语义自洽；naked 说明 He 的状态，而不是走动的方式。",
+    method: "主语补语要使用与原句相符的状态验证：He is naked；不能改成过去时。",
+    parts: [
+      { text: "He", role: "noun", label: "主语" },
+      { text: "is walking around", role: "neutral", label: "谓语" },
+      { text: "naked", role: "adj", label: "主语补语 / 形容词性" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 He is walking around naked。",
+      "验证小分句：He is naked。",
+      "naked 是形容词性主语补语；验证句应使用 is，不是 was。"
+    ]
+  },
+  {
+    id: "simple-svoc-ask-him-buy",
+    title: "宾语补语：不定式动作",
+    section: "简单句",
+    knowledge: "宾语补语",
+    tags: ["simple", "nonfinite"],
+    level: "进阶",
+    sentence: "I asked him to buy something for me.",
+    translation: "我请他替我买些东西。",
+    core: "I asked him to buy something for me",
+    question: "to buy something for me 与 him 是什么关系？",
+    answer: "to buy something for me 说明宾语 him 要执行的动作，是非谓语形式的宾语补语。",
+    method: "不定式作宾补时，先找逻辑主语：真正执行 buy 的是 him。",
+    parts: [
+      { text: "I", role: "noun", label: "主语" },
+      { text: "asked", role: "neutral", label: "谓语" },
+      { text: "him", role: "noun", label: "宾语 / 逻辑主语" },
+      { text: "to buy something for me", role: "nonfinite", label: "宾语补语 / 非谓语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 I asked him to buy something for me。",
+      "him 是 asked 的宾语，也是 buy 的逻辑主语。",
+      "to buy something for me 是非谓语形式的宾语补语。"
     ]
   },
   {

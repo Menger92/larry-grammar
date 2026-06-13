@@ -100,7 +100,7 @@
 | 完成时态 | to have written | to have been written |
 | 完成进行时态 | to have been writing | 无常用形式 |
 
-不定式不是固定只当一种词性。它既可以有名词属性，也可以有形容词属性和副词属性。
+不定式不是固定只当一种词性。它既可以有名词性，也可以有形容词性和副词性。
 
 | 属性 | 常见位置 | 例句 | 判断 |
 | --- | --- | --- | --- |
@@ -135,7 +135,7 @@
 | I took to have been invited to the meeting as an honor. | I took it as an honor to have been invited to the meeting. | it 作形式宾语，真正宾语放句末。 |
 | It would be a pity to let such an opportunity slip. | It would be a pity to let slip such an opportunity. | 宾语较长时，可把重心后移。 |
 
-形容词属性的不定式作后置定语时，也常受句末中心原则影响：
+形容词性的不定式作后置定语时，也常受句末中心原则影响：
 
 | 表达 | 判断 |
 | --- | --- |
@@ -169,7 +169,7 @@
 
 ### 4.1.6 不定式作状语
 
-副词属性的不定式可以作状语，常常可以理解为状语从句的压缩。
+副词性的不定式可以作状语，常常可以理解为状语从句的压缩。
 
 | 状语类型 | 例句 | 判断 |
 | --- | --- | --- |

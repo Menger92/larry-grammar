@@ -126,7 +126,10 @@
 | 用户截图 | I find the movie interesting. | `source/simple-sentence.md` | 已确认 |
 | 用户截图 | She painted the room blue. | `source/simple-sentence.md` | 已确认 |
 | 用户截图 | We consider him a fool. | `source/simple-sentence.md` | 已确认 |
+| 用户截图 | I found the movie to be very interesting. | `source/simple-sentence.md` | 已确认 |
+| 用户截图 | You should leave the door open. | `source/simple-sentence.md` | 已确认 |
 | 用户截图 | He is walking around naked. | `source/simple-sentence.md` | 已确认 |
+| 用户截图 | I asked him to buy something for me. | `source/simple-sentence.md` | 已确认 |
 | V13 用户笔记 | Sally runs as if she is flying. | `source/adverbial-clause.md` | 已确认 |
 | V13 用户笔记 | I worked hard when I was at school. | `source/adverbial-clause.md` | 已确认 |
 | V13 用户笔记 | You grow smarter as you grow older. | `source/adverbial-clause.md` | 已确认 |

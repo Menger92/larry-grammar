@@ -12,14 +12,14 @@
 
 ## 句子成分定义表
 
-| 句子成分 | 英文 | 核心含义 |
-| --- | --- | --- |
-| 主语 | Subject | 句子的主体话题，或动作的发出者。 |
-| 谓语 | Predicate | 谓语即动词，是句子动作或状态的核心。 |
-| 宾语 | Object | 谓语动词的执行对象。 |
-| 定语 | Attributive | 修饰名词性成分的成分；对句子主干来说通常可以删除。 |
-| 状语 | Adverbial | 修饰动词、形容词、其他副词的成分；对句子主干来说通常可以删除。 |
-| 补语 | Complement | 补足主语或宾语的状态、身份、结果；常是名词属性或形容词属性，删掉会让句义不完整。 |
+| 句子成分 | 英文 | 核心含义 | 代表例句 |
+| --- | --- | --- | --- |
+| 主语 | Subject | 句子的主体话题，或动作的发出者。 | It happens.（It = 主语） |
+| 谓语 | Predicate | 谓语即动词，是句子动作或状态的核心。 | It happens.（happens = 谓语） |
+| 宾语 | Object | 谓语动词的执行对象。 | Cats love fish.（fish = 宾语） |
+| 定语 | Attributive | 修饰名词性成分的成分；对句子主干来说通常可以删除。 | The beautiful flowers have a sweet fragrance.（beautiful = 定语） |
+| 状语 | Adverbial | 修饰动词、形容词、其他副词的成分；对句子主干来说通常可以删除。 | He runs slowly.（slowly = 状语） |
+| 补语 | Complement | 补足主语或宾语的状态、身份、结果；常由名词性成分、形容词性成分或非谓语结构承担，删掉会让句义不完整。 | She painted the room blue.（blue = 形容词性宾语补语） |
 
 ## 补语判断表
 
@@ -34,13 +34,19 @@
 <details>
 <summary>例句库：补语判断</summary>
 
-| 判断对象 | 代表例句 | 小分句验证 | 结论 |
-| --- | --- | --- | --- |
-| 宾语补语 | I found the room dirty. | The room is dirty. | dirty 补充说明宾语 the room 的状态。 |
-| 宾语补语 | You make me happy. | I am happy. | happy 补充说明宾语 me 的状态。 |
-| 状语 | I washed the clothes warmly. | The clothes are warmly. | 语义不成立；warmly 修饰 washed 这个动作。 |
-| 主语补语 | He died a hero. | He was a hero. | a hero 补充说明主语 He 在 died 时的身份。 |
-| 主语补语 | He came back safe. | He was safe. | safe 补充说明主语 He 回来时的状态。 |
+| 判断对象 | 补语属性 | 代表例句 | 小分句验证 | 结论 |
+| --- | --- | --- | --- | --- |
+| 宾语补语 | 形容词性 | I found the room dirty. | The room is dirty. | dirty 补充说明宾语 the room 的状态。 |
+| 宾语补语 | 形容词性 | You make me happy. | I am happy. | happy 补充说明宾语 me 的状态。 |
+| 宾语补语 | 形容词性 | She painted the room blue. | The room was blue. | blue 补充说明宾语 the room 被刷后的结果状态。 |
+| 宾语补语 | 名词性 | We consider him a fool. | He is a fool. | a fool 补充说明宾语 him 的身份。 |
+| 宾语补语 | 非谓语 + 形容词性 | I found the movie to be very interesting. | The movie was very interesting. | to be very interesting 整体补充说明宾语 the movie。 |
+| 宾语补语 | 形容词性 | You should leave the door open. | The door is open. | open 补充说明宾语 the door 应保持的状态。 |
+| 主语补语 | 形容词性 | He is walking around naked. | He is naked. | naked 补充说明主语 He 行走时的状态；验证句应使用 is，不是 was。 |
+| 宾语补语 | 非谓语 | I asked him to buy something for me. | He was to buy something for me. | to buy something for me 补充说明宾语 him 要执行的动作。 |
+| 状语 | 副词性 | I washed the clothes warmly. | The clothes are warmly. | 语义不成立；warmly 修饰 washed 这个动作。 |
+| 主语补语 | 名词性 | He died a hero. | He was a hero. | a hero 补充说明主语 He 在 died 时的身份。 |
+| 主语补语 | 形容词性 | He came back safe. | He was safe. | safe 补充说明主语 He 回来时的状态。 |
 
 </details>
 

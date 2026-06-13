@@ -24,7 +24,7 @@ const outputPath = globalThis.LARRY_WEB_SECTIONS_OUTPUT_PATH || path.join(root, 
 const sourceNotes = [];
 
 const inlineClassMap = [
-  ["noun", ["名词性成分", "名词性从句", "名词短语", "名词性", "主语", "宾语", "表语", "同位语"]],
+  ["noun", ["名词性成分", "名词性从句", "名词短语", "名词性", "名词", "主语", "宾语", "表语", "同位语"]],
   ["adj", ["形容词性成分", "形容词性从句", "形容词性", "形容词", "定语", "限定词", "冠词", "定指", "不定指"]],
   ["adv", ["副词性成分", "副词性从句", "副词性", "副词", "状语", "时间状语", "地点状语", "原因状语", "条件状语", "让步状语", "目的状语", "结果状语", "方式状语"]],
   ["nonfinite", ["非谓语", "不定式", "动名词", "分词", "to do", "doing", "done", "V-ing"]]
@@ -385,7 +385,7 @@ sections.push({
     <h4 class="table-title">章节来源与维护说明</h4>
     ${sourceNotes.map(({ title, filename, notes }) => `
       <details class="example-toggle">
-        <summary>${escapeHtml(title)}：<code>source/${escapeHtml(filename)}</code></summary>
+        <summary>${colorize(escapeHtml(title))}：<code>source/${escapeHtml(filename)}</code></summary>
         ${notes.map(note => markdownToHtml(note)).join("\n")}
       </details>
     `).join("")}
@@ -393,7 +393,7 @@ sections.push({
     <table>
       <thead><tr><th>章节</th><th>源文件</th></tr></thead>
       <tbody>
-        ${sourceFiles.map(([id, filename, title]) => `<tr><td>${escapeHtml(title)}</td><td><code>source/${escapeHtml(filename)}</code></td></tr>`).join("")}
+        ${sourceFiles.map(([id, filename, title]) => `<tr><td>${colorize(escapeHtml(title))}</td><td><code>source/${escapeHtml(filename)}</code></td></tr>`).join("")}
       </tbody>
     </table>
   `

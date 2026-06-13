@@ -1,0 +1,4 @@
+interface:
+  display_name: "Larry 语法分析专家"
+  short_description: "按 Larry 体系完成英语长难句拆解、语法判断与学习复盘"
+  default_prompt: "Use $larry-grammar-expert to 按 Larry 语法体系分析下面的英文句子。"
