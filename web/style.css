@@ -5,6 +5,8 @@
   --muted: #687080;
   --line: #dfe4ee;
   --blue: #1f4e79;
+  --green: #2f7d32;
+  --focus: #0b6fc2;
   --noun: #c1121f;
   --noun-bg: #ffe8eb;
   --adj: #8a6400;
@@ -35,6 +37,44 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button,
+summary,
+a {
+  touch-action: manipulation;
+}
+
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 100;
+  transform: translateY(-160%);
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: #172033;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
 }
 
 .sidebar {
@@ -1915,7 +1955,7 @@ mark {
 
 @media (max-width: 920px) {
   html {
-    scroll-padding-top: 56px;
+    scroll-padding-top: 58px;
   }
 
   body {
@@ -1936,8 +1976,8 @@ mark {
     gap: 10px;
     align-items: center;
     width: 100%;
-    min-height: 44px;
-    padding: 6px 10px;
+    min-height: 48px;
+    padding: 2px 10px;
     background: rgba(255, 255, 255, .96);
     border-bottom: 1px solid var(--line);
     box-shadow: 0 5px 16px rgba(29, 39, 56, .07);
@@ -1948,7 +1988,7 @@ mark {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 32px;
+    min-height: 44px;
     border: 1px solid #d7deea;
     border-radius: 8px;
     padding: 0 12px;
@@ -1969,7 +2009,7 @@ mark {
   .mobile-current-section {
     min-width: 0;
     color: var(--muted);
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 800;
     line-height: 1.25;
     overflow: hidden;
@@ -2001,8 +2041,12 @@ mark {
     width: min(88vw, 360px);
     height: 100vh;
     height: 100svh;
+    height: 100dvh;
     max-height: none;
     overflow: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: max(22px, env(safe-area-inset-bottom));
     transform: translateX(-104%);
     transition: transform .22s ease;
     border-right: 0;
@@ -2020,7 +2064,7 @@ mark {
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 36px;
+    min-height: 44px;
     margin: -8px 0 14px;
     border: 1px solid #d7deea;
     border-radius: 8px;
@@ -2049,8 +2093,24 @@ mark {
   }
 
   .example-results {
-    max-height: 480px;
+    max-height: none;
+    overflow: visible;
     padding-right: 0;
+  }
+
+  .quick-link,
+  .nav-section,
+  .nav-subitem,
+  .example-filter,
+  .example-topic,
+  .example-toggle summary,
+  .image-modal-close {
+    min-height: 44px;
+  }
+
+  #search,
+  #exampleSearch {
+    font-size: 16px;
   }
 
   .analyzed-sentence {
@@ -2145,6 +2205,7 @@ mark {
 
   .sidebar {
     padding: 14px;
+    padding-bottom: max(14px, env(safe-area-inset-bottom));
     width: min(92vw, 360px);
     max-height: none;
   }
@@ -2213,15 +2274,29 @@ mark {
   }
 
   .example-topic-bar {
-    flex-wrap: wrap;
-    max-height: 118px;
-    overflow-x: hidden;
-    overflow-y: auto;
+    display: grid;
+    grid-template-rows: repeat(2, minmax(44px, auto));
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    max-height: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 6px;
+    scroll-snap-type: x proximity;
     -webkit-overflow-scrolling: touch;
   }
 
+  .example-topic {
+    scroll-snap-align: start;
+  }
+
   .example-results {
-    max-height: 380px;
+    max-height: none;
+  }
+
+  .example-library {
+    max-height: none;
+    overflow: visible;
   }
 
   .sentence-analyzer {
@@ -2337,5 +2412,16 @@ mark {
   pre {
     padding: 10px;
     font-size: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
   }
 }

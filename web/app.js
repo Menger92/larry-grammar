@@ -48,6 +48,7 @@ const fallbackSections = [
       <div class="review-card">
         <strong>本章核心</strong>
         <div class="formula"><span class="neutral">介词</span> + <span class="noun">名词性成分</span> = <span class="adj">介词短语</span> / <span class="adv">介词短语</span></div>
+        <p>介词短语进入句子后，主要表现为<span class="adj">形容词性成分</span>或<span class="adv">副词性成分</span>。</p>
         <p>介词通常不能单独完成介词用法，必须带上后面的 <span class="noun">名词性成分</span> 构成介词短语。没有名词性成分时，它可能不是介词用法，而是在作 <span class="adj">形容词</span> 或 <span class="adv">副词</span>。</p>
         <ul class="compact-list">
           <li>先看后面有没有 <span class="noun">名词性成分</span>。</li>
@@ -2186,17 +2187,32 @@ function isMobileTocMode() {
   return window.matchMedia("(max-width: 920px)").matches;
 }
 
-function setMobileTocOpen(open) {
+function setMobileTocOpen(open, restoreFocus = true) {
   if (!mobileTocToggle || !mobileTocBackdrop) {
     return;
   }
 
-  document.body.classList.toggle("mobile-toc-open", open);
-  mobileTocToggle.setAttribute("aria-expanded", String(open));
-  mobileTocBackdrop.hidden = !open;
+  const mobileMode = isMobileTocMode();
+  const effectiveOpen = mobileMode && open;
+  const focusWasInsideSidebar = sidebar?.contains(document.activeElement);
 
-  if (open) {
-    window.setTimeout(() => search?.focus({ preventScroll: true }), 80);
+  document.body.classList.toggle("mobile-toc-open", effectiveOpen);
+  mobileTocToggle.setAttribute("aria-expanded", String(effectiveOpen));
+  mobileTocBackdrop.hidden = !effectiveOpen;
+
+  if (sidebar) {
+    sidebar.inert = mobileMode && !effectiveOpen;
+    if (mobileMode) {
+      sidebar.setAttribute("aria-hidden", String(!effectiveOpen));
+    } else {
+      sidebar.removeAttribute("aria-hidden");
+    }
+  }
+
+  if (effectiveOpen) {
+    window.setTimeout(() => mobileTocClose?.focus({ preventScroll: true }), 80);
+  } else if (restoreFocus && mobileMode && focusWasInsideSidebar) {
+    window.requestAnimationFrame(() => mobileTocToggle.focus({ preventScroll: true }));
   }
 }
 
@@ -2278,13 +2294,13 @@ mobileTocBackdrop?.addEventListener("click", () => {
 
 nav?.addEventListener("click", event => {
   if (event.target.closest("a") && isMobileTocMode()) {
-    setMobileTocOpen(false);
+    setMobileTocOpen(false, false);
   }
 });
 
 sidebar?.addEventListener("click", event => {
   if (event.target.closest("a") && isMobileTocMode()) {
-    setMobileTocOpen(false);
+    setMobileTocOpen(false, false);
   }
 });
 
@@ -2294,10 +2310,12 @@ document.addEventListener("keydown", event => {
   }
 });
 
+setMobileTocOpen(false, false);
+
 window.addEventListener("scroll", requestActiveNavUpdate, { passive: true });
 window.addEventListener("resize", () => {
   if (!isMobileTocMode()) {
-    setMobileTocOpen(false);
+    setMobileTocOpen(false, false);
   }
   requestActiveNavUpdate();
 });

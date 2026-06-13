@@ -12,6 +12,8 @@ Desktop.ini
 node_modules/
 dist/
 build/
+__pycache__/
+*.py[cod]
 
 # Logs
 *.log
