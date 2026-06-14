@@ -19,11 +19,19 @@ const fallbackSections = [
           <tr><td>表达层</td><td>时间、态度、指称如何表达？</td><td>时态、虚拟语气、冠词</td></tr>
         </tbody>
       </table>
-      <h4 class="table-title">词性之间的修饰关系</h4>
+    `
+  },
+  {
+    id: "modification-relations",
+    title: "词性之间的修饰关系",
+    meta: "对应视频：V02｜BV1PG411R75a",
+    html: `
+      <h4 class="table-title">本章核心</h4>
       <div class="review-card">
         <strong>核心规则</strong>
         <p><span class="adj">形容词性成分</span>修饰<span class="noun">名词性成分</span>；<span class="adv">副词性成分</span>修饰<span class="adj">形容词性成分</span>、动词、其他<span class="adv">副词性成分</span>。</p>
       </div>
+      <h4 class="table-title">修饰关系例句表</h4>
       <table>
         <thead><tr><th>修饰关系</th><th>例句</th><th>句中功能</th></tr></thead>
         <tbody>
@@ -117,14 +125,82 @@ const fallbackSections = [
       <table>
         <thead><tr><th>句子成分</th><th>英文</th><th>核心含义</th><th>代表例句</th></tr></thead>
         <tbody>
-          <tr><td><span class="noun">主语</span></td><td>Subject</td><td>句子的主体话题，或动作的发出者。</td><td><span class="noun">It</span> happens.</td></tr>
-          <tr><td><span class="neutral">谓语</span></td><td>Predicate</td><td>谓语即动词，是句子动作或状态的核心。</td><td>It <span class="neutral">happens</span>.</td></tr>
-          <tr><td><span class="noun">宾语</span></td><td>Object</td><td>谓语动词的执行对象。</td><td>Cats love <span class="noun">fish</span>.</td></tr>
-          <tr><td><span class="adj">定语</span></td><td>Attributive</td><td>修饰<span class="noun">名词性成分</span>的成分；对句子主干来说通常可以删除。</td><td>The <span class="adj">beautiful</span> flowers have a sweet fragrance.</td></tr>
-          <tr><td><span class="adv">状语</span></td><td>Adverbial</td><td>修饰动词、<span class="adj">形容词</span>、其他<span class="adv">副词</span>的成分；对句子主干来说通常可以删除。</td><td>He runs <span class="adv">slowly</span>.</td></tr>
+          <tr><td><span class="noun">主语</span></td><td>Subject</td><td>句子的主体话题，或动作的发出者。</td><td><span class="noun">Boys</span> play football.</td></tr>
+          <tr><td><span class="neutral">谓语</span></td><td>Predicate</td><td>谓语即动词，是句子动作或状态的核心。</td><td>She <span class="neutral">sings</span> beautifully.</td></tr>
+          <tr><td><span class="noun">宾语</span></td><td>Object</td><td>谓语动词的执行对象。</td><td>She ate <span class="noun">sushi</span>.</td></tr>
+          <tr><td><span class="adj">定语</span></td><td>Attributive</td><td>修饰<span class="noun">名词性成分</span>的成分；对句子主干来说通常可以删除。</td><td>The <span class="adj">red</span> car is mine.</td></tr>
+          <tr><td><span class="adv">状语</span></td><td>Adverbial</td><td>修饰动词、<span class="adj">形容词</span>、其他<span class="adv">副词</span>的成分；对句子主干来说通常可以删除。</td><td>I will meet you <span class="adv">tomorrow</span>.</td></tr>
           <tr><td><span class="neutral">补语</span></td><td>Complement</td><td>补足<span class="noun">主语</span>或<span class="noun">宾语</span>的状态、身份、结果；常由<span class="noun">名词性成分</span>、<span class="adj">形容词性成分</span>或<span class="nonfinite">非谓语结构</span>承担，删掉会让句义不完整。</td><td>She painted <span class="noun">the room</span> <span class="adj">blue</span>.</td></tr>
         </tbody>
       </table>
+      <h4 class="table-title">句子成分例句库</h4>
+      <p>同一种句子成分可以由不同形式承担。先判断句中功能，再判断它是名词短语、从句、非谓语还是介词短语。</p>
+      <details class="example-toggle">
+        <summary>主语例句</summary>
+        <table>
+          <thead><tr><th>主语形式</th><th>例句</th><th>判断</th></tr></thead>
+          <tbody>
+            <tr><td>名词</td><td><span class="noun">Boys</span> play football.</td><td>Boys 作主语。</td></tr>
+            <tr><td>动名词短语</td><td><span class="noun"><span class="nonfinite">Running every morning</span></span> helps me stay fit.</td><td>Running every morning 整体作主语。</td></tr>
+            <tr><td>不定式短语</td><td><span class="noun"><span class="nonfinite">To learn a new language</span></span> takes time and dedication.</td><td>不定式短语整体作主语。</td></tr>
+            <tr><td>名词性从句</td><td><span class="noun">That boys play football</span> is great.</td><td>that 从句整体作主语。</td></tr>
+          </tbody>
+        </table>
+      </details>
+      <details class="example-toggle">
+        <summary>谓语例句</summary>
+        <table>
+          <thead><tr><th>谓语形式</th><th>例句</th><th>判断</th></tr></thead>
+          <tbody>
+            <tr><td>一般现在时</td><td>She <span class="neutral">sings</span> beautifully.</td><td>sings 是谓语。</td></tr>
+            <tr><td>现在完成进行时</td><td>He <span class="neutral">has been studying</span> all night.</td><td>has been studying 整体是谓语。</td></tr>
+            <tr><td>一般过去时</td><td>I <span class="neutral">ate</span> breakfast this morning.</td><td>ate 是谓语。</td></tr>
+            <tr><td>不及物动词</td><td>The flowers <span class="neutral">bloomed</span> in the garden.</td><td>bloomed 是谓语。</td></tr>
+            <tr><td>系动词</td><td>That soup <span class="neutral">smells</span> delicious.</td><td>smells 是系动词谓语。</td></tr>
+            <tr><td>情态动词 + 动词原形</td><td>You <span class="neutral">should brush</span> your teeth twice a day.</td><td>should brush 整体是谓语。</td></tr>
+          </tbody>
+        </table>
+      </details>
+      <details class="example-toggle">
+        <summary>宾语例句</summary>
+        <table>
+          <thead><tr><th>宾语形式</th><th>例句</th><th>判断</th></tr></thead>
+          <tbody>
+            <tr><td>名词</td><td>She ate <span class="noun">sushi</span>.</td><td>sushi 作宾语。</td></tr>
+            <tr><td>双宾语</td><td>He gave <span class="noun">his sister</span> <span class="noun">a birthday gift</span>.</td><td>人是间接宾语，物是直接宾语。</td></tr>
+            <tr><td>动名词短语</td><td>I enjoy <span class="noun"><span class="nonfinite">reading books</span></span>.</td><td>reading books 整体作宾语。</td></tr>
+            <tr><td>不定式短语</td><td>I want <span class="noun"><span class="nonfinite">to learn English</span></span>.</td><td>to learn English 整体作宾语。</td></tr>
+            <tr><td>名词性从句</td><td>She believes <span class="noun">that she will come to the party</span>.</td><td>that 从句整体作宾语。</td></tr>
+          </tbody>
+        </table>
+      </details>
+      <details class="example-toggle">
+        <summary>定语例句</summary>
+        <table>
+          <thead><tr><th>定语形式</th><th>例句</th><th>判断</th></tr></thead>
+          <tbody>
+            <tr><td>形容词</td><td>The <span class="adj">red</span> car is mine.</td><td>red 修饰 car。</td></tr>
+            <tr><td>定语从句</td><td>The book <span class="adj">that I borrowed from the library</span> was really interesting.</td><td>that 从句修饰 book。</td></tr>
+            <tr><td>介词短语</td><td>The man <span class="adj">with the hat</span> is my uncle.</td><td>with the hat 修饰 man。</td></tr>
+            <tr><td>现在分词</td><td>The <span class="adj"><span class="nonfinite">running</span></span> water is very soothing.</td><td>running 修饰 water。</td></tr>
+            <tr><td>不定式短语</td><td>The best way <span class="adj"><span class="nonfinite">to learn a language</span></span> is to practice speaking it.</td><td>不定式短语修饰 way。</td></tr>
+            <tr><td>过去分词 + 介词短语</td><td>The <span class="adj"><span class="nonfinite">broken</span></span> vase <span class="adj">on the table</span> needs to be fixed.</td><td>broken 和 on the table 都修饰 vase。</td></tr>
+          </tbody>
+        </table>
+      </details>
+      <details class="example-toggle">
+        <summary>状语例句</summary>
+        <table>
+          <thead><tr><th>状语形式</th><th>例句</th><th>判断</th></tr></thead>
+          <tbody>
+            <tr><td>副词</td><td>I will meet you <span class="adv">tomorrow</span>.</td><td>说明时间。</td></tr>
+            <tr><td>介词短语</td><td>I will meet you <span class="adv">at the park</span>.</td><td>说明地点。</td></tr>
+            <tr><td>地点 + 时间</td><td>I will meet you <span class="adv">at the park</span> <span class="adv">tomorrow</span>.</td><td>分别说明地点和时间。</td></tr>
+            <tr><td>条件状语从句</td><td>I will meet you at the park tomorrow <span class="adv">if it doesn't rain</span>.</td><td>说明条件。</td></tr>
+            <tr><td>目的 + 条件</td><td>I will meet you at the park tomorrow <span class="adv"><span class="nonfinite">to get the computer fixed</span></span> <span class="adv">if it doesn't rain</span>.</td><td>不定式说明目的，if 从句说明条件。</td></tr>
+          </tbody>
+        </table>
+      </details>
       <h4 class="table-title">补语判断表</h4>
       <p><span class="neutral">补语</span>（Complement）是传统教学的深水区。Larry 的底层逻辑是：补语不是装饰，补语没了，句子意思会彻底崩塌。核心检验技术：把“被补充说明的对象 + 后面的成分”改写成 <strong>[A is B]</strong>。如果语义自洽，后面的成分就是补语；如果语义崩塌，它通常是在修饰动作本身，也就是 <span class="adv">状语</span>。传统“主系表”里的 <span class="adj">表语</span>，在这里归入 <span class="adj">主语补语</span>。</p>
       <table>
@@ -1108,8 +1184,8 @@ const displaySections = splitClauseSections(sections);
 const navGroups = [
   {
     title: "判断入口",
-    note: "先建立功能颜色、总流程和简单句主干",
-    ids: ["overview", "simple"]
+    note: "先建立功能颜色、修饰关系、总流程和简单句主干",
+    ids: ["overview", "modification-relations", "simple"]
   },
   {
     title: "复杂结构层",
@@ -1541,6 +1617,134 @@ const exampleLibrary = [
 ];
 
 const knowledgeExampleLibrary = [
+  {
+    id: "simple-component-subject-boys",
+    title: "句子成分：主语",
+    section: "简单句",
+    knowledge: "主语",
+    tags: ["simple"],
+    level: "基础",
+    sentence: "Boys play football.",
+    translation: "男孩们踢足球。",
+    core: "Boys play football",
+    question: "Boys 为什么是主语？",
+    answer: "Boys 是动作 play 的发出者，也是句子的主体话题。",
+    method: "先找谓语 play，再问“谁在 play？”答案 Boys 就是主语。",
+    parts: [
+      { text: "Boys", role: "noun", label: "主语 / 名词性" },
+      { text: "play", role: "neutral", label: "谓语" },
+      { text: "football", role: "noun", label: "宾语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "谓语是 play。",
+      "执行 play 的是 Boys。",
+      "所以 Boys 作主语。"
+    ]
+  },
+  {
+    id: "simple-component-predicate-sings",
+    title: "句子成分：谓语",
+    section: "简单句",
+    knowledge: "谓语",
+    tags: ["simple"],
+    level: "基础",
+    sentence: "She sings beautifully.",
+    translation: "她唱得很动听。",
+    core: "She sings",
+    question: "sings 为什么是谓语？",
+    answer: "sings 承担一般现在时和第三人称单数变化，是句子动作核心。",
+    method: "先找承担时态、语气和主谓一致变化的动词。",
+    parts: [
+      { text: "She", role: "noun", label: "主语" },
+      { text: "sings", role: "neutral", label: "谓语" },
+      { text: "beautifully", role: "adv", label: "方式状语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "She 是主语。",
+      "sings 承担时态和主谓一致，是谓语。",
+      "beautifully 修饰 sings，作状语。"
+    ]
+  },
+  {
+    id: "simple-component-object-sushi",
+    title: "句子成分：宾语",
+    section: "简单句",
+    knowledge: "宾语",
+    tags: ["simple"],
+    level: "基础",
+    sentence: "She ate sushi.",
+    translation: "她吃了寿司。",
+    core: "She ate sushi",
+    question: "sushi 为什么是宾语？",
+    answer: "ate 是及物动词，sushi 是动作 ate 的执行对象。",
+    method: "找到谓语后问“吃了什么？”能回答这一问的 sushi 就是宾语。",
+    parts: [
+      { text: "She", role: "noun", label: "主语" },
+      { text: "ate", role: "neutral", label: "谓语" },
+      { text: "sushi", role: "noun", label: "宾语 / 名词性" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "谓语是 ate。",
+      "sushi 承接 ate 的动作。",
+      "所以 sushi 作宾语。"
+    ]
+  },
+  {
+    id: "simple-component-attributive-red",
+    title: "句子成分：定语",
+    section: "简单句",
+    knowledge: "定语",
+    tags: ["simple"],
+    level: "基础",
+    sentence: "The red car is mine.",
+    translation: "那辆红色汽车是我的。",
+    core: "The car is mine",
+    question: "red 为什么是定语？",
+    answer: "red 修饰名词 car，回答“什么样的汽车”，因此作定语。",
+    method: "先找被修饰的名词；修饰名词性成分的材料按形容词性功能判断。",
+    parts: [
+      { text: "The", role: "adj", label: "限定词" },
+      { text: "red", role: "adj", label: "定语 / 形容词性" },
+      { text: "car", role: "noun", label: "主语中心词" },
+      { text: "is", role: "neutral", label: "系动词" },
+      { text: "mine", role: "noun", label: "表语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "句子主干是 The car is mine。",
+      "red 修饰 car。",
+      "所以 red 是形容词性定语。"
+    ]
+  },
+  {
+    id: "simple-component-adverbial-tomorrow",
+    title: "句子成分：状语",
+    section: "简单句",
+    knowledge: "状语",
+    tags: ["simple"],
+    level: "基础",
+    sentence: "I will meet you tomorrow.",
+    translation: "我明天会见你。",
+    core: "I will meet you",
+    question: "tomorrow 为什么是状语？",
+    answer: "tomorrow 修饰 will meet，说明动作发生的时间。",
+    method: "找到修饰对象；修饰动作、状态或整句的材料按副词性功能判断。",
+    parts: [
+      { text: "I", role: "noun", label: "主语" },
+      { text: "will meet", role: "neutral", label: "谓语" },
+      { text: "you", role: "noun", label: "宾语" },
+      { text: "tomorrow", role: "adv", label: "时间状语 / 副词性" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 I will meet you。",
+      "tomorrow 说明 will meet 发生的时间。",
+      "所以 tomorrow 作时间状语。"
+    ]
+  },
   {
     id: "simple-sv-it-happens",
     title: "SV：主谓",

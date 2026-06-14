@@ -2,7 +2,7 @@
 
 对应视频：BV1rF411S7qd；2.1 主谓宾定状补、2.1.1 补语详解、2.2 简单句构成 + 2.3 语法分析实践。
 
-来源说明：本章例句优先使用用户截图中可见的句子成分定义、五种基本句型、补语判断和 `naked / nakedly` 对比；已确认例句登记在 `source/evidence-log.md` 和 `source/example-source-audit.md`。
+来源说明：本章例句优先使用用户截图中可见的句子成分定义、五种基本句型、补语判断和 `naked / nakedly` 对比；主谓宾定状补截图保存在 `assets/02-01_句子成分_*_截图01.png`，补语详解截图保存在 `assets/02-01-01_补语_截图01.jpg`。已确认例句登记在 `source/evidence-log.md` 和 `source/example-source-audit.md`。
 
 ## 核心结论
 
@@ -14,12 +14,84 @@
 
 | 句子成分 | 英文 | 核心含义 | 代表例句 |
 | --- | --- | --- | --- |
-| 主语 | Subject | 句子的主体话题，或动作的发出者。 | It happens.（It = 主语） |
-| 谓语 | Predicate | 谓语即动词，是句子动作或状态的核心。 | It happens.（happens = 谓语） |
-| 宾语 | Object | 谓语动词的执行对象。 | Cats love fish.（fish = 宾语） |
-| 定语 | Attributive | 修饰名词性成分的成分；对句子主干来说通常可以删除。 | The beautiful flowers have a sweet fragrance.（beautiful = 定语） |
-| 状语 | Adverbial | 修饰动词、形容词、其他副词的成分；对句子主干来说通常可以删除。 | He runs slowly.（slowly = 状语） |
+| 主语 | Subject | 句子的主体话题，或动作的发出者。 | Boys play football.（Boys = 主语） |
+| 谓语 | Predicate | 谓语即动词，是句子动作或状态的核心。 | She sings beautifully.（sings = 谓语） |
+| 宾语 | Object | 谓语动词的执行对象。 | She ate sushi.（sushi = 宾语） |
+| 定语 | Attributive | 修饰名词性成分的成分；对句子主干来说通常可以删除。 | The red car is mine.（red = 定语） |
+| 状语 | Adverbial | 修饰动词、形容词、其他副词的成分；对句子主干来说通常可以删除。 | I will meet you tomorrow.（tomorrow = 状语） |
 | 补语 | Complement | 补足主语或宾语的状态、身份、结果；常由名词性成分、形容词性成分或非谓语结构承担，删掉会让句义不完整。 | She painted the room blue.（blue = 形容词性宾语补语） |
+
+## 句子成分例句库
+
+同一种句子成分可以由不同形式承担。学习时先确认它在句中的功能，再判断它是名词短语、从句、非谓语还是介词短语。
+
+<details>
+<summary>主语例句：名词、非谓语和从句都能进入主语位置</summary>
+
+| 主语形式 | 例句 | 判断 |
+| --- | --- | --- |
+| 名词 | Boys play football. | `Boys` 是动作 `play` 的发出者，作主语。 |
+| 动名词短语 | Running every morning helps me stay fit. | `Running every morning` 整体表示一件事，作主语。 |
+| 不定式短语 | To learn a new language takes time and dedication. | `To learn a new language` 整体作主语。 |
+| 名词性从句 | That boys play football is great. | `That boys play football` 整体进入主语位置。 |
+
+</details>
+
+<details>
+<summary>谓语例句：先找承担时态和语气的核心动词</summary>
+
+| 谓语形式 | 例句 | 判断 |
+| --- | --- | --- |
+| 一般现在时 | She sings beautifully. | `sings` 是谓语。 |
+| 现在完成进行时 | He has been studying all night. | `has been studying` 整体是谓语。 |
+| 一般过去时 | I ate breakfast this morning. | `ate` 是谓语。 |
+| 不及物动词 | The flowers bloomed in the garden. | `bloomed` 是谓语。 |
+| 系动词 | That soup smells delicious. | `smells` 是系动词谓语，`delicious` 补充说明主语。 |
+| 情态动词 + 动词原形 | You should brush your teeth twice a day. | `should brush` 整体是谓语。 |
+
+</details>
+
+<details>
+<summary>宾语例句：名词性材料进入动作对象位置</summary>
+
+| 宾语形式 | 例句 | 判断 |
+| --- | --- | --- |
+| 名词 | She ate sushi. | `sushi` 是 `ate` 的宾语。 |
+| 间接宾语 + 直接宾语 | He gave his sister a birthday gift. | `his sister` 是间接宾语，`a birthday gift` 是直接宾语。 |
+| 动名词短语 | I enjoy reading books. | `reading books` 整体作 `enjoy` 的宾语。 |
+| 不定式短语 | I want to learn English. | `to learn English` 整体作 `want` 的宾语。 |
+| 名词性从句 | She believes that she will come to the party. | `that she will come to the party` 整体作 `believes` 的宾语。 |
+
+</details>
+
+<details>
+<summary>定语例句：修饰名词性成分的材料都按形容词性功能判断</summary>
+
+| 定语形式 | 例句 | 判断 |
+| --- | --- | --- |
+| 形容词 | The red car is mine. | `red` 修饰 `car`，作定语。 |
+| 定语从句 | The book that I borrowed from the library was really interesting. | `that I borrowed from the library` 修饰 `book`。 |
+| 介词短语 | The man with the hat is my uncle. | `with the hat` 修饰 `man`，作后置定语。 |
+| 现在分词 | The running water is very soothing. | `running` 修饰 `water`。 |
+| 不定式短语 | The best way to learn a language is to practice speaking it. | `to learn a language` 修饰 `way`。 |
+| 过去分词 + 介词短语 | The broken vase on the table needs to be fixed. | `broken` 和 `on the table` 都修饰 `vase`。 |
+
+</details>
+
+<details>
+<summary>状语例句：修饰动作、状态或整句的材料都按副词性功能判断</summary>
+
+| 状语形式 | 例句 | 判断 |
+| --- | --- | --- |
+| 副词 | I will meet you tomorrow. | `tomorrow` 修饰 `will meet`，说明时间。 |
+| 介词短语 | I will meet you at the park. | `at the park` 修饰 `will meet`，说明地点。 |
+| 地点 + 时间状语 | I will meet you at the park tomorrow. | `at the park` 说明地点，`tomorrow` 说明时间。 |
+| 条件状语从句 | I will meet you at the park tomorrow if it doesn't rain. | `if it doesn't rain` 修饰主句，说明条件。 |
+| 不定式状语 + 条件状语从句 | I will meet you at the park tomorrow to get the computer fixed if it doesn't rain. | `to get the computer fixed` 说明目的，`if it doesn't rain` 说明条件。 |
+
+</details>
+
+补语截图中的例句和属性分类统一放在下一节“补语判断表”，避免同一组例句重复展示。
 
 ## 补语判断表
 

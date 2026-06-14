@@ -12,7 +12,7 @@
 
 | Larry 项目模块 | 当前项目文件 | 《文法俱乐部》对应章节 | 关系判断 | 处理建议 |
 | --- | --- | --- | --- | --- |
-| 词性功能：名词性 / 形容词性 / 副词性 | `source/full-summary.md`、`source/grammar-overview.md` | 第2章 名词片语与冠词、第7章 形容词、第8章 副词 | Larry 抽象成三大功能；书按词类展开。 | 主线保持 Larry，书用于补细节和例外。 |
+| 词性功能与修饰关系：名词性 / 形容词性 / 副词性 | `source/grammar-overview.md`、`source/modification-relations.md`、`source/full-summary.md` | 第2章 名词片语与冠词、第7章 形容词、第8章 副词 | Larry 抽象成三大功能，并按修饰对象建立关系；书按词类展开。 | 主线保持 Larry，书用于补细节和例外。 |
 | 介词短语 | `source/preposition.md` | 第10章 介系词 | 高度兼容。 | 后续补空间、时间、易混介词旁注。 |
 | 简单句与补语 | `source/simple-sentence.md` | 第1章 基本句型及补语 | 高度重合，是最重要的共通底座。 | 优先对照，补充五种句型、补语和双宾/宾补区分。 |
 | 名词与冠词 | `source/full-summary.md` 后续词法部分 | 第2章 名词片语与冠词 | 顺序不同，不冲突。 | 等 Larry 词法视频补齐后再细化。 |

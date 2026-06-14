@@ -35,6 +35,7 @@ Read only the files needed for the task:
 | --- | --- |
 | Economist or complete sentence analysis | `source/economist-analysis-protocol.md`, then relevant topic files |
 | Overall grammar framework | `source/grammar-overview.md`, `source/project-method.md` |
+| Word-class modification relationship | `source/modification-relations.md` |
 | Main clause, predicate, sentence pattern, complement | `source/simple-sentence.md` |
 | Clause overview or clause conversion | `source/clause-overview.md`, `source/clause.md` |
 | Noun clause | `source/noun-clause.md` |

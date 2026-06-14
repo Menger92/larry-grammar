@@ -14,7 +14,8 @@
 
 | 优先级 | 视频 | 文件 | 待补内容 | 需要证据 |
 | --- | --- | --- | --- | --- |
-| P1 | V01-V02 | `source/grammar-overview.md` | 词性分类图、更多词性入口例句；修饰关系例句已补 | 视频画面或用户截图 |
+| P1 | V01 | `source/grammar-overview.md` | 词性分类图、更多词性入口例句 | 视频画面或用户截图 |
+| P1 | V02 | `source/modification-relations.md` | 修饰关系例句已补；后续继续校准判断细节 | 视频画面或用户截图 |
 | P1 | V03 | `source/preposition.md` | 简单介词、分词介词、短语介词的例句来源校准 | 视频画面或用户截图 |
 | P1 | 全部 | `source/example-source-audit.md` | 已有例句来源审计，先分出已确认与待校准 | 视频画面、用户截图、用户笔记 |
 | P1 | V08-V09 | `source/noun-clause.md` | 形式宾语和 that 省略已补截图例句；whether / if 仍需继续补全例句 | 视频画面或用户截图 |

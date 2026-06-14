@@ -28,7 +28,7 @@
 | 序号 | 课程小节 | BV 号 | 当前主文件 | 状态 |
 | --- | --- | --- | --- | --- |
 | 01 | 1.1 名词、形容词、副词，这就是一切 | BV1jF411r73p | `source/grammar-overview.md` / `source/full-summary.md` | 待逐步校准 |
-| 02 | 1.2 词性之间的修饰关系 | BV1PG411R75a | `source/grammar-overview.md` / `source/full-summary.md` | 待逐步校准 |
+| 02 | 1.2 词性之间的修饰关系 | BV1PG411R75a | `source/modification-relations.md` / `source/full-summary.md` | 已独立成章，后续继续校准 |
 | 03 | 1.3 介词 = 形容词 or 副词 | BV17u4y1k76A | `source/preposition.md` | 已纳入，后续继续校准例句来源 |
 | 04 | 2.1 主谓宾定状补 | BV1rF411S7qd | `source/simple-sentence.md` | 已纳入，后续继续校准例句来源 |
 | 05 | 2.1.1 补语详解 | BV1Qw411U72K | `source/simple-sentence.md` | 已纳入，后续继续校准例句来源 |

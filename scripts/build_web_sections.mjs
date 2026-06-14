@@ -6,6 +6,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 const sourceFiles = [
   ["overview", "grammar-overview.md", "语法体系总览", "源文件：source/grammar-overview.md"],
+  ["modification-relations", "modification-relations.md", "词性之间的修饰关系", "对应视频：V02｜BV1PG411R75a"],
   ["simple", "simple-sentence.md", "简单句", "源文件：source/simple-sentence.md"],
   ["clause-overview", "clause-overview.md", "从句总览", "源文件：source/clause-overview.md"],
   ["noun-clause", "noun-clause.md", "名词性从句", "源文件：source/noun-clause.md"],
