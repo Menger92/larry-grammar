@@ -12,7 +12,17 @@
 | V25 | BV1dm411R7uG | 虚拟语气（2） | 倒装结构虚拟句、交叉时态虚拟句、无条件虚拟句、含蓄条件句。 |
 | V26 | BV12K421a7Bb | 虚拟语气（3） | 名词性从句中的虚拟语气、wish / hope、非主流形式虚拟句。 |
 
-## 1. 虚拟语气入口
+## 本章结论卡
+
+| 项目 | 结论 |
+| --- | --- |
+| 一句话本质 | 虚拟语气在普通句法上叠加非现实、假设、愿望或强烈主观意愿。 |
+| 核心公式 | `先定虚拟对象的时间 → 再定 if 从句形式 → 最后定主句结果形式` |
+| 判断入口 | 先问说话人把内容当现实，还是主动拉开了事实距离。 |
+| 代表例句 | If I could help you, I would definitely do so. |
+| 最易混点 | 过去形式不一定表示过去时间，也可能制造心理距离。 |
+
+## 虚拟语气入口
 
 来源视频：V24｜BV1X2421N7L1｜虚拟语气（1）
 
@@ -23,7 +33,7 @@
 而是在“语法”的基础上，叠加了一个额外的虚拟维度。
 ```
 
-### 1.1 为什么难
+### 为什么难
 
 | 难点 | Larry 讲法 | 学习处理 |
 | --- | --- | --- |
@@ -39,7 +49,7 @@
 3. 真实条件句和非真实条件句认真对比。
 4. 记住：虚拟语气都有言外之意。
 
-### 1.2 真实条件句 VS 非真实条件句
+### 真实条件句 VS 非真实条件句
 
 代表例句：If I could help you, I would definitely do so.
 
@@ -48,7 +58,7 @@
 | 真实条件句 | If I can help you, I will definitely do so. | 说话人把条件当作可能发生的现实条件。 |
 | 非真实条件句 | If I could help you, I would definitely do so. | 说话人把条件放进虚拟空间，言外之意通常是“我现在帮不了你”。 |
 
-### 1.3 三时态虚拟规则总表
+### 三时态虚拟规则总表
 
 这个表是 V24-V26 反复出现的核心表。学习时先问“虚拟的对象是过去、现在还是将来”，再套主句和 if 从句形式。
 
@@ -58,15 +68,9 @@
 | 现在 | would / could / might / should + do | did / were |
 | 过去 | would / could / might / should + have done | had done / had been |
 
-记忆点：
+## V24：针对过去、现在、将来的虚拟
 
-- 主句用情态动词过去式，是为了表达距离感，不一定表示过去时间。
-- if 从句用过去形式或过去完成形式，是为了把条件推入非现实空间。
-- `were` 在虚拟语气里常用于所有人称，书面和正式感更强。
-
-## 2. V24：针对过去、现在、将来的虚拟
-
-### 2.1 狗血故事不是为了剧情，而是为了建立语感
+### 狗血故事不是为了剧情，而是为了建立语感
 
 视频用 Michael、Sally、Susan、Jimmy 的连续故事，把虚拟语气放进“真实情况”和“脑内假设”的对比里。学习重点不是记住剧情，而是看每一句虚拟背后的言外之意。
 
@@ -77,7 +81,7 @@
 | Susan | 引出过去事实已定、现在后悔、将来假设等多种虚拟。 |
 | Jimmy / Max | 引出交叉时态和含蓄条件。 |
 
-### 2.2 将来假设
+### 将来假设
 
 代表例句：If Apple wanted me, I would consider it.
 
@@ -99,7 +103,7 @@
 
 </details>
 
-### 2.3 现在假设
+### 现在假设
 
 代表例句：If we had five million, we could buy a house outright.
 
@@ -109,7 +113,7 @@
 | If Tencent would hire me, I'd be over the moon. | 把 Tencent 愿意录用放进虚拟空间。 |
 | If he were your son, how come he's five years old and hasn't seen you as a dad? | 用 were 表示与现实身份不一致的假设。 |
 
-### 2.4 过去假设
+### 过去假设
 
 代表例句：If I had known Apple was your family's company, I wouldn't have taken this job in the first place.
 
@@ -119,11 +123,11 @@
 | If my dad was a regular farmer like Sally's, would you fancy me? | 对身份 / 背景作非现实假设。 |
 | If my dad had never divorced Apple's boss, I could be the heir to the richest company in the world. | 过去事实改变，推出现实身份改变。 |
 
-## 3. V25：倒装结构虚拟句
+## V25：倒装结构虚拟句
 
 来源视频：V25｜BV1dm411R7uG｜虚拟语气（2）
 
-### 3.1 倒装规则
+### 倒装规则
 
 从句倒装的规则：省略 `if`，然后把条件句中的 `were / had / could / should` 放在主语之前。
 
@@ -159,11 +163,11 @@
 
 </details>
 
-## 4. V25：交叉时态虚拟句
+## V25：交叉时态虚拟句
 
 交叉时态虚拟句的核心是：if 从句虚拟的时间和主句虚拟的时间不一致。不要机械套“过去配过去、现在配现在”，要看每一部分实际指向哪个时间。
 
-### 4.1 从句过去虚拟 + 主句现在虚拟
+### 从句过去虚拟 + 主句现在虚拟
 
 代表例句：If my mom hadn't divorced him back then, I'd be cruising in a Bugatti by now.
 
@@ -173,7 +177,7 @@
 | If your mom had been the ex-wife of the Tencent boss, my mom would be the grandmother of the Microsoft CEO! | 过去身份假设影响现在身份。 |
 | If my dad hadn't divorced the Apple boss back then, I could be the heir to the richest company in the world! | 过去事实改变，主句落到现在。 |
 
-### 4.2 从句现在虚拟 + 主句过去虚拟
+### 从句现在虚拟 + 主句过去虚拟
 
 代表例句：If I were you, I would've taken those orders just now.
 
@@ -183,7 +187,7 @@
 | If you were me, you would've committed suicide a long time ago. | 现在身份假设 + 过去动作判断。 |
 | If I were your parent, I would've regretted having a son like you. | 现在身份假设 + 过去心理评价。 |
 
-### 4.3 从句现在虚拟 + 主句将来虚拟
+### 从句现在虚拟 + 主句将来虚拟
 
 代表例句：Even if I took a hundred more orders, I still wouldn't have food for tomorrow.
 
@@ -193,7 +197,7 @@
 | Even if I took a hundred more orders, I still wouldn't have food for tomorrow. | 对现在 / 接下来行为作假设，结果指向明天。 |
 | If I were the owner of that BMW, I'd have demanded a grand from you. | 身份假设影响之后可能采取的行动。 |
 
-### 4.4 从句过去虚拟 + 主句将来 / 现在虚拟
+### 从句过去虚拟 + 主句将来 / 现在虚拟
 
 代表例句：If you hadn't broken up with the boss of Apple, I wouldn't have to wake up to be a delivery guy tomorrow.
 
@@ -203,7 +207,7 @@
 | If you hadn't broken up with the boss of Apple, I wouldn't have to wake up to be a delivery guy tomorrow! | 过去事实改变，明天结果不同。 |
 | If we had chosen money back then, we wouldn't have the happy life we have now, nor could we expect a better future. | 过去选择影响现在和未来。 |
 
-## 5. V25：无条件虚拟句
+## V25：无条件虚拟句
 
 无条件虚拟句不再使用 if 从句形式，而是用非谓语、介词短语、状语、主语等其他形式表达类似虚拟意义。
 
@@ -219,7 +223,7 @@
 | 完成不定式 | To have divorced Susan earlier, I would have married Sally sooner for a better life. | 如果早些离婚。 |
 | only that | I would have spent the rest of my life with Susan, only (that) I fell in love with Sally again. | 要不是后来又爱上 Sally。 |
 
-## 6. V25：含蓄条件句
+## V25：含蓄条件句
 
 含蓄条件句完全省略 if 从句，也不一定存在任何非条件成分；虚拟意思依赖上下文或读者自行脑补。
 
@@ -231,13 +235,13 @@
 | 含蓄结果 | If only my dad hadn't divorced the boss of Apple! | 只表达愿望或后悔，结果靠上下文理解。 |
 | 语境脑补 | If my dad was a regular farmer like Sally's, would you fancy me? | 真实含义依赖上下文中的身份和财富设定。 |
 
-## 7. V26：名词性从句中的虚拟语气（表示意愿）
+## V26：名词性从句中的虚拟语气（表示意愿）
 
 来源视频：V26｜BV12K421a7Bb｜虚拟语气（3）
 
 核心：如果名词性从句中含有特定的“强烈主观意愿”标志词，从句谓语动词常用原形；英式英语中也常见 `should + 动词原形`。
 
-### 7.1 标志动词
+### 标志动词
 
 截图标志词：
 
@@ -255,7 +259,7 @@ deserve, desire, insist, order, prefer, propose, urge
 | Sally suggested that they start a new life in the slums. | suggest 表建议，从句用 start。 |
 | Max asked that his father divorce Sally to remarry Susan. | ask 表请求，从句用 divorce。 |
 
-### 7.2 必须区分标志词是否真的表达意愿
+### 必须区分标志词是否真的表达意愿
 
 代表例句：Sally suggested that they start a new life in the slums.
 
@@ -266,7 +270,7 @@ deserve, desire, insist, order, prefer, propose, urge
 | Michael insisted that this marriage be ended as soon as possible. | insist = 坚持要求，用虚拟。 |
 | Susan insisted that it was Michael who was at fault. | insist = 坚称事实，不用虚拟。 |
 
-### 7.3 标志动词的各种变体
+### 标志动词的各种变体
 
 代表例句：It is advisable that Sally take no property.
 
@@ -279,7 +283,7 @@ deserve, desire, insist, order, prefer, propose, urge
 | 被动 | Sally was advised that she take no property because she was at fault for getting pregnant with Michael's child. |
 | 同位语 | The advice that Sally take no property because she was at fault for getting pregnant with his child makes a lot of sense. |
 
-### 7.4 It is + adj + that 从句
+### It is + adj + that 从句
 
 截图标志词：
 
@@ -298,7 +302,7 @@ essential, imperative, normal, surprising, strange, vital
 | 惊讶 should | It is surprising that Jimmy should marry Susan. | should 表“竟然”。 |
 | 非虚拟事实陈述 | It is surprising that Jimmy has married Susan. | 陈述已经发生的事实。 |
 
-### 7.5 It is time / about time / high time + that
+### It is time / about time / high time + that
 
 代表例句：It's time (that) you divorced Susan.
 
@@ -320,7 +324,7 @@ essential, imperative, normal, surprising, strange, vital
 | It was the first time that... | It was the first time that we'd been here. | 用过去完成配合过去参照点。 |
 | It will be the first time that... | It will be the first time that we've been here. | 将来参照下的 first time。 |
 
-### 7.6 wish 与 hope
+### wish 与 hope
 
 #### wish + 宾语从句
 
@@ -346,9 +350,9 @@ essential, imperative, normal, surprising, strange, vital
 | that 从句 | I wish (that) I could marry you. | I hope (that) I can marry you. |
 | 语气 | wish 后 that 从句可用虚拟语气。 | hope 后 that 从句通常用陈述语气。 |
 
-## 8. V26：非主流形式虚拟句
+## V26：非主流形式虚拟句
 
-### 8.1 超大型主观意念降临
+### 超大型主观意念降临
 
 代表例句：Long live The People's Republic of China!
 
@@ -359,7 +363,7 @@ essential, imperative, normal, surprising, strange, vital
 | Manners be hanged! | 表强烈态度。 |
 | Damn you! | 表诅咒 / 强烈情绪。 |
 
-### 8.2 as if / as though / if only / would that
+### as if / as though / if only / would that
 
 代表例句：It seems as if you were going to divorce Susan.
 
@@ -373,7 +377,7 @@ essential, imperative, normal, surprising, strange, vital
 | would that | Would that my dad had never divorced Apple's boss! | 更书面 / 文学化的愿望。 |
 | would that | Would that I were still the son of a wealthy family! | 对现在身份的愿望。 |
 
-### 8.3 for fear that / lest / in order that / so that / in case
+### for fear that / lest / in order that / so that / in case
 
 代表例句：Sally dares not tell Michael that he is actually Max's biological parent for fear that he would disrupt their current stable life.
 
@@ -393,7 +397,7 @@ essential, imperative, normal, surprising, strange, vital
 | I'll bring an umbrella in case it rained. | 用过去式拉开距离。 |
 | I'll bring an umbrella in case it might/should/would rain. | 带情态动词，增加不确定或虚拟色彩。 |
 
-### 8.4 其他类型的虚拟语气
+### 其他类型的虚拟语气
 
 代表例句：I would rather (that) it were winter.
 
@@ -409,19 +413,3 @@ essential, imperative, normal, surprising, strange, vital
 | be it | Be it so late, I have to finish this work. |
 | be that as it may | Be that as it may, Michael is determined to divorce Susan. |
 | whether it be | Whether it be sunny or raining, he takes a walk outside everyday. |
-
-## 9. 一页复习卡
-
-| 问题 | 快速判断 |
-| --- | --- |
-| 虚拟语气的本质是什么？ | 在普通语法上叠加“非现实 / 假设 / 愿望 / 强烈主观意愿”的维度。 |
-| 为什么过去式不一定表示过去？ | 过去形式可以制造心理距离。 |
-| if 条件句先看什么？ | 先看虚拟对象是将来、现在还是过去。 |
-| 主句常用什么形式？ | 将来 / 现在：would/could/might/should + do；过去：would/could/might/should + have done。 |
-| if 从句常用什么形式？ | 将来：were to do / should do / did；现在：did / were；过去：had done / had been。 |
-| 倒装虚拟怎么来？ | 省略 if，把 were / had / should 等放到主语前。 |
-| 交叉时态怎么判断？ | if 从句和主句分别看时间，不强行配对。 |
-| 无条件虚拟怎么看？ | 没有 if，但其他结构承担隐含条件。 |
-| 含蓄条件怎么看？ | 条件完全靠上下文或读者脑补。 |
-| 名词性从句虚拟怎么看？ | 看是否有强烈主观意愿标志词，that 从句多用动词原形。 |
-| wish 和 hope 最大区别？ | wish 的 that 从句可虚拟；hope 的 that 从句通常陈述。 |

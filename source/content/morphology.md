@@ -9,7 +9,17 @@
 | V27 | BV1uhsFzbEZN | 【词法解析】Lesson 1 - 可数名词单数不可裸露原则 | 可数名词单数不可裸露、零限定词、错误例句辨析。 |
 | V28 | BV1Hms3z7EXg | 【词法解析】Lesson 2 - 冠词的用法 | 限定词本质、限定词分类、限定词位置、定指 / 不定指、the / a/an 的核心对应。 |
 
-## 1. V27 可数名词单数不可裸露
+## 本章结论卡
+
+| 项目 | 结论 |
+| --- | --- |
+| 一句话本质 | 名词进入句子前，要先确认可数性、单复数和指称范围。 |
+| 核心公式 | `可数性 → 单复数 → 限定词 → 定指 / 不定指` |
+| 判断入口 | 看到单数可数名词，先检查它前面是否有合适的限定词。 |
+| 代表例句 | A dog is barking by the door. |
+| 最易混点 | 零限定词不是随意省略，而是名词满足不可数、复数或制度化用法等条件。 |
+
+## V27 可数名词单数不可裸露
 
 来源视频：V27｜BV1uhsFzbEZN｜【词法解析】Lesson 1 - 可数名词单数不可裸露原则
 
@@ -21,7 +31,7 @@ A singular countable noun cannot be used without a determiner.
 
 核心记忆：单数可数名词不能“裸露”。如果一个名词是可数名词，而且是单数，前面通常必须有某种限定词。
 
-### 1.1 判断步骤
+### 判断步骤
 
 | 步骤 | 问题 | 判断 |
 | --- | --- | --- |
@@ -29,7 +39,7 @@ A singular countable noun cannot be used without a determiner.
 | 2 | 如果可数，它是不是单数？ | 可数名词复数可以零限定词，如 `Cats are cute.` |
 | 3 | 如果是单数可数名词，前面有没有限定词？ | 没有限定词时，通常需要补 a/an, the, this/that, my/your/his 等。 |
 
-### 1.2 单数可数名词需要说明自身性质
+### 单数可数名词需要说明自身性质
 
 代表例句：A dog is barking by the door.
 
@@ -40,7 +50,7 @@ A singular countable noun cannot be used without a determiner.
 | 数量限定 | every / each / either | Every/Each/Either dog is lovable. |
 | 明确指示或所属关系 | this / 所有格 | This dog is cute. / Michael's dog won the game. |
 
-### 1.3 可数名词单数错误例句辨析
+### 可数名词单数错误例句辨析
 
 代表例句：I like dog.
 
@@ -57,7 +67,7 @@ A singular countable noun cannot be used without a determiner.
 
 </details>
 
-### 1.4 零限定词的前提
+### 零限定词的前提
 
 代表例句：Water is important.
 
@@ -80,7 +90,7 @@ A singular countable noun cannot be used without a determiner.
 
 </details>
 
-## 2. V28 限定词与冠词
+## V28 限定词与冠词
 
 来源视频：V28｜BV1Hms3z7EXg｜【词法解析】Lesson 2 - 冠词的用法
 
@@ -92,7 +102,7 @@ A singular countable noun cannot be used without a determiner.
     └── 冠词：the, a/an
 ```
 
-### 2.1 限定词的本质
+### 限定词的本质
 
 代表例句：This dog is cute.
 
@@ -101,7 +111,7 @@ A singular countable noun cannot be used without a determiner.
 | 限定词 | 形容词性材料 | 放在名词前，限定这个名词的指称范围。 |
 | 冠词 | 限定词的一种 | `the` 表定指，`a/an` 表不定指。 |
 
-### 2.2 限定词分类
+### 限定词分类
 
 | Category | Examples | 记忆 |
 | --- | --- | --- |
@@ -115,7 +125,7 @@ A singular countable noun cannot be used without a determiner.
 | Predeterminers 前置限定词 | all, both, half, such... | 出现在中心限定词前。 |
 | Others 其他限定形式 | a piece of, the other... | 固定限定形式。 |
 
-### 2.3 限定词的位置
+### 限定词的位置
 
 代表例句：all the many problems
 
@@ -141,7 +151,7 @@ A singular countable noun cannot be used without a determiner.
 
 </details>
 
-### 2.4 定指与不定指
+### 定指与不定指
 
 代表例句：Those shops are closed in 2025.
 
@@ -164,7 +174,7 @@ A singular countable noun cannot be used without a determiner.
 
 </details>
 
-### 2.5 the = that / those；a/an = one
+### the = that / those；a/an = one
 
 代表例句：I like the/that book.
 
@@ -196,7 +206,7 @@ A singular countable noun cannot be used without a determiner.
 
 </details>
 
-### 2.6 限定词不能随意叠加
+### 限定词不能随意叠加
 
 代表例句：I don't like his idea.
 
@@ -215,15 +225,3 @@ A singular countable noun cannot be used without a determiner.
 | Many A hundred shops are closed in 2025. | Many shops are closed in 2025. / A hundred shops are closed in 2025. | 数量限定方式要选清楚。 |
 
 </details>
-
-## 3. 词法复习卡
-
-| 问题 | 快速判断 |
-| --- | --- |
-| 单数可数名词能不能裸露？ | 不能。先补限定词。 |
-| 什么情况下可以零限定词？ | 不可数名词或可数名词复数。 |
-| 限定词是什么属性？ | 形容词性材料。 |
-| 冠词是什么？ | 限定词的一种；`the` 定指，`a/an` 不定指。 |
-| the 的底层感觉？ | 接近 that / those，指向已知对象。 |
-| a/an 的底层感觉？ | 接近 one，引入一个成员。 |
-| 多个限定词怎么排？ | 前位限定词 + 中位限定词 + 后位限定词。 |

@@ -5,13 +5,13 @@ description: Analyze English sentences and maintain this grammar project accordi
 
 # Larry Grammar Expert
 
-Use the repository's `source/` files as the grammar authority. Keep this skill procedural and do not copy the knowledge base into the skill.
+Use `source/content/` as the grammar authority. Use the other `source/` folders for evidence, protocols, and maintenance rules.
 
 Respond in Chinese unless the user requests another language. Preserve quoted English sentences exactly.
 
 ## Locate The Project
 
-1. Find the repository root containing `source/project-method.md` and `source/economist-analysis-protocol.md`.
+1. Find the repository root containing `source/maintenance/project-method.md` and `source/protocols/economist-analysis-protocol.md`.
 2. Treat paths below as relative to that root.
 3. If the expected project files are unavailable, state that the Larry project rules could not be loaded and ask for the project path before giving a project-specific judgment.
 
@@ -20,9 +20,9 @@ Respond in Chinese unless the user requests another language. Preserve quoted En
 Use this order when sources differ:
 
 1. Follow the user's current question and supplied context.
-2. Follow confirmed Larry rules in the relevant `source/*.md` topic file.
-3. Follow `source/project-method.md` for judgment and maintenance rules.
-4. Use `source/grammar-club-crosswalk.md` and `source/terminology-map.md` only as theoretical notes and terminology conversion.
+2. Follow confirmed Larry rules in the relevant `source/content/*.md` topic file.
+3. Follow `source/maintenance/project-method.md` for judgment and maintenance rules.
+4. Use `source/sources/grammar-club-crosswalk.md` and `source/sources/terminology-map.md` only as theoretical notes and terminology conversion.
 5. Use general English grammar knowledge only when the project is silent. Label it as an external supplement, not as a confirmed Larry rule.
 
 Do not treat a different teaching order as a theoretical conflict. Keep Larry as the organizing main line.
@@ -33,22 +33,22 @@ Read only the files needed for the task:
 
 | Request | Required project sources |
 | --- | --- |
-| Economist or complete sentence analysis | `source/economist-analysis-protocol.md`, then relevant topic files |
-| Overall grammar framework | `source/grammar-overview.md`, `source/project-method.md` |
-| Word-class modification relationship | `source/modification-relations.md` |
-| Main clause, predicate, sentence pattern, complement | `source/simple-sentence.md` |
-| Clause overview or clause conversion | `source/clause-overview.md`, `source/clause.md` |
-| Noun clause | `source/noun-clause.md` |
-| Relative or adjective clause | `source/adjective-clause.md` |
-| Adverbial clause | `source/adverbial-clause.md` |
-| Confusing clause structures | `source/clause-confusions.md` plus the relevant clause file |
-| Non-finite verb, infinitive, gerund, participle | `source/nonfinite.md` |
-| Preposition or prepositional phrase | `source/preposition.md` |
-| Tense | `source/tense.md` |
-| Subjunctive or hypothetical expression | `source/subjunctive.md` |
-| Word formation, countability, article | `source/morphology.md` |
-| Grammar Club terminology or comparison | `source/terminology-map.md`, `source/grammar-club-crosswalk.md` |
-| Add or revise project knowledge | `source/project-method.md`, `source/video-source-index.md`, `source/evidence-log.md`, `source/example-source-audit.md` |
+| Economist or complete sentence analysis | `source/protocols/economist-analysis-protocol.md`, then relevant topic files |
+| Overall grammar framework | `source/content/grammar-overview.md`, `source/maintenance/project-method.md` |
+| Word-class modification relationship | `source/content/modification-relations.md` |
+| Main clause, predicate, sentence pattern, complement | `source/content/simple-sentence.md` |
+| Clause overview or clause conversion | `source/content/clause-overview.md` |
+| Noun clause | `source/content/noun-clause.md` |
+| Relative or adjective clause | `source/content/adjective-clause.md` |
+| Adverbial clause | `source/content/adverbial-clause.md` |
+| Confusing clause structures | `source/content/clause-confusions.md` plus the relevant clause file |
+| Non-finite verb, infinitive, gerund, participle | `source/content/nonfinite.md` |
+| Preposition or prepositional phrase | `source/content/preposition.md` |
+| Tense | `source/content/tense.md` |
+| Subjunctive or hypothetical expression | `source/content/subjunctive.md` |
+| Word formation, countability, article | `source/content/morphology.md` |
+| Grammar Club terminology or comparison | `source/sources/terminology-map.md`, `source/sources/grammar-club-crosswalk.md` |
+| Add or revise project knowledge | `source/maintenance/project-method.md`, `source/sources/video-source-index.md`, `source/sources/evidence-log.md`, `source/sources/example-source-audit.md` |
 
 Use `rg` to locate exact terms and nearby rules before loading a large topic file. Read the full relevant section before deciding.
 
@@ -88,7 +88,7 @@ Use the project's text labels:
 
 ## Choose The Output
 
-Read and follow `source/economist-analysis-protocol.md` for sentence-analysis output.
+Read and follow `source/protocols/economist-analysis-protocol.md` for sentence-analysis output.
 
 - Use the quick format for one narrow question.
 - Use the standard format by default.
@@ -122,18 +122,19 @@ Never hide structural uncertainty behind a fluent translation.
 
 When asked to change the grammar library:
 
-1. Read `source/project-method.md` and `source/README.md`.
-2. Edit the relevant `source/*.md` file first.
-3. Preserve the structure: essence, judgment questions, type table, representative example, confusing points, practical use.
-4. Keep project usage instructions at the end of the learning system.
-5. Use only sourced Larry examples from video frames, user screenshots, or user notes.
-6. Do not invent replacement examples and present them as Larry material.
-7. Record uncertain example provenance in `source/example-source-audit.md`.
-8. Check `source/video-source-index.md` and `source/evidence-log.md` before adding a confirmed Larry rule.
-9. Ask before changing chapter hierarchy, diagram relationships, or page module positions.
-10. After approved content changes, run `node scripts/build_web_sections.mjs`.
-11. Check generated output and relevant JavaScript syntax.
-12. Do not commit or push unless the user explicitly requests it.
+1. Read `source/maintenance/project-method.md` and `source/README.md`.
+2. Edit the relevant `source/content/*.md` file first.
+3. Preserve the structure: essence, one consolidated judgment-and-memory module, type table, representative example, confusing points, practical use.
+4. Merge chapter-level memory points, judgment methods, judgment flows, mnemonics, and review cards into that one module. Keep only irreducible topic-specific tests such as complement checks or `until` judgments in their own sections.
+5. Keep project usage instructions at the end of the learning system.
+6. Use only sourced Larry examples from video frames, user screenshots, or user notes.
+7. Do not invent replacement examples and present them as Larry material.
+8. Record uncertain example provenance in `source/sources/example-source-audit.md`.
+9. Check `source/sources/video-source-index.md` and `source/sources/evidence-log.md` before adding a confirmed Larry rule.
+10. Ask before changing chapter hierarchy, diagram relationships, or page module positions.
+11. After approved content changes, run `node scripts/build_web_sections.mjs`.
+12. Check generated output and relevant JavaScript syntax.
+13. Do not commit or push unless the user explicitly requests it.
 
 For Economist cases, do not save complete articles. Preserve only the necessary sentence, source metadata, analysis, and learning card. Prefer adding a case after the same difficulty recurs or clearly represents a high-frequency pattern.
 

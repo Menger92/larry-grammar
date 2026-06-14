@@ -1,23 +1,45 @@
-﻿# 形容词性从句
+# 形容词性从句
 
-来源说明：本章优先依据 V10-V12 相关视频截图与用户上传截图整理；已确认例句登记在 `source/evidence-log.md` 和 `source/example-source-audit.md`。未登记来源的旧例句，后续只作待校准材料，不继续扩写。
+来源说明：本章优先依据 V10-V12 相关视频截图与用户上传截图整理；已确认例句登记在 `source/sources/evidence-log.md` 和 `source/sources/example-source-audit.md`。未登记来源的旧例句，后续只作待校准材料，不继续扩写。
 
-## 3.4-3.6 形容词性从句 / 定语从句理解入口
+## 本章结论卡
 
-定语从句的核心：一个从句像形容词一样，放在名词后面修饰它。
+| 项目 | 结论 |
+| --- | --- |
+| 一句话本质 | 定语从句是放在名词后面修饰先行词的形容词性从句。 |
+| 核心公式 | `先行词 + 关系词 + 从句` |
+| 判断入口 | 先找从句修饰的名词，再把先行词代回从句检查缺什么成分。 |
+| 代表例句 | He is reading a book that is about human history. |
+| 最易混点 | 关系词既连接先行词和从句，又可能在从句内部作主语、宾语、定语或状语。 |
+
+## 基础概念
+
+### 先行词
+
+先行词就是**被定语从句修饰，并由关系词在从句中重复指代的对象**。它通常是定语从句前面的名词或名词短语。
+
+代表例句：He is reading a book that is about human history.
 
 ```text
-先行词 + 关系词 + 从句
+a book = 先行词
+that is about human history = 修饰 a book 的定语从句
+that = 重复指代 a book，并在从句中作主语
 ```
 
-维护规则：本入口只放总领理解，包括“定语从句的本质”“关系词的作用”“判断四步”。后面的主表只放关系词类型、限制性 / 非限制性等具体类型或具体规则。
+先行词和关系词要分两层看：`a book` 在主句中作 reading 的宾语；`that` 指代 `a book`，在从句中作主语。判断时先找“从句在说明哪个名词”，这个名词就是先行词。
+
+### 关系词
 
 关系词有两个任务：
 
 1. 连接先行词和从句。
 2. 在从句中承担一个成分。
 
-### 定语从句判断四步
+## 判断步骤
+
+```text
+找先行词 → 代回从句 → 判断缺少的成分 → 选择关系词
+```
 
 | 步骤 | 操作 | 截图例句中的做法 |
 | --- | --- | --- |
@@ -26,7 +48,7 @@
 | 3 | 判断先行词在从句中的成分 | book 在从句中作主语。 |
 | 4 | 选择关系词 | 指物且作主语，可用 that / which。 |
 
-### 定语从句关系词类型主表
+## 定语从句类型与例句
 
 主表只放一个代表例句；where / when / why、限制性 / 非限制性等同类多例句，放入后面的例句库和对比例句库。
 
@@ -199,15 +221,4 @@
 | 奶奶 | My grandmother, who is 70 years old, loves programming. | My grandmother who loves programming is 70 years old. | “奶奶”通常已经唯一明确，不适合作为限制性筛选例句；用非限制性更合理。 |
 | 普通名词变专有 | This is my hometown, which a lot of people know. | This is my hometown which a lot of people know. | my hometown 对说话人来说已经唯一，后面用非限制性补充说明。 |
 
-## 关联学习：形容词性功能的其他表现形式
-
-形容词性从句的核心不是“关系词很复杂”，而是“后面的结构在修饰前面的名词”。同一个修饰名词的功能，还可以由形容词、介词短语、分词短语和不定式承担。
-
-| 修饰名词的形式 | 代表例句 | 与定语从句的关系 | 判断问题 |
-| --- | --- | --- | --- |
-| 定语从句 | a book that is about human history | 信息完整，有关系词和从句主谓结构。 | 后面这个从句是不是在说明“哪一个名词”？ |
-| 介词短语作后置定语 | the book on the shelf | 可理解为 the book that is on the shelf 的简化表达。 | 介词短语是不是紧跟名词，限定这个名词？ |
-| 分词短语作定语 | the book written by Larry / a sleeping baby | 常来自定语从句压缩。 | 名词和动作之间是主动、进行，还是被动、完成？ |
-| 不定式作定语 | a question to discuss / a pen to write with | 常带将来、目的、待完成的感觉。 | 名词后面的动作是不是还没发生或有用途关系？ |
-
-查阅路径：有完整主谓结构时看本章；变短为 `doing / done / to do` 时看 [非谓语](#nonfinite)；变成 `介词 + 名词性成分` 时看 [介词](#preposition)。
+关联入口：修饰名词的结构变成 `doing / done / to do` 时见[非谓语](#nonfinite)；变成介词短语时见[介词](#preposition)。

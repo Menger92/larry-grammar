@@ -465,6 +465,28 @@ code {
   background: #fff;
 }
 
+.chapter-summary-title {
+  margin-bottom: 0;
+  padding: 14px 16px 10px;
+  border: 1px solid var(--line);
+  border-bottom: 0;
+  border-radius: 8px 8px 0 0;
+  background: #f8fbff;
+}
+
+.chapter-summary-title + table {
+  margin-top: 0;
+  border: 1px solid var(--line);
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
+
+.chapter-summary-title + table th:first-child,
+.chapter-summary-title + table td:first-child {
+  width: 116px;
+  white-space: nowrap;
+}
+
 .compact-list {
   display: grid;
   gap: 6px;
@@ -2167,6 +2189,24 @@ mark {
   table th,
   table td {
     min-width: 140px;
+  }
+
+  .chapter-summary-title + table {
+    display: table;
+    table-layout: fixed;
+    overflow: visible;
+  }
+
+  .chapter-summary-title + table th,
+  .chapter-summary-title + table td {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .chapter-summary-title + table th:first-child,
+  .chapter-summary-title + table td:first-child {
+    width: 96px;
+    white-space: normal;
   }
 
   .study-table tr {

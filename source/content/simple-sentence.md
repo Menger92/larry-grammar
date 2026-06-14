@@ -2,13 +2,17 @@
 
 对应视频：BV1rF411S7qd；2.1 主谓宾定状补、2.1.1 补语详解、2.2 简单句构成 + 2.3 语法分析实践。
 
-来源说明：本章例句优先使用用户截图中可见的句子成分定义、五种基本句型、补语判断和 `naked / nakedly` 对比；主谓宾定状补截图保存在 `assets/02-01_句子成分_*_截图01.png`，补语详解截图保存在 `assets/02-01-01_补语_截图01.jpg`。已确认例句登记在 `source/evidence-log.md` 和 `source/example-source-audit.md`。
+来源说明：本章例句优先使用用户截图中可见的句子成分定义、五种基本句型、补语判断和 `naked / nakedly` 对比；主谓宾定状补截图保存在 `assets/02-01_句子成分_*_截图01.png`，补语详解截图保存在 `assets/02-01-01_补语_截图01.jpg`。已确认例句登记在 `source/sources/evidence-log.md` 和 `source/sources/example-source-audit.md`。
 
-## 核心结论
+## 本章结论卡
 
-简单句先找谓语动词，再抓主谓宾主干；定语和状语多为可删除的修饰扩展，补语用来补充说明主语或宾语。补语是基本句型里的深水区：它没了，句子意思往往彻底崩塌；状语多半只是说明动作怎么发生。
-
-记忆顺序：主谓宾定状补。
+| 项目 | 结论 |
+| --- | --- |
+| 一句话本质 | 简单句先由谓语建立骨架，再按动词需要补齐主语、宾语或补语。 |
+| 核心公式 | `找谓语 → 找主语 → 判动词需要 → 确定五大句型 → 剥离定语和状语` |
+| 判断入口 | 先问“承担时态和主谓一致的谓语是谁”。 |
+| 代表例句 | I found the room dirty. |
+| 最易混点 | 宾补说明宾语，主补说明主语；状语只修饰动作、状态或整句。 |
 
 ## 句子成分定义表
 
@@ -95,13 +99,11 @@
 
 ## 补语判断表
 
-补语（Complement）是传统教学的深水区。Larry 的底层逻辑是：补语不是装饰，补语没了，句子意思会彻底崩塌。
+补语（Complement）是传统教学的深水区。底层逻辑：补语不是装饰，补语没了，句子意思会彻底崩塌。
 
 核心检验技术：把“被补充说明的对象 + 后面的成分”改写成 [A is B]。如果语义自洽，后面的成分就是补语；如果语义崩塌，它通常不是补语，而是在修饰动作本身，也就是状语。
 
 传统“主系表”里的表语，在这里归入主语补语。
-
-代表例句：I found the room dirty.
 
 <details>
 <summary>例句库：补语判断</summary>
@@ -157,7 +159,7 @@ SVOO 和 SVOC 的区分很重要：前者是两个宾语，后者是宾语后面
 | 结构 | 判断方法 | 代表例句 | 改写 / 检验 |
 | --- | --- | --- | --- |
 | SVOO 主谓双宾 | 谓语后面是“人 + 物”；直接宾语通常是物，间接宾语通常是人。 | I gave him a book.<br>Sally bought me a gift. | I gave a book to him.<br>Sally bought a gift for me. |
-| SVOC 主谓宾补 | 宾语后面的成分补充说明宾语；宾语和宾补之间能形成 [A is B] 的关系。 | I found the room dirty. | 可理解为 [the room is dirty]，所以 dirty 是宾语补语，不是第二个宾语，也不是状语。 |
+| SVOC 主谓宾补 | 宾语后面的成分补充说明宾语；宾语和宾补之间能形成 [A is B] 的关系。 | She painted the room blue. | 可理解为 [the room was blue]，所以 blue 是宾语补语，不是第二个宾语，也不是状语。 |
 
 ## 句子成分分析案例
 
@@ -167,13 +169,3 @@ SVOO 和 SVOC 的区分很重要：前者是两个宾语，后者是宾语后面
 | --- | --- |
 | the weary traveler trudged on | Despite the relentless downpour：副词性介词短语，作状语，说明背景条件。<br>with raindrops cascading from the darkened sky：副词性 with 复合结构 / 非谓语结构，整体作状语。<br>his clothes soaked and his spirits dampened：副词性独立主格 / 非谓语结构，补充 traveler 的伴随状态。<br>determined to reach his destination before nightfall：形容词性主语补语，说明 traveler 的状态，可理解为 [the traveler was determined]。<br>where warmth and shelter awaited him：形容词性非限制性定语从句，修饰 destination。<br>providing solace from the tempestuous elements that assailed him along the treacherous path：副词性非谓语结构；that assailed... 是定语从句，修饰 elements。 |
 | a sense of tranquility enveloped the meadow | As the sun began its descent：副词性从句，作状语，说明时间背景。<br>casting a golden hue across the horizon：副词性非谓语结构，作状语，补充伴随画面。<br>while an orchestra of chirping birds, buzzing insects, and rustling leaves orchestrated a symphony of nature：副词性从句，作状语，补充同时发生的背景。<br>creating a serene ambiance：副词性非谓语结构，作状语，说明前面情景带来的结果。<br>that transported the weary soul to a realm of blissful respite：形容词性定语从句，修饰 ambiance。 |
-
-## 判断流程
-
-1. 找谓语动词。
-2. 找主语。
-3. 根据谓语动词判断是否需要宾语、主语补语或宾语补语。
-4. 修饰名词的标为形容词性成分。
-5. 修饰动作、形容词、其他副词或整句的标为副词性成分。
-6. 补语看它补充说明谁：说明宾语就是宾语补语，说明主语就是主语补语。
-7. 宾补和状语混淆时，把“宾语 + 后面成分”改写成小分句；能成立就是宾补，不能成立通常就是状语。

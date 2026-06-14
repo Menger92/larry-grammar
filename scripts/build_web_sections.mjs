@@ -5,22 +5,22 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 const sourceFiles = [
-  ["overview", "grammar-overview.md", "语法体系总览", "源文件：source/grammar-overview.md"],
+  ["overview", "grammar-overview.md", "语法体系总览", "源文件：source/content/grammar-overview.md"],
   ["modification-relations", "modification-relations.md", "词性之间的修饰关系", "对应视频：V02｜BV1PG411R75a"],
-  ["simple", "simple-sentence.md", "简单句", "源文件：source/simple-sentence.md"],
-  ["clause-overview", "clause-overview.md", "从句总览", "源文件：source/clause-overview.md"],
-  ["noun-clause", "noun-clause.md", "名词性从句", "源文件：source/noun-clause.md"],
-  ["adjective-clause", "adjective-clause.md", "形容词性从句", "源文件：source/adjective-clause.md"],
-  ["adverbial-clause", "adverbial-clause.md", "副词性从句", "源文件：source/adverbial-clause.md"],
-  ["nonfinite", "nonfinite.md", "非谓语", "源文件：source/nonfinite.md"],
-  ["preposition", "preposition.md", "介词与介词短语", "源文件：source/preposition.md"],
-  ["tense", "tense.md", "时态", "源文件：source/tense.md"],
-  ["subjunctive", "subjunctive.md", "虚拟语气", "源文件：source/subjunctive.md"],
-  ["morphology", "morphology.md", "词法解析", "源文件：source/morphology.md"],
-  ["clause-confusions", "clause-confusions.md", "从句易混对比", "源文件：source/clause-confusions.md"]
+  ["simple", "simple-sentence.md", "简单句", "源文件：source/content/simple-sentence.md"],
+  ["clause-overview", "clause-overview.md", "从句总览", "源文件：source/content/clause-overview.md"],
+  ["noun-clause", "noun-clause.md", "名词性从句", "源文件：source/content/noun-clause.md"],
+  ["adjective-clause", "adjective-clause.md", "形容词性从句", "源文件：source/content/adjective-clause.md"],
+  ["adverbial-clause", "adverbial-clause.md", "副词性从句", "源文件：source/content/adverbial-clause.md"],
+  ["nonfinite", "nonfinite.md", "非谓语", "源文件：source/content/nonfinite.md"],
+  ["preposition", "preposition.md", "介词与介词短语", "源文件：source/content/preposition.md"],
+  ["tense", "tense.md", "时态", "源文件：source/content/tense.md"],
+  ["subjunctive", "subjunctive.md", "虚拟语气", "源文件：source/content/subjunctive.md"],
+  ["morphology", "morphology.md", "词法解析", "源文件：source/content/morphology.md"],
+  ["clause-confusions", "clause-confusions.md", "从句易混对比", "源文件：source/content/clause-confusions.md"]
 ];
 
-const sourceDir = path.join(root, "source");
+const sourceDir = path.join(root, "source", "content");
 const outputPath = globalThis.LARRY_WEB_SECTIONS_OUTPUT_PATH || path.join(root, "web", "generated-sections.js");
 const sourceNotes = [];
 
@@ -179,9 +179,13 @@ function markdownToHtml(markdown) {
     const heading = /^(#{2,6})\s+(.+)$/.exec(line);
     if (heading) {
       const level = heading[1].length;
-      const text = inline(heading[2].trim());
+      const rawText = heading[2].trim();
+      const text = inline(rawText);
       if (level === 2) {
-        html.push(`<h4 class="table-title">${text}</h4>`);
+        const className = rawText === "本章结论卡"
+          ? "table-title chapter-summary-title"
+          : "table-title";
+        html.push(`<h4 class="${className}">${text}</h4>`);
       } else if (level === 3) {
         html.push(`<h5 class="source-subtitle">${text}</h5>`);
       } else {
@@ -206,6 +210,22 @@ function markdownToHtml(markdown) {
     const summary = /^<summary>([\s\S]*?)<\/summary>/.exec(trimmed);
     if (summary) {
       html.push(`<summary>${inline(summary[1])}</summary>`);
+      index += 1;
+      continue;
+    }
+
+    const image = /^!\[([^\]]*)\]\(([^)]+)\)$/.exec(trimmed);
+    if (image) {
+      const alt = escapeHtml(image[1]);
+      const src = escapeHtml(image[2]);
+      html.push(
+        `<figure class="analysis-figure source-diagram-figure">` +
+        `<a class="analysis-zoom-link" href="${src}" target="_blank" rel="noopener" aria-label="放大查看${alt}">` +
+        `<img src="${src}" alt="${alt}">` +
+        `<span>点击放大</span>` +
+        `</a>` +
+        `</figure>`
+      );
       index += 1;
       continue;
     }
@@ -310,8 +330,43 @@ function extractProjectNotes(markdown) {
   };
 }
 
+function sourceNoteToHtml(note) {
+  return markdownToHtml(note.replace(/^##\s+/gm, "### "));
+}
+
+function validateChapterStructure(markdown, filename) {
+  const summaryCount = (markdown.match(/^## 本章结论卡\s*$/gm) || []).length;
+  const forbiddenHeadings = [
+    "判断与记忆",
+    "本章核心",
+    "核心结论",
+    "学习型知识库骨架",
+    "从句类型总览表"
+  ];
+  const errors = [];
+
+  if (summaryCount !== 1) {
+    errors.push(`需要且只能有一个“## 本章结论卡”，当前为 ${summaryCount} 个`);
+  }
+
+  for (const heading of forbiddenHeadings) {
+    if (new RegExp(`^## ${heading}\\s*$`, "m").test(markdown)) {
+      errors.push(`章节级“${heading}”应合并到“本章结论卡”`);
+    }
+  }
+
+  if (/^## 关联学习：/m.test(markdown)) {
+    errors.push("跨专题横向总表应归入 grammar-overview.md，专题章只保留关联入口");
+  }
+
+  if (errors.length) {
+    throw new Error(`${filename} 结构检查失败：\n- ${errors.join("\n- ")}`);
+  }
+}
+
 function readSection([id, filename, fallbackTitle, meta]) {
   const markdown = fs.readFileSync(path.join(sourceDir, filename), "utf8").replace(/^\uFEFF/, "");
+  validateChapterStructure(markdown, filename);
   const title = /^#\s+(.+)$/m.exec(markdown)?.[1]?.trim() || fallbackTitle;
   const extracted = extractProjectNotes(markdown);
   if (extracted.notes.length) {
@@ -330,15 +385,15 @@ const sections = sourceFiles.map(readSection);
 sections.push({
   id: "source-index",
   title: "项目使用与源文件索引",
-  meta: "HTML 当前由 source/*.md 生成；更新 Markdown 后运行 scripts/build_web_sections.mjs 重新生成。",
+  meta: "HTML 当前由 source/content/*.md 生成；更新正文 Markdown 后运行 scripts/build_web_sections.mjs 重新生成。",
   html: `
     <h4 class="table-title">项目使用分工</h4>
     <table>
       <thead><tr><th>使用场景</th><th>使用方式</th><th>依据</th></tr></thead>
       <tbody>
-        <tr><td>学习语法体系</td><td>阅读前面的 HTML 章节，或直接阅读 <code>source/*.md</code></td><td>Larry 主线</td></tr>
-        <tr><td>查理论底座</td><td>阅读 <code>source/grammar-club-crosswalk.md</code> 和 <code>source/terminology-map.md</code></td><td>《文法俱乐部》旁注</td></tr>
-        <tr><td>分析经济学人句子</td><td>在 Codex 对话框中贴句子并提问</td><td><code>source/economist-analysis-protocol.md</code></td></tr>
+        <tr><td>学习语法体系</td><td>阅读前面的 HTML 章节，或直接阅读 <code>source/content/*.md</code></td><td>Larry 主线</td></tr>
+        <tr><td>查理论底座</td><td>阅读 <code>source/sources/grammar-club-crosswalk.md</code> 和 <code>source/sources/terminology-map.md</code></td><td>《文法俱乐部》旁注</td></tr>
+        <tr><td>分析经济学人句子</td><td>在 Codex 对话框中贴句子并提问</td><td><code>source/protocols/economist-analysis-protocol.md</code></td></tr>
       </tbody>
     </table>
     <p>项目主线保持 Larry 的学习顺序；《文法俱乐部》用于对照、补强和解释术语，不替代 Larry 章节结构。</p>
@@ -378,7 +433,7 @@ sections.push({
     <table>
       <thead><tr><th>层级</th><th>作用</th><th>维护方式</th></tr></thead>
       <tbody>
-        <tr><td>Markdown</td><td>知识源文件</td><td>后续新增知识点优先写入对应 <code>source/*.md</code>。</td></tr>
+        <tr><td>Markdown</td><td>知识源文件</td><td>后续新增知识点优先写入对应 <code>source/content/*.md</code>。</td></tr>
         <tr><td>HTML</td><td>学习和查询页</td><td>由脚本生成数据，避免手动改生成文件。</td></tr>
         <tr><td>Word / Excel</td><td>导出版本</td><td>只作为展示或复习材料，不作为知识源。</td></tr>
       </tbody>
@@ -386,15 +441,15 @@ sections.push({
     <h4 class="table-title">章节来源与维护说明</h4>
     ${sourceNotes.map(({ title, filename, notes }) => `
       <details class="example-toggle">
-        <summary>${colorize(escapeHtml(title))}：<code>source/${escapeHtml(filename)}</code></summary>
-        ${notes.map(note => markdownToHtml(note)).join("\n")}
+        <summary>${colorize(escapeHtml(title))}：<code>source/content/${escapeHtml(filename)}</code></summary>
+        ${notes.map(sourceNoteToHtml).join("\n")}
       </details>
     `).join("")}
     <h4 class="table-title">当前同步到 HTML 的源文件</h4>
     <table>
       <thead><tr><th>章节</th><th>源文件</th></tr></thead>
       <tbody>
-        ${sourceFiles.map(([id, filename, title]) => `<tr><td>${colorize(escapeHtml(title))}</td><td><code>source/${escapeHtml(filename)}</code></td></tr>`).join("")}
+        ${sourceFiles.map(([id, filename, title]) => `<tr><td>${colorize(escapeHtml(title))}</td><td><code>source/content/${escapeHtml(filename)}</code></td></tr>`).join("")}
       </tbody>
     </table>
   `

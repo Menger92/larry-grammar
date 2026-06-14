@@ -1,22 +1,18 @@
-﻿# 名词性从句
+# 名词性从句
 
-来源说明：本章优先依据 V08-V09 视频截图与用户上传截图整理；已确认例句登记在 `source/evidence-log.md` 和 `source/example-source-audit.md`。未登记来源的旧例句，后续只作待校准材料，不继续扩写。
+来源说明：本章优先依据 V08-V09 视频截图与用户上传截图整理；已确认例句登记在 `source/sources/evidence-log.md` 和 `source/sources/example-source-audit.md`。未登记来源的旧例句，后续只作待校准材料，不继续扩写。
 
-## 3.2-3.3 名词性从句理解入口
+## 本章结论卡
 
-名词性从句的核心：把“一件事”当成名词放进句子。
+| 项目 | 结论 |
+| --- | --- |
+| 一句话本质 | 名词性从句把“一件事”作为名词性成分放进主语、宾语、表语或同位语位置。 |
+| 核心公式 | `名词性从句 = 连接词 + 陈述语序的简单句` |
+| 判断入口 | 先看整个从句是否占名词位置，再还原从句内部结构。 |
+| 代表例句 | What she said about the incident surprised everyone. |
+| 最易混点 | that 只连接时不作成分；what 既连接，又在从句内部作名词性成分。 |
 
-维护规则：本入口只放总领理解，包括“名词性从句的本质”“独立句如何变成从句”“学习时先看从句内部结构”。后面的类型主表只放主语从句、宾语从句、表语从句、同位语从句。
-
-### 名词性从句的本质
-
-名词性从句的本质：
-
-```text
-名词性从句 = 用句子代替简单句中的名词短语
-```
-
-也就是说，原本简单句里需要一个名词短语的位置，可以换成一个句子。这个被换进去的句子整体就变成红色的名词性成分。
+## 名词性从句的四个位置
 
 | 简单句中的名词位置 | 换成从句后的功能 | 从句类型 |
 | --- | --- | --- |
@@ -24,6 +20,8 @@
 | 宾语 | 整个从句放在动词或介词后。 | 宾语从句 |
 | 表语 / 主语补语 | 整个从句放在系动词后，说明主语内容。 | 表语从句 |
 | 同位语 | 整个从句解释前面抽象名词的内容。 | 同位语从句 |
+
+## 从独立句进入从句
 
 名词性从句常来自三类独立句：
 
@@ -33,7 +31,7 @@
 | 一般疑问句 | whether / if | Whether Sally is beautiful doesn't matter. |
 | 特殊疑问句 | 原来的疑问词 | I don't know what your name is. |
 
-### 独立句子变名词性从句的步骤
+### 转换步骤
 
 | 步骤 | 操作 | 说明 |
 | --- | --- | --- |
@@ -51,7 +49,7 @@
 | What happened yesterday? → I don't know what happened yesterday. | what 本身作主语时，不需要额外调序。 |
 | Who is in the classroom? → I don't know who is in the classroom. | who 本身作主语时，语序不变。 |
 
-### 如何学好名词性从句
+## 从句内部分析
 
 名词性从句虽然整体当名词用，但从句内部仍然要按简单句来分析。不要只背“主语从句、宾语从句、表语从句、同位语从句”，要先把从句内部的结构看清楚。
 
@@ -72,32 +70,58 @@
 | what your name is | your name is what | what = 连词 + 名词性成分 | what 一方面连接名词性从句，一方面在从句内部作表语 / 主语补语。 |
 | where Sally lives | Sally lives where | where 作地点状语，副词性成分 | 从句内部主谓完整，where 不作主语或宾语，而是说明 lives 的地点。 |
 
-## 名词性从句类型主表
+## 主语从句
 
-主表只保留一个代表例句；同一类型的更多例句集中放在后面的例句库。
+整个从句放在主语位置。
 
-| 类型 | 句中位置 | 代表例句 | 分析 |
-| --- | --- | --- | --- |
-| 主语从句 | 主语 | What she said about the incident surprised everyone. | What she said about the incident 整体作主语。 |
-| 宾语从句 | 宾语 | She believes that education is the key to a better world. | that education... 整体作 believes 的宾语。 |
-| 表语从句 | 表语 / 主语补语 | The truth is that we all make mistakes. | that we all make mistakes 说明 truth 的内容。 |
-| 同位语从句 | 同位语 | The news that they won the championship spread quickly. | that they won the championship 解释 news 的具体内容。 |
+代表例句：What she said about the incident surprised everyone.
 
-### 名词性从句例句库：尝试把从句部分还原
+<details>
+<summary>例句库：主语从句</summary>
 
-| 类型 | 例句 | 从句还原 | 分析 |
-| --- | --- | --- | --- |
-| 主语从句 | What you decide will greatly impact our future. | you decide what → What do you decide? | What you decide 整体作主语；what 在从句中作 decide 的宾语。 |
-| 主语从句 | Whether he is guilty or innocent remains to be seen. | he is guilty or innocent → Is he guilty or innocent? | Whether he is guilty or innocent 整体作主语；whether 表“一般疑问句的不确定性”。 |
-| 主语从句 | How we handle this situation is crucial for our success. | we handle this situation how → How do we handle this situation? | How we handle this situation 整体作主语；how 在从句中作方式状语。 |
-| 宾语从句 | She believes that education is the key to a better world. | education is the key to a better world | that education... 作 believes 的宾语；that 只连接，不作成分。 |
-| 宾语从句 | I wonder why he did not show up at the meeting. | he did not show up at the meeting why → Why did he not show up at the meeting? | why he did not show up... 作 wonder 的宾语；why 在从句中作原因状语。 |
-| 宾语从句 | Can you explain how this machine works? | this machine works how → How does this machine work? | how this machine works 作 explain 的宾语；how 在从句中作方式状语。 |
-| 表语从句 | His dream is that he becomes a successful entrepreneur. | he becomes a successful entrepreneur | that he becomes... 作表语 / 主语补语，说明 dream 的内容。 |
-| 表语从句 | The problem seems to be that we lack proper communication. | we lack proper communication | that we lack... 作表语 / 主语补语，说明 problem 的内容。 |
-| 表语从句 | The truth is that we all make mistakes. | we all make mistakes | that we all make mistakes 作表语 / 主语补语，说明 truth 的内容。 |
+| 例句 | 从句还原 | 分析 |
+| --- | --- | --- |
+| What you decide will greatly impact our future. | you decide what → What do you decide? | What you decide 整体作主语；what 在从句中作 decide 的宾语。 |
+| Whether he is guilty or innocent remains to be seen. | he is guilty or innocent → Is he guilty or innocent? | Whether he is guilty or innocent 整体作主语；whether 表“一般疑问句的不确定性”。 |
+| How we handle this situation is crucial for our success. | we handle this situation how → How do we handle this situation? | How we handle this situation 整体作主语；how 在从句中作方式状语。 |
 
-### 同位语以及同位语从句
+</details>
+
+## 宾语从句
+
+整个从句放在动词或介词后的宾语位置。
+
+代表例句：She believes that education is the key to a better world.
+
+<details>
+<summary>例句库：宾语从句</summary>
+
+| 例句 | 从句还原 | 分析 |
+| --- | --- | --- |
+| She believes that education is the key to a better world. | education is the key to a better world | that education... 作 believes 的宾语；that 只连接，不作成分。 |
+| I wonder why he did not show up at the meeting. | he did not show up at the meeting why → Why did he not show up at the meeting? | why he did not show up... 作 wonder 的宾语；why 在从句中作原因状语。 |
+| Can you explain how this machine works? | this machine works how → How does this machine work? | how this machine works 作 explain 的宾语；how 在从句中作方式状语。 |
+
+</details>
+
+## 表语从句
+
+整个从句放在系动词后，作表语 / 主语补语，说明主语的内容。
+
+代表例句：The truth is that we all make mistakes.
+
+<details>
+<summary>例句库：表语从句</summary>
+
+| 例句 | 从句还原 | 分析 |
+| --- | --- | --- |
+| His dream is that he becomes a successful entrepreneur. | he becomes a successful entrepreneur | that he becomes... 作表语 / 主语补语，说明 dream 的内容。 |
+| The problem seems to be that we lack proper communication. | we lack proper communication | that we lack... 作表语 / 主语补语，说明 problem 的内容。 |
+| The truth is that we all make mistakes. | we all make mistakes | that we all make mistakes 作表语 / 主语补语，说明 truth 的内容。 |
+
+</details>
+
+## 同位语与同位语从句
 
 同位语的本质：
 
@@ -142,7 +166,7 @@
 1. 前面是不是抽象名词，如 news, fact, idea, doubt, question, belief, possibility, evidence？
 2. 后面的从句是不是在解释这个名词的“内容”，而不是限定这个名词的范围？
 
-### 疑问词作主语时的语序
+## 名词性从句的语序
 
 特殊疑问句变名词性从句时，通常要改成陈述语序。但是如果疑问词本身就是从句主语，则不需要额外改变语序。
 
@@ -156,9 +180,7 @@
 | What happened yesterday? | I don't know what happened yesterday. | 不需要 | what 本身是 happened 的主语，原句已经是主语 + 谓语顺序。 |
 | Who is in the classroom? | I don't know who is in the classroom. | 不需要 | who 本身是 is 的主语，语序不变。 |
 
-记忆点：判断要不要调语序，关键不是看有没有疑问词，而是看疑问词是不是从句主语。
-
-### 形式主语问题
+## 形式主语
 
 名词性从句作主语时，放在句首语法上可以成立，但从句过长时会造成“头重脚轻”。英语常用 it 作形式主语，把真正的主语从句放到句尾，形成 ENDWEIGHT（句末重心）。
 
@@ -172,7 +194,7 @@ It + 谓语 / 表语 + 名词性从句
 | Whether Sally is beautiful doesn't matter. | It doesn't matter whether Sally is beautiful. | whether 从句是真正主语；it 让句子头部更轻。 |
 | Why Sally is beautiful doesn't matter. | It doesn't matter why Sally is beautiful. | why 从句是真正主语；句尾承载重点信息。 |
 
-### 形式宾语问题
+## 形式宾语
 
 当宾语从句本身带有补语时，要使用 it 作形式宾语，把真正的宾语从句后置。这样可以避免宾语从句太长，导致宾语和补语关系不清楚；这同样是因为英语有 ENDWEIGHT（句末重心）的要求。
 
@@ -185,7 +207,7 @@ It + 谓语 / 表语 + 名词性从句
 | I find it unbelievable that Sally is beautiful. | I find that Sally is beautiful unreasonable. | it 是形式宾语；that Sally is beautiful 是真正宾语；unbelievable 是宾语补语。 |
 | Our teacher made it a rule that we have to speak English in class. | Our teacher made that we have to speak English in class a rule. | it 是形式宾语；a rule 是宾语补语；that 从句放句尾解释规则内容。 |
 
-### that 的省略问题
+## that 的省略
 
 that 在名词性从句中常常只起连接作用，不作从句成分，但不是所有位置都能随便省略。
 
@@ -198,7 +220,7 @@ that 在名词性从句中常常只起连接作用，不作从句成分，但不
 
 注意：whether、what、who、where、when、why、how 不能像 that 一样随便省略，因为它们本身带有“是否、什么、谁、哪里、何时、为什么、如何”等意义，很多时候还在从句内部承担成分。
 
-### whether 和 if 能否互换
+## whether 和 if
 
 whether 和 if 都可以表示“是否”，但 whether 更稳定，适用范围更广。学习阶段可以记住：不确定时优先用 whether。
 
@@ -211,7 +233,7 @@ whether 和 if 都可以表示“是否”，但 whether 更稳定，适用范�
 | 表语从句 | whether | if | 待补充截图例句 |
 | 普通宾语从句 | whether / if 都可 | - | You must decide whether you want to study abroad or stay at home. |
 
-### 名词性从句连接词表
+## 名词性从句连接词速查
 
 | 连接词 | 是否在从句中作成分 | 核心含义 | 判断重点 |
 | --- | --- | --- | --- |
@@ -223,7 +245,7 @@ whether 和 if 都可以表示“是否”，但 whether 更稳定，适用范�
 | whose | 作定语 | 谁的 | 后面通常接名词。 |
 | when / where / why / how | 作状语 | 时间、地点、原因、方式 | 从句缺状语，不缺主语或宾语。 |
 
-### 名词性从句易混点
+## 名词性从句易混对比
 
 | 对比 | A | B | 判断核心 |
 | --- | --- | --- | --- |
@@ -231,15 +253,4 @@ whether 和 if 都可以表示“是否”，但 whether 更稳定，适用范�
 | whether vs if | whether 更正式，可用于主语从句、表语从句、介词后、不定式前 | if 多用于宾语从句 | 位置越正式，越优先用 whether。 |
 | 同位语从句 vs 定语从句 | 解释抽象名词的内容 | 修饰限定名词的范围 | 看从句是在解释“内容”，还是限定“哪一个”。 |
 
-## 关联学习：名词性功能的其他表现形式
-
-名词性从句解决的是“一整句话当名词用”。同一个名词位置，也可能由普通名词短语、动名词、不定式或疑问词 + 不定式承担。查阅时先确认位置，再比较形式。
-
-| 名词性位置 | 从句形式 | 非谓语 / 短语形式 | 判断问题 |
-| --- | --- | --- | --- |
-| 主语 | What she said surprised everyone. | Reading helps. / To lie is foolish. | 句首这一整块是不是主句谈论的对象？ |
-| 宾语 | I know what she said. | I enjoy reading. / I want to leave. | 谓语动词后面是不是需要一个“事情 / 动作 / 内容”？ |
-| 表语 / 主语补语 | The truth is that we all make mistakes. | Her hobby is reading. / My plan is to leave. | 系动词后面是不是在说明主语内容？ |
-| 同位语 | The news that they won spread quickly. | His goal, becoming a doctor, requires effort. | 后面的结构是不是解释前面抽象名词的内容？ |
-
-查阅路径：如果名词位置里有完整主谓结构，优先看本章；如果是 `to do` 或 `doing`，回看 [非谓语](#nonfinite)；如果它出现在介词后面，还要回看 [介词](#preposition)。
+关联入口：同一名词位置由 `to do / doing` 承担时见[非谓语](#nonfinite)；名词性从句出现在介词后时，同时见[介词](#preposition)。

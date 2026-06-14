@@ -1,25 +1,22 @@
-﻿# 副词性从句
+# 副词性从句
 
-来源说明：本章优先依据 V13 用户笔记 `assets/03-07_副词性从句_笔记01.jpg` 至 `assets/03-07_副词性从句_笔记04.jpg` 整理；已确认笔记来源登记在 `source/evidence-log.md`，例句后续继续登记到 `source/example-source-audit.md`。
+来源说明：本章优先依据 V13 用户笔记 `assets/03-07_副词性从句_笔记01.jpg` 至 `assets/03-07_副词性从句_笔记04.jpg` 整理；已确认笔记来源登记在 `source/sources/evidence-log.md`，例句后续继续登记到 `source/sources/example-source-audit.md`。
 
-## 3.7 副词性从句 / 状语从句理解入口
+## 本章结论卡
 
-副词性从句（状语从句）的本质：一个包含完整主谓结构的句子，被连接词降级后，作为副词性成分进入主句，对主句进行修饰。
+| 项目 | 结论 |
+| --- | --- |
+| 一句话本质 | 副词性从句用一个带完整主谓结构的句子，修饰主句中的动作、状态或整个判断。 |
+| 核心公式 | `完整句子 + 副词性功能 = 副词性从句` |
+| 判断入口 | 先找它修饰谁，再问它表达什么逻辑关系，最后识别连接词。 |
+| 代表例句 | Sally runs as if she is flying. |
+| 最易混点 | 同一个 where、when、as 可能引导不同从句，不能只按连接词名称判断。 |
 
-学习副词性从句的重点，是先知道它修饰的对象是什么。它修饰的对象通常是主句的谓语动词、主句的表语形容词，或整个主句；表达方式、时间、地点、原因、条件、让步、目的、结果、比较等逻辑关系。
+## 修饰对象判断
 
-维护规则：本入口只放总领理解，包括“状语从句整体作状语”“先找修饰对象”“先问逻辑问题再看连接词”。后面的类型主表只放时间、原因、条件、让步、目的、结果等具体类型。
+副词性从句通常修饰主句的谓语动词、表语形容词或整个主句，并表达时间、地点、原因、条件、让步、目的、结果、比较、方式等关系。
 
-对应视频：第 13 个视频 `[3.7 副词性从句]`，BV1zH4y1m7zp。
-
-笔记图片：
-
-- `assets/03-07_副词性从句_笔记01.jpg`
-- `assets/03-07_副词性从句_笔记02.jpg`
-- `assets/03-07_副词性从句_笔记03.jpg`
-- `assets/03-07_副词性从句_笔记04.jpg`
-
-### 副词性从句的本质对照
+### 从普通副词性成分到从句
 
 副词性从句不是凭连接词硬背出来的，而是从普通副词性成分扩展出来的：原来可以用副词、介词短语修饰主句，现在换成一个带完整主谓结构的句子来修饰主句。
 
@@ -29,14 +26,6 @@
 | Michael never gets up early on Sundays. | Michael never gets up early when he doesn't go to school on Sundays. | gets up early | `on Sundays` 是介词短语；`when he doesn't go to school on Sundays` 是带主谓结构的句子，整体说明 gets up early 的时间条件。 |
 | Sally was happy in Beijing. | Sally was happy when she could play with her friends in Beijing. | happy / was happy | `in Beijing` 是介词短语；`when she could play with her friends in Beijing` 是带主谓结构的句子，整体说明 happy 这个状态出现的时间背景。 |
 
-记忆点：副词性从句 = 完整句子 + 副词性功能。它不是主句的一部分主干，而是拿一个完整句子来修饰主句中的动作、状态或整句。
-
-### 副词性从句的学习方法
-
-1. 明确副词性从句的本质：作为副词性成分修饰主句中的元素。
-2. 先找它修饰的对象，再记各种关系词。
-3. 真正重要的是体力活：在真实句子里反复判断“这个从句到底修饰谁”。
-
 | 修饰对象 | 常见问题 | 例句 | 判断 |
 | --- | --- | --- | --- |
 | 谓语动词 / 动作 | 动作怎样发生？什么时候发生？为什么发生？ | Sally runs as if she is flying. | `as if...` 修饰 runs，说明跑的方式。 |
@@ -44,7 +33,7 @@
 | 表语形容词 / 状态 | 这个状态在什么背景下成立？ | Sally was happy when she could play with her friends in Beijing. | `when...` 修饰 happy / was happy，说明开心这个状态出现的时间背景。 |
 | 整个主句 | 整个判断在什么条件、让步、原因下成立？ | If it rains, take an umbrella. | `If...` 修饰整个主句，给出主句成立的条件。 |
 
-### 状语从句理解问题
+## 逻辑关系速查
 
 副词性从句不要先背连接词。先找修饰对象，再问它回答了什么问题。
 
@@ -60,7 +49,7 @@
 | 和谁比？程度如何？ | 比较状语从句 | than, as...as, not as/so...as |
 | 像什么一样？仿佛怎样？ | 方式状语从句 | as, as if, as though |
 
-### 状语从句类型主表
+## 状语从句类型与例句
 
 主表只保留每类一个代表例句；同一连接词或同一逻辑关系的多个例子，统一放在后面的例句库 / 对比例句库。
 
@@ -80,7 +69,7 @@
 - 句首状语从句通常用逗号隔开。
 - 句尾状语从句通常不用逗号隔开，例如 `Take an umbrella if it rains.`。
 
-### 3.7.2 时间状语从句补充
+### 时间状语从句补充
 
 时间状语从句里，重点不是只认识 when，而是区分“从句提供的是时间点、时间段、同步变化，还是动作持续到某个边界”。
 
@@ -162,7 +151,7 @@ not until 可以放在句首或用于强调句：
 | Not until 句首倒装 | Not until it stopped raining did we go out. | Not until 放句首时，主句需要部分倒装。 |
 | 强调句 | It was not until it stopped raining that we went out. | 强调“直到雨停”这个时间点。 |
 
-### 3.7.3 地点状语从句例句库
+### 地点状语从句例句库
 
 地点状语从句的核心是：where 从句直接修饰动作或主句判断，前面没有被它修饰的地点名词。
 
@@ -174,9 +163,9 @@ not until 可以放在句首或用于强调句：
 | Where there is a will, there is a way. | 整个主句 | `where...` 给出主句成立的地点/条件式背景。 |
 | Where there is love, there is also wealth and success. | 整个主句 | `where...` 表示“有爱之处，也有财富和成功”。 |
 
-记忆点：`where` 可以是副词性从句连接词，也可以是定语从句关系副词。先看它前面有没有地点名词；有先行词且修饰名词时，多半是定语从句；没有先行词、直接修饰动作或主句时，多半是地点状语从句。
+判断关键：`where` 可以是副词性从句连接词，也可以是定语从句关系副词。先看它前面有没有地点名词；有先行词且修饰名词时，多半是定语从句；没有先行词、直接修饰动作或主句时，多半是地点状语从句。
 
-### 3.7.4 原因状语从句
+### 原因状语从句
 
 原因状语从句说明“为什么”。常见连接词是 because, for, as, since。
 
@@ -201,7 +190,7 @@ not until 可以放在句首或用于强调句：
 
 写作时如果要避免歧义，可以改成 `not because..., but because...` 或把原因拆成单独句子。
 
-### 3.7.5 目的状语从句
+### 目的状语从句
 
 目的状语从句说明“为了什么”。常见连接词是 so that, in order that, in case。
 
@@ -221,7 +210,7 @@ not until 可以放在句首或用于强调句：
 
 `in case` 更像“以防万一”，常兼有目的和条件意味。
 
-### 3.7.6 结果状语从句
+### 结果状语从句
 
 结果状语从句说明“结果怎样”。常见结构是 `so...that...` 和 `such...that...`。
 
@@ -245,7 +234,7 @@ not until 可以放在句首或用于强调句：
 | Sally opened the window so that she could breathe some fresh air. | 目的 | could breathe 表示开窗的目的。 |
 | Sally opened the window so that she breathed some fresh air. | 结果 | breathed 表示开窗后产生的结果。 |
 
-### 3.7.7 条件状语从句例句库
+### 条件状语从句例句库
 
 条件状语从句说明“在什么条件下”。常见连接词包括 if, unless, as/so long as, so far as, in case, once。
 
@@ -259,11 +248,11 @@ not until 可以放在句首或用于强调句：
 | as/so long as | You may leave as/so long as you come back on time. | 只要你按时回来，就可以离开。 |
 | so far as | So far as the weather remains okay, we shall start tomorrow. | 只要天气还可以，明天就出发。 |
 
-### 3.7.8 让步状语从句例句库
+### 让步状语从句例句库
 
 让步状语从句表达“虽然从句成立，但主句仍然成立”。学习时重点看转折关系，而不是把 every word 都翻译成“虽然”。
 
-| 结构 | 例句 | 记忆点 |
+| 结构 | 例句 | 判断重点 |
 | --- | --- | --- |
 | though / although | Though/Although he tried hard, he failed. | 不能再用 but；可用 yet/still 加强主句。 |
 | even if | He failed, even if he tried hard. | 即使从句成立，主句仍成立。 |
@@ -285,7 +274,7 @@ as 引导让步时，常把被强调的形容词、副词、名词或动词放�
 | Wounded as he was, he finished the basketball game. | Although he was wounded... |
 | Fail as he did, he would never give up. | Although he failed... |
 
-### 3.7.9 比较状语从句例句库
+### 比较状语从句例句库
 
 比较状语从句说明程度、相似或差异。重点是看比较的对象是否对齐，以及省略了什么。
 
@@ -304,22 +293,10 @@ as 引导让步时，常把被强调的形容词、副词、名词或动词放�
 
 比较从句里常省略重复成分。分析时先把省略部分补出来，再判断比较对象是否一致。
 
-### 3.7.10 方式状语从句例句库
+### 方式状语从句例句库
 
-| 类型 | 截图例句 | 记忆点 |
+| 类型 | 截图例句 | 判断重点 |
 | --- | --- | --- |
 | 方式 | Sally runs as if she is flying. / Sally runs as if she were flying. | `as if / as though` 表示“仿佛怎样”。虚拟与否看是否与事实相反。 |
 
-## 关联学习：副词性功能的其他表现形式
-
-副词性从句的重点是修饰对象。只要一个结构在说明动作、状态或整个主句的时间、地点、原因、条件、让步、目的、结果、方式等，它就在承担副词性功能；从句只是其中一种表现形式。
-
-| 副词性功能 | 从句形式 | 非谓语形式 | 介词短语形式 | 判断问题 |
-| --- | --- | --- | --- | --- |
-| 时间 | when I was at school | When reading, do not talk. | after dinner / until midnight | 它回答“什么时候 / 到什么时候”吗？ |
-| 原因 | because it was raining | Being ill, he stayed home. | because of the rain / for this reason | 它回答“为什么”吗？ |
-| 条件 / 让步 | if it rains / although he tried | If given more time... / Although tired... | despite his effort / without help | 它给主句成立加条件，还是让一步也成立？ |
-| 目的 / 结果 | so that students could understand / so...that... | to improve English / never to return | for better results | 它说明“为了什么”还是“导致什么结果”？ |
-| 方式 / 伴随 | as if she is flying | Walking slowly, he entered. | with a smile / in silence | 它说明动作怎样发生或伴随什么状态吗？ |
-
-查阅路径：有连接词和完整主谓结构时看本章；压缩成 `to do / doing / done` 时看 [非谓语](#nonfinite)；压缩成 `介词 + 名词性成分` 时看 [介词](#preposition)。
+关联入口：副词性内容压缩成 `to do / doing / done` 时见[非谓语](#nonfinite)；改用介词短语表达时见[介词](#preposition)。

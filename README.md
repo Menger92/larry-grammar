@@ -4,7 +4,10 @@
 
 ## 目录
 
-- `source/`：Markdown 源文件，后续主要编辑这里。
+- `source/content/`：HTML 知识正文，后续新增语法内容主要编辑这里。
+- `source/sources/`：视频索引、证据、例句审计和书课对照。
+- `source/protocols/`：经济学人等对话分析协议。
+- `source/maintenance/`：项目方法、维护规则和更新待办。
 - `web/`：HTML 查询页面。
 - `assets/`：图片素材。
 - `docs/`：Word、Excel 等导出文件可放这里。
@@ -19,22 +22,22 @@
 
 相关索引文件：
 
-- `source/project-method.md`：项目方法论与内容进入规则。
+- `source/maintenance/project-method.md`：项目方法论与内容进入规则。
 - `source/README.md`：Markdown 源文件导航。
-- `source/video-source-index.md`：Larry 视频顺序、BV 号、章节文件和溯源状态。
-- `source/evidence-log.md`：已经确认的视频画面、截图和笔记证据记录。
-- `source/example-source-audit.md`：例句来源审计表，集中管理已确认和待校准例句。
-- `source/update-backlog.md`：后续待补内容和证据需求。
-- `source/tense.md`：Larry 时态专题，依据 V19-V22 逐步整理。
-- `source/subjunctive.md`：Larry 虚拟语气专题，依据 V24-V26 逐步整理。
-- `source/morphology.md`：Larry 词法解析专题，依据 V27-V28 逐步整理。
-- `source/grammar-club-crosswalk.md`：Larry 与《文法俱乐部》的章节对照。
-- `source/terminology-map.md`：大陆术语与《文法俱乐部》术语对照。
-- `source/economist-analysis-protocol.md`：经济学人句子分析输出协议。
+- `source/sources/video-source-index.md`：Larry 视频顺序、BV 号、章节文件和溯源状态。
+- `source/sources/evidence-log.md`：已经确认的视频画面、截图和笔记证据记录。
+- `source/sources/example-source-audit.md`：例句来源审计表，集中管理已确认和待校准例句。
+- `source/maintenance/update-backlog.md`：后续待补内容和证据需求。
+- `source/content/tense.md`：Larry 时态专题，依据 V19-V22 逐步整理。
+- `source/content/subjunctive.md`：Larry 虚拟语气专题，依据 V24-V26 逐步整理。
+- `source/content/morphology.md`：Larry 词法解析专题，依据 V27-V28 逐步整理。
+- `source/sources/grammar-club-crosswalk.md`：Larry 与《文法俱乐部》的章节对照。
+- `source/sources/terminology-map.md`：大陆术语与《文法俱乐部》术语对照。
+- `source/protocols/economist-analysis-protocol.md`：经济学人句子分析输出协议。
 
 ## 推荐工作流
 
-1. 修改 `source/*.md`，其中 `source/full-summary.md` 是完整讲义主文本。
+1. 修改对应的 `source/content/*.md` 专题文件；HTML 正文由 13 个专题文件共同组成。
 2. 若需要网页同步展示，运行 `node scripts/build_web_sections.mjs` 生成 `web/generated-sections.js`。
 3. 用浏览器打开 `web/index.html` 查询。
 4. 用 GitHub 保存版本历史。
@@ -55,7 +58,7 @@
 - 经济学人实战中反复卡住的句子，回填到对应知识点的例句库、易混对比或判断流程。
 - 如果需要调整页面模块、图示结构、知识层级关系等结构性内容，Codex 必须先和我确认，再执行修改。
 - Larry 主线内容必须有来源：新增规则标明视频序号和 BV 号；例句只使用视频画面、用户截图或用户上传笔记中的例句，不由 Codex 自行创造。
-- 已存在但来源未逐条确认的例句，先登记到 `source/example-source-audit.md`，后续按视频或截图校准，不继续扩写。
+- 已存在但来源未逐条确认的例句，先登记到 `source/sources/example-source-audit.md`，后续按视频或截图校准，不继续扩写。
 
 ## 颜色规则
 
@@ -111,4 +114,4 @@
 3. B 电脑改完：暂存修改 -> 提交修改 -> 推送修改。
 4. A 电脑下次继续前：同步最新版。
 
-不要让两台电脑同时修改同一个文件。尤其是 `web/app.js`、`source/preposition.md` 这类常改文件，最好一台电脑上传后，另一台电脑先同步再继续。
+不要让两台电脑同时修改同一个文件。尤其是 `web/app.js`、`source/content/preposition.md` 这类常改文件，最好一台电脑上传后，另一台电脑先同步再继续。

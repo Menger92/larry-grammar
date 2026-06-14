@@ -19,7 +19,17 @@
 
 说明：本次对话中其余截图已经用于整理规则和例句，但没有对应的本地文件路径；后续如需保留原图，请把图片批量放入 `H:\Larry教材\assets\时态`，再按当前编号继续命名。
 
-## 1. 时态总入口：时、体、貌
+## 本章结论卡
+
+| 项目 | 结论 |
+| --- | --- |
+| 一句话本质 | 时态判断是时间框架、动作类别、体貌状态和说话人视角的组合。 |
+| 核心公式 | `动词类别 + 时间状语 + 观察点 + 完成 / 进行状态` |
+| 判断入口 | 先判断动词类别和时间参照点，再看一般、进行、完成或完成进行。 |
+| 代表例句 | I wrote a book. / I was writing a book. / I have written a book. |
+| 最易混点 | 形式名称不等于中文时间；过去形式还可能表达委婉或心理距离。 |
+
+## 时态总入口：时、体、貌
 
 Larry 的时态入口不是先背中文译名，而是把动词放进三个问题里看：
 
@@ -31,11 +41,11 @@ Larry 的时态入口不是先背中文译名，而是把动词放进三个问�
 
 复习时先问：说话人把动作放在什么观察位置，而不是先问“中文该翻译成什么时态”。
 
-## 2. 四类动词 + 三类时间状语
+## 四类动词 + 三类时间状语
 
 时态判断不能只看动词形式，还要看动词本身的类别和时间状语。
 
-### 2.1 四类动词
+### 四类动词
 
 | 类别 | 英文 | 特点 | 视频截图词例 |
 | --- | --- | --- | --- |
@@ -44,7 +54,7 @@ Larry 的时态入口不是先背中文译名，而是把动词放进三个问�
 | 第三类动词 | accomplishments | 过程动词；会动，而且有明确动作终点。 | build, persuade, prepare |
 | 第四类动词 | achievements | 瞬间动词；动作在瞬间发生并立即结束。 | kill, drop, catch, arrive |
 
-### 2.2 三类时间状语
+### 三类时间状语
 
 | 类别 | 判断 | 视频截图词例 |
 | --- | --- | --- |
@@ -52,7 +62,7 @@ Larry 的时态入口不是先背中文译名，而是把动词放进三个问�
 | 定位时间段 | 有明确起止或定位范围 | since 2018, during the first half of last year |
 | 不定位时间段 | 只给长度，不给定位点 | for one year, for three days |
 
-### 2.3 动词体貌的转化
+### 动词体貌的转化
 
 同一个动词会因为宾语、体貌和语境改变类别。
 
@@ -74,7 +84,7 @@ Larry 的时态入口不是先背中文译名，而是把动词放进三个问�
 
 </details>
 
-## 3. until 判断
+## until 判断
 
 来源视频：V19/V20 截图。
 
@@ -106,7 +116,7 @@ Larry 的时态入口不是先背中文译名，而是把动词放进三个问�
 2. 判断它能不能持续。
 3. 如果不能持续，看是否是否定状态或进行状态。
 
-## 4. 一般现在时
+## 一般现在时
 
 形式：`V / V-s`。Larry 强调：一般现在时不完全等于“现在”，它是一种“静态大于动态”的时态。
 
@@ -116,7 +126,7 @@ Larry 的时态入口不是先背中文译名，而是把动词放进三个问�
 People die.
 ```
 
-### 4.1 不受时间限制的客观存在或习惯性动作
+### 不受时间限制的客观存在或习惯性动作
 
 代表例句：The sun rises in the East and sets in the West.
 
@@ -134,7 +144,7 @@ People die.
 
 </details>
 
-### 4.2 当前延续、眼前动作或近期将来
+### 当前延续、眼前动作或近期将来
 
 代表例句：The meeting begins at 10:30.
 
@@ -152,7 +162,7 @@ People die.
 
 </details>
 
-### 4.3 不确定的过去或更鲜活的过去
+### 不确定的过去或更鲜活的过去
 
 代表例句：Michael tells me you're coming over tonight.
 
@@ -167,11 +177,11 @@ People die.
 
 </details>
 
-## 5. 一般过去时
+## 一般过去时
 
 形式：`V-ed`。一般过去时是最常用的过去表达，有时隐含“当前已经不是这样”的意味。
 
-### 5.1 过去的状态或动作
+### 过去的状态或动作
 
 代表例句：He played basketball with his friends every Sunday.
 
@@ -189,7 +199,7 @@ People die.
 
 </details>
 
-### 5.2 过去反复性动作表示法
+### 过去反复性动作表示法
 
 代表例句：Michael used to eat out.
 
@@ -204,7 +214,7 @@ People die.
 
 </details>
 
-### 5.3 委婉语气
+### 委婉语气
 
 代表例句：I wondered if you could lend me the book for a while.
 
@@ -219,11 +229,11 @@ People die.
 
 </details>
 
-## 6. 现在进行时
+## 现在进行时
 
 形式：`am / is / are + V-ing`。现在进行时不只表示“正在发生”，还常带临时、安排、委婉或主观色彩。
 
-### 6.1 近期计划中的动作
+### 近期计划中的动作
 
 代表例句：President Biden is visiting China next week.
 
@@ -238,7 +248,7 @@ People die.
 
 </details>
 
-### 6.2 时间 / 条件状语从句中表示将来正在发生
+### 时间 / 条件状语从句中表示将来正在发生
 
 代表例句：If you are looking for Larry, you'll find him in the meeting room.
 
@@ -253,7 +263,7 @@ People die.
 
 </details>
 
-### 6.3 刚刚过去、委婉口气
+### 刚刚过去、委婉口气
 
 代表例句：I'm wondering if I may have a word with you.
 
@@ -270,7 +280,7 @@ People die.
 
 </details>
 
-### 6.4 进行时 VS 第一类、第四类动词
+### 进行时 VS 第一类、第四类动词
 
 第一类、第四类动词原则上不使用进行时，但个别第一类动词可以用进行时表示暂时状态。
 
@@ -290,11 +300,11 @@ People die.
 
 </details>
 
-## 7. 过去进行时
+## 过去进行时
 
 形式：`was / were + V-ing`。过去进行时的意思不只“过去正在进行”。
 
-### 7.1 过去某时刻 / 时间段正在进行
+### 过去某时刻 / 时间段正在进行
 
 代表例句：She was shouting like mad when we got in.
 
@@ -309,7 +319,7 @@ People die.
 
 </details>
 
-### 7.2 过去某一时间点之后即将发生
+### 过去某一时间点之后即将发生
 
 代表例句：A few days later, he was dying.
 
@@ -325,7 +335,7 @@ People die.
 
 </details>
 
-### 7.3 过去一段时间内暂时性的反复动作
+### 过去一段时间内暂时性的反复动作
 
 代表例句：When Michael was in hospital, we were visiting him twice a week.
 
@@ -341,7 +351,7 @@ People die.
 
 </details>
 
-### 7.4 委婉语气
+### 委婉语气
 
 代表例句：I was wondering if Larry could help us.
 
@@ -355,7 +365,7 @@ People die.
 
 </details>
 
-### 7.5 过去进行时 VS 一般过去时
+### 过去进行时 VS 一般过去时
 
 代表例句：I read a book that evening. / I was reading a book that evening.
 
@@ -372,11 +382,11 @@ People die.
 
 </details>
 
-## 8. 现在完成时
+## 现在完成时
 
 形式：`have / has + V-ed`。现在完成时表达的意义远大于“已完成”，并且不能与表示过去的时间点状语连用。
 
-### 8.1 已完成用法
+### 已完成用法
 
 表示过去的某个动作已经完成，并且动作结果与当前情况有关。
 
@@ -403,7 +413,7 @@ People die.
 | 频度时间 | often, sometimes, ever, never, once, twice |
 | 包含当前时间状态在内的时间 | now, just, today, this morning, this year |
 
-### 8.2 未完成用法
+### 未完成用法
 
 表示动作或状态从过去某时开始，持续到现在；此状态可能仍将继续，也可能刚刚结束。一般与时间段状语连用。
 
@@ -424,7 +434,7 @@ People die.
 
 </details>
 
-### 8.3 since 的用法
+### since 的用法
 
 `since` 既是介词，又是连词。与现在完成时搭配时，后面应接时间点；如果后接一般过去时所表示的时间段，容易产生歧义。
 
@@ -446,7 +456,7 @@ People die.
 
 </details>
 
-### 8.4 It / this / that is the first time + that 从句
+### It / this / that is the first time + that 从句
 
 代表例句：It's the first time I've been here.
 
@@ -464,7 +474,7 @@ People die.
 
 </details>
 
-### 8.5 一般过去时 VS 现在完成时
+### 一般过去时 VS 现在完成时
 
 代表例句：Did you see Michael? / Have you seen Michael?
 
@@ -481,11 +491,11 @@ People die.
 
 </details>
 
-## 9. 过去完成时
+## 过去完成时
 
 形式：`had + V-ed`。过去完成时可以理解为“倒退一格”的现在完成时：它和“现在”没有关系，用来区分过去动作之间的先后顺序。
 
-### 9.1 已完成用法
+### 已完成用法
 
 代表例句：When I got to the station, the train had gone.
 
@@ -501,7 +511,7 @@ People die.
 
 </details>
 
-### 9.2 未完成用法
+### 未完成用法
 
 表示某动作或状态在过去某时之前已经开始，一直延续到该过去时间，并可能继续下去。
 
@@ -521,7 +531,7 @@ People die.
 
 </details>
 
-### 9.3 一般过去时 VS 过去完成时
+### 一般过去时 VS 过去完成时
 
 代表例句：I did the work at 6. / I had done the work at 6.
 
@@ -537,11 +547,11 @@ People die.
 
 </details>
 
-## 10. 现在完成进行时
+## 现在完成进行时
 
 形式：`have / has been + V-ing`。表示动作在过去某时开始，一直延续到当前说话时刻。
 
-### 10.1 动作仍在进行
+### 动作仍在进行
 
 代表例句：He has been learning English for years.
 
@@ -556,7 +566,7 @@ People die.
 
 </details>
 
-### 10.2 动作刚刚结束
+### 动作刚刚结束
 
 代表例句：It's okay. I've been watching Larry's channel.
 
@@ -570,7 +580,7 @@ People die.
 
 </details>
 
-### 10.3 现在完成时 VS 现在完成进行时
+### 现在完成时 VS 现在完成进行时
 
 代表例句：I've written a book. / I've been writing a book.
 
@@ -588,11 +598,11 @@ People die.
 
 第三类动词的完成时表示已完成状态，进行时则表示未完成状态。
 
-## 11. 过去完成进行时
+## 过去完成进行时
 
 形式：`had been + V-ing`。过去完成进行时和“现在”没什么关系，表示动作在过去的过去某时开始，一直延续到过去某一时刻。
 
-### 11.1 动作仍在进行
+### 动作仍在进行
 
 代表例句：He had been learning English for years.
 
@@ -607,7 +617,7 @@ People die.
 
 </details>
 
-### 11.2 动作刚刚结束
+### 动作刚刚结束
 
 代表例句：I'd been waiting for hours when he showed up.
 
@@ -621,7 +631,7 @@ People die.
 
 </details>
 
-## 12. write 综合判断
+## write 综合判断
 
 视频截图用 `write` 展示：同一个动词和宾语、时态结合后，意义会变得完全不同。
 
@@ -642,11 +652,11 @@ People die.
 
 </details>
 
-## 13. 将来时间表达法
+## 将来时间表达法
 
 Larry 强调：语法层面上，英语没有“将来时”的概念；实际表达将来时间的手段很多。`will` 以及 `be going to` 不包含任何形式的动词词尾屈折变化。
 
-### 13.1 will / shall + 动词原形
+### will / shall + 动词原形
 
 代表例句：I will leave for America next month.
 
@@ -685,7 +695,7 @@ if 条件句中，`will` 与条件含义不同：
 
 </details>
 
-### 13.2 will / shall + be doing
+### will / shall + be doing
 
 表示将来某一时刻或时间段内正在进行的动作，常是客观描述，不带情态色彩；也可表达委婉语气。
 
@@ -704,7 +714,7 @@ if 条件句中，`will` 与条件含义不同：
 
 </details>
 
-### 13.3 will / shall + have done / have been doing
+### will / shall + have done / have been doing
 
 代表例句：Michael will have stayed in Beijing for ten years by November.
 
@@ -722,7 +732,7 @@ if 条件句中，`will` 与条件含义不同：
 
 </details>
 
-### 13.4 be going to + 动词原形
+### be going to + 动词原形
 
 代表例句：We're going to have a meeting over this.
 
@@ -741,7 +751,7 @@ if 条件句中，`will` 与条件含义不同：
 
 </details>
 
-### 13.5 be going to VS will
+### be going to VS will
 
 代表例句：I'm going to be a billionaire. / I will be a billionaire.
 
@@ -759,7 +769,7 @@ if 条件句中，`will` 与条件含义不同：
 
 核心区别：`be going to` 的计划性更强；`will` 的临时性和情态意义更强。
 
-### 13.6 be to / be about to
+### be to / be about to
 
 `be to` 表示受人为意志左右的未来动作；`be about to` 只表示即将发生。
 
@@ -779,7 +789,7 @@ if 条件句中，`will` 与条件含义不同：
 
 </details>
 
-### 13.7 be doing 表示将来
+### be doing 表示将来
 
 代表例句：The train is leaving this afternoon.
 
@@ -796,7 +806,7 @@ if 条件句中，`will` 与条件含义不同：
 
 </details>
 
-### 13.8 其他表示将来的方式
+### 其他表示将来的方式
 
 代表例句：I thought you would leave that afternoon.
 
@@ -817,7 +827,7 @@ if 条件句中，`will` 与条件含义不同：
 
 </details>
 
-## 14. 实践分析：动词类别 + 完成状态
+## 实践分析：动词类别 + 完成状态
 
 截图中的分析文章把动词先归类，再判断完成状态。
 
@@ -840,18 +850,3 @@ if 条件句中，`will` 与条件含义不同：
 | has become | 第四类 + 已完成 |
 
 复习顺序：先判断动词类别，再看时间状语，最后判断体貌带来的完成 / 未完成状态。
-
-## 15. 时态复习卡
-
-| 入口 | 当前已经确认的判断点 |
-| --- | --- |
-| 时、体、貌 | 时态不是中文时间词，而是时间、状态、视角的组合。 |
-| 动词类别 | 第一类状态、第二类活动、第三类过程、第四类瞬间。 |
-| 时间状语 | 时间点、定位时间段、不定位时间段会影响时态选择。 |
-| until | 前面必须是能持续到某个时间点的状态或动作过程。 |
-| 一般现在 | 不完全等于“现在”，常表示静态、习惯、客观存在。 |
-| 一般过去 | 常用过去表达，有时隐含当前否定。 |
-| 进行时 | 不只表示正在进行，还可表达临时、安排、委婉、背景。 |
-| 完成时 | 重点是与观察点的关联，不只是“已经”。 |
-| 完成进行时 | 强调持续过程，第三类动词常表示未完成。 |
-| 将来表达 | 英语没有真正的将来时；will、be going to、be to、be about to、be doing 都可承担将来表达。 |
