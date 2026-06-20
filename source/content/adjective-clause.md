@@ -48,30 +48,92 @@ that = 重复指代 a book，并在从句中作主语
 | 3 | 判断先行词在从句中的成分 | book 在从句中作主语。 |
 | 4 | 选择关系词 | 指物且作主语，可用 that / which。 |
 
-## 定语从句类型与例句
+## 关系词分类总表
 
-主表只放一个代表例句；where / when / why、限制性 / 非限制性等同类多例句，放入后面的例句库和对比例句库。
+定语从句的关系词不要按中文意思背，先按它在从句内部承担的成分分类。截图中的主线可以整理成六类：
 
-| 关系词 | 先行词 | 在从句中作什么 | 截图例句 | 分析 |
-| --- | --- | --- | --- | --- |
-| who | 人 | 主语 | Sally is a teacher who is warm-hearted, hardworking, and quick in learning. | who 在从句中作主语。 |
-| who / whom / that / 不填 | 人 | 动词宾语 | I want to have a friend who/whom/that/不填 I can fully trust. | 关系代词作宾语时，多数可以省略。 |
-| which / that | 物 | 主语或宾语 | He is reading a book that is about human history. | that 代替 book 作从句主语。 |
-| whose | 人或物 | 定语 | I know a doctor whose three sons are all doctors. | whose 修饰 three sons，表示所属关系。 |
-| where | 地点 | 地点状语 | This is the town where I grew up. | 可还原为 I grew up in this town。 |
-| when | 时间 | 时间状语 | I’ll never forget the day when I met you. | 可还原为 I met you on that day。 |
-| why | 原因 | 原因状语 | That is the reason why Sally hates her friend Mary. | 可还原为 Sally hates her friend Mary for that reason。 |
-| 介词 + which / whom | 物 / 人 | 介词宾语 | This is the town in which I grew up. | 介词前置时，指物用 which，指人用 whom。 |
+| 分类 | 关系词 | 从句内部成分 | 先行词 | 能否省略 | 代表例句 |
+| --- | --- | --- | --- | --- | --- |
+| 主语关系代词 | who, which, that | 主语 | 人 / 物 | 不省略 | Sally is a teacher who is warm-hearted. / He is reading a book that is about human history. |
+| 宾语关系代词：动词宾语 | who, whom, which, that, 不填 | 动词宾语 | 人 / 物 | 常可省略 | I want to have a friend who/whom/that/不填 I can fully trust. |
+| 宾语关系代词：介词宾语 | who, whom, which | 介词宾语 | 人 / 物 | 介词前置时不省略 | This is the town in which I grew up. |
+| 状语关系副词 | when, where, why | 时间 / 地点 / 原因状语 | 时间 / 地点 / reason | 不省略 | I’ll never forget the day when I met you. |
+| 定语关系限定词 | whose, which | 修饰从句内部名词 | 人 / 物 / 整件事 | 不省略 | I know a doctor whose three sons are all doctors. |
+| 补语关系代词 | which, that | 主语补语 / 宾语补语 | 多为物或抽象名词 | 通常不省略 | She is no longer the shy girl that she once was. |
 
-### 状语关系副词：where / when / why
+判断口诀：缺主语，用主语关系代词；缺动词宾语，看能否省略；缺介词宾语，看介词是否前置；缺时间、地点、原因，用关系副词；关系词后面还有名词，多半是定语关系限定词；从句里缺“是什么 / 成为什么”这类补足信息，再看补语关系代词。
+
+## 主语关系代词：who / which / that
+
+主语关系代词在定语从句中直接充当主语，从句谓语紧跟关系词。
+
+| 先行词 | 可用关系词 | 例句 | 代回检查 |
+| --- | --- | --- | --- |
+| 人 | who / that | Sally is a teacher who is warm-hearted, hardworking, and quick in learning. | the teacher is warm-hearted |
+| 物 | which / that | He is reading a book that is about human history. | the book is about human history |
+| 人 + 限制性 | who / that | The man who called you is my uncle. | the man called you |
+| 物 + 限制性 | which / that | The flowers which are stolen from Michael have a sweet fragrance. | the flowers are stolen from Michael |
+
+对比：主语关系代词不能随便省略。`The man called you is my uncle.` 会被理解成“那个给你打电话的人”，此时 `called` 已经像过去分词 / 谓语一样进入另一套结构，学习阶段先保留关系词最清楚。
+
+## 宾语关系代词：动词宾语
+
+关系代词如果在从句中作动词宾语，后面通常会出现完整的主语 + 谓语，关系词可以省略。
+
+| 先行词 | 可用关系词 | 例句 | 代回检查 |
+| --- | --- | --- | --- |
+| 人 | who / whom / that / 不填 | I want to have a friend who I can fully trust. | I can fully trust the friend |
+| 人 | who / whom / that / 不填 | I want to have a friend whom I can fully trust. | I can fully trust the friend |
+| 物 | which / that / 不填 | The book that I borrowed from the library was really interesting. | I borrowed the book from the library |
+| 物 | which / that / 不填 | I don’t wear clothes which make me different from other people. | 注意：这里 which 作主语，不可省略；看后面是否直接接谓语 make。 |
+
+对比关键：同一个 `which / that`，作主语时不能省略，作宾语时常可省略。判断时不要看词本身，要看从句内部缺什么。
+
+## 宾语关系代词：介词宾语
+
+先行词如果在从句中进入介词后面，就是介词宾语。介词可以留在句尾，也可以前置。
+
+| 结构 | 可用关系词 | 例句 | 判断 |
+| --- | --- | --- | --- |
+| 介词后置 | who / whom / which / that / 不填 | This is the town which I grew up in. | `in` 留在句尾，which 作 in 的宾语。 |
+| 介词后置 | who / whom / that / 不填 | He is the person I spoke to. | `to` 留在句尾，关系词省略。 |
+| 介词前置 | whom / which | This is the town in which I grew up. | 介词前置时，指物用 which。 |
+| 介词前置 | whom | He is the person to whom I spoke. | 介词前置时，指人正式用 whom。 |
+
+注意：介词前置时不能用 `that`，也不能省略关系词。`in that` 在这里不是定语从句的介词前置形式。
+
+## 状语关系副词：where / when / why
 
 状语关系副词的核心：`where / when / why` 在定语从句中不是名词性成分，而是作状语。它们既是副词，也是连接先行词和从句的关系词。
 
-| 关系副词 | 对应先行词 | 在定语从句中担当的成分 | 常见替换 |
+| 关系副词 | 对应先行词 | 在定语从句中担当的成分 | 常见替换 | 代表例句 |
+| --- | --- | --- | --- | --- |
+| where | 地点名词 | 地点状语 | in / at / on which | This is the town where I grew up. |
+| when | 时间名词 | 时间状语 | in / on / at which | I’ll never forget the day when I met you. |
+| why | reason | 原因状语 | for which | That is the reason why Sally hates her friend Mary. |
+
+## 定语关系限定词：whose / which
+
+定语关系限定词的核心：关系词后面继续接名词，关系词在从句内部修饰这个名词。
+
+| 关系词 | 核心用法 | 代表结构 | 例句 |
 | --- | --- | --- | --- |
-| where | 地点名词 | 地点状语 | in / at / on which |
-| when | 时间名词 | 时间状语 | in / on / at which |
-| why | 原因名词 | 原因状语 | for which |
+| whose | 表示所有格，常用 | whose + 名词 | I know a doctor whose three sons are all doctors. |
+| whose | 也可指物 | whose + 名词 | Sally studies in a school whose students study like machines. |
+| which | 起指示作用，较少见 | which + 名词 | He was late again, which fact made the teacher angry. |
+| of which | 更正式的替换形式 | of which + 名词 / 名词 + of which | Michael lives in a house of which the roof is leaking. |
+
+## 补语关系代词：which / that
+
+补语关系代词对应的是从句内部缺少补足信息，而不是缺普通宾语。核心检验仍然是 Larry 的 `[A is B]`：从句内部能还原出“先行词是什么 / 成为什么 / 被认为是什么”。
+
+| 先行词 | 可用关系词 | 例句 | 代回检查 |
+| --- | --- | --- | --- |
+| 身份 / 状态 | that / which | She is no longer the shy girl that she once was. | she once was the shy girl |
+| 身份 / 状态 | that / which | He became the leader that everyone expected him to be. | everyone expected him to be the leader |
+| 抽象名词 | that / which | This is not the solution that I consider best. | I consider the solution best |
+
+补语关系代词不如主语、宾语、状语关系词常见；遇到时先检查从句里的系动词、宾补动词或 `be` 后是否缺补足信息。
 
 #### where 例句库：地点状语
 
@@ -136,16 +198,6 @@ that = 重复指代 a book，并在从句中作主语
 | --- | --- |
 | Nobody really knows why Sally left for China. | 名词性从句：why 从句作 knows 的宾语。 |
 | Nobody really knows the reason why Sally left for China. | 形容词性从句：why 从句修饰 the reason。 |
-
-### 定语关系限定词：whose / which
-
-定语关系限定词的核心：关系词后面继续接名词，关系词在从句内部修饰这个名词。
-
-| 关系词 | 核心用法 | 代表结构 |
-| --- | --- | --- |
-| whose | 表示所有格，常用 | whose + 名词 |
-| which | 起指示作用，偶见 | which + 名词 |
-| of which | 更正式的替换形式 | of which + 名词 / 名词 + of which |
 
 | 步骤 | 内容 |
 | --- | --- |

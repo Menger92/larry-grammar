@@ -961,10 +961,88 @@ const knowledgeExampleLibrary = [
     ]
   },
   {
+    id: "adj-clause-subject-pronoun",
+    title: "主语关系代词",
+    section: "定语从句",
+    knowledge: "主语关系代词",
+    tags: ["adjective-clause"],
+    level: "基础",
+    sentence: "Sally is a teacher who is warm-hearted.",
+    translation: "Sally 是一位热心的老师。",
+    core: "Sally is a teacher",
+    question: "who 在定语从句中作什么成分？",
+    answer: "who 指代先行词 teacher，在从句 who is warm-hearted 中作主语。",
+    method: "把先行词代回从句：the teacher is warm-hearted。能站在主语位置，就用主语关系代词。",
+    parts: [
+      { text: "Sally", role: "noun", label: "主语" },
+      { text: "is", role: "neutral", label: "系动词" },
+      { text: "a teacher", role: "noun", label: "表语 / 先行词" },
+      { text: "who is warm-hearted", role: "adj", label: "定语从句 / 主语关系代词" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 Sally is a teacher。",
+      "who is warm-hearted 修饰 teacher。",
+      "who 在从句内部作主语，所以属于主语关系代词。"
+    ]
+  },
+  {
+    id: "adj-clause-object-pronoun",
+    title: "宾语关系代词：动词宾语",
+    section: "定语从句",
+    knowledge: "宾语关系代词：动词宾语",
+    tags: ["adjective-clause"],
+    level: "基础",
+    sentence: "I want to have a friend whom I can fully trust.",
+    translation: "我想拥有一个可以完全信任的朋友。",
+    core: "I want to have a friend",
+    question: "whom 在从句中作什么？",
+    answer: "whom 指代 friend，在 I can fully trust whom 中作 trust 的宾语。",
+    method: "关系词后面已有 I can fully trust，主谓完整但 trust 缺对象，所以关系词是动词宾语。",
+    parts: [
+      { text: "I", role: "noun", label: "主语" },
+      { text: "want to have", role: "neutral", label: "谓语" },
+      { text: "a friend", role: "noun", label: "宾语 / 先行词" },
+      { text: "whom I can fully trust", role: "adj", label: "定语从句 / 动词宾语关系代词" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 I want to have a friend。",
+      "whom I can fully trust 修饰 friend。",
+      "whom 在从句中作 trust 的宾语；此类关系词常可省略。"
+    ]
+  },
+  {
+    id: "adj-clause-prep-object-pronoun",
+    title: "宾语关系代词：介词宾语",
+    section: "定语从句",
+    knowledge: "宾语关系代词：介词宾语",
+    tags: ["adjective-clause"],
+    level: "进阶",
+    sentence: "This is the town in which I grew up.",
+    translation: "这就是我长大的那个小镇。",
+    core: "This is the town",
+    question: "in which 为什么属于介词宾语关系？",
+    answer: "which 指代 town，放在介词 in 后面，整体 in which 在从句中作地点状语来源。",
+    method: "还原为 I grew up in the town。先行词进入介词后面，就是介词宾语关系。",
+    parts: [
+      { text: "This", role: "noun", label: "主语" },
+      { text: "is", role: "neutral", label: "系动词" },
+      { text: "the town", role: "noun", label: "表语 / 先行词" },
+      { text: "in which I grew up", role: "adj", label: "定语从句 / 介词宾语关系代词" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 This is the town。",
+      "in which I grew up 修饰 town。",
+      "介词前置时，指物用 which，不用 that，也不能省略。"
+    ]
+  },
+  {
     id: "adj-clause-where-city",
     title: "关系副词 where",
     section: "定语从句",
-    knowledge: "关系副词 where",
+    knowledge: "状语关系副词",
     tags: ["adjective-clause"],
     level: "基础",
     sentence: "This is the city where I grew up.",
@@ -984,6 +1062,59 @@ const knowledgeExampleLibrary = [
       "主干是 This is the city。",
       "where I grew up 回答“哪座城市”。",
       "where 在从句里承担地点状语功能。"
+    ]
+  },
+  {
+    id: "adj-clause-determiner-whose",
+    title: "定语关系限定词",
+    section: "定语从句",
+    knowledge: "定语关系限定词",
+    tags: ["adjective-clause"],
+    level: "基础",
+    sentence: "I know a doctor whose three sons are all doctors.",
+    translation: "我认识一位医生，他的三个儿子都是医生。",
+    core: "I know a doctor",
+    question: "whose 为什么不是普通主语或宾语关系代词？",
+    answer: "whose 后面接 three sons，修饰从句内部名词 sons，所以它是定语关系限定词。",
+    method: "关系词后面如果继续接名词，优先检查它是不是在限定这个名词。",
+    parts: [
+      { text: "I", role: "noun", label: "主语" },
+      { text: "know", role: "neutral", label: "谓语" },
+      { text: "a doctor", role: "noun", label: "宾语 / 先行词" },
+      { text: "whose three sons are all doctors", role: "adj", label: "定语从句 / 定语关系限定词" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 I know a doctor。",
+      "whose three sons are all doctors 修饰 doctor。",
+      "whose 修饰 sons，表示 doctor 与 sons 的所属关系。"
+    ]
+  },
+  {
+    id: "adj-clause-complement-pronoun",
+    title: "补语关系代词",
+    section: "定语从句",
+    knowledge: "补语关系代词",
+    tags: ["adjective-clause", "contrast"],
+    level: "进阶",
+    sentence: "She is no longer the shy girl that she once was.",
+    translation: "她不再是从前那个害羞的女孩了。",
+    core: "She is no longer the shy girl",
+    question: "that 在从句里补的是什么？",
+    answer: "that 指代 the shy girl，在 she once was that 中补足 was 后面的身份内容。",
+    method: "还原为 she once was the shy girl。缺的是系动词后的补足信息，不是普通宾语。",
+    parts: [
+      { text: "She", role: "noun", label: "主语" },
+      { text: "is", role: "neutral", label: "系动词" },
+      { text: "no longer", role: "adv", label: "状语" },
+      { text: "the shy girl", role: "noun", label: "表语 / 先行词" },
+      { text: "that she once was", role: "adj", label: "定语从句 / 补语关系代词" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 She is no longer the shy girl。",
+      "that she once was 修饰 the shy girl。",
+      "that 在从句内部补足 was 后的身份内容，可按补语关系代词理解。"
     ]
   },
   {
