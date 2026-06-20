@@ -2139,40 +2139,19 @@ mark {
     font-size: 17px;
   }
 
+  .function-map-card {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+
   .function-map {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "title"
-      "materials-label"
-      "materials"
-      "simple-label"
-      "workbench"
-      "transformer"
-      "complex-label"
-      "link"
-      "builder"
-      "reading";
-    min-height: 0;
-  }
-
-  .material-card::after,
-  .clause-link::before,
-  .clause-link::after,
-  .nonfinite-transformer::before,
-  .nonfinite-transformer::after {
-    display: none;
-  }
-
-  .clause-link {
-    min-height: 32px;
-  }
-
-  .clause-link span::after {
-    content: " ↓";
+    min-width: 1120px;
+    min-height: 560px;
   }
 
   .sentence-slots {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .steps-list {
@@ -2427,7 +2406,7 @@ mark {
   }
 
   .sentence-slots {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     padding: 10px;
   }
 
