@@ -2140,14 +2140,172 @@ mark {
   }
 
   .function-map-card {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior-x: contain;
+    overflow-x: hidden;
   }
 
   .function-map {
-    min-width: 1120px;
-    min-height: 560px;
+    grid-template-columns: minmax(82px, .9fr) minmax(108px, 1.15fr) 18px minmax(70px, .75fr);
+    gap: 6px;
+    min-width: 0;
+    min-height: 360px;
+    padding: 8px;
+  }
+
+  .map-title {
+    padding-bottom: 0;
+  }
+
+  .map-title strong {
+    font-size: 15px;
+  }
+
+  .map-title span,
+  .material-card span,
+  .material-card em,
+  .simple-workbench span,
+  .clause-builder span,
+  .nonfinite-transformer span,
+  .reading-action span {
+    font-size: 9px;
+    line-height: 1.28;
+  }
+
+  .materials-label,
+  .simple-label,
+  .complex-label {
+    font-size: 10px;
+  }
+
+  .material-stack {
+    gap: 6px;
+  }
+
+  .material-card {
+    min-height: 56px;
+    gap: 3px;
+    padding: 7px 6px 7px 9px;
+    border-left-width: 4px;
+    border-radius: 6px;
+    box-shadow: none;
+  }
+
+  .material-card::after {
+    right: -8px;
+    font-size: 14px;
+  }
+
+  .material-card b,
+  .simple-workbench b,
+  .clause-builder b,
+  .nonfinite-transformer b,
+  .reading-action b {
+    font-size: 11px;
+  }
+
+  .simple-workbench,
+  .clause-builder,
+  .nonfinite-transformer,
+  .reading-action {
+    gap: 5px;
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: none;
+  }
+
+  .sentence-slots {
+    gap: 2px;
+    padding: 4px;
+    border-radius: 6px;
+  }
+
+  .slot {
+    min-height: 24px;
+    border-radius: 5px;
+    font-size: 11px;
+  }
+
+  .slot small {
+    margin-top: 1px;
+    font-size: 7px;
+  }
+
+  .judge-line,
+  .relation-line {
+    gap: 3px;
+    padding: 6px;
+    border-radius: 6px;
+  }
+
+  .judge-line b,
+  .relation-line b {
+    font-size: 10px;
+  }
+
+  .relation-line span {
+    font-size: 9px;
+  }
+
+  .relation-line i,
+  .noun-inline,
+  .adj-inline,
+  .adv-inline {
+    padding: 0 3px;
+    border-radius: 4px;
+  }
+
+  .clause-link {
+    min-height: 28px;
+    font-size: 9px;
+  }
+
+  .clause-link::before {
+    right: 7px;
+    border-top-width: 3px;
+  }
+
+  .clause-link::after {
+    border-top-width: 7px;
+    border-bottom-width: 7px;
+    border-left-width: 9px;
+  }
+
+  .clause-link span {
+    padding: 2px 3px;
+    border-radius: 5px;
+  }
+
+  .clause-builder strong {
+    min-height: 28px;
+    padding: 4px;
+    border-radius: 6px;
+    font-size: 10px;
+  }
+
+  .clause-builder em {
+    font-size: 12px;
+  }
+
+  .nonfinite-transformer {
+    min-height: 54px;
+    border-left-width: 5px;
+  }
+
+  .nonfinite-transformer::before,
+  .nonfinite-transformer::after {
+    font-size: 18px;
+  }
+
+  .nonfinite-transformer::before {
+    top: -17px;
+  }
+
+  .nonfinite-transformer::after {
+    top: -18px;
+    right: 8px;
+  }
+
+  .reading-action {
+    padding: 8px;
   }
 
   .sentence-slots {
@@ -2375,18 +2533,18 @@ mark {
   }
 
   .function-map {
-    gap: 10px;
-    padding: 12px;
+    grid-template-columns: minmax(78px, .9fr) minmax(104px, 1.15fr) 16px minmax(66px, .75fr);
+    gap: 5px;
+    padding: 7px;
   }
 
   .map-title strong {
-    font-size: 21px;
+    font-size: 14px;
   }
 
   .material-card {
-    min-height: 0;
-    padding: 13px 13px 13px 18px;
-    box-shadow: none;
+    min-height: 54px;
+    padding: 6px 5px 6px 8px;
   }
 
   .material-card b,
@@ -2394,25 +2552,24 @@ mark {
   .clause-builder b,
   .nonfinite-transformer b,
   .reading-action b {
-    font-size: 18px;
+    font-size: 10px;
   }
 
   .simple-workbench,
   .clause-builder,
   .nonfinite-transformer,
   .reading-action {
-    padding: 14px;
-    box-shadow: none;
+    padding: 7px;
   }
 
   .sentence-slots {
     grid-template-columns: repeat(6, minmax(0, 1fr));
-    padding: 10px;
+    padding: 3px;
   }
 
   .slot {
-    min-height: 48px;
-    font-size: 19px;
+    min-height: 22px;
+    font-size: 10px;
   }
 
   .table-title {
