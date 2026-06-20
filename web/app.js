@@ -38,7 +38,7 @@ const navGroups = [
   },
   {
     title: "附录与维护",
-    note: "项目使用说明和源文件索引",
+    note: "来源、协议、项目使用说明和源文件索引",
     ids: ["source-index"]
   }
 ];
@@ -961,6 +961,81 @@ const knowledgeExampleLibrary = [
     ]
   },
   {
+    id: "noun-clause-when-subject-sally",
+    title: "when：名词性主语从句",
+    section: "名词性从句",
+    knowledge: "when 名词性从句",
+    tags: ["noun-clause", "contrast"],
+    level: "基础",
+    sentence: "When I met Sally doesn't matter.",
+    translation: "我什么时候遇见 Sally 并不重要。",
+    core: "When I met Sally doesn't matter",
+    question: "When I met Sally 为什么是名词性从句？",
+    answer: "整个 when 从句放在主语位置，后面 doesn't matter 是主句谓语。",
+    method: "先看整块从句占什么位置；占主语位置就是名词性从句。",
+    parts: [
+      { text: "When I met Sally", role: "noun", label: "主语从句" },
+      { text: "doesn't matter", role: "neutral", label: "谓语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干可以看成 Something doesn't matter。",
+      "When I met Sally 整体充当 something。",
+      "when 在从句内部作时间状语，但整个从句在主句中是名词性成分。"
+    ]
+  },
+  {
+    id: "noun-clause-where-predicative-trees",
+    title: "where：名词性表语从句",
+    section: "名词性从句",
+    knowledge: "where 名词性从句",
+    tags: ["noun-clause", "contrast"],
+    level: "基础",
+    sentence: "This is where I plant the trees.",
+    translation: "这就是我种树的地方。",
+    core: "This is where I plant the trees",
+    question: "where I plant the trees 为什么是名词性从句？",
+    answer: "where 从句放在系动词 is 后面，说明 This 的内容，可理解为 the place。",
+    method: "系动词后如果是一整件事或地点内容，先按表语从句 / 主语补语判断。",
+    parts: [
+      { text: "This", role: "noun", label: "主语" },
+      { text: "is", role: "neutral", label: "系动词" },
+      { text: "where I plant the trees", role: "noun", label: "表语从句 / 名词性主语补语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 This is something。",
+      "where I plant the trees 可以替换理解为 the place。",
+      "从句整体做表语 / 主语补语，所以是名词性从句。"
+    ]
+  },
+  {
+    id: "noun-clause-why-object-sally-china",
+    title: "why：名词性宾语从句",
+    section: "名词性从句",
+    knowledge: "why 名词性从句",
+    tags: ["noun-clause", "contrast"],
+    level: "基础",
+    sentence: "Nobody really knows why Sally left for China.",
+    translation: "没人真正知道 Sally 为什么去了中国。",
+    core: "Nobody really knows why Sally left for China",
+    question: "why Sally left for China 做什么成分？",
+    answer: "why 从句整体作 knows 的宾语；why 在从句内部说明 Sally left 的原因。",
+    method: "动词后面接一整件事，先检查是不是宾语从句。",
+    parts: [
+      { text: "Nobody", role: "noun", label: "主语" },
+      { text: "really", role: "adv", label: "状语" },
+      { text: "knows", role: "neutral", label: "谓语" },
+      { text: "why Sally left for China", role: "noun", label: "宾语从句" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 Nobody knows something。",
+      "why Sally left for China 是 knows 的内容。",
+      "整个从句是名词性宾语；why 只是在从句内部作原因状语。"
+    ]
+  },
+  {
     id: "adj-clause-subject-pronoun",
     title: "主语关系代词",
     section: "定语从句",
@@ -1065,6 +1140,87 @@ const knowledgeExampleLibrary = [
     ]
   },
   {
+    id: "adj-clause-where-sunshine-place",
+    title: "where：形容词性从句",
+    section: "定语从句",
+    knowledge: "状语关系副词 where",
+    tags: ["adjective-clause", "contrast"],
+    level: "基础",
+    sentence: "I plant the trees in a place where there's a lot of sunshine.",
+    translation: "我在一个阳光充足的地方种这些树。",
+    core: "I plant the trees in a place",
+    question: "where there's a lot of sunshine 修饰谁？",
+    answer: "where 从句修饰 place，说明是什么样的地方，所以是形容词性从句。",
+    method: "where 前面如果有地点先行词，先检查它是不是在修饰这个名词。",
+    parts: [
+      { text: "I", role: "noun", label: "主语" },
+      { text: "plant", role: "neutral", label: "谓语" },
+      { text: "the trees", role: "noun", label: "宾语" },
+      { text: "in", role: "neutral", label: "介词" },
+      { text: "a place", role: "noun", label: "介词宾语 / 先行词" },
+      { text: "where there's a lot of sunshine", role: "adj", label: "定语从句 / 地点状语关系副词" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 I plant the trees in a place。",
+      "where there's a lot of sunshine 修饰 place。",
+      "整块 in a place where... 作地点状语，但 where 从句本身是修饰 place 的形容词性从句。"
+    ]
+  },
+  {
+    id: "adj-clause-when-day-sally",
+    title: "when：形容词性从句",
+    section: "定语从句",
+    knowledge: "状语关系副词 when",
+    tags: ["adjective-clause", "contrast"],
+    level: "基础",
+    sentence: "September 15, 2018 is the day when I met Sally.",
+    translation: "2018 年 9 月 15 日是我遇见 Sally 的那一天。",
+    core: "September 15, 2018 is the day",
+    question: "when I met Sally 为什么是定语从句？",
+    answer: "when 从句修饰先行词 the day，说明是哪一天。",
+    method: "看到时间名词 + when，先把时间名词代回从句：I met Sally on that day。",
+    parts: [
+      { text: "September 15, 2018", role: "noun", label: "主语" },
+      { text: "is", role: "neutral", label: "系动词" },
+      { text: "the day", role: "noun", label: "名词性主语补语 / 先行词" },
+      { text: "when I met Sally", role: "adj", label: "定语从句 / 时间状语关系副词" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 September 15, 2018 is the day。",
+      "when I met Sally 修饰 the day。",
+      "when 在从句内部作时间状语，不占主语或宾语位置。"
+    ]
+  },
+  {
+    id: "adj-clause-why-reason-sally-china",
+    title: "why：形容词性从句",
+    section: "定语从句",
+    knowledge: "状语关系副词 why",
+    tags: ["adjective-clause", "contrast"],
+    level: "基础",
+    sentence: "Nobody really knows the reason why Sally left for China.",
+    translation: "没人真正知道 Sally 去中国的原因。",
+    core: "Nobody really knows the reason",
+    question: "why Sally left for China 修饰什么？",
+    answer: "why 从句修饰 the reason，说明是哪一个原因，所以是形容词性从句。",
+    method: "why 前面如果有 reason，优先检查它是不是在修饰 reason。",
+    parts: [
+      { text: "Nobody", role: "noun", label: "主语" },
+      { text: "really", role: "adv", label: "状语" },
+      { text: "knows", role: "neutral", label: "谓语" },
+      { text: "the reason", role: "noun", label: "宾语 / 先行词" },
+      { text: "why Sally left for China", role: "adj", label: "定语从句 / 原因状语关系副词" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 Nobody really knows the reason。",
+      "why Sally left for China 修饰 reason。",
+      "如果没有 the reason，Nobody knows why... 中 why 从句就是宾语从句。"
+    ]
+  },
+  {
     id: "adj-clause-determiner-whose",
     title: "定语关系限定词",
     section: "定语从句",
@@ -1141,6 +1297,59 @@ const knowledgeExampleLibrary = [
       "主干是 I stayed home。",
       "because it was raining 给出待在家里的原因。",
       "它不做名词成分，而是修饰整个动作，所以是副词性从句。"
+    ]
+  },
+  {
+    id: "adv-clause-where-sunshine",
+    title: "where：地点状语从句",
+    section: "副词性从句",
+    knowledge: "地点状语从句 where",
+    tags: ["adverbial-clause", "contrast"],
+    level: "基础",
+    sentence: "I plant the trees where there's a lot of sunshine.",
+    translation: "我在阳光充足的地方种这些树。",
+    core: "I plant the trees",
+    question: "where there's a lot of sunshine 修饰什么？",
+    answer: "where 从句直接修饰 plant the trees，说明动作发生的地点。",
+    method: "where 前面没有被修饰的地点名词时，优先检查它是不是地点状语从句。",
+    parts: [
+      { text: "I", role: "noun", label: "主语" },
+      { text: "plant", role: "neutral", label: "谓语" },
+      { text: "the trees", role: "noun", label: "宾语" },
+      { text: "where there's a lot of sunshine", role: "adv", label: "地点状语从句" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 I plant the trees。",
+      "where there's a lot of sunshine 回答“在哪里种”。",
+      "它不修饰某个名词，而是修饰动作，所以是副词性从句。"
+    ]
+  },
+  {
+    id: "adv-clause-when-little-kid",
+    title: "when：时间状语从句",
+    section: "副词性从句",
+    knowledge: "时间状语从句 when",
+    tags: ["adverbial-clause", "contrast"],
+    level: "基础",
+    sentence: "I was only a little kid when I met Sally.",
+    translation: "我遇见 Sally 的时候还只是个小孩。",
+    core: "I was only a little kid",
+    question: "when I met Sally 修饰什么？",
+    answer: "when 从句说明 I was only a little kid 这个状态成立的时间。",
+    method: "副词性从句重点看修饰对象；这里没有修饰 day，而是在限定主句状态。",
+    parts: [
+      { text: "I", role: "noun", label: "主语" },
+      { text: "was", role: "neutral", label: "系动词" },
+      { text: "only", role: "adv", label: "状语" },
+      { text: "a little kid", role: "noun", label: "名词性主语补语" },
+      { text: "when I met Sally", role: "adv", label: "时间状语从句" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "主干是 I was only a little kid。",
+      "when I met Sally 不是修饰 kid，而是说明这个状态发生的时间。",
+      "所以它是副词性从句。"
     ]
   },
   {

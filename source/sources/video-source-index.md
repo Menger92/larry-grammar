@@ -41,14 +41,14 @@
 | 12 | 3.6 形容词性从句（下） | BV1594y1p7AG | `source/content/adjective-clause.md` | 已纳入，后续继续校准例句来源 |
 | 13 | 3.7 副词性从句 | BV1zH4y1m7zp | `source/content/adverbial-clause.md` | 已纳入笔记 |
 | 14 | 4.1 不定式 | BV18u4y147dV | `source/content/nonfinite.md` | 已纳入笔记和截图 |
-| 15 | 4.2 动名词 | BV1y94y1a7cr | `source/content/nonfinite.md` | 已纳入笔记 |
-| 16 | 4.3 分词 | BV1Yw41117Xf | `source/content/nonfinite.md` | 已纳入笔记 |
-| 17 | 4.4 从句和非谓语动词的转换 | BV14p4y1c72s | `source/content/nonfinite.md` | 已纳入笔记 |
+| 15 | 4.2 动名词 | BV1y94y1a7cr | `source/content/nonfinite.md` | 已纳入笔记和截图 |
+| 16 | 4.3 分词 | BV1Yw41117Xf | `source/content/nonfinite.md` | 已纳入笔记和截图 |
+| 17 | 4.4 从句和非谓语动词的转换 | BV14p4y1c72s | `source/content/nonfinite.md` | 已纳入笔记和截图 |
 | 18 | Larry 的语法系列课程，你该怎么学？ | BV1D1421m7o6 | `source/maintenance/project-method.md` | B 级：标题确认，待补画面 |
-| 19 | 英语时态：动词的时、体、貌（上） | BV1Ku4y1j7nv | `source/content/tense.md` | 已按截图补充动词四类、时间状语、until、体貌转化 |
-| 20 | 英语时态：动词的时、体、貌（中） | BV1wz4y1w7AY | `source/content/tense.md` | 已按截图补充一般现在、一般过去、现在进行、过去进行 |
-| 21 | 英语时态：动词的时、体、貌（下） | BV1RC4y1P72K | `source/content/tense.md` | 已按截图补充现在完成、过去完成、完成进行时对比 |
-| 22 | 英语时态详解 | BV1iJ4m1p78e | `source/content/tense.md` | 已按截图补充将来时间表达法 |
+| 19 | 英语时态：动词的时、体、貌（上） | BV1Ku4y1j7nv | `source/content/tense.md` | 已按截图和 PDF 讲义补充动词四类、时间状语、until、体貌转化 |
+| 20 | 英语时态：动词的时、体、貌（中） | BV1wz4y1w7AY | `source/content/tense.md` | 已按截图和 PDF 讲义补充一般现在、一般过去、现在进行、过去进行 |
+| 21 | 英语时态：动词的时、体、貌（下） | BV1RC4y1P72K | `source/content/tense.md` | 已按截图和 PDF 讲义补充现在完成、过去完成、完成进行时对比 |
+| 22 | 英语时态详解 | BV1iJ4m1p78e | `source/content/tense.md` | 已按截图和 PDF 讲义补充将来时间表达法 |
 | 23 | 英语语法回炉指南 | BV13v4y147P4 | `source/maintenance/project-method.md` | B 级：简介确认，待补画面 |
 | 24 | 虚拟语气（1） | BV1X2421N7L1 | `source/content/subjunctive.md` | 已结合公开视频简介、课程安排和截图补充本质、难点、三时态规则、条件虚拟 |
 | 25 | 虚拟语气（2） | BV1dm411R7uG | `source/content/subjunctive.md` | 已按截图补充倒装、交叉时态、无条件、含蓄条件 |
@@ -88,5 +88,5 @@ Markdown 小节中推荐使用：
 
 1. 先按 `source/sources/example-source-audit.md` 校准 V01-V12 中已经写入正文但仍缺来源标记的例句。
 2. 继续为 V13-V17 的笔记图片提炼复习卡和例句来源。
-3. 继续为 V19-V22 时态专题补充原图文件路径；目前内容已按对话截图整理，只有一张手写笔记已落盘。
+3. 继续为 V19-V22 时态专题补充原图文件路径；目前已纳入一张手写笔记和用户上传 PDF 讲义。
 4. 继续为 V24-V28 补充原图文件路径；当前 V24-V26、V27-V28 已按对话截图整理。

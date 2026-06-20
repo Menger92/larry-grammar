@@ -1,24 +1,5 @@
 # 时态
 
-本专题依据 Larry 语法系列 V19-V22 和用户截图整理。维护原则：只纳入视频截图、用户笔记中能确认的规则和例句；未能确认来源的例句不补写。
-
-## 资料来源
-
-| 视频序号 | BV 号 | 标题 | 当前纳入内容 |
-| --- | --- | --- | --- |
-| V19 | BV1Ku4y1j7nv | 英语时态：动词的【时、体、貌】【上】 | 动词四类、时间状语三类、动词体貌转化、until 判断。 |
-| V20 | BV1wz4y1w7AY | 英语时态：动词的【时、体、貌】【中】 | 一般现在、一般过去、现在进行、过去进行、完成体入口。 |
-| V21 | BV1RC4y1P72K | 英语时态：动词的【时、体、貌】【下】 | 现在完成、过去完成、完成进行时、完成体对比。 |
-| V22 | BV1iJ4m1p78e | 英语时态详解 | 将来时间表达法：will / shall、be going to、be to、be about to、be doing 表将来。 |
-
-## 图片索引
-
-| 编号 | 文件 | 来源 | 用途 |
-| --- | --- | --- | --- |
-| 05-00-01 | `assets/时态/05-00_时态_手写笔记01.jpg` | 用户上传图片 | 手写笔记：时 / 体 / 貌入口。 |
-
-说明：本次对话中其余截图已经用于整理规则和例句，但没有对应的本地文件路径；后续如需保留原图，请把图片批量放入 `H:\Larry教材\assets\时态`，再按当前编号继续命名。
-
 ## 本章结论卡
 
 | 项目 | 结论 |
@@ -29,7 +10,7 @@
 | 代表例句 | I wrote a book. / I was writing a book. / I have written a book. |
 | 最易混点 | 形式名称不等于中文时间；过去形式还可能表达委婉或心理距离。 |
 
-## 时态总入口：时、体、貌
+## 核心本质
 
 Larry 的时态入口不是先背中文译名，而是把动词放进三个问题里看：
 
@@ -41,7 +22,33 @@ Larry 的时态入口不是先背中文译名，而是把动词放进三个问�
 
 复习时先问：说话人把动作放在什么观察位置，而不是先问“中文该翻译成什么时态”。
 
-## 四类动词 + 三类时间状语
+## 判断步骤
+
+```text
+找谓语动词 → 判动词类别 → 看时间状语 → 定观察点 → 判体貌状态 → 看语气/语境附加值
+```
+
+| 步骤 | 问题 | 判断结果 |
+| --- | --- | --- |
+| 1 | 句子真正的谓语是谁？ | 只有谓语动词承担时态、人称和语气。 |
+| 2 | 动词属于 states、activities、accomplishments、achievements 哪一类？ | 动词类别会限制能否用进行体、完成体或一般现在。 |
+| 3 | 时间状语是时间点、定位时间段，还是不定位时间段？ | 时间状语决定观察点和完成 / 未完成关系。 |
+| 4 | 说话人从哪个时间点观察动作？ | 现在、过去、过去的过去、将来参照点都不同。 |
+| 5 | 动作被呈现为一般、进行、完成还是完成进行？ | 体貌决定动作是属性、过程、结果还是持续过程。 |
+| 6 | 是否有委婉、主观色彩、计划性或心理距离？ | 时态形式可能表达语气，不一定只表达时间。 |
+
+## 类型速查表
+
+| 类型 | 核心功能 | 判断入口 | 代表例句 |
+| --- | --- | --- | --- |
+| 一般现在时 | 表属性、规律、习惯、当前有效信息 | 是否不受具体时间点限制？ | People die. |
+| 一般过去时 | 把动作或状态放进过去框架 | 是否与现在拉开时间或心理距离？ | I lived in Beijing. |
+| 进行体 | 把动作展开成正在进行或暂时状态 | 是否强调过程、临时性、背景或计划？ | I am writing a book. |
+| 完成体 | 看动作完成后与观察点的关系 | 是否强调结果、经验、延续或先后？ | I have written a book. |
+| 完成进行体 | 同时强调持续过程和观察点 | 是否从过去持续到观察点，终点未必到达？ | I have been writing a book. |
+| 将来时间表达 | 用情态、计划、安排或趋势表达未来 | 是 will、be going to、be to、be doing，还是完成式将来？ | The train is leaving this afternoon. |
+
+## 具体类型：四类动词 + 三类时间状语
 
 时态判断不能只看动词形式，还要看动词本身的类别和时间状语。
 
@@ -53,6 +60,24 @@ Larry 的时态入口不是先背中文译名，而是把动词放进三个问�
 | 第二类动词 | activities | 活动动词；会动，但动作没有明确终点，或起点终点不明确。 | walk, swim, write, read |
 | 第三类动词 | accomplishments | 过程动词；会动，而且有明确动作终点。 | build, persuade, prepare |
 | 第四类动词 | achievements | 瞬间动词；动作在瞬间发生并立即结束。 | kill, drop, catch, arrive |
+
+<details>
+<summary>例句库：四类动词的体貌约束</summary>
+
+| 类别 | 讲义例句 | 判断重点 |
+| --- | --- | --- |
+| 第一类 states | I love you. / Michael doesn't belong here. / Jimmy smokes. / This door opens easily. | 表示状态、属性或习惯，一般不用进行时。 |
+| 第一类 states | I am/was knowing it. / This bag is/was belonging to me. | 原则上不自然，因为状态本身不强调“正在进行”。 |
+| 第一类 states | He lives in Beijing. / He is living in Beijing. | 一般现在偏长期或永久；进行时可表示暂时状态。 |
+| 第二类 activities | I work in Huawei. / Puppies grow fast. | 动作会动，但终点不明确。 |
+| 第二类转第三类 | She read three pages. / He drew a circle. | 宾语或数量把活动量化后，动作有了明确终点。 |
+| 第二类完成对比 | Michael has worked here. / Michael has been working here. | 完成时偏已完成状态；完成进行时偏未完成或持续过程。 |
+| 第三类 accomplishments | They built a house. / He persuaded his friend to go back to school. | 动作自带过程和终点。 |
+| 第三类体貌 | They are building a house. / They have built a house. / They have been building a house. | 进行体看过程未到终点；完成体看终点已经到达；完成进行体看持续过程。 |
+| 第四类 achievements | The accident killed four people. / The bus stopped. | 动作瞬间发生并结束，天然偏已完成。 |
+| 第四类转义 | Sally buys new shoes. / The bombs stopped exploding. | 若表达反复或多个事件，词义会转为活动或过程。 |
+
+</details>
 
 ### 三类时间状语
 
@@ -86,7 +111,7 @@ Larry 的时态入口不是先背中文译名，而是把动词放进三个问�
 
 ## until 判断
 
-来源视频：V19/V20 截图。
+来源资料：V19/V20 截图与 PDF 讲义第 7-8 页。
 
 核心提示：
 
@@ -233,6 +258,35 @@ People die.
 
 形式：`am / is / are + V-ing`。现在进行时不只表示“正在发生”，还常带临时、安排、委婉或主观色彩。
 
+### 眼下正在进行
+
+代表例句：Michael is playing basketball.
+
+<details>
+<summary>例句库：现在进行时表示眼下正在进行</summary>
+
+| 例句 | 复习点 |
+| --- | --- |
+| Michael is playing basketball. | 眼下正在进行的动作。 |
+| Dark clouds are gathering. | 当前正在形成的变化。 |
+| It's raining hard. | 说话时正在发生。 |
+
+</details>
+
+### 现阶段的反复性动作
+
+代表例句：I am studying law. / I study law.
+
+<details>
+<summary>对比例句库：现阶段反复 VS 长期反复</summary>
+
+| 现在进行时 | 一般现在时 | 对比 |
+| --- | --- | --- |
+| I am studying law. | I study law. | 进行时表示现阶段反复；一般现在时表示长期反复或属性。 |
+| Larry is taking vitamin supplements. | Larry takes vitamin supplements. | 进行时更像暂时安排；一般现在时更像长期习惯。 |
+
+</details>
+
 ### 近期计划中的动作
 
 代表例句：President Biden is visiting China next week.
@@ -297,6 +351,22 @@ People die.
 | Michael is doing great in school. | 带赞扬色彩。 |
 | I study in Tsinghua. | 客观描述。 |
 | I am studying in Tsinghua. | 带有主观色彩。 |
+| The predator is killing the prey. | 第四类瞬间动作被拉成过程，语境要求更强。 |
+| Michael has been loving Mary. | 第一类状态动词用完成进行时通常不自然。 |
+| I had been knowing this. | 第一类状态动词用完成进行时通常不自然。 |
+| The bomb will be exploding. | 第四类瞬间动词用将来进行时通常不自然。 |
+
+</details>
+
+<details>
+<summary>对比例句库：一般现在时 VS 现在进行时</summary>
+
+| 对比点 | 一般现在时 | 现在进行时 / 完成体 |
+| --- | --- | --- |
+| 长期反复 VS 暂时反复 | The heater leaks. | The heater is leaking. |
+| 第二类被宾语限定 | I write novels. | I write a novel. / I am writing a novel. / I've written a novel. |
+| 第三类一般现在限制 | They build houses. | They build a house. / They are building a house. |
+| 第四类一般现在限制 | The bomb explodes. (?) | The bombs stopped exploding. (词义转为第三类) |
 
 </details>
 
@@ -378,6 +448,7 @@ People die.
 | 已完成或未完成 | I worked through the night on the report. | I was working through the night on the report. |
 | 强调接连发生 | With the policy changed, new stores opened. | With the policy changed, new stores were opening. |
 | 强调动作渐变 | Night fell, and Larry quickened his steps. | Night was falling, and Larry quickened his steps. |
+| 感情色彩 | Michael couldn't tell why his wife was angry. | Michael couldn't tell why his wife was being angry. |
 | 感情色彩 | I hated everybody around me back then. | I was hating everybody around me back then. |
 
 </details>
@@ -547,6 +618,24 @@ People die.
 
 </details>
 
+### 动作先后顺序判断
+
+过去完成时不是“高级过去式”，它的核心任务是帮助区分过去动作之间的先后顺序。
+
+<details>
+<summary>判断法：过去完成时与动作顺序</summary>
+
+| 场景 | 例句 | 判断 |
+| --- | --- | --- |
+| 并列连词连接 | He took off his overcoat, sank into the chair, and breathed deeply to release the stress of the day. | 动词顺序通常就是动作顺序。 |
+| 从属连词连接 | When the teacher had left the room, the children started talking. | 老师先离开，孩子后说话。 |
+| 从属连词连接 | When the teacher left the room, the children had started talking. | 孩子先开始说话，老师后离开。 |
+| before 连接 | The children had started talking before the teacher left the room. | 过去完成时动作先发生。 |
+| before 连接 | The children started talking before the teacher left the room. | `before` 本身已经表达先后，未必需要过去完成时。 |
+| 其余情况 | He took off his overcoat, sank into the chair, and breathed deeply to release the stress of the day that had weighed on him. | `had weighed` 发生在这些过去动作之前。 |
+
+</details>
+
 ## 现在完成进行时
 
 形式：`have / has been + V-ing`。表示动作在过去某时开始，一直延续到当前说话时刻。
@@ -633,7 +722,7 @@ People die.
 
 ## write 综合判断
 
-视频截图用 `write` 展示：同一个动词和宾语、时态结合后，意义会变得完全不同。
+视频截图和 PDF 讲义用 `write` 展示：同一个动词和宾语、时态结合后，意义会变得完全不同。
 
 代表例句：I wrote a book.
 
@@ -829,7 +918,7 @@ if 条件句中，`will` 与条件含义不同：
 
 ## 实践分析：动词类别 + 完成状态
 
-截图中的分析文章把动词先归类，再判断完成状态。
+PDF 讲义第 18 页的分析文章把动词先归类，再判断完成状态。
 
 | 动词形式 | 视频标注 |
 | --- | --- |
@@ -850,3 +939,35 @@ if 条件句中，`will` 与条件含义不同：
 | has become | 第四类 + 已完成 |
 
 复习顺序：先判断动词类别，再看时间状语，最后判断体貌带来的完成 / 未完成状态。
+
+## 易混对比
+
+| 易混点 | 快速判断 | 典型对照 |
+| --- | --- | --- |
+| 一般现在时 VS 现在进行时 | 一般现在偏长期属性；现在进行偏临时、现阶段或主观色彩。 | I live in Beijing. / I'm living in Beijing. |
+| 一般过去时 VS 现在完成时 | 一般过去只把动作放到过去；现在完成要和现在观察点有关。 | I saw Michael this morning. / I have seen Michael this morning. |
+| 一般过去时 VS 过去完成时 | 过去完成强调“过去的过去”或过去动作先后。 | I did the work at 6. / I had done the work at 6. |
+| 完成时 VS 完成进行时 | 完成时看结果；完成进行时看持续过程，第三类动词差异更明显。 | I've written a book. / I've been writing a book. |
+| will VS be going to | will 更容易带临时决定或情态色彩；be going to 计划性或趋势更强。 | I'll get it for you. / I'm going to get it for you. |
+| be doing 表将来 VS 正在进行 | 第二、第三类动词表将来通常需要未来时间状语。 | He is doing the dishes later. / He is doing the dishes. |
+
+## 经济学人分析提示
+
+经济学人中识别时态时，不要先翻译中文时间，而要先找新闻叙述的观察点：报道事实常用一般现在，背景叙事常用一般过去，结果影响常用现在完成，趋势和预测常用 will / be going to / be likely to 等将来表达。
+
+| 阅读信号 | 重点判断 |
+| --- | --- |
+| 时间状语如 since、over the past decade、by 2030 | 判断定位时间段、包含当前与否、截止观察点。 |
+| 新闻标题或导语的一般现在时 | 多用于当前有效事实、常态判断或新闻标题压缩。 |
+| have / has + done | 问“这个过去动作对现在有什么影响”。 |
+| had + done | 找过去叙事中更早发生的动作。 |
+| is/are being、was/were doing | 看是否在提供背景、临时状态、渐变或主观色彩。 |
+
+## 关联入口
+
+| 关联章节 | 什么时候回看 |
+| --- | --- |
+| [虚拟语气](#subjunctive) | 过去形式不表示过去时间，而表示心理距离或非现实假设时。 |
+| [非谓语](#nonfinite) | `having done`、`to have done`、`being done` 需要判断动作时间和语态时。 |
+| [副词性从句](#adverbial-clause) | when、since、until、before、after 等时间关系影响时态判断时。 |
+| [经济学人分析协议](#source-index) | 需要在 Codex 对话框中输出完整拆句和语法判断时。 |

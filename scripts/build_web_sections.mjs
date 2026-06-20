@@ -5,19 +5,19 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 const sourceFiles = [
-  ["overview", "grammar-overview.md", "语法体系总览", "源文件：source/content/grammar-overview.md"],
-  ["modification-relations", "modification-relations.md", "词性之间的修饰关系", "对应视频：V02｜BV1PG411R75a"],
-  ["simple", "simple-sentence.md", "简单句", "源文件：source/content/simple-sentence.md"],
-  ["clause-overview", "clause-overview.md", "从句总览", "源文件：source/content/clause-overview.md"],
-  ["noun-clause", "noun-clause.md", "名词性从句", "源文件：source/content/noun-clause.md"],
-  ["adjective-clause", "adjective-clause.md", "形容词性从句", "源文件：source/content/adjective-clause.md"],
-  ["adverbial-clause", "adverbial-clause.md", "副词性从句", "源文件：source/content/adverbial-clause.md"],
-  ["nonfinite", "nonfinite.md", "非谓语", "源文件：source/content/nonfinite.md"],
-  ["preposition", "preposition.md", "介词与介词短语", "源文件：source/content/preposition.md"],
-  ["tense", "tense.md", "时态", "源文件：source/content/tense.md"],
-  ["subjunctive", "subjunctive.md", "虚拟语气", "源文件：source/content/subjunctive.md"],
-  ["morphology", "morphology.md", "词法解析", "源文件：source/content/morphology.md"],
-  ["clause-confusions", "clause-confusions.md", "从句易混对比", "源文件：source/content/clause-confusions.md"]
+  ["overview", "grammar-overview.md", "语法体系总览", "功能颜色与体系入口"],
+  ["modification-relations", "modification-relations.md", "词性之间的修饰关系", "词性功能与修饰关系"],
+  ["simple", "simple-sentence.md", "简单句", "主干和句子成分"],
+  ["clause-overview", "clause-overview.md", "从句总览", "从句功能总览"],
+  ["noun-clause", "noun-clause.md", "名词性从句", "名词性位置"],
+  ["adjective-clause", "adjective-clause.md", "形容词性从句", "定语和关系词"],
+  ["adverbial-clause", "adverbial-clause.md", "副词性从句", "逻辑关系和修饰对象"],
+  ["nonfinite", "nonfinite.md", "非谓语", "非谓语形式与功能"],
+  ["preposition", "preposition.md", "介词与介词短语", "介词短语功能"],
+  ["tense", "tense.md", "时态", "时、体、貌"],
+  ["subjunctive", "subjunctive.md", "虚拟语气", "非现实和主观意愿"],
+  ["morphology", "morphology.md", "词法解析", "名词和限定词"],
+  ["clause-confusions", "clause-confusions.md", "从句易混对比", "从句横向辨析"]
 ];
 
 const sourceDir = path.join(root, "source", "content");
@@ -261,7 +261,7 @@ function markdownToHtml(markdown) {
 }
 
 function isProjectNoteText(text) {
-  return /对应视频|来源说明|维护规则|维护原则|笔记图片|补充截图|本专题依据|例句规则|资料来源|图片索引|来源视频：|assets\/|source\/|Markdown|HTML|Word|Excel/.test(text);
+  return /对应视频|来源说明|维护规则|维护原则|笔记图片|补充截图|本专题依据|例句规则|资料来源|资料索引|图片索引|来源视频：|assets\/|source\/|Markdown|HTML|Word|Excel/.test(text);
 }
 
 function isProjectNoteParagraph(line) {
@@ -269,7 +269,7 @@ function isProjectNoteParagraph(line) {
 }
 
 function isProjectNoteHeading(line) {
-  return /^##\s+(资料来源|图片索引)\s*$/.test(line.trim());
+  return /^##\s+(资料来源|资料索引|图片索引)\s*$/.test(line.trim());
 }
 
 function extractProjectNotes(markdown) {
@@ -337,6 +337,16 @@ function sourceNoteToHtml(note) {
 
 function validateChapterStructure(markdown, filename) {
   const summaryCount = (markdown.match(/^## 本章结论卡\s*$/gm) || []).length;
+  const requiredHeadings = [
+    "本章结论卡",
+    "核心本质",
+    "判断步骤",
+    "类型速查表",
+    "具体类型",
+    "易混对比",
+    "经济学人分析提示",
+    "关联入口"
+  ];
   const forbiddenHeadings = [
     "判断与记忆",
     "本章核心",
@@ -348,6 +358,25 @@ function validateChapterStructure(markdown, filename) {
 
   if (summaryCount !== 1) {
     errors.push(`需要且只能有一个“## 本章结论卡”，当前为 ${summaryCount} 个`);
+  }
+
+  const positions = [];
+  for (const heading of requiredHeadings) {
+    const pattern = heading === "具体类型"
+      ? /^##\s+具体类型(?:\s|：|$)/m
+      : new RegExp(`^##\\s+${heading}\\s*$`, "m");
+    const match = pattern.exec(markdown);
+    if (!match) {
+      errors.push(`缺少“## ${heading}”模块`);
+    } else {
+      positions.push({ heading, index: match.index });
+    }
+  }
+
+  for (let i = 1; i < positions.length; i += 1) {
+    if (positions[i].index < positions[i - 1].index) {
+      errors.push(`章节模板顺序错误：“${positions[i].heading}”应位于“${positions[i - 1].heading}”之后`);
+    }
   }
 
   for (const heading of forbiddenHeadings) {
@@ -367,9 +396,9 @@ function validateChapterStructure(markdown, filename) {
 
 function readSection([id, filename, fallbackTitle, meta]) {
   const markdown = fs.readFileSync(path.join(sourceDir, filename), "utf8").replace(/^\uFEFF/, "");
-  validateChapterStructure(markdown, filename);
   const title = /^#\s+(.+)$/m.exec(markdown)?.[1]?.trim() || fallbackTitle;
   const extracted = extractProjectNotes(markdown);
+  validateChapterStructure(extracted.markdown, filename);
   if (extracted.notes.length) {
     sourceNotes.push({ title, filename, notes: extracted.notes });
   }
@@ -385,8 +414,8 @@ const sections = sourceFiles.map(readSection);
 
 sections.push({
   id: "source-index",
-  title: "项目使用与源文件索引",
-  meta: "HTML 当前由 source/content/*.md 生成；更新正文 Markdown 后运行 scripts/build_web_sections.mjs 重新生成。",
+  title: "来源与维护",
+  meta: "来源、维护、协议和项目使用说明集中放在这里，避免打断前面的知识正文。",
   html: `
     <h4 class="table-title">项目使用分工</h4>
     <table>

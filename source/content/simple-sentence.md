@@ -14,7 +14,31 @@
 | 代表例句 | I found the room dirty. |
 | 最易混点 | 宾补说明宾语，主补说明主语；状语只修饰动作、状态或整句。 |
 
-## 句子成分定义表
+## 核心本质
+
+简单句的核心是主干结构：一个核心谓语带出主语、宾语、表语、补语等必要成分，定语和状语再负责扩展信息。先把主干看清，后面从句和非谓语才有落点。
+
+## 判断步骤
+
+| 步骤 | 判断问题 | 结果 |
+| --- | --- | --- |
+| 1 | 找核心谓语 | 判断句子真正动作或系动词。 |
+| 2 | 找主语 | 谁发出动作，或句子谈论谁。 |
+| 3 | 看谓语是否需要宾语、表语或补语 | 决定五大基本句型。 |
+| 4 | 标出定语和状语 | 定语修饰名词，状语修饰动作、状态或整句。 |
+| 5 | 用 A is B 检验补语 | 补语没了，语义会塌。 |
+
+## 类型速查表
+
+| 简单句句型 | 核心结构 | 代表例句 | 判断入口 |
+| --- | --- | --- | --- |
+| SV | 主语 + 谓语 | It happens. | 动词不需要宾语或表语。 |
+| SVP | 主语 + 系动词 + 表语 | Sally is beautiful. | 表语说明主语。 |
+| SVO | 主语 + 谓语 + 宾语 | Cats love fish. | 宾语承受动作。 |
+| SVOO | 主语 + 谓语 + 间宾 + 直宾 | He gave me a gift. | 两个宾语，通常人 + 物。 |
+| SVOC | 主语 + 谓语 + 宾语 + 宾补 | I find the movie interesting. | 宾补补充说明宾语。 |
+
+## 具体类型：句子成分定义表
 
 | 句子成分 | 英文 | 核心含义 | 代表例句 |
 | --- | --- | --- | --- |
@@ -169,3 +193,23 @@ SVOO 和 SVOC 的区分很重要：前者是两个宾语，后者是宾语后面
 | --- | --- |
 | the weary traveler trudged on | Despite the relentless downpour：副词性介词短语，作状语，说明背景条件。<br>with raindrops cascading from the darkened sky：副词性 with 复合结构 / 非谓语结构，整体作状语。<br>his clothes soaked and his spirits dampened：副词性独立主格 / 非谓语结构，补充 traveler 的伴随状态。<br>determined to reach his destination before nightfall：形容词性主语补语，说明 traveler 的状态，可理解为 [the traveler was determined]。<br>where warmth and shelter awaited him：形容词性非限制性定语从句，修饰 destination。<br>providing solace from the tempestuous elements that assailed him along the treacherous path：副词性非谓语结构；that assailed... 是定语从句，修饰 elements。 |
 | a sense of tranquility enveloped the meadow | As the sun began its descent：副词性从句，作状语，说明时间背景。<br>casting a golden hue across the horizon：副词性非谓语结构，作状语，补充伴随画面。<br>while an orchestra of chirping birds, buzzing insects, and rustling leaves orchestrated a symphony of nature：副词性从句，作状语，补充同时发生的背景。<br>creating a serene ambiance：副词性非谓语结构，作状语，说明前面情景带来的结果。<br>that transported the weary soul to a realm of blissful respite：形容词性定语从句，修饰 ambiance。 |
+
+## 易混对比
+
+| 易混点 | 判断法 |
+| --- | --- |
+| 宾补 VS 状语 | 宾语和后面成分能构成 A is B，多半是宾补；不能构成，多半是状语。 |
+| 主系表 VS 主谓宾 | 系动词后是说明主语的表语，不是动作承受者。 |
+| SVOO VS SVOC | 双宾语是“给谁什么”；宾补是“让宾语变成什么/处于什么状态”。 |
+
+## 经济学人分析提示
+
+经济学人中怎么识别：长句再复杂，也先找唯一核心谓语和五大基本句型；大量修饰语可以暂时盖住，主干不能丢。
+
+## 关联入口
+
+| 入口 | 用途 |
+| --- | --- |
+| [从句总览](#clause-overview) | 简单句扩展成主从结构时。 |
+| [非谓语](#nonfinite) | 非谓语作主语、宾语、定语、状语、补语时。 |
+| [时态](#tense) | 核心谓语承担时态判断时。 |

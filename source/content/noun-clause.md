@@ -12,7 +12,30 @@
 | 代表例句 | What she said about the incident surprised everyone. |
 | 最易混点 | that 只连接时不作成分；what 既连接，又在从句内部作名词性成分。 |
 
-## 名词性从句的四个位置
+## 核心本质
+
+名词性从句就是用一个完整句子去替代名词性位置。它可以作主语、宾语、表语、同位语；判断时不要先背连接词，先看它占了哪个名词位置。
+
+## 判断步骤
+
+| 步骤 | 判断问题 | 结果 |
+| --- | --- | --- |
+| 1 | 从句整体占什么位置？ | 主语、宾语、表语或同位语。 |
+| 2 | 从句内部是不是完整主谓结构？ | 确认它确实是从句。 |
+| 3 | 连接词在从句内部作不作成分？ | that 不作成分；what/which/who 等可作成分。 |
+| 4 | 是否需要形式主语或形式宾语 it？ | 句子过重时后置真正从句。 |
+| 5 | whether / if 能否替换？ | 根据位置和搭配判断。 |
+
+## 类型速查表
+
+| 位置 | 功能颜色 | 代表例句 | 判断入口 |
+| --- | --- | --- | --- |
+| 主语从句 | 红色 | What she said surprised everyone. | 整个从句作主语。 |
+| 宾语从句 | 红色 | I don't know what your name is. | 整个从句作宾语。 |
+| 表语从句 | 红色 | The problem is that he lied. | 系动词后说明主语内容。 |
+| 同位语从句 | 红色 | The news that they won spread quickly. | 解释抽象名词内容。 |
+
+## 具体类型：名词性从句的四个位置
 
 | 简单句中的名词位置 | 换成从句后的功能 | 从句类型 |
 | --- | --- | --- |
@@ -84,6 +107,7 @@
 | What you decide will greatly impact our future. | you decide what → What do you decide? | What you decide 整体作主语；what 在从句中作 decide 的宾语。 |
 | Whether he is guilty or innocent remains to be seen. | he is guilty or innocent → Is he guilty or innocent? | Whether he is guilty or innocent 整体作主语；whether 表“一般疑问句的不确定性”。 |
 | How we handle this situation is crucial for our success. | we handle this situation how → How do we handle this situation? | How we handle this situation 整体作主语；how 在从句中作方式状语。 |
+| When I met Sally doesn’t matter. | I met Sally when → When did I meet Sally? | When I met Sally 整体作主语；when 在从句内部作时间状语。 |
 
 </details>
 
@@ -100,6 +124,7 @@
 | --- | --- | --- |
 | She believes that education is the key to a better world. | education is the key to a better world | that education... 作 believes 的宾语；that 只连接，不作成分。 |
 | I wonder why he did not show up at the meeting. | he did not show up at the meeting why → Why did he not show up at the meeting? | why he did not show up... 作 wonder 的宾语；why 在从句中作原因状语。 |
+| Nobody really knows why Sally left for China. | Sally left for China why → Why did Sally leave for China? | why Sally left for China 作 knows 的宾语；why 在从句内部作原因状语。 |
 | Can you explain how this machine works? | this machine works how → How does this machine work? | how this machine works 作 explain 的宾语；how 在从句中作方式状语。 |
 
 </details>
@@ -118,6 +143,8 @@
 | His dream is that he becomes a successful entrepreneur. | he becomes a successful entrepreneur | that he becomes... 作表语 / 主语补语，说明 dream 的内容。 |
 | The problem seems to be that we lack proper communication. | we lack proper communication | that we lack... 作表语 / 主语补语，说明 problem 的内容。 |
 | The truth is that we all make mistakes. | we all make mistakes | that we all make mistakes 作表语 / 主语补语，说明 truth 的内容。 |
+| This is where I plant the trees. | I plant the trees where → Where do I plant the trees? | where I plant the trees 作表语 / 主语补语，可替换理解为 the place。 |
+| September 15, 2018 is when I met Sally. | I met Sally when → When did I meet Sally? | when I met Sally 作表语 / 主语补语，说明日期内容。 |
 
 </details>
 
@@ -230,7 +257,7 @@ whether 和 if 都可以表示“是否”，但 whether 更稳定，适用范�
 | 不定式前 | whether to do | if to do | She couldn't decide whether to go to the movie or not. |
 | 明确二选一 / 带 or not | whether | if 需谨慎 | You must decide whether you want to study abroad or stay at home. |
 | 主语从句 | whether | if | Whether Sally is beautiful doesn't matter. |
-| 表语从句 | whether | if | 待补充截图例句 |
+| 表语从句 | whether | if | 待补充例句 |
 | 普通宾语从句 | whether / if 都可 | - | You must decide whether you want to study abroad or stay at home. |
 
 ## 名词性从句连接词速查
@@ -252,5 +279,20 @@ whether 和 if 都可以表示“是否”，但 whether 更稳定，适用范�
 | that vs what | that 只连接，不作成分 | what 既连接，也在从句里作成分 | 看从句是否缺主语、宾语或表语。 |
 | whether vs if | whether 更正式，可用于主语从句、表语从句、介词后、不定式前 | if 多用于宾语从句 | 位置越正式，越优先用 whether。 |
 | 同位语从句 vs 定语从句 | 解释抽象名词的内容 | 修饰限定名词的范围 | 看从句是在解释“内容”，还是限定“哪一个”。 |
+| where / when / why | 可以引导名词性从句，占主语、宾语或表语位置 | 也可能在形容词性从句中修饰地点、时间或 reason | 先看整个从句是否占名词位置；不要只按连接词判断类型。 |
 
-关联入口：同一名词位置由 `to do / doing` 承担时见[非谓语](#nonfinite)；名词性从句出现在介词后时，同时见[介词](#preposition)。
+## 易混对比
+
+| 易混点 | 判断法 |
+| --- | --- |
+| 同位语从句 VS 定语从句 | 同位语从句解释名词内容；定语从句修饰、筛选或补充先行词。 |
+| what VS that | what 在从句中作成分；that 只连接，不作成分。 |
+| whether VS if | 介词后、主语从句、同位语从句通常用 whether。 |
+
+## 经济学人分析提示
+
+经济学人中怎么识别：看到 that / whether / what 引出的长块，先看它是不是被动词、介词、系动词或抽象名词需要；如果整体能替换成 this thing，多半是名词性从句。
+
+## 关联入口
+
+同一名词位置由 `to do / doing` 承担时见[非谓语](#nonfinite)；名词性从句出现在介词后时，同时见[介词](#preposition)。

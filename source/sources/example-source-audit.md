@@ -1,10 +1,10 @@
 # 例句来源审计表
 
-本文件用于管理项目中的例句来源。它不替代正文讲义，只负责回答一个问题：某个例句是否已经有视频画面、用户截图或用户笔记作为依据。
+本文件用于管理项目中的例句来源。它不替代正文讲义，只负责回答一个问题：某个例句是否已经有视频画面、用户截图、用户笔记或用户上传讲义作为依据。
 
 ## 1. 审计原则
 
-1. 正文例句优先使用 A 级证据：视频画面、用户截图、用户笔记。
+1. 正文例句优先使用 A 级证据：视频画面、用户截图、用户笔记、用户上传讲义。
 2. 已经写入正文但暂时没有明确来源的例句，先进入“待校准”区，不继续扩写。
 3. 后续更新时，如果没有截图或视频画面支撑，只写规则入口，不新增具体例句。
 4. HTML 生成前，优先处理本文件中的 P1 条目。
@@ -21,23 +21,23 @@
 | V20 视频画面 | I was not playing video games until 12 o'clock. | `source/content/tense.md` | 已确认 |
 | V21 视频画面 | They built a house. | `source/content/tense.md` | 已确认 |
 | V21 视频画面 | He persuaded his friend to go back to school. | `source/content/tense.md` | 已确认 |
-| V19-V22 用户截图 | 本轮 `source/content/tense.md` 中新增的时态规则和例句 | `source/content/tense.md` | 已确认，集中来源为用户本轮截图 |
-| V19-V22 用户截图 | People die. | `source/content/tense.md` | 已确认 |
-| V19-V22 用户截图 | I write a book. | `source/content/tense.md` | 已确认为错误例句 |
-| V19-V22 用户截图 | I write books. | `source/content/tense.md` | 已确认 |
-| V19-V22 用户截图 | He played basketball with his friends every Sunday. | `source/content/tense.md` | 已确认 |
-| V19-V22 用户截图 | President Biden is visiting China next week. | `source/content/tense.md` | 已确认 |
-| V19-V22 用户截图 | She was shouting like mad when we got in. | `source/content/tense.md` | 已确认 |
-| V19-V22 用户截图 | He has turned off the light. | `source/content/tense.md` | 已确认 |
-| V19-V22 用户截图 | I haven't seen him since yesterday. | `source/content/tense.md` | 已确认 |
-| V19-V22 用户截图 | It's the first time I've been here. | `source/content/tense.md` | 已确认 |
-| V19-V22 用户截图 | When I got to the station, the train had gone. | `source/content/tense.md` | 已确认 |
-| V19-V22 用户截图 | He has been learning English for years. | `source/content/tense.md` | 已确认 |
-| V19-V22 用户截图 | He had been learning English for years. | `source/content/tense.md` | 已确认 |
-| V19-V22 用户截图 | I will leave for America next month. | `source/content/tense.md` | 已确认 |
-| V19-V22 用户截图 | We're going to have a meeting over this. | `source/content/tense.md` | 已确认 |
-| V19-V22 用户截图 | Nobody is to leave this room. | `source/content/tense.md` | 已确认 |
-| V19-V22 用户截图 | The train is leaving this afternoon. | `source/content/tense.md` | 已确认 |
+| V19-V22 用户截图 / PDF 讲义 | 本轮 `source/content/tense.md` 中新增的时态规则和例句 | `source/content/tense.md` | 已确认，集中来源为用户截图与 `assets/时态/Larry的语法课_时态_讲义.pdf` |
+| V19-V22 用户截图 / PDF 讲义 | People die. | `source/content/tense.md` | 已确认 |
+| V19-V22 用户截图 / PDF 讲义 | I write a book. | `source/content/tense.md` | 已确认为错误例句 |
+| V19-V22 用户截图 / PDF 讲义 | I write books. | `source/content/tense.md` | 已确认 |
+| V19-V22 用户截图 / PDF 讲义 | He played basketball with his friends every Sunday. | `source/content/tense.md` | 已确认 |
+| V19-V22 用户截图 / PDF 讲义 | President Biden is visiting China next week. | `source/content/tense.md` | 已确认 |
+| V19-V22 用户截图 / PDF 讲义 | She was shouting like mad when we got in. | `source/content/tense.md` | 已确认 |
+| V19-V22 用户截图 / PDF 讲义 | He has turned off the light. | `source/content/tense.md` | 已确认 |
+| V19-V22 用户截图 / PDF 讲义 | I haven't seen him since yesterday. | `source/content/tense.md` | 已确认 |
+| V19-V22 用户截图 / PDF 讲义 | It's the first time I've been here. | `source/content/tense.md` | 已确认 |
+| V19-V22 用户截图 / PDF 讲义 | When I got to the station, the train had gone. | `source/content/tense.md` | 已确认 |
+| V19-V22 用户截图 / PDF 讲义 | He has been learning English for years. | `source/content/tense.md` | 已确认 |
+| V19-V22 用户截图 / PDF 讲义 | He had been learning English for years. | `source/content/tense.md` | 已确认 |
+| V19-V22 用户截图 / PDF 讲义 | I will leave for America next month. | `source/content/tense.md` | 已确认 |
+| V19-V22 用户截图 / PDF 讲义 | We're going to have a meeting over this. | `source/content/tense.md` | 已确认 |
+| V19-V22 用户截图 / PDF 讲义 | Nobody is to leave this room. | `source/content/tense.md` | 已确认 |
+| V19-V22 用户截图 / PDF 讲义 | The train is leaving this afternoon. | `source/content/tense.md` | 已确认 |
 | V24-V26 用户截图 | If I can help you, I will definitely do so. / If I could help you, I would definitely do so. | `source/content/subjunctive.md` | 已确认，用于真实条件句 VS 非真实条件句 |
 | V24-V26 用户截图 | If Apple wanted me, I would consider it. | `source/content/subjunctive.md` | 已确认，用于将来假设 |
 | V24-V26 用户截图 | If we had five million, we could buy a house outright. | `source/content/subjunctive.md` | 已确认，用于现在假设 |
@@ -167,6 +167,174 @@
 | V14 用户笔记 | I need a pen to write with. | `source/content/nonfinite.md` | 已确认 |
 | V14 用户笔记 | Sally will be proud to win the competition. | `source/content/nonfinite.md` | 已确认 |
 | V14 用户笔记 | She found it impossible to leave home. | `source/content/nonfinite.md` | 已确认 |
+| V14 用户截图 | Sally will be proud for her sister to win the competition. | `source/content/nonfinite.md` | 已确认 |
+| V14 用户截图 | It's very wise for us not to argue with the teacher. | `source/content/nonfinite.md` | 已确认 |
+| V14 用户截图 | It's very wise of Michael not to argue with the teacher. | `source/content/nonfinite.md` | 已确认 |
+| V14 用户截图 | I need a bed to sleep in. | `source/content/nonfinite.md` | 已确认 |
+| V14 用户截图 | Michael is the best person to consult about the matter with. | `source/content/nonfinite.md` | 已确认；正文注明 consult 的两种搭配路线 |
+| V14 用户截图 | I hope to visit Beijing someday. | `source/content/nonfinite.md` | 已确认 |
+| V14 用户截图 | I'm sorry to have troubled you so much. | `source/content/nonfinite.md` | 已确认 |
+| V14 用户截图 | They were said to be making a new experiment. | `source/content/nonfinite.md` | 已确认 |
+| V14 用户截图 | The problem remains to be further discussed. | `source/content/nonfinite.md` | 已确认 |
+| V14 用户截图 | It is an honor for me to have been invited to the meeting. | `source/content/nonfinite.md` | 已确认 |
+| V14 用户截图 | I want this job to be done! | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Learning English is easy. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Talking to him is nice. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | It's nice talking to him. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Using a language is not easy. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | It's not easy using a language. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | It's no use talking to him. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | It's not much use buying a car. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | It's a waste of time trying to explain. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | There is no use arguing with him. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | There is no point in doing that. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | There is no telling what will happen tomorrow. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Larry suggests playing basketball. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Sally admitted taking the money. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | You should avoid eating too much. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | I hate lying and cheating. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | She insisted on paying for it. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Sally couldn't keep from laughing. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Michael thought of writing to me. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Have you ever dreamed of becoming an astronaut? | `source/content/nonfinite.md` | 已确认；截图冠词按语法更正为 an |
+| V15 用户截图 | I look forward to leaving this town and starting a new life. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | I am not used to driving fast. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | I used to drive fast. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | I once had a hard time getting used to living in Beijing. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | This book is worth reading. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Talking to him is talking to a wall. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Sally's hobby is painting. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Seeing is believing. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | a sleeping bed / a reading room / a swimming pool / a washing machine | `source/content/nonfinite.md` | 已确认，用于动名词作定语 |
+| V15 用户截图 | a flying jacket | `source/content/nonfinite.md` | 已确认，用于动名词定语和分词定语对比 |
+| V15 用户截图 | a flying bird | `source/content/nonfinite.md` | 已确认，用于动名词 VS 分词最小对照 |
+| V15 用户截图 | a swimming pool | `source/content/nonfinite.md` | 已确认，用于动名词 VS 分词最小对照 |
+| V15 用户截图 | a swimming duck | `source/content/nonfinite.md` | 已确认，用于动名词 VS 分词最小对照 |
+| V15 用户截图 | Sally insisted on reading the letter. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Sally insisted on my reading the letter. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Her going off in such a hurry is strange. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | I'm not happy about Michael's forgetting to pay. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | I remember him doing this before. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | I remember being taken to Beijing when I was a little kid. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Sally hates being called "a beauty". | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | I'm not used to being treated like that. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | He denied having been there. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | I could not remember having heard anyone say that before. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | She admits having seen us. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | I appreciate having been given the chance to study abroad. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | The garden needs watering. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Your hair wants cutting. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | He deserves shooting first. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | He deserves to shoot first. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | I like playing basketball. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | I like to play basketball. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | He hates drinking. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | He hates to drink. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Being invited to the party made Michael happy. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | It would make Michael happy to be invited to the party. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | She decided to avoid eating sugary foods. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Michael admitted stealing the money. | `source/content/nonfinite.md` | 已确认；截图按时态和主谓一致更正 |
+| V15 用户截图 | We can't afford to buy such an expensive house. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | They chose to pay a visit to America. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Prices continue to rise. / Prices continue rising. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Sally stopped crying. / Sally stopped to cry. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | Remember to mail this letter tomorrow. / I don't remember mailing the letter. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | I hate to trouble you. / I hate troubling you. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | I cannot help to repair the car. / I cannot help laughing. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | a sinking ship | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | falling leaves | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | the rising sun | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | a sleeping dog | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | The girl standing at the door is my classmate Sally. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | The little girl smiling at me is really lovable. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | a puzzling problem | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | an understanding man | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | a broken cup | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | a respected writer | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | a trained dog | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | a sunken ship | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | a married man | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | returned students | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | Waiting for a bus, a little cat walked to me. | `source/content/nonfinite.md` | 已确认为悬垂分词问题句 |
+| V16 用户截图 | Waiting for a bus, I saw a little cat walk to me. | `source/content/nonfinite.md` | 已确认，为修正句 |
+| V16 用户截图 | After doing my homework, the room was cleaned. | `source/content/nonfinite.md` | 已确认为悬垂分词问题句 |
+| V16 用户截图 | After doing my homework, I cleaned the room. | `source/content/nonfinite.md` | 已确认，为修正句 |
+| V16 用户截图 | When using the computer, the password must be remembered. | `source/content/nonfinite.md` | 已确认为悬垂分词问题句 |
+| V16 用户截图 | When using the computer, we have to remember the password. | `source/content/nonfinite.md` | 已确认，为修正句 |
+| V16 用户截图 | Nobody having anymore to say, the meeting was closed. | `source/content/nonfinite.md` | 已确认，独立分词结构 |
+| V16 用户截图 | All the money spent, we started looking for work. | `source/content/nonfinite.md` | 已确认，独立分词结构 |
+| V16 用户截图 | Weather permitting, we'll go fishing tomorrow. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | The old man often takes a walk after dinner with his dog following him. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | A car drove by, with smoke pouring from its behind. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | Generally speaking, men are stronger than women. | `source/content/nonfinite.md` | 已确认，固定结构 |
+| V16 用户截图 | Strictly speaking, girls are smarter than boys. | `source/content/nonfinite.md` | 已确认，固定结构 |
+| V16 用户截图 | Judging from what he has done, he is a lazy student. | `source/content/nonfinite.md` | 已确认，固定结构 |
+| V16 用户截图 | Talking of English, she is the best student. | `source/content/nonfinite.md` | 已确认，固定结构 |
+| V16 用户截图 | Considering she has no experience, she has done a good job. | `source/content/nonfinite.md` | 已确认，固定结构 |
+| V16 用户截图 | Granting that he has made a mistake, he is not to blame. | `source/content/nonfinite.md` | 已确认，固定结构 |
+| V16 用户截图 | Given more time, we could have done better. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | Once installed, this machine operates automatically. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | Locking the door, he went home. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | Hearing the joke, he started laughing. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | Being busy, he will not come today. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | Not knowing what to do next, I need your advice. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | Having been abroad for years, he still can't speak English. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | Although understanding no Chinese, he was able to communicate. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | Her husband died, leaving her with two children. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | He fired, killing an enemy. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | When waiting for the bus, I saw a little cat walk to me. | `source/content/nonfinite.md` | 已确认，保留连接词 |
+| V16 用户截图 | Although living in America, Sally knows a lot about China. | `source/content/nonfinite.md` | 已确认，保留连接词 |
+| V16 用户截图 | If seen from far away, the sheep looks like a dog. | `source/content/nonfinite.md` | 已确认，保留连接词 |
+| V16 用户截图 | After having done her homework, Sally went home. | `source/content/nonfinite.md` | 已确认，保留连接词 |
+| V16 用户截图 | This is humiliating. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | What he says sounds more convincing. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | Things are always complicated. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | She is deeply read in literature. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | singing birds / buzzing bees / dancing flames / flowing river / barking dogs / developing countries | `source/content/nonfinite.md` | 已确认，现在分词作定语 |
+| V16 用户截图 | on the following day / on the day following | `source/content/nonfinite.md` | 已确认，分词定语位置对比 |
+| V16 用户截图 | She has no living parents. / She has no parents living. | `source/content/nonfinite.md` | 已确认，分词定语位置对比 |
+| V16 用户截图 | The arriving train is from Beijing. / The train arriving by eight is from Beijing. | `source/content/nonfinite.md` | 已确认，句末重心 |
+| V16 用户截图 | The stolen car was found abandoned in a nearby alley. / The car stolen from the factory was found abandoned in a nearby alley. | `source/content/nonfinite.md` | 已确认，句末重心 |
+| V16 用户截图 | published writings / a charmed girl / a moved object / boiled water | `source/content/nonfinite.md` | 已确认，及物动词过去分词作定语 |
+| V16 用户截图 | faded roses / a sunken boat / fallen leaves / the frozen lake | `source/content/nonfinite.md` | 已确认，不及物动词过去分词作定语 |
+| V16 用户截图 | The built house is beautiful. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | The house being built is beautiful. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | The house to be built will be beautiful. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | I heard Sally singing last night. | `source/content/nonfinite.md` | 已确认，SVOC 结构 |
+| V16 用户截图 | We saw the sun rising from behind the trees. | `source/content/nonfinite.md` | 已确认，SVOC 结构 |
+| V16 用户截图 | I can smell something burning. | `source/content/nonfinite.md` | 已确认，SVOC 结构 |
+| V16 用户截图 | I saw Michael climb up the tree. / I saw Michael climbing up the tree. | `source/content/nonfinite.md` | 已确认，不定式补足语 VS 分词补足语 |
+| V16 用户截图 | Having sung a song, he sat down. / Singing a song, he sat down. | `source/content/nonfinite.md` | 已确认，一般式 VS 完成式 |
+| V16 用户截图 | Having eaten the hamburger, he went out. / Eating the hamburger, he went out. | `source/content/nonfinite.md` | 已确认，一般式 VS 完成式 |
+| V16 用户截图 | Chinese children grown in the US speak good English. | `source/content/nonfinite.md` | 已确认为 grow 用法问题句 |
+| V16 用户截图 | Chinese children raised in the US speak good English. | `source/content/nonfinite.md` | 已确认，为修正句 |
+| V16 用户截图 | Chinese children who grow up in the US speak good English. | `source/content/nonfinite.md` | 已确认，为修正句 |
+| V17 用户截图 | I don't know that he is a transsexual. / I don't know his being a transsexual. | `source/content/nonfinite.md` | 已确认，名词性从句转动名词短语 |
+| V17 用户截图 | Whether he is a transsexual or not doesn't matter. / His being a transsexual or not doesn't matter. | `source/content/nonfinite.md` | 已确认，名词性从句转动名词短语 |
+| V17 用户截图 | The problem is what he is. / The problem is his identity. | `source/content/nonfinite.md` | 已确认，名词性从句转名词短语 |
+| V17 用户截图 | What you decide will greatly impact our future. / Your decision will greatly impact our future. | `source/content/nonfinite.md` | 已确认，名词性从句转名词短语 |
+| V17 用户截图 | His dream is that he becomes a successful entrepreneur. / His dream is to become a successful entrepreneur. | `source/content/nonfinite.md` | 已确认，名词性从句转不定式 |
+| V17 用户截图 | We need a teacher who is warm-hearted, hardworking, and quick in learning. | `source/content/nonfinite.md` | 已确认，形容词性从句转换 |
+| V17 用户截图 | We need a warm-hearted, hard-working, and fast-learning teacher. | `source/content/nonfinite.md` | 已确认，形容词短语转换 |
+| V17 用户截图 | Michael likes friends who are always ready to help. / Michael likes ready-to-help friends. | `source/content/nonfinite.md` | 已确认，形容词性从句转形容词化短语 |
+| V17 用户截图 | I like the flowers that are on the table. / I like the flowers on the table. | `source/content/nonfinite.md` | 已确认，形容词性从句转介词短语 |
+| V17 用户截图 | In Fujian there exist certain traditions that people accustomed to Northern ways of thinking find strange. | `source/content/nonfinite.md` | 已确认，形容词性从句转换 |
+| V17 用户截图 | When I opened the window, the cat jumped out. / With my opening the window, the cat jumped out. | `source/content/nonfinite.md` | 已确认，副词性从句转介词 + 动名词 |
+| V17 用户截图 | People plant trees where there is a lot of sunshine. / People plant trees in sunlit places. | `source/content/nonfinite.md` | 已确认，地点从句转介词短语 |
+| V17 用户截图 | I opened the window so that the cat jumped out. / I opened the window, the cat jumping out. | `source/content/nonfinite.md` | 已确认，结果从句转分词结构 |
+| V17 用户截图 | I opened the window so that the cat could jump out. / I opened the window, the cat being able to jump out. | `source/content/nonfinite.md` | 已确认，目的从句转分词结构，正文注明不如从句自然 |
+| V17 用户截图 | If you heat water, you can change it into steam. / Heating water, you can change it into steam. | `source/content/nonfinite.md` | 已确认，条件从句转分词状语 |
+| V17 用户截图 | Though I opened the window, the cat didn't jump out. / Despite my opening the window, the cat didn't jump out. | `source/content/nonfinite.md` | 已确认，让步从句转介词短语 |
+| V17 用户截图 | He raised his head as though he was going to command silence. / He raised his head as though to command silence. | `source/content/nonfinite.md` | 已确认，方式从句转 as though + 不定式 |
+| V17 用户截图 | To hear him sing, you might take him for a girl. | `source/content/nonfinite.md` | 已确认，非谓语语义不如从句明确 |
+| V17 用户截图 | If you hear him sing, you might take him for a girl. | `source/content/nonfinite.md` | 已确认，条件从句更明确 |
+| V17 用户截图 | When you hear him sing, you might take him for a girl. | `source/content/nonfinite.md` | 已确认，时间从句更明确 |
+| V17 用户截图 | Finding the door locked, I went home. / Because I found the door locked, I went home. | `source/content/nonfinite.md` | 已确认，分词位置和语义 |
+| V17 用户截图 | I went home, finding the door locked. / I went home, and I found the door locked. | `source/content/nonfinite.md` | 已确认，分词位置和语义 |
+| V17 用户截图 | After having finished her presentation, she felt relieved that all her hard work had paid off and that she had effectively conveyed her message to the audience. | `source/content/nonfinite.md` | 已确认，从句和非谓语混用 |
+| V17 用户截图 | Despite the doctor's advice to rest, she insisted on going to work, fearing that her absence would create a backlog of tasks that needed her attention. | `source/content/nonfinite.md` | 已确认，从句和非谓语混用 |
+| V17 用户截图 | After years of practicing martial arts, he had developed a strong sense of discipline and self-control, which benefited him not only in physical combat but also in other aspects of life. | `source/content/nonfinite.md` | 已确认，从句和非谓语混用 |
+| V17 用户截图 | Despite having studied diligently for the exam, she couldn't shake off the feeling of anxiety, wondering if she had prepared enough to achieve a good score. | `source/content/nonfinite.md` | 已确认，从句和非谓语混用 |
 
 ## 3. 待校准例句区
 

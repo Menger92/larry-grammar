@@ -12,7 +12,28 @@
 | 代表例句 | `[What she said about the incident] surprised everyone.` |
 | 最易混点 | 从句整体功能和连接词在从句内部的成分必须分两层判断。 |
 
-## 主从结构
+## 核心本质
+
+从句的本质是：一个包含完整主谓结构的句子，进入另一个主句中承担名词性、形容词性或副词性功能。先判断功能，再给它命名。
+
+## 判断步骤
+
+| 步骤 | 问题 | 目的 |
+| --- | --- | --- |
+| 1 | 句中有几个有限谓语？ | 划分主句和从句的主谓结构。 |
+| 2 | 两个完整句子之间用什么方式连接？ | 区分并列、从属、分号或句号。 |
+| 3 | 从句整体在主句里做什么？ | 判断名词性、形容词性或副词性。 |
+| 4 | 连接词在从句内部做什么？ | 区分只连接的 that 与兼任成分的 what、which、where 等。 |
+
+## 类型速查表
+
+| 从句类型 | 功能颜色 | 主句中的功能 | 代表例句 |
+| --- | --- | --- | --- |
+| 名词性从句 | 红色 | 主语、宾语、表语、同位语 | What she said surprised everyone. |
+| 形容词性从句 | 黄色 | 修饰先行词 | The book that I borrowed... |
+| 副词性从句 | 绿色 | 修饰主句动作或整句逻辑 | When I arrived, Sally left. |
+
+## 具体类型：主从结构
 
 ![What she said about the incident surprised everyone 主从结构标注图](assets/what-she-said-analysis.svg)
 
@@ -29,15 +50,6 @@
 she said what about the incident
 主语  谓语  宾语  状语
 ```
-
-## 判断步骤
-
-| 步骤 | 问题 | 目的 |
-| --- | --- | --- |
-| 1 | 句中有几个有限谓语？ | 划分主句和从句的主谓结构。 |
-| 2 | 两个完整句子之间用什么方式连接？ | 区分并列、从属、分号或句号。 |
-| 3 | 从句整体在主句里做什么？ | 判断名词性、形容词性或副词性。 |
-| 4 | 连接词在从句内部做什么？ | 区分只连接的 that 与兼任成分的 what、which、where 等。 |
 
 ## 两个简单句的连接
 
@@ -58,6 +70,16 @@ she said what about the incident
 | 名词性从句 | 整个从句占名词位置 | What she said surprised everyone. | 是否作主语、宾语、表语或同位语？ |
 | 形容词性从句 / 定语从句 | 整个从句修饰名词 | Sally is a teacher who is warm-hearted, hardworking, and quick in learning. | 是否跟在名词后说明“哪一个 / 什么样的”？ |
 | 副词性从句 / 状语从句 | 整个从句修饰动作、状态或主句 | I was only a little kid when I met Sally. | 是否说明时间、原因、条件、让步、目的等逻辑关系？ |
+
+## where / when / why 三类从句对照
+
+同一个 `where / when / why` 不能只按中文意思归类。先看从句整体在主句中做什么：占名词位置是名词性从句，修饰名词是形容词性从句，修饰动作、状态或整句是副词性从句。
+
+| 连接词 | 名词性从句 | 形容词性从句 | 副词性从句 | 判断核心 |
+| --- | --- | --- | --- | --- |
+| where | This is where I plant the trees. | I plant the trees in a place where there’s a lot of sunshine. | I plant the trees where there’s a lot of sunshine. | 看 `where...` 是放在系动词后作主语补语、修饰 place，还是直接说明 plant 的地点。 |
+| when | When I met Sally doesn’t matter.<br>September 15, 2018 is when I met Sally. | September 15, 2018 is the day when I met Sally. | I was only a little kid when I met Sally. | 看 `when...` 是占主语/主语补语位置、修饰 day，还是说明主句状态成立的时间。 |
+| why | Nobody really knows why Sally left for China. | Nobody really knows the reason why Sally left for China. | 原因状语从句通常用 because / since / as / for。 | why 常见于名词性从句和修饰 reason 的形容词性从句；不要硬套成副词性从句。 |
 
 ## 功能 × 表现形式矩阵
 
@@ -85,3 +107,24 @@ she said what about the incident
 | where / when / why / how | 副词性成分 | 从句通常不缺主语或宾语，而缺地点、时间、原因或方式。 |
 
 看到连接词时，不要直接按中文翻译归类。先确定从句整体功能，再回到从句内部判断连接词。
+
+## 易混对比
+
+| 易混点 | 判断法 |
+| --- | --- |
+| 主句主干 VS 从句主干 | 全句谓语属于主句；从句内部也有自己的主谓宾。 |
+| 名词性 VS 形容词性 | 名词性占位置；形容词性修饰先行词。 |
+| 形容词性 VS 副词性 | 形容词性修饰名词；副词性修饰动作、状态或整句。 |
+
+## 经济学人分析提示
+
+经济学人中怎么识别：先把嵌套从句逐层括起来，再判断每个从句在上一层结构中承担什么功能，不要从最里面开始迷路。
+
+## 关联入口
+
+| 入口 | 用途 |
+| --- | --- |
+| [名词性从句](#noun-clause) | 从句占名词位置时。 |
+| [形容词性从句](#adjective-clause) | 从句修饰先行词时。 |
+| [副词性从句](#adverbial-clause) | 从句表达时间、原因、条件等逻辑时。 |
+| [非谓语](#nonfinite) | 从句压缩成非谓语时。 |

@@ -14,6 +14,10 @@
 | 代表例句 | It depends on what they do. |
 | 最易混点 | 同一个词后面没有名词性成分时，可能是副词或形容词，而不是介词。 |
 
+## 核心本质
+
+介词只有一条核心路线：介词 + 名词性成分 = 介词短语。介词短语进入句子后，主要表现为形容词性成分或副词性成分。
+
 ## 判断步骤
 
 1. 检查后面是否有名词性成分。
@@ -29,7 +33,16 @@
 | 后面没有名词性成分，修饰动作 | 副词 | The car stopped and then drove on. | on 后面没有名词性成分，修饰 drove。 |
 | 后面没有名词性成分，表示状态 | 形容词 | The TV is on. | on 后面没有名词性成分，表示 TV 的状态。 |
 
-## 介词短语句法功能表
+## 类型速查表
+
+| 介词短语功能 | 功能颜色 | 代表例句 | 判断 |
+| --- | --- | --- | --- |
+| 形容词性 | 黄色 | The cat on the table... | 修饰名词 cat。 |
+| 副词性 | 绿色 | He walked through the park. | 修饰 walked。 |
+| 介词 + 动名词 | 红色宾语进入介词结构 | She apologized for arriving late. | arriving late 作介词宾语。 |
+| 介词 + 名词性从句 | 红色宾语进入介词结构 | It depends on what they do. | what 从句作介词宾语。 |
+
+## 具体类型：介词短语句法功能表
 
 介词短语形成后，不是只看介词本身，而是看整个短语在句中做什么。
 
@@ -64,8 +77,22 @@
 
 | 类型 | 常见例子 | 结构特点 | 例句 |
 | --- | --- | --- | --- |
-| 简单介词 | as, at, by, during, with | 一个词作介词 | 待补充截图例句 |
-| 分词介词 | considering, including, given, granted | 形式像分词，但功能按介词处理 | 待补充截图例句 |
-| 短语介词 | ahead of, next to, because of, owing to, along with, as well as, in case of, in charge of, in common with, as a result of, in the absence of, to the best of, with an eye to | 多个词固定搭配，整体当一个介词用 | 待补充截图例句 |
+| 简单介词 | as, at, by, during, with | 一个词作介词 | 待补充例句 |
+| 分词介词 | considering, including, given, granted | 形式像分词，但功能按介词处理 | 待补充例句 |
+| 短语介词 | ahead of, next to, because of, owing to, along with, as well as, in case of, in charge of, in common with, as a result of, in the absence of, to the best of, with an eye to | 多个词固定搭配，整体当一个介词用 | 待补充例句 |
 
-关联入口：介词短语修饰名词时可对照[形容词性从句](#adjective-clause)；修饰动作或状态时可对照[副词性从句](#adverbial-clause)；介词后接 `doing` 时见[非谓语](#nonfinite)。
+## 易混对比
+
+| 易混点 | 判断法 |
+| --- | --- |
+| 介词 VS 副词小品词 | 后面带名词性宾语，多半是介词；不带宾语可能是副词。 |
+| 介词短语作定语 VS 状语 | 修饰名词走形容词性；修饰动作或整句走副词性。 |
+| used to do VS be used to doing | `used to do` 中 used to 整体表示过去习惯；`be used to doing` 中 to 是介词。 |
+
+## 经济学人分析提示
+
+经济学人中怎么识别：经济学人长句里介词短语非常密集，先把介词宾语括起来，再判断整个短语是修饰名词还是补充时间、地点、原因、方式等背景。
+
+## 关联入口
+
+介词短语修饰名词时可对照[形容词性从句](#adjective-clause)；修饰动作或状态时可对照[副词性从句](#adverbial-clause)；介词后接 `doing` 时见[非谓语](#nonfinite)。

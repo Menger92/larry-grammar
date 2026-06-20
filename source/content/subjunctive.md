@@ -22,7 +22,32 @@
 | 代表例句 | If I could help you, I would definitely do so. |
 | 最易混点 | 过去形式不一定表示过去时间，也可能制造心理距离。 |
 
-## 虚拟语气入口
+## 核心本质
+
+虚拟语气是在普通句法上叠加“非现实、低可能、愿望、后悔、建议、命令或强烈主观意愿”。形式上常借过去形式、情态动词或动词原形来制造事实距离。
+
+## 判断步骤
+
+| 步骤 | 判断问题 | 结果 |
+| --- | --- | --- |
+| 1 | 这句话是在说现实，还是拉开事实距离？ | 先判断是否进入虚拟空间。 |
+| 2 | 虚拟对象指向过去、现在还是将来？ | 决定 if 从句和主句形式。 |
+| 3 | 是否有 if，还是隐藏条件？ | 区分普通条件、倒装、无条件、含蓄条件。 |
+| 4 | 是否是名词性从句中的主观意愿？ | 检查 suggest、insist、important 等标志词。 |
+| 5 | 过去形式是否只表示心理距离？ | 不要把 every did 都翻成过去时间。 |
+
+## 类型速查表
+
+| 类型 | 核心功能 | 代表结构 | 代表例句 |
+| --- | --- | --- | --- |
+| if 条件虚拟 | 对过去、现在、将来作非现实假设 | if + did / had done / were to do | If I could help you, I would. |
+| 倒装虚拟 | 省略 if，前置 were / had / should | Had I known... | Had I known, I would have... |
+| 交叉时态虚拟 | 从句和主句指向不同时间 | had done + would do | If I had known, I would be... |
+| 无条件/含蓄条件 | 条件不以完整 if 从句出现 | Given..., otherwise, but for... | Given another chance, I would... |
+| 名词性从句虚拟 | 表建议、命令、要求、必要性 | that + 动词原形 | He insisted that she leave. |
+| 愿望和非主流形式 | 表愿望、祝愿、让步或强烈态度 | wish, if only, would rather | I wish I were... |
+
+## 具体类型：虚拟语气入口
 
 来源视频：V24｜BV1X2421N7L1｜虚拟语气（1）
 
@@ -413,3 +438,24 @@ essential, imperative, normal, surprising, strange, vital
 | be it | Be it so late, I have to finish this work. |
 | be that as it may | Be that as it may, Michael is determined to divorce Susan. |
 | whether it be | Whether it be sunny or raining, he takes a walk outside everyday. |
+
+## 易混对比
+
+| 易混点 | 判断法 |
+| --- | --- |
+| 真实条件 VS 非真实条件 | 真实条件讨论可能发生；非真实条件表达事实距离。 |
+| 过去形式 VS 过去时间 | 虚拟中的 did / were 常表示心理距离，不一定是过去。 |
+| suggest / insist 两义 | 表建议/要求用虚拟；表暗示/坚称不用虚拟。 |
+| wish VS hope | wish 的 that 从句可虚拟；hope 通常接陈述语气。 |
+
+## 经济学人分析提示
+
+经济学人中怎么识别：看到 would / could / might / had it not been / were it not for / if only 等结构，先判断它是在预测、委婉表达，还是在建立非现实假设。
+
+## 关联入口
+
+| 入口 | 用途 |
+| --- | --- |
+| [时态](#tense) | 过去形式和时间关系混在一起时。 |
+| [名词性从句](#noun-clause) | that 从句作建议、命令、要求内容时。 |
+| [副词性从句](#adverbial-clause) | if / unless / even if 等条件和让步关系。 |
