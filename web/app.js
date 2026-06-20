@@ -542,7 +542,7 @@ const knowledgeExampleLibrary = [
       { text: "red", role: "adj", label: "定语 / 形容词性" },
       { text: "car", role: "noun", label: "主语中心词" },
       { text: "is", role: "neutral", label: "系动词" },
-      { text: "mine", role: "noun", label: "表语" },
+      { text: "mine", role: "noun", label: "名词性主语补语" },
       { text: ".", role: "plain" }
     ],
     analysis: [
@@ -603,27 +603,27 @@ const knowledgeExampleLibrary = [
   },
   {
     id: "simple-svp-sally-beautiful",
-    title: "SVP：主系表",
+    title: "SVC/SVP：主系补 / 主系表",
     section: "简单句",
-    knowledge: "主系表 SVP",
+    knowledge: "主系补 / 主系表",
     tags: ["simple"],
     level: "基础",
     sentence: "Sally is beautiful.",
     translation: "Sally 很漂亮。",
     core: "Sally is beautiful",
     question: "beautiful 在句中做什么？",
-    answer: "is 是系动词，beautiful 补充说明主语 Sally 的状态，是表语。",
+    answer: "is 是系动词，beautiful 补充说明主语 Sally 的状态，是形容词性主语补语；传统语法也叫表语。",
     method: "看到 be / become / seem 等系动词，优先检查后面是不是说明主语身份或状态。",
     parts: [
       { text: "Sally", role: "noun", label: "主语" },
       { text: "is", role: "neutral", label: "系动词" },
-      { text: "beautiful", role: "adj", label: "表语" },
+      { text: "beautiful", role: "adj", label: "形容词性主语补语" },
       { text: ".", role: "plain" }
     ],
     analysis: [
       "主干是 Sally is beautiful。",
       "beautiful 不是动作对象，而是在说明 Sally 的状态。",
-      "主语 + 系动词 + 表语，就是主系表 SVP。"
+      "主语 + 系动词 + 主语补语，就是主系补；传统教学常叫主系表。"
     ]
   },
   {
@@ -976,7 +976,7 @@ const knowledgeExampleLibrary = [
     parts: [
       { text: "Sally", role: "noun", label: "主语" },
       { text: "is", role: "neutral", label: "系动词" },
-      { text: "a teacher", role: "noun", label: "表语 / 先行词" },
+      { text: "a teacher", role: "noun", label: "名词性主语补语 / 先行词" },
       { text: "who is warm-hearted", role: "adj", label: "定语从句 / 主语关系代词" },
       { text: ".", role: "plain" }
     ],
@@ -1028,7 +1028,7 @@ const knowledgeExampleLibrary = [
     parts: [
       { text: "This", role: "noun", label: "主语" },
       { text: "is", role: "neutral", label: "系动词" },
-      { text: "the town", role: "noun", label: "表语 / 先行词" },
+      { text: "the town", role: "noun", label: "名词性主语补语 / 先行词" },
       { text: "in which I grew up", role: "adj", label: "定语从句 / 介词宾语关系代词" },
       { text: ".", role: "plain" }
     ],
@@ -1054,7 +1054,7 @@ const knowledgeExampleLibrary = [
     parts: [
       { text: "This", role: "noun", label: "主语" },
       { text: "is", role: "neutral", label: "系动词" },
-      { text: "the city", role: "noun", label: "表语 / 先行词" },
+      { text: "the city", role: "noun", label: "名词性主语补语 / 先行词" },
       { text: "where I grew up", role: "adj", label: "定语从句" },
       { text: ".", role: "plain" }
     ],
@@ -1107,7 +1107,7 @@ const knowledgeExampleLibrary = [
       { text: "She", role: "noun", label: "主语" },
       { text: "is", role: "neutral", label: "系动词" },
       { text: "no longer", role: "adv", label: "状语" },
-      { text: "the shy girl", role: "noun", label: "表语 / 先行词" },
+      { text: "the shy girl", role: "noun", label: "名词性主语补语 / 先行词" },
       { text: "that she once was", role: "adj", label: "定语从句 / 补语关系代词" },
       { text: ".", role: "plain" }
     ],
@@ -1212,7 +1212,7 @@ const knowledgeExampleLibrary = [
     parts: [
       { text: "To lie", role: "nonfinite", label: "不定式 / 主语" },
       { text: "is", role: "neutral", label: "系动词" },
-      { text: "foolish", role: "adj", label: "表语" },
+      { text: "foolish", role: "adj", label: "形容词性主语补语" },
       { text: ".", role: "plain" }
     ],
     analysis: [
@@ -1239,7 +1239,7 @@ const knowledgeExampleLibrary = [
       { text: "sleeping", role: "nonfinite", label: "现在分词 / 定语" },
       { text: "baby", role: "noun", label: "主语中心词" },
       { text: "is", role: "neutral", label: "谓语" },
-      { text: "quiet", role: "adj", label: "表语" },
+      { text: "quiet", role: "adj", label: "形容词性主语补语" },
       { text: ".", role: "plain" }
     ],
     analysis: [
@@ -1315,7 +1315,7 @@ const knowledgeExampleLibrary = [
       { text: "The book", role: "noun", label: "主语 / 特指名词" },
       { text: "on the desk", role: "adj", label: "后置定语" },
       { text: "is", role: "neutral", label: "系动词" },
-      { text: "mine", role: "noun", label: "表语" },
+      { text: "mine", role: "noun", label: "名词性主语补语" },
       { text: ".", role: "plain" }
     ],
     analysis: [
