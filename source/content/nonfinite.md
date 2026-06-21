@@ -721,6 +721,105 @@
 | Chinese children who grow up in the US speak good English. | 正确：保留从句，用 grow up 表示长大。 |
 | You grow smarter as you grow older. | grow 是系动词 / 不及物变化，smarter / older 是主语补足语，不是宾语。 |
 
+## 具体类型：不定式 / 动名词 / 分词横向对比
+
+这一节专门解决一个问题：同样是非谓语，什么时候看成不定式，什么时候看成动名词，什么时候看成分词。判断顺序仍然是功能先行：先问它在句中做什么，再问它的动作关系是什么。
+
+### 一眼判断总表
+
+| 判断维度 | 不定式 to do | 动名词 doing | 分词 doing / done |
+| --- | --- | --- | --- |
+| 第一判断问题 | 这个动作是否指向目的、将来、倾向、具体一次？ | 这个动作是否整体占名词位置，被当成“一件事”？ | 这个动作是否落在某个具体名词、主语或宾语身上？ |
+| 主要功能路线 | 名词性 / 形容词性 / 副词性 / 补语 | 名词性 | 形容词性 / 副词性 / 补语 |
+| 典型位置 | 主语、宾语、表语、后置定语、目的/结果/原因状语、宾补 | 主语、宾语、表语、介词宾语、用途定语 | 定语、状语、表语、宾语补足语、主语补足语 |
+| 动作感觉 | 未实现、将要做、为了做、倾向做、完整过程 | 做这件事、一般事实、经验、已发生或不受时间限制 | 主动/进行、被动/完成、伴随状态 |
+| 逻辑主语 | 常默认由句子主语或宾语执行；必要时用 `for sb to do` | 可默认，也可用所有格/宾格标出：`my reading` / `me reading` | 必须能找到动作发出者或承受者；状语分词默认主句主语 |
+| 代表例句 | I need a pen to write with. | Reading helps me relax. | I heard Sally singing last night. |
+
+记忆：不定式偏“要去做 / 为了做”，动名词偏“做这件事”，分词偏“谁正在做 / 谁被做 / 谁处于这个状态”。
+
+### 对比一：不定式 vs 动名词
+
+不定式和动名词都可以走名词性路线，但语义重心不同：不定式更具体、将来、目标化；动名词更一般、经验化、事实化。
+
+| 对比 | 不定式 | 动名词 | 判断 |
+| --- | --- | --- | --- |
+| 喜欢做某事 | I like to play basketball. | I like playing basketball. | `to play` 可偏向某次具体行为；`playing` 更像一般爱好。 |
+| 讨厌喝酒 | He hates to drink. | He hates drinking. | `to drink` 可偏下一次行为；`drinking` 更像泛指喝酒这件事。 |
+| 被邀请 | It would make Michael happy to be invited to the party. | Being invited to the party made Michael happy. | `to be invited` 偏未发生；`Being invited` 表已发生或事实。 |
+| 继续上涨 | Prices continue to rise. | Prices continue rising. | 意思接近；`to rise` 更偏趋势目标，`rising` 更偏过程延续。 |
+| 停止 | Sally stopped to cry. | Sally stopped crying. | `to cry` 是停下来为了哭；`crying` 是停止哭。 |
+| 记得 | Remember to mail this letter. | I don't remember mailing the letter. | `to mail` 是还没寄、要记得去寄；`mailing` 是已经寄过或是否发生过。 |
+
+判断口诀：如果问题是“要不要去做 / 为了做什么”，优先看不定式；如果问题是“做这件事本身”，优先看动名词。
+
+### 对比二：动名词 vs 现在分词
+
+动名词和现在分词都长成 `doing`，但路线完全不同。动名词是名词性，常表示用途或事情；现在分词是形容词性、副词性或补语，常表示主动、进行或动作状态。
+
+| 表达 | 动名词理解 | 分词理解 | 判断 |
+| --- | --- | --- | --- |
+| a flying jacket | a jacket for flying，飞行夹克 | a jacket that is flying，正在飞的夹克 | 通常按动名词用途理解。 |
+| a flying bird | a bird for flying，用来飞的鸟 | a bird that is flying，正在飞的鸟 | 通常按分词主谓关系理解。 |
+| a swimming pool | a pool for swimming，游泳池 | a pool that is swimming，正在游泳的池子 | 通常按动名词用途理解。 |
+| a swimming duck | a duck for swimming，用来游泳的鸭子 | a duck that is swimming，正在游泳的鸭子 | 通常按分词主谓关系理解。 |
+| a reading room | a room for reading，阅览室 | a room that is reading，房间正在读 | 通常按动名词用途理解。 |
+| singing birds | birds that are singing | birds for singing | 通常按分词理解，birds 发出 singing。 |
+
+判断口诀：能改成 `for doing` 且表示用途，优先按动名词；能改成 `that is doing` 且名词能发出动作，优先按现在分词。
+
+### 对比三：不定式补语 vs 分词补语
+
+感官动词后面最容易出现不定式和分词的对比。核心不是“有没有 to”，而是看动作被观察到的方式：完整过程还是正在进行。
+
+| 例句 | 结构 | 判断 |
+| --- | --- | --- |
+| I saw Michael climb up the tree. | `see + O + do` | 不定式省略 `to`，强调看到 Michael 爬树这个动作的完整过程。 |
+| I saw Michael climbing up the tree. | `see + O + doing` | 分词作宾补，强调看到 Michael 正在爬。 |
+| I heard Sally singing last night. | S + V + O + OC | `singing` 是宾语补足语，Sally 是 singing 的逻辑主语。 |
+| I can smell something burning. | S + V + O + OC | `burning` 补充说明 something 的状态。 |
+
+判断口诀：`see / hear / smell / watch / notice + O + do` 看完整过程；`+ O + doing` 看正在发生的状态。
+
+### 对比四：done / being done / to be done
+
+这组三个形式常在定语里混淆。判断核心是时间和被动状态：已经被做、正在被做、将要被做。
+
+| 形式 | 例句 | 还原 | 含义 |
+| --- | --- | --- | --- |
+| done | The built house is beautiful. | The house that has been built is beautiful. | 已经建好的房子。 |
+| being done | The house being built is beautiful. | The house that is being built is beautiful. | 正在被建的房子。 |
+| to be done | The house to be built will be beautiful. | The house that will be built will be beautiful. | 将要被建的房子。 |
+
+判断口诀：`done` 看完成结果，`being done` 看正在被做，`to be done` 看将要被做。
+
+### 对比五：动作是否有具体承载对象
+
+分词动作通常要落在一个具体对象上；动名词则可以只是把动作本身名词化，不一定绑定某个具体对象。
+
+| 表达 | 判断 |
+| --- | --- |
+| Reading is useful. | `Reading` 是动名词，表示阅读这件事，不需要具体说明谁在读。 |
+| The girl reading under the tree is Sally. | `reading` 是分词，修饰 the girl，动作由 the girl 发出。 |
+| Sally insisted on reading the letter. | `reading the letter` 作介词宾语，是动名词短语。 |
+| Sally insisted on my reading the letter. | `my` 标出动名词逻辑主语：读信的人是 I。 |
+| The letter written by Sally is important. | `written` 是过去分词，letter 承受 write。 |
+
+判断口诀：如果 `doing / done` 必须回答“谁做 / 谁被做”，优先进入分词路线；如果它回答的是“做什么这件事”，优先进入动名词路线。
+
+### 横向判断流程
+
+```text
+先找真正谓语
+→ 剩余动词形式是否占名词位置？
+  → 是：判断 to do 还是动名词 doing
+→ 是否修饰名词、补充主语/宾语、或作状语？
+  → 是：判断分词 doing / done，或不定式作定语/状语/补语
+→ 再问动作关系：目的/将来、事实/经验、主动/进行、被动/完成
+```
+
+经济学人中怎么识别：看到一个长句里同时出现 `to do`、`doing`、`done`，不要先翻译。先找主句谓语，再逐个问：它占名词位置，还是修饰某个名词，还是说明主句动作的背景、条件、结果，还是补充宾语状态。
+
 ## 从句和非谓语的转换
 
 从句和非谓语不是两套互不相干的知识，而是同一份信息的两种表达方式：从句更完整，非谓语更简洁。真正要掌握的是“功能不变，表达形式变化”。
@@ -826,8 +925,10 @@
 | 易混点 | 判断法 |
 | --- | --- |
 | 动名词 VS 现在分词 | 动名词走名词性路线；现在分词走形容词性、副词性或补语路线。 |
+| 不定式 VS 动名词 | 不定式偏目的、将来、具体一次；动名词偏事实、经验或动作这件事。 |
+| 不定式补语 VS 分词补语 | 感官动词后 `do` 强完整过程，`doing` 强正在进行。 |
+| done / being done / to be done | 分别看已经被做、正在被做、将要被做。 |
 | 分词 VS 从句 | 分词更简洁，但主语、时态、连接关系更依赖上下文。 |
-| to do VS doing | to do 更偏目的、将来、具体一次；doing 更偏事实、经验或动作这件事。 |
 
 ## 经济学人分析提示
 
