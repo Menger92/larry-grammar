@@ -40,6 +40,11 @@ const navGroups = [
     title: "附录与维护",
     note: "来源、协议、项目使用说明和源文件索引",
     ids: ["source-index"]
+  },
+  {
+    title: "实战长文",
+    note: "经济学人逐句 Larry 标注",
+    ids: ["bosses-beware"]
   }
 ];
 
