@@ -1,0 +1,1138 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bosses beware - Larry 逐句语法分析</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --ink: #172033;
+      --muted: #4f5d72;
+      --card: #ffffff;
+      --line: #d8dee9;
+      --noun: #c1121f;
+      --noun-bg: #ffe8eb;
+      --adj: #8a6400;
+      --adj-bg: #fff2b8;
+      --adv: #2f7d32;
+      --adv-bg: #e8f6df;
+      --neutral: #3f4754;
+      --neutral-bg: #eef2f7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Microsoft YaHei", "Noto Sans SC", Arial, sans-serif;
+      line-height: 1.72;
+    }
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 18px 56px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 30px;
+      line-height: 1.25;
+    }
+
+    h2 {
+      margin: 28px 0 12px;
+      font-size: 22px;
+    }
+
+    h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    p { margin: 8px 0; }
+
+    .lead {
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    .card,
+    .sentence-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 14px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .legend span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 9px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      font-size: 13px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    .marked {
+      margin: 10px 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 23px;
+      line-height: 1.65;
+    }
+
+    .part {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 4px;
+      margin: 2px 1px;
+      padding: 3px 7px;
+      border-radius: 6px;
+      border: 1px solid currentColor;
+    }
+
+    .part small {
+      font-family: "Microsoft YaHei", "Noto Sans SC", Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 800;
+      opacity: .72;
+      white-space: nowrap;
+    }
+
+    .noun {
+      color: var(--noun);
+      background: var(--noun-bg);
+      border-color: #ffc8cf;
+    }
+
+    .adj {
+      color: var(--adj);
+      background: var(--adj-bg);
+      border-color: #f3d66a;
+    }
+
+    .adv {
+      color: var(--adv);
+      background: var(--adv-bg);
+      border-color: #c7e8b9;
+    }
+
+    .neutral {
+      color: var(--neutral);
+      background: var(--neutral-bg);
+      border-color: #d4dbe7;
+    }
+
+    .plain {
+      color: #64748b;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--line);
+      background: #fff;
+      font-size: 15px;
+    }
+
+    th, td {
+      padding: 9px 11px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      width: 118px;
+      background: #f1f4f9;
+      white-space: nowrap;
+    }
+
+    tr:last-child th,
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .toc {
+      columns: 2;
+      padding-left: 20px;
+    }
+
+    .toc a {
+      color: #1f4e79;
+      text-decoration: none;
+    }
+
+    @media (max-width: 820px) {
+      .marked { font-size: 18px; }
+      .part { padding: 2px 5px; }
+      .toc { columns: 1; }
+      th { width: 92px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Bosses beware: the tariff shock is not like covid-19</h1>
+  <p class="lead">逐句 Larry 语法分析版。每个完整英文句子都保留，句子后面给主干、功能分类和“谁修饰谁”。</p>
+
+  <section class="card">
+    <h2>Larry 颜色规则</h2>
+    <div class="legend">
+      <span class="noun"><i class="dot"></i>名词性：红色</span>
+      <span class="adj"><i class="dot"></i>形容词性 / 定语：黄色</span>
+      <span class="adv"><i class="dot"></i>副词性 / 状语：绿色</span>
+      <span class="neutral"><i class="dot"></i>谓语 / 主干动词：灰色</span>
+    </div>
+    <p class="note">处理原则：先找谓语，再找进入名词位置的成分；修饰名词的是形容词性，修饰动词、形容词、整句或逻辑关系的是副词性。非谓语不单独上新颜色，而按它在句中的功能归入名词性、形容词性或副词性。</p>
+  </section>
+
+  <section class="card">
+    <h2>标题与副标题</h2>
+    <p class="marked">
+      <span class="part noun">Bosses<small>呼语/名词性</small></span>
+      <span class="part neutral">beware<small>谓语</small></span><span class="plain">:</span>
+      <span class="part noun">the tariff shock<small>主语</small></span>
+      <span class="part neutral">is not<small>系动词谓语</small></span>
+      <span class="part adj">like covid-19<small>主语补语/形容词性</small></span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>Bosses beware = 祈使句，真实主语 you 省略；冒号后是 SVC：the tariff shock / is not / like covid-19。</td></tr>
+      <tr><th>修饰</th><td>tariff 修饰 shock；like covid-19 作主语补语，说明 shock 的性质。</td></tr>
+      <tr><th>译法</th><td>老板们当心：关税冲击并不像新冠冲击。</td></tr>
+    </table>
+    <p class="marked">
+      <span class="part adv">If only<small>省略条件/感叹</small></span>
+      <span class="part noun">American businesses<small>主语</small></span>
+      <span class="part neutral">were<small>谓语</small></span>
+      <span class="part adj">so lucky<small>主语补语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>American businesses / were / so lucky。</td></tr>
+      <tr><th>语气</th><td>If only 引出虚拟愿望：要是美国企业真有那么幸运就好了。</td></tr>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>目录</h2>
+    <ol class="toc">
+      <li><a href="#p1">P1 市场恐慌像 2020</a></li>
+      <li><a href="#p2">P2 冲击来源不同</a></li>
+      <li><a href="#p3">P3 关税随机性</a></li>
+      <li><a href="#p4">P4 核心论点</a></li>
+      <li><a href="#p5">P5 财报预期下调</a></li>
+      <li><a href="#p6">P6 企业撤回指引</a></li>
+      <li><a href="#p7">P7 数字证据</a></li>
+      <li><a href="#p8">P8 企业行为反应</a></li>
+      <li><a href="#p9">P9 老板的侥幸心理</a></li>
+      <li><a href="#p10">P10 疫情后的快速恢复</a></li>
+      <li><a href="#p11">P11 投资者误判</a></li>
+      <li><a href="#p12">P12 Brexit 类比与结论</a></li>
+    </ol>
+  </section>
+
+  <h2 id="p1">P1 市场恐慌像 2020</h2>
+
+  <article class="sentence-card" id="p1s1">
+    <h3>P1-S1</h3>
+    <p class="marked">
+      <span class="part neutral">PEER<small>祈使谓语</small></span>
+      <span class="part adv">INTO a Bloomberg screen<small>方向状语</small></span>
+      <span class="plain">and</span>
+      <span class="part noun">the parallels<small>主语</small></span>
+      <span class="part adj">between the past month and the spring of 2020<small>后置定语</small></span>
+      <span class="part neutral">draw<small>谓语</small></span>
+      <span class="part noun">themselves<small>宾语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>Peer into... / and / the parallels draw themselves。</td></tr>
+      <tr><th>修饰</th><td>into a Bloomberg screen 修饰 peer；between... 修饰 parallels。</td></tr>
+      <tr><th>说明</th><td>draw themselves 不是“画自己”，而是“自然显现”。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p1s2">
+    <h3>P1-S2</h3>
+    <p class="marked">
+      <span class="part adv">Then as now<small>整句状语</small></span>
+      <span class="part noun">the VIX index<small>主语</small></span><span class="plain">,</span>
+      <span class="part adj">which tracks share-price volatility<small>定语从句</small></span><span class="plain">,</span>
+      <span class="part neutral">spiked<small>谓语</small></span>
+      <span class="part adv">above 40<small>程度/结果状语</small></span><span class="plain">,</span>
+      <span class="part noun">a level<small>同位语</small></span>
+      <span class="part adj">reached only a handful of times in American stockmarket history<small>后置定语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>the VIX index / spiked / above 40。</td></tr>
+      <tr><th>修饰</th><td>Then as now 修饰整句；which 从句修饰 VIX index；reached... 修饰 a level。</td></tr>
+      <tr><th>说明</th><td>above 40 是介词短语，整体作副词性成分，说明飙升后的水平。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p1s3">
+    <h3>P1-S3</h3>
+    <p class="marked">
+      <span class="part adv">Uncannily<small>整句状语</small></span><span class="plain">,</span>
+      <span class="part adv">both in 2020 and 2025<small>时间状语</small></span>
+      <span class="part noun">the S&amp;P 500 index<small>主语</small></span>
+      <span class="part adj">of America's biggest companies<small>后置定语</small></span>
+      <span class="part neutral">peaked<small>谓语</small></span>
+      <span class="part adv">on the same day, February 19th<small>时间状语</small></span><span class="plain">,</span>
+      <span class="part adv">before declining and then collapsing by more than 10% in a matter of days<small>时间/结果状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>the S&amp;P 500 index / peaked。</td></tr>
+      <tr><th>修饰</th><td>of America's biggest companies 修饰 index；before doing 修饰 peaked 后的走势。</td></tr>
+      <tr><th>说明</th><td>declining 和 collapsing 是非谓语形式，但整个 before 短语作副词性状语。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p1s4">
+    <h3>P1-S4</h3>
+    <p class="marked">
+      <span class="part noun">The oil price<small>主语</small></span>
+      <span class="part neutral">plunged<small>谓语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>The oil price / plunged。</td></tr>
+      <tr><th>句型</th><td>SV：主语 + 不及物谓语。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p1s5">
+    <h3>P1-S5</h3>
+    <p class="marked">
+      <span class="part noun">Sentiment<small>主语</small></span>
+      <span class="part adj">among American consumers<small>后置定语</small></span>
+      <span class="part neutral">was and is<small>并列谓语</small></span>
+      <span class="part adj">down the tubes<small>主语补语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>Sentiment / was and is / down the tubes。</td></tr>
+      <tr><th>修饰</th><td>among American consumers 修饰 Sentiment。</td></tr>
+      <tr><th>说明</th><td>down the tubes 是习语，作补语，表示“很糟”。</td></tr>
+    </table>
+  </article>
+
+  <h2 id="p2">P2 冲击来源不同</h2>
+
+  <article class="sentence-card" id="p2s1">
+    <h3>P2-S1</h3>
+    <p class="marked">
+      <span class="part adv">Five years ago<small>时间状语</small></span>
+      <span class="part noun">the cause<small>主语</small></span>
+      <span class="part adj">of the commotion<small>后置定语</small></span>
+      <span class="part neutral">was<small>系动词谓语</small></span>
+      <span class="part noun">covid-19<small>主语补语/名词性</small></span><span class="plain">,</span>
+      <span class="part adj">which infected vast numbers of people and put the world economy in intensive care<small>定语从句</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>the cause / was / covid-19。</td></tr>
+      <tr><th>修饰</th><td>Five years ago 修饰整句；of the commotion 修饰 cause；which 从句修饰 covid-19。</td></tr>
+      <tr><th>说明</th><td>which 从句内部有两个并列谓语：infected / put。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p2s2">
+    <h3>P2-S2</h3>
+    <p class="marked">
+      <span class="part adv">Today<small>时间状语</small></span>
+      <span class="part noun">it<small>主语</small></span>
+      <span class="part neutral">is<small>系动词谓语</small></span>
+      <span class="part noun">another force of nature, Donald Trump<small>主语补语/名词性</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>it / is / another force of nature。</td></tr>
+      <tr><th>指代</th><td>it 回指前一句的 the cause of the commotion。</td></tr>
+      <tr><th>说明</th><td>Donald Trump 是 another force of nature 的同位语。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p2s3">
+    <h3>P2-S3</h3>
+    <p class="marked">
+      <span class="part adv">Unlike the virus<small>对比状语</small></span><span class="plain">,</span>
+      <span class="part noun">the president's trade policy<small>主语</small></span>
+      <span class="part neutral">is<small>系动词谓语</small></span>
+      <span class="part adj">non-lethal<small>主语补语</small></span>
+      <span class="part adv">to humans<small>范围状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>the president's trade policy / is / non-lethal。</td></tr>
+      <tr><th>修饰</th><td>Unlike the virus 修饰整句，形成对比；to humans 限定 non-lethal 的对象范围。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p2s4">
+    <h3>P2-S4</h3>
+    <p class="marked">
+      <span class="part plain">But</span>
+      <span class="part noun">it<small>主语</small></span>
+      <span class="part neutral">might be<small>系动词谓语</small></span>
+      <span class="part adj">to American firms<small>补足前句 lethal</small></span><span class="plain">,</span>
+      <span class="part adv">especially those which rely on China<small>范围状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>it / might be / lethal。lethal 被省略，承接上一句 non-lethal。</td></tr>
+      <tr><th>修饰</th><td>to American firms 补足 lethal 的对象；which rely on China 修饰 those。</td></tr>
+      <tr><th>说明</th><td>这是省略句：But it might be [lethal] to American firms。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p2s5">
+    <h3>P2-S5</h3>
+    <p class="marked">
+      <span class="part noun">The world's two biggest economies<small>主语</small></span>
+      <span class="part neutral">have quarantined<small>谓语</small></span>
+      <span class="part noun">each other<small>宾语</small></span>
+      <span class="part adv">with tariffs in excess of 100% on most goods<small>方式状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>The world's two biggest economies / have quarantined / each other。</td></tr>
+      <tr><th>修饰</th><td>with tariffs... 修饰 have quarantined，说明隔离手段；in excess of 100% 修饰 tariffs。</td></tr>
+    </table>
+  </article>
+
+  <h2 id="p3">P3 关税随机性</h2>
+
+  <article class="sentence-card" id="p3s1">
+    <h3>P3-S1</h3>
+    <p class="marked">
+      <span class="part adv">Worse<small>整句状语</small></span><span class="plain">,</span>
+      <span class="part noun">companies<small>主语</small></span>
+      <span class="part neutral">contend with<small>谓语</small></span>
+      <span class="part noun">pandemic-like uncertainty<small>宾语</small></span>
+      <span class="part adv">as tariffs are raised and lowered, imposed and removed<small>时间/背景状语从句</small></span>
+      <span class="plain">-</span>
+      <span class="part adv">all in ways no less stochastic than the evolution of covid variants<small>方式状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>companies / contend with / uncertainty。</td></tr>
+      <tr><th>修饰</th><td>as 从句修饰 contend with；pandemic-like 修饰 uncertainty；in ways... 修饰关税变化的方式。</td></tr>
+      <tr><th>说明</th><td>raised/lowered/imposed/removed 是从句内部的被动并列谓语。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p3s2">
+    <h3>P3-S2</h3>
+    <p class="marked">
+      <span class="part adv">On May 4th<small>时间状语</small></span>
+      <span class="part noun">Mr Trump<small>主语</small></span>
+      <span class="part neutral">suggested<small>谓语</small></span>
+      <span class="part noun">that he would charge levies on films made abroad<small>宾语从句/名词性</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>Mr Trump / suggested / that 从句。</td></tr>
+      <tr><th>修饰</th><td>On May 4th 修饰 suggested；made abroad 修饰 films。</td></tr>
+      <tr><th>说明</th><td>that 从句整体进入宾语位置，所以按 Larry 是名词性。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p3s3">
+    <h3>P3-S3</h3>
+    <p class="marked">
+      <span class="part adv">The next day<small>时间状语</small></span>
+      <span class="part noun">the share prices of Disney and Netflix<small>主语</small></span>
+      <span class="part neutral">slid<small>谓语</small></span><span class="plain">,</span>
+      <span class="part adv">before rebounding when the White House altered its script<small>时间状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>the share prices / slid。</td></tr>
+      <tr><th>修饰</th><td>of Disney and Netflix 修饰 prices；before rebounding 修饰 slid；when 从句修饰 rebounding。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p3s4">
+    <h3>P3-S4</h3>
+    <p class="marked">
+      <span class="part noun">The tariff shock<small>主语</small></span>
+      <span class="part neutral">is<small>系动词谓语</small></span>
+      <span class="part noun">"covid plus plus"<small>主语补语/名词性</small></span><span class="plain">,</span>
+      <span class="part neutral">sums up<small>报道谓语</small></span>
+      <span class="part noun">a Wall Street banker<small>主语倒装</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>The tariff shock / is / "covid plus plus"；a Wall Street banker / sums up。</td></tr>
+      <tr><th>说明</th><td>sums up a Wall Street banker 是报道语倒装，正常语序是 a Wall Street banker sums up。</td></tr>
+    </table>
+  </article>
+
+  <h2 id="p4">P4 核心论点</h2>
+
+  <article class="sentence-card" id="p4s1">
+    <h3>P4-S1</h3>
+    <p class="marked">
+      <span class="part adv">No wonder<small>整句评注</small></span>
+      <span class="part noun">bosses<small>主语</small></span>
+      <span class="part neutral">are tempted<small>谓语</small></span>
+      <span class="part adv">to view it as akin to the pandemic<small>原因/内容状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>bosses / are tempted。</td></tr>
+      <tr><th>修饰</th><td>to view... 补充说明 tempted 的内容；as akin to the pandemic 说明 view 的结果判断。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p4s2">
+    <h3>P4-S2</h3>
+    <p class="marked">
+      <span class="part adv">If only<small>省略句/感叹</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>省略完整愿望：If only it were so。</td></tr>
+      <tr><th>说明</th><td>作者用极短句反讽：要真只是疫情重演就好了。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p4s3">
+    <h3>P4-S3</h3>
+    <p class="marked">
+      <span class="part adv">In fact<small>转折状语</small></span><span class="plain">,</span>
+      <span class="part noun">the consequences<small>主语</small></span>
+      <span class="part adj">for American big business<small>后置定语</small></span>
+      <span class="part adj">of Mr Trump's trade-warmongering<small>后置定语</small></span>
+      <span class="part neutral">are likely to be<small>谓语</small></span>
+      <span class="part adj">far more profound - and enduring<small>主语补语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>the consequences / are likely to be / far more profound and enduring。</td></tr>
+      <tr><th>修饰</th><td>for... 和 of... 都修饰 consequences；far more 修饰 profound。</td></tr>
+      <tr><th>说明</th><td>这是文章核心论点：后果更深、更持久。</td></tr>
+    </table>
+  </article>
+
+  <h2 id="p5">P5 财报预期下调</h2>
+
+  <article class="sentence-card" id="p5s1">
+    <h3>P5-S1</h3>
+    <p class="marked">
+      <span class="part adv">In 2020 and now<small>时间状语</small></span>
+      <span class="part noun">the tumult<small>主语</small></span>
+      <span class="part neutral">hit<small>谓语</small></span>
+      <span class="part adv">just as CEOs were preparing to report first-quarter results<small>时间状语从句</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>the tumult / hit。</td></tr>
+      <tr><th>修饰</th><td>In 2020 and now 修饰 hit；just as 从句说明 hit 的时间点。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p5s2">
+    <h3>P5-S2</h3>
+    <p class="marked">
+      <span class="part noun">Those<small>主语</small></span>
+      <span class="part neutral">were and are<small>并列谓语</small></span>
+      <span class="part adj">mostly healthy<small>主语补语</small></span><span class="plain">,</span>
+      <span class="part adv">in stark contrast to updated forecasts for revenues and profits<small>对比状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>Those / were and are / mostly healthy。</td></tr>
+      <tr><th>指代</th><td>Those 指 first-quarter results。</td></tr>
+      <tr><th>修饰</th><td>in stark contrast to... 修饰整句判断，表示对比。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p5s3">
+    <h3>P5-S3</h3>
+    <p class="marked">
+      <span class="part adv">As in the pandemic's early weeks<small>比较状语</small></span><span class="plain">,</span>
+      <span class="part noun">analysts<small>主语</small></span>
+      <span class="part neutral">are revising down<small>谓语</small></span>
+      <span class="part noun">their projections<small>宾语</small></span>
+      <span class="part adj">for the sales, capital expenditures and profits of many S&amp;P 500 companies<small>后置定语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>analysts / are revising down / their projections。</td></tr>
+      <tr><th>修饰</th><td>As in... 修饰整句；for... 修饰 projections。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p5s4">
+    <h3>P5-S4</h3>
+    <p class="marked">
+      <span class="part adv">Since January<small>时间状语</small></span>
+      <span class="part noun">the consensus<small>主语</small></span>
+      <span class="part adj">for the index's combined earnings per share in the second, third and fourth quarter of this year<small>后置定语</small></span>
+      <span class="part neutral">have declined<small>谓语</small></span>
+      <span class="part adv">by 5%, 4% and 2%, respectively<small>程度状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>the consensus / have declined。</td></tr>
+      <tr><th>修饰</th><td>for... 修饰 consensus；in... 修饰 earnings/quarter；by... 修饰 declined。</td></tr>
+      <tr><th>说明</th><td>respectively 表示三个跌幅依次对应第二、第三、第四季度。</td></tr>
+    </table>
+  </article>
+
+  <h2 id="p6">P6 企业撤回指引</h2>
+
+  <article class="sentence-card" id="p6s1">
+    <h3>P6-S1</h3>
+    <p class="marked">
+      <span class="part adv">More worrying still<small>整句状语</small></span><span class="plain">,</span>
+      <span class="part noun">many bosses<small>主语</small></span>
+      <span class="part neutral">are once again pulling<small>谓语</small></span>
+      <span class="part noun">guidance<small>宾语</small></span>
+      <span class="part adv">altogether<small>程度状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>many bosses / are pulling / guidance。</td></tr>
+      <tr><th>修饰</th><td>More worrying still 修饰整句；once again 和 altogether 修饰 pulling。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p6s2">
+    <h3>P6-S2</h3>
+    <p class="marked">
+      <span class="part adv">On April 29th<small>时间状语</small></span>
+      <span class="part noun">UPS<small>主语</small></span><span class="plain">,</span>
+      <span class="part noun">a parcel-delivery giant<small>同位语</small></span><span class="plain">,</span>
+      <span class="part neutral">withdrew<small>谓语</small></span>
+      <span class="part noun">its full-year forecasts<small>宾语</small></span><span class="plain">,</span>
+      <span class="part adv">just as it had five years earlier almost to the day<small>比较/时间状语从句</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>UPS / withdrew / its full-year forecasts。</td></tr>
+      <tr><th>修饰</th><td>a parcel-delivery giant 是 UPS 同位语；just as 从句修饰 withdrew。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p6s3">
+    <h3>P6-S3</h3>
+    <p class="marked">
+      <span class="part adv">So<small>承接状语</small></span>
+      <span class="part neutral">have<small>倒装谓语</small></span>
+      <span class="part noun">carmakers (Ford, General Motors) and airlines (American, Delta, Southwest)<small>主语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>carmakers and airlines / have [withdrawn forecasts]。</td></tr>
+      <tr><th>说明</th><td>So have... 是倒装，承接上一句“也撤回了指引”。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p6s4">
+    <h3>P6-S4</h3>
+    <p class="marked">
+      <span class="part adv">On May 5th<small>时间状语</small></span>
+      <span class="part noun">Mattel<small>主语</small></span>
+      <span class="part neutral">paused<small>谓语</small></span>
+      <span class="part noun">its annual forecast for toy sales<small>宾语</small></span><span class="plain">,</span>
+      <span class="part adv">days after Mr Trump mused that no American girl needs more than two Barbies, really<small>时间状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>Mattel / paused / its annual forecast。</td></tr>
+      <tr><th>修饰</th><td>for toy sales 修饰 forecast；days after... 修饰 paused；that 从句作 mused 的宾语。</td></tr>
+    </table>
+  </article>
+
+  <h2 id="p7">P7 数字证据</h2>
+
+  <article class="sentence-card" id="p7s1">
+    <h3>P7-S1</h3>
+    <p class="marked">
+      <span class="part noun">Only 17% of big businesses<small>主语</small></span>
+      <span class="part neutral">have opted<small>谓语</small></span>
+      <span class="part adv">to give investors a sense of what profits to expect in the second quarter<small>目的/内容状语</small></span><span class="plain">,</span>
+      <span class="part adv">compared with 20% or so typically<small>比较状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>Only 17% of big businesses / have opted。</td></tr>
+      <tr><th>修饰</th><td>to give... 补充 opted 的内容；what profits to expect 是 what 名词性从句，作 of 的宾语。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p7s2">
+    <h3>P7-S2</h3>
+    <p class="marked">
+      <span class="part noun">That<small>主语</small></span>
+      <span class="part neutral">is<small>系动词谓语</small></span>
+      <span class="part noun">the lowest share<small>主语补语/名词性</small></span>
+      <span class="part adv">since, you guessed it, 2020<small>时间状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>That / is / the lowest share。</td></tr>
+      <tr><th>修饰</th><td>since... 修饰 is/lowest，说明时间范围；you guessed it 是插入语。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p7s3">
+    <h3>P7-S3</h3>
+    <p class="marked">
+      <span class="part noun">It<small>主语</small></span>
+      <span class="part neutral">does not include<small>谓语</small></span>
+      <span class="part noun">cop-outs like AbbVie, a drugmaker, and 3M, a glues-to-gaskets conglomerate<small>宾语</small></span><span class="plain">,</span>
+      <span class="part adj">which noted that their guidance does not reflect the impact from tariffs<small>定语从句</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>It / does not include / cop-outs。</td></tr>
+      <tr><th>修饰</th><td>like... 修饰 cop-outs；which 从句修饰 AbbVie 和 3M；that 从句作 noted 的宾语。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p7s4">
+    <h3>P7-S4</h3>
+    <p class="marked">
+      <span class="part noun">One in four S&amp;P 500 companies<small>主语</small></span>
+      <span class="part neutral">have mentioned<small>谓语</small></span>
+      <span class="part noun">"recession"<small>宾语</small></span>
+      <span class="part adv">in their latest earnings calls<small>地点/场景状语</small></span><span class="plain">,</span>
+      <span class="part neutral">reckons<small>报道谓语</small></span>
+      <span class="part noun">Goldman Sachs<small>主语倒装</small></span>
+      <span class="part noun">(the bank being among them)<small>独立结构/补充</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>One in four companies / have mentioned / "recession"；Goldman Sachs / reckons。</td></tr>
+      <tr><th>修饰</th><td>in their latest earnings calls 修饰 mentioned；括号部分补充说明 Goldman Sachs 自己也在其中。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p7s5">
+    <h3>P7-S5</h3>
+    <p class="marked">
+      <span class="part noun">This<small>主语</small></span>
+      <span class="part neutral">is not<small>系动词谓语</small></span>
+      <span class="part noun">a world away from the one in three<small>主语补语/名词性</small></span>
+      <span class="part adv">that first pandemic spring<small>时间状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>This / is not / a world away from...</td></tr>
+      <tr><th>说明</th><td>a world away from 是习语化名词短语，表示“差得很远”；not a world away 表示“相差不远”。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p7s6">
+    <h3>P7-S6</h3>
+    <p class="marked">
+      <span class="part noun">The previous quarter's figure<small>主语</small></span>
+      <span class="part neutral">was<small>系动词谓语</small></span>
+      <span class="part noun">one in 50<small>主语补语/名词性</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>The previous quarter's figure / was / one in 50。</td></tr>
+      <tr><th>修饰</th><td>previous quarter's 修饰 figure。</td></tr>
+    </table>
+  </article>
+
+  <h2 id="p8">P8 企业行为反应</h2>
+
+  <article class="sentence-card" id="p8s1">
+    <h3>P8-S1</h3>
+    <p class="marked">
+      <span class="part noun">Bankers and advisers<small>主语</small></span>
+      <span class="part neutral">report<small>谓语</small></span>
+      <span class="part noun">that businesses worried about supply-chain disruption are beginning to stockpile products, increase working capital and defer payments to suppliers<small>宾语从句/名词性</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>Bankers and advisers / report / that 从句。</td></tr>
+      <tr><th>从句主干</th><td>businesses / are beginning / to stockpile, increase and defer。</td></tr>
+      <tr><th>修饰</th><td>worried about supply-chain disruption 后置修饰 businesses；三个 to do 并列说明 beginning 的内容。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p8s2">
+    <h3>P8-S2</h3>
+    <p class="marked">
+      <span class="part noun">Executives<small>主语</small></span>
+      <span class="part neutral">echo<small>谓语</small></span>
+      <span class="part noun">pandemic-era watchwords like "resilience"<small>宾语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>Executives / echo / watchwords。</td></tr>
+      <tr><th>修饰</th><td>pandemic-era 修饰 watchwords；like "resilience" 举例修饰 watchwords。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p8s3">
+    <h3>P8-S3</h3>
+    <p class="marked">
+      <span class="part noun">Some companies<small>主语</small></span>
+      <span class="part neutral">are talking up<small>谓语</small></span>
+      <span class="part noun">investments<small>宾语</small></span>
+      <span class="part adj">in domestic supply chains<small>后置定语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>Some companies / are talking up / investments。</td></tr>
+      <tr><th>修饰</th><td>in domestic supply chains 修饰 investments。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p8s4">
+    <h3>P8-S4</h3>
+    <p class="marked">
+      <span class="part adv">On April 30th<small>时间状语</small></span>
+      <span class="part noun">Pratt Industries<small>主语</small></span><span class="plain">,</span>
+      <span class="part noun">a privately held packaging giant<small>同位语</small></span><span class="plain">,</span>
+      <span class="part neutral">answered<small>谓语</small></span>
+      <span class="part noun">Mr Trump's call to reindustrialise America<small>宾语</small></span>
+      <span class="part adv">by pledging to spend $5bn in the country<small>方式状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>Pratt Industries / answered / Mr Trump's call。</td></tr>
+      <tr><th>修饰</th><td>to reindustrialise America 修饰 call；by pledging... 修饰 answered，说明回应方式。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p8s5">
+    <h3>P8-S5</h3>
+    <p class="marked">
+      <span class="part adv">A day later<small>时间状语</small></span>
+      <span class="part noun">Kimberly-Clark<small>主语</small></span>
+      <span class="part neutral">announced<small>谓语</small></span>
+      <span class="part noun">it would spend $2bn over five years to avert any future shortages of Kleenex tissues and Huggies nappies<small>宾语从句/名词性</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>Kimberly-Clark / announced / [that] it would spend...</td></tr>
+      <tr><th>修饰</th><td>over five years 修饰 spend；to avert... 是目的状语，修饰 spend。</td></tr>
+    </table>
+  </article>
+
+  <h2 id="p9">P9 老板的侥幸心理</h2>
+
+  <article class="sentence-card" id="p9s1">
+    <h3>P9-S1</h3>
+    <p class="marked">
+      <span class="part adv">For all this hand-wringing<small>让步状语</small></span><span class="plain">,</span>
+      <span class="part adv">deep down<small>程度/位置状语</small></span>
+      <span class="part noun">many American bosses<small>主语</small></span>
+      <span class="part neutral">cling to<small>谓语</small></span>
+      <span class="part noun">the hope<small>宾语</small></span>
+      <span class="part noun">that the tariff turmoil will also end just as the covid chaos did<small>同位语从句/名词性</small></span><span class="plain">-</span>
+      <span class="part adv">which is to say, with a swift return to business as usual, barring a few more empty desks<small>解释性状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>many American bosses / cling to / the hope。</td></tr>
+      <tr><th>修饰</th><td>For all... 修饰整句；that 从句解释 hope 的内容；which is to say 解释前面的 end。</td></tr>
+      <tr><th>说明</th><td>that 从句是名词性同位语从句，不是修饰 hope 的形容词性定语从句。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p9s2">
+    <h3>P9-S2</h3>
+    <p class="marked">
+      <span class="part noun">The second quarter of 2020<small>主语</small></span>
+      <span class="part neutral">was<small>系动词谓语</small></span>
+      <span class="part adj">painful<small>主语补语</small></span><span class="plain">,</span>
+      <span class="part adv">to be sure<small>评注状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>The second quarter / was / painful。</td></tr>
+      <tr><th>修饰</th><td>of 2020 修饰 quarter；to be sure 修饰整句，表示让步承认。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p9s3">
+    <h3>P9-S3</h3>
+    <p class="marked">
+      <span class="part noun">More than 300 companies in the S&amp;P 500<small>主语</small></span>
+      <span class="part neutral">reported<small>谓语</small></span>
+      <span class="part noun">a year-on-year fall in sales<small>宾语</small></span><span class="plain">;</span>
+      <span class="part noun">over 100<small>主语</small></span>
+      <span class="part neutral">suffered<small>谓语</small></span>
+      <span class="part noun">a net loss<small>宾语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>companies / reported / a fall；over 100 / suffered / a loss。</td></tr>
+      <tr><th>修饰</th><td>in the S&amp;P 500 修饰 companies；year-on-year 修饰 fall；in sales 修饰 fall。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p9s4">
+    <h3>P9-S4</h3>
+    <p class="marked">
+      <span class="part noun">Some 260<small>主语</small></span>
+      <span class="part adv">collectively<small>状语</small></span>
+      <span class="part neutral">booked<small>谓语</small></span>
+      <span class="part noun">nearly $90bn in one-off charges such as asset write-downs<small>宾语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>Some 260 / booked / nearly $90bn in charges。</td></tr>
+      <tr><th>修饰</th><td>collectively 修饰 booked；in one-off charges 说明金额归属；such as... 举例修饰 charges。</td></tr>
+    </table>
+  </article>
+
+  <h2 id="p10">P10 疫情后的快速恢复</h2>
+
+  <article class="sentence-card" id="p10s1">
+    <h3>P10-S1</h3>
+    <p class="marked">
+      <span class="part adv">By the autumn of 2020<small>时间状语</small></span>
+      <span class="part noun">CEOs<small>主语</small></span>
+      <span class="part adv">still<small>状语</small></span>
+      <span class="part neutral">preached<small>谓语</small></span>
+      <span class="part noun">the virtues of resilience<small>宾语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>CEOs / preached / the virtues。</td></tr>
+      <tr><th>修饰</th><td>By... 修饰 preached；of resilience 修饰 virtues。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p10s2">
+    <h3>P10-S2</h3>
+    <p class="marked">
+      <span class="plain">But</span>
+      <span class="part noun">they<small>主语</small></span>
+      <span class="part neutral">were privately conceding<small>谓语</small></span>
+      <span class="part noun">that those much-maligned "just-in-time" supply chains held up fine<small>宾语从句/名词性</small></span><span class="plain">,</span>
+      <span class="part adv">all things considered<small>评注状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>they / were conceding / that 从句。</td></tr>
+      <tr><th>从句主干</th><td>supply chains / held up / fine。</td></tr>
+      <tr><th>修饰</th><td>much-maligned 和 just-in-time 修饰 supply chains；all things considered 修饰整句判断。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p10s3">
+    <h3>P10-S3</h3>
+    <p class="marked">
+      <span class="part adv">Just as well<small>整句评注</small></span><span class="plain">,</span>
+      <span class="plain">for</span>
+      <span class="part noun">reconfiguring them<small>主语/动名词短语</small></span>
+      <span class="part neutral">would cost<small>谓语</small></span>
+      <span class="part noun">billions<small>宾语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>reconfiguring them / would cost / billions。</td></tr>
+      <tr><th>修饰</th><td>Just as well 评价前文；for 引出原因说明。</td></tr>
+      <tr><th>说明</th><td>reconfiguring them 是动名词短语，整体进入主语位置，所以按名词性。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p10s4">
+    <h3>P10-S4</h3>
+    <p class="marked">
+      <span class="part noun">Demand for many things<small>主语</small></span>
+      <span class="part neutral">ballooned<small>谓语</small></span>
+      <span class="part adv">as Uncle Sam posted covid cheques to citizens<small>时间/原因状语从句</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>Demand / ballooned。</td></tr>
+      <tr><th>修饰</th><td>for many things 修饰 Demand；as 从句修饰 ballooned，表示背景/原因。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p10s5">
+    <h3>P10-S5</h3>
+    <p class="marked">
+      <span class="part adv">In the second quarter of 2021<small>时间状语</small></span>
+      <span class="part noun">some three-quarters of firms in the S&amp;P 500<small>主语</small></span>
+      <span class="part neutral">saw<small>谓语</small></span>
+      <span class="part noun">their profits<small>宾语</small></span>
+      <span class="part neutral">rise<small>宾语补足动作</small></span>
+      <span class="part adv">year on year<small>时间比较状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>firms / saw / profits rise。</td></tr>
+      <tr><th>句型</th><td>SVOC：profits 是宾语，rise 补充说明 profits 发生的动作。</td></tr>
+      <tr><th>修饰</th><td>In... 修饰 saw；in the S&amp;P 500 修饰 firms；year on year 修饰 rise。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p10s6">
+    <h3>P10-S6</h3>
+    <p class="marked">
+      <span class="part noun">The typical bottom line<small>主语</small></span>
+      <span class="part neutral">swelled<small>谓语</small></span>
+      <span class="part adv">by 44%<small>程度状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>The typical bottom line / swelled。</td></tr>
+      <tr><th>修饰</th><td>by 44% 修饰 swelled，说明增幅。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p10s7">
+    <h3>P10-S7</h3>
+    <p class="marked">
+      <span class="part adv">By late summer 2020<small>时间状语</small></span>
+      <span class="part noun">the index<small>主语</small></span>
+      <span class="part neutral">had recouped<small>谓语</small></span>
+      <span class="part noun">all its losses<small>宾语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>the index / had recouped / all its losses。</td></tr>
+      <tr><th>修饰</th><td>By late summer 2020 修饰 had recouped。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p10s8">
+    <h3>P10-S8</h3>
+    <p class="marked">
+      <span class="part noun">It<small>主语</small></span>
+      <span class="part adv">then<small>时间状语</small></span>
+      <span class="part neutral">went<small>谓语</small></span>
+      <span class="part adv">on an epic tear<small>方向/状态状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>It / went。</td></tr>
+      <tr><th>修饰</th><td>then 修饰 went；on an epic tear 修饰 went，表示进入大涨状态。</td></tr>
+    </table>
+  </article>
+
+  <h2 id="p11">P11 投资者误判</h2>
+
+  <article class="sentence-card" id="p11s1">
+    <h3>P11-S1</h3>
+    <p class="marked">
+      <span class="part noun">Investors<small>主语</small></span>
+      <span class="part neutral">have concluded<small>谓语</small></span>
+      <span class="part noun">that America Inc is reliving the covid shock on fast-forward<small>宾语从句/名词性</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>Investors / have concluded / that 从句。</td></tr>
+      <tr><th>从句主干</th><td>America Inc / is reliving / the covid shock。</td></tr>
+      <tr><th>修饰</th><td>on fast-forward 修饰 reliving，表示“快进式重演”。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p11s2">
+    <h3>P11-S2</h3>
+    <p class="marked">
+      <span class="part adv">Within a month of Mr Trump's surprise announcement of "reciprocal" tariffs on most countries<small>时间状语</small></span><span class="plain">,</span>
+      <span class="part noun">the index<small>主语</small></span>
+      <span class="part neutral">was<small>系动词谓语</small></span>
+      <span class="part adj">back<small>主语补语</small></span>
+      <span class="part adv">where it had been beforehand<small>地点状语从句</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>the index / was / back。</td></tr>
+      <tr><th>修饰</th><td>Within... 修饰整句；where 从句修饰 back，说明回到哪里。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p11s3">
+    <h3>P11-S3</h3>
+    <p class="marked">
+      <span class="part noun">A 90-day pause on those levies and news of upcoming trade talks between America and China<small>主语</small></span>
+      <span class="part neutral">have calmed<small>谓语</small></span>
+      <span class="part noun">equity markets<small>宾语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>A pause and news / have calmed / equity markets。</td></tr>
+      <tr><th>修饰</th><td>on those levies 修饰 pause；of upcoming trade talks 修饰 news；between America and China 修饰 talks。</td></tr>
+    </table>
+  </article>
+
+  <h2 id="p12">P12 Brexit 类比与结论</h2>
+
+  <article class="sentence-card" id="p12s1">
+    <h3>P12-S1</h3>
+    <p class="marked">
+      <span class="part adv">Yet<small>转折状语</small></span>
+      <span class="part noun">business<small>主语</small></span>
+      <span class="part neutral">is not<small>系动词谓语</small></span>
+      <span class="part adj">back to usual<small>主语补语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>business / is not / back to usual。</td></tr>
+      <tr><th>说明</th><td>Yet 直接转折：市场平静不等于商业恢复正常。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p12s2">
+    <h3>P12-S2</h3>
+    <p class="marked">
+      <span class="part adv">Even if the tariffs stay paused and prohibitive ones on China come down<small>让步状语从句</small></span><span class="plain">,</span>
+      <span class="part noun">trade barriers and uncertainty<small>主语</small></span>
+      <span class="part neutral">will remain<small>谓语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>trade barriers and uncertainty / will remain。</td></tr>
+      <tr><th>修饰</th><td>Even if 从句修饰主句，表示让步条件；on China 修饰 ones。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p12s3">
+    <h3>P12-S3</h3>
+    <p class="marked">
+      <span class="part noun">Those<small>主语</small></span>
+      <span class="part neutral">risk being<small>谓语</small></span>
+      <span class="part noun">to America Inc what Brexit was to UK plc<small>宾语/补语结构</small></span>
+      <span class="plain">-</span>
+      <span class="part noun">a persistent drag on growth<small>同位语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>Those / risk being / what Brexit was to UK plc。</td></tr>
+      <tr><th>指代</th><td>Those 指 trade barriers and uncertainty。</td></tr>
+      <tr><th>修饰</th><td>what Brexit was to UK plc 是名词性从句，作 being 的补足内容；a persistent drag... 同位解释前面的比较结果。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p12s4">
+    <h3>P12-S4</h3>
+    <p class="marked">
+      <span class="part adv">In a new working paper<small>来源状语</small></span>
+      <span class="part noun">Nicholas Bloom of Stanford University and colleagues<small>主语</small></span>
+      <span class="part neutral">find<small>谓语</small></span>
+      <span class="part noun">that by 2024 Britain's exit from the EU had cut productivity by 3%, business investment by 12-20% and GDP by 6-9%<small>宾语从句/名词性</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>Nicholas Bloom and colleagues / find / that 从句。</td></tr>
+      <tr><th>从句主干</th><td>Britain's exit / had cut / productivity, investment and GDP。</td></tr>
+      <tr><th>修饰</th><td>by 2024 修饰 had cut；from the EU 修饰 exit；三个 by 数字短语分别修饰 cut 的三个结果。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p12s5">
+    <h3>P12-S5</h3>
+    <p class="marked">
+      <span class="part noun">American CEOs<small>主语</small></span>
+      <span class="part neutral">should put away<small>谓语</small></span>
+      <span class="part noun">their pandemic diaries<small>宾语</small></span>
+      <span class="plain">and</span>
+      <span class="part neutral">chat<small>并列谓语</small></span>
+      <span class="part adv">to their British counterparts instead<small>对象/替代状语</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>American CEOs / should put away / diaries；American CEOs / should chat。</td></tr>
+      <tr><th>修饰</th><td>pandemic 修饰 diaries；to their British counterparts 修饰 chat；instead 修饰整个建议。</td></tr>
+    </table>
+  </article>
+
+  <article class="sentence-card" id="p12s6">
+    <h3>P12-S6</h3>
+    <p class="marked">
+      <span class="part noun">They<small>主语</small></span>
+      <span class="part neutral">won't like<small>谓语</small></span>
+      <span class="part noun">what they hear<small>宾语从句/名词性</small></span><span class="plain">.</span>
+    </p>
+    <table>
+      <tr><th>主干</th><td>They / won't like / what they hear。</td></tr>
+      <tr><th>修饰</th><td>what they hear 是名词性从句，作 like 的宾语；从句内部 they 是主语，hear 是谓语。</td></tr>
+      <tr><th>说明</th><td>结尾很短，力度很强：如果美国 CEO 去问英国同行，得到的经验不会好听。</td></tr>
+    </table>
+  </article>
+
+  <section class="card">
+    <h2>最后读法</h2>
+    <p>这篇文章逐句看时，最稳的路径是：先找灰色谓语，再问红色名词性成分有没有进入主语、宾语、补语位置；黄色成分一律回头找它修饰的名词；绿色成分看它修饰谓语、形容词、整句，还是建立时间、原因、让步、比较等逻辑。</p>
+    <p class="note">本文只分析正文 57 个完整句子；PDF 末尾的订阅提示和下载来源行不属于文章正文，没有纳入逐句分析。</p>
+  </section>
+</main>
+</body>
+</html>
