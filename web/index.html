@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Larry 语法体系</title>
-  <link rel="stylesheet" href="style.css?v=20260620-unified-template">
+  <link rel="stylesheet" href="style.css?v=20260719-reading-hierarchy">
 </head>
 <body>
   <a class="skip-link" href="#main-content">跳到正文</a>
@@ -25,6 +25,7 @@
     <button id="mobileTocClose" class="mobile-drawer-close" type="button" aria-label="关闭目录">关闭</button>
     <label class="search-label" for="search">搜索知识点</label>
     <input id="search" type="search" placeholder="介词、定语从句、SVOC、冠词...">
+    <div class="toc-search-results" id="tocSearchResults" aria-live="polite"></div>
     <div class="drawer-quick-links">
       <a class="quick-link" href="#example-workbench-title">打开例句库工作台</a>
       <a class="quick-link" href="#content">进入知识体系</a>
@@ -54,115 +55,19 @@
       </div>
     </section>
 
-    <section class="temporary-analysis" id="temporary-puma-analysis" aria-labelledby="temporary-puma-title">
-      <div class="temporary-analysis-head">
-        <div>
-          <p class="eyebrow">Temporary Example</p>
-          <h2 id="temporary-puma-title">临时示例：Puma 全文句子成分标注</h2>
-          <p>用于确认长文标注方式；确认后可整块删除。</p>
-        </div>
-        <div class="temporary-legend" aria-label="颜色说明">
-          <span class="sentence-part noun">名词性<small>红</small></span>
-          <span class="sentence-part adj">形容词性 / 定语<small>黄</small></span>
-          <span class="sentence-part adv">副词性 / 状语<small>绿</small></span>
-          <span class="sentence-part nonfinite">非谓语<small>紫</small></span>
-          <span class="sentence-part neutral">谓语 / 主干<small>灰</small></span>
-        </div>
-      </div>
-
-      <div class="temporary-analysis-list">
-        <article class="temporary-sentence-card">
-          <h3>1. 定语从句修饰名词</h3>
-          <p class="marked-sentence"><span class="sentence-part noun">Pumas<small>主语</small></span> <span class="sentence-part neutral">are<small>谓语</small></span> <span class="sentence-part noun">large, cat-like animals<small>表语</small></span> <span class="sentence-part adj">which are found in America<small>定语从句</small></span>.</p>
-          <div class="core-line"><b>主干</b><span>Pumas are animals.</span></div>
-        </article>
-
-        <article class="temporary-sentence-card">
-          <h3>2. 时间状语从句 + 同位语从句</h3>
-          <p class="marked-sentence"><span class="sentence-part adv">When reports came into London Zoo that a wild puma had been spotted forty-five miles south of London<small>时间状语从句</small></span>, <span class="sentence-part noun">they<small>主语</small></span> <span class="sentence-part neutral">were not taken<small>谓语</small></span> <span class="sentence-part adv">seriously<small>状语</small></span>.</p>
-          <div class="core-line"><b>判断</b><span>that a wild puma had been spotted... 说明 reports 的内容，是同位语从句。</span></div>
-        </article>
-
-        <article class="temporary-sentence-card">
-          <h3>3. 原因状语 + 分词定语 + 定语从句</h3>
-          <p class="marked-sentence"><span class="sentence-part adv">However<small>连接副词</small></span>, <span class="sentence-part adv">as the evidence began to accumulate<small>时间 / 原因状语从句</small></span>, <span class="sentence-part noun">experts from the Zoo<small>主语</small></span> <span class="sentence-part neutral">felt<small>谓语</small></span> <span class="sentence-part adj">obliged to investigate<small>补语</small></span>, <span class="sentence-part adv">for the descriptions given by people who claimed to have seen the puma were extraordinarily similar<small>原因状语从句</small></span>.</p>
-          <div class="core-line"><b>关键</b><span>given by people 是过去分词短语修饰 descriptions；who claimed... 修饰 people。</span></div>
-        </article>
-
-        <article class="temporary-sentence-card">
-          <h3>4. 地点定语从句 + 分词定语</h3>
-          <p class="marked-sentence"><span class="sentence-part noun">The hunt for the puma<small>主语</small></span> <span class="sentence-part neutral">began<small>谓语</small></span> <span class="sentence-part adv">in a small village<small>地点状语</small></span> <span class="sentence-part adj">where a woman picking blackberries saw 'a large cat' only five yards away from her<small>定语从句</small></span>.</p>
-          <div class="core-line"><b>关键</b><span>where 从句修饰 village；picking blackberries 是现在分词短语，修饰 woman。</span></div>
-        </article>
-
-        <article class="temporary-sentence-card">
-          <h3>5. 并列句 + 宾语从句 + 条件状语从句</h3>
-          <p class="marked-sentence"><span class="sentence-part noun">It<small>主语</small></span> <span class="sentence-part neutral">ran away<small>谓语</small></span> <span class="sentence-part adv">immediately<small>状语</small></span> <span class="sentence-part adv">when she saw it<small>时间状语从句</small></span>, and <span class="sentence-part noun">experts<small>主语</small></span> <span class="sentence-part neutral">confirmed<small>谓语</small></span> <span class="sentence-part noun">that a puma will not attack a human being unless it is cornered<small>宾语从句</small></span>.</p>
-          <div class="core-line"><b>关键</b><span>unless it is cornered 是宾语从句内部的条件状语从句。</span></div>
-        </article>
-
-        <article class="temporary-sentence-card">
-          <h3>6. 主系表 / 主语补足语 + 原因状语从句</h3>
-          <p class="marked-sentence"><span class="sentence-part noun">The search<small>主语</small></span> <span class="sentence-part neutral">proved<small>系动词</small></span> <span class="sentence-part adj">difficult<small>主语补足语</small></span>, <span class="sentence-part adv">for the puma was often observed at one place in the morning and at another place twenty miles away in the evening<small>原因状语从句</small></span>.</p>
-          <div class="core-line"><b>主干</b><span>The search proved difficult.</span></div>
-        </article>
-
-        <article class="temporary-sentence-card">
-          <h3>7. wherever 状语从句</h3>
-          <p class="marked-sentence"><span class="sentence-part adv">Wherever it went<small>地点 / 让步状语从句</small></span>, <span class="sentence-part noun">it<small>主语</small></span> <span class="sentence-part neutral">left<small>谓语</small></span> <span class="sentence-part noun">behind it a trail of dead deer and small animals like rabbits<small>宾语</small></span>.</p>
-          <div class="core-line"><b>主干</b><span>it left a trail behind it.</span></div>
-        </article>
-
-        <article class="temporary-sentence-card">
-          <h3>8. 并列被动句 + 分词补足语</h3>
-          <p class="marked-sentence"><span class="sentence-part noun">Paw prints<small>主语</small></span> <span class="sentence-part neutral">were seen<small>谓语</small></span> <span class="sentence-part adv">in a number of places<small>地点状语</small></span> and <span class="sentence-part noun">puma fur<small>主语</small></span> <span class="sentence-part neutral">was found<small>谓语</small></span> <span class="sentence-part nonfinite">clinging to bushes<small>主语补足语</small></span>.</p>
-          <div class="core-line"><b>关键</b><span>clinging to bushes 说明 puma fur 被发现时的状态。</span></div>
-        </article>
-
-        <article class="temporary-sentence-card">
-          <h3>9. 介词宾语 + 宾语补足语</h3>
-          <p class="marked-sentence"><span class="sentence-part noun">Several people<small>主语</small></span> <span class="sentence-part neutral">complained of<small>谓语</small></span> <span class="sentence-part noun">&quot;cat-like noises&quot; at night<small>介词宾语</small></span> and <span class="sentence-part noun">a businessman on a fishing trip<small>主语</small></span> <span class="sentence-part neutral">saw<small>谓语</small></span> <span class="sentence-part noun">the puma<small>宾语</small></span> <span class="sentence-part adv">up a tree<small>宾语补足语 / 地点状态</small></span>.</p>
-          <div class="core-line"><b>关键</b><span>up a tree 说明 puma 的位置状态，可按宾语补足语理解。</span></div>
-        </article>
-
-        <article class="temporary-sentence-card">
-          <h3>10. 内容从句 + 疑问句</h3>
-          <p class="marked-sentence"><span class="sentence-part noun">The experts<small>主语</small></span> <span class="sentence-part neutral">were<small>系动词</small></span> <span class="sentence-part adv">now<small>状语</small></span> <span class="sentence-part adj">fully convinced<small>补语</small></span> <span class="sentence-part noun">that the animal was a puma<small>内容从句</small></span>, but <span class="sentence-part adv">where<small>来源状语</small></span> <span class="sentence-part neutral">had<small>助动词</small></span> <span class="sentence-part noun">it<small>主语</small></span> <span class="sentence-part neutral">come<small>谓语</small></span> <span class="sentence-part adv">from<small>状语</small></span>?</p>
-          <div class="core-line"><b>主干</b><span>The experts were convinced. / Where had it come from?</span></div>
-        </article>
-
-        <article class="temporary-sentence-card">
-          <h3>11. 原因状语从句 + 情态完成式</h3>
-          <p class="marked-sentence"><span class="sentence-part adv">As no pumas had been reported missing from any zoo in the country<small>原因状语从句</small></span>, <span class="sentence-part noun">this one<small>主语</small></span> <span class="sentence-part neutral">must have been<small>谓语</small></span> <span class="sentence-part adv">in the possession of a private collector<small>表语 / 状态</small></span> and <span class="sentence-part adv">somehow<small>状语</small></span> <span class="sentence-part neutral">managed<small>谓语</small></span> <span class="sentence-part nonfinite">to escape<small>宾语</small></span>.</p>
-          <div class="core-line"><b>关键</b><span>must have been 表示对过去情况的推断；to escape 是 managed 的宾语。</span></div>
-        </article>
-
-        <article class="temporary-sentence-card">
-          <h3>12. 并列主干</h3>
-          <p class="marked-sentence"><span class="sentence-part noun">The hunt<small>主语</small></span> <span class="sentence-part neutral">went on<small>谓语</small></span> <span class="sentence-part adv">for several weeks<small>时间状语</small></span>, but <span class="sentence-part noun">the puma<small>主语</small></span> <span class="sentence-part neutral">was not caught<small>谓语</small></span>.</p>
-          <div class="core-line"><b>主干</b><span>The hunt went on, but the puma was not caught.</span></div>
-        </article>
-
-        <article class="temporary-sentence-card">
-          <h3>13. 形式主语 it + 真正主语不定式</h3>
-          <p class="marked-sentence"><span class="sentence-part noun">It<small>形式主语</small></span> <span class="sentence-part neutral">is<small>系动词</small></span> <span class="sentence-part adj">disturbing<small>表语</small></span> <span class="sentence-part nonfinite">to think that a dangerous wild animal is still at large in the quiet countryside<small>真正主语</small></span>.</p>
-          <div class="core-line"><b>关键</b><span>that a dangerous wild animal is still at large... 是 think 的宾语从句。</span></div>
-        </article>
-      </div>
-    </section>
 
     <section class="hero">
       <div>
         <p class="eyebrow">Grammar System</p>
         <h2>用功能颜色理解英语句子结构</h2>
-        <p>先找谓语和主干，再按名词性、形容词性、副词性、非谓语四类功能拆开复杂结构。</p>
+        <p>先找谓语和主干，用红、黄、绿判断句中功能；遇到非谓语时，再叠加紫色形式标记。</p>
       </div>
       <div class="legend" aria-label="颜色规则">
-        <strong class="legend-title">颜色规则：按句中功能标记</strong>
+        <strong class="legend-title">双层标记：功能色 + 形式线索</strong>
         <span><b class="dot noun-dot"></b><strong class="tag noun">红色</strong>名词性成分</span>
         <span><b class="dot adj-dot"></b><strong class="tag adj">黄色</strong>形容词性成分</span>
         <span><b class="dot adv-dot"></b><strong class="tag adv">绿色</strong>副词性成分</span>
-        <span><b class="dot nonfinite-dot"></b><strong class="tag nonfinite">紫色</strong>非谓语 / 不定式</span>
+        <span><b class="dot nonfinite-dot"></b><strong class="tag nonfinite">紫色线标</strong>非谓语形式（叠加）</span>
       </div>
     </section>
 
@@ -228,8 +133,8 @@
           <div class="clause-builder">
             <b>从句生成器</b>
             <span>复杂结构不是另起炉灶</span>
-            <strong>连词 + 简单句</strong>
-            <em>= 从句结构</em>
+            <strong>从属关系 + 小句主干</strong>
+            <em>= 从属小句；引导词可能兼任内部成分</em>
           </div>
 
           <div class="nonfinite-transformer">
@@ -266,7 +171,7 @@
     <section id="content" class="content"></section>
   </main>
 
-  <script src="generated-sections.js?v=20260628-bosses-beware"></script>
-  <script src="app.js?v=20260628-bosses-beware"></script>
+  <script src="generated-sections.js?v=20260719-reading-hierarchy"></script>
+  <script src="app.js?v=20260719-reading-hierarchy"></script>
 </body>
 </html>

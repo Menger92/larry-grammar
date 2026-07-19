@@ -20,7 +20,7 @@
 | 项目 | 结论 |
 | --- | --- |
 | 一句话本质 | 非谓语保留动作含义，但失去核心谓语资格，转而承担名词性、形容词性、副词性或补语功能。 |
-| 核心公式 | `非谓语 = 动词含义 + 非谓语资格` |
+| 核心公式 | `非谓语 = 保留动词特征 - 有限谓语资格` |
 | 判断入口 | 先锁定真正谓语，再处理剩余的 `to do / doing / done`。 |
 | 代表例句 | I need a pen to write with. |
 | 最易混点 | 形式只提示目的、主动或被动；最终功能仍由它在句中的位置和修饰对象决定。 |
@@ -34,7 +34,7 @@
 | 步骤 | 判断问题 | 结果 |
 | --- | --- | --- |
 | 1 | 真正谓语是谁？ | 非谓语不能承担句子核心时态和人称。 |
-| 2 | 剩余形式是 to do、doing 还是 done？ | 先标紫色非谓语形式。 |
+| 2 | 剩余形式是 to do、doing 还是 done？ | 叠加紫色非谓语形式标记，但不替代它的功能色。 |
 | 3 | 它在句中占什么位置？ | 名词性、形容词性、副词性或补语。 |
 | 4 | 它的逻辑主语或修饰对象是谁？ | 检查动作由谁发出或承受。 |
 | 5 | 动作关系是目的、主动、进行、被动还是完成？ | 决定 to do / doing / done 的具体解释。 |
@@ -74,7 +74,7 @@
 | --- | --- | --- |
 | 1 | 句子真正的谓语是谁？ | 先定主干。真正谓语负责时态、人称和句子成立。 |
 | 2 | 剩下的动词形式是什么？ | `to do / doing / done` 如果不作核心谓语，就进入非谓语判断。 |
-| 3 | 它前面有没有连接词和完整主谓？ | 有连接词 + 完整主谓，优先按从句分析；没有完整主谓，再看非谓语。 |
+| 3 | 它所在结构有没有自己的有限谓语和小句主干？ | 有有限谓语并依附于更高结构，优先按从句分析；没有有限谓语资格，再看非谓语。 |
 | 4 | 它占什么位置，修饰谁？ | 占主宾表等名词位置 → 名词性；修饰名词 → 形容词性；修饰动作、状态或整句 → 副词性；补充说明主语或宾语 → 补语。 |
 | 5 | 它和逻辑主语 / 被修饰对象是什么关系？ | 主动或进行 → doing；被动或完成 → done；目的、将来、倾向 → to do。 |
 | 6 | 能否还原成完整从句？ | 能还原，说明逻辑关系清楚；还原后主语、语态、时间关系都要自洽。 |
@@ -125,9 +125,9 @@
 
 | 表达 | 代回检查 | 判断 |
 | --- | --- | --- |
-| I need a pen to write. | write a pen | 不自然；pen 不是 write 的直接宾语。 |
+| 【纠错对比】 I need a pen to write. | write a pen | 不自然；pen 不是 write 的直接宾语。 |
 | I need a pen to write with. | write with a pen | 自然；with 保留了工具关系。 |
-| I need a bed to sleep. | sleep a bed | 不自然；bed 不是 sleep 的直接宾语。 |
+| 【纠错对比】 I need a bed to sleep. | sleep a bed | 不自然；bed 不是 sleep 的直接宾语。 |
 | I need a bed to sleep in. | sleep in a bed | 自然；in 保留了地点关系。 |
 | Michael is the best person to consult about the matter with. | consult about the matter with Michael | 自然；with 保留了“和 Michael 商量”的对象关系。 |
 
@@ -209,9 +209,9 @@
 | 目的状语 | To improve my English, I went to America. | 为了提高英语，我去了美国。 |
 | 结果状语 | He went abroad never to return. | 去了国外，结果再也没有回来。 |
 | 原因状语 | She wept to hear the news. | 因为听到消息而哭。 |
-| 条件状语 | To hear him sing, you might take him for a girl. | 如果听他唱歌，你可能会把他当成女孩。 |
+| 条件状语 | 【纠错对比】 To hear him sing, you might take him for a girl. | 来源用它表达“如果 / 当听他唱歌”，但句首不定式默认更容易被读成目的。条件关系优先写 `If you hear him sing, ...`。 |
 | 方式状语 | The old man walked slowly, hunched over, as if to carry the weight of the world on his shoulders. | as if to do 表示“仿佛要……”。 |
-| 让步状语 | To do his best, he could not fulfill his task in time. | 即使尽力，他也没能及时完成任务。 |
+| 让步状语 | 【纠错对比】 To do his best, he could not fulfill his task in time. | 不定式不能单靠形式稳定表达“尽管”。推荐 `Despite doing his best, he could not fulfill his task in time.` |
 
 ### 不定式的时态、语态
 
@@ -501,8 +501,8 @@
 | 两者意思差别大 | I don't remember mailing the letter. | 不记得寄过这封信。 |
 | 两者意思差别大 | I hate to trouble you. | 不愿意麻烦你，常用于具体请求。 |
 | 两者意思差别大 | I hate troubling you. | 讨厌麻烦你这件事。 |
-| 两者意思差别大 | I cannot help to repair the car. | 我不能帮忙修车。 |
-| 两者意思差别大 | I cannot help laughing. | 我忍不住笑。 |
+| 两者意思差别大 | 【依赖语境】 I cannot help to repair the car. | 这里是普通动词 `help (to) repair`：“不能帮忙修车”。 |
+| 两者意思差别大 | I cannot help laughing. | 这里是固定结构 `cannot help doing`：“忍不住笑”。两句不是同一个 help 句型在比较 to do / doing。 |
 
 ## 分词
 
@@ -568,19 +568,19 @@
 
 | 问题句 | 错误逻辑 | 改写 |
 | --- | --- | --- |
-| Waiting for a bus, a little cat walked to me. | a little cat waited for the bus，不合语义。 | Waiting for a bus, I saw a little cat walk to me. |
-| After doing my homework, the room was cleaned. | the room did my homework，不合语义。 | After doing my homework, I cleaned the room. |
-| When using the computer, the password must be remembered. | the password uses the computer，不合语义。 | When using the computer, we have to remember the password. |
+| 【纠错对比】 Waiting for a bus, a little cat walked to me. | a little cat waited for the bus，不合语义。 | Waiting for a bus, I saw a little cat walk to me. |
+| 【纠错对比】 After doing my homework, the room was cleaned. | the room did my homework，不合语义。 | After doing my homework, I cleaned the room. |
+| 【纠错对比】 When using the computer, the password must be remembered. | the password uses the computer，不合语义。 | When using the computer, we have to remember the password. |
 
 如果分词动作不是主句主语做的，可以使用独立分词结构，把分词自己的逻辑主语写出来。
 
 | 结构 | 例句 | 判断 |
 | --- | --- | --- |
-| 名词 + 分词 | Nobody having anymore to say, the meeting was closed. | Nobody 是 having 的逻辑主语。 |
+| 名词 + 分词 | 【校准表达】 Nobody having any more to say, the meeting was closed. | Nobody 是 having 的逻辑主语；来源写作 `anymore`，这里按“再没有更多话可说”校准为 `any more`。 |
 | 名词 + done | All the money spent, we started looking for work. | All the money 是 spent 的承受者。 |
 | 名词 + doing | Weather permitting, we'll go fishing tomorrow. | Weather 是 permitting 的逻辑主语。 |
 | with + 名词 + doing | The old man often takes a walk after dinner with his dog following him. | his dog 是 following 的逻辑主语。 |
-| with + 名词 + doing | A car drove by, with smoke pouring from its behind. | smoke 是 pouring 的逻辑主语。 |
+| with + 名词 + doing | 【校准表达】 A car drove by, with smoke pouring from behind it. | smoke 是 pouring 的逻辑主语；来源的 `from its behind` 搭配不自然。 |
 
 也有一些固定结构已经习语化，通常不再按普通悬垂分词处理。
 
@@ -600,14 +600,14 @@
 | 条件 | Given more time, we could have done better. | If we had been given more time, we could have done better. |
 | 条件 | Weather permitting, we'll go fishing tomorrow. | If weather permits, we'll go fishing tomorrow. |
 | 时间 | Once installed, this machine operates automatically. | Once it is installed, this machine operates automatically. |
-| 时间 | Locking the door, he went home. | After he locked the door, he went home. |
+| 时间 | 【校准表达】 Having locked the door, he went home.（来源原句：Locking the door, he went home.） | After he locked the door, he went home. |
 | 时间 | Hearing the joke, he started laughing. | After he heard the joke, he started laughing. |
 | 原因 | Being busy, he will not come today. | Because he is busy, he will not come today. |
 | 原因 | Not knowing what to do next, I need your advice. | Because I don't know what to do, I need your advice. |
-| 让步 | Having been abroad for years, he still can't speak English. | Though he has been abroad for ten years, he still can't speak English. |
-| 让步 | Although understanding no Chinese, he was able to communicate. | Although he understood no Chinese, he was able to communicate. |
-| 结果 | Her husband died, leaving her with two children. | Her husband died, so that he left her with two children. |
-| 结果 | He fired, killing an enemy. | He fired, so that he killed an enemy. |
+| 让步 | 【依赖语境】 Having been abroad for years, he still can't speak English. | 依靠 `still` 和常识读出让步；连接关系本身没有明说。更明确可写 `Although he has been abroad for years, ...`。 |
+| 让步 | 【校准表达】 Although not understanding any Chinese, he was able to communicate. | 来源写作 `Although understanding no Chinese`；校准后仍较书面，完整从句 `Although he understood no Chinese, ...` 最清楚。 |
+| 结果 | Her husband died, leaving her with two children. | Her husband died, with the result that she was left with two children. |
+| 结果 | 【校准表达】 He fired a shot, killing an enemy.（来源原句：He fired, killing an enemy.） | `fire` 需有足够语境说明“开火”；补出 `a shot` 后结果关系更清楚。 |
 
 分词作状语时，可以保留连接词。这个结构相当于简化后的状语从句，但保留了关系提示。
 
@@ -661,7 +661,7 @@
 | --- | --- | --- |
 | 及物动词过去分词 | published writings | writings 被发表。 |
 | 及物动词过去分词 | a charmed girl | girl 被吸引 / 被迷住。 |
-| 及物动词过去分词 | a moved object | object 被移动。 |
+| 及物动词过去分词 | 【依赖语境】 a moved object | 语法上可表示 object 被移动过，但脱离语境不自然；按目标意义通常用 `a displaced object` 或 `a moving object`。 |
 | 及物动词过去分词 | boiled water | water 被煮过。 |
 | 不及物动词过去分词 | faded roses | roses 已经凋谢。 |
 | 不及物动词过去分词 | a sunken boat | boat 已经沉没。 |
@@ -672,7 +672,7 @@
 
 | 结构 | 例句 | 还原 | 含义 |
 | --- | --- | --- | --- |
-| done | The built house is beautiful. | The house that has been built is beautiful. | 已经建好的房子。 |
+| done | 【校准表达】 The newly built house is beautiful.（来源原句：The built house is beautiful.） | The house that has been built is beautiful. | 已经建好的房子；单独 `built` 前置不自然。 |
 | being done | The house being built is beautiful. | The house that is being built is beautiful. | 正在被建的房子。 |
 | to be done | The house to be built will be beautiful. | The house that will be built will be beautiful. | 将要被建的房子。 |
 
@@ -716,7 +716,7 @@
 | --- | --- |
 | grow vegetables | 及物：种植蔬菜。可以说 vegetables grown in the US。 |
 | children grow up in the US | 不及物短语：孩子在美国长大。不能直接说 Chinese children grown in the US。 |
-| Chinese children grown in the US speak good English. | 错误：这里 grow 不是“被种植”的及物用法。 |
+| 【纠错对比】 Chinese children grown in the US speak good English. | 错误：这里 grow 不是“被种植”的及物用法。 |
 | Chinese children raised in the US speak good English. | 正确：raised 表示“被养育”。 |
 | Chinese children who grow up in the US speak good English. | 正确：保留从句，用 grow up 表示长大。 |
 | You grow smarter as you grow older. | grow 是系动词 / 不及物变化，smarter / older 是主语补足语，不是宾语。 |
@@ -787,7 +787,7 @@
 
 | 形式 | 例句 | 还原 | 含义 |
 | --- | --- | --- | --- |
-| done | The built house is beautiful. | The house that has been built is beautiful. | 已经建好的房子。 |
+| done | 【校准表达】 The newly built house is beautiful.（来源原句：The built house is beautiful.） | The house that has been built is beautiful. | 单独 `built` 前置很生硬；`newly built` 是自然搭配。 |
 | being done | The house being built is beautiful. | The house that is being built is beautiful. | 正在被建的房子。 |
 | to be done | The house to be built will be beautiful. | The house that will be built will be beautiful. | 将要被建的房子。 |
 
@@ -842,11 +842,11 @@
 
 | 名词性从句 | 转换表达 | 句中位置 | 分析 |
 | --- | --- | --- | --- |
-| I don't know that he is a transsexual. | I don't know his being a transsexual. | 宾语 | 宾语从句变成动名词短语。 |
-| Whether he is a transsexual or not doesn't matter. | His being a transsexual or not doesn't matter. | 主语 | 主语从句变成动名词短语。 |
+| I don't know that he is a transsexual. | 【纠错对比】 I don't know his being a transsexual. | 宾语 | 来源转换不自然，`know` 不能这样直接接所有格动名词。若改用动名词路线，需要连谓语一起调整，如 `I was unaware of his being transgender.` |
+| Whether he is a transsexual or not doesn't matter. | 【依赖语境】 His being a transsexual or not doesn't matter. | 主语 | 能看出名词化路线，但 `or not` 挂在动名词后较生硬；自然表达优先保留 whether 从句，或改写为 `His gender identity doesn't matter.` |
 | The problem is what he is. | The problem is his identity. | 表语 | 表语从句换成名词短语。 |
 | What you decide will greatly impact our future. | Your decision will greatly impact our future. | 主语 | 主语从句换成名词短语。 |
-| His dream is that he becomes a successful entrepreneur. | His dream is to become a successful entrepreneur. | 表语 | 表语从句换成不定式，强调目标和将来实现。 |
+| 【校准表达】 His dream is that he will become a successful entrepreneur.（来源原句用 becomes） | His dream is to become a successful entrepreneur. | 表语 | 内容从句用 `will become` 更自然；不定式版本最简洁，强调目标和将来实现。 |
 
 判断口诀：能换成“这件事 / 这个东西 / 这个目标”，通常就是名词性路线。
 
@@ -856,10 +856,10 @@
 
 | 形容词性从句 | 转换表达 | 转换类型 | 分析 |
 | --- | --- | --- | --- |
-| We need a teacher who is warm-hearted, hardworking, and quick in learning. | We need a warm-hearted, hard-working, and fast-learning teacher. | 形容词短语 | 从句信息前置为形容词性修饰语，较少见，适合简短固定表达。 |
-| Michael likes friends who are always ready to help. | Michael likes ready-to-help friends. | 形容词化短语 | ready-to-help 修饰 friends。 |
+| We need a teacher who is warm-hearted, hardworking, and quick to learn. | 【校准表达】 We need a warm-hearted, hard-working teacher who is quick to learn.（来源转换用了 `fast-learning teacher`） | 形容词短语 | 固定形容词可前置，但复杂信息保留从句更自然，不必追求全部压缩。 |
+| Michael likes friends who are always ready to help. | 【依赖语境】 Michael likes ready-to-help friends. | 形容词化短语 | 能理解但带临时造词感；普通表达优先保留关系从句。 |
 | I like the flowers that are on the table. | I like the flowers on the table. | 介词短语 | on the table 修饰 flowers。 |
-| In Fujian there exist certain traditions that people accustomed to Northern ways of thinking find strange. | In Fujian there exist certain traditions not to be easily understood by people accustomed to Northern ways of thinking. | 不定式短语 | 不定式后置修饰 traditions，强调“难以被理解”的性质。 |
+| In Fujian there exist certain traditions that people accustomed to Northern ways of thinking find strange. | 【纠错对比】 In Fujian there exist certain traditions not to be easily understood by people accustomed to Northern ways of thinking. | 不定式短语 | 来源转换把“觉得奇怪”改成了“不容易理解”，意义不等价。要压缩可写 `certain traditions considered strange by people accustomed to Northern ways of thinking`。 |
 | a dog that is running | a running dog | 分词 | running 修饰 dog，dog 发出 running。 |
 | The book that was written by Larry is useful. | The book written by Larry is useful. | 分词 | written 修饰 book，book 承受 write。 |
 
@@ -871,11 +871,11 @@
 
 | 关系 | 副词性从句 | 转换表达 | 分析 |
 | --- | --- | --- | --- |
-| 时间 | When I opened the window, the cat jumped out. | With my opening the window, the cat jumped out. | 用 with + 动名词结构表达时间背景。 |
+| 时间 | When I opened the window, the cat jumped out. | 【校准表达】 On my opening the window, the cat jumped out.（来源转换：With my opening the window, ...） | `with my opening` 生硬；正式语体可用 `on/upon + 动名词`，普通表达保留 when 从句最自然。 |
 | 地点 | People plant trees where there is a lot of sunshine. | People plant trees in sunlit places. | 地点从句换成介词短语 / 名词短语。 |
-| 结果 | I opened the window so that the cat jumped out. | I opened the window, the cat jumping out. | 分词结构表达结果。 |
-| 目的 | I opened the window so that the cat could jump out. | I opened the window, the cat being able to jump out. | 可压缩，但通常不如目的从句自然。 |
-| 条件 | If you heat water, you can change it into steam. | Heating water, you can change it into steam. | 条件从句压缩成分词状语，主语要一致。 |
+| 结果 | I opened the window so that the cat jumped out. | 【依赖语境】 I opened the window, the cat jumping out. | 来源用独立分词结构表达伴随 / 结果，正式且容易误读。普通表达可写 `I opened the window, and the cat jumped out.` |
+| 目的 | I opened the window so that the cat could jump out. | 【纠错对比】 I opened the window, the cat being able to jump out. | 后者只描述“猫能够跳出”的状态，不能稳定表达开窗的目的。自然压缩为 `I opened the window to let the cat jump out.` |
+| 条件 | If you heat water, you can change it into steam. | 【校准表达】 By heating water, you can turn it into steam.（来源转换省略了 By） | `By doing` 明确表示方法；裸 `Heating water` 容易被误当成时间、条件或伴随。 |
 | 让步 | Though I opened the window, the cat didn't jump out. | Despite my opening the window, the cat didn't jump out. | 让步从句换成介词短语。 |
 | 方式 | He raised his head as though he was going to command silence. | He raised his head as though to command silence. | as though 保留，后接不定式。 |
 
@@ -885,7 +885,7 @@
 
 | 表达 | 可能含义 | 判断 |
 | --- | --- | --- |
-| To hear him sing, you might take him for a girl. | 可以理解成“如果 / 当你听他唱歌”。 | 非谓语本身不明说条件或时间。 |
+| 【纠错对比】 To hear him sing, you might take him for a girl. | 来源希望表达“如果 / 当你听他唱歌”，但句首不定式通常先触发目的理解。 | 条件写 `If you hear him sing, ...`；时间写 `When you hear him sing, ...`。 |
 | If you hear him sing, you might take him for a girl. | 条件：如果你听他唱。 | 关系明确。 |
 | When you hear him sing, you might take him for a girl. | 时间：当你听他唱。 | 关系明确。 |
 
@@ -893,7 +893,7 @@
 
 | 表达 | 问题 | 更清楚的表达 |
 | --- | --- | --- |
-| The hunting police are looking for the hurrying killer. | hunting / hurrying 都是压缩表达，时态、动作关系不够明确。 | The police that are hunting for the killer are looking for the killer who is hurrying away. |
+| 【纠错对比】 The hunting police are looking for the hurrying killer. | `hunting police` 容易被读成“狩猎警察”，`hurrying killer` 也不能说明往哪里赶。 | The police hunting for the killer are looking for a suspect who is hurrying away. |
 | Police that are hunting for the killer... | 从句能明确动作和执行者。 | 适合关系复杂时。 |
 | Police that were hunting for the killer... | 从句能明确过去时间。 | 适合需要时态信息时。 |
 

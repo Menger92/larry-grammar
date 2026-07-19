@@ -8,15 +8,15 @@
 
 | 项目 | 结论 |
 | --- | --- |
-| 一句话本质 | 简单句先由谓语建立骨架，再按动词需要补齐主语、宾语或补语。 |
-| 核心公式 | `找谓语 → 找主语 → 判动词需要 → 确定五大句型 → 剥离定语和状语` |
+| 一句话本质 | 每个分句先由谓语建立骨架，再按动词需要补齐主语、宾语、补语或必要的地点等成分。 |
+| 核心公式 | `找谓语 → 找主语 → 判动词需要 → 先套 Larry 五大骨架 → 必要时标扩展结构 → 剥离修饰语` |
 | 判断入口 | 先问“承担时态和主谓一致的谓语是谁”。 |
 | 代表例句 | I found the room dirty. |
-| 最易混点 | 宾补说明宾语，主补说明主语；状语只修饰动作、状态或整句。 |
+| 最易混点 | Larry 五大句型是核心学习骨架，不是所有真实文章表层结构的穷尽清单。 |
 
 ## 核心本质
 
-简单句的核心是主干结构：一个核心谓语带出主语、宾语、表语、补语等必要成分，定语和状语再负责扩展信息。先把主干看清，后面从句和非谓语才有落点。
+简单句的核心是主干结构：一个核心谓语带出主语、宾语、表语、补语等必要成分，定语和状语再负责扩展信息。Larry 五大句型适合建立第一层骨架；真实文章还常出现必要地点成分、存在句、形式主语、被动结构和并列分句。它们不是推翻五大句型，而是在阅读时补足表层结构。
 
 ## 判断步骤
 
@@ -24,9 +24,9 @@
 | --- | --- | --- |
 | 1 | 找核心谓语 | 判断句子真正动作或系动词。 |
 | 2 | 找主语 | 谁发出动作，或句子谈论谁。 |
-| 3 | 看谓语是否需要宾语、表语或补语 | 决定五大基本句型。 |
+| 3 | 看谓语需要哪些成分才能表达当前意义 | 先决定 Larry 五大基本句型；若地点等成分由动词选择，再标为扩展骨架。 |
 | 4 | 标出定语和状语 | 定语修饰名词，状语修饰动作、状态或整句。 |
-| 5 | 用 A is B 检验补语 | 补语没了，语义会塌。 |
+| 5 | 检查特殊表层结构 | 识别存在句、形式主语、被动和并列；再检查补语及修饰关系。 |
 
 ## 类型速查表
 
@@ -38,6 +38,21 @@
 | SVOO | 主语 + 谓语 + 间宾 + 直宾 | He gave me a gift. | 两个宾语，通常人 + 物。 |
 | SVOC | 主语 + 谓语 + 宾语 + 宾补 | I find the movie interesting. | 宾补补充说明宾语。 |
 
+这五种是 Larry 主线中的**核心句型**。先用它们训练“动词需要什么”，再用下面的扩展骨架处理真实文章；不要为了塞进五类而把必要成分一律删成“可有可无的状语”。
+
+## 真实文章扩展骨架（外部补充）
+
+下列例句用于补足真实文章分析，不是 Larry 视频原例。扩展标签描述的是**表层分析入口**；回到 Larry 主线时，仍可先看其中包含的 SV / SVO / SVP 核心。
+
+| 扩展入口 | 例句 | 阅读时怎么拆 | 和五大句型的关系 |
+| --- | --- | --- | --- |
+| SVA：主语 + 谓语 + 地点等成分 | 【外部补充】 She lives in Beijing. | She = S；lives = V；in Beijing = A。 | 可先看成 SV，再注明地点成分补足当前的“居住在……”义。 |
+| SVOA：主语 + 谓语 + 宾语 + 必要地点成分 | 【外部补充】 She put the keys on the table. | She = S；put = V；the keys = O；on the table = A。 | SVO 是内核，但 `put` 在当前意义下还要求说明放到哪里。 |
+| 存在句 | 【外部补充】 There is a serious supply-chain risk. | there 是形式位置；a serious supply-chain risk 是实际引入的新信息。 | 不把 there 机械当普通施事主语；先识别 `there + be + 名词短语`。 |
+| 形式主语 / 外置 | 【外部补充】 It is likely that prices will rise. | it 是形式主语；that 从句是后置的真实内容。 | 表层像 SVP，内容主语被移到句末以保持句末重心。 |
+| 被动表层 | 【外部补充】 The proposal was rejected by regulators. | The proposal = S；was rejected = 被动谓语；by regulators = 施事说明。 | 可还原主动 SVO：Regulators rejected the proposal。 |
+| 并列分句 | 【外部补充】 Demand fell, but costs rose. | Demand fell 与 costs rose 各有一套 SV。 | 不是一个句型里有两个谓语，而是两个并列的分句骨架。 |
+
 ## 具体类型：句子成分定义表
 
 | 句子成分 | 英文 | 核心含义 | 代表例句 |
@@ -47,7 +62,7 @@
 | 宾语 | Object | 谓语动词的执行对象。 | She ate sushi.（sushi = 宾语） |
 | 定语 | Attributive | 修饰名词性成分的成分；对句子主干来说通常可以删除。 | The red car is mine.（red = 定语） |
 | 状语 | Adverbial | 修饰动词、形容词、其他副词的成分；对句子主干来说通常可以删除。 | I will meet you tomorrow.（tomorrow = 状语） |
-| 补语 | Complement | 补足主语或宾语的状态、身份、结果；常由名词性成分、形容词性成分或非谓语结构承担，删掉会让句义不完整。 | She painted the room blue.（blue = 形容词性宾语补语） |
+| 补语 | Complement | 补足主语或宾语的状态、身份、结果或动作；常由名词性成分、形容词性成分或非谓语结构承担。部分补语不可缺少，部分属于可选的描写性次级谓语。 | She painted the room blue.（blue = 形容词性宾语补语） |
 
 ## 句子成分例句库
 
@@ -123,34 +138,40 @@
 
 ## 补语判断表
 
-补语（Complement）是传统教学的深水区。底层逻辑：补语不是装饰，补语没了，句子意思会彻底崩塌。
+补语（Complement）是传统教学的深水区。它的核心不是“能不能删除”，而是**是否对主语或宾语再次作出说明**：说明它是什么、处于什么状态、变成什么结果，或要执行什么动作。
 
-核心检验技术：把“被补充说明的对象 + 后面的成分”改写成 [A is B]。如果语义自洽，后面的成分就是补语；如果语义崩塌，它通常不是补语，而是在修饰动作本身，也就是状语。
+Larry 的 `[A is B]` 小分句仍然是很有用的第一步，但它检验的是“A 与 B 能否形成述谓关系”，不能单独证明 B 必不可少，也不能覆盖所有非谓语补足结构。判断时使用三层检验：
+
+1. **述谓关系**：名词或形容词补语尝试还原为 `[A is / becomes B]`。
+2. **逻辑主谓**：不定式或分词补足结构检查 `[A does / is doing B]`，确认动作由谁发出或承受。
+3. **必要程度**：删除后若原来的动词意义或句型不完整，它是谓语选择的必要补足成分；删除后句子仍成立，但原句额外描写 A 在动作中的状态，则属于可选的次级谓语。删除测试不能直接把它判成状语。
+
+状语的核心不同：它修饰动作怎样、何时、何地或为何发生，不对主语或宾语建立第二层述谓关系。
 
 传统“主系表”里的表语，在这里归入主语补语；它不是固定的名词性成分。身份类表语/主语补语常由名词性成分承担，性质或状态类表语/主语补语常由形容词性成分承担。
 
 <details>
 <summary>例句库：补语判断</summary>
 
-| 判断对象 | 补语属性 | 代表例句 | 小分句验证 | 结论 |
+| 判断对象 | 属性 / 必要性 | 代表例句 | 关系检验 | 结论 |
 | --- | --- | --- | --- | --- |
-| 宾语补语 | 形容词性 | I found the room dirty. | The room is dirty. | dirty 补充说明宾语 the room 的状态。 |
-| 宾语补语 | 形容词性 | You make me happy. | I am happy. | happy 补充说明宾语 me 的状态。 |
-| 宾语补语 | 形容词性 | She painted the room blue. | The room was blue. | blue 补充说明宾语 the room 被刷后的结果状态。 |
-| 宾语补语 | 名词性 | We consider him a fool. | He is a fool. | a fool 补充说明宾语 him 的身份。 |
-| 宾语补语 | 非谓语 + 形容词性 | I found the movie to be very interesting. | The movie was very interesting. | to be very interesting 整体补充说明宾语 the movie。 |
-| 宾语补语 | 形容词性 | You should leave the door open. | The door is open. | open 补充说明宾语 the door 应保持的状态。 |
-| 主语补语 | 形容词性 | He is walking around naked. | He is naked. | naked 补充说明主语 He 行走时的状态；验证句应使用 is，不是 was。 |
-| 宾语补语 | 非谓语 | I asked him to buy something for me. | He was to buy something for me. | to buy something for me 补充说明宾语 him 要执行的动作。 |
-| 状语 | 副词性 | I washed the clothes warmly. | The clothes are warmly. | 语义不成立；warmly 修饰 washed 这个动作。 |
-| 主语补语 | 名词性 | He died a hero. | He was a hero. | a hero 补充说明主语 He 在 died 时的身份。 |
-| 主语补语 | 形容词性 | He came back safe. | He was safe. | safe 补充说明主语 He 回来时的状态。 |
+| 宾语补语 | 形容词性；当前释义需要 | I found the room dirty. | The room is dirty. | dirty 补充说明宾语 the room 被发现时的状态；小分句支持宾补判断。 |
+| 宾语补语 | 形容词性；谓语选择 | You make me happy. | I am happy. | happy 补充说明宾语 me 产生的状态。 |
+| 宾语补语 | 形容词性；结果状态 | She painted the room blue. | The room became / was blue. | blue 补充说明宾语 the room 被刷后的结果状态。 |
+| 宾语补语 | 名词性；谓语选择 | We consider him a fool. | He is a fool. | a fool 补充说明宾语 him 的身份。 |
+| 宾语补语 | 非谓语 + 形容词性；谓语选择 | I found the movie to be very interesting. | The movie was very interesting. | to be very interesting 整体对宾语 the movie 作出判断。 |
+| 宾语补语 | 形容词性；保持状态 | You should leave the door open. | The door is open. | open 补充说明宾语 the door 应保持的状态。 |
+| 描写性主语补语 / 次级谓语 | 形容词性；可选 | He is walking around naked. | He is naked. | naked 描写主语 He 行走时的状态；删去后句子仍成立，所以它不是必需补语。验证句使用 is，不是 was。 |
+| 宾语 + 不定式补足结构 | 非谓语；谓语选择 | I asked him to buy something for me. | him 是 buy 的逻辑主语：he would buy something. | 这里检查的是“谁执行 buy”，不能硬套 `[He was to buy...]`。 |
+| 状语 | 副词性；可选修饰 | I washed the clothes warmly. | The clothes are warmly.（不成立） | warmly 只修饰 washed 的方式，没有对 the clothes 建立状态关系。 |
+| 描写性主语补语 / 次级谓语 | 名词性；可选 | He died a hero. | He was a hero when he died. | a hero 描写主语 He 死时的身份；删去后 `He died` 仍成立。 |
+| 描写性主语补语 / 次级谓语 | 形容词性；可选 | He came back safe. | He was safe when he came back. | safe 描写主语 He 回来时的状态；删去后 `He came back` 仍成立。 |
 
 </details>
 
 ## 主语补语 vs 副词状语辨析表
 
-语法正确不等于语义正确。形容词作主语补语时，说明主语处在什么状态；副词作状语时，修饰动作如何发生。两种形式可能都符合语法，但表达的意思不同。不要只看形容词或副词形式，先看它能不能和主语/宾语构成语义自洽的小分句。
+语法正确不等于语义正确。形容词作主语补语或描写性次级谓语时，说明主语处在什么状态；副词作状语时，修饰动作如何发生。两种形式可能都符合语法，但表达的意思不同。先检查它能否和主语/宾语构成语义自洽的小分句，再检查它是谓语必需的补足成分，还是可选的状态描写。
 
 代表例句：He is walking around naked.
 
@@ -166,7 +187,7 @@
 
 </details>
 
-## 简单句基本句型表
+## Larry 五大基本句型表
 
 | 句型 | 结构 | 例句 | 分析 |
 | --- | --- | --- | --- |
@@ -175,6 +196,8 @@
 | 主谓宾 SVO | 主语 + 及物谓语动词 + 宾语 | Cats love fish. | 及物动词需要宾语承接动作，fish 是 love 的对象。 |
 | 主谓双宾 SVOO | 主语 + 谓语动词 + 间接宾语 + 直接宾语 | He gave me a gift. | 间接宾语通常是人，直接宾语通常是物；常可改写为介词 to / for 结构。 |
 | 主谓宾补 SVOC | 主语 + 谓语动词 + 宾语 + 宾语补语 | I found the room dirty. | dirty 补充说明 the room，可理解为 [the room is dirty]。 |
+
+五大句型用于抓核心，不要求把所有表层结构硬塞进去。遇到 `put + 宾语 + 地点`、`there be`、形式主语、被动和并列时，回看本章“真实文章扩展骨架（外部补充）”。
 
 ## SVOO 和 SVOC 区分表
 
@@ -198,13 +221,15 @@ SVOO 和 SVOC 的区分很重要：前者是两个宾语，后者是宾语后面
 
 | 易混点 | 判断法 |
 | --- | --- |
-| 宾补 VS 状语 | 宾语和后面成分能构成 A is B，多半是宾补；不能构成，多半是状语。 |
+| 宾补 VS 状语 | A is B 能成立只说明存在述谓关系；还要检查 B 是否补充 A，还是只修饰动作。 |
+| 必需补语 VS 可选次级谓语 | 删除后原义或句型不完整的是必要补足成分；删除后主干仍成立、但少了动作中状态描写的是可选次级谓语。 |
 | 主系表 VS 主谓宾 | 系动词后是说明主语的表语，不是动作承受者。 |
 | SVOO VS SVOC | 双宾语是“给谁什么”；宾补是“让宾语变成什么/处于什么状态”。 |
+| 五大句型 VS 扩展骨架 | 五大句型先抓核心配价；SVA / SVOA、存在句、形式主语、被动和并列用于记录真实文章的表层结构。 |
 
 ## 经济学人分析提示
 
-经济学人中怎么识别：长句再复杂，也先找唯一核心谓语和五大基本句型；大量修饰语可以暂时盖住，主干不能丢。
+经济学人中怎么识别：先按每个分句寻找承担时态的谓语，再用 Larry 五大句型抓核心；若遇到必要地点成分、存在句、形式主语、被动或并列，再加扩展标签。不要把整句里所有谓语误判成同一套主干。
 
 ## 关联入口
 

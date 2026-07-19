@@ -77,18 +77,18 @@ A singular countable noun cannot be used without a determiner.
 
 ### 可数名词单数错误例句辨析
 
-代表例句：I like dog.
+代表纠错素材：【纠错对比】 I like dog.
 
 <details>
 <summary>对比例句库：可数名词单数裸露</summary>
 
 | 错误例句 | 可接受改写 | 判断 |
 | --- | --- | --- |
-| I like dog. | I like dogs. / I like the dog. / I like Michael's dog. | `dog` 是单数可数名词，不能裸露。 |
-| Apple is red. | The apple is red. / That apple is red. | `apple` 是单数可数名词，需要限定。 |
-| Cat is on table. | The cat is on the table. / Larry's cat is on Mike's table. | `cat`、`table` 都是单数可数名词，不能裸露。 |
-| Idea is interesting. | That idea is interesting. / Your idea is interesting. | `idea` 是单数可数名词，需要指明。 |
-| Child is playing in the yard. | The child is playing in the yard. / His child is playing in the yard. | `child` 是单数可数名词，需要限定。 |
+| 【纠错对比】 I like dog. | I like dogs. / I like the dog. / I like Michael's dog. | `dog` 是单数可数名词，不能裸露。 |
+| 【纠错对比】 Apple is red. | The apple is red. / That apple is red. | `apple` 是单数可数名词，需要限定。 |
+| 【纠错对比】 Cat is on table. | The cat is on the table. / Larry's cat is on Mike's table. | `cat`、`table` 都是单数可数名词，不能裸露。 |
+| 【纠错对比】 Idea is interesting. | That idea is interesting. / Your idea is interesting. | `idea` 是单数可数名词，需要指明。 |
+| 【纠错对比】 Child is playing in the yard. | The child is playing in the yard. / His child is playing in the yard. | `child` 是单数可数名词，需要限定。 |
 
 </details>
 
@@ -168,22 +168,24 @@ A singular countable noun cannot be used without a determiner.
 | 例句 | 结构 |
 | --- | --- |
 | all the many problems | all + the + many |
-| all the three books | all + the + three |
-| both the several answers | both + the + several |
-| both the few reasons | both + the + few |
-| half the few choices | half + the + few |
+| 【依赖语境】 all the three books | 位置模板能分析，但普通表达更常用 `all three books`。 |
+| 【纠错对比】 both the several answers | both 表示两个，several 表示若干，语义范围冲突；不能只因位置顺序对就判为自然。 |
+| 【纠错对比】 both the few reasons | 机械符合槽位不等于自然；按意思选 `both reasons` 或 `all the few reasons`。 |
+| 【依赖语境】 half the few choices | 可理解为“为数不多的选项中的一半”，但需要明确语境。 |
 | half the ten chapters | half + the + ten |
 
 </details>
 
+限定词位置表只说明**可能的排列槽位**，不保证任意词都能自由组合；还要检查数量意义是否冲突、表达是否自然。
+
 ### 定指与不定指
 
-代表例句：Those shops are closed in 2025.
+来源代表例句：【依赖语境】 Those shops are closed in 2025.
 
 | 类型 | 核心 | 替换判断 | 截图例句 |
 | --- | --- | --- | --- |
-| 定指 | 已知信息 | 可以用 that / those 替换 | Those shops are closed in 2025. |
-| 不定指 | 未知信息 | 不能用 that / those 替换，但可用数词替换 | Many shops are closed in 2025. |
+| 定指 | 已知信息 | 可以用 that / those 指向 | 【依赖语境】 Those shops are closed in 2025. |
+| 不定指 | 未知信息 | 不能用 that / those 指向，但可用数量词限定 | 【依赖语境】 Many shops are closed in 2025. |
 
 <details>
 <summary>例句库：定指与不定指</summary>
@@ -192,16 +194,18 @@ A singular countable noun cannot be used without a determiner.
 | --- | --- | --- |
 | 定指 | I don't like his idea. | `his` 已经限定 idea 的所属。 |
 | 定指 | They shook their heads firmly. | `their` 已经限定 heads 的所属。 |
-| 定指 | Those shops are closed in 2025. | `those` 指向已知的一组 shops。 |
+| 定指 | 【依赖语境】 Those shops are closed in 2025. | `those` 指向已知的一组 shops；时态和 `in 2025` 的关系需由语境补足。若表示整年停业，可写 `Those shops will be closed throughout 2025.` |
 | 不定指 | Let me ask you one question. | `one` 表一个问题，不指向某个已知问题。 |
 | 不定指 | Larry suddenly got an idea. | `an` 引入一个新 idea。 |
-| 不定指 | Many shops are closed in 2025. | `many` 表数量范围，不是指向“那些”。 |
+| 不定指 | 【依赖语境】 Many shops are closed in 2025. | `many` 表数量范围，不是指向“那些”；时间表达仍需上下文。 |
 
 </details>
 
-### the = that / those；a/an = one
+### the 与 that / those；a/an 与 one 的底层联系
 
 代表例句：I like the/that book.
+
+这里讲的是定指 / 不定指和“一个”的底层联系，不是说这些限定词在所有句子里都能直接互换。`that/those` 比 `the` 多一层指示意义，`one` 比 `a/an` 更强调数量或对比。
 
 | 结构 | 核心对应 | 代表例句 |
 | --- | --- | --- |
@@ -225,9 +229,9 @@ A singular countable noun cannot be used without a determiner.
 
 | 例句 | 判断 |
 | --- | --- |
-| I bought a/one book yesterday. | `a` 保留“一个”的核心。 |
-| He wants to be an/one engineer in the future. | `an` 表一个身份成员。 |
-| What a/one beautiful day! | 截图用来提示 `a/an` 与 `one` 的底层联系；实际表达中仍要看自然程度。 |
+| I bought a book yesterday. / I bought one book yesterday. | 两句都可；`one` 更强调数量“一本，而不是更多”。 |
+| 【纠错对比】 He wants to be an/one engineer in the future. | 表职业身份正常写 `He wants to be an engineer.`；`one engineer` 需要“众多工程师中的一个”等特殊对比语境。 |
+| 【纠错对比】 What a/one beautiful day! | 感叹句固定写 `What a beautiful day!`，不能把 `a` 机械换成 `one`。 |
 
 </details>
 
@@ -242,12 +246,12 @@ A singular countable noun cannot be used without a determiner.
 
 | 错误叠加 | 正常表达 | 判断 |
 | --- | --- | --- |
-| I don't like his the idea. | I don't like his idea. | `his` 已经限定 idea，不再叠加 `the`。 |
-| They shook their the heads firmly. | They shook their heads firmly. | `their` 已经限定 heads。 |
-| Those The shops are closed in 2025. | Those shops are closed in 2025. | `those` 和 `the` 不能这样叠加。 |
-| Let me ask you one a question. | Let me ask you one question. / Let me ask you a question. | `one` 与 `a` 不机械叠加。 |
-| Larry suddenly got an one idea. | Larry suddenly got an idea. / Larry suddenly got one idea. | `an` 与 `one` 不机械叠加。 |
-| Many A hundred shops are closed in 2025. | Many shops are closed in 2025. / A hundred shops are closed in 2025. | 数量限定方式要选清楚。 |
+| 【纠错对比】 I don't like his the idea. | I don't like his idea. | `his` 已经限定 idea，不再叠加 `the`。 |
+| 【纠错对比】 They shook their the heads firmly. | They shook their heads firmly. | `their` 已经限定 heads。 |
+| 【纠错对比】 Those The shops are closed in 2025. | Those shops are closed in 2025. | `those` 和 `the` 不能这样叠加。 |
+| 【纠错对比】 Let me ask you one a question. | Let me ask you one question. / Let me ask you a question. | `one` 与 `a` 不机械叠加。 |
+| 【纠错对比】 Larry suddenly got an one idea. | Larry suddenly got an idea. / Larry suddenly got one idea. | `an` 与 `one` 不机械叠加。 |
+| 【纠错对比】 Many A hundred shops are closed in 2025. | Many shops are closed in 2025. / A hundred shops are closed in 2025. | 数量限定方式要选清楚。 |
 
 </details>
 

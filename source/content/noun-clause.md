@@ -7,21 +7,21 @@
 | 项目 | 结论 |
 | --- | --- |
 | 一句话本质 | 名词性从句把“一件事”作为名词性成分放进主语、宾语、表语或同位语位置。 |
-| 核心公式 | `名词性从句 = 连接词 + 陈述语序的简单句` |
+| 核心公式 | `名词性从句 = 占名词位置的从属小句`；内部通常采用陈述语序。 |
 | 判断入口 | 先看整个从句是否占名词位置，再还原从句内部结构。 |
 | 代表例句 | What she said about the incident surprised everyone. |
 | 最易混点 | that 只连接时不作成分；what 既连接，又在从句内部作名词性成分。 |
 
 ## 核心本质
 
-名词性从句就是用一个完整句子去替代名词性位置。它可以作主语、宾语、表语、同位语；判断时不要先背连接词，先看它占了哪个名词位置。
+名词性从句就是把一个有自身有限谓语的小句放进名词性位置。它可以作主语、宾语、表语、同位语；判断时不要先背连接词，先看它占了哪个名词位置。
 
 ## 判断步骤
 
 | 步骤 | 判断问题 | 结果 |
 | --- | --- | --- |
 | 1 | 从句整体占什么位置？ | 主语、宾语、表语或同位语。 |
-| 2 | 从句内部是不是完整主谓结构？ | 确认它确实是从句。 |
+| 2 | 从句内部能否找到有限谓语和小句主干？ | 确认它确实是从句；疑问词可能同时占据主语、宾语、表语或状语位置。 |
 | 3 | 连接词在从句内部作不作成分？ | that 不作成分；what/which/who 等可作成分。 |
 | 4 | 是否需要形式主语或形式宾语 it？ | 句子过重时后置真正从句。 |
 | 5 | whether / if 能否替换？ | 根据位置和搭配判断。 |
@@ -60,7 +60,7 @@
 | --- | --- | --- |
 | 1 | 调语序 | 如果原句是疑问句或倒装语序，必须调整为陈述语序。 |
 | 2 | 加连接词 | 陈述句用 that；一般疑问句用 whether / if；特殊疑问句用原来的疑问词。 |
-| 3 | 把连接词放在从句句首 | 连接词 + 陈述语序的简单句，构成名词性从句。 |
+| 3 | 建立从属关系并放入名词位置 | that / whether 主要标记从属关系；疑问词还会保留原句中的成分作用。 |
 
 示例：
 
@@ -81,7 +81,7 @@
 | 1 | 把从句部分看作一个简单句。 | 先不要被“从句”这个名字吓住，从句内部仍然有自己的主干。 |
 | 2 | 判断这个从句对应简单句五种基本句型中的哪一种。 | 看它是 SV、SVP、SVO、SVOO 还是 SVOC。 |
 | 3 | 找清楚从句内部的主谓宾定状补。 | 从句内部结构清楚，关系词才容易判断。 |
-| 4 | 判断关系词在从句中担任何种成分。 | 如果从句的主语、谓语、宾语都完整，关系词通常不能再作主语或宾语，只可能作副词性成分；反之，关系词可能作主语、宾语等名词性成分。 |
+| 4 | 判断引导词在从句中担任何种成分。 | 主谓宾齐全时，`that / whether / if` 可能只标记从属关系，`when / where / why / how` 可能作副词性成分；存在缺项时，wh-词可能作主语、宾语、表语或定语。不能只凭“主谓宾齐全”得出唯一结论。 |
 | 5 | 判断关系词是否修饰从句中的名词。 | 如果关系词修饰名词，可能是形容词性成分 / 限定词成分，例如 whose、which book、what book。 |
 | 6 | 按照简单句的陈述语序，重新理顺从句部分。 | 名词性从句中即使有疑问词，也通常使用陈述语序。 |
 
@@ -140,7 +140,7 @@
 
 | 例句 | 从句还原 | 分析 |
 | --- | --- | --- |
-| His dream is that he becomes a successful entrepreneur. | he becomes a successful entrepreneur | that he becomes... 作表语 / 主语补语，说明 dream 的内容。 |
+| 【校准表达】 His dream is that he will become a successful entrepreneur.（来源原句用 becomes） | he will become a successful entrepreneur | that he will become... 作表语 / 主语补语，说明 dream 的目标内容；普通表达也常直接用 `His dream is to become...`。 |
 | The problem seems to be that we lack proper communication. | we lack proper communication | that we lack... 作表语 / 主语补语，说明 problem 的内容。 |
 | The truth is that we all make mistakes. | we all make mistakes | that we all make mistakes 作表语 / 主语补语，说明 truth 的内容。 |
 | This is where I plant the trees. | I plant the trees where → Where do I plant the trees? | where I plant the trees 作表语 / 主语补语，可替换理解为 the place。 |
@@ -171,7 +171,7 @@
 
 </details>
 
-同位语从句就是把“解释说明”换成一个完整句子。它通常解释抽象名词的内容，而不是像定语从句那样限定“哪一个名词”。
+同位语从句用一个有自身有限谓语的小句解释抽象名词的具体内容，而不是像定语从句那样限定“哪一个名词”。
 
 代表例句：The news that they won the championship spread quickly.
 
@@ -192,6 +192,63 @@
 
 1. 前面是不是抽象名词，如 news, fact, idea, doubt, question, belief, possibility, evidence？
 2. 后面的从句是不是在解释这个名词的“内容”，而不是限定这个名词的范围？
+
+## 同位语从句 VS 定语从句
+
+核心区别：
+
+```text
+同位语从句 = 解释名词内容：这个名词说的“那件事”是什么。
+定语从句 = 修饰 / 筛选先行词：这个名词是哪一个、哪一类、什么样。
+```
+
+| 对比点 | 同位语从句 | 定语从句 / 形容词性从句 |
+| --- | --- | --- |
+| 整体功能 | 名词性：解释前面抽象名词的内容 | 形容词性：修饰、筛选或补充先行词 |
+| 前面名词 | 多为抽象内容名词：news, fact, idea, belief, question, possibility, evidence, claim, promise | 普通名词、名词短语、专有名词都可能作先行词 |
+| 连接词 / 关系词 | `that / whether` 通常只连接，不回指前面的名词；`what / why / where` 等可在从句内部作成分，但仍是在解释名词内容 | 关系词必须回指先行词，并在从句内部作主语、宾语、定语、状语或补语 |
+| 从句内部 | `that` 引导时，从句内部通常完整 | 关系词代替先行词进入从句，所以从句内部通常缺一个位置 |
+| 语义检验 | 前面名词 = 后面从句内容 | 先行词 + 从句 = 被筛选/补充的名词 |
+
+### 判断步骤
+
+| 步骤 | 问题 | 结论 |
+| --- | --- | --- |
+| 1 | 前面是不是一个需要“内容解释”的抽象名词？ | 是，继续检查同位语从句。 |
+| 2 | 后面从句是不是回答“这个名词的内容是什么”？ | 是，倾向同位语从句。 |
+| 3 | 把前面的名词代回从句，关系词是否在从句中承担成分？ | 能代回并补缺项，倾向定语从句。 |
+| 4 | 从句是在解释内容，还是在筛选“哪一个名词”？ | 内容 = 同位语；筛选/修饰 = 定语。 |
+
+### 关键例句对比
+
+| 例句 | 类型 | 主干 | 判断 |
+| --- | --- | --- | --- |
+| The news that they won the championship spread quickly. | 同位语从句 | The news spread quickly. | `that they won the championship` 解释 `news` 的内容；从句内部 `they won the championship` 完整，that 不作成分。 |
+| The news that shocked everyone spread quickly. | 定语从句 | The news spread quickly. | `that shocked everyone` 修饰 `news`；从句内部缺主语，that = the news。 |
+| The news that they reported spread quickly. | 定语从句 | The news spread quickly. | `that they reported` 修饰 `news`；从句内部缺宾语，they reported the news。 |
+| The fact that she lied disappointed everyone. | 同位语从句 | The fact disappointed everyone. | `that she lied` 解释 `fact` 的内容；she lied 结构完整。 |
+| The fact that shocked everyone was her silence. | 定语从句 | The fact was her silence. | `that shocked everyone` 修饰 `fact`；that = the fact，在从句中作主语。 |
+
+### 逗号提醒
+
+`The news that they won the championship spread quickly.` 是常规同位语从句表达，通常不加逗号。不要改成 `The news, that they won the championship, spread quickly.`；`that` 不能这样引导非限制性定语从句。
+
+如果需要插入式解释，英语更常用普通同位语、破折号或其他表达：
+
+| 表达 | 判断 |
+| --- | --- |
+| The news that they won the championship spread quickly. | 同位语从句，最稳。 |
+| The news of their winning the championship spread quickly. | 介词短语 / 动名词结构解释 news 的内容。 |
+| The news — they had won the championship — spread quickly. | 插入式解释，写作风格更强。 |
+
+记忆口诀：
+
+```text
+解释内容，看同位语；
+筛选名词，看定语；
+that 若不作成分，多半解释内容；
+that 若代回先行词，多半修饰名词。
+```
 
 ## 名词性从句的语序
 
@@ -231,8 +288,8 @@ It + 谓语 / 表语 + 名词性从句
 
 | 推荐表达 | 不推荐表达 | 分析 |
 | --- | --- | --- |
-| I find it unbelievable that Sally is beautiful. | I find that Sally is beautiful unreasonable. | it 是形式宾语；that Sally is beautiful 是真正宾语；unbelievable 是宾语补语。 |
-| Our teacher made it a rule that we have to speak English in class. | Our teacher made that we have to speak English in class a rule. | it 是形式宾语；a rule 是宾语补语；that 从句放句尾解释规则内容。 |
+| I find it unbelievable that Sally is beautiful. | 【纠错对比】 I find that Sally is beautiful unreasonable. | it 是形式宾语；that Sally is beautiful 是真正宾语；unbelievable 是宾语补语。 |
+| Our teacher made it a rule that we have to speak English in class. | 【纠错对比】 Our teacher made that we have to speak English in class a rule. | it 是形式宾语；a rule 是宾语补语；that 从句放句尾解释规则内容。 |
 
 ## that 的省略
 

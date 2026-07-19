@@ -6,24 +6,32 @@
 
 | 项目 | 结论 |
 | --- | --- |
-| 一句话本质 | 从句是一个完整句子被连接词降级后，放进另一个句子承担成分。 |
-| 核心公式 | `从句 = 连接词 + 简单句` |
+| 一句话本质 | 从句是依附于更大结构的小句；本项目重点分析带有限谓语的从属小句。 |
+| 核心公式 | `从属小句 = 从属关系 + 小句主干`；从属标记可能省略，关系词也可能同时对应内部成分。 |
 | 判断入口 | 先找主句和从句各自的谓语，再判断从句整体做什么。 |
 | 代表例句 | `[What she said about the incident] surprised everyone.` |
 | 最易混点 | 从句整体功能和连接词在从句内部的成分必须分两层判断。 |
 
 ## 核心本质
 
-从句的本质是：一个包含完整主谓结构的句子，进入另一个主句中承担名词性、形容词性或副词性功能。先判断功能，再给它命名。
+从句的本质是：一个有自己小句主干、通常带有限谓语的结构，依附于主句或更高一层小句。它进入更大结构后，可以承担名词性、形容词性或副词性功能。这里的“有小句主干”不等于每个位置都在表面上完整：关系词可能直接充当内部成分，也可能对应一个由先行词解释的空位。
+
+更准确的记忆式是：
+
+```text
+从属小句 = （从属标记 / 关系词）+ 小句主干
+```
+
+括号表示从属标记有时可以省略，例如省略宾语从句的 `that`，或省略限制性定语从句中的宾语关系词。先找有限谓语和依附关系，再判断引导成分。
 
 ## 判断步骤
 
 | 步骤 | 问题 | 目的 |
 | --- | --- | --- |
 | 1 | 句中有几个有限谓语？ | 划分主句和从句的主谓结构。 |
-| 2 | 两个完整句子之间用什么方式连接？ | 区分并列、从属、分号或句号。 |
+| 2 | 各小句之间是什么关系？ | 区分并列、从属、分号或句号。 |
 | 3 | 从句整体在主句里做什么？ | 判断名词性、形容词性或副词性。 |
-| 4 | 连接词在从句内部做什么？ | 区分只连接的 that 与兼任成分的 what、which、where 等。 |
+| 4 | 引导成分在从句内部做什么？ | 区分只标记从属关系的 that、兼任成分的 what，以及关系词或空位建立的先行词关系。 |
 
 ## 类型速查表
 
@@ -53,12 +61,12 @@ she said what about the incident
 
 ## 两个简单句的连接
 
-两个完整简单句不能直接硬拼在一起。
+两个能够独立成立的分句不能直接硬拼在一起；它们需要并列连接、从属关系、分号或句号。
 
 | 连接方式 | 常见词 | 作用 |
 | --- | --- | --- |
 | 并列连词 | and, but, or, so | 连接并列分句，不把任何一边降级。 |
-| 从属连词 | because, although, if, when, while | 把一个简单句降级为副词性从句。 |
+| 从属连词 | because, although, if, when, while | 标明副词性从句与主句之间的逻辑关系。 |
 | 名词性从句连接词 | that, whether, if, what, who, which, when, where, why, how | 把一件事放进名词位置。 |
 | 关系词 | who, whom, which, that, whose, where, when, why | 引出修饰先行词的定语从句。 |
 | 分号 / 句号 | `;` / `.` | 连接或分开两个独立句。 |
@@ -79,7 +87,7 @@ she said what about the incident
 | --- | --- | --- | --- | --- |
 | where | This is where I plant the trees. | I plant the trees in a place where there’s a lot of sunshine. | I plant the trees where there’s a lot of sunshine. | 看 `where...` 是放在系动词后作主语补语、修饰 place，还是直接说明 plant 的地点。 |
 | when | When I met Sally doesn’t matter.<br>September 15, 2018 is when I met Sally. | September 15, 2018 is the day when I met Sally. | I was only a little kid when I met Sally. | 看 `when...` 是占主语/主语补语位置、修饰 day，还是说明主句状态成立的时间。 |
-| why | Nobody really knows why Sally left for China. | Nobody really knows the reason why Sally left for China. | 原因状语从句通常用 because / since / as / for。 | why 常见于名词性从句和修饰 reason 的形容词性从句；不要硬套成副词性从句。 |
+| why | Nobody really knows why Sally left for China. | Nobody really knows the reason why Sally left for China. | 原因状语从句通常用 because / since / as；for 引出的解释分句另按并列关系看。 | why 常见于名词性从句和修饰 reason 的形容词性从句；不要硬套成副词性从句。 |
 
 ## 功能 × 表现形式矩阵
 
@@ -98,7 +106,7 @@ she said what about the incident
 
 | 连接词 | 常见内部功能 | 判断提示 |
 | --- | --- | --- |
-| that | 名词性从句中通常只连接；定语从句中可作主语或宾语 | 不能只看词形，必须先确认从句类型。 |
+| that | 名词性从句中通常只标记从属关系；定语从句中连接先行词，并对应主语或宾语位置 | 传统教学可说 that 作主语/宾语；更精细地看，也可以理解为 that 标记关系、从句内部保留相应空位。 |
 | whether / if | 通常只表示“是否”，不作从句成分 | 从句内部主谓宾一般完整。 |
 | who / whom | 名词性成分：主语或宾语 | 看从句缺人作主语还是宾语。 |
 | what | 名词性成分，或修饰后面的名词 | 可作主语、宾语、表语，也可构成 `what + 名词`。 |
@@ -106,7 +114,7 @@ she said what about the incident
 | whose | 形容词性 / 限定词成分 | 后面通常接名词。 |
 | where / when / why / how | 副词性成分 | 从句通常不缺主语或宾语，而缺地点、时间、原因或方式。 |
 
-看到连接词时，不要直接按中文翻译归类。先确定从句整体功能，再回到从句内部判断连接词。
+看到引导成分时，不要直接按中文翻译归类。先确定从句整体功能，再回到从句内部判断它是只标记从属关系、直接承担成分，还是连接先行词与内部空位。
 
 ## 易混对比
 

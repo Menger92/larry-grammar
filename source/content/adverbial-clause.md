@@ -6,15 +6,15 @@
 
 | 项目 | 结论 |
 | --- | --- |
-| 一句话本质 | 副词性从句用一个带完整主谓结构的句子，修饰主句中的动作、状态或整个判断。 |
-| 核心公式 | `完整句子 + 副词性功能 = 副词性从句` |
+| 一句话本质 | 副词性从句用一个有自身有限谓语的小句，修饰主句中的动作、状态或整个判断。 |
+| 核心公式 | `从属小句 + 副词性功能 = 副词性从句` |
 | 判断入口 | 先找它修饰谁，再问它表达什么逻辑关系，最后识别连接词。 |
 | 代表例句 | Sally runs as if she is flying. |
 | 最易混点 | 同一个 where、when、as 可能引导不同从句，不能只按连接词名称判断。 |
 
 ## 核心本质
 
-副词性从句的本质是：完整主谓结构进入主句后，作为副词性成分修饰主句动作、形容词状态或整句逻辑关系。学习重点是知道它修饰的对象是什么。
+副词性从句的本质是：有自身小句主干和有限谓语的结构进入主句后，作为副词性成分修饰主句动作、形容词状态或整句逻辑关系。学习重点是知道它修饰的对象是什么。
 
 ## 判断步骤
 
@@ -26,7 +26,7 @@
 
 | 步骤 | 操作 | 例句中的做法 |
 | --- | --- | --- |
-| 1 | 找从句边界 | `when I was at school` 是带完整主谓结构的从句。 |
+| 1 | 找从句边界 | `when I was at school` 有自己的主语和有限谓语，是一个从属小句。 |
 | 2 | 找修饰对象 | 它修饰 `worked hard`，说明努力学习发生在什么时间。 |
 | 3 | 判断逻辑关系 | 回答“什么时候？”，所以是时间状语从句。 |
 | 4 | 识别连接词 | `when` 是时间连接词。 |
@@ -38,7 +38,7 @@
 | --- | --- | --- | --- |
 | 时间 | when, while, as, before, after, since, until | 什么时候发生？ | When I arrived, Sally left. |
 | 地点 | where, wherever | 在哪里发生？ | Plant trees where there is sunshine. |
-| 原因 | because, since, as, for | 为什么发生？ | Because he was tired, he left. |
+| 原因 | because, since, as | 为什么发生？ | Because he was tired, he left. |
 | 目的 | so that, in order that | 为了什么？ | He spoke slowly so that we could understand. |
 | 结果 | so...that, such...that | 结果怎样？ | He was so tired that he slept. |
 | 条件 | if, unless, as long as | 什么条件下？ | If it rains, we will stay. |
@@ -54,7 +54,7 @@
 
 ### 从普通副词性成分到从句
 
-副词性从句不是凭连接词硬背出来的，而是从普通副词性成分扩展出来的：原来可以用副词、介词短语修饰主句，现在换成一个带完整主谓结构的句子来修饰主句。
+副词性从句不是凭连接词硬背出来的，而是从普通副词性成分扩展出来的：原来可以用副词、介词短语修饰主句，现在换成一个有自身小句主干和有限谓语的结构来修饰主句。
 
 | 普通副词性成分 | 扩展为副词性从句 | 修饰对象 | 本质判断 |
 | --- | --- | --- | --- |
@@ -71,7 +71,7 @@
 
 ### 连接词
 
-副词性从句连接词的任务不是充当主句成分，而是把一个完整句子降级为副词性成分，并标明它和主句之间的逻辑关系。
+副词性从句连接词的任务不是充当主句成分，而是标明从属小句与主句之间的时间、原因、条件等逻辑关系。
 
 | 连接词任务 | 判断 |
 | --- | --- |
@@ -87,7 +87,7 @@
 | --- | --- | --- | --- |
 | 时间状语从句 | 什么时候？到什么时候？一……就……？ | when, while, as, before, after, since, until, as soon as | I worked hard when I was at school. |
 | 地点状语从句 | 在哪里？无论在哪里？ | where, wherever | I plant the trees where there’s a lot of sunshine. |
-| 原因状语从句 | 为什么？由于什么原因？ | because, since, as, for | We didn't go to the party because it was raining. |
+| 原因状语从句 | 为什么？由于什么原因？ | because, since, as | We didn't go to the party because it was raining. |
 | 条件状语从句 | 在什么条件下？ | if, unless, as long as, so long as, provided that | Take an umbrella if it rains. |
 | 让步状语从句 | 虽然怎样？即使怎样？无论怎样？ | although, though, even if, even though, while, no matter + 疑问词 | Although he tried hard, he failed. |
 | 目的状语从句 | 为了什么？ | so that, in order that | I spoke slowly so that the students could understand me better. |
@@ -136,7 +136,7 @@
 | Sally telephoned me while I was doing my homework. | 自然 | `while...` 表示一段持续背景。 |
 | Sally telephoned me when I was doing my homework. | 自然 | 从句是时间段时，when 也可使用。 |
 | I was walking on the road when suddenly someone stopped me. | 自然 | when 可接突然发生的时间点。 |
-| I was walking on the road while suddenly someone stopped me. | 不自然 | while 强调持续时间段，不适合引出 suddenly someone stopped me 这种突然时间点。 |
+| 【纠错对比】 I was walking on the road while suddenly someone stopped me. | 不自然 | while 强调持续时间段，不适合引出 suddenly someone stopped me 这种突然时间点。 |
 
 ### as：随着 / 正当 / 一边……一边
 
@@ -144,10 +144,10 @@
 | --- | --- |
 | You grow smarter as you grow older. | `as` 表示“随着”，两个变化同步推进。 |
 | You grow smarter when you grow older. | 可以理解，但不如 as 强调同步变化。 |
-| You grow smarter while you grow older. | 不推荐；while 只是时间段背景，不突出“越……越……”。 |
+| 【纠错对比】 You grow smarter while you grow older. | 不推荐；while 只是时间段背景，不突出“越……越……”。 |
 | As China becomes richer, Chinese people spend more. | `as` 表示“随着中国变富”，主句变化同步发生。 |
 | When China becomes richer, Chinese people spend more. | 语义可成立，但更像时间条件。 |
-| While China becomes richer, Chinese people spend more. | 不自然；while 不适合表达这种同步增长关系。 |
+| 【纠错对比】 While China becomes richer, Chinese people spend more. | 不自然；while 不适合表达这种同步增长关系。 |
 
 ### before / after / since
 
@@ -198,17 +198,18 @@ not until 可以放在句首或用于强调句：
 
 判断关键：`where` 可以是副词性从句连接词，也可以是定语从句关系副词。先看它前面有没有地点名词；有先行词且修饰名词时，多半是定语从句；没有先行词、直接修饰动作或主句时，多半是地点状语从句。
 
-## 原因状语从句：because / since / as / for
+## 原因状语从句：because / since / as；旁注 for
 
-原因状语从句说明“为什么”。常见连接词是 because, for, as, since。
+原因状语从句说明“为什么”。常见从属连接词是 because, since, as。`for` 也能补充理由，但它通常连接两个地位相对独立的分句，属于解释性的并列连词，不按原因状语从句处理。
 
 | 连接词 | 核心感觉 | 例句 | 判断 |
 | --- | --- | --- | --- |
 | because | 直接原因，回答 why | We didn't go to the party because it was raining. | 因为下雨，所以没去聚会。 |
-| for | 补充说明理由 | We didn't go to the party, for it was raining. | for 常带逗号，语气更像补充解释。 |
 | since | 已知背景 / 既然 | Since you're a middle school student, you should know how to study. | 从句给出说话双方较容易接受的背景。 |
 | as | 由于 / 既然 | As you're a middle school student, you should know how to study. | as 也常引出背景性原因。 |
 | because of | 介词短语，不是从句 | We didn't go to the party because of the rain. | because of 后接名词性成分 the rain。 |
+
+【易混对比】`We didn't go to the party, for it was raining.` 中 `for it was raining` 是补充解释原因的并列分句。它常位于后面并用逗号隔开，通常不能像 because 从句那样直接前置成 `For it was raining, ...`。
 
 ### because 的否定转移问题
 
@@ -265,11 +266,11 @@ not until 可以放在句首或用于强调句：
 | I spoke slowly so that the students could understand me better. | 目的 | could 表示想达到的目标。 |
 | I spoke slowly so that the students understood me better. | 结果 | understood 表示实际达成的结果。 |
 | Sally opened the window so that she could breathe some fresh air. | 目的 | could breathe 表示开窗的目的。 |
-| Sally opened the window so that she breathed some fresh air. | 结果 | breathed 表示开窗后产生的结果。 |
+| 【纠错对比】 Sally opened the window so that she breathed some fresh air. | 不推荐用作结果示范 | 既容易被读成目的，又有 `breathe fresh air` 搭配生硬的问题。要明确实际结果，可写 `Sally opened the window, and as a result she breathed in some fresh air.` |
 
 ## 条件状语从句：if / unless / as long as
 
-条件状语从句说明“在什么条件下”。常见连接词包括 if, unless, as/so long as, so far as, in case, once。
+条件状语从句说明“在什么条件下”。常见连接词包括 if, unless, as/so long as, in case, once。
 
 | 连接词 | 例句 | 判断 |
 | --- | --- | --- |
@@ -279,7 +280,7 @@ not until 可以放在句首或用于强调句：
 | in case | Please let me know in case you need anything. | 如果/万一你需要什么，请告诉我。 |
 | once | Once you have learned English, you will find it interesting. | 一旦条件完成，主句结果出现。 |
 | as/so long as | You may leave as/so long as you come back on time. | 只要你按时回来，就可以离开。 |
-| so far as | So far as the weather remains okay, we shall start tomorrow. | 只要天气还可以，明天就出发。 |
+| 【校准表达】 as/so long as | As long as the weather remains okay, we shall start tomorrow. | 表示“只要天气还可以”。`so far as` 现代英语通常表示“就……而言 / 在……范围内”，不作为这里的一般条件词记忆。 |
 
 ## 让步状语从句：although / though / even if
 
@@ -288,8 +289,8 @@ not until 可以放在句首或用于强调句：
 | 结构 | 例句 | 判断重点 |
 | --- | --- | --- |
 | though / although | Though/Although he tried hard, he failed. | 不能再用 but；可用 yet/still 加强主句。 |
-| even if | He failed, even if he tried hard. | 即使从句成立，主句仍成立。 |
-| while | While he tried, he still failed. | 可表示让步或对比，具体看上下文。 |
+| even if | 【校准表达】 Even if he failed, he would keep trying. | 即使假设的失败成立，主句意愿仍成立。 |
+| while | 【依赖语境】 While he tried hard, he still failed. | while 可表示让步、对比或时间；这里需结合 still 才较容易读成“虽然”。 |
 | no matter how | No matter how hard-working he was, he still failed. | 无论多么……。 |
 | however | However hard-working he was, he still failed. | however + 形容词/副词，引导让步。 |
 | despite / in spite of | Despite his hard work, he still failed. | despite / in spite of 后通常接名词、动名词或 the fact that 从句。 |
@@ -305,7 +306,7 @@ as 引导让步时，常把被强调的形容词、副词、名词或动词放�
 | Difficult as it is to believe, there are fish that can live without water. | Although it is difficult to believe... |
 | Much as I respect him, I can't agree with him. | Although I respect him much... |
 | Wounded as he was, he finished the basketball game. | Although he was wounded... |
-| Fail as he did, he would never give up. | Although he failed... |
+| 【依赖语境】 Fail as he did, he would never give up. | 来源例句采用正式、少见的动词前置。普通表达优先写 `Although he had failed, he never gave up.`；表达假设让步可写 `Fail as he might, he would never give up.` |
 
 ## 比较状语从句：than / as...as
 
@@ -316,8 +317,8 @@ as 引导让步时，常把被强调的形容词、副词、名词或动词放�
 | as...as | This work is not as difficult as you think. | 比较 difficult 的程度。 |
 | as...as | Sally is as hard-working as I/me. | 正式可写 as I am；口语常见 as me。 |
 | as...as | Sally runs as fast as I/me. | 比较 run fast 的程度；正式可写 as I do。 |
-| as...as | Sally is as beautiful as smart. / Sally is as beautiful as she is smart. | 比较两个形容词程度。 |
-| as...as | Michael learns as quickly as he does efficiently. | 比较 quickly 和 efficiently 两个副词性方式。 |
+| as...as | 【校准表达】 Sally is as beautiful as she is smart. | 比较两个形容词程度；省略成 `as beautiful as smart` 过于压缩，学习阶段不推荐。 |
+| as...as | 【纠错对比】 Michael learns as quickly as he does efficiently. | 机械把两个副词塞进 `as...as`，表达不自然。若只想并列两种方式，写 `Michael learns quickly and efficiently.` |
 | no more...than | Sally is no more hard-working than her sister. | 表示“不比……更……”，常带两者都不强的意味。 |
 | no less...than | Sally is no less hard-working than her sister. | 表示“不比……差”，强调同样勤奋或至少不差。 |
 | more...than | Nothing is more valuable than time. | 比较价值高低。 |
