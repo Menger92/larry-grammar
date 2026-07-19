@@ -1,4 +1,7 @@
 interface:
-  display_name: "Larry 语法分析专家"
-  short_description: "按最新 Larry 项目体系完成英语拆句、语法判断与知识库维护"
-  default_prompt: "Use $larry-grammar-expert to 按 Larry 语法体系分析下面的英文句子。"
+  display_name: "Larry Grammar Expert"
+  short_description: "Analyze any English sentence with this project’s Larry grammar system."
+  default_prompt: "Use $larry-grammar-expert to analyze this English sentence with an English component table first, modifier targets included, and Chinese translation last."
+
+policy:
+  allow_implicit_invocation: true

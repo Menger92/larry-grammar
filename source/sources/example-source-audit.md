@@ -5,9 +5,21 @@
 ## 1. 审计原则
 
 1. 正文例句优先使用 A 级证据：视频画面、用户截图、用户笔记、用户上传讲义。
-2. 已经写入正文但暂时没有明确来源的例句，先进入“待校准”区，不继续扩写。
-3. 后续更新时，如果没有截图或视频画面支撑，只写规则入口，不新增具体例句。
-4. HTML 生成前，优先处理本文件中的 P1 条目。
+2. 来源确认和表达正确是两件事：截图中的问题句仍要标为“纠错对比”或改成“校准表达”，不能因有来源就当作推荐句。
+3. 已经写入正文但暂时没有明确来源的例句，先进入“待校准”区，不继续扩写。
+4. 用户明确要求补充真实文章分析框架时，可以加入外部例句，但必须标为“外部补充”，不得伪装成 Larry 原例。
+5. HTML 生成前，优先处理本文件中的 P1 条目。
+
+### 正文例句状态标签
+
+| 标签 | 含义 | 正文处理 |
+| --- | --- | --- |
+| 【Larry 原例】 | 已由视频、截图或用户笔记确认，并适合作正常示范。 | 可直接讲解；需要时仍说明语境。 |
+| 【校准表达】 | 来源内容的拼写、搭配、时态或自然度经过校正。 | 正文使用校正版，审计表保留原貌和改动。 |
+| 【纠错对比】 | 故意展示错误、歧义或不推荐形式。 | 必须同时给出推荐表达和具体错因。 |
+| 【依赖语境】 | 语法可能成立，但脱离语境容易误判。 | 明确它成立所需的语境或目标含义。 |
+| 【外部补充】 | 为真实文章分析补入，不是 Larry 原例。 | 与 Larry 主线分区展示并写明用途。 |
+| 【待确认】 | 暂未找到可靠来源或判断仍需核验。 | 只留在审计区，不作为正文普通例句。 |
 
 ## 2. 已确认例句
 
@@ -23,7 +35,7 @@
 | V21 视频画面 | He persuaded his friend to go back to school. | `source/content/tense.md` | 已确认 |
 | V19-V22 用户截图 / PDF 讲义 | 本轮 `source/content/tense.md` 中新增的时态规则和例句 | `source/content/tense.md` | 已确认，集中来源为用户截图与 `assets/时态/Larry的语法课_时态_讲义.pdf` |
 | V19-V22 用户截图 / PDF 讲义 | People die. | `source/content/tense.md` | 已确认 |
-| V19-V22 用户截图 / PDF 讲义 | I write a book. | `source/content/tense.md` | 已确认为错误例句 |
+| V19-V22 用户截图 / PDF 讲义 | I write a book. | `source/content/tense.md` | 讲义按无语境单句标为错误；项目已校准为“依赖语境，脱离语境不自然但并非语法错误” |
 | V19-V22 用户截图 / PDF 讲义 | I write books. | `source/content/tense.md` | 已确认 |
 | V19-V22 用户截图 / PDF 讲义 | He played basketball with his friends every Sunday. | `source/content/tense.md` | 已确认 |
 | V19-V22 用户截图 / PDF 讲义 | President Biden is visiting China next week. | `source/content/tense.md` | 已确认 |
@@ -54,11 +66,11 @@
 | V24-V26 用户截图 | It seems as if you were going to divorce Susan. | `source/content/subjunctive.md` | 已确认，用于 as if 虚拟 |
 | V24-V26 用户截图 | I would rather (that) it were winter. | `source/content/subjunctive.md` | 已确认，用于其他类型虚拟 |
 | V27 视频画面 | A singular countable noun cannot be used without a determiner. | `source/content/morphology.md` | 已确认 |
-| V27 用户截图 | I like dog. | `source/content/morphology.md` | 已确认为错误例句 |
+| V27 用户截图 | I like dog. | `source/content/morphology.md` | 已确认为错误例句；正文标为【纠错对比】 |
 | V27 用户截图 | I like dogs. / I like the dog. / I like Michael's dog. | `source/content/morphology.md` | 已确认，为 `I like dog.` 的改写 |
-| V27 用户截图 | Apple is red. | `source/content/morphology.md` | 已确认为错误例句 |
+| V27 用户截图 | Apple is red. | `source/content/morphology.md` | 已确认为错误例句；正文标为【纠错对比】 |
 | V27 用户截图 | The apple is red. / That apple is red. | `source/content/morphology.md` | 已确认，为 `Apple is red.` 的改写 |
-| V27 用户截图 | Cat is on table. | `source/content/morphology.md` | 已确认为错误例句 |
+| V27 用户截图 | Cat is on table. | `source/content/morphology.md` | 已确认为错误例句；正文标为【纠错对比】 |
 | V27 用户截图 | Water is important. | `source/content/morphology.md` | 已确认 |
 | V27 用户截图 | Cats are cute. | `source/content/morphology.md` | 已确认 |
 | V27 用户截图 | For Jimmy, school is hard. | `source/content/morphology.md` | 已确认，零限定词例句 |
@@ -68,23 +80,23 @@
 | V27 用户截图 | The dog is barking by the door. | `source/content/morphology.md` | 已确认 |
 | V27 用户截图 | Every/Each/Either dog is lovable. | `source/content/morphology.md` | 已确认 |
 | V27 用户截图 | This dog is cute. / Michael's dog won the game. | `source/content/morphology.md` | 已确认 |
-| V28 用户截图 | all the many problems / all the three books | `source/content/morphology.md` | 已确认 |
-| V28 用户截图 | both the several answers / both the few reasons | `source/content/morphology.md` | 已确认 |
-| V28 用户截图 | half the few choices / half the ten chapters | `source/content/morphology.md` | 已确认 |
+| V28 用户截图 | all the many problems / all the three books | `source/content/morphology.md` | 已确认；all the three 标为【依赖语境】，普通表达优先 all three |
+| V28 用户截图 | both the several answers / both the few reasons | `source/content/morphology.md` | 已确认；语义范围冲突，正文标为【纠错对比】 |
+| V28 用户截图 | half the few choices / half the ten chapters | `source/content/morphology.md` | 已确认；前者标为【依赖语境】 |
 | V28 用户截图 | I don't like his idea. / They shook their heads firmly. | `source/content/morphology.md` | 已确认 |
-| V28 用户截图 | Those shops are closed in 2025. / Many shops are closed in 2025. | `source/content/morphology.md` | 已确认 |
+| V28 用户截图 | Those shops are closed in 2025. / Many shops are closed in 2025. | `source/content/morphology.md` | 已确认；正文标为【依赖语境】，需补足时间参照 |
 | V28 用户截图 | I like the/that book. / I like the/those books. | `source/content/morphology.md` | 已确认 |
 | V28 用户截图 | I bought a/one book yesterday. | `source/content/morphology.md` | 已确认 |
-| V28 用户截图 | I don't like his the idea. | `source/content/morphology.md` | 已确认为限定词叠加错误例句 |
+| V28 用户截图 | I don't like his the idea. | `source/content/morphology.md` | 已确认为限定词叠加错误例句；正文标为【纠错对比】 |
 | V01-V02 用户截图 | The beautiful flowers have a sweet fragrance. | `source/content/modification-relations.md` | 已确认 |
 | V01-V02 用户截图 | The flowers which are stolen from Michael have a sweet fragrance. | `source/content/modification-relations.md` | 已确认 |
 | V01-V02 用户截图 | The flowers stolen from Michael have a sweet fragrance. | `source/content/modification-relations.md` | 已确认 |
 | V01-V02 用户截图 | Her performance was surprisingly good. | `source/content/modification-relations.md` | 已确认 |
-| V01-V02 用户截图 | Her performance was good when her mom is around. | `source/content/modification-relations.md` | 已确认 |
+| V01-V02 用户截图 | Her performance was good when her mom is around. | `source/content/modification-relations.md` | 已确认；正文统一过去参照，标为【校准表达】 |
 | V01-V02 用户截图 | He runs slowly. | `source/content/modification-relations.md` | 已确认 |
 | V01-V02 用户截图 | He runs if he is followed. | `source/content/modification-relations.md` | 已确认 |
 | V01-V02 用户截图 | She speaks very softly. | `source/content/modification-relations.md` | 已确认 |
-| V01-V02 用户截图 | She speaks like a gun. | `source/content/modification-relations.md` | 已确认 |
+| V01-V02 用户截图 | She speaks like a gun. | `source/content/modification-relations.md` | 已确认；正文标为【依赖语境】并补自然表达 |
 | 用户截图 | What she said about the incident surprised everyone. | `source/content/noun-clause.md` | 已确认，需要保留图片化分析 |
 | 用户截图 | I don't know what your name is. | `source/content/noun-clause.md` | 已确认 |
 | 用户截图 | I don't know why you are laughing. | `source/content/noun-clause.md` | 已确认 |
@@ -240,7 +252,7 @@
 | V15 用户截图 | Sally stopped crying. / Sally stopped to cry. | `source/content/nonfinite.md` | 已确认 |
 | V15 用户截图 | Remember to mail this letter tomorrow. / I don't remember mailing the letter. | `source/content/nonfinite.md` | 已确认 |
 | V15 用户截图 | I hate to trouble you. / I hate troubling you. | `source/content/nonfinite.md` | 已确认 |
-| V15 用户截图 | I cannot help to repair the car. / I cannot help laughing. | `source/content/nonfinite.md` | 已确认 |
+| V15 用户截图 | I cannot help to repair the car. / I cannot help laughing. | `source/content/nonfinite.md` | 已确认；【依赖语境】两个 help 不是同一结构 |
 | V16 用户截图 | a sinking ship | `source/content/nonfinite.md` | 已确认 |
 | V16 用户截图 | falling leaves | `source/content/nonfinite.md` | 已确认 |
 | V16 用户截图 | the rising sun | `source/content/nonfinite.md` | 已确认 |
@@ -261,11 +273,11 @@
 | V16 用户截图 | After doing my homework, I cleaned the room. | `source/content/nonfinite.md` | 已确认，为修正句 |
 | V16 用户截图 | When using the computer, the password must be remembered. | `source/content/nonfinite.md` | 已确认为悬垂分词问题句 |
 | V16 用户截图 | When using the computer, we have to remember the password. | `source/content/nonfinite.md` | 已确认，为修正句 |
-| V16 用户截图 | Nobody having anymore to say, the meeting was closed. | `source/content/nonfinite.md` | 已确认，独立分词结构 |
+| V16 用户截图 | Nobody having anymore to say, the meeting was closed. | `source/content/nonfinite.md` | 已确认；正文【校准表达】为 any more |
 | V16 用户截图 | All the money spent, we started looking for work. | `source/content/nonfinite.md` | 已确认，独立分词结构 |
 | V16 用户截图 | Weather permitting, we'll go fishing tomorrow. | `source/content/nonfinite.md` | 已确认 |
 | V16 用户截图 | The old man often takes a walk after dinner with his dog following him. | `source/content/nonfinite.md` | 已确认 |
-| V16 用户截图 | A car drove by, with smoke pouring from its behind. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | A car drove by, with smoke pouring from its behind. | `source/content/nonfinite.md` | 已确认；正文【校准表达】为 from behind it |
 | V16 用户截图 | Generally speaking, men are stronger than women. | `source/content/nonfinite.md` | 已确认，固定结构 |
 | V16 用户截图 | Strictly speaking, girls are smarter than boys. | `source/content/nonfinite.md` | 已确认，固定结构 |
 | V16 用户截图 | Judging from what he has done, he is a lazy student. | `source/content/nonfinite.md` | 已确认，固定结构 |
@@ -279,9 +291,9 @@
 | V16 用户截图 | Being busy, he will not come today. | `source/content/nonfinite.md` | 已确认 |
 | V16 用户截图 | Not knowing what to do next, I need your advice. | `source/content/nonfinite.md` | 已确认 |
 | V16 用户截图 | Having been abroad for years, he still can't speak English. | `source/content/nonfinite.md` | 已确认 |
-| V16 用户截图 | Although understanding no Chinese, he was able to communicate. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | Although understanding no Chinese, he was able to communicate. | `source/content/nonfinite.md` | 已确认；正文【校准表达】为 Although not understanding any Chinese |
 | V16 用户截图 | Her husband died, leaving her with two children. | `source/content/nonfinite.md` | 已确认 |
-| V16 用户截图 | He fired, killing an enemy. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | He fired, killing an enemy. | `source/content/nonfinite.md` | 已确认；正文补出 a shot 以避免搭配和语境误导 |
 | V16 用户截图 | When waiting for the bus, I saw a little cat walk to me. | `source/content/nonfinite.md` | 已确认，保留连接词 |
 | V16 用户截图 | Although living in America, Sally knows a lot about China. | `source/content/nonfinite.md` | 已确认，保留连接词 |
 | V16 用户截图 | If seen from far away, the sheep looks like a dog. | `source/content/nonfinite.md` | 已确认，保留连接词 |
@@ -295,9 +307,9 @@
 | V16 用户截图 | She has no living parents. / She has no parents living. | `source/content/nonfinite.md` | 已确认，分词定语位置对比 |
 | V16 用户截图 | The arriving train is from Beijing. / The train arriving by eight is from Beijing. | `source/content/nonfinite.md` | 已确认，句末重心 |
 | V16 用户截图 | The stolen car was found abandoned in a nearby alley. / The car stolen from the factory was found abandoned in a nearby alley. | `source/content/nonfinite.md` | 已确认，句末重心 |
-| V16 用户截图 | published writings / a charmed girl / a moved object / boiled water | `source/content/nonfinite.md` | 已确认，及物动词过去分词作定语 |
+| V16 用户截图 | published writings / a charmed girl / a moved object / boiled water | `source/content/nonfinite.md` | 已确认；a moved object 标为【依赖语境】 |
 | V16 用户截图 | faded roses / a sunken boat / fallen leaves / the frozen lake | `source/content/nonfinite.md` | 已确认，不及物动词过去分词作定语 |
-| V16 用户截图 | The built house is beautiful. | `source/content/nonfinite.md` | 已确认 |
+| V16 用户截图 | The built house is beautiful. | `source/content/nonfinite.md` | 已确认；正文【校准表达】为 The newly built house... |
 | V16 用户截图 | The house being built is beautiful. | `source/content/nonfinite.md` | 已确认 |
 | V16 用户截图 | The house to be built will be beautiful. | `source/content/nonfinite.md` | 已确认 |
 | V16 用户截图 | I heard Sally singing last night. | `source/content/nonfinite.md` | 已确认，SVOC 结构 |
@@ -313,20 +325,20 @@
 | V17 用户截图 | Whether he is a transsexual or not doesn't matter. / His being a transsexual or not doesn't matter. | `source/content/nonfinite.md` | 已确认，名词性从句转动名词短语 |
 | V17 用户截图 | The problem is what he is. / The problem is his identity. | `source/content/nonfinite.md` | 已确认，名词性从句转名词短语 |
 | V17 用户截图 | What you decide will greatly impact our future. / Your decision will greatly impact our future. | `source/content/nonfinite.md` | 已确认，名词性从句转名词短语 |
-| V17 用户截图 | His dream is that he becomes a successful entrepreneur. / His dream is to become a successful entrepreneur. | `source/content/nonfinite.md` | 已确认，名词性从句转不定式 |
+| V17 用户截图 | His dream is that he becomes a successful entrepreneur. / His dream is to become a successful entrepreneur. | `source/content/nonfinite.md` | 已确认；正文将内容从句【校准表达】为 will become |
 | V17 用户截图 | We need a teacher who is warm-hearted, hardworking, and quick in learning. | `source/content/nonfinite.md` | 已确认，形容词性从句转换 |
 | V17 用户截图 | We need a warm-hearted, hard-working, and fast-learning teacher. | `source/content/nonfinite.md` | 已确认，形容词短语转换 |
 | V17 用户截图 | Michael likes friends who are always ready to help. / Michael likes ready-to-help friends. | `source/content/nonfinite.md` | 已确认，形容词性从句转形容词化短语 |
 | V17 用户截图 | I like the flowers that are on the table. / I like the flowers on the table. | `source/content/nonfinite.md` | 已确认，形容词性从句转介词短语 |
 | V17 用户截图 | In Fujian there exist certain traditions that people accustomed to Northern ways of thinking find strange. | `source/content/nonfinite.md` | 已确认，形容词性从句转换 |
-| V17 用户截图 | When I opened the window, the cat jumped out. / With my opening the window, the cat jumped out. | `source/content/nonfinite.md` | 已确认，副词性从句转介词 + 动名词 |
+| V17 用户截图 | When I opened the window, the cat jumped out. / With my opening the window, the cat jumped out. | `source/content/nonfinite.md` | 已确认；with 版本生硬，正文改用 on 并保留来源原句 |
 | V17 用户截图 | People plant trees where there is a lot of sunshine. / People plant trees in sunlit places. | `source/content/nonfinite.md` | 已确认，地点从句转介词短语 |
-| V17 用户截图 | I opened the window so that the cat jumped out. / I opened the window, the cat jumping out. | `source/content/nonfinite.md` | 已确认，结果从句转分词结构 |
-| V17 用户截图 | I opened the window so that the cat could jump out. / I opened the window, the cat being able to jump out. | `source/content/nonfinite.md` | 已确认，目的从句转分词结构，正文注明不如从句自然 |
+| V17 用户截图 | I opened the window so that the cat jumped out. / I opened the window, the cat jumping out. | `source/content/nonfinite.md` | 已确认；独立分词版本标为【依赖语境】 |
+| V17 用户截图 | I opened the window so that the cat could jump out. / I opened the window, the cat being able to jump out. | `source/content/nonfinite.md` | 已确认；后者不能稳定表达目的，标为【纠错对比】 |
 | V17 用户截图 | If you heat water, you can change it into steam. / Heating water, you can change it into steam. | `source/content/nonfinite.md` | 已确认，条件从句转分词状语 |
 | V17 用户截图 | Though I opened the window, the cat didn't jump out. / Despite my opening the window, the cat didn't jump out. | `source/content/nonfinite.md` | 已确认，让步从句转介词短语 |
 | V17 用户截图 | He raised his head as though he was going to command silence. / He raised his head as though to command silence. | `source/content/nonfinite.md` | 已确认，方式从句转 as though + 不定式 |
-| V17 用户截图 | To hear him sing, you might take him for a girl. | `source/content/nonfinite.md` | 已确认，非谓语语义不如从句明确 |
+| V17 用户截图 | To hear him sing, you might take him for a girl. | `source/content/nonfinite.md` | 已确认；句首不定式先触发目的义，标为【纠错对比】 |
 | V17 用户截图 | If you hear him sing, you might take him for a girl. | `source/content/nonfinite.md` | 已确认，条件从句更明确 |
 | V17 用户截图 | When you hear him sing, you might take him for a girl. | `source/content/nonfinite.md` | 已确认，时间从句更明确 |
 | V17 用户截图 | Finding the door locked, I went home. / Because I found the door locked, I went home. | `source/content/nonfinite.md` | 已确认，分词位置和语义 |
@@ -335,6 +347,20 @@
 | V17 用户截图 | Despite the doctor's advice to rest, she insisted on going to work, fearing that her absence would create a backlog of tasks that needed her attention. | `source/content/nonfinite.md` | 已确认，从句和非谓语混用 |
 | V17 用户截图 | After years of practicing martial arts, he had developed a strong sense of discipline and self-control, which benefited him not only in physical combat but also in other aspects of life. | `source/content/nonfinite.md` | 已确认，从句和非谓语混用 |
 | V17 用户截图 | Despite having studied diligently for the exam, she couldn't shake off the feeling of anxiety, wondering if she had prepared enough to achieve a good score. | `source/content/nonfinite.md` | 已确认，从句和非谓语混用 |
+
+### 2.1 用户批准的外部补充例句
+
+这些句子用于补足 Larry 五大句型之外的真实文章表层分析。它们不是 Larry 视频原例，HTML 中必须显示“外部补充”标签。
+
+| 纳入原因 | 例句 | 对应文件 | 状态 |
+| --- | --- | --- | --- |
+| SVA 扩展骨架 | She lives in Beijing. | `source/content/simple-sentence.md` | 【外部补充】 |
+| SVOA / 必要地点补足 | She put the keys on the table. | `source/content/simple-sentence.md`、`source/content/preposition.md` | 【外部补充】 |
+| 存在句 | There is a serious supply-chain risk. | `source/content/simple-sentence.md` | 【外部补充】 |
+| 形式主语 / 外置 | It is likely that prices will rise. | `source/content/simple-sentence.md` | 【外部补充】 |
+| 被动表层 | The proposal was rejected by regulators. | `source/content/simple-sentence.md` | 【外部补充】 |
+| 并列分句 | Demand fell, but costs rose. | `source/content/simple-sentence.md` | 【外部补充】 |
+| 介词短语作主语补足 / 表语 | The book is on the desk. | `source/content/preposition.md` | 【外部补充】 |
 
 ## 3. 待校准例句区
 
@@ -354,9 +380,9 @@
 | 类型 | 处理 |
 | --- | --- |
 | 为了凑表格而临时编写的例句 | 不再新增。 |
-| 没有视频或截图来源的“看起来合理”的例句 | 不进入正文。 |
+| 没有视频或截图来源、也没有明确学习用途的“看起来合理”例句 | 不进入正文。 |
 | 只有标题可确认的视频内容 | 只写章节入口、判断框架、待补方向。 |
-| 从其他语法书得到的例句 | 只有用户明确要求纳入时，才放入单独来源区。 |
+| 外部理论或其他语法书例句 | 只有用户明确要求纳入时，才放入“外部补充”区并显示来源身份。 |
 
 ## 5. 下一轮校准顺序
 

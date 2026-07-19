@@ -32,6 +32,15 @@ const inlineClassMap = [
   ["nonfinite", ["非谓语", "不定式", "动名词", "分词", "to do", "doing", "done", "V-ing"]]
 ];
 
+const exampleStatusMap = new Map([
+  ["Larry 原例", "status-larry"],
+  ["校准表达", "status-calibrated"],
+  ["纠错对比", "status-error"],
+  ["依赖语境", "status-context"],
+  ["外部补充", "status-external"],
+  ["待确认", "status-pending"]
+]);
+
 function escapeHtml(value) {
   return String(value).replace(/[&<>"']/g, char => ({
     "&": "&amp;",
@@ -58,6 +67,14 @@ function colorize(html) {
   });
 }
 
+function renderExampleStatuses(html) {
+  return replaceOutsideTags(html, text => (
+    text.replace(/【(Larry 原例|校准表达|纠错对比|依赖语境|外部补充|待确认)】/g, (_, label) => (
+      `<span class="example-status ${exampleStatusMap.get(label)}">${label}</span>`
+    ))
+  ));
+}
+
 function inline(text) {
   const codeParts = [];
   const brParts = [];
@@ -78,6 +95,7 @@ function inline(text) {
     .replace(/\*([^*]+)\*/g, "<em>$1</em>")
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, href) => `<a href="${escapeHtml(href)}">${label}</a>`);
 
+  working = renderExampleStatuses(working);
   working = colorize(working);
 
   codeParts.forEach((code, index) => {
@@ -107,7 +125,10 @@ function renderTable(lines, start) {
   const tbody = rows.length
     ? `<tbody>${rows.map(row => `<tr>${row.map(cell => `<td>${inline(cell)}</td>`).join("")}</tr>`).join("")}</tbody>`
     : "";
-  return { html: `<table>${thead}${tbody}</table>`, next: index };
+  return {
+    html: `<div class="table-scroll table-cols-${header.length}" role="region" tabindex="0" aria-label="表格，可横向滚动"><table class="content-table">${thead}${tbody}</table></div>`,
+    next: index
+  };
 }
 
 function renderList(lines, start, ordered) {
@@ -146,10 +167,23 @@ function renderParagraph(lines, start) {
   return { html: `<p>${inline(parts.join(" "))}</p>`, next: index };
 }
 
+function chapterModuleInfo(title) {
+  if (title === "本章结论卡") return ["summary", "chapter-summary-title"];
+  if (title === "核心本质") return ["core", "chapter-core-title"];
+  if (title === "判断步骤") return ["steps", "chapter-steps-title"];
+  if (title === "类型速查表") return ["quick", "chapter-quick-title"];
+  if (title.startsWith("具体类型")) return ["detail", "chapter-detail-title"];
+  if (title === "易混对比") return ["confusion", "chapter-confusion-title"];
+  if (title === "经济学人分析提示") return ["reading", "chapter-reading-title"];
+  if (title === "关联入口") return ["links", "chapter-links-title"];
+  return ["topic", "chapter-topic-title"];
+}
+
 function markdownToHtml(markdown) {
   const lines = markdown.replace(/\r\n/g, "\n").split("\n");
   const html = [];
   let index = 0;
+  let moduleOpen = false;
 
   if (/^#\s+/.test(lines[0] || "")) {
     index = 1;
@@ -183,10 +217,13 @@ function markdownToHtml(markdown) {
       const rawText = heading[2].trim();
       const text = inline(rawText);
       if (level === 2) {
-        const className = rawText === "本章结论卡"
-          ? "table-title chapter-summary-title"
-          : "table-title";
-        html.push(`<h4 class="${className}">${text}</h4>`);
+        if (moduleOpen) {
+          html.push("</section>");
+        }
+        const [moduleKind, titleClass] = chapterModuleInfo(rawText);
+        html.push(`<section class="chapter-module chapter-module--${moduleKind}" data-module="${moduleKind}">`);
+        html.push(`<h4 class="table-title ${titleClass}">${text}</h4>`);
+        moduleOpen = true;
       } else if (level === 3) {
         html.push(`<h5 class="source-subtitle">${text}</h5>`);
       } else {
@@ -255,6 +292,10 @@ function markdownToHtml(markdown) {
     const paragraph = renderParagraph(lines, index);
     html.push(paragraph.html);
     index = paragraph.next;
+  }
+
+  if (moduleOpen) {
+    html.push("</section>");
   }
 
   return html.join("\n");
@@ -482,23 +523,6 @@ sections.push({
         ${sourceFiles.map(([id, filename, title]) => `<tr><td>${colorize(escapeHtml(title))}</td><td><code>source/content/${escapeHtml(filename)}</code></td></tr>`).join("")}
       </tbody>
     </table>
-  `
-});
-
-sections.push({
-  id: "bosses-beware",
-  title: "Bosses beware 逐句分析",
-  meta: "经济学人长文逐句 Larry 标注，临时维护，后续可删除。",
-  html: `
-    <h4 class="table-title">经济学人长文实战</h4>
-    <p>本章临时嵌入《Bosses beware: the tariff shock is not like covid-19》的逐句 Larry 语法分析。页面保留 57 个完整英文句子，并按 Larry 颜色规则标注：<span class="noun">名词性</span>、<span class="adj">形容词性</span>、<span class="adv">副词性</span>和谓语主干。</p>
-    <p><a href="temporary/bosses_beware_article_grammar_larry.html" target="_blank" rel="noopener">新窗口打开完整逐句分析</a></p>
-    <iframe
-      title="Bosses beware 逐句 Larry 语法分析"
-      src="temporary/bosses_beware_article_grammar_larry.html"
-      style="width:100%; min-height:82vh; border:1px solid #d8dee9; border-radius:8px; background:#fff;"
-    ></iframe>
-    <p>删除时，移除本章生成入口、导航中的 <code>bosses-beware</code>，以及 <code>web/temporary/bosses_beware_article_grammar_larry.html</code>。</p>
   `
 });
 

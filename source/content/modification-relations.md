@@ -55,11 +55,11 @@ The beautiful flowers have a sweet fragrance.
 | 形容词性从句修饰名词 | The flowers which are stolen from Michael have a sweet fragrance. | `which are stolen from Michael` 修饰 `flowers`，作定语从句。 |
 | 分词修饰名词 | The flowers stolen from Michael have a sweet fragrance. | `stolen from Michael` 修饰 `flowers`，作分词定语。 |
 | 副词修饰形容词 | Her performance was surprisingly good. | `surprisingly` 修饰 `good`。 |
-| 副词性从句修饰形容词 | Her performance was good when her mom is around. | `when her mom is around` 修饰 `good` / `was good`。 |
+| 副词性从句修饰形容词 | 【校准表达】 Her performance was good when her mom was around.（来源原句用 is） | `when her mom was around` 修饰 `good` / `was good`；主句和时间从句统一为过去参照。 |
 | 副词修饰动词 | He runs slowly. | `slowly` 修饰 `runs`。 |
 | 副词性从句修饰动词 | He runs if he is followed. | `if he is followed` 修饰 `runs`。 |
 | 副词修饰其他副词 | She speaks very softly. | `very` 修饰 `softly`。 |
-| 副词性介词短语修饰动词 | She speaks like a gun. | `like a gun` 修饰 `speaks`。 |
+| 副词性介词短语修饰动词 | 【依赖语境】 She speaks like a gun. | `like a gun` 形式上修饰 `speaks`，但比喻含义不明确；若想表达“说得像机关枪一样快”，可写 `She speaks rapidly, like a machine gun.` |
 
 </details>
 

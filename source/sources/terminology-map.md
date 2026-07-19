@@ -11,9 +11,10 @@
 | 宾语 | 受词 | Object | 动作影响或指向的对象。 |
 | 补语 | 补语 | Complement | 补足主语或宾语的状态、身份、结果。 |
 | 主语补语 | 主词补语 | Subject Complement | 传统“表语”在本项目中归入主语补语。 |
-| 宾语补语 | 受词补语 | Object Complement | 用 [A is B] 小分句检验。 |
+| 宾语补语 | 受词补语 | Object Complement | 用 [A is / becomes B] 或逻辑主谓关系作初步检验，再检查动词选择关系。 |
+| 次级谓语 | 次述语 / 描写性补语 | Secondary Predicate | 对主语或宾语再次作出状态描写；可能是可选成分，不能只靠删除测试判断。 |
 | 表语 | 主词补语 / 补语 | Predicative | 本项目中表语属于主语补语。 |
-| 从句 | 子句 | Clause | 一个带主谓结构的句子单位。 |
+| 从句 | 子句 | Clause | 依附于更大结构的小句；本项目重点分析有自身有限谓语的从属小句。 |
 | 名词性从句 | 名词子句 | Noun Clause | 整体当名词用。 |
 | 定语从句 / 形容词性从句 | 关系子句 / 形容词子句 | Relative / Adjective Clause | 整体修饰名词。 |
 | 状语从句 / 副词性从句 | 副词子句 | Adverbial Clause | 整体修饰动作、状态或主句。 |

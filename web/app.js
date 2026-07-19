@@ -40,17 +40,13 @@ const navGroups = [
     title: "附录与维护",
     note: "来源、协议、项目使用说明和源文件索引",
     ids: ["source-index"]
-  },
-  {
-    title: "实战长文",
-    note: "经济学人逐句 Larry 标注",
-    ids: ["bosses-beware"]
   }
 ];
 
 const nav = document.querySelector("#nav");
 const content = document.querySelector("#content");
 const search = document.querySelector("#search");
+const tocSearchResults = document.querySelector("#tocSearchResults");
 const exampleSearch = document.querySelector("#exampleSearch");
 const exampleFilters = document.querySelector("#exampleFilters");
 const exampleTopics = document.querySelector("#exampleTopics");
@@ -110,7 +106,7 @@ const exampleLibrary = [
     analysis: [
       "先抓主干：I found the room dirty。",
       "把宾语和后面的词连起来：The room is dirty。",
-      "小分句语义自洽，所以 dirty 是宾语补语，不是状语。"
+      "小分句证明 dirty 对 the room 建立状态说明；结合 found 在当前释义中的结构，判断为宾语补语。"
     ]
   },
   {
@@ -137,7 +133,7 @@ const exampleLibrary = [
   },
   {
     id: "subject-complement-came-back-safe",
-    title: "主语补语：动作时的状态",
+    title: "可选次级谓语：动作时的状态",
     section: "简单句",
     tags: ["simple", "contrast"],
     level: "基础",
@@ -147,13 +143,13 @@ const exampleLibrary = [
     parts: [
       { text: "He", role: "noun", label: "主语" },
       { text: "came back", role: "neutral", label: "谓语" },
-      { text: "safe", role: "adj", label: "主语补语" },
+      { text: "safe", role: "adj", label: "描写性主语补语 / 次级谓语" },
       { text: ".", role: "plain" }
     ],
     analysis: [
       "safe 不是修饰 came back 的方式，而是说明 He 回来时的状态。",
       "验证小分句：He was safe。",
-      "小分句语义自洽，所以 safe 是主语补语。"
+      "He came back 删除 safe 后仍成立；safe 是可选的描写性主语补语 / 次级谓语，不是必需补语。"
     ]
   },
   {
@@ -341,7 +337,7 @@ const exampleLibrary = [
     translation: "为了清楚地学习语法，我们标注句子功能。",
     core: "We mark sentence functions",
     parts: [
-      { text: "To learn grammar clearly", role: "nonfinite", label: "不定式短语" },
+      { text: "To learn grammar clearly", role: "adv nonfinite", label: "目的状语 / 不定式" },
       { text: ",", role: "plain" },
       { text: "we", role: "noun", label: "主语" },
       { text: "mark", role: "neutral", label: "谓语" },
@@ -367,7 +363,7 @@ const exampleLibrary = [
       { text: "She", role: "noun", label: "主语" },
       { text: "apologized", role: "neutral", label: "谓语" },
       { text: "for", role: "adv", label: "介词" },
-      { text: "arriving late to the meeting", role: "nonfinite", label: "动名词短语 / 介词宾语" },
+      { text: "arriving late to the meeting", role: "noun nonfinite", label: "动名词短语 / 介词宾语" },
       { text: ".", role: "plain" }
     ],
     analysis: [
@@ -694,7 +690,7 @@ const knowledgeExampleLibrary = [
     core: "You make me happy",
     question: "happy 为什么是宾语补足语？",
     answer: "把宾语 me 和 happy 连成小分句：I am happy，语义自洽，happy 补充说明 me 的状态。",
-    method: "宾补判断用小分句检验：宾语 + be + 后面的词，成立就倾向宾补。",
+    method: "先用宾语 + be + 后面的词检查述谓关系，再结合 make 的句型确认它是宾补；小分句不是单独的充分条件。",
     parts: [
       { text: "You", role: "noun", label: "主语" },
       { text: "make", role: "neutral", label: "谓语" },
@@ -706,6 +702,166 @@ const knowledgeExampleLibrary = [
       "主干是 You make me happy。",
       "me 是 make 的宾语。",
       "happy 补充说明 me 的状态，不是修饰 make 的方式，所以是宾补。"
+    ]
+  },
+  {
+    id: "simple-expanded-sva-lives",
+    title: "扩展骨架 SVA：地点成分",
+    section: "简单句",
+    knowledge: "真实文章扩展骨架",
+    tags: ["simple", "preposition"],
+    level: "进阶",
+    status: "外部补充",
+    sentence: "She lives in Beijing.",
+    translation: "她住在北京。",
+    core: "She lives in Beijing",
+    question: "in Beijing 只是可随意删除的状语吗？",
+    answer: "它走副词性路线，并补足当前“居住在某地”的意义；扩展分析可标为 SVA。",
+    method: "先抓 SV，再检查地点成分是否由当前动词意义选择。",
+    parts: [
+      { text: "She", role: "noun", label: "主语" },
+      { text: "lives", role: "neutral", label: "谓语" },
+      { text: "in Beijing", role: "adv", label: "地点成分 / A" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "Larry 核心骨架可先看成 SV。",
+      "in Beijing 说明居住地点，扩展骨架标为 SVA。",
+      "这是外部补充标签，不替代 Larry 五大句型。"
+    ]
+  },
+  {
+    id: "simple-expanded-svoa-put",
+    title: "扩展骨架 SVOA：必要地点补足",
+    section: "简单句",
+    knowledge: "真实文章扩展骨架",
+    tags: ["simple", "preposition"],
+    level: "进阶",
+    status: "外部补充",
+    sentence: "She put the keys on the table.",
+    translation: "她把钥匙放在桌上。",
+    core: "She put the keys on the table",
+    question: "为什么不能只留下 She put the keys？",
+    answer: "put 在当前意义下要求说明把宾语放到哪里；on the table 是必要地点补足，扩展骨架为 SVOA。",
+    method: "先抓 SVO，再做删除测试，并检查动词当前义是否仍完整。",
+    parts: [
+      { text: "She", role: "noun", label: "主语" },
+      { text: "put", role: "neutral", label: "谓语" },
+      { text: "the keys", role: "noun", label: "宾语" },
+      { text: "on the table", role: "adv", label: "必要地点补足 / A" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "the keys 是 put 的宾语。",
+      "on the table 走副词性路线，但不是普通可删背景。",
+      "扩展标记 SVOA 能保留动词配价信息。"
+    ]
+  },
+  {
+    id: "simple-expanded-existential",
+    title: "扩展骨架：存在句",
+    section: "简单句",
+    knowledge: "真实文章扩展骨架",
+    tags: ["simple"],
+    level: "进阶",
+    status: "外部补充",
+    sentence: "There is a serious supply-chain risk.",
+    translation: "存在一个严重的供应链风险。",
+    core: "There is a serious supply-chain risk",
+    question: "There 是普通动作发出者吗？",
+    answer: "不是。there 占据形式位置，后面的名词短语才是被引入的新信息。",
+    method: "看到 there + be，先整体识别为存在句，再找实际引入的名词短语。",
+    parts: [
+      { text: "There", role: "neutral", label: "形式位置" },
+      { text: "is", role: "neutral", label: "存在谓语" },
+      { text: "a serious supply-chain risk", role: "noun", label: "实际引入的信息" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "there 不指具体地点，也不是施事。",
+      "a serious supply-chain risk 是句末信息重心。",
+      "阅读时先认存在句，不机械套普通主系表。"
+    ]
+  },
+  {
+    id: "simple-expanded-extraposition",
+    title: "扩展骨架：形式主语与外置",
+    section: "简单句",
+    knowledge: "真实文章扩展骨架",
+    tags: ["simple", "noun-clause"],
+    level: "进阶",
+    status: "外部补充",
+    sentence: "It is likely that prices will rise.",
+    translation: "价格很可能会上涨。",
+    core: "It is likely that prices will rise",
+    question: "真正被判断为 likely 的内容是什么？",
+    answer: "it 是形式主语，that prices will rise 是被外置到句末的真实内容。",
+    method: "先识别 it + 系动词 + 评价词，再检查句末是否有真实内容从句。",
+    parts: [
+      { text: "It", role: "noun", label: "形式主语" },
+      { text: "is", role: "neutral", label: "系动词" },
+      { text: "likely", role: "adj", label: "主语补语" },
+      { text: "that prices will rise", role: "noun", label: "外置主语从句 / 真实内容" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "表层骨架像 SVP。",
+      "that 从句承载实际判断内容。",
+      "外置让较重的信息留在句末。"
+    ]
+  },
+  {
+    id: "simple-expanded-passive",
+    title: "扩展骨架：被动表层",
+    section: "简单句",
+    knowledge: "真实文章扩展骨架",
+    tags: ["simple"],
+    level: "进阶",
+    status: "外部补充",
+    sentence: "The proposal was rejected by regulators.",
+    translation: "该提案遭到监管机构否决。",
+    core: "The proposal was rejected",
+    question: "被动句如何和 SVO 联系起来？",
+    answer: "表层主语 the proposal 是 reject 的承受者；可还原为 Regulators rejected the proposal。",
+    method: "识别 be + done，再找承受者、动作和可选施事。",
+    parts: [
+      { text: "The proposal", role: "noun", label: "主语 / 动作承受者" },
+      { text: "was rejected", role: "neutral", label: "被动谓语" },
+      { text: "by regulators", role: "adv", label: "施事说明" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "被动改变了表层信息顺序。",
+      "底层动作关系仍可用 SVO 检查。",
+      "by regulators 说明施事，语境明确时可以省略。"
+    ]
+  },
+  {
+    id: "simple-expanded-coordination",
+    title: "扩展骨架：并列分句",
+    section: "简单句",
+    knowledge: "真实文章扩展骨架",
+    tags: ["simple"],
+    level: "进阶",
+    status: "外部补充",
+    sentence: "Demand fell, but costs rose.",
+    translation: "需求下降了，但成本上升了。",
+    core: "Demand fell + costs rose",
+    question: "句中两个谓语属于同一套主干吗？",
+    answer: "不属于。but 连接两个各自完整的 SV 分句。",
+    method: "每找到一个承担时态的谓语，都检查它是否有自己的主语。",
+    parts: [
+      { text: "Demand", role: "noun", label: "分句 1 主语" },
+      { text: "fell", role: "neutral", label: "分句 1 谓语" },
+      { text: ", but", role: "neutral", label: "并列连词" },
+      { text: "costs", role: "noun", label: "分句 2 主语" },
+      { text: "rose", role: "neutral", label: "分句 2 谓语" },
+      { text: ".", role: "plain" }
+    ],
+    analysis: [
+      "Demand fell 是第一套 SV。",
+      "costs rose 是第二套 SV。",
+      "but 只连接两套骨架，不属于任何一个句子成分。"
     ]
   },
   {
@@ -815,7 +971,7 @@ const knowledgeExampleLibrary = [
   },
   {
     id: "simple-subject-complement-naked",
-    title: "主语补语：动作中的状态",
+    title: "可选次级谓语：动作中的状态",
     section: "简单句",
     knowledge: "主语补语",
     tags: ["simple", "contrast"],
@@ -824,18 +980,18 @@ const knowledgeExampleLibrary = [
     translation: "他正赤裸着四处走动。",
     core: "He is walking around naked",
     question: "naked 为什么不是副词状语？",
-    answer: "He is naked 语义自洽；naked 说明 He 的状态，而不是走动的方式。",
-    method: "主语补语要使用与原句相符的状态验证：He is naked；不能改成过去时。",
+    answer: "He is naked 语义自洽；naked 说明 He 的状态，而不是走动的方式。删除后主干仍成立，因此它是可选的描写性次级谓语。",
+    method: "先用 He is naked 检查述谓关系，再用删除测试判断必要性；验证句使用 is，不能改成过去时。",
     parts: [
       { text: "He", role: "noun", label: "主语" },
       { text: "is walking around", role: "neutral", label: "谓语" },
-      { text: "naked", role: "adj", label: "主语补语 / 形容词性" },
+      { text: "naked", role: "adj", label: "描写性主语补语 / 次级谓语" },
       { text: ".", role: "plain" }
     ],
     analysis: [
       "主干是 He is walking around naked。",
       "验证小分句：He is naked。",
-      "naked 是形容词性主语补语；验证句应使用 is，不是 was。"
+      "naked 是形容词性的描写性主语补语 / 次级谓语；它可删除，但不是修饰 walking 的方式状语。"
     ]
   },
   {
@@ -1424,7 +1580,7 @@ const knowledgeExampleLibrary = [
     answer: "To lie 整体站在主语位置，is foolish 说明这件事的性质。",
     method: "非谓语先看它占哪个句子位置，再判断它承担名词、形容词还是副词功能。",
     parts: [
-      { text: "To lie", role: "nonfinite", label: "不定式 / 主语" },
+      { text: "To lie", role: "noun nonfinite", label: "不定式 / 主语" },
       { text: "is", role: "neutral", label: "系动词" },
       { text: "foolish", role: "adj", label: "形容词性主语补语" },
       { text: ".", role: "plain" }
@@ -1450,7 +1606,7 @@ const knowledgeExampleLibrary = [
     method: "一句话只能先锁定真正谓语；多出来的动词形式再判断是不是非谓语。",
     parts: [
       { text: "The", role: "adj", label: "限定词" },
-      { text: "sleeping", role: "nonfinite", label: "现在分词 / 定语" },
+      { text: "sleeping", role: "adj nonfinite", label: "现在分词 / 定语" },
       { text: "baby", role: "noun", label: "主语中心词" },
       { text: "is", role: "neutral", label: "谓语" },
       { text: "quiet", role: "adj", label: "形容词性主语补语" },
@@ -1581,6 +1737,24 @@ function exampleKnowledge(item) {
   return item.knowledge || exampleKnowledgeOverrides[item.id] || item.title;
 }
 
+function exampleStatusClass(status = "") {
+  return {
+    "Larry 原例": "status-larry",
+    "校准表达": "status-calibrated",
+    "纠错对比": "status-error",
+    "依赖语境": "status-context",
+    "外部补充": "status-external",
+    "待确认": "status-pending"
+  }[status] || "";
+}
+
+function renderExampleStatus(status) {
+  if (!status) {
+    return "";
+  }
+  return `<span class="example-status ${exampleStatusClass(status)}">${escapeHtml(status)}</span>`;
+}
+
 function exampleChapterTargets(item) {
   return item.tags
     .map(tag => exampleChapterLinks[tag])
@@ -1593,23 +1767,52 @@ function sectionNumber(section) {
   return displaySections.findIndex(item => item.id === section.id) + 1;
 }
 
+function subsectionHeadingMatches(html) {
+  return [...html.matchAll(/<h4 class="([^"]*\btable-title\b[^"]*)"([^>]*)>([\s\S]*?)<\/h4>/g)]
+    .filter(match => !match[1].split(/\s+/).includes("chapter-summary-title"));
+}
+
 function getSubsections(section) {
-  const matches = [...section.html.matchAll(/<h4 class="table-title">([\s\S]*?)<\/h4>/g)];
+  const matches = subsectionHeadingMatches(section.html);
   return matches.map((match, index) => ({
     id: `${section.id}-${index + 1}`,
     number: `${sectionNumber(section)}.${index + 1}`,
-    title: match[1].replace(/<[^>]+>/g, "").trim()
+    title: match[3].replace(/<[^>]+>/g, "").trim()
   }));
 }
 
 function addNumberedSubsections(section) {
   let count = 0;
-  return section.html.replace(/<h4 class="table-title">([\s\S]*?)<\/h4>/g, (_, title) => {
+  return section.html.replace(/<h4 class="([^"]*\btable-title\b[^"]*)"([^>]*)>([\s\S]*?)<\/h4>/g, (heading, classes, attributes, title) => {
+    if (classes.split(/\s+/).includes("chapter-summary-title")) {
+      return heading;
+    }
     count += 1;
     const number = `${sectionNumber(section)}.${count}`;
     const id = `${section.id}-${count}`;
-    return `<h4 class="table-title" id="${id}"><span class="section-number">${number}</span>${title}</h4>`;
+    return `<h4 class="${classes}"${attributes} id="${id}"><span class="section-number">${number}</span>${title}</h4>`;
   });
+}
+
+function renderChapterOutline(section) {
+  const subsections = getSubsections(section);
+  if (subsections.length < 2) {
+    return "";
+  }
+
+  return `
+    <details class="chapter-outline">
+      <summary>本章目录 <span>${subsections.length} 个知识点</span></summary>
+      <nav aria-label="${escapeHtml(section.title)}本章目录">
+        ${subsections.map(subsection => `
+          <a href="#${subsection.id}">
+            <span>${subsection.number}</span>
+            <em>${escapeHtml(subsection.title)}</em>
+          </a>
+        `).join("")}
+      </nav>
+    </details>
+  `;
 }
 
 function renderNav(list) {
@@ -1680,7 +1883,7 @@ function renderNav(list) {
   nav.innerHTML = clusters.join("");
 }
 
-function render(list, query = "") {
+function render(list) {
   renderNav(list);
   if (!list.length) {
     content.innerHTML = `<div class="empty">没有找到匹配内容。</div>`;
@@ -1691,26 +1894,21 @@ function render(list, query = "") {
 
   content.innerHTML = list.map(section => {
     const sectionNo = sectionNumber(section);
-    const rawHtml = addNumberedSubsections(section);
-    const html = query ? highlight(rawHtml, query) : rawHtml;
-    const meta = section.id === "source-index" && section.meta
-      ? `<div class="meta">${section.meta}</div>`
+    const html = addNumberedSubsections(section);
+    const meta = section.meta
+      ? `<p class="chapter-kicker">${escapeHtml(section.meta)}</p>`
       : "";
     return `
       <article class="card" id="${section.id}">
         <h3><span class="chapter-number">${sectionNo}</span>${section.title}</h3>
         ${meta}
+        ${renderChapterOutline(section)}
         ${html}
       </article>
     `;
   }).join("");
   refreshScrollTargets();
   updateActiveNav();
-}
-
-function highlight(html, query) {
-  const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  return html.replace(new RegExp(escaped, "gi"), match => `<mark>${match}</mark>`);
 }
 
 function escapeHtml(value = "") {
@@ -1721,6 +1919,113 @@ function escapeHtml(value = "") {
     "\"": "&quot;",
     "'": "&#39;"
   })[char]);
+}
+
+function normalizeSearchText(value = "") {
+  return String(value).replace(/\s+/g, " ").trim().toLowerCase();
+}
+
+function plainTextFromHtml(html = "") {
+  const container = document.createElement("div");
+  container.innerHTML = html;
+  return container.textContent || "";
+}
+
+function makeSearchSnippet(text, query, maxLength = 76) {
+  const compact = String(text).replace(/\s+/g, " ").trim();
+  if (!compact || compact.length <= maxLength) {
+    return compact;
+  }
+
+  const lower = compact.toLowerCase();
+  const index = lower.indexOf(query.toLowerCase());
+  const start = index > 18 ? Math.max(0, index - 24) : 0;
+  const end = Math.min(compact.length, start + maxLength);
+  const prefix = start > 0 ? "..." : "";
+  const suffix = end < compact.length ? "..." : "";
+  return `${prefix}${compact.slice(start, end)}${suffix}`;
+}
+
+function highlightSearchMatch(value = "", query = "") {
+  const escapedValue = escapeHtml(value);
+  const escapedQuery = query.trim().replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  if (!escapedQuery) {
+    return escapedValue;
+  }
+  return escapedValue.replace(new RegExp(escapedQuery, "gi"), match => `<mark>${match}</mark>`);
+}
+
+function buildTocSearchIndex() {
+  return displaySections.flatMap(section => {
+    const sectionNo = sectionNumber(section);
+    const plain = plainTextFromHtml(section.html);
+    const sharedText = `${section.title} ${section.meta || ""} ${plain}`;
+    const entries = [{
+      href: `#${section.id}`,
+      number: String(sectionNo),
+      title: section.title,
+      type: "章节",
+      sectionTitle: section.title,
+      snippetSource: sharedText,
+      searchable: normalizeSearchText(sharedText)
+    }];
+
+    getSubsections(section).forEach(subsection => {
+      const text = `${section.title} ${subsection.title} ${section.meta || ""} ${plain}`;
+      entries.push({
+        href: `#${subsection.id}`,
+        number: subsection.number,
+        title: subsection.title,
+        type: "知识点",
+        sectionTitle: section.title,
+        snippetSource: text,
+        searchable: normalizeSearchText(text)
+      });
+    });
+
+    return entries;
+  });
+}
+
+const tocSearchIndex = buildTocSearchIndex();
+const tocSearchLimit = 12;
+
+function renderTocSearchResults() {
+  if (!search || !tocSearchResults) {
+    return;
+  }
+
+  const query = search.value.trim();
+  if (!query) {
+    tocSearchResults.innerHTML = "";
+    return;
+  }
+
+  const normalizedQuery = normalizeSearchText(query);
+  const allMatches = tocSearchIndex.filter(item => item.searchable.includes(normalizedQuery));
+  const matches = allMatches.slice(0, tocSearchLimit);
+
+  if (!matches.length) {
+    tocSearchResults.innerHTML = `<div class="toc-search-empty">没有找到匹配知识点。</div>`;
+    return;
+  }
+
+  tocSearchResults.innerHTML = `
+    <div class="toc-search-summary">显示前 ${matches.length} 个位置，共 ${allMatches.length} 个</div>
+    <div class="toc-search-list">
+      ${matches.map(item => {
+        const snippet = makeSearchSnippet(item.snippetSource, query);
+        return `
+          <a class="toc-search-result" href="${item.href}">
+            <span>${item.type} · ${escapeHtml(item.number)}</span>
+            <strong>${highlightSearchMatch(item.title, query)}</strong>
+            <em>${escapeHtml(item.sectionTitle)}</em>
+            <small>${highlightSearchMatch(snippet, query)}</small>
+          </a>
+        `;
+      }).join("")}
+    </div>
+  `;
 }
 
 let scrollTargets = [];
@@ -1786,7 +2091,7 @@ function updateActiveNav() {
     return;
   }
 
-  const offset = isMobileTocMode() ? 58 : 28;
+  const offset = isMobileTocMode() ? 64 : 28;
   let current = scrollTargets[0];
 
   for (const target of scrollTargets) {
@@ -1869,6 +2174,7 @@ function exampleSearchText(item) {
     item.section,
     exampleKnowledge(item),
     item.knowledge,
+    item.status,
     item.level,
     item.sentence,
     item.translation,
@@ -1976,6 +2282,7 @@ function renderSentenceAnalyzer(item) {
       <span>${escapeHtml(item.section)}</span>
       <span>${escapeHtml(exampleKnowledge(item))}</span>
       <span>${escapeHtml(item.level)}</span>
+      ${renderExampleStatus(item.status)}
     </div>
     <h3>${escapeHtml(item.title)}</h3>
     <p class="translation">${escapeHtml(item.translation)}</p>
@@ -2050,7 +2357,7 @@ function renderExamples() {
       </h3>
       ${items.map(item => `
         <button class="example-result ${item.id === selectedExampleId ? "active" : ""}" type="button" data-example-id="${item.id}">
-          <span>${escapeHtml(item.section)} · ${escapeHtml(item.level)}</span>
+          <span>${escapeHtml(item.section)} · ${escapeHtml(item.level)} ${renderExampleStatus(item.status)}</span>
           <strong>${escapeHtml(item.sentence)}</strong>
           <em>${escapeHtml(item.title)}｜${escapeHtml(exampleQuestion(item))}</em>
         </button>
@@ -2104,18 +2411,15 @@ function initializeExampleWorkbench() {
   });
 }
 
-search.addEventListener("input", () => {
-  const q = search.value.trim();
-  if (!q) {
-    render(displaySections);
-    return;
+search?.addEventListener("input", renderTocSearchResults);
+
+tocSearchResults?.addEventListener("click", event => {
+  const link = event.target.closest("a");
+  if (link && isMobileTocMode()) {
+    setMobileTocOpen(false, false);
   }
-  const result = displaySections.filter(section => {
-    const text = `${section.title} ${section.meta} ${section.html}`.replace(/<[^>]+>/g, "");
-    return text.toLowerCase().includes(q.toLowerCase());
-  });
-  render(result, q);
 });
 
 initializeExampleWorkbench();
 render(displaySections);
+renderTocSearchResults();

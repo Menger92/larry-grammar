@@ -4,37 +4,40 @@
 
 | 项目 | 结论 |
 | --- | --- |
-| 一句话本质 | 时态判断是时间框架、动作类别、体貌状态和说话人视角的组合。 |
-| 核心公式 | `动词类别 + 时间状语 + 观察点 + 完成 / 进行状态` |
-| 判断入口 | 先判断动词类别和时间参照点，再看一般、进行、完成或完成进行。 |
+| 一句话本质 | 时态判断要分开处理时间定位、语法体、整个谓词的情状类型和语境视角。 |
+| 核心公式 | `有限谓语的时态 + 语法体 + 谓词情状 + 时间参照点 + 语境` |
+| 判断入口 | 先找有限谓语和时间参照点，再判断整个谓词呈现的是状态、活动、有终点过程还是达成变化。 |
 | 代表例句 | I wrote a book. / I was writing a book. / I have written a book. |
 | 最易混点 | 形式名称不等于中文时间；过去形式还可能表达委婉或心理距离。 |
 
 ## 核心本质
 
-Larry 的时态入口不是先背中文译名，而是把动词放进三个问题里看：
+Larry 的“时、体、貌”入口不是先背中文译名。为避免把不同层级混在一起，本项目把判断拆成四层：
 
-| 问题 | 作用 |
-| --- | --- |
-| 时 | 动作或状态放在哪个时间框架？ |
-| 体 | 动作是完整、进行、完成，还是完成进行？ |
-| 貌 | 说话人怎样呈现这个动作：客观陈述、临时状态、委婉、背景、计划等？ |
+| 层级 | 判断对象 | 作用 |
+| --- | --- | --- |
+| 时态 / 时间定位 | 有限谓语和时间参照点 | 事件被放在现在、过去，还是以其他形式指向未来？ |
+| 语法体 | 一般、进行、完成、完成进行等形式 | 说话人从内部过程、既有结果或持续过程观察事件。 |
+| 情状类型 / 谓词体貌 | 完整谓词所描述的情状 | 判断它是状态、无终点活动、有终点过程还是达成变化。 |
+| 语境视角 | 整句与上下文 | 解释习惯、临时性、背景、计划、委婉或心理距离等附加意义。 |
+
+四类情状不是给孤立动词贴永久标签。同一个动词会因宾语、数量、否定、时态和上下文而改变情状，例如 `write` 与 `write a book` 的终点结构不同。
 
 复习时先问：说话人把动作放在什么观察位置，而不是先问“中文该翻译成什么时态”。
 
 ## 判断步骤
 
 ```text
-找谓语动词 → 判动词类别 → 看时间状语 → 定观察点 → 判体貌状态 → 看语气/语境附加值
+找有限谓语 → 看完整谓词 → 判情状类型 → 看时间状语 → 定观察点 → 判语法体 → 看语境附加值
 ```
 
 | 步骤 | 问题 | 判断结果 |
 | --- | --- | --- |
 | 1 | 句子真正的谓语是谁？ | 只有谓语动词承担时态、人称和语气。 |
-| 2 | 动词属于 states、activities、accomplishments、achievements 哪一类？ | 动词类别会限制能否用进行体、完成体或一般现在。 |
+| 2 | 完整谓词呈现哪种情状？ | states、activities、accomplishments、achievements 的判断单位是当前谓词 / 事件，不是孤立动词。 |
 | 3 | 时间状语是时间点、定位时间段，还是不定位时间段？ | 时间状语决定观察点和完成 / 未完成关系。 |
 | 4 | 说话人从哪个时间点观察动作？ | 现在、过去、过去的过去、将来参照点都不同。 |
-| 5 | 动作被呈现为一般、进行、完成还是完成进行？ | 体貌决定动作是属性、过程、结果还是持续过程。 |
+| 5 | 动作被呈现为一般、进行、完成还是完成进行？ | 语法体决定当前聚焦一般事实、内部过程、观察点前结果还是持续过程。 |
 | 6 | 是否有委婉、主观色彩、计划性或心理距离？ | 时态形式可能表达语气，不一定只表达时间。 |
 
 ## 类型速查表
@@ -45,37 +48,40 @@ Larry 的时态入口不是先背中文译名，而是把动词放进三个问�
 | 一般过去时 | 把动作或状态放进过去框架 | 是否与现在拉开时间或心理距离？ | I lived in Beijing. |
 | 进行体 | 把动作展开成正在进行或暂时状态 | 是否强调过程、临时性、背景或计划？ | I am writing a book. |
 | 完成体 | 看动作完成后与观察点的关系 | 是否强调结果、经验、延续或先后？ | I have written a book. |
-| 完成进行体 | 同时强调持续过程和观察点 | 是否从过去持续到观察点，终点未必到达？ | I have been writing a book. |
+| 完成进行体 | 同时强调持续过程和观察点 | 是否持续到观察点或刚刚结束？终点是否到达要由语境判断。 | I have been writing a book. |
 | 将来时间表达 | 用情态、计划、安排或趋势表达未来 | 是 will、be going to、be to、be doing，还是完成式将来？ | The train is leaving this afternoon. |
 
-## 具体类型：四类动词 + 三类时间状语
+## 具体类型：四类情状 + 三类时间状语
 
-时态判断不能只看动词形式，还要看动词本身的类别和时间状语。
+时态判断不能只看动词形式，还要看完整谓词在当前句子中形成的情状，以及时间状语和观察点。
 
-### 四类动词
+### 四类情状（谓词体貌）
 
-| 类别 | 英文 | 特点 | 视频截图词例 |
+| 类别 | 英文 | 当前谓词的特点 | Larry 截图词例（仅作入口） |
 | --- | --- | --- | --- |
-| 第一类动词 | states | 状态动词；一般“不动”，只代表一种状态。 | know, love, have, want |
-| 第二类动词 | activities | 活动动词；会动，但动作没有明确终点，或起点终点不明确。 | walk, swim, write, read |
-| 第三类动词 | accomplishments | 过程动词；会动，而且有明确动作终点。 | build, persuade, prepare |
-| 第四类动词 | achievements | 瞬间动词；动作在瞬间发生并立即结束。 | kill, drop, catch, arrive |
+| 状态情状 | states | 非动态、无内在终点，表示关系、认知、拥有或状态。 | know, love, have, want |
+| 活动情状 | activities | 动态、可持续，但当前表达没有内在终点。 | walk, swim, write, read |
+| 有终点过程 | accomplishments | 有持续过程，也有由宾语或目标建立的内在终点。 | build a house, persuade a friend, prepare a meal |
+| 达成情状 | achievements | 聚焦边界或状态变化，典型理解接近瞬时发生。 | drop, catch, arrive；`kill` 需结合完整谓词判断 |
+
+词例只是进入判断的提示，不是永久归类。例如 `write` 可以构成活动情状，`write a book` 通常构成有终点过程；`kill` 也可以在具体语境中被展开为通向结果的过程。
 
 <details>
-<summary>例句库：四类动词的体貌约束</summary>
+<summary>例句库：四类情状与语法体的互动</summary>
 
 | 类别 | 讲义例句 | 判断重点 |
 | --- | --- | --- |
-| 第一类 states | I love you. / Michael doesn't belong here. / Jimmy smokes. / This door opens easily. | 表示状态、属性或习惯，一般不用进行时。 |
-| 第一类 states | I am/was knowing it. / This bag is/was belonging to me. | 原则上不自然，因为状态本身不强调“正在进行”。 |
-| 第一类 states | He lives in Beijing. / He is living in Beijing. | 一般现在偏长期或永久；进行时可表示暂时状态。 |
-| 第二类 activities | I work in Huawei. / Puppies grow fast. | 动作会动，但终点不明确。 |
-| 第二类转第三类 | She read three pages. / He drew a circle. | 宾语或数量把活动量化后，动作有了明确终点。 |
-| 第二类完成对比 | Michael has worked here. / Michael has been working here. | 完成时偏已完成状态；完成进行时偏未完成或持续过程。 |
-| 第三类 accomplishments | They built a house. / He persuaded his friend to go back to school. | 动作自带过程和终点。 |
-| 第三类体貌 | They are building a house. / They have built a house. / They have been building a house. | 进行体看过程未到终点；完成体看终点已经到达；完成进行体看持续过程。 |
-| 第四类 achievements | The accident killed four people. / The bus stopped. | 动作瞬间发生并结束，天然偏已完成。 |
-| 第四类转义 | Sally buys new shoes. / The bombs stopped exploding. | 若表达反复或多个事件，词义会转为活动或过程。 |
+| 状态情状 | I love you. / Michael doesn't belong here. | 典型状态谓词通常不需要进行体。 |
+| 状态 + 进行体 | 【纠错对比】 I am/was knowing it. / This bag is/was belonging to me. | 在普通释义下不自然；若语境把状态重新解释成临时行为或变化，部分状态谓词可以使用进行体。 |
+| 长期 VS 临时 | He lives in Beijing. / He is living in Beijing. | 一般现在常呈现长期有效事实；进行体突出当前阶段的临时安排。 |
+| 习惯 / 属性读法 | Jimmy smokes. / This door opens easily. | 这是一般现在带来的习惯或属性读法，不应因此把 smoke / open 本身归为状态谓词。 |
+| 活动情状 | I work for Huawei. / Puppies grow fast. | 当前表达没有给出明确终点。 |
+| 活动转完成 | She read three pages. / He drew a circle. | 数量或有界宾语给活动建立终点。 |
+| 完成体对比 | Michael has worked here. / Michael has been working here. | 前者把经历或当前有效事实作为整体呈现；后者凸显持续过程。是否仍继续要看语境。 |
+| 有终点过程 | They built a house. / He persuaded his friend to go back to school. | 当前谓词包含过程和终点。 |
+| 有终点过程与语法体 | They are building a house. / They have built a house. / They have been building a house. | 进行体聚焦过程；完成体通常呈现观察点前的整体或结果；完成进行体聚焦持续过程，是否完工由语境决定。 |
+| 达成 / 边界情状 | The bus stopped. / The bomb exploded. | 当前谓词聚焦停止或爆炸发生的边界。 |
+| 可展开或反复 | The predator is killing the prey. / The bombs stopped exploding. | 进行体或复数、反复语境可以把边界事件展开为过程或一系列事件。 |
 
 </details>
 
@@ -87,25 +93,25 @@ Larry 的时态入口不是先背中文译名，而是把动词放进三个问�
 | 定位时间段 | 有明确起止或定位范围 | since 2018, during the first half of last year |
 | 不定位时间段 | 只给长度，不给定位点 | for one year, for three days |
 
-### 动词体貌的转化
+### 谓词情状的转化
 
-同一个动词会因为宾语、体貌和语境改变类别。
+同一个动词会因为宾语、数量、语法体和语境形成不同情状。下面保留讲义的 `write` 对比，但分类单位统一改为当前谓词。
 
 代表例句：I wrote a book.
 
 <details>
 <summary>例句库：write 的体貌转化</summary>
 
-| 例句 | 视频标注 | 复习点 |
+| 例句 | 校准后的情状判断 | 复习点 |
 | --- | --- | --- |
-| I write. | 第一类动词 | 表示能力、习惯或职业属性。 |
-| I wrote. | 第一类动词 | 过去动作或过去状态。 |
-| I wrote a book. | 第三类动词 | 加上 `a book` 后，动作有明确终点。 |
-| I am/was writing. | 第二类动词 | 强调正在写这个活动。 |
-| I am/was writing a book. | 第三类动词 | 有终点，但进行时表示终点未到达。 |
-| I have/had written a book. | 第三类动词 | 终点已经到达。 |
-| I have/had been writing a book. | 第三类动词 | 强调一段持续过程，终点未必到达。 |
-| The bell rang, and she instantly wrote her name to the exam paper. | 第二类转第四类 | `instantly` 让动作呈现瞬间完成。 |
+| I write. | 活动谓词 + 一般现在 | 一般现在使它获得习惯、能力或职业读法；`write` 并未因此变成状态谓词。 |
+| I wrote. | 活动谓词 + 一般过去 | 表示过去发生的写作活动，未说明内在终点。 |
+| I wrote a book. | 有终点过程 | `a book` 给写作过程建立明确终点。 |
+| I am/was writing. | 活动情状 + 进行体 | 强调写作活动内部正在展开。 |
+| I am/was writing a book. | 有终点过程 + 进行体 | 谓词有终点，但进行体只观察通向终点的过程，不断言已经写完。 |
+| I have/had written a book. | 有终点过程 + 完成体 | 在相应观察点前，通常把写完一本书作为已实现结果呈现。 |
+| I have/had been writing a book. | 有终点过程 + 完成进行体 | 强调持续写作过程；是否写完不能只由形式决定。 |
+| The bell rang, and she instantly wrote her name on the exam paper. | 有终点的短过程 | `write her name` 本身已有终点；`instantly` 压缩其感知时长，不会自动把孤立动词永久改成 achievement。 |
 
 </details>
 
@@ -334,27 +340,27 @@ People die.
 
 </details>
 
-### 进行时 VS 第一类、第四类动词
+### 进行体与状态、达成情状
 
-第一类、第四类动词原则上不使用进行时，但个别第一类动词可以用进行时表示暂时状态。
+典型状态情状和瞬时达成情状与进行体的搭配受限，但不是“原则上一律不能用”。进行体会迫使读者寻找动态、临时、反复、渐变、预备阶段或过程化的解释。
 
 代表例句：I'm living in Beijing.
 
 <details>
-<summary>对比例句库：进行时和第一类、第四类动词</summary>
+<summary>对比例句库：进行体如何改变情状解释</summary>
 
 | 例句 | 复习点 |
 | --- | --- |
 | I live in Beijing. | 长期或永久性状态。 |
 | I'm living in Beijing. | 暂时状态。 |
-| Michael does great in school. | 客观描述。 |
-| Michael is doing great in school. | 带赞扬色彩。 |
-| I study in Tsinghua. | 客观描述。 |
-| I am studying in Tsinghua. | 带有主观色彩。 |
-| The predator is killing the prey. | 第四类瞬间动作被拉成过程，语境要求更强。 |
-| Michael has been loving Mary. | 第一类状态动词用完成进行时通常不自然。 |
-| I had been knowing this. | 第一类状态动词用完成进行时通常不自然。 |
-| The bomb will be exploding. | 第四类瞬间动词用将来进行时通常不自然。 |
+| Michael does great in school. | 一般现在描述长期或反复表现。 |
+| Michael is doing great in school. | 进行体突出当前阶段的表现；是否带赞扬色彩由语境决定。 |
+| I study at Tsinghua. | 一般现在陈述当前有效的学习身份。 |
+| I am studying at Tsinghua. | 进行体突出当前阶段或临时安排，不等于“带主观色彩”。 |
+| The predator is killing the prey. | 自然地观察通向死亡结果的过程，说明 `kill the prey` 可以被过程化。 |
+| 【依赖语境】 Michael has been loving Mary. | 在“持续处于爱”的普通释义下不自然；特殊语境可把 love 动态化。 |
+| I had been knowing this. | know 的普通状态义通常不与完成进行体搭配。 |
+| 【依赖语境】 The bomb will be exploding at noon. | 可表示预定时点正在发生 / 被观察到的事件；有未来时间语境时并非天然错误。 |
 
 </details>
 
@@ -364,9 +370,9 @@ People die.
 | 对比点 | 一般现在时 | 现在进行时 / 完成体 |
 | --- | --- | --- |
 | 长期反复 VS 暂时反复 | The heater leaks. | The heater is leaking. |
-| 第二类被宾语限定 | I write novels. | I write a novel. / I am writing a novel. / I've written a novel. |
-| 第三类一般现在限制 | They build houses. | They build a house. / They are building a house. |
-| 第四类一般现在限制 | The bomb explodes. (?) | The bombs stopped exploding. (词义转为第三类) |
+| 活动谓词被宾语限定 | I write novels. | I write a novel. / I am writing a novel. / I've written a novel. |
+| 有终点过程的一般现在 | They build houses. | They build a house. / They are building a house. |
+| 达成情状的不同解释 | The bomb explodes at the end of the film. | The bombs are exploding one after another. |
 
 </details>
 
@@ -444,7 +450,7 @@ People die.
 
 | 对比点 | 一般过去时 | 过去进行时 |
 | --- | --- | --- |
-| 已完成状态 VS 未完成状态 | I read a book that evening. | I was reading a book that evening. |
+| 把事件作为整体 VS 从内部观察过程 | I read a book that evening. | I was reading a book that evening. |
 | 已完成或未完成 | I worked through the night on the report. | I was working through the night on the report. |
 | 强调接连发生 | With the policy changed, new stores opened. | With the policy changed, new stores were opening. |
 | 强调动作渐变 | Night fell, and Larry quickened his steps. | Night was falling, and Larry quickened his steps. |
@@ -455,7 +461,7 @@ People die.
 
 ## 现在完成时
 
-形式：`have / has + V-ed`。现在完成时表达的意义远大于“已完成”，并且不能与表示过去的时间点状语连用。
+形式：`have / has + V-ed`。现在完成时表达的意义远大于“已完成”。在标准英式英语中，它通常不和已经结束、与现在切断的明确过去时间状语连用；但是否冲突要看时间区间是否仍包含现在，以及语体和语境。
 
 ### 已完成用法
 
@@ -471,7 +477,7 @@ People die.
 | He has turned off the light. | Now the light is off. |
 | I've laid the table. | It's time to eat. |
 | He has recovered from his illness. | Now he is well. |
-| I've studied English. | I know English. |
+| I've studied English. | 表示有过学习英语的经历；它本身不保证当前已经熟练掌握英语。 |
 | I've changed my attitude. | Now I have a new attitude. |
 
 </details>
@@ -486,7 +492,7 @@ People die.
 
 ### 未完成用法
 
-表示动作或状态从过去某时开始，持续到现在；此状态可能仍将继续，也可能刚刚结束。一般与时间段状语连用。
+表示动作或状态从过去某时开始，并与现在观察点相连。持续性状态通常延续到现在；活动是否仍继续要由谓词类型和上下文共同判断。一般与时间段状语连用。
 
 代表例句：Michael has lived here since 2018.
 
@@ -495,10 +501,10 @@ People die.
 
 | 例句 | 复习点 |
 | --- | --- |
-| He has volunteered in the orphanage for years. | 第一类、第二类动词肯定式。 |
+| He has volunteered in the orphanage for years. | 活动从过去延续到现在；是否继续由语境判断。 |
 | Michael has lived here since 2018. | 从 2018 延续到现在。 |
 | I've always missed her. | 延续到现在的状态。 |
-| I haven't seen her for years. | 第二类、第四类动词否定式表示状态延续至今。 |
+| I haven't seen her for years. | 否定式把“没有见到”的状态延续至今，不必先给 see 固定分类。 |
 | They haven't visited us since 2015. | 否定式延续至今。 |
 | He hasn't written to me for a whole year. | 否定式延续至今。 |
 | I haven't talked with my mom since we had a fight last time. | 否定式延续至今。 |
@@ -507,7 +513,7 @@ People die.
 
 ### since 的用法
 
-`since` 既是介词，又是连词。与现在完成时搭配时，后面应接时间点；如果后接一般过去时所表示的时间段，容易产生歧义。
+`since` 既可以作介词，也可以作连词。它标出的不是“一个必须呈点状的成分”，而是从过去延伸到观察点这一时间区间的**左边界 / 起点**。这个边界可以由日期、事件或某种状态的起始来确定；从句时态必须根据要表达的是起始事件、已经结束的阶段，还是持续至今的状态来选择。
 
 代表例句：I haven't seen him since yesterday.
 
@@ -516,12 +522,12 @@ People die.
 
 | 判断 | 例句 | 说明 |
 | --- | --- | --- |
-| 对 | I haven't seen him since yesterday. | since + 时间点。 |
-| 对 | I haven't seen him since we ran into each other in Paris. | since + 时间点事件。 |
-| 疑问 | He hasn't written to me since he lived in Beijing. | since 后接一般过去时的时间段，容易产生歧义。 |
-| 疑问 | He has taken extra care of me since I was ill. | since 后接一般过去时的时间段，容易产生歧义。 |
-| 对 | He hasn't written to me since he has lived in Beijing. | since + 现在完成时的时间点。 |
-| 对 | He has taken extra care of me since I've been ill. | since + 现在完成时的时间点。 |
+| 清楚 | I haven't seen him since yesterday. | yesterday 给出时间区间的左边界。 |
+| 清楚 | I haven't seen him since we ran into each other in Paris. | 一般过去时事件确定起点。 |
+| 依语境 | He hasn't written to me since he lived in Beijing. | 可以表示“自从他在北京居住的那段时期以后”，但究竟从入住、居住期间还是离开后算起并不清楚。 |
+| 依语境 | He has taken extra care of me since I was ill. | 可以把过去生病的时期当作起点背景；若强调疾病持续至今，应换成完成形式。 |
+| 不推荐 | 【纠错对比】 He hasn't written to me since he has lived in Beijing. | 在“自从搬到北京以后”的本意下不自然；更清楚的是 `since he moved to Beijing` 或 `since he started living in Beijing`。 |
+| 清楚 | He has taken extra care of me since I've been ill. | 完成形式把生病状态理解为从过去持续到现在；它表示持续状态，不是“时间点”。 |
 | 对 | It is a long time since we met last. | `It is + 时间名词 + since`。 |
 | 对 | It's been a long time since we met last. | `It has been + 时间名词 + since`。 |
 
@@ -638,7 +644,7 @@ People die.
 
 ## 现在完成进行时
 
-形式：`have / has been + V-ing`。表示动作在过去某时开始，一直延续到当前说话时刻。
+形式：`have / has been + V-ing`。它把过去开始的活动与现在观察点联系起来，重点是持续过程；活动可能仍在进行，也可能刚刚结束并留下当前可见的结果。
 
 ### 动作仍在进行
 
@@ -676,16 +682,16 @@ People die.
 <details>
 <summary>对比例句库：现在完成时 VS 现在完成进行时</summary>
 
-| 动词类别 | 现在完成时 | 现在完成进行时 |
+| 谓词情状 | 现在完成时 | 现在完成进行时 |
 | --- | --- | --- |
-| 第二类动词 | I've worked for days. | I've been working for days. |
-| 第二类动词 | It has rained since last Tuesday. | It has been raining since last Tuesday. |
-| 第三类动词 | They've built a house. | They've been building a house. |
-| 第三类动词 | I've written a book. | I've been writing a book. |
+| 活动情状 | I've worked for days. | I've been working for days. |
+| 活动情状 | It has rained since last Tuesday. | It has been raining since last Tuesday. |
+| 有终点过程 | They've built a house. | They've been building a house. |
+| 有终点过程 | I've written a book. | I've been writing a book. |
 
 </details>
 
-第三类动词的完成时表示已完成状态，进行时则表示未完成状态。
+对有内在终点的谓词，完成时通常把终点作为已实现结果呈现；完成进行时聚焦过程，不单独断言终点是否实现。上下文仍可能说明该过程刚刚完成。
 
 ## 过去完成进行时
 
@@ -731,12 +737,12 @@ People die.
 
 | 判断 | 例句 | 说明 |
 | --- | --- | --- |
-| 对 | I had been writing a book. | 过去一段时间内持续进行，未完成。 |
-| 对 | I have been writing a book. | 至今为止重复进行的动作，未完成。 |
-| 对 | I was writing a book. | 当时正在进行，未完成。 |
-| 对 | I am writing a book. | 正在进行，未完成。 |
-| 对 | I wrote a book. | 过去动作，已完成。 |
-| 错 | I write a book. | 语法不严谨。 |
+| 对 | I had been writing a book. | 过去一段时间内持续进行；该形式不单独断言是否写完。 |
+| 对 | I have been writing a book. | 写作过程延续到现在或刚刚结束；是否写完要看语境。 |
+| 对 | I was writing a book. | 当时正在进行；该形式不单独断言终点是否最终到达。 |
+| 对 | I am writing a book. | 现在正在进行；该形式不单独断言终点是否最终到达。 |
+| 对 | I wrote a book. | 一般读法把有终点的写书事件作为过去整体呈现，通常推出书已写完。 |
+| 依语境 | I write a book. | 语法可以成立，例如叙述固定流程、剧情梗概或反复任务；脱离语境时不如 `I write books` 自然。 |
 | 对 | I write books. | 经常性、重复进行的动作，表示能力或著者状态。 |
 
 </details>
@@ -815,9 +821,9 @@ if 条件句中，`will` 与条件含义不同：
 | will / shall + have done | 截止到将来某一时刻已经完成 | He will have taken over the family business by the time he fails in Gaokao. |
 | will / shall + have done | 截止到将来某一时刻已经完成 | They will have completed their elementary school studies by this time next year. |
 | will / shall + have done | 截止到将来某一时刻已经完成 | Michael will have stayed in Beijing for ten years by November. |
-| will / shall + have been doing | 已经开始并持续到将来某时，且动作仍在继续 | By November Michael will have been working in Huawei for ten years. |
-| will / shall + have been doing | 已经开始并持续到将来某时，且动作仍在继续 | The play will have been running for three months by Monday. |
-| will / shall + have been doing | 已经开始并持续到将来某时，且动作仍在继续 | If it still rains tomorrow, it will have been raining for two weeks. |
+| will / shall + have been doing | 已经开始并持续到将来参照点；参照点之后是否继续由语境决定 | By November Michael will have been working in Huawei for ten years. |
+| will / shall + have been doing | 已经开始并持续到将来参照点；参照点之后是否继续由语境决定 | The play will have been running for three months by Monday. |
+| will / shall + have been doing | 已经开始并持续到将来参照点；参照点之后是否继续由语境决定 | If it still rains tomorrow, it will have been raining for two weeks. |
 
 </details>
 
@@ -887,10 +893,10 @@ if 条件句中，`will` 与条件含义不同：
 
 | 例句 | 复习点 |
 | --- | --- |
-| The train is leaving this afternoon. | 第四类动词进行态表示将来。 |
+| The train is leaving this afternoon. | 进行形式结合未来时间状语，表达已经安排的离开。 |
 | We're moving to Seattle the day after tomorrow. | 安排好的将来。 |
 | Michael was joining our club soon. | 过去视角下的将来。 |
-| He is doing the dishes later. | 第二类、第三类动词现在进行表示将来，必须搭配未来时间状语。 |
+| He is doing the dishes later. | 未来时间状语使进行形式获得安排读法；没有语境时通常理解为正在进行。 |
 | The doctor was operating on the patient the next morning. | 过去视角下的将来安排。 |
 
 </details>
@@ -916,11 +922,11 @@ if 条件句中，`will` 与条件含义不同：
 
 </details>
 
-## 实践分析：动词类别 + 完成状态
+## Larry 讲义原始标注：按完整谓词复核
 
-PDF 讲义第 18 页的分析文章把动词先归类，再判断完成状态。
+PDF 讲义第 18 页的分析文章先给动词形式编号，再判断完成状态。下表保留原始视频标注用于溯源，但不再把这些编号当作孤立动词的永久类别：复习时必须回到原句，连同宾语、数量、否定、语法体和上下文判断整个谓词所呈现的情状。
 
-| 动词形式 | 视频标注 |
+| 动词形式 | Larry 视频原始标注 |
 | --- | --- |
 | stands | 第一类 + 未完成 |
 | have provided | 第二类 + 未 / 已完成 |
@@ -938,18 +944,18 @@ PDF 讲义第 18 页的分析文章把动词先归类，再判断完成状态。
 | leaving | 第四类 + 已完成 |
 | has become | 第四类 + 已完成 |
 
-复习顺序：先判断动词类别，再看时间状语，最后判断体貌带来的完成 / 未完成状态。
+校准后的复习顺序：先找有限谓语和完整谓词，再判断当前情状、时间参照点与语法体。缺少原句上下文时，不根据上表单独给词定类。
 
 ## 易混对比
 
 | 易混点 | 快速判断 | 典型对照 |
 | --- | --- | --- |
-| 一般现在时 VS 现在进行时 | 一般现在偏长期属性；现在进行偏临时、现阶段或主观色彩。 | I live in Beijing. / I'm living in Beijing. |
+| 一般现在时 VS 现在进行时 | 一般现在偏长期、习惯或当前有效事实；现在进行偏临时、现阶段或动态化解释。 | I live in Beijing. / I'm living in Beijing. |
 | 一般过去时 VS 现在完成时 | 一般过去只把动作放到过去；现在完成要和现在观察点有关。 | I saw Michael this morning. / I have seen Michael this morning. |
 | 一般过去时 VS 过去完成时 | 过去完成强调“过去的过去”或过去动作先后。 | I did the work at 6. / I had done the work at 6. |
-| 完成时 VS 完成进行时 | 完成时看结果；完成进行时看持续过程，第三类动词差异更明显。 | I've written a book. / I've been writing a book. |
+| 完成时 VS 完成进行时 | 完成时偏整体、结果或经验；完成进行时突出持续过程。对有终点谓词，后者不单独断言是否到达终点。 | I've written a book. / I've been writing a book. |
 | will VS be going to | will 更容易带临时决定或情态色彩；be going to 计划性或趋势更强。 | I'll get it for you. / I'm going to get it for you. |
-| be doing 表将来 VS 正在进行 | 第二、第三类动词表将来通常需要未来时间状语。 | He is doing the dishes later. / He is doing the dishes. |
+| be doing 表将来 VS 正在进行 | 通常依靠未来时间状语或安排语境区分。 | He is doing the dishes later. / He is doing the dishes. |
 
 ## 经济学人分析提示
 
